@@ -1,0 +1,7 @@
+kernel/module/procfs.o
+m_next -> (seq_list_next)
+m_show -> (module_flags, seq_printf, module_refcount, seq_puts)
+m_start -> (seq_list_start, mutex_lock)
+m_stop -> (mutex_unlock)
+modules_open -> (m_stop, m_show, m_next, m_start, kallsyms_show_value, seq_open)
+proc_modules_init -> (seq_release, modules_open, seq_read, proc_create, seq_lseek)

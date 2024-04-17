@@ -1,0 +1,11 @@
+drivers/gpu/drm/drm_modeset_lock.o
+drm_modeset_backoff -> (ww_mutex_trylock, ww_mutex_lock, ww_mutex_lock_interruptible, ww_mutex_unlock)
+drm_modeset_drop_locks -> (ww_mutex_unlock)
+drm_modeset_lock -> (ww_mutex_trylock, ww_mutex_lock, ww_mutex_lock_interruptible)
+drm_modeset_lock_all -> (mutex_lock, drm_modeset_backoff, kmalloc_trace, drm_modeset_lock, mutex_is_locked, kfree)
+drm_modeset_lock_all_ctx -> (drm_modeset_lock)
+drm_modeset_lock_init -> (__mutex_init)
+drm_modeset_lock_single_interruptible -> (ww_mutex_lock_interruptible)
+drm_modeset_unlock -> (ww_mutex_unlock)
+drm_modeset_unlock_all -> (mutex_unlock, kfree, ww_mutex_unlock)
+drm_warn_on_modeset_not_all_locked -> (mutex_is_locked)

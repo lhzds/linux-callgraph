@@ -1,0 +1,4 @@
+arch/x86/kernel/acpi/sleep.o
+acpi_sleep_setup -> (acpi_nvs_nosave_s3, acpi_sleep_no_blacklist, acpi_nvs_nosave, acpi_old_suspend_ordering, strncmp, strspn, strchr)
+x86_acpi_enter_sleep_state -> (acpi_enter_sleep_state)
+x86_acpi_suspend_lowlevel -> (_printk, __SCT__tp_func_write_msr, do_trace_read_msr, do_suspend_lowlevel, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)

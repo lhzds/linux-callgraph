@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_vblank_work.o
+drm_handle_vblank_works -> (__wake_up, drm_vblank_put, kthread_queue_work)
+drm_vblank_cancel_pending_works -> (__wake_up, drm_vblank_put)
+drm_vblank_work_cancel_sync -> (__wake_up, _raw_spin_lock_irq, _raw_spin_unlock_irq, kthread_cancel_work_sync, drm_vblank_put)
+drm_vblank_work_flush -> (init_wait_entry, kthread_flush_work, _raw_spin_lock_irq, schedule, finish_wait, _raw_spin_unlock_irq, prepare_to_wait_event)
+drm_vblank_work_schedule -> (__wake_up, __drm_dev_dbg, kthread_queue_work, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, drm_vblank_count, drm_vblank_put, drm_vblank_get)
+drm_vblank_worker_init -> (__init_waitqueue_head, sched_set_fifo, kthread_create_worker)

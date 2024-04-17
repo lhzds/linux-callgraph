@@ -1,0 +1,3 @@
+ipc/compat.o
+get_compat_ipc64_perm -> (_copy_from_user)
+get_compat_ipc_perm -> (_copy_from_user)

@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/display/intel_atomic.o
+intel_atomic_get_crtc_state -> (drm_atomic_get_crtc_state)
+intel_atomic_get_digital_connector_state -> (drm_atomic_get_connector_state)
+intel_atomic_state_alloc -> (kmalloc_trace, drm_atomic_state_init, kfree)
+intel_atomic_state_clear -> (drm_atomic_state_default_clear, intel_atomic_clear_global_state)
+intel_atomic_state_free -> (drm_atomic_state_default_release, kfree)
+intel_crtc_destroy_state -> (__drm_atomic_helper_crtc_destroy_state, __warn_printk, kfree, dev_driver_string, drm_property_blob_put)
+intel_crtc_duplicate_state -> (kmemdup, __drm_atomic_helper_crtc_duplicate_state, drm_property_blob_get)
+intel_crtc_free_hw_state -> (drm_property_blob_put)
+intel_digital_connector_atomic_check -> (intel_hdcp_atomic_check, drm_connector_atomic_hdr_metadata_equal)
+intel_digital_connector_atomic_get_property -> (__drm_dev_dbg)
+intel_digital_connector_atomic_set_property -> (__drm_dev_dbg)
+intel_digital_connector_duplicate_state -> (__drm_atomic_helper_connector_duplicate_state, kmemdup)

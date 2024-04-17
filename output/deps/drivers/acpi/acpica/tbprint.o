@@ -1,0 +1,2 @@
+drivers/acpi/acpica/tbprint.o
+acpi_tb_print_table_header -> (acpi_info, strncmp)

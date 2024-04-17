@@ -1,0 +1,6 @@
+crypto/sha256_generic.o
+crypto_sha256_final -> (sha256_final, sha224_final)
+crypto_sha256_finup -> (sha256_update, sha256_final, sha224_final)
+crypto_sha256_update -> (sha256_update)
+sha256_generic_mod_fini -> (crypto_sha256_finup, crypto_unregister_shashes, crypto_sha256_update, crypto_sha256_final, sha256_base_init, sha224_base_init)
+sha256_generic_mod_init -> (crypto_register_shashes, crypto_sha256_finup, crypto_sha256_update, crypto_sha256_final, sha256_base_init, sha224_base_init)

@@ -1,0 +1,6 @@
+net/core/dev_ioctl.o
+dev_ifconf -> (inet_gifconf, rtnl_unlock, rtnl_lock, _copy_from_user)
+dev_ifsioc -> (dev_setifmap, rtnl_lock, dev_mc_add_global, rtnl_unlock, dev_change_name, dev_change_tx_queue_len, __dev_get_by_name, dev_set_mac_address_user, dev_change_flags, br_ioctl_call, dev_set_hwtstamp, dev_mc_del_global, dev_set_mtu, call_netdevice_notifiers)
+dev_ioctl -> (dev_get_flags, strchr, dev_get_by_name_rcu, capable, rtnl_lock, netdev_get_name, dev_ethtool, ns_capable, __rcu_read_lock, dev_load, __rcu_read_unlock, dev_ifsioc, rtnl_unlock, dev_get_mac_address)
+dev_load -> (dev_get_by_name_rcu, capable, __request_module, __rcu_read_lock, __rcu_read_unlock)
+dev_set_hwtstamp -> (_copy_from_user)

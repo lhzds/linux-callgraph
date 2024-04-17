@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/uc/intel_gsc_fw.o
+intel_gsc_uc_fw_init_done -> (intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+intel_gsc_uc_fw_proxy_init_done -> (intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+intel_gsc_uc_fw_upload -> (refcount_warn_saturate, i915_request_set_error_once, intel_runtime_pm_get, intel_uc_fw_mark_load_failed, i915_request_add, i915_request_create, i915_gem_object_set_cache_coherency, _dev_err, i915_request_wait, intel_ring_begin, intel_guc_write_barrier, intel_runtime_pm_put_unchecked, i915_gem_object_pin_map_unlocked, _dev_info, dma_fence_release, __intel_wait_for_register, i915_coherent_map_type)

@@ -1,0 +1,3 @@
+drivers/acpi/acpica/nsaccess.o
+acpi_ns_lookup -> (acpi_ns_search_and_enter, acpi_ut_get_descriptor_name, acpi_ut_get_type_name, acpi_error, acpi_ns_opens_scope, acpi_ds_scope_stack_push, acpi_os_printf, acpi_warning, kfree, acpi_ns_externalize_name)
+acpi_ns_root_initialize -> (acpi_ns_create_node, acpi_ut_release_mutex, strlen, strcmp, acpi_os_create_semaphore, acpi_error, acpi_ns_get_node, acpi_ns_attach_object, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg, acpi_os_predefined_override, acpi_ut_acquire_mutex, acpi_ut_osi_implementation)

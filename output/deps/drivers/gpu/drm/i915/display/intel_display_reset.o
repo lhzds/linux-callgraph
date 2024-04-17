@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/display/intel_display_reset.o
+intel_display_reset_finish -> (intel_clock_gating_init, refcount_warn_saturate, drm_modeset_acquire_fini, intel_pps_unlock_regs_wa, mutex_unlock, __warn_printk, __intel_display_driver_resume, intel_hpd_init, _dev_err, intel_hpd_poll_disable, intel_display_driver_init_hw, drm_modeset_drop_locks, drm_atomic_helper_commit_duplicated_state, intel_has_gpu_reset, dev_driver_string, __drm_atomic_state_free)
+intel_display_reset_prepare -> (drm_modeset_lock_all_ctx, mutex_lock, __drm_dev_dbg, refcount_warn_saturate, drm_modeset_backoff, intel_gt_set_wedged, _dev_err, drm_modeset_acquire_init, drm_atomic_helper_duplicate_state, intel_has_gpu_reset, wake_up_bit, drm_atomic_helper_disable_all, __drm_atomic_state_free)

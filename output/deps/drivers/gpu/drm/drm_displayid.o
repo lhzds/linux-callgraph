@@ -1,0 +1,2 @@
+drivers/gpu/drm/drm_displayid.o
+__displayid_iter_next -> (_printk, ___drm_dbg, drm_find_edid_extension)

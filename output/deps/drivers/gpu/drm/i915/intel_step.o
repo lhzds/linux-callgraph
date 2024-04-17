@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/intel_step.o
+intel_step_init -> (pvc_step_lookup, __drm_dev_dbg, _dev_warn, __warn_printk, dev_driver_string)
+pvc_step_lookup -> (__drm_dev_dbg, _dev_warn)

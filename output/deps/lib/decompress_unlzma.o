@@ -1,0 +1,9 @@
+lib/decompress_unlzma.o
+copy_bytes -> (peek_old_byte, write_byte)
+process_bit0 -> (peek_old_byte, write_byte, rc_get_bit)
+process_bit1 -> (write_byte, rc_bit_tree_decode, rc_get_bit, peek_old_byte, rc_direct_bit, copy_bytes, rc_is_bit_0)
+rc_bit_tree_decode -> (rc_get_bit)
+rc_direct_bit -> (rc_do_normalize)
+rc_get_bit -> (rc_is_bit_0)
+rc_is_bit_0 -> (rc_do_normalize)
+unlzma -> (vmalloc, kmalloc_large, process_bit0, rc_is_bit_0, vfree, kfree, process_bit1)

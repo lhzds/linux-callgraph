@@ -1,0 +1,3 @@
+drivers/scsi/scsi_sysctl.o
+scsi_exit_sysctl -> (unregister_sysctl_table)
+scsi_init_sysctl -> (register_sysctl, proc_dointvec)

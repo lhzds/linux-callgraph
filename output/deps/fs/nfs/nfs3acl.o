@@ -1,0 +1,9 @@
+fs/nfs/nfs3acl.o
+__nfs3_proc_setacls -> (nfs_zap_acl_cache, nfs_alloc_fattr, kfree, nfs_access_zap_cache, nfs_refresh_inode, __free_pages, rpc_call_sync, alloc_pages)
+nfs3_complete_get_acl -> (refcount_warn_saturate, kvfree_call_rcu)
+nfs3_get_acl -> (posix_acl_release, refcount_warn_saturate, kvfree_call_rcu, nfs_alloc_fattr, posix_acl_equiv_mode, kfree, nfs_revalidate_inode, forget_cached_acl, nfs_refresh_inode, nfs3_complete_get_acl, __free_pages, rpc_call_sync)
+nfs3_list_one_acl -> (get_inode_acl, refcount_warn_saturate, strlen, kvfree_call_rcu, strcpy)
+nfs3_listxattr -> (nfs3_list_one_acl)
+nfs3_proc_setacls -> (__nfs3_proc_setacls)
+nfs3_set_acl -> (__nfs3_proc_setacls, posix_acl_from_mode, get_inode_acl, refcount_warn_saturate, kvfree_call_rcu)
+posix_acl_release -> (refcount_warn_saturate, kvfree_call_rcu)

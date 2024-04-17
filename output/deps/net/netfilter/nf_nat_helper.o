@@ -1,0 +1,6 @@
+net/netfilter/nf_nat_helper.o
+__nf_nat_mangle_tcp_packet -> (mangle_contents, nf_ct_seqadj_set, nf_nat_csum_recalc, pskb_expand_head, skb_ensure_writable)
+mangle_contents -> (ip_send_check, skb_put)
+nf_nat_exp_find_port -> (nf_ct_expect_related_report, __get_random_u32_below)
+nf_nat_follow_master -> (nf_nat_setup_info)
+nf_nat_mangle_udp_packet -> (pskb_expand_head, nf_nat_csum_recalc, skb_ensure_writable, mangle_contents)

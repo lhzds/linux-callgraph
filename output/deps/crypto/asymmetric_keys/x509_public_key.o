@@ -1,0 +1,6 @@
+crypto/asymmetric_keys/x509_public_key.o
+x509_check_for_self_signed -> (asymmetric_key_id_same, bcmp, public_key_verify_signature)
+x509_get_sig_params -> (strcmp, crypto_alloc_shash, kmemdup, crypto_shash_digest, kfree, __kmalloc, crypto_destroy_tfm)
+x509_key_exit -> (unregister_asymmetric_key_parser, x509_key_preparse)
+x509_key_init -> (register_asymmetric_key_parser, x509_key_preparse)
+x509_key_preparse -> (strlen, x509_free_certificate, kmalloc_trace, public_key_signature_free, kfree, bin2hex, x509_cert_parse, asymmetric_key_generate_id, __kmalloc)

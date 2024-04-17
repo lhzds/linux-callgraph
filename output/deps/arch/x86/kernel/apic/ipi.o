@@ -1,0 +1,5 @@
+arch/x86/kernel/apic/ipi.o
+apic_ipi_shorthand -> (get_option)
+apic_smt_update -> (static_key_enable, static_key_disable)
+native_smp_send_reschedule -> (__warn_printk)
+print_ipi_mode -> (_printk)

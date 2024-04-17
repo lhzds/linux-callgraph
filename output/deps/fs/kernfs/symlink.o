@@ -1,0 +1,3 @@
+fs/kernfs/symlink.o
+kernfs_create_link -> (kernfs_get, kernfs_put, kernfs_new_node, kernfs_add_one)
+kernfs_iop_get_link -> (strlen, down_read, up_read, kmalloc_trace, kfree, kfree_link)

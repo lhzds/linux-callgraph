@@ -1,0 +1,8 @@
+drivers/power/supply/power_supply_sysfs.o
+power_supply_attr_is_visible -> (power_supply_battery_info_has_prop)
+power_supply_charge_behaviour_parse -> (__sysfs_match_string)
+power_supply_charge_behaviour_show -> (sysfs_emit_at, _dev_warn)
+power_supply_init_attrs -> (_printk, power_supply_store_property, power_supply_attr_is_visible, power_supply_show_property, sprintf)
+power_supply_show_property -> (_dev_warn, sysfs_emit, _dev_err, sysfs_emit_at, ___ratelimit, power_supply_get_property)
+power_supply_store_property -> (__sysfs_match_string, kstrtoll, power_supply_set_property)
+power_supply_uevent -> (get_zeroed_page, free_pages, sysfs_emit, power_supply_show_property, strchr, power_supply_battery_info_has_prop, add_uevent_var)

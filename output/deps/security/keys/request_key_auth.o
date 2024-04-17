@@ -1,0 +1,7 @@
+security/keys/request_key_auth.o
+key_get_instantiation_authkey -> (request_key_auth_instantiate, request_key_auth_revoke, request_key_auth_read, search_process_keyrings_rcu, request_key_auth_free_preparse, key_put, key_default_cmp, __rcu_read_lock, request_key_auth_describe, __rcu_read_unlock, request_key_auth_destroy, request_key_auth_preparse, sprintf)
+request_key_auth_describe -> (seq_printf, seq_puts)
+request_key_auth_destroy -> (call_rcu, request_key_auth_rcu_disposal)
+request_key_auth_new -> (refcount_warn_saturate, request_key_auth_revoke, request_key_auth_free_preparse, key_put, kmemdup, request_key_auth_describe, request_key_auth_destroy, sprintf, strlcpy, request_key_auth_read, kmalloc_trace, key_alloc, request_key_auth_preparse, __put_cred, request_key_auth_instantiate, down_read, key_instantiate_and_link, up_read, kfree)
+request_key_auth_rcu_disposal -> (key_put, __put_cred, kfree)
+request_key_auth_revoke -> (call_rcu, request_key_auth_rcu_disposal)

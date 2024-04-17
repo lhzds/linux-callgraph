@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utbuffer.o
+acpi_ut_debug_dump_buffer -> (acpi_ut_dump_buffer)
+acpi_ut_dump_buffer -> (acpi_os_printf)

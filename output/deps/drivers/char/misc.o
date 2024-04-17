@@ -1,0 +1,10 @@
+drivers/char/misc.o
+misc_deregister -> (mutex_lock, misc_devnode, mutex_unlock, device_destroy, ida_free)
+misc_devnode -> (kstrdup)
+misc_init -> (misc_open, _printk, misc_seq_next, misc_devnode, misc_seq_stop, remove_proc_entry, misc_seq_start, misc_seq_show, proc_create_seq_private, noop_llseek, class_unregister, class_register, __register_chrdev)
+misc_open -> (__request_module, mutex_lock, mutex_unlock)
+misc_register -> (mutex_lock, misc_devnode, mutex_unlock, ida_free, ida_alloc_range, device_create_with_groups)
+misc_seq_next -> (seq_list_next)
+misc_seq_show -> (seq_printf)
+misc_seq_start -> (seq_list_start, mutex_lock)
+misc_seq_stop -> (mutex_unlock)

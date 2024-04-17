@@ -1,0 +1,5 @@
+arch/x86/kernel/io_delay.o
+dmi_io_delay_0xed_port -> (_printk)
+io_delay_init -> (dmi_check_system, dmi_io_delay_0xed_port)
+io_delay_param -> (strcmp)
+native_io_delay -> (__const_udelay)

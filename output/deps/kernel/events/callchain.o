@@ -1,0 +1,6 @@
+kernel/events/callchain.o
+get_callchain_buffers -> (mutex_lock, mutex_unlock, __kmalloc_node, kfree, __kmalloc)
+get_perf_callchain -> (perf_callchain_user, perf_callchain_kernel)
+perf_event_max_stack_handler -> (mutex_unlock, mutex_lock, proc_dointvec_minmax)
+put_callchain_buffers -> (mutex_unlock, release_callchain_buffers_rcu, atomic_dec_and_mutex_lock, call_rcu)
+release_callchain_buffers_rcu -> (kfree)

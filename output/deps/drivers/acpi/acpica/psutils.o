@@ -1,0 +1,4 @@
+drivers/acpi/acpica/psutils.o
+acpi_ps_alloc_op -> (kmem_cache_alloc, acpi_ps_get_opcode_info)
+acpi_ps_create_scope_op -> (kmem_cache_alloc, acpi_ps_get_opcode_info)
+acpi_ps_free_op -> (acpi_os_release_object)

@@ -1,0 +1,4 @@
+net/ethtool/phc_vclocks.o
+phc_vclocks_cleanup_data -> (kfree)
+phc_vclocks_fill_reply -> (nla_put)
+phc_vclocks_prepare_data -> (ethnl_ops_complete, ethtool_get_phc_vclocks, ethnl_ops_begin)

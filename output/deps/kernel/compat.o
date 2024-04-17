@@ -1,0 +1,6 @@
+kernel/compat.o
+__ia32_compat_sys_sched_getaffinity -> (sched_getaffinity)
+__ia32_compat_sys_sched_setaffinity -> (sched_setaffinity)
+__ia32_compat_sys_sigprocmask -> (set_current_blocked)
+get_compat_sigset -> (_copy_from_user)
+put_compat_rusage -> (_copy_to_user)

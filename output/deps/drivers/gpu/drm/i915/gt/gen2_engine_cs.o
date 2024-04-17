@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/gt/gen2_engine_cs.o
+gen2_emit_flush -> (intel_ring_begin)
+gen3_emit_bb_start -> (intel_ring_begin)
+gen4_emit_bb_start -> (intel_ring_begin)
+gen4_emit_flush_rcs -> (intel_ring_begin)
+gen4_emit_flush_vcs -> (intel_ring_begin)
+gen5_irq_disable -> (gen5_gt_disable_irq)
+gen5_irq_enable -> (gen5_gt_enable_irq)
+i830_emit_bb_start -> (intel_ring_begin)

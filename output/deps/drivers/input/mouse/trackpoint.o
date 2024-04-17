@@ -1,0 +1,10 @@
+drivers/input/mouse/trackpoint.o
+trackpoint_detect -> (trackpoint_sync, psmouse_attr_show_helper, _dev_warn, trackpoint_reconnect, device_add_groups, input_set_capability, kmalloc_trace, ps2_command, psmouse_attr_set_helper, kfree, _dev_err, trackpoint_disconnect, trackpoint_is_attr_visible, trackpoint_show_int_attr, trackpoint_set_bit_attr, _dev_info, trackpoint_power_on_reset, trackpoint_set_int_attr)
+trackpoint_disconnect -> (psmouse_attr_show_helper, device_remove_groups, trackpoint_is_attr_visible, psmouse_attr_set_helper, trackpoint_show_int_attr, trackpoint_set_bit_attr, kfree, trackpoint_set_int_attr)
+trackpoint_is_attr_visible -> (psmouse_attr_show_helper, psmouse_attr_set_helper, trackpoint_show_int_attr, psmouse_from_serio, trackpoint_set_bit_attr, trackpoint_set_int_attr)
+trackpoint_power_on_reset -> (ps2_command)
+trackpoint_reconnect -> (trackpoint_sync, ps2_command)
+trackpoint_set_bit_attr -> (kstrtobool, ps2_command)
+trackpoint_set_int_attr -> (kstrtou8, ps2_command)
+trackpoint_show_int_attr -> (sprintf)
+trackpoint_sync -> (ps2_command)

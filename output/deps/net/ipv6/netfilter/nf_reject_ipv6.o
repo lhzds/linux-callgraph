@@ -1,0 +1,8 @@
+net/ipv6/netfilter/nf_reject_ipv6.o
+nf_reject_ip6_tcphdr_get -> (ipv6_skip_exthdr, nf_ip6_checksum, skb_copy_bits)
+nf_reject_ip6_tcphdr_put -> (csum_partial, csum_ipv6_magic, skb_put)
+nf_reject_ip6hdr_put -> (skb_put)
+nf_reject_skb_v6_tcp_reset -> (skb_put, __pskb_pull_tail, nf_reject_ip6_tcphdr_put, nf_reject_ip6_tcphdr_get, __alloc_skb)
+nf_reject_skb_v6_unreach -> (skb_copy_bits, skb_put, __pskb_pull_tail, csum_partial, nf_ip6_checksum, __alloc_skb, pskb_trim_rcsum_slow, ipv6_skip_exthdr, csum_ipv6_magic)
+nf_send_reset6 -> (__nf_ip6_route, nf_reject_ip6_tcphdr_put, ip6_dst_hoplimit, nf_ct_attach, ip6_local_out, __alloc_skb, ip6_route_output_flags, nf_reject_ip6_tcphdr_get, __ipv6_addr_type, dst_release, nf_ct_set_closing, xfrm_lookup, nf_reject_ip6hdr_put)
+nf_send_unreach6 -> (__nf_ip6_route, skb_copy_bits, icmp6_send, nf_ip6_checksum, ipv6_skip_exthdr)

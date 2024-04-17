@@ -1,0 +1,8 @@
+fs/ext4/readpage.o
+__read_end_io -> (folio_unlock, bio_put, mempool_free)
+decrypt_work -> (__read_end_io, verity_work, decrypt_work)
+ext4_exit_post_read_processing -> (mempool_destroy, kmem_cache_destroy)
+ext4_init_post_read_processing -> (kmem_cache_create, mempool_alloc_slab, mempool_free_slab, mempool_create, kmem_cache_destroy)
+ext4_mpage_readpages -> (__folio_put, xa_load, submit_bio, block_read_full_folio, bio_alloc_bioset, folio_unlock, bio_add_folio, mpage_end_io, ext4_map_blocks, ext4_get_block)
+mpage_end_io -> (__read_end_io, verity_work, decrypt_work)
+verity_work -> (__read_end_io, mempool_free)

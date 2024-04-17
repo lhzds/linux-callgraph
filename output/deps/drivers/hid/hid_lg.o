@@ -1,0 +1,8 @@
+drivers/hid/hid_lg.o
+lg_driver_exit -> (lg_remove, lg_raw_event, lg_input_mapping, lg_event, lg_report_fixup, lg_probe, hid_unregister_driver, lg_input_mapped)
+lg_driver_init -> (__hid_register_driver, lg_remove, lg_raw_event, lg_input_mapping, lg_event, lg_report_fixup, lg_probe, lg_input_mapped)
+lg_event -> (lg4ff_adjust_input_event, input_event)
+lg_probe -> (init_wait_entry, __SCT__might_resched, hid_is_usb, schedule_timeout, lg4ff_init, hid_hw_stop, hid_hw_raw_request, kmalloc_trace, finish_wait, get_random_bytes, hid_hw_start, _dev_err, prepare_to_wait_event, kmemdup, hid_open_report, __init_waitqueue_head, kfree, lgff_init)
+lg_raw_event -> (lg4ff_raw_event)
+lg_remove -> (hid_hw_stop, kfree, lg4ff_deinit)
+lg_report_fixup -> (_dev_info)

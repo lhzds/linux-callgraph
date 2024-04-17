@@ -1,0 +1,3 @@
+arch/x86/realmode/rm/video_vesa.o
+vesa_probe -> (vesa_set_mode, intcall, vesa_probe, initregs)
+vesa_set_mode -> (intcall, initregs)

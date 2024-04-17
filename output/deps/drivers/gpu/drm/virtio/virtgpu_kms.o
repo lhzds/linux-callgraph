@@ -1,0 +1,8 @@
+drivers/gpu/drm/virtio/virtgpu_kms.o
+virtio_gpu_config_changed_work_func -> (__SCT__might_resched, virtio_gpu_notify, virtio_gpu_cmd_get_display_info, virtio_gpu_cmd_get_edids, drm_helper_hpd_irq_event)
+virtio_gpu_deinit -> (flush_work, virtio_reset_device)
+virtio_gpu_driver_open -> (ida_alloc_range, kfree, kmalloc_trace, __mutex_init)
+virtio_gpu_driver_postclose -> (virtio_gpu_notify, kfree, virtio_gpu_cmd_context_destroy, ida_free)
+virtio_gpu_get_capsets -> (__drm_err, _printk, __SCT__might_resched, init_wait_entry, virtio_gpu_notify, _raw_spin_unlock, schedule_timeout, _raw_spin_lock, finish_wait, drmm_kmalloc, prepare_to_wait_event, virtio_gpu_cmd_get_capset_info, drmm_kfree)
+virtio_gpu_init -> (__SCT__might_resched, virtio_gpu_get_capsets, virtio_gpu_ctrl_ack, virtio_gpu_cmd_get_edids, __drm_err, init_wait_entry, virtio_gpu_alloc_vbufs, virtio_gpu_notify, virtio_gpu_free_vbufs, virtio_gpu_cmd_get_display_info, virtio_device_ready, prepare_to_wait_event, virtio_gpu_config_changed_work_func, virtio_gpu_cursor_ack, _printk, virtio_gpu_dequeue_cursor_func, virtio_gpu_modeset_init, virtio_gpu_array_put_free_work, virtio_check_driver_offered_feature, __init_waitqueue_head, dma_fence_context_alloc, __devm_request_region, virtio_gpu_dequeue_ctrl_func, schedule_timeout, drm_mm_init, finish_wait, drmm_kmalloc)
+virtio_gpu_release -> (virtio_gpu_free_vbufs, virtio_gpu_modeset_fini, drm_mm_takedown, kfree)

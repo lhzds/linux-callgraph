@@ -1,0 +1,6 @@
+drivers/gpu/drm/drm_damage_helper.o
+drm_atomic_helper_check_plane_damage -> (drm_property_blob_put)
+drm_atomic_helper_damage_iter_init -> (drm_plane_get_damage_clips, drm_plane_get_damage_clips_count)
+drm_atomic_helper_damage_iter_next -> (drm_rect_intersect)
+drm_atomic_helper_damage_merged -> (drm_atomic_helper_damage_iter_init, drm_rect_intersect)
+drm_atomic_helper_dirtyfb -> (__drm_atomic_state_free, drm_property_create_blob, refcount_warn_saturate, drm_modeset_acquire_fini, drm_property_replace_blob, drm_modeset_backoff, drm_modeset_unlock, drm_atomic_state_alloc, drm_modeset_lock, drm_atomic_get_plane_state, drm_modeset_acquire_init, drm_atomic_commit, drm_atomic_state_clear, drm_modeset_drop_locks, kfree, __kmalloc, drm_property_blob_put)

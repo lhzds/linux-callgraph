@@ -1,0 +1,8 @@
+net/ipv4/ip_options.o
+__ip_options_compile -> (inet_addr_type, ns_capable, inet_current_timestamp, fib_compute_spec_dst, cipso_v4_validate)
+__ip_options_echo -> (inet_addr_type, bcmp)
+ip_forward_options -> (_printk, ip_send_check, bcmp, ip_rt_get_source, net_ratelimit)
+ip_options_build -> (inet_current_timestamp, ip_rt_get_source)
+ip_options_compile -> (__icmp_send, __ip_options_compile)
+ip_options_get -> (__ip_options_compile, kfree, __kmalloc, _copy_from_user)
+ip_options_rcv_srr -> (ip_route_input_noref, rcuref_get_slowpath, dst_release, __rcu_read_lock, __rcu_read_unlock, __icmp_send)

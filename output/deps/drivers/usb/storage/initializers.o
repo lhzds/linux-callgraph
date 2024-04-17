@@ -1,0 +1,4 @@
+drivers/usb/storage/initializers.o
+usb_stor_euscsi_init -> (usb_stor_control_msg)
+usb_stor_huawei_e220_init -> (usb_stor_control_msg)
+usb_stor_ucr61s2b_init -> (usb_stor_bulk_transfer_buf)

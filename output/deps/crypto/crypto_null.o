@@ -1,0 +1,6 @@
+crypto/crypto_null.o
+crypto_get_default_null_skcipher -> (mutex_unlock, crypto_alloc_sync_skcipher, mutex_lock)
+crypto_null_mod_fini -> (crypto_unregister_skcipher, null_crypt, null_skcipher_setkey, crypto_unregister_algs, null_init, null_hash_setkey, null_update, null_setkey, null_final, null_compress, null_skcipher_crypt, null_digest, crypto_unregister_shash)
+crypto_null_mod_init -> (null_crypt, null_skcipher_setkey, crypto_unregister_algs, null_init, null_hash_setkey, null_update, crypto_register_algs, crypto_register_skcipher, null_setkey, null_final, null_compress, null_skcipher_crypt, null_digest, crypto_unregister_shash, crypto_register_shash)
+crypto_put_default_null_skcipher -> (mutex_unlock, mutex_lock, crypto_destroy_tfm)
+null_skcipher_crypt -> (skcipher_walk_virt, skcipher_walk_done)

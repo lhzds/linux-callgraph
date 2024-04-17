@@ -1,0 +1,12 @@
+net/core/flow_offload.o
+flow_action_cookie_create -> (__kmalloc)
+flow_action_cookie_destroy -> (kfree)
+flow_block_cb_alloc -> (kmalloc_trace)
+flow_block_cb_free -> (kfree)
+flow_block_cb_setup_simple -> (kmalloc_trace)
+flow_indr_block_cb_alloc -> (kmalloc_trace)
+flow_indr_dev_register -> (mutex_lock, refcount_warn_saturate, mutex_unlock, kmalloc_trace, tcf_action_reoffload_cb)
+flow_indr_dev_setup_offload -> (mutex_lock, kmalloc_trace, kfree, mutex_unlock)
+flow_indr_dev_unregister -> (mutex_lock, refcount_warn_saturate, mutex_unlock, tcf_action_reoffload_cb, kfree)
+flow_rule_alloc -> (__kmalloc)
+offload_action_alloc -> (__kmalloc)

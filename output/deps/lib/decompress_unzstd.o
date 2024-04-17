@@ -1,0 +1,5 @@
+lib/decompress_unzstd.o
+__unzstd -> (zstd_dstream_workspace_bound, zstd_init_dstream, vfree, vmalloc, decompress_single, zstd_decompress_stream, zstd_get_frame_header, handle_zstd_error)
+decompress_single -> (vfree, vmalloc, zstd_dctx_workspace_bound, zstd_init_dctx, zstd_find_frame_compressed_size, handle_zstd_error, zstd_decompress_dctx)
+handle_zstd_error -> (zstd_get_error_code, zstd_is_error)
+unzstd -> (__unzstd)

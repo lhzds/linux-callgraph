@@ -1,0 +1,7 @@
+net/ipv6/netfilter/ip6table_mangle.o
+ip6table_mangle_fini -> (ip6table_mangle_net_pre_exit, unregister_pernet_subsys, ip6table_mangle_net_exit, xt_unregister_template, kfree)
+ip6table_mangle_hook -> (ip6t_do_table, ip6_route_me_harder)
+ip6table_mangle_init -> (register_pernet_subsys, xt_hook_ops_alloc, ip6table_mangle_net_pre_exit, ip6table_mangle_table_init, ip6table_mangle_net_exit, xt_unregister_template, kfree, xt_register_template, ip6table_mangle_hook)
+ip6table_mangle_net_exit -> (ip6t_unregister_table_exit)
+ip6table_mangle_net_pre_exit -> (ip6t_unregister_table_pre_exit)
+ip6table_mangle_table_init -> (ip6t_alloc_initial_table, ip6t_register_table, kfree)

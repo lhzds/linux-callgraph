@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utownerid.o
+acpi_ut_allocate_owner_id -> (acpi_ut_acquire_mutex, acpi_ut_release_mutex, acpi_error)
+acpi_ut_release_owner_id -> (acpi_ut_acquire_mutex, acpi_ut_release_mutex, acpi_error)

@@ -1,0 +1,7 @@
+kernel/irq/devres.o
+__devm_irq_alloc_descs -> (__devres_alloc_node, __irq_alloc_descs, devm_irq_desc_release, devres_add, devres_free)
+devm_free_irq -> (devm_irq_release, devres_destroy, free_irq, devm_irq_match)
+devm_irq_desc_release -> (irq_free_descs)
+devm_irq_release -> (free_irq)
+devm_request_any_context_irq -> (__devres_alloc_node, devres_add, request_any_context_irq, devm_irq_release, devres_free)
+devm_request_threaded_irq -> (__devres_alloc_node, request_threaded_irq, devres_add, devm_irq_release, devres_free)

@@ -1,0 +1,8 @@
+drivers/pnp/manager.o
+pnp_activate_dev -> (_dev_printk, pnp_auto_config_dev, dbg_pnp_show_resources, _dev_err, _dev_info)
+pnp_assign_resources -> (pnp_check_dma, mutex_lock, _dev_printk, pnp_check_port, dbg_pnp_show_resources, mutex_unlock, pnp_add_io_resource, pnp_check_mem, pnp_add_mem_resource, _find_first_bit, pnp_check_irq, pnp_get_resource, pnp_add_irq_resource, pnp_add_dma_resource, pnp_free_resource, _find_next_bit)
+pnp_auto_config_dev -> (_dev_err, pnp_assign_resources, _dev_printk)
+pnp_disable_dev -> (mutex_lock, _dev_printk, mutex_unlock, _dev_err, _dev_info, pnp_free_resource)
+pnp_init_resources -> (pnp_free_resources)
+pnp_start_dev -> (_dev_err, _dev_info, _dev_printk, dbg_pnp_show_resources)
+pnp_stop_dev -> (_dev_err, _dev_info, _dev_printk)

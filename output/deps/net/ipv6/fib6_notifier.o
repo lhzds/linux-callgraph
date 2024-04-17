@@ -1,0 +1,7 @@
+net/ipv6/fib6_notifier.o
+call_fib6_notifier -> (call_fib_notifier)
+call_fib6_notifiers -> (call_fib_notifiers)
+fib6_dump -> (fib6_tables_dump)
+fib6_notifier_exit -> (fib_notifier_ops_unregister)
+fib6_notifier_init -> (fib6_seq_read, fib6_dump, fib_notifier_ops_register)
+fib6_seq_read -> (fib6_tables_seq_read)

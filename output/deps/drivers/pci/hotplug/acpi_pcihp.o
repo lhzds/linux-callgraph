@@ -1,0 +1,5 @@
+drivers/pci/hotplug/acpi_pcihp.o
+acpi_get_hp_hw_control_from_firmware -> (_printk, acpi_get_name, acpi_evaluate_object, acpi_is_root_bridge, acpi_pci_find_root, kfree, pci_find_host_bridge, is_acpi_device_node, acpi_get_parent, _dev_info)
+acpi_pci_check_ejectable -> (acpi_evaluate_integer, acpi_get_parent, is_acpi_device_node, acpi_has_method)
+acpi_pci_detect_ejectable -> (acpi_walk_namespace, check_hotplug)
+check_hotplug -> (acpi_evaluate_integer, acpi_has_method)

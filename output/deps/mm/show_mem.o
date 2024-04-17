@@ -1,0 +1,6 @@
+mm/show_mem.o
+__show_free_areas -> (_printk, node_page_state, _raw_spin_lock_irqsave, next_online_pgdat, _raw_spin_unlock_irqrestore, first_online_pgdat, hugetlb_show_meminfo_node, show_swap_cache_info, next_zone)
+__show_mem -> (_printk, __show_free_areas, next_zone, first_online_pgdat)
+si_mem_available -> (next_zone, first_online_pgdat)
+si_meminfo -> (nr_blockdev_pages)
+si_meminfo_node -> (node_page_state, sum_zone_node_page_state)

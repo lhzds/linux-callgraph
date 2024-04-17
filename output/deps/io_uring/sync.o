@@ -1,0 +1,4 @@
+io_uring/sync.o
+io_fallocate -> (__fsnotify_parent, backing_file_real_path, fsnotify, vfs_fallocate)
+io_fsync -> (vfs_fsync_range)
+io_sync_file_range -> (sync_file_range)

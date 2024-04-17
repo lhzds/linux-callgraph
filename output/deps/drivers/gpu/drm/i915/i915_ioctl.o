@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/i915_ioctl.o
+i915_reg_read_ioctl -> (_raw_spin_lock_irqsave, intel_uncore_forcewake_for_reg, intel_uncore_forcewake_get__locked, _raw_spin_unlock_irqrestore, intel_runtime_pm_put_unchecked, intel_uncore_forcewake_put__locked, intel_runtime_pm_get)

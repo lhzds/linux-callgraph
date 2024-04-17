@@ -1,0 +1,6 @@
+drivers/acpi/processor_pdc.o
+acpi_early_processor_set_pdc -> (set_no_mwait, early_init_pdc, dmi_check_system, acpi_walk_namespace, acpi_get_devices)
+acpi_processor_set_pdc -> (acpi_evaluate_object, _printk, kfree, kmalloc_trace)
+early_init_pdc -> (processor_physically_present, acpi_processor_set_pdc)
+processor_physically_present -> (acpi_evaluate_integer, acpi_get_type, acpi_evaluate_object, acpi_get_cpuid)
+set_no_mwait -> (_printk)

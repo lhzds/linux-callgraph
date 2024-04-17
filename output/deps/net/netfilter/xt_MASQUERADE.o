@@ -1,0 +1,6 @@
+net/netfilter/xt_MASQUERADE.o
+masquerade_tg -> (nf_nat_masquerade_ipv4)
+masquerade_tg6 -> (nf_nat_masquerade_ipv6)
+masquerade_tg6_checkentry -> (nf_ct_netns_get)
+masquerade_tg_check -> (nf_ct_netns_get)
+masquerade_tg_destroy -> (nf_ct_netns_put)

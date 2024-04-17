@@ -1,0 +1,4 @@
+security/selinux/status.o
+selinux_kernel_status_page -> (mutex_unlock, security_get_allow_unknown, mutex_lock, alloc_pages)
+selinux_status_update_policyload -> (mutex_unlock, security_get_allow_unknown, mutex_lock)
+selinux_status_update_setenforce -> (mutex_unlock, mutex_lock)

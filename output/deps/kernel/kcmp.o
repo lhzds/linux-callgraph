@@ -1,0 +1,5 @@
+kernel/kcmp.o
+__ia32_sys_kcmp -> (__se_sys_kcmp)
+__se_sys_kcmp -> (ptrace_may_access, get_epoll_tfile_raw_ptr, refcount_warn_saturate, _copy_from_user, find_task_by_vpid, up_read, down_read_killable, task_lookup_fd_rcu, __rcu_read_lock, fget_task, __put_task_struct, fput, __rcu_read_unlock)
+__x64_sys_kcmp -> (__se_sys_kcmp)
+kcmp_cookies_init -> (get_random_bytes)

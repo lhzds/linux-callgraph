@@ -1,0 +1,3 @@
+ipc/mq_sysctl.o
+retire_mq_sysctls -> (unregister_sysctl_table, kfree, retire_sysctl_set)
+setup_mq_sysctls -> (set_lookup, proc_dointvec, __register_sysctl_table, setup_sysctl_set, kmemdup, retire_sysctl_set, kfree, set_is_seen, proc_dointvec_minmax)

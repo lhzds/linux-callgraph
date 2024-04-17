@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/i915_cmd_parser.o
+gen7_blt_get_cmd_length_mask -> (___drm_dbg)
+gen7_bsd_get_cmd_length_mask -> (___drm_dbg)
+gen7_render_get_cmd_length_mask -> (___drm_dbg)
+gen9_blt_get_cmd_length_mask -> (___drm_dbg)
+i915_cmd_parser_get_version -> (rb_first, rb_next)
+intel_engine_cleanup_cmd_parser -> (kfree)
+intel_engine_cmd_parser -> (drm_clflush_virt_range, ___drm_dbg, i915_gem_object_prepare_write, i915_gem_object_prepare_read, __i915_gem_object_flush_map, bitmap_zalloc, i915_memcpy_from_wc, __i915_gem_object_get_page, i915_unaligned_memcpy_from_wc, i915_gem_object_pin_map, kfree)
+intel_engine_init_cmd_parser -> (gen7_render_get_cmd_length_mask, gen7_bsd_get_cmd_length_mask, __warn_printk, gen7_blt_get_cmd_length_mask, kmalloc_trace, _dev_err, gen9_blt_get_cmd_length_mask, kfree)

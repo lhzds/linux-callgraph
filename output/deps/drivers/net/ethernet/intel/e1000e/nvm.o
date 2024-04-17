@@ -1,0 +1,8 @@
+drivers/net/ethernet/intel/e1000e/nvm.o
+e1000_shift_out_eec_bits -> (__udelay, __ew32)
+e1000e_acquire_nvm -> (__ew32, __const_udelay)
+e1000e_poll_eerd_eewr_done -> (__const_udelay)
+e1000e_read_nvm_eerd -> (__ew32, __const_udelay)
+e1000e_release_nvm -> (__udelay, __ew32)
+e1000e_reload_nvm_generic -> (usleep_range_state, __ew32)
+e1000e_write_nvm_spi -> (__udelay, usleep_range_state, __const_udelay, e1000_shift_out_eec_bits, __ew32)

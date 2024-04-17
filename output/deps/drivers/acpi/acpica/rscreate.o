@@ -1,0 +1,5 @@
+drivers/acpi/acpica/rscreate.o
+acpi_buffer_to_resource -> (acpi_rs_convert_aml_to_resources, acpi_rs_get_list_length, acpi_ut_walk_aml_resources, kfree, __kmalloc)
+acpi_rs_create_aml_resources -> (acpi_ut_initialize_buffer, acpi_rs_get_aml_length, acpi_rs_convert_resources_to_aml)
+acpi_rs_create_pci_routing_table -> (strlen, acpi_ut_initialize_buffer, acpi_ut_get_object_type_name, acpi_error, acpi_ns_handle_to_pathname, strcpy, acpi_rs_get_pci_routing_table_length)
+acpi_rs_create_resource_list -> (acpi_rs_convert_aml_to_resources, acpi_rs_get_list_length, acpi_ut_walk_aml_resources, acpi_ut_initialize_buffer)

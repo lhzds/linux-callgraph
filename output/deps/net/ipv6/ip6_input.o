@@ -1,0 +1,10 @@
+net/ipv6/ip6_input.o
+ip6_input -> (nf_hook_slow, ip6_input_finish, ktime_get_with_offset, ip6_protocol_deliver_rcu, __rcu_read_lock, __rcu_read_unlock)
+ip6_input_finish -> (__rcu_read_unlock, ip6_protocol_deliver_rcu, __rcu_read_lock, ktime_get_with_offset)
+ip6_mc_input -> (ipv6_chk_mcast_addr, kfree_skb_reason, ip6_input)
+ip6_protocol_deliver_rcu -> (nf_conntrack_destroy, __xfrm_policy_check, icmp6_send, refcount_warn_saturate, __pskb_pull_tail, ipv6_chk_mcast_addr, csum_partial, consume_skb, tcp_v6_rcv, udpv6_rcv, kfree_skb_reason, raw6_local_deliver)
+ip6_rcv_core -> (netdev_core_stats_alloc, skb_clone, __pskb_pull_tail, consume_skb, pskb_trim_rcsum_slow, ipv6_parse_hopopts, __rcu_read_lock, __rcu_read_unlock, kfree_skb_reason, sock_pfree)
+ip6_rcv_finish -> (ip6_route_input, udp_v6_early_demux, tcp_v6_early_demux, ip_local_deliver, ip6_input)
+ip6_sublist_rcv -> (nf_hook_slow_list, ip6_route_input, ip6_rcv_finish, rcuref_get_slowpath, tcp_v6_early_demux, ip_local_deliver, udp_v6_early_demux, __rcu_read_lock, ip6_input, __rcu_read_unlock)
+ipv6_list_rcv -> (ip6_rcv_core, ip6_sublist_rcv)
+ipv6_rcv -> (nf_hook_slow, ip6_rcv_finish, ip6_rcv_core, __rcu_read_lock, __rcu_read_unlock)

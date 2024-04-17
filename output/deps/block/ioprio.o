@@ -1,0 +1,8 @@
+block/ioprio.o
+__ia32_sys_ioprio_get -> (__se_sys_ioprio_get)
+__ia32_sys_ioprio_set -> (__se_sys_ioprio_set)
+__se_sys_ioprio_get -> (do_no_restart_syscall, find_vpid, _raw_spin_unlock, find_task_by_vpid, _raw_read_unlock, _raw_spin_lock, _raw_read_lock, __task_pid_nr_ns, free_uid, __rcu_read_lock, __rcu_read_unlock, security_task_getioprio, find_user)
+__se_sys_ioprio_set -> (do_no_restart_syscall, capable, find_task_by_vpid, find_vpid, _raw_read_unlock, set_task_ioprio, _raw_read_lock, __task_pid_nr_ns, free_uid, __rcu_read_lock, __rcu_read_unlock, find_user)
+__x64_sys_ioprio_get -> (__se_sys_ioprio_get)
+__x64_sys_ioprio_set -> (__se_sys_ioprio_set)
+ioprio_check_cap -> (capable)

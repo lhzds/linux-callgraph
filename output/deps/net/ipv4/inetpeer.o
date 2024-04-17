@@ -1,0 +1,6 @@
+net/ipv4/inetpeer.o
+inet_getpeer -> (_raw_spin_lock_bh, kmem_cache_alloc, refcount_dec_if_one, rb_insert_color, refcount_warn_saturate, inetpeer_free_rcu, __rcu_read_lock, call_rcu, rb_erase, __rcu_read_unlock, _raw_spin_unlock_bh)
+inet_initpeers -> (kmem_cache_create)
+inet_putpeer -> (refcount_warn_saturate, call_rcu, inetpeer_free_rcu)
+inetpeer_free_rcu -> (kmem_cache_free)
+inetpeer_invalidate_tree -> (refcount_warn_saturate, inetpeer_free_rcu, rb_next, rb_first, __SCT__cond_resched, call_rcu, rb_erase)

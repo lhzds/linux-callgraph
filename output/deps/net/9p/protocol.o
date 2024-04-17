@@ -1,0 +1,10 @@
+net/9p/protocol.o
+p9_msg_buf_size -> (strlen, strcmp)
+p9dirent_read -> (__SCT__tp_func_9p_protocol_dump, __traceiter_9p_protocol_dump, p9pdu_readf, __probestub_9p_protocol_dump, kfree, strscpy)
+p9pdu_finalize -> (__probestub_9p_protocol_dump, __traceiter_9p_protocol_dump, p9pdu_writef, __SCT__tp_func_9p_protocol_dump)
+p9pdu_prepare -> (p9pdu_writef)
+p9pdu_readf -> (kfree, __kmalloc, p9pdu_readf)
+p9pdu_vwritef -> (p9pdu_writef, strlen, iov_iter_revert, _copy_from_iter)
+p9pdu_writef -> (p9pdu_vwritef)
+p9stat_free -> (kfree)
+p9stat_read -> (__probestub_9p_protocol_dump, __traceiter_9p_protocol_dump, __SCT__tp_func_9p_protocol_dump, p9pdu_readf)

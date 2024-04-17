@@ -1,0 +1,10 @@
+fs/netfs/objects.o
+netfs_alloc_request -> (kmalloc_trace, kfree)
+netfs_alloc_subrequest -> (kmalloc_trace, netfs_get_request)
+netfs_clear_subrequests -> (refcount_warn_saturate, __probestub_netfs_sreq_ref, __traceiter_netfs_sreq_ref, netfs_free_subrequest, __SCT__tp_func_netfs_sreq_ref)
+netfs_free_request -> (refcount_warn_saturate, __probestub_netfs_sreq_ref, __traceiter_netfs_rreq, __traceiter_netfs_sreq_ref, __SCT__tp_func_netfs_rreq, netfs_free_subrequest, __probestub_netfs_rreq, __SCT__tp_func_netfs_sreq_ref, kfree)
+netfs_free_subrequest -> (refcount_warn_saturate, __probestub_netfs_rreq_ref, __probestub_netfs_sreq, queue_work_on, __traceiter_netfs_sreq, __SCT__tp_func_netfs_rreq_ref, netfs_free_request, __traceiter_netfs_rreq_ref, kfree, __SCT__tp_func_netfs_sreq)
+netfs_get_request -> (__SCT__tp_func_netfs_rreq_ref, refcount_warn_saturate, __probestub_netfs_rreq_ref, __traceiter_netfs_rreq_ref)
+netfs_get_subrequest -> (__traceiter_netfs_sreq_ref, __SCT__tp_func_netfs_sreq_ref, refcount_warn_saturate, __probestub_netfs_sreq_ref)
+netfs_put_request -> (refcount_warn_saturate, __probestub_netfs_rreq_ref, queue_work_on, __SCT__tp_func_netfs_rreq_ref, netfs_free_request, __traceiter_netfs_rreq_ref)
+netfs_put_subrequest -> (refcount_warn_saturate, __probestub_netfs_sreq_ref, __traceiter_netfs_sreq_ref, netfs_free_subrequest, __SCT__tp_func_netfs_sreq_ref)

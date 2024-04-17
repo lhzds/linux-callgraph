@@ -1,0 +1,7 @@
+arch/x86/realmode/rm/video_vga.o
+vga_probe -> (intcall, vga_set_mode, initregs, vga_probe)
+vga_set_14font -> (intcall, initregs)
+vga_set_8font -> (intcall, initregs)
+vga_set_mode -> (__outb, intcall, vga_set_14font, vga_set_8font, initregs, vga_set_480_scanlines, __outw, __inb)
+vga_crtc -> (__outb, __outw, __inb)
+vga_set_480_scanlines -> (__outb, __outw, __inb)

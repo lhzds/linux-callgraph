@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/soc/intel_dram.o
+bxt_get_dram_info -> (_dev_info, __warn_printk, __drm_dev_dbg, dev_driver_string)
+gen11_get_dram_info -> (skl_get_dram_info, icl_pcode_read_mem_global_info)
+icl_pcode_read_mem_global_info -> (__warn_printk, snb_pcode_read)
+intel_dram_detect -> (__drm_dev_dbg, icl_pcode_read_mem_global_info, vlv_cck_read, __warn_printk, gen11_get_dram_info, vlv_iosf_sb_get, bxt_get_dram_info, vlv_iosf_sb_put, skl_get_dram_info, vlv_punit_read)
+intel_dram_edram_detect -> (_dev_info)
+skl_dram_get_channel_info -> (skl_dram_get_dimm_info, __drm_dev_dbg)
+skl_dram_get_dimm_info -> (__warn_printk, __drm_dev_dbg)
+skl_get_dram_info -> (skl_dram_get_channel_info, _dev_info, __drm_dev_dbg, bcmp)

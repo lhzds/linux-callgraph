@@ -1,0 +1,8 @@
+net/sunrpc/svcauth.o
+auth_domain_cleanup -> (_printk)
+auth_domain_find -> (refcount_warn_saturate, strcmp, __rcu_read_lock, hashlen_string, __rcu_read_unlock)
+auth_domain_lookup -> (refcount_warn_saturate, strcmp, _raw_spin_unlock, _raw_spin_lock, hashlen_string)
+auth_domain_put -> (refcount_dec_and_lock, _raw_spin_unlock)
+svc_authenticate -> (svcauth_tls_accept, svcauth_unix_domain_release, svcauth_unix_set_client, svcauth_unix_release, __rcu_read_lock, svcauth_unix_accept, __rcu_read_unlock, svcauth_null_accept, svcauth_null_release, xdr_inline_decode)
+svc_auth_register -> (svcauth_tls_accept, svcauth_unix_domain_release, svcauth_unix_set_client, svcauth_unix_release, svcauth_unix_accept, svcauth_null_accept, svcauth_null_release)
+svc_auth_unregister -> (svcauth_tls_accept, svcauth_unix_domain_release, svcauth_unix_set_client, svcauth_unix_release, svcauth_unix_accept, svcauth_null_accept, svcauth_null_release)

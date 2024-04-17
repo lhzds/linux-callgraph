@@ -1,0 +1,5 @@
+drivers/acpi/acpica/utaddress.o
+acpi_ut_add_address_range -> (kmalloc_trace)
+acpi_ut_check_address_range -> (acpi_ns_get_normalized_pathname, acpi_warning, acpi_ut_get_region_name, kfree)
+acpi_ut_delete_address_lists -> (kfree)
+acpi_ut_remove_address_range -> (kfree)

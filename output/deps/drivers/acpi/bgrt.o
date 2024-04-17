@@ -1,0 +1,8 @@
+drivers/acpi/bgrt.o
+acpi_parse_bgrt -> (efi_bgrt_init)
+bgrt_init -> (kobject_create_and_add, _printk, status_show, memremap, type_show, kobject_put, version_show, yoffset_show, sysfs_create_group, xoffset_show, memunmap, image_read)
+status_show -> (sysfs_emit)
+type_show -> (sysfs_emit)
+version_show -> (sysfs_emit)
+xoffset_show -> (sysfs_emit)
+yoffset_show -> (sysfs_emit)

@@ -1,0 +1,8 @@
+drivers/rtc/class.o
+__devm_rtc_register_device -> (device_property_read_u32_array, cdev_device_del, __rtc_read_alarm, mutex_lock, _dev_warn, cdev_device_add, rtc_proc_add_device, mutex_unlock, mktime64, rtc_valid_tm, __devm_add_action, rtc_dev_prepare, rtc_initialize_alarm, rtc_proc_del_device, _dev_info, devm_rtc_unregister_device)
+devm_rtc_allocate_device -> (put_device, __mutex_init, device_initialize, rtc_uie_update_irq, rtc_aie_update_irq, rtc_pie_update_irq, kmalloc_trace, rtc_timer_do_work, rtc_timer_init, ida_free, rtc_device_release, ida_alloc_range, rtc_get_dev_attribute_groups, __devm_add_action, devm_rtc_release_device, dev_set_name, __init_waitqueue_head, hrtimer_init)
+devm_rtc_device_register -> (__devm_rtc_register_device, devm_rtc_allocate_device)
+devm_rtc_release_device -> (put_device)
+devm_rtc_unregister_device -> (mutex_unlock, cdev_device_del, mutex_lock, rtc_proc_del_device)
+rtc_device_release -> (mutex_lock, mutex_unlock, timerqueue_del, ida_free, kfree, cancel_work_sync)
+rtc_init -> (_printk, rtc_dev_init, class_create)

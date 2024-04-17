@@ -1,0 +1,6 @@
+net/ipv6/udp_offload.o
+udp6_gro_complete -> (csum_ipv6_magic, udp_gro_complete, udp6_lib_lookup_skb)
+udp6_gro_receive -> (__udp6_lib_lookup, __pskb_pull_tail, __skb_gro_checksum_complete, udp_gro_receive, csum_ipv6_magic)
+udp6_ufo_fragment -> (__pskb_pull_tail, __udp_gso_segment, skb_checksum, csum_ipv6_magic, ipv6_proxy_select_ident, pskb_expand_head, ip6_find_1stfragopt, skb_segment, skb_udp_tunnel_segment)
+udpv6_offload_exit -> (udp6_ufo_fragment, udp6_gro_complete, inet6_del_offload, udp6_gro_receive)
+udpv6_offload_init -> (udp6_ufo_fragment, udp6_gro_complete, udp6_gro_receive, inet6_add_offload)

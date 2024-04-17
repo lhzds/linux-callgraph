@@ -1,0 +1,5 @@
+arch/x86/events/utils.o
+branch_type -> (get_branch_type)
+branch_type_fused -> (get_branch_type)
+decode_branch_type -> (insn_get_modrm, insn_get_immediate, insn_get_opcode)
+get_branch_type -> (insn_init, copy_from_user_nmi, decode_branch_type, insn_get_length, kernel_text_address)

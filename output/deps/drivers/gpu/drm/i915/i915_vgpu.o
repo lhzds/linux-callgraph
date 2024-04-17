@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/i915_vgpu.o
+intel_vgpu_detect -> (pci_iounmap, __mutex_init, _dev_err, pci_iomap_range, _dev_info)
+intel_vgt_balloon -> (_dev_err, vgt_deballoon_space, _dev_info, vgt_balloon_space)
+intel_vgt_deballoon -> (drm_mm_remove_node, __drm_dev_dbg)
+vgt_balloon_space -> (i915_gem_gtt_reserve, _dev_info)
+vgt_deballoon_space -> (drm_mm_remove_node, __drm_dev_dbg)

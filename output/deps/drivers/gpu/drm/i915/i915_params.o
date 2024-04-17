@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/i915_params.o
+i915_params_copy -> (kstrdup)
+i915_params_dump -> (drm_printf)
+i915_params_free -> (kfree)

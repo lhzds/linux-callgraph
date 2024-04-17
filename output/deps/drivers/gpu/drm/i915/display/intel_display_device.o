@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/display/intel_display_device.o
+intel_display_device_info_runtime_init -> (_dev_info, __warn_printk, dev_driver_string)
+intel_display_device_probe -> (pci_iounmap, __drm_dev_dbg, pci_match_id, _dev_err, pci_iomap_range, ioread32)

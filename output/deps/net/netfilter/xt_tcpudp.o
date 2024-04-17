@@ -1,0 +1,8 @@
+net/netfilter/xt_tcpudp.o
+icmp6_match -> (skb_copy_bits)
+icmp_match -> (skb_copy_bits)
+tcp_find_option -> (skb_copy_bits)
+tcp_mt -> (skb_copy_bits, tcp_find_option)
+tcpudp_mt_exit -> (tcp_mt, icmp_match, udp_mt_check, xt_unregister_matches, icmp6_match, udp_mt, icmp6_checkentry, icmp_checkentry, tcp_mt_check)
+tcpudp_mt_init -> (tcp_mt, icmp_match, udp_mt_check, xt_register_matches, icmp6_match, udp_mt, icmp6_checkentry, icmp_checkentry, tcp_mt_check)
+udp_mt -> (skb_copy_bits)

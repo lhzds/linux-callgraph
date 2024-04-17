@@ -1,0 +1,10 @@
+kernel/smpboot.o
+__smpboot_create_thread -> (kthread_park, refcount_warn_saturate, kthread_set_per_cpu, kthread_create_on_cpu, wait_task_inactive, kfree, smpboot_thread_fn, kmalloc_node_trace)
+idle_threads_init -> (_printk, fork_idle)
+smpboot_create_threads -> (mutex_lock, __smpboot_create_thread, mutex_unlock)
+smpboot_destroy_threads -> (kthread_stop, refcount_warn_saturate, __put_task_struct)
+smpboot_park_threads -> (mutex_lock, kthread_park, mutex_unlock)
+smpboot_register_percpu_thread -> (mutex_lock, cpus_read_unlock, mutex_unlock, __smpboot_create_thread, kthread_unpark, smpboot_destroy_threads, cpus_read_lock)
+smpboot_thread_fn -> (schedule, kthread_should_stop, kthread_should_park, kfree, kthread_parkme)
+smpboot_unpark_threads -> (mutex_unlock, mutex_lock, kthread_unpark)
+smpboot_unregister_percpu_thread -> (mutex_lock, cpus_read_unlock, mutex_unlock, smpboot_destroy_threads, cpus_read_lock)

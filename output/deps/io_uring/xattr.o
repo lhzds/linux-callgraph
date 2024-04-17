@@ -1,0 +1,11 @@
+io_uring/xattr.o
+__io_getxattr_prep -> (strncpy_from_user, kmalloc_trace, kfree)
+io_fgetxattr -> (kfree, kvfree, do_getxattr, putname)
+io_fgetxattr_prep -> (__io_getxattr_prep)
+io_fsetxattr -> (mnt_drop_write, kfree, do_setxattr, kvfree, putname, mnt_want_write)
+io_fsetxattr_prep -> (kmalloc_trace, setxattr_copy, kfree)
+io_getxattr -> (path_put, kvfree, do_getxattr, putname, kfree, filename_lookup)
+io_getxattr_prep -> (getname_flags, __io_getxattr_prep)
+io_setxattr -> (path_put, mnt_drop_write, mnt_want_write, do_setxattr, kvfree, putname, kfree, filename_lookup)
+io_setxattr_prep -> (getname_flags, setxattr_copy, kfree, kmalloc_trace)
+io_xattr_cleanup -> (kfree, kvfree, putname)

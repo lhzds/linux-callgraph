@@ -1,0 +1,5 @@
+kernel/trace/error_report_traces.o
+__traceiter_error_report_end -> (__probestub_error_report_end, __SCT__tp_func_error_report_end, __traceiter_error_report_end)
+perf_trace_error_report_template -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_error_report_template -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_raw_output_error_report_template -> (trace_print_symbols_seq, trace_handle_return, trace_raw_output_prep, trace_event_printf)

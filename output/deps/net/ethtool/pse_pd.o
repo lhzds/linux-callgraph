@@ -1,0 +1,4 @@
+net/ethtool/pse_pd.o
+ethnl_set_pse -> (do_trace_netlink_extack)
+pse_fill_reply -> (nla_put)
+pse_prepare_data -> (do_trace_netlink_extack, ethnl_ops_complete, ethnl_ops_begin)

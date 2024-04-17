@@ -1,0 +1,12 @@
+net/ipv4/ip_fragment.o
+ip4_frag_free -> (inet_putpeer)
+ip4_frag_init -> (inet_getpeer)
+ip4_obj_cmpfn -> (bcmp)
+ip_check_defrag -> (skb_copy_bits, skb_share_check, pskb_trim_rcsum_slow, ip_defrag, kfree_skb_reason, pskb_may_pull)
+ip_defrag -> (_printk, ip_send_check, refcount_warn_saturate, inet_frag_find, __pskb_pull_tail, _raw_spin_unlock, _raw_spin_lock, inet_frag_kill, inet_frag_destroy, inet_frag_queue_insert, inet_frag_rbtree_purge, inet_frag_reasm_finish, pskb_trim_rcsum_slow, inet_frag_reasm_prepare, net_ratelimit, dst_release, mod_timer, kfree_skb_reason)
+ip_expire -> (ip_route_input_noref, refcount_warn_saturate, dev_get_by_index_rcu, _raw_spin_unlock, kfree_skb_reason, _raw_spin_lock, inet_frag_kill, inet_frag_destroy, inet_frag_pull_head, __rcu_read_lock, __rcu_read_unlock, __icmp_send)
+ipfrag_init -> (ip4_frag_free, register_pernet_subsys, panic, ip4_obj_hashfn, ipv4_frags_init_net, inet_frags_init, ip4_frag_init, register_net_sysctl, ip4_key_hashfn, ipv4_frags_exit_net, ip4_obj_cmpfn, proc_dointvec_jiffies, ipv4_frags_pre_exit_net, ip_expire)
+ipv4_frags_exit_net -> (kfree, fqdir_exit, unregister_net_sysctl_table)
+ipv4_frags_init_net -> (fqdir_init, kmemdup, register_net_sysctl, proc_doulongvec_minmax, kfree, fqdir_exit, proc_dointvec_jiffies, proc_dointvec_minmax)
+pskb_may_pull -> (__pskb_pull_tail)
+skb_share_check -> (kfree_skb_reason, consume_skb, skb_clone)

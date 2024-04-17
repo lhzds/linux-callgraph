@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_flip_work.o
+drm_flip_work_allocate_task -> (kmalloc_trace)
+drm_flip_work_commit -> (queue_work_on, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+drm_flip_work_init -> (flip_worker)
+drm_flip_work_queue -> (__drm_err, kmalloc_trace, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+drm_flip_work_queue_task -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+flip_worker -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)

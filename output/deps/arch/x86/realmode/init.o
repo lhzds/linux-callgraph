@@ -1,0 +1,7 @@
+arch/x86/realmode/init.o
+init_real_mode -> (setup_real_mode, panic, set_real_mode_permissions)
+load_trampoline_pgtable -> (__flush_tlb_all, cr4_update_irqsoff)
+reserve_real_mode -> (_printk, slab_is_available, memblock_phys_alloc_range, memblock_reserve)
+set_real_mode_permissions -> (set_memory_ro, set_memory_nx, set_memory_x)
+setup_real_mode -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+do_init_real_mode -> (mach_set_cmos_time, is_ISA_range, enc_status_change_prepare_noop, tsc_restore_sched_clock_state, mach_get_cmos_time, x86_op_int_noop, vmware_get_tsc_khz, disable_iommus, kvm_save_sched_clock_state, hv_get_nmi_reason, intel_iommu_shutdown, kvm_get_wallclock, is_private_mmio_noop, kvm_get_tsc_khz, vsmp_apic_post_init, reserve_real_mode, enc_status_change_finish_noop, default_nmi_init, native_calibrate_tsc, native_calibrate_cpu_early, init_real_mode, hv_get_tsc_khz, iommu_shutdown_noop, enc_tlb_flush_required_noop, native_calibrate_cpu, enc_cache_flush_required_noop, default_get_nmi_reason, kvm_set_wallclock, kvm_apic_init, kvm_restore_sched_clock_state, tsc_save_sched_clock_state)

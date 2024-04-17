@@ -1,0 +1,11 @@
+kernel/cgroup/legacy_freezer.o
+cgroup_freezing -> (__rcu_read_unlock, __rcu_read_lock)
+freezer_apply_state -> (freeze_task, css_task_iter_end, css_task_iter_start, css_task_iter_next, __thaw_task, static_key_slow_dec_cpuslocked, static_key_slow_inc_cpuslocked)
+freezer_attach -> (freeze_task, mutex_lock, cgroup_taskset_first, mutex_unlock, __thaw_task, cgroup_taskset_next)
+freezer_css_alloc -> (kmalloc_trace)
+freezer_css_free -> (kfree)
+freezer_css_offline -> (mutex_lock, cpus_read_unlock, mutex_unlock, static_key_slow_dec_cpuslocked, cpus_read_lock)
+freezer_css_online -> (static_key_slow_inc_cpuslocked, mutex_lock, cpus_read_unlock, mutex_unlock, cpus_read_lock)
+freezer_fork -> (freeze_task, mutex_lock, mutex_unlock, __rcu_read_lock, __rcu_read_unlock)
+freezer_read -> (of_css, mutex_lock, css_task_iter_end, frozen, mutex_unlock, css_next_child, css_task_iter_start, css_task_iter_next, freezing_slow_path, css_next_descendant_post, __rcu_read_lock, seq_putc, __rcu_read_unlock, seq_puts)
+freezer_write -> (of_css, css_next_descendant_pre, freezer_apply_state, mutex_lock, cpus_read_unlock, strcmp, mutex_unlock, strim, __rcu_read_lock, __rcu_read_unlock, cpus_read_lock)

@@ -1,0 +1,11 @@
+kernel/cgroup/rstat.o
+__cgroup_account_cputime -> (cgroup_rstat_updated)
+__cgroup_account_cputime_field -> (cgroup_rstat_updated)
+cgroup_base_stat_cputime_show -> (of_css, __SCT__might_resched, seq_printf, _raw_spin_lock_irq, cputime_adjust, _raw_spin_unlock_irq, cgroup_rstat_flush_locked)
+cgroup_rstat_exit -> (free_percpu, cgroup_rstat_flush)
+cgroup_rstat_flush -> (_raw_spin_lock_irq, __SCT__might_resched, cgroup_rstat_flush_locked, _raw_spin_unlock_irq)
+cgroup_rstat_flush_hold -> (_raw_spin_lock_irq, __SCT__might_resched, cgroup_rstat_flush_locked)
+cgroup_rstat_flush_locked -> (_raw_spin_lock_irq, _raw_spin_lock_irqsave, bpf_rstat_flush, __SCT__cond_resched, _raw_spin_unlock_irq, __rcu_read_lock, _raw_spin_unlock_irqrestore, __rcu_read_unlock)
+cgroup_rstat_flush_release -> (_raw_spin_unlock_irq)
+cgroup_rstat_init -> (__alloc_percpu)
+cgroup_rstat_updated -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

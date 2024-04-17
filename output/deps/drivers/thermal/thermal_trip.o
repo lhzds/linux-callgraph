@@ -1,0 +1,4 @@
+drivers/thermal/thermal_trip.o
+__thermal_zone_set_trips -> (_dev_err)
+thermal_zone_get_trip -> (mutex_unlock, mutex_lock)
+thermal_zone_set_trip -> (__thermal_zone_device_update)

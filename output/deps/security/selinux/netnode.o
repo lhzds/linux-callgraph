@@ -1,0 +1,3 @@
+security/selinux/netnode.o
+sel_netnode_flush -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, kvfree_call_rcu)
+sel_netnode_sid -> (_raw_spin_lock_bh, _printk, kvfree_call_rcu, security_node_sid, kmalloc_trace, __rcu_read_lock, __rcu_read_unlock, _raw_spin_unlock_bh, kfree)

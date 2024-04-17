@@ -1,0 +1,11 @@
+fs/netfs/io.o
+netfs_begin_read -> (__SCT__might_resched, netfs_cache_read_terminated, schedule, __probestub_netfs_failure, __SCT__tp_func_netfs_failure, __SCT__tp_func_netfs_sreq, __traceiter_netfs_failure, netfs_rreq_assess, netfs_alloc_subrequest, __probestub_netfs_sreq, prepare_to_wait_event, __var_waitqueue, init_wait_var_entry, _printk, iov_iter_xarray, __traceiter_netfs_sreq, __SCT__cond_resched, netfs_subreq_terminated, netfs_put_subrequest, netfs_get_request, finish_wait, netfs_put_request, netfs_rreq_work)
+netfs_cache_read_terminated -> (netfs_subreq_terminated)
+netfs_rreq_assess -> (iov_iter_xarray, netfs_cache_read_terminated, netfs_rreq_unlock_folios, __traceiter_netfs_rreq, __probestub_netfs_sreq, netfs_rreq_completed, queue_work_on, netfs_rreq_write_to_cache_work, __traceiter_netfs_sreq, __SCT__tp_func_netfs_rreq, __probestub_netfs_rreq, netfs_get_subrequest, wake_up_bit, wake_up_var, __SCT__tp_func_netfs_sreq)
+netfs_rreq_completed -> (netfs_clear_subrequests, __traceiter_netfs_rreq, netfs_put_request, __SCT__tp_func_netfs_rreq, __probestub_netfs_rreq)
+netfs_rreq_copy_terminated -> (__probestub_netfs_sreq, __traceiter_netfs_sreq, trace_netfs_failure, netfs_rreq_unmark_after_write, netfs_put_subrequest, __SCT__tp_func_netfs_sreq)
+netfs_rreq_unmark_after_write -> (netfs_rreq_completed, xas_find, folio_end_private_2, __rcu_read_lock, __page_file_index, __rcu_read_unlock)
+netfs_rreq_work -> (netfs_rreq_assess)
+netfs_rreq_write_to_cache_work -> (iov_iter_xarray, __traceiter_netfs_failure, netfs_rreq_copy_terminated, __traceiter_netfs_rreq, __probestub_netfs_sreq, __traceiter_netfs_sreq, __probestub_netfs_failure, __SCT__tp_func_netfs_rreq, __probestub_netfs_rreq, netfs_rreq_unmark_after_write, netfs_get_subrequest, netfs_put_subrequest, __SCT__tp_func_netfs_failure, __SCT__tp_func_netfs_sreq)
+netfs_subreq_terminated -> (iov_iter_xarray, netfs_rreq_assess, __probestub_netfs_sreq, queue_work_on, __warn_printk, __traceiter_netfs_sreq, trace_netfs_failure, iov_iter_zero, netfs_put_subrequest, wake_up_var, __SCT__tp_func_netfs_sreq)
+trace_netfs_failure -> (__traceiter_netfs_failure, __probestub_netfs_failure, __SCT__tp_func_netfs_failure)

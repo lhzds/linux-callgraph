@@ -1,0 +1,12 @@
+drivers/acpi/pci_link.o
+acpi_irq_isa -> (acpi_irq_penalty_update)
+acpi_irq_pci -> (acpi_irq_penalty_update)
+acpi_irq_penalty_update -> (get_option)
+acpi_pci_link_add -> (_printk, mutex_lock, acpi_evaluate_object, acpi_walk_resources, mutex_unlock, kmalloc_trace, acpi_pci_link_check_possible, acpi_pci_link_get_current)
+acpi_pci_link_allocate_irq -> (mutex_lock, mutex_unlock, acpi_pci_link_set, acpi_fetch_acpi_dev, acpi_handle_printk)
+acpi_pci_link_free_irq -> (mutex_lock, acpi_evaluate_object, mutex_unlock, acpi_fetch_acpi_dev, acpi_handle_printk)
+acpi_pci_link_get_current -> (acpi_evaluation_failure_warn, acpi_pci_link_check_current, acpi_walk_resources, acpi_bus_get_status, acpi_handle_printk)
+acpi_pci_link_init -> (acpi_scan_add_handler, irqrouter_resume, acpi_pci_link_add, acpi_pci_link_remove, register_syscore_ops)
+acpi_pci_link_remove -> (mutex_lock, kfree, mutex_unlock)
+acpi_pci_link_set -> (acpi_evaluation_failure_warn, acpi_set_current_resources, kmalloc_trace, acpi_bus_get_status, acpi_handle_printk, kfree, acpi_pci_link_get_current)
+irqrouter_resume -> (acpi_pci_link_set)

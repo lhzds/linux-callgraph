@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/display/intel_sprite_uapi.o
+intel_sprite_set_colorkey_ioctl -> (refcount_warn_saturate, drm_modeset_acquire_fini, drm_modeset_backoff, drm_atomic_state_alloc, drm_mode_object_find, intel_crtc_for_pipe, drm_atomic_get_plane_state, drm_modeset_acquire_init, drm_atomic_commit, drm_atomic_state_clear, drm_modeset_drop_locks, __drm_atomic_state_free)

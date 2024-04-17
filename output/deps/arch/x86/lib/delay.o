@@ -1,0 +1,9 @@
+arch/x86/lib/delay.o
+__const_udelay -> (delay_loop)
+__delay -> (delay_loop)
+__ndelay -> (__const_udelay)
+__udelay -> (__const_udelay)
+read_current_timer -> (delay_loop, delay_tsc)
+use_mwaitx_delay -> (delay_halt, delay_loop, delay_halt_mwaitx)
+use_tpause_delay -> (delay_halt, delay_halt_tpause, delay_loop)
+use_tsc_delay -> (delay_loop, delay_tsc)

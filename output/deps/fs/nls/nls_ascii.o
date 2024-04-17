@@ -1,0 +1,3 @@
+fs/nls/nls_ascii.o
+exit_nls_ascii -> (uni2char, unregister_nls, char2uni)
+init_nls_ascii -> (uni2char, __register_nls, char2uni)

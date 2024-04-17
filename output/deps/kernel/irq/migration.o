@@ -1,0 +1,3 @@
+kernel/irq/migration.o
+__irq_move_irq -> (irq_move_masked_irq)
+irq_move_masked_irq -> (irq_do_set_affinity)

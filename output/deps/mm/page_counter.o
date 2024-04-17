@@ -1,0 +1,6 @@
+mm/page_counter.o
+page_counter_cancel -> (__warn_printk)
+page_counter_memparse -> (memparse, strcmp)
+page_counter_set_max -> (__SCT__cond_resched)
+page_counter_try_charge -> (page_counter_cancel)
+page_counter_uncharge -> (page_counter_cancel)

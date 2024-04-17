@@ -1,0 +1,7 @@
+drivers/dma/dw/idma32.o
+idma32_disable -> (do_dw_dma_off)
+idma32_dma_probe -> (idma32_suspend_chan, idma32_enable, idma32_prepare_ctllo, idma32_encode_maxburst, idma32_disable, idma32_set_device_name, idma32_resume_chan, idma32_block2bytes, devm_kmalloc, do_dma_probe, idma32_bytes2block)
+idma32_dma_remove -> (do_dma_remove)
+idma32_enable -> (do_dw_dma_on)
+idma32_set_device_name -> (snprintf)
+idma32_initialize_chan_xbar -> (pci_dma_configure, pci_device_shutdown, pci_bus_num_vf, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe)

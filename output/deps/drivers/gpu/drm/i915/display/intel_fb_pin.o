@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/display/intel_fb_pin.o
+intel_pin_and_fence_fb_obj -> (i915_gem_object_attach_phys, refcount_warn_saturate, __i915_gem_object_get_pages, i915_gem_object_pin_to_display_plane, i915_gem_ww_ctx_fini, __warn_printk, intel_surf_alignment, intel_cursor_alignment, i915_gem_ww_ctx_init, ww_mutex_lock_interruptible, intel_runtime_pm_put_unchecked, intel_scanout_needs_vtd_wa, i915_gem_object_migrate, i915_gem_ww_ctx_backoff, intel_runtime_pm_get, ww_mutex_lock, dev_driver_string, i915_vma_pin_fence)
+intel_plane_pin_fb -> (refcount_warn_saturate, i915_gem_ww_ctx_fini, i915_gem_object_set_cache_level, i915_gem_ww_ctx_init, i915_vma_misplaced, i915_gem_ww_ctx_backoff, i915_gem_object_flush_if_display, i915_vma_instance, intel_dpt_unpin, __i915_gem_object_migrate, i915_vma_unbind, intel_fb_rc_ccs_cc_plane, intel_plane_uses_fence, intel_pin_and_fence_fb_obj, intel_dpt_pin, intel_fb_uses_dpt, ww_mutex_lock, i915_vma_pin_ww, ww_mutex_lock_interruptible)
+intel_plane_unpin_fb -> (refcount_warn_saturate, intel_dpt_unpin, drm_gem_object_free, intel_fb_uses_dpt)
+intel_unpin_fb_vma -> (refcount_warn_saturate, drm_gem_object_free)

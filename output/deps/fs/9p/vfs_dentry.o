@@ -1,0 +1,3 @@
+fs/9p/vfs_dentry.o
+v9fs_dentry_release -> (__SCT__tp_func_9p_fid_ref, __traceiter_9p_fid_ref, refcount_warn_saturate, p9_client_clunk, do_trace_9p_fid_put, __probestub_9p_fid_ref)
+v9fs_lookup_revalidate -> (__SCT__tp_func_9p_fid_ref, v9fs_fid_lookup, __traceiter_9p_fid_ref, refcount_warn_saturate, p9_client_clunk, do_trace_9p_fid_put, __probestub_9p_fid_ref, v9fs_refresh_inode_dotl, v9fs_refresh_inode)

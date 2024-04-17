@@ -1,0 +1,10 @@
+drivers/gpu/drm/i915/gt/gen6_ppgtt.o
+gen6_alloc_va_range -> (_raw_spin_unlock, _raw_spin_lock, gen6_flush_pd, intel_runtime_pm_put_unchecked, fill_page_dma, intel_runtime_pm_get)
+gen6_flush_pd -> (__px_dma, mutex_lock, gen6_ggtt_invalidate, iowrite32, mutex_unlock, ioread32)
+gen6_ppgtt_cleanup -> (free_scratch, free_px)
+gen6_ppgtt_clear_range -> (__px_vaddr)
+gen6_ppgtt_create -> (refcount_warn_saturate, setup_scratch_page, __i915_gem_object_create_internal, i915_gem_get_pat_index, fill_page_dma, pd_dummy_obj_put_pages, __px_dma, kmalloc_trace, i915_vma_instance, gen6_ppgtt_cleanup, ppgtt_init, pd_vma_bind, drm_gem_object_free, gen6_alloc_va_range, pd_vma_unbind, alloc_pt_dma, gen6_ppgtt_clear_range, i915_vm_release, __mutex_init, gen6_ppgtt_insert_entries, free_px, __alloc_pd, map_pt_dma, pd_dummy_obj_get_pages)
+gen6_ppgtt_insert_entries -> (__px_vaddr)
+gen6_ppgtt_pin -> (i915_vm_lock_objects, i915_ggtt_pin)
+pd_vma_bind -> (gen6_flush_pd)
+pd_vma_unbind -> (free_px)

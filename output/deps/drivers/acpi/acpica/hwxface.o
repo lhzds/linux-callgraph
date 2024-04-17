@@ -1,0 +1,7 @@
+drivers/acpi/acpica/hwxface.o
+acpi_get_sleep_type_data -> (kmalloc_trace, acpi_exception, acpi_error, acpi_ut_remove_reference, acpi_ns_evaluate, kfree)
+acpi_read -> (acpi_hw_read)
+acpi_read_bit_register -> (acpi_hw_register_read, acpi_hw_get_bit_register_info)
+acpi_reset -> (acpi_hw_write, acpi_os_write_port)
+acpi_write -> (acpi_hw_write)
+acpi_write_bit_register -> (acpi_hw_register_read, acpi_hw_get_bit_register_info, _raw_spin_lock_irqsave, acpi_hw_register_write, _raw_spin_unlock_irqrestore)

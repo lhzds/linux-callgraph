@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/i915_ioc32.o
+i915_ioc32_compat_ioctl -> (drm_compat_ioctl, _copy_from_user, i915_getparam_ioctl, drm_ioctl_kernel, drm_ioctl)

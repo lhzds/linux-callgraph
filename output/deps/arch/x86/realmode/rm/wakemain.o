@@ -1,0 +1,2 @@
+arch/x86/realmode/rm/wakemain.o
+main -> (probe_cards, __outb, set_mode, beep, __outw, __inb)

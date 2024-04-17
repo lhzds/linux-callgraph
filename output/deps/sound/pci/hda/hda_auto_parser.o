@@ -1,0 +1,12 @@
+sound/pci/hda/hda_auto_parser.o
+__snd_hda_apply_fixup -> (_snd_hda_set_pin_ctl, snd_array_new, _dev_err, __snd_hda_apply_fixup, snd_hda_codec_set_pincfg)
+fill_audio_out_name -> (snprintf, snd_hda_codec_get_pincfg, strcmp)
+hda_get_autocfg_input_label -> (snd_hda_codec_get_pincfg, hda_get_input_pin_label)
+hda_get_input_pin_label -> (snd_hda_codec_get_pincfg)
+snd_hda_add_verbs -> (snd_array_new)
+snd_hda_apply_fixup -> (__snd_hda_apply_fixup)
+snd_hda_apply_pincfgs -> (snd_hda_codec_set_pincfg)
+snd_hda_apply_verbs -> (snd_hda_sequence_write)
+snd_hda_get_pin_label -> (snd_hda_codec_get_pincfg, hda_get_autocfg_input_label, strscpy, fill_audio_out_name)
+snd_hda_parse_pin_defcfg -> (compare_input_type, sort, snd_hda_check_amp_caps, _snd_hdac_read_parm, hda_get_autocfg_input_label, compare_seq, _dev_info, snd_hda_codec_get_pincfg)
+snd_hda_pick_fixup -> (strcmp, snd_pci_quirk_lookup_id, sscanf, snd_pci_quirk_lookup)

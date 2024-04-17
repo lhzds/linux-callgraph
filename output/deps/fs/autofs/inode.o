@@ -1,0 +1,8 @@
+fs/autofs/inode.o
+autofs_evict_inode -> (clear_inode, kfree)
+autofs_fill_super -> (fget, get_task_pid, strsep, new_inode, autofs_d_manage, autofs_dir_symlink, dcache_dir_close, dcache_dir_open, autofs_dir_rmdir, autofs_dir_unlink, autofs_root_compat_ioctl, autofs_dir_open, kmalloc_trace, fput, autofs_dir_mkdir, autofs_dentry_release, autofs_root_ioctl, _printk, put_pid, kvfree_call_rcu, dcache_readdir, get_next_ino, current_time, simple_statfs, generic_read_dir, dcache_dir_lseek, autofs_d_automount, __mutex_init, autofs_show_options, match_int, set_nlink, dput, autofs_dir_permission, d_make_root, autofs_lookup, find_get_pid, match_token, kfree, autofs_evict_inode)
+autofs_free_ino -> (kvfree_call_rcu)
+autofs_get_inode -> (generic_read_dir, dcache_dir_lseek, autofs_dir_open, dcache_readdir, set_nlink, autofs_dir_permission, autofs_get_link, get_next_ino, new_inode, autofs_lookup, current_time, autofs_dir_symlink, autofs_dir_rmdir, autofs_dir_unlink, autofs_dir_mkdir, dcache_dir_close)
+autofs_kill_sb -> (put_pid, autofs_catatonic_mode, kill_litter_super, kvfree_call_rcu)
+autofs_new_ino -> (kmalloc_trace)
+autofs_show_options -> (seq_printf, pid_vnr, seq_puts)

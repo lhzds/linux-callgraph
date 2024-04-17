@@ -1,0 +1,12 @@
+crypto/acompress.o
+acomp_request_alloc -> (crypto_acomp_show, crypto_acomp_extsize, crypto_acomp_scomp_alloc_ctx, crypto_acomp_init_tfm, __kmalloc)
+acomp_request_free -> (kfree_sensitive, crypto_acomp_show, crypto_acomp_scomp_free_ctx, crypto_acomp_extsize, crypto_acomp_init_tfm)
+crypto_acomp_extsize -> (crypto_acomp_extsize, crypto_acomp_show, crypto_alg_extsize, crypto_acomp_init_tfm)
+crypto_acomp_init_tfm -> (crypto_acomp_show, crypto_acomp_exit_tfm, crypto_acomp_extsize, crypto_acomp_init_tfm, crypto_init_scomp_ops_async)
+crypto_acomp_show -> (seq_puts)
+crypto_alloc_acomp -> (crypto_acomp_extsize, crypto_acomp_show, crypto_alloc_tfm_node, crypto_acomp_init_tfm)
+crypto_alloc_acomp_node -> (crypto_acomp_extsize, crypto_acomp_show, crypto_alloc_tfm_node, crypto_acomp_init_tfm)
+crypto_register_acomp -> (crypto_acomp_extsize, crypto_acomp_show, crypto_register_alg, crypto_acomp_init_tfm)
+crypto_register_acomps -> (crypto_unregister_alg, crypto_acomp_show, crypto_acomp_extsize, crypto_register_alg, crypto_acomp_init_tfm)
+crypto_unregister_acomp -> (crypto_unregister_alg)
+crypto_unregister_acomps -> (crypto_unregister_alg)

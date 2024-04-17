@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/i915_scheduler.o
+__i915_priolist_free -> (kmem_cache_free)
+__i915_sched_node_add_dependency -> (__rcu_read_unlock, _raw_spin_lock_irq, __rcu_read_lock, _raw_spin_unlock_irq)
+default_destroy -> (tasklet_kill, kfree)
+i915_request_show_with_schedule -> (__rcu_read_unlock, i915_request_show, __rcu_read_lock)
+i915_sched_engine_create -> (kmalloc_trace, default_destroy, default_disabled)
+i915_sched_lookup_priolist -> (kmem_cache_alloc, rb_insert_color)
+i915_sched_node_add_dependency -> (kmem_cache_alloc, kmem_cache_free, __i915_sched_node_add_dependency)
+i915_sched_node_fini -> (_raw_spin_lock_irq, kmem_cache_free, _raw_spin_unlock_irq)
+i915_schedule -> (kmem_cache_alloc, rb_insert_color, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irq, _raw_spin_unlock_irq, __rcu_read_lock, __rcu_read_unlock)
+i915_scheduler_module_exit -> (kmem_cache_destroy)
+i915_scheduler_module_init -> (kmem_cache_create, kmem_cache_destroy)

@@ -1,0 +1,8 @@
+crypto/seqiv.o
+seqiv_aead_create -> (seqiv_aead_decrypt, seqiv_aead_encrypt, aead_init_geniv, aead_geniv_alloc, aead_register_instance, aead_exit_geniv)
+seqiv_aead_decrypt -> (scatterwalk_map_and_copy, crypto_aead_decrypt)
+seqiv_aead_encrypt -> (crypto_skcipher_encrypt, seqiv_aead_encrypt_complete, scatterwalk_map_and_copy, seqiv_aead_encrypt_complete2, kmemdup, crypto_aead_encrypt)
+seqiv_aead_encrypt_complete -> (kfree_sensitive)
+seqiv_aead_encrypt_complete2 -> (kfree_sensitive)
+seqiv_module_exit -> (crypto_unregister_template, seqiv_aead_create)
+seqiv_module_init -> (crypto_register_template, seqiv_aead_create)

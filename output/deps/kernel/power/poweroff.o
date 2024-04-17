@@ -1,0 +1,4 @@
+kernel/power/poweroff.o
+do_poweroff -> (kernel_power_off)
+handle_poweroff -> (queue_work_on, do_poweroff)
+pm_sysrq_init -> (register_sysrq_key, handle_poweroff)

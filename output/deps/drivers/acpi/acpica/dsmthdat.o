@@ -1,0 +1,6 @@
+drivers/acpi/acpica/dsmthdat.o
+acpi_ds_method_data_delete_all -> (acpi_ns_detach_object)
+acpi_ds_method_data_get_node -> (acpi_error)
+acpi_ds_method_data_get_value -> (acpi_ut_add_reference, acpi_error, acpi_ut_create_integer_object)
+acpi_ds_method_data_init_args -> (acpi_ut_add_reference)
+acpi_ds_store_object_to_local -> (acpi_ns_get_attached_object, acpi_ex_store_object_to_node, acpi_ut_copy_iobject_to_iobject, acpi_error, acpi_ut_remove_reference, acpi_ut_add_reference)

@@ -1,0 +1,2 @@
+arch/x86/kernel/resource.o
+arch_remove_reservations -> (_printk)

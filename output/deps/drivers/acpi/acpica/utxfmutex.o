@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utxfmutex.o
+acpi_acquire_mutex -> (acpi_os_wait_semaphore, acpi_ns_get_attached_object, acpi_get_handle)
+acpi_release_mutex -> (acpi_os_signal_semaphore, acpi_ns_get_attached_object, acpi_get_handle)

@@ -1,0 +1,4 @@
+arch/x86/pci/legacy.o
+pci_legacy_init -> (_printk, pcibios_scan_root)
+pci_subsys_init -> (x86_init_noop, amd_iommu_init, init_ISA_irqs, pcibios_fixup_irqs, pci_acpi_init, setup_boot_APIC_clock, x86_wallclock_init, native_create_pci_msi_domain, probe_roms, apic_intr_mode_init, pcibios_init, default_find_smp_config, native_init_IRQ, x86_default_set_root_pointer, _printk, reserve_standard_io_resources, pcibios_scan_root, acpi_generic_reduced_hw_init, raw_pci_read, iommu_init_noop, pci_legacy_init, intel_iommu_init, pci_find_bus, paging_init, pcibios_irq_init, x86_default_get_root_pointer, default_get_smp_config, e820__memory_setup_default, default_banner, hpet_time_init, bool_x86_init_noop, apic_intr_mode_select)
+pcibios_scan_specific_bus -> (_printk, pci_find_bus, raw_pci_read, pcibios_scan_root)

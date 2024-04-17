@@ -1,0 +1,8 @@
+net/ipv4/xfrm4_protocol.o
+xfrm4_ah_rcv -> (__icmp_send, kfree_skb_reason)
+xfrm4_esp_rcv -> (__icmp_send, kfree_skb_reason)
+xfrm4_ipcomp_rcv -> (__icmp_send, kfree_skb_reason)
+xfrm4_protocol_deregister -> (_printk, inet_del_protocol, mutex_lock, xfrm4_ah_err, mutex_unlock, xfrm4_esp_rcv, xfrm4_ipcomp_err, xfrm4_ah_rcv, synchronize_net, xfrm4_ipcomp_rcv, xfrm4_esp_err)
+xfrm4_protocol_init -> (xfrm_input_register_afinfo, xfrm4_rcv_cb)
+xfrm4_protocol_register -> (_printk, mutex_lock, xfrm4_ah_err, mutex_unlock, xfrm4_esp_rcv, xfrm4_ipcomp_err, xfrm4_ah_rcv, inet_add_protocol, xfrm4_ipcomp_rcv, xfrm4_esp_err)
+xfrm4_rcv_encap -> (ip_route_input_noref, __icmp_send, kfree_skb_reason)

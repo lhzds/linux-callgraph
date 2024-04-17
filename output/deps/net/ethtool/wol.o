@@ -1,0 +1,5 @@
+net/ethtool/wol.o
+ethnl_set_wol -> (do_trace_netlink_extack, bcmp, ethnl_update_bitset32)
+wol_fill_reply -> (nla_put, ethnl_put_bitset32)
+wol_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)
+wol_reply_size -> (ethnl_bitset32_size)

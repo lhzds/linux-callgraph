@@ -1,0 +1,3 @@
+arch/x86/power/hibernate_64.o
+alloc_pgt_page -> (get_safe_page)
+swsusp_arch_resume -> (alloc_pgt_page, __pti_set_user_pgtbl, kernel_ident_mapping_init, relocate_restore_code, get_safe_page, restore_image)

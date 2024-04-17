@@ -1,0 +1,4 @@
+drivers/hid/hid_lgff.o
+hid_lgff_play -> (hid_hw_request)
+hid_lgff_set_autocenter -> (hid_hw_request)
+lgff_init -> (_printk, hid_lgff_play, hid_validate_values, _dev_err, hid_lgff_set_autocenter, input_ff_create_memless)

@@ -1,0 +1,8 @@
+kernel/irq/pm.o
+irq_pm_check_wakeup -> (pm_system_irq_wakeup, irq_disable)
+irq_pm_init_ops -> (irq_pm_syscore_resume, register_syscore_ops)
+irq_pm_syscore_resume -> (resume_irqs)
+rearm_wake_irq -> (__enable_irq, __irq_get_desc_lock, __irq_put_desc_unlock)
+resume_device_irqs -> (resume_irqs)
+resume_irqs -> (__enable_irq, _raw_spin_lock_irqsave, irq_to_desc, _raw_spin_unlock_irqrestore, __disable_irq)
+suspend_device_irqs -> (synchronize_irq, bad_chained_irq, __enable_irq, _raw_spin_lock_irqsave, mask_irq, irq_to_desc, _raw_spin_unlock_irqrestore, __disable_irq)

@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/display/intel_qp_tables.o
+intel_lookup_range_max_qp -> (__warn_printk)
+intel_lookup_range_min_qp -> (__warn_printk)

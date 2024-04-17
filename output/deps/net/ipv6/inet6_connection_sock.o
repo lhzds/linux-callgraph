@@ -1,0 +1,6 @@
+net/ipv6/inet6_connection_sock.o
+inet6_csk_addr2sockaddr -> (__ipv6_addr_type)
+inet6_csk_route_req -> (security_req_classify_flow, ip6_dst_lookup_flow, __rcu_read_lock, __rcu_read_unlock, fl6_update_dst)
+inet6_csk_route_socket -> (__sk_dst_check, ip6_dst_lookup_flow, __rcu_read_lock, __rcu_read_unlock, security_sk_classify_flow, sk_setup_caps, fl6_update_dst)
+inet6_csk_update_pmtu -> (inet6_csk_route_socket)
+inet6_csk_xmit -> (ip6_xmit, __rcu_read_lock, __rcu_read_unlock, inet6_csk_route_socket, kfree_skb_reason)

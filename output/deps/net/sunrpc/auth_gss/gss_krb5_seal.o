@@ -1,0 +1,2 @@
+net/sunrpc/auth_gss/gss_krb5_seal.o
+gss_krb5_get_mic_v2 -> (ktime_get_real_seconds, gss_krb5_checksum)

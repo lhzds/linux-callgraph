@@ -1,0 +1,4 @@
+io_uring/fdinfo.o
+__io_uring_show_fdinfo -> (io_uring_get_opcode, seq_printf, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, io_uring_show_cred, mutex_trylock, xa_find, xa_find_after, seq_puts)
+io_uring_show_cred -> (seq_printf, seq_put_hex_ll, seq_putc, seq_put_decimal_ull, seq_puts)
+io_uring_show_fdinfo -> (__rcu_read_unlock, __rcu_read_lock, __io_uring_show_fdinfo)

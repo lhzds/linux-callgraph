@@ -1,0 +1,6 @@
+net/ethtool/coalesce.o
+coalesce_fill_reply -> (coalesce_put_bool, nla_put)
+coalesce_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)
+coalesce_put_bool -> (nla_put)
+ethnl_set_coalesce -> (__ethnl_set_coalesce)
+ethnl_set_coalesce_validate -> (do_trace_netlink_extack)

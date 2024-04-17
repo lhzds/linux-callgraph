@@ -1,0 +1,12 @@
+net/ethtool/cabletest.o
+ethnl_act_cable_test -> (rtnl_lock, ethnl_cable_test_started, ethnl_ops_complete, ethnl_ops_begin, rtnl_unlock, ethnl_parse_header_dev_get)
+ethnl_act_cable_test_tdr -> (do_trace_netlink_extack, rtnl_lock, ethnl_cable_test_started, __nla_parse, ethnl_ops_complete, ethnl_ops_begin, rtnl_unlock, ethnl_parse_header_dev_get)
+ethnl_cable_test_alloc -> (nla_put, ethnl_fill_reply_header, ethnl_bcastmsg_put, __alloc_skb, kfree_skb_reason)
+ethnl_cable_test_amplitude -> (nla_put, skb_trim)
+ethnl_cable_test_fault_length -> (nla_put, skb_trim)
+ethnl_cable_test_finished -> (ethnl_multicast)
+ethnl_cable_test_free -> (kfree_skb_reason)
+ethnl_cable_test_pulse -> (nla_put, skb_trim)
+ethnl_cable_test_result -> (nla_put, skb_trim)
+ethnl_cable_test_started -> (nla_put, ethnl_fill_reply_header, ethnl_bcastmsg_put, __alloc_skb, _dev_err, kfree_skb_reason, ethnl_multicast)
+ethnl_cable_test_step -> (nla_put, skb_trim)

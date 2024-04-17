@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/gt/gen8_engine_cs.o
+gen11_emit_flush_rcs -> (intel_ring_begin)
+gen12_emit_fini_breadcrumb_rcs -> (__warn_printk, dev_driver_string)
+gen12_emit_flush_rcs -> (intel_ring_begin, mtl_dummy_pipe_control)
+gen12_emit_flush_xcs -> (intel_ring_begin)
+gen8_emit_bb_start -> (intel_ring_begin)
+gen8_emit_bb_start_noarb -> (intel_ring_begin)
+gen8_emit_flush_rcs -> (intel_ring_begin, __warn_printk, dev_driver_string)
+gen8_emit_flush_xcs -> (intel_ring_begin)
+gen8_emit_init_breadcrumb -> (intel_ring_begin)
+mtl_dummy_pipe_control -> (intel_ring_begin, __warn_printk, dev_driver_string)
+xehp_emit_bb_start -> (intel_ring_begin, lrc_indirect_bb)
+xehp_emit_bb_start_noarb -> (intel_ring_begin, lrc_indirect_bb)

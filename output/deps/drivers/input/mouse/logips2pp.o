@@ -1,0 +1,8 @@
+drivers/input/mouse/logips2pp.o
+ps2pp_attr_set_smartscroll -> (ps2pp_set_smartscroll, kstrtouint)
+ps2pp_attr_show_smartscroll -> (sprintf)
+ps2pp_detect -> (ps2pp_disconnect, psmouse_attr_show_helper, _dev_warn, input_set_capability, ps2_command, psmouse_attr_set_helper, ps2_sliced_command, ps2pp_attr_set_smartscroll, _dev_err, ps2pp_attr_show_smartscroll, ps2pp_set_smartscroll, ps2pp_process_byte, ps2pp_set_resolution, device_create_file)
+ps2pp_disconnect -> (device_remove_file, psmouse_attr_show_helper, psmouse_attr_set_helper, ps2pp_attr_set_smartscroll, ps2pp_attr_show_smartscroll)
+ps2pp_process_byte -> (psmouse_report_standard_buttons, input_event, psmouse_report_standard_packet)
+ps2pp_set_resolution -> (ps2_command, psmouse_set_resolution)
+ps2pp_set_smartscroll -> (ps2_command, ps2_sliced_command)

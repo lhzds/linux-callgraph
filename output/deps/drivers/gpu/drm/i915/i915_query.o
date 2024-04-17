@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/i915_query.o
+fill_topology_info -> (intel_sseu_copy_eumask_to_user, _copy_to_user, intel_sseu_copy_ssmask_to_user, _copy_from_user)
+i915_oa_config_get -> (refcount_warn_saturate)
+i915_oa_config_put -> (refcount_warn_saturate, i915_oa_config_release)
+i915_query_ioctl -> (query_geometry_subslices, query_hwconfig_blob, _copy_from_user, query_engine_info, query_topology_info, query_memregion_info, query_perf_config)
+query_engine_info -> (rb_first, _copy_to_user, rb_next, _copy_from_user)
+query_geometry_subslices -> (fill_topology_info, intel_engine_lookup_user)
+query_hwconfig_blob -> (_copy_to_user)
+query_memregion_info -> (capable, intel_memory_region_avail, _copy_from_user)
+query_perf_config -> (idr_get_next, __drm_dev_dbg, __rcu_read_lock, query_perf_config_data, __rcu_read_unlock, kfree, _copy_to_user, krealloc)
+query_perf_config_data -> (idr_get_next, __drm_dev_dbg, copy_perf_config_registers_or_number, _copy_from_user, strcmp, i915_perf_get_oa_config, i915_oa_config_put, __rcu_read_lock, i915_oa_config_get, __rcu_read_unlock, _copy_to_user)
+query_topology_info -> (fill_topology_info)

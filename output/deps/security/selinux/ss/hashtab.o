@@ -1,0 +1,6 @@
+security/selinux/ss/hashtab.o
+__hashtab_insert -> (kmem_cache_alloc)
+hashtab_cache_init -> (kmem_cache_create)
+hashtab_destroy -> (kfree, kmem_cache_free)
+hashtab_duplicate -> (kmem_cache_alloc, kfree, kmem_cache_free, __kmalloc)
+hashtab_init -> (__kmalloc)

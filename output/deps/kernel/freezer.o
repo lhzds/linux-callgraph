@@ -1,0 +1,7 @@
+kernel/freezer.o
+__refrigerator -> (_raw_spin_lock_irq, schedule, cgroup_freezing, _raw_spin_unlock_irq, kthread_should_stop)
+__set_task_frozen -> (task_curr)
+__thaw_task -> (task_call_func, __lock_task_sighand, _raw_spin_lock_irqsave, wake_up_state, cgroup_freezing, _raw_spin_unlock_irqrestore, __set_task_special)
+freeze_task -> (task_call_func, __lock_task_sighand, _raw_spin_lock_irqsave, wake_up_state, cgroup_freezing, signal_wake_up_state, __set_task_frozen, _raw_spin_unlock_irqrestore)
+freezing_slow_path -> (cgroup_freezing)
+set_freezable -> (__SCT__might_resched, _raw_spin_lock_irq, cgroup_freezing, _raw_spin_unlock_irq, __refrigerator)

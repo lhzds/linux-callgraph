@@ -1,0 +1,6 @@
+drivers/gpu/drm/drm_panel.o
+drm_panel_add -> (mutex_unlock, mutex_lock)
+drm_panel_disable -> (drm_dev_printk, mutex_lock, mutex_unlock)
+drm_panel_enable -> (drm_dev_printk, mutex_lock, mutex_unlock)
+drm_panel_of_backlight -> (devm_of_find_backlight)
+drm_panel_remove -> (mutex_unlock, mutex_lock)

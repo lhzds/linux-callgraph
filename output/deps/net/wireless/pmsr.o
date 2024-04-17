@@ -1,0 +1,10 @@
+net/wireless/pmsr.o
+cfg80211_pmsr_complete -> (_raw_spin_lock_bh, nla_put, __traceiter_cfg80211_pmsr_complete, netlink_unicast, __alloc_skb, __SCT__tp_func_cfg80211_pmsr_complete, __probestub_cfg80211_pmsr_complete, nl80211hdr_put, nla_put_64bit, _raw_spin_unlock_bh, kfree_skb_reason, kfree)
+cfg80211_pmsr_free_wk -> (mutex_lock, cfg80211_pmsr_process_abort, mutex_unlock)
+cfg80211_pmsr_process_abort -> (_raw_spin_lock_bh, __traceiter_rdev_abort_pmsr, __traceiter_rdev_return_void, __probestub_rdev_abort_pmsr, __SCT__tp_func_rdev_return_void, __SCT__tp_func_rdev_abort_pmsr, _raw_spin_unlock_bh, kfree, __probestub_rdev_return_void)
+cfg80211_pmsr_report -> (nla_put, _printk, netlink_unicast, __probestub_cfg80211_pmsr_report, __SCT__tp_func_cfg80211_pmsr_report, __traceiter_cfg80211_pmsr_report, __alloc_skb, nl80211hdr_put, nla_put_64bit, ___ratelimit, kfree_skb_reason, nl80211_pmsr_send_ftm_res)
+cfg80211_pmsr_wdev_down -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, cfg80211_pmsr_process_abort)
+cfg80211_release_pmsr -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, queue_work_on)
+nl80211_pmsr_send_ftm_res -> (nla_put, nla_put_64bit, nl80211_put_sta_rate)
+nl80211_pmsr_start -> (do_trace_netlink_extack, rdev_start_pmsr, nla_find, __nla_parse, nl80211_parse_random_mac, nl80211_parse_chandef, kfree, __kmalloc)
+rdev_start_pmsr -> (__SCT__tp_func_rdev_return_int, __probestub_rdev_start_pmsr, __traceiter_rdev_start_pmsr, __traceiter_rdev_return_int, __SCT__tp_func_rdev_start_pmsr, __probestub_rdev_return_int)

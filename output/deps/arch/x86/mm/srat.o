@@ -1,0 +1,4 @@
+arch/x86/mm/srat.o
+acpi_numa_processor_affinity_init -> (_printk, acpi_map_pxm_to_node, srat_disabled, bad_srat)
+acpi_numa_x2apic_affinity_init -> (_printk, acpi_map_pxm_to_node, srat_disabled, bad_srat)
+x86_acpi_numa_init -> (acpi_numa_init, srat_disabled)

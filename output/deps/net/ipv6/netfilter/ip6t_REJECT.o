@@ -1,0 +1,5 @@
+net/ipv6/netfilter/ip6t_REJECT.o
+reject_tg6 -> (nf_send_unreach6, nf_send_reset6)
+reject_tg6_check -> (___ratelimit, _printk)
+reject_tg6_exit -> (xt_unregister_target, reject_tg6, reject_tg6_check)
+reject_tg6_init -> (xt_register_target, reject_tg6, reject_tg6_check)

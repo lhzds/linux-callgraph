@@ -1,0 +1,8 @@
+drivers/acpi/acpica/utxferror.o
+acpi_bios_error -> (acpi_os_printf, acpi_os_vprintf)
+acpi_bios_exception -> (acpi_os_printf, acpi_format_exception, acpi_os_vprintf)
+acpi_bios_warning -> (acpi_os_printf, acpi_os_vprintf)
+acpi_error -> (acpi_os_printf, acpi_os_vprintf)
+acpi_exception -> (acpi_os_printf, acpi_format_exception, acpi_os_vprintf)
+acpi_info -> (acpi_os_printf, acpi_os_vprintf)
+acpi_warning -> (acpi_os_printf, acpi_os_vprintf)

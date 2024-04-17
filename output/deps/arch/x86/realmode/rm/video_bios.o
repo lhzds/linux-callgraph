@@ -1,0 +1,4 @@
+arch/x86/realmode/rm/video_bios.o
+bios_probe -> (bios_probe, __outb, set_bios_mode, vga_crtc, mode_defined, bios_set_mode, __outw, __inb)
+bios_set_mode -> (set_bios_mode)
+set_bios_mode -> (intcall, initregs)

@@ -1,0 +1,13 @@
+drivers/acpi/acpica/evgpe.o
+acpi_ev_add_gpe_reference -> (acpi_hw_get_gpe_register_bit, acpi_hw_clear_gpe, acpi_hw_low_set_gpe)
+acpi_ev_asynch_enable_gpe -> (acpi_os_acquire_lock, acpi_hw_clear_gpe, acpi_os_release_lock, acpi_hw_low_set_gpe)
+acpi_ev_asynch_execute_gpe_method -> (acpi_os_acquire_lock, acpi_os_execute, kmalloc_trace, acpi_hw_low_set_gpe, acpi_exception, acpi_ev_asynch_enable_gpe, acpi_hw_clear_gpe, acpi_ns_evaluate, acpi_ut_get_node_name, kfree, acpi_ev_queue_notify_request, acpi_os_release_lock)
+acpi_ev_detect_gpe -> (acpi_os_acquire_lock, acpi_hw_get_gpe_register_bit, acpi_ns_get_attached_object, acpi_ev_gpe_dispatch, acpi_hw_gpe_read, acpi_os_release_lock)
+acpi_ev_enable_gpe -> (acpi_hw_low_set_gpe)
+acpi_ev_finish_gpe -> (acpi_hw_clear_gpe, acpi_hw_low_set_gpe)
+acpi_ev_get_gpe_event_info -> (acpi_ns_get_attached_object)
+acpi_ev_gpe_detect -> (acpi_os_acquire_lock, acpi_os_release_lock, acpi_ev_detect_gpe)
+acpi_ev_gpe_dispatch -> (acpi_os_execute, acpi_hw_low_set_gpe, acpi_exception, acpi_error, acpi_ev_asynch_execute_gpe_method, acpi_hw_clear_gpe)
+acpi_ev_mask_gpe -> (acpi_hw_get_gpe_register_bit, acpi_hw_low_set_gpe)
+acpi_ev_remove_gpe_reference -> (acpi_hw_get_gpe_register_bit, acpi_hw_low_set_gpe)
+acpi_ev_update_gpe_enable_mask -> (acpi_hw_get_gpe_register_bit)

@@ -1,0 +1,8 @@
+lib/cpu_rmap.o
+alloc_cpu_rmap -> (__kmalloc)
+cpu_rmap_put -> (refcount_warn_saturate, kfree)
+free_irq_cpu_rmap -> (refcount_warn_saturate, kfree, irq_set_affinity_notifier)
+irq_cpu_rmap_add -> (refcount_warn_saturate, irq_set_affinity_notifier, kmalloc_trace, irq_cpu_rmap_release, irq_cpu_rmap_notify, kfree)
+irq_cpu_rmap_notify -> (cpu_rmap_update)
+irq_cpu_rmap_release -> (refcount_warn_saturate, kfree)
+irq_cpu_rmap_remove -> (irq_set_affinity_notifier)

@@ -1,0 +1,3 @@
+drivers/firmware/efi/libstub/gop.o
+efi_parse_option_graphics -> (strlen, simple_strtoull, strncmp)
+efi_setup_gop -> (__efi64_thunk, efi_puts, efi_printk, efi_wait_for_key)

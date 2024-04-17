@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/display/intel_lspcon.o
+lspcon_change_mode -> (_dev_err, drm_lspcon_get_mode, __drm_dev_dbg, drm_lspcon_set_mode)
+lspcon_detect_hdr_capability -> (drm_dp_dpcd_read, __drm_dev_dbg)
+lspcon_infoframes_enabled -> (_dev_err, drm_dp_dpcd_read, intel_hdmi_infoframe_enable)
+lspcon_init -> (drm_dp_dpcd_read, __drm_dev_dbg, lspcon_wait_mode, usleep_range_state, drm_dp_dual_mode_detect, drm_dp_get_dual_mode_type_name, _dev_err, lspcon_change_mode, drm_dp_read_dpcd_caps, drm_dp_read_desc)
+lspcon_read_infoframe -> (hsw_read_infoframe)
+lspcon_resume -> (lspcon_init, drm_dp_dpcd_read, __drm_dev_dbg, intel_bios_encoder_is_lspcon, lspcon_wait_mode, usleep_range_state, jiffies_to_msecs, lspcon_change_mode, _dev_err, intel_digital_port_connected)
+lspcon_set_infoframes -> (drm_hdmi_avi_infoframe_colorimetry, drm_hdmi_avi_infoframe_quant_range, __warn_printk, _dev_err, drm_hdmi_avi_infoframe_from_display_mode, drm_hdmi_avi_infoframe_content_type, dev_driver_string, hdmi_infoframe_pack)
+lspcon_wait_mode -> (__SCT__might_resched, __drm_dev_dbg, ktime_get_raw, usleep_range_state, drm_lspcon_get_mode, __warn_printk, _dev_err)
+lspcon_wait_pcon_mode -> (lspcon_wait_mode)
+lspcon_write_infoframe -> (drm_dp_dpcd_read, __drm_dev_dbg, usleep_range_state, hsw_write_infoframe, __const_udelay, _dev_err, drm_dp_dpcd_write)

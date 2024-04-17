@@ -1,0 +1,7 @@
+drivers/usb/core/notify.o
+usb_notify_add_bus -> (blocking_notifier_call_chain)
+usb_notify_add_device -> (blocking_notifier_call_chain)
+usb_notify_remove_bus -> (blocking_notifier_call_chain)
+usb_notify_remove_device -> (blocking_notifier_call_chain)
+usb_register_notify -> (blocking_notifier_chain_register)
+usb_unregister_notify -> (blocking_notifier_chain_unregister)

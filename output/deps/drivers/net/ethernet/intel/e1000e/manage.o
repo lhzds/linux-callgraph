@@ -1,0 +1,4 @@
+drivers/net/ethernet/intel/e1000e/manage.o
+e1000_mng_enable_host_if -> (__const_udelay)
+e1000e_enable_tx_pkt_filtering -> (e1000_mng_enable_host_if)
+e1000e_mng_write_dhcp_info -> (e1000_mng_enable_host_if, __ew32)

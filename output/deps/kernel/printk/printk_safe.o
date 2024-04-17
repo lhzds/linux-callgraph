@@ -1,0 +1,2 @@
+kernel/printk/printk_safe.o
+vprintk -> (vprintk_store, vprintk_default, defer_console_output)

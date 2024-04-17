@@ -1,0 +1,2 @@
+drivers/acpi/acpica/exresnte.o
+acpi_ex_resolve_node_to_value -> (acpi_ex_read_data_from_field, acpi_ds_get_package_arguments, acpi_ns_get_attached_object, acpi_ut_get_object_type_name, acpi_error, acpi_ns_get_type, acpi_ds_get_buffer_arguments, acpi_ut_add_reference)

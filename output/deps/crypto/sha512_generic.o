@@ -1,0 +1,6 @@
+crypto/sha512_generic.o
+crypto_sha512_finup -> (sha512_generic_block_fn)
+crypto_sha512_update -> (sha512_generic_block_fn)
+sha512_final -> (sha512_generic_block_fn)
+sha512_generic_mod_fini -> (crypto_sha512_finup, sha512_final, sha512_base_init, crypto_unregister_shashes, sha384_base_init, crypto_sha512_update)
+sha512_generic_mod_init -> (crypto_register_shashes, crypto_sha512_finup, sha512_final, sha512_base_init, sha384_base_init, crypto_sha512_update)

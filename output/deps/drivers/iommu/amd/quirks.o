@@ -1,0 +1,3 @@
+drivers/iommu/amd/quirks.o
+amd_iommu_apply_ivrs_quirks -> (ivrs_ioapic_quirk_cb, dmi_check_system)
+ivrs_ioapic_quirk_cb -> (add_special_device)

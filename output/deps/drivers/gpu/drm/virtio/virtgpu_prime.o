@@ -1,0 +1,7 @@
+drivers/gpu/drm/virtio/virtgpu_prime.o
+virtgpu_gem_map_dma_buf -> (virtio_gpu_is_vram, virtio_gpu_vram_map_dma_buf, drm_gem_map_dma_buf)
+virtgpu_gem_prime_export -> (virtio_gpu_notify, drm_gem_dmabuf_release, drm_gem_dmabuf_vunmap, refcount_warn_saturate, virtgpu_gem_map_dma_buf, virtio_dma_buf_attach, drm_dev_get, drm_gem_map_detach, virtio_gpu_array_add_obj, drm_gem_dmabuf_vmap, drm_gem_dmabuf_mmap, virtio_gpu_array_alloc, virtgpu_gem_unmap_dma_buf, virtio_dma_buf_export, virtio_gpu_cmd_resource_assign_uuid, virtgpu_virtio_get_uuid, drm_gem_map_attach)
+virtgpu_gem_prime_import -> (drm_gem_dmabuf_release, drm_gem_dmabuf_vunmap, drm_gem_prime_import, refcount_warn_saturate, virtgpu_gem_map_dma_buf, drm_gem_map_detach, virtio_dma_buf_attach, drm_gem_dmabuf_vmap, drm_gem_dmabuf_mmap, virtgpu_gem_unmap_dma_buf, virtgpu_virtio_get_uuid, drm_gem_map_attach)
+virtgpu_gem_unmap_dma_buf -> (drm_gem_unmap_dma_buf, virtio_gpu_is_vram, virtio_gpu_vram_unmap_dma_buf)
+virtgpu_virtio_get_uuid -> (init_wait_entry, __SCT__might_resched, schedule, finish_wait, prepare_to_wait_event)
+virtio_gpu_resource_assign_uuid -> (virtio_gpu_array_add_obj, virtio_gpu_array_alloc, virtio_gpu_cmd_resource_assign_uuid)

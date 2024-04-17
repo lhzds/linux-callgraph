@@ -1,0 +1,6 @@
+security/selinux/netif.o
+sel_netif_flush -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, kvfree_call_rcu)
+sel_netif_init -> (sel_netif_netdev_notifier_handler, register_netdevice_notifier)
+sel_netif_netdev_notifier_handler -> (_raw_spin_lock_bh, kvfree_call_rcu, __rcu_read_lock, __rcu_read_unlock, _raw_spin_unlock_bh)
+sel_netif_sid -> (__rcu_read_unlock, sel_netif_sid_slow, __rcu_read_lock)
+sel_netif_sid_slow -> (_raw_spin_lock_bh, _printk, security_netif_sid, dev_get_by_index, kmalloc_trace, _raw_spin_unlock_bh, kfree)

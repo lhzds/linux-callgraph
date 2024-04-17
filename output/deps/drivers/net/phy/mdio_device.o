@@ -1,0 +1,12 @@
+drivers/net/phy/mdio_device.o
+mdio_device_bus_match -> (strcmp)
+mdio_device_create -> (mdio_uevent, mdio_bus_match, device_initialize, mdio_device_release, mdio_device_free, kmalloc_trace, mdio_device_remove, dev_set_name)
+mdio_device_free -> (put_device)
+mdio_device_register -> (mdiobus_unregister_device, _printk, device_add, mdiobus_register_device)
+mdio_device_release -> (kfree, fwnode_handle_put)
+mdio_device_remove -> (mdiobus_unregister_device, device_del)
+mdio_device_reset -> (__udelay, usleep_range_state, msleep)
+mdio_driver_register -> (mdio_uevent, _printk, driver_register, mdio_bus_match, mdio_probe, mdio_shutdown, mdio_remove)
+mdio_driver_unregister -> (driver_unregister)
+mdio_probe -> (__udelay, usleep_range_state, msleep)
+mdio_remove -> (__udelay, usleep_range_state, msleep)

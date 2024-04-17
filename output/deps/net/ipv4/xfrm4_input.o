@@ -1,0 +1,6 @@
+net/ipv4/xfrm4_input.o
+xfrm4_rcv -> (xfrm_input)
+xfrm4_rcv_encap_finish -> (ip_route_input_noref, xfrm4_rcv_encap_finish2, xfrm_trans_queue, kfree_skb_reason)
+xfrm4_rcv_encap_finish2 -> (ip_local_deliver, ip6_input)
+xfrm4_transport_finish -> (ip_send_check, nf_hook_slow, kfree_skb_reason, xfrm4_rcv_encap_finish2, xfrm4_rcv_encap_finish, __rcu_read_lock, xfrm_trans_queue, __rcu_read_unlock, ip_route_input_noref)
+xfrm4_udp_encap_rcv -> (pskb_expand_head, kfree_skb_reason, xfrm4_rcv_encap, __pskb_pull_tail)

@@ -1,0 +1,2 @@
+lib/earlycpio.o
+find_cpio_data -> (_printk, strlen, bcmp, strscpy)

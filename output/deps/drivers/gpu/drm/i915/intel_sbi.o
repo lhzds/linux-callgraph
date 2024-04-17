@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/intel_sbi.o
+intel_sbi_read -> (intel_sbi_rw)
+intel_sbi_rw -> (_dev_err, __intel_wait_for_register_fw)
+intel_sbi_write -> (intel_sbi_rw)

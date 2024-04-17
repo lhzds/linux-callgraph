@@ -1,0 +1,13 @@
+kernel/crash_core.o
+__parse_crashkernel -> (parse_crashkernel_simple, get_last_crashkernel, parse_crashkernel_suffix, strchr, parse_crashkernel_mem)
+append_elf_note -> (strlen)
+crash_save_vmcoreinfo -> (ktime_get_real_seconds, vmcoreinfo_append_str)
+crash_save_vmcoreinfo_init -> (_printk, get_zeroed_page, arch_crash_save_vmcoreinfo, vmcoreinfo_append_str, alloc_pages_exact, log_buf_vmcoreinfo_setup, free_pages)
+get_last_crashkernel -> (strncmp, strlen, strstr, strchr)
+parse_crashkernel -> (__parse_crashkernel)
+parse_crashkernel_high -> (__parse_crashkernel)
+parse_crashkernel_low -> (__parse_crashkernel)
+parse_crashkernel_mem -> (_printk, memparse)
+parse_crashkernel_simple -> (_printk, memparse)
+parse_crashkernel_suffix -> (_printk, memparse, strlen, strncmp)
+vmcoreinfo_append_str -> (vscnprintf, __warn_printk)

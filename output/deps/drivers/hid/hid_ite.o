@@ -1,0 +1,6 @@
+drivers/hid/hid_ite.o
+ite_driver_exit -> (ite_report_fixup, ite_event, ite_input_mapping, hid_unregister_driver, ite_probe)
+ite_driver_init -> (__hid_register_driver, ite_report_fixup, ite_event, ite_input_mapping, ite_probe)
+ite_event -> (input_event)
+ite_probe -> (hid_hw_start, hid_open_report)
+ite_report_fixup -> (_dev_info)

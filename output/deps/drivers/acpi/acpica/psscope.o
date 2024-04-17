@@ -1,0 +1,5 @@
+drivers/acpi/acpica/psscope.o
+acpi_ps_cleanup_scope -> (acpi_ut_delete_generic_state, acpi_ut_pop_generic_state)
+acpi_ps_init_scope -> (acpi_ut_create_generic_state)
+acpi_ps_pop_scope -> (acpi_ut_delete_generic_state, acpi_ut_pop_generic_state)
+acpi_ps_push_scope -> (acpi_ut_push_generic_state, acpi_ut_create_generic_state)

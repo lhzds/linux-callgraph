@@ -1,0 +1,4 @@
+drivers/hid/hid_belkin.o
+belkin_driver_exit -> (belkin_probe, belkin_input_mapping, hid_unregister_driver)
+belkin_driver_init -> (__hid_register_driver, belkin_input_mapping, belkin_probe)
+belkin_probe -> (_dev_err, hid_hw_start, hid_open_report)

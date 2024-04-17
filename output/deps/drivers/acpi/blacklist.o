@@ -1,0 +1,3 @@
+drivers/acpi/blacklist.o
+acpi_blacklisted -> (_printk, dmi_enable_rev_override, acpi_match_platform_list, dmi_check_system, early_acpi_osi_init)
+dmi_enable_rev_override -> (_printk, acpi_rev_override_setup)

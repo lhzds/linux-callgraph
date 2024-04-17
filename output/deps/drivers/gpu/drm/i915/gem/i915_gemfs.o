@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/gem/i915_gemfs.o
+i915_gemfs_fini -> (kern_unmount)
+i915_gemfs_init -> (_dev_notice, i915_vtd_active)

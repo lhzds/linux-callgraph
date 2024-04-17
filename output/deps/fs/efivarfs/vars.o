@@ -1,0 +1,12 @@
+fs/efivarfs/vars.o
+__efivar_entry_get -> (efi_status_to_err, efivar_get_variable)
+efivar_entry_add -> (efivar_lock, efivar_unlock)
+efivar_entry_delete -> (efivar_lock, efivar_set_variable_locked, efivar_unlock, efi_status_to_err)
+efivar_entry_get -> (efivar_lock, efivar_unlock, efi_status_to_err, efivar_get_variable)
+efivar_entry_iter -> (efivar_lock, efivar_unlock)
+efivar_entry_set_get_size -> (efivar_unlock, efi_status_to_err, efivar_set_variable_locked, efivar_validate, efivar_get_variable, efivar_lock)
+efivar_entry_size -> (efivar_lock, efivar_unlock, efi_status_to_err, efivar_get_variable)
+efivar_init -> (_printk, ucs2_strsize, bcmp, efivar_unlock, kmalloc_trace, efivar_get_next_variable, efivar_lock, kfree, __kmalloc)
+efivar_validate -> (bcmp, validate_boot_order, ucs2_as_utf8, validate_ascii_string, validate_uint16, ucs2_utf8size, validate_device_path, kfree, validate_load_option, __kmalloc)
+efivar_variable_is_removable -> (bcmp, validate_boot_order, validate_ascii_string, validate_uint16, validate_device_path, validate_load_option)
+validate_load_option -> (ucs2_strsize, ucs2_strnlen, hex_to_bin)

@@ -1,0 +1,13 @@
+drivers/base/power/wakeirq.o
+__dev_pm_set_dedicated_wake_irq -> (free_irq, kmalloc_trace, kasprintf, handle_threaded_wake_irq, request_threaded_irq, dev_pm_attach_wake_irq, irq_modify_status, kfree)
+dev_pm_arm_wake_irq -> (irq_set_irq_wake, enable_irq)
+dev_pm_attach_wake_irq -> (device_wakeup_attach_irq, _raw_spin_lock_irqsave, __warn_printk, _raw_spin_unlock_irqrestore, dev_driver_string)
+dev_pm_clear_wake_irq -> (free_irq, _raw_spin_lock_irqsave, device_wakeup_detach_irq, _raw_spin_unlock_irqrestore, kfree)
+dev_pm_disable_wake_irq_check -> (disable_irq_nosync)
+dev_pm_disarm_wake_irq -> (irq_set_irq_wake, disable_irq_nosync)
+dev_pm_enable_wake_irq_check -> (enable_irq)
+dev_pm_enable_wake_irq_complete -> (enable_irq)
+dev_pm_set_dedicated_wake_irq -> (__dev_pm_set_dedicated_wake_irq)
+dev_pm_set_dedicated_wake_irq_reverse -> (__dev_pm_set_dedicated_wake_irq)
+dev_pm_set_wake_irq -> (dev_pm_attach_wake_irq, kmalloc_trace, kfree)
+handle_threaded_wake_irq -> (irq_get_irq_data, pm_wakeup_dev_event, _dev_warn, __pm_runtime_resume)

@@ -1,0 +1,8 @@
+drivers/acpi/acpica/nsnames.o
+acpi_ns_build_prefixed_pathname -> (acpi_ns_build_normalized_path, strcat, strlen, acpi_error, kfree, acpi_ns_externalize_name, __kmalloc, acpi_ns_normalize_pathname)
+acpi_ns_get_external_pathname -> (acpi_ns_build_normalized_path, acpi_error, __kmalloc)
+acpi_ns_get_normalized_pathname -> (acpi_ns_build_normalized_path, acpi_error, __kmalloc)
+acpi_ns_get_pathname_length -> (acpi_ns_build_normalized_path, acpi_error)
+acpi_ns_handle_to_name -> (acpi_ut_initialize_buffer, acpi_ns_validate_handle, acpi_ut_get_node_name)
+acpi_ns_handle_to_pathname -> (acpi_ns_build_normalized_path, acpi_ut_initialize_buffer, acpi_ns_validate_handle)
+acpi_ns_normalize_pathname -> (strcpy, kfree, strlen, __kmalloc)

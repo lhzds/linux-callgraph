@@ -1,0 +1,9 @@
+crypto/kpp.o
+crypto_alloc_kpp -> (crypto_kpp_init_tfm, crypto_kpp_show, crypto_alg_extsize, crypto_kpp_free_instance, crypto_alloc_tfm_node)
+crypto_grab_kpp -> (crypto_grab_spawn, crypto_kpp_init_tfm, crypto_kpp_show, crypto_alg_extsize, crypto_kpp_free_instance)
+crypto_has_kpp -> (crypto_kpp_init_tfm, crypto_kpp_show, crypto_alg_extsize, crypto_type_has_alg, crypto_kpp_free_instance)
+crypto_kpp_init_tfm -> (crypto_kpp_exit_tfm)
+crypto_kpp_show -> (seq_puts)
+crypto_register_kpp -> (crypto_kpp_init_tfm, crypto_kpp_show, crypto_alg_extsize, crypto_register_alg, crypto_kpp_free_instance)
+crypto_unregister_kpp -> (crypto_unregister_alg)
+kpp_register_instance -> (crypto_register_instance, crypto_kpp_init_tfm, crypto_kpp_show, crypto_alg_extsize, crypto_kpp_free_instance)

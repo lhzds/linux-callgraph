@@ -1,0 +1,8 @@
+drivers/acpi/acpica/dsopcode.o
+acpi_ds_eval_bank_field_operands -> (acpi_ns_get_attached_object, acpi_ps_get_arg, acpi_ex_resolve_to_value, acpi_ut_remove_reference, acpi_ds_create_operand)
+acpi_ds_eval_buffer_field_operands -> (acpi_ex_resolve_operands, acpi_ns_get_attached_object, acpi_error, acpi_ds_init_buffer_field, acpi_ds_create_operands, acpi_ps_get_opcode_name)
+acpi_ds_eval_data_object_operands -> (acpi_ds_obj_stack_pop, acpi_ex_resolve_operands, acpi_ds_build_internal_buffer_obj, acpi_error, acpi_ds_build_internal_package_obj, acpi_ut_remove_reference, acpi_ds_create_operand)
+acpi_ds_eval_region_operands -> (acpi_ex_resolve_operands, acpi_ns_get_attached_object, acpi_ut_add_address_range, acpi_ut_remove_reference, acpi_ds_create_operands, acpi_warning)
+acpi_ds_eval_table_region_operands -> (acpi_get_table_by_index, acpi_ex_resolve_operands, acpi_tb_find_table, acpi_ns_get_attached_object, acpi_error, acpi_ut_remove_reference, acpi_ds_create_operands)
+acpi_ds_init_buffer_field -> (acpi_ut_get_descriptor_name, acpi_ut_get_object_type_name, acpi_error, acpi_ut_remove_reference, acpi_ut_get_node_name, acpi_ex_prep_common_field_object, acpi_ps_get_opcode_name, acpi_bios_exception, acpi_bios_error)
+acpi_ds_initialize_region -> (acpi_ev_initialize_region, acpi_ns_get_attached_object)

@@ -1,0 +1,5 @@
+fs/ext4/xattr_security.o
+ext4_init_security -> (ext4_initxattrs, security_inode_init_security)
+ext4_initxattrs -> (ext4_xattr_set_handle)
+ext4_xattr_security_get -> (ext4_xattr_get)
+ext4_xattr_security_set -> (ext4_xattr_set)

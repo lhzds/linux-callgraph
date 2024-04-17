@@ -1,0 +1,4 @@
+drivers/acpi/acpica/utmisc.o
+acpi_ut_create_update_state_and_push -> (acpi_ut_create_update_state, acpi_ut_push_generic_state)
+acpi_ut_is_pci_root_bridge -> (strcmp)
+acpi_ut_walk_package_tree -> (acpi_ut_delete_generic_state, acpi_ut_create_pkg_state, acpi_ut_pop_generic_state, acpi_ut_push_generic_state)

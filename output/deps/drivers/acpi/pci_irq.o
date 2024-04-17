@@ -1,0 +1,5 @@
+drivers/acpi/pci_irq.o
+acpi_pci_irq_disable -> (acpi_pci_link_free_irq, acpi_pci_irq_lookup, acpi_unregister_gsi, kfree)
+acpi_pci_irq_enable -> (acpi_pci_link_allocate_irq, snprintf, _dev_warn, acpi_pci_irq_lookup, acpi_register_gsi, kfree)
+acpi_pci_irq_find_prt_entry -> (_printk, strlen, strcmp, kmalloc_trace, dmi_check_system, is_acpi_device_node, kfree, acpi_get_irq_routing_table, acpi_get_handle)
+acpi_pci_irq_lookup -> (acpi_pci_irq_find_prt_entry, _dev_info, pci_swizzle_interrupt_pin, _dev_warn)

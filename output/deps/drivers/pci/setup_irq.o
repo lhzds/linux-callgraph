@@ -1,0 +1,2 @@
+drivers/pci/setup_irq.o
+pci_assign_irq -> (pci_read_config_byte, pci_find_host_bridge, pci_write_config_byte)

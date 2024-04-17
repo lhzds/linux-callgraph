@@ -1,0 +1,3 @@
+net/sched/sch_frag.o
+sch_frag_xmit -> (csum_partial, skb_push, rcuref_get_slowpath, pskb_expand_head, kfree_skb_reason)
+sch_frag_xmit_hook -> (skb_copy_bits, _printk, dst_init, sch_frag_xmit, sch_frag_dst_get_mtu, net_ratelimit, dst_release, skb_pull, strchr, kfree_skb_reason, ip_do_fragment)

@@ -1,0 +1,7 @@
+drivers/acpi/acpica/dsmethod.o
+acpi_ds_auto_serialize_method -> (acpi_ds_create_walk_state, acpi_ps_set_name, acpi_ds_init_aml_walk, acpi_ps_free_op, acpi_ps_alloc_op, acpi_ps_delete_parse_tree, acpi_ps_parse_aml, acpi_ds_detect_named_opcodes, acpi_ds_delete_walk_state)
+acpi_ds_begin_method_execution -> (acpi_os_signal_semaphore, acpi_ex_start_trace_method, acpi_os_create_semaphore, acpi_error, acpi_ex_system_wait_mutex, acpi_ut_get_node_name, acpi_ut_allocate_owner_id, acpi_ut_create_internal_object_dbg, acpi_ut_delete_object_desc)
+acpi_ds_call_control_method -> (acpi_ds_create_walk_state, acpi_ns_get_attached_object, acpi_ds_init_aml_walk, acpi_ns_get_normalized_pathname, kmalloc_trace, acpi_ut_remove_reference, acpi_ds_begin_method_execution, kfree, acpi_ds_terminate_control_method, acpi_ds_delete_walk_state, acpi_ds_pop_walk_state)
+acpi_ds_method_error -> (acpi_ex_exit_interpreter, acpi_ex_enter_interpreter, acpi_ds_dump_method_stack, acpi_ds_clear_implicit_return)
+acpi_ds_restart_control_method -> (acpi_ds_do_implicit_return, acpi_ds_result_push, acpi_ut_remove_reference)
+acpi_ds_terminate_control_method -> (acpi_ns_delete_namespace_by_owner, acpi_os_signal_semaphore, acpi_ex_exit_interpreter, acpi_ns_delete_namespace_subtree, acpi_ex_enter_interpreter, acpi_error, acpi_info, acpi_ds_method_data_delete_all, acpi_ex_stop_trace_method, acpi_ut_release_owner_id)

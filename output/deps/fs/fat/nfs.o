@@ -1,0 +1,8 @@
+fs/fat/nfs.o
+__fat_nfs_get_inode -> (iput, fat_build_inode, fat_iget, __brelse, ilookup, __bread_gfp, _fat_msg)
+fat_fh_to_dentry -> (generic_fh_to_dentry, fat_nfs_get_inode)
+fat_fh_to_dentry_nostale -> (__fat_nfs_get_inode, d_obtain_alias)
+fat_fh_to_parent -> (generic_fh_to_parent, fat_nfs_get_inode)
+fat_fh_to_parent_nostale -> (__fat_nfs_get_inode, d_obtain_alias)
+fat_get_parent -> (iput, _raw_spin_unlock, iunique, _raw_spin_lock, fat_scan_logstart, igrab, __brelse, fat_build_inode, fat_get_dotdot_entry, new_inode, d_obtain_alias, __bread_gfp, _fat_msg, fat_fill_inode)
+fat_nfs_get_inode -> (__fat_nfs_get_inode)

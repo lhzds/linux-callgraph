@@ -1,0 +1,9 @@
+lib/mpi/mpih_mul.o
+mpih_sqr_n -> (mpihelp_addmul_1, mpih_sqr_n_basecase, mpihelp_sub_n, mpih_sqr_n, mpihelp_add_n, mpihelp_cmp)
+mpih_sqr_n_basecase -> (mpihelp_addmul_1, mpihelp_mul_1, mpihelp_add_n)
+mpihelp_mul -> (mpihelp_addmul_1, mpihelp_mul_karatsuba_case, mpi_free_limb_space, mpihelp_mul_1, kfree, mpihelp_add_n)
+mpihelp_mul_karatsuba_case -> (mul_n, mpihelp_mul_karatsuba_case, mpihelp_mul, mpi_alloc_limb_space, kmalloc_trace, mpi_free_limb_space, mul_n_basecase, mpihelp_add_n)
+mpihelp_mul_n -> (mul_n, mpi_alloc_limb_space, mpi_free_limb_space, mpih_sqr_n_basecase, mpih_sqr_n, mul_n_basecase)
+mpihelp_release_karatsuba_ctx -> (kfree, mpi_free_limb_space)
+mul_n -> (mpihelp_addmul_1, mul_n, mpihelp_sub_n, mul_n_basecase, mpihelp_add_n, mpihelp_cmp)
+mul_n_basecase -> (mpihelp_addmul_1, mpihelp_mul_1, mpihelp_add_n)

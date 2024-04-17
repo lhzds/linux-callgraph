@@ -1,0 +1,10 @@
+net/sunrpc/auth_gss/gss_mech_switch.o
+gss_delete_sec_context -> (kfree)
+gss_import_sec_context -> (kmalloc_trace)
+gss_mech_flavor2info -> (gss_mech_get_by_pseudoflavor)
+gss_mech_get_by_OID -> (bcmp, __traceiter_rpcgss_oid_to_mech, __request_module, __probestub_rpcgss_oid_to_mech, __SCT__tp_func_rpcgss_oid_to_mech, __rcu_read_lock, __rcu_read_unlock, sprint_oid)
+gss_mech_get_by_name -> (__rcu_read_unlock, __rcu_read_lock, strcmp, __request_module)
+gss_mech_get_by_pseudoflavor -> (__rcu_read_unlock, __rcu_read_lock, __request_module)
+gss_mech_info2flavor -> (gss_mech_get_by_OID)
+gss_mech_register -> (strcat, strlen, _raw_spin_unlock, _raw_spin_lock, svcauth_gss_register_pseudoflavor, auth_domain_put, kfree, __kmalloc)
+gss_mech_unregister -> (_raw_spin_lock, auth_domain_put, kfree, _raw_spin_unlock)

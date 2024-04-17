@@ -1,0 +1,3 @@
+drivers/acpi/acpica/dscontrol.o
+acpi_ds_exec_begin_control_op -> (acpi_ut_push_generic_state, acpi_os_get_timer, acpi_ut_create_control_state)
+acpi_ds_exec_end_control_op -> (acpi_ds_clear_implicit_return, acpi_ut_delete_generic_state, acpi_os_get_timer, acpi_ex_resolve_to_value, acpi_os_signal, acpi_error, acpi_ut_pop_generic_state, acpi_ut_remove_reference, acpi_ds_create_operands)

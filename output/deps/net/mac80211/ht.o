@@ -1,0 +1,8 @@
+net/mac80211/ht.o
+ieee80211_ba_session_work -> (_raw_spin_lock_bh, ___ieee80211_stop_rx_ba_session, mutex_lock, ieee80211_queue_work, mutex_unlock, ieee80211_assign_tid_tx, ___ieee80211_stop_tx_ba_session, kfree, synchronize_net, ieee80211_stop_tx_ba_cb, ieee80211_tx_ba_session_handle_start, _raw_spin_unlock_bh, ___ieee80211_start_rx_ba_session, ieee80211_start_tx_ba_cb)
+ieee80211_ht_cap_ie_to_sta_ht_cap -> (ieee80211_sta_recalc_aggregates, bcmp, ieee80211_apply_htcap_overrides, __rcu_read_lock, __rcu_read_unlock)
+ieee80211_process_delba -> (__ieee80211_stop_tx_ba_session, __ieee80211_stop_rx_ba_session)
+ieee80211_request_smps -> (__rcu_read_unlock, __rcu_read_lock, wiphy_work_queue)
+ieee80211_send_delba -> (ieee80211_tx_skb_tid, __netdev_alloc_skb, skb_put)
+ieee80211_send_smps_action -> (ieee80211_tx_skb_tid, __netdev_alloc_skb, skb_put)
+ieee80211_sta_tear_down_BA_sessions -> (___ieee80211_stop_rx_ba_session, mutex_lock, mutex_unlock, ieee80211_stop_tx_ba_cb, ___ieee80211_stop_tx_ba_session, cancel_work_sync)

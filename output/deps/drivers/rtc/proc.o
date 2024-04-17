@@ -1,0 +1,4 @@
+drivers/rtc/proc.o
+rtc_proc_add_device -> (rtc_proc_show, proc_create_single_data)
+rtc_proc_del_device -> (remove_proc_entry)
+rtc_proc_show -> (seq_printf, rtc_read_time, rtc_read_alarm)

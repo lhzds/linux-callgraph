@@ -1,0 +1,5 @@
+arch/x86/kernel/acpi/cstate.o
+acpi_processor_ffh_cstate_probe -> (_printk, acpi_processor_ffh_cstate_probe_cpu, snprintf, work_on_cpu)
+acpi_processor_ffh_cstate_probe_cpu -> (_printk, snprintf)
+ffh_cstate_exit -> (free_percpu)
+ffh_cstate_init -> (__alloc_percpu)

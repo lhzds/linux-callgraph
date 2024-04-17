@@ -1,0 +1,8 @@
+drivers/char/agp/backend.o
+agp_add_bridge -> (_printk, vzalloc, kfree, _dev_err, vfree, _dev_info)
+agp_alloc_bridge -> (kmalloc_trace)
+agp_backend_acquire -> (agp_generic_find_bridge)
+agp_init -> (_printk)
+agp_put_bridge -> (kfree)
+agp_remove_bridge -> (vfree)
+agp_setup -> (strcmp)

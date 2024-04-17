@@ -1,0 +1,2 @@
+drivers/acpi/acpica/psloop.o
+acpi_ps_parse_loop -> (acpi_ps_has_completed_scope, acpi_ps_get_next_package_end, acpi_ps_append_arg, acpi_ex_start_trace_opcode, acpi_ut_pop_generic_state, acpi_ns_opens_scope, acpi_ps_complete_op, acpi_ps_complete_final_op, acpi_ps_get_next_simple_arg, acpi_ps_get_next_arg, acpi_ps_push_scope, acpi_ps_get_next_namepath, acpi_ps_pop_scope, acpi_ps_get_opcode_name, acpi_exception, acpi_error, acpi_info, acpi_ps_create_op, acpi_ps_next_parse_state, acpi_ps_get_opcode_info, kfree, acpi_ds_get_predicate_value)

@@ -1,0 +1,13 @@
+fs/ext4/file.o
+ext4_buffered_write_iter -> (down_write, generic_write_checks, up_write, generic_perform_write, vfs_fsync_range, file_modified)
+ext4_dio_write_end_io -> (ext4_convert_unwritten_extents)
+ext4_file_mmap -> (filemap_map_pages, touch_atime, ext4_page_mkwrite, filemap_fault)
+ext4_file_open -> (ext4_superblock_csum_set, __ext4_journal_get_write_access, ext4_inode_attach_jinode, lock_buffer, unlock_buffer, d_path, __ext4_journal_stop, __ext4_handle_dirty_metadata, __ext4_journal_start_sb, sb_start_intwrite_trylock, dquot_file_open, strncpy, sb_end_intwrite)
+ext4_file_read_iter -> (iov_iter_alignment, down_read, up_read, ext4_iomap_begin, ext4_dio_alignment, ext4_iomap_end, down_read_trylock, iomap_dio_rw, touch_atime, generic_file_read_iter)
+ext4_file_splice_read -> (filemap_splice_read)
+ext4_file_write_iter -> (down_write_trylock, generic_write_checks, ext4_dio_write_end_io, __ext4_journal_stop, ext4_iomap_overwrite_begin, filemap_write_and_wait_range, file_modified, ext4_orphan_add, invalidate_mapping_pages, ext4_truncate, ext4_dio_alignment, down_read_trylock, __ext4_mark_inode_dirty, down_read, ext4_iomap_begin, ext4_iomap_end, ext4_orphan_del, truncate_inode_pages, inode_dio_wait, down_write, iov_iter_alignment, up_write, up_read, ext4_buffered_write_iter, iomap_dio_rw, __ext4_journal_start_sb, ext4_map_blocks, ext4_can_truncate)
+ext4_llseek -> (ext4_iomap_begin_report, down_read, up_read, iomap_seek_hole, generic_file_llseek_size, vfs_setpos, iomap_seek_data)
+ext4_release_file -> (down_write, up_write, ext4_alloc_da_blocks, ext4_discard_preallocations, ext4_htree_free_dir_info)
+lock_buffer -> (__SCT__might_resched, __lock_buffer)
+sb_end_intwrite -> (rcuwait_wake_up)
+sb_start_intwrite_trylock -> (__percpu_down_read)

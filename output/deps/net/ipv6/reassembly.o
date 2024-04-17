@@ -1,0 +1,11 @@
+net/ipv6/reassembly.o
+ip6_frag_expire -> (refcount_warn_saturate, icmp6_send, dev_get_by_index_rcu, _raw_spin_unlock, _raw_spin_lock, inet_frag_kill, inet_frag_destroy, inet_frag_pull_head, __rcu_read_lock, __rcu_read_unlock, kfree_skb_reason)
+ip6_frag_reasm -> (dev_get_by_index_rcu, csum_partial, inet_frag_kill, inet_frag_reasm_finish, inet_frag_reasm_prepare, __rcu_read_lock, __rcu_read_unlock)
+ip6frag_key_hashfn -> (jhash2)
+ip6frag_obj_cmpfn -> (bcmp)
+ip6frag_obj_hashfn -> (jhash2)
+ipv6_frag_exit -> (inet6_del_protocol, ipv6_frags_init_net, unregister_pernet_subsys, ipv6_frags_exit_net, inet_frags_fini, ipv6_frags_pre_exit_net, ipv6_frag_rcv, unregister_net_sysctl_table)
+ipv6_frag_init -> (register_pernet_subsys, inet6_del_protocol, inet_frags_init, ipv6_frags_init_net, ipv6_frags_exit_net, ip6frag_obj_cmpfn, ip6frag_key_hashfn, ip6frag_obj_hashfn, inet_frags_fini, inet6_add_protocol, ip6_frag_expire, ipv6_frags_pre_exit_net, register_net_sysctl, unregister_net_sysctl_table, ipv6_frag_rcv, ip6frag_init, proc_dointvec_jiffies)
+ipv6_frag_rcv -> (refcount_warn_saturate, inet_frag_find, __pskb_pull_tail, _raw_spin_unlock, kfree_skb_reason, csum_partial, _raw_spin_lock, inet_frag_destroy, inet_frag_kill, inet_frag_queue_insert, pskb_trim_rcsum_slow, ipv6_skip_exthdr, __ipv6_addr_type, dst_release, icmpv6_param_prob_reason, ip6_frag_reasm)
+ipv6_frags_exit_net -> (kfree, fqdir_exit, unregister_net_sysctl_table)
+ipv6_frags_init_net -> (fqdir_init, kmemdup, register_net_sysctl, proc_doulongvec_minmax, kfree, fqdir_exit, proc_dointvec_jiffies)

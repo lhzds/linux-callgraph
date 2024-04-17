@@ -1,0 +1,11 @@
+drivers/pnp/core.o
+__pnp_add_device -> (mutex_lock, device_register, device_set_wakeup_capable, mutex_unlock, pnp_fixup_device)
+__pnp_remove_device -> (mutex_unlock, mutex_lock, device_unregister)
+pnp_add_device -> (scnprintf, __pnp_add_device)
+pnp_alloc_dev -> (pnp_device_shutdown, pnp_bus_match, pnp_release_device, kmalloc_trace, pnp_device_remove, pnp_device_probe, pnp_add_id, dev_set_name, kfree)
+pnp_free_resource -> (kfree)
+pnp_free_resources -> (kfree)
+pnp_init -> (pnp_device_shutdown, pnp_bus_match, pnp_device_remove, bus_register, pnp_device_probe)
+pnp_register_protocol -> (dev_set_name, mutex_lock, device_register, mutex_unlock)
+pnp_release_device -> (pnp_free_options, kfree)
+pnp_unregister_protocol -> (mutex_unlock, mutex_lock, device_unregister)

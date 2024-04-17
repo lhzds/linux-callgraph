@@ -1,0 +1,10 @@
+drivers/gpu/drm/i915/gt/intel_gt_debugfs.o
+__intel_gt_debugfs_reset_show -> (intel_gt_terminally_wedged)
+__intel_gt_debugfs_reset_store -> (intel_gt_debugfs_reset_store)
+intel_gt_debugfs_register -> (simple_attr_release, snprintf, intel_gt_engines_debugfs_register, seq_read, debugfs_create_file, reset_fops_open, steering_open, intel_sseu_debugfs_register, single_release, intel_uc_debugfs_register, simple_attr_write, debugfs_create_dir, simple_attr_read, intel_gt_pm_debugfs_register, seq_lseek, generic_file_llseek)
+intel_gt_debugfs_register_files -> (debugfs_create_file)
+intel_gt_debugfs_reset_show -> (intel_gt_terminally_wedged)
+intel_gt_debugfs_reset_store -> (init_wait_entry, __SCT__might_resched, schedule, finish_wait, intel_gt_handle_error, prepare_to_wait_event)
+reset_fops_open -> (__intel_gt_debugfs_reset_show, simple_attr_open, __intel_gt_debugfs_reset_store)
+steering_open -> (steering_show, single_open)
+steering_show -> (__drm_puts_seq_file, intel_gt_mcr_report_steering, __drm_printfn_seq_file)

@@ -1,0 +1,4 @@
+arch/x86/lib/csum_wrappers_64.o
+csum_and_copy_from_user -> (csum_partial_copy_generic, __SCT__might_resched)
+csum_and_copy_to_user -> (csum_partial_copy_generic, __SCT__might_resched)
+csum_partial_copy_nocheck -> (csum_partial_copy_generic)

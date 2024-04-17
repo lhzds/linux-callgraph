@@ -1,0 +1,5 @@
+security/selinux/netlink.o
+selnl_init -> (panic, __netlink_kernel_create)
+selnl_notify -> (_printk, netlink_broadcast, __alloc_skb, __nlmsg_put, kfree_skb_reason)
+selnl_notify_policyload -> (selnl_notify)
+selnl_notify_setenforce -> (selnl_notify)

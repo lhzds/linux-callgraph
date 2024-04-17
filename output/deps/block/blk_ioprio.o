@@ -1,0 +1,12 @@
+block/blk_ioprio.o
+blk_ioprio_exit -> (ioprio_set_prio_policy, ioprio_alloc_cpd, blkcg_deactivate_policy, ioprio_alloc_pd, ioprio_free_cpd, ioprio_free_pd, ioprio_show_prio_policy)
+blk_ioprio_init -> (ioprio_set_prio_policy, ioprio_alloc_cpd, ioprio_alloc_pd, ioprio_free_cpd, ioprio_free_pd, ioprio_show_prio_policy, blkcg_activate_policy)
+blkcg_set_ioprio -> (ioprio_set_prio_policy, ioprio_alloc_cpd, ioprio_alloc_pd, ioprio_free_cpd, ioprio_free_pd, ioprio_show_prio_policy)
+ioprio_alloc_cpd -> (kmalloc_trace)
+ioprio_alloc_pd -> (kmalloc_trace)
+ioprio_exit -> (ioprio_set_prio_policy, ioprio_alloc_cpd, ioprio_alloc_pd, ioprio_free_cpd, blkcg_policy_unregister, ioprio_free_pd, ioprio_show_prio_policy)
+ioprio_free_cpd -> (kfree)
+ioprio_free_pd -> (kfree)
+ioprio_init -> (ioprio_set_prio_policy, ioprio_alloc_cpd, ioprio_alloc_pd, ioprio_free_cpd, ioprio_free_pd, ioprio_show_prio_policy, blkcg_policy_register)
+ioprio_set_prio_policy -> (of_css, ioprio_set_prio_policy, ioprio_alloc_cpd, ioprio_alloc_pd, ioprio_free_cpd, __sysfs_match_string, ioprio_free_pd, ioprio_show_prio_policy)
+ioprio_show_prio_policy -> (of_css, seq_printf, ioprio_set_prio_policy, ioprio_alloc_cpd, ioprio_alloc_pd, ioprio_free_cpd, ioprio_free_pd, ioprio_show_prio_policy)

@@ -1,0 +1,5 @@
+kernel/time/timekeeping_debug.o
+tk_debug_account_sleep_time -> (pm_debug_messages_should_print, _printk_deferred)
+tk_debug_sleep_time_init -> (seq_read, debugfs_create_file, single_release, tk_debug_sleep_time_open, seq_lseek)
+tk_debug_sleep_time_open -> (tk_debug_sleep_time_show, single_open)
+tk_debug_sleep_time_show -> (seq_printf, seq_puts)

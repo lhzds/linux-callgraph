@@ -1,0 +1,2 @@
+drivers/acpi/acpica/utdecode.o
+acpi_ut_get_node_name -> (acpi_ut_repair_name)

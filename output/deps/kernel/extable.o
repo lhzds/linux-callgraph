@@ -1,0 +1,8 @@
+kernel/extable.o
+__kernel_text_address -> (kernel_text_address)
+core_kernel_text -> (in_gate_area_no_mm)
+func_ptr_is_kernel_text -> (is_module_text_address, in_gate_area_no_mm)
+kernel_text_address -> (alloc_optinsn_page, ct_nmi_enter, alloc_insn_page, __is_insn_slot_addr, is_module_text_address, in_gate_area_no_mm, free_insn_page, rcu_is_watching, ct_nmi_exit, free_optinsn_page)
+search_exception_tables -> (search_module_extables, search_extable)
+search_kernel_exception_table -> (search_extable)
+sort_main_extable -> (_printk, sort_extable)

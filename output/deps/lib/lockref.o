@@ -1,0 +1,6 @@
+lib/lockref.o
+lockref_get -> (_raw_spin_lock, _raw_spin_unlock)
+lockref_get_not_dead -> (_raw_spin_lock, _raw_spin_unlock)
+lockref_get_not_zero -> (_raw_spin_lock, _raw_spin_unlock)
+lockref_put_not_zero -> (_raw_spin_lock, _raw_spin_unlock)
+lockref_put_or_lock -> (_raw_spin_lock, _raw_spin_unlock)

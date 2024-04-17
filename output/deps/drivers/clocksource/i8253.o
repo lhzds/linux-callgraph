@@ -1,0 +1,6 @@
+drivers/clocksource/i8253.o
+clockevent_i8253_init -> (pit_set_oneshot, pit_set_periodic, pit_shutdown, clockevents_config_and_register, pit_next_event)
+pit_next_event -> (native_flush_tlb_local, native_flush_tlb_one_user, native_flush_tlb_multi, _raw_spin_unlock, _raw_spin_lock, native_flush_tlb_global, tlb_remove_table, __raw_callee_save___kvm_vcpu_is_preempted, native_io_delay, _paravirt_nop, kvm_flush_tlb_multi, kvm_io_delay, tlb_remove_page)
+pit_set_oneshot -> (native_flush_tlb_local, native_flush_tlb_one_user, native_flush_tlb_multi, _raw_spin_unlock, _raw_spin_lock, native_flush_tlb_global, tlb_remove_table, __raw_callee_save___kvm_vcpu_is_preempted, native_io_delay, _paravirt_nop, kvm_flush_tlb_multi, kvm_io_delay, tlb_remove_page)
+pit_set_periodic -> (native_flush_tlb_local, native_flush_tlb_one_user, native_flush_tlb_multi, _raw_spin_unlock, _raw_spin_lock, native_flush_tlb_global, tlb_remove_table, __raw_callee_save___kvm_vcpu_is_preempted, native_io_delay, _paravirt_nop, kvm_flush_tlb_multi, kvm_io_delay, tlb_remove_page)
+pit_shutdown -> (native_flush_tlb_local, native_flush_tlb_one_user, native_flush_tlb_multi, _raw_spin_unlock, _raw_spin_lock, native_flush_tlb_global, tlb_remove_table, __raw_callee_save___kvm_vcpu_is_preempted, native_io_delay, _paravirt_nop, kvm_flush_tlb_multi, kvm_io_delay, tlb_remove_page)

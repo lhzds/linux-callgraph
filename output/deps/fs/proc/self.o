@@ -1,0 +1,4 @@
+fs/proc/self.o
+proc_self_get_link -> (sprintf, kmalloc_trace, kfree_link, __task_pid_nr_ns)
+proc_self_init -> (proc_alloc_inum)
+proc_setup_self -> (d_alloc_name, _printk, down_write, up_write, proc_self_get_link, dput, new_inode, current_time, d_add)

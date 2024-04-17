@@ -1,0 +1,4 @@
+fs/notify/notification.o
+fsnotify_destroy_event -> (_raw_spin_lock, _raw_spin_unlock)
+fsnotify_flush_notify -> (_raw_spin_lock, _raw_spin_unlock)
+fsnotify_insert_event -> (__wake_up, kill_fasync, _raw_spin_lock, _raw_spin_unlock)

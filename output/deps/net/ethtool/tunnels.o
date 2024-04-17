@@ -1,0 +1,6 @@
+net/ethtool/tunnels.o
+ethnl_tunnel_info_doit -> (do_trace_netlink_extack, ethnl_reply_init, netlink_unicast, rtnl_lock, ethnl_bitset32_size, ethnl_tunnel_info_fill_reply, kfree_skb_reason, rtnl_unlock, ethnl_parse_header_dev_get)
+ethnl_tunnel_info_dumpit -> (ethnl_fill_reply_header, rtnl_lock, ethnl_tunnel_info_fill_reply, ethnl_dump_put, rtnl_unlock, skb_trim)
+ethnl_tunnel_info_fill_reply -> (nla_put, ethnl_put_bitset32, nla_nest_cancel, skb_trim)
+ethnl_tunnel_info_start -> (ethnl_parse_header_dev_get)
+nla_nest_cancel -> (skb_trim)

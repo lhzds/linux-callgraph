@@ -1,0 +1,10 @@
+kernel/groups.o
+__ia32_sys_setgroups -> (__se_sys_setgroups)
+__se_sys_setgroups -> (set_current_groups, sort, kvmalloc_node, ns_capable_setid, gid_cmp, kvfree)
+__x64_sys_setgroups -> (__se_sys_setgroups)
+groups_alloc -> (kvmalloc_node)
+groups_free -> (kvfree)
+groups_sort -> (gid_cmp, sort)
+may_setgroups -> (ns_capable_setid)
+set_current_groups -> (commit_creds, abort_creds, kvfree, prepare_creds, security_task_fix_setgroups)
+set_groups -> (kvfree)

@@ -1,0 +1,7 @@
+net/ethtool/privflags.o
+ethnl_get_priv_flags_info -> (__warn_printk, __kmalloc, strchr)
+ethnl_set_privflags -> (ethnl_bitset_is_compact, ethnl_update_bitset32, ethnl_get_priv_flags_info, kfree)
+privflags_cleanup_data -> (kfree)
+privflags_fill_reply -> (ethnl_put_bitset32)
+privflags_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin, ethnl_get_priv_flags_info)
+privflags_reply_size -> (ethnl_bitset32_size)

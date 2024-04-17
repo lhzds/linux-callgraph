@@ -1,0 +1,7 @@
+mm/maccess.o
+__copy_overflow -> (__warn_printk)
+copy_from_kernel_nofault -> (copy_from_kernel_nofault_allowed)
+copy_from_user_nofault -> (nmi_uaccess_okay)
+strncpy_from_kernel_nofault -> (copy_from_kernel_nofault_allowed)
+strncpy_from_user_nofault -> (strncpy_from_user)
+strnlen_user_nofault -> (strnlen_user)

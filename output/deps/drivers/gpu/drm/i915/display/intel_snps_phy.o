@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/display/intel_snps_phy.o
+intel_mpllb_calc_state -> (__warn_printk, __drm_dev_dbg)
+intel_mpllb_disable -> (_dev_err, __intel_wait_for_register, intel_port_to_phy)
+intel_mpllb_enable -> (__drm_dev_dbg, __intel_wait_for_register, intel_port_to_phy)
+intel_mpllb_readout_hw_state -> (intel_port_to_phy)
+intel_mpllb_state_verify -> (__warn_printk, intel_port_to_phy, _dev_err, intel_get_crtc_new_encoder, dev_driver_string)
+intel_snps_phy_set_signal_levels -> (intel_port_to_phy, __warn_printk, dev_driver_string, intel_ddi_level)
+intel_snps_phy_update_psr_power_state -> (intel_phy_is_snps)
+intel_snps_phy_wait_for_calibration -> (intel_phy_is_snps, __intel_wait_for_register)

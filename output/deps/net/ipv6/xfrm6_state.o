@@ -1,0 +1,3 @@
+net/ipv6/xfrm6_state.o
+xfrm6_state_fini -> (xfrm6_output, xfrm6_transport_finish, xfrm6_local_error, xfrm_state_unregister_afinfo)
+xfrm6_state_init -> (xfrm6_output, xfrm6_transport_finish, xfrm_state_register_afinfo, xfrm6_local_error)

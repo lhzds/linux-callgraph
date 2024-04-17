@@ -1,0 +1,5 @@
+drivers/acpi/acpica/evgpeutil.o
+acpi_ev_delete_gpe_handlers -> (kfree)
+acpi_ev_delete_gpe_xrupt -> (acpi_os_acquire_lock, acpi_os_remove_interrupt_handler, acpi_ev_gpe_xrupt_handler, kfree, acpi_os_release_lock)
+acpi_ev_get_gpe_xrupt_block -> (acpi_os_acquire_lock, kmalloc_trace, acpi_exception, acpi_ev_gpe_xrupt_handler, acpi_os_install_interrupt_handler, acpi_os_release_lock)
+acpi_ev_walk_gpe_list -> (acpi_os_acquire_lock, acpi_os_release_lock)

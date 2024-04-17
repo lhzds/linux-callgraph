@@ -1,0 +1,7 @@
+drivers/thermal/thermal_hwmon.o
+devm_thermal_add_hwmon_sysfs -> (_dev_warn, __devres_alloc_node, devm_thermal_hwmon_release, devres_add, thermal_add_hwmon_sysfs, devres_free)
+devm_thermal_hwmon_release -> (thermal_remove_hwmon_sysfs)
+temp_crit_show -> (mutex_unlock, sprintf, mutex_lock)
+temp_input_show -> (sprintf, thermal_zone_get_temp)
+thermal_add_hwmon_sysfs -> (device_remove_file, mutex_lock, snprintf, strreplace, strcmp, mutex_unlock, kmalloc_trace, strcpy, hwmon_device_unregister, temp_input_show, temp_crit_show, kfree, device_create_file, strscpy, hwmon_device_register_for_thermal)
+thermal_remove_hwmon_sysfs -> (device_remove_file, mutex_lock, strreplace, strcmp, mutex_unlock, strcpy, hwmon_device_unregister, kfree)

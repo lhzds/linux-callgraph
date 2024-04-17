@@ -1,0 +1,9 @@
+drivers/gpu/drm/virtio/virtgpu_display.o
+virtio_gpu_conn_destroy -> (drm_connector_cleanup, drm_connector_unregister)
+virtio_gpu_conn_get_modes -> (___drm_dbg, drm_mode_probed_add, drm_set_preferred_mode, drm_add_modes_noedid, drm_add_edid_modes, drm_cvt_mode)
+virtio_gpu_conn_mode_valid -> (___drm_dbg)
+virtio_gpu_crtc_atomic_disable -> (virtio_gpu_notify, virtio_gpu_cmd_set_scanout)
+virtio_gpu_crtc_mode_set_nofb -> (virtio_gpu_notify, virtio_gpu_cmd_set_scanout)
+virtio_gpu_modeset_fini -> (kfree)
+virtio_gpu_modeset_init -> (virtio_gpu_crtc_atomic_flush, drm_atomic_helper_check, drm_atomic_helper_crtc_duplicate_state, drm_connector_attach_edid_property, virtio_gpu_conn_get_modes, virtio_gpu_enc_enable, drm_atomic_helper_set_config, drm_connector_init, virtio_gpu_crtc_atomic_disable, drm_crtc_init_with_planes, drm_simple_encoder_init, drm_connector_attach_encoder, virtio_gpu_conn_detect, virtio_gpu_enc_disable, drm_mode_config_reset, drm_crtc_cleanup, virtio_gpu_crtc_mode_set_nofb, drm_atomic_helper_connector_duplicate_state, virtio_gpu_crtc_atomic_enable, virtio_gpu_user_framebuffer_create, drm_atomic_helper_crtc_destroy_state, virtio_gpu_conn_mode_valid, drm_atomic_helper_crtc_reset, drm_atomic_helper_connector_destroy_state, drmm_mode_config_init, drm_atomic_helper_connector_reset, virtio_gpu_conn_destroy, drm_atomic_helper_page_flip, drm_connector_register, drm_helper_probe_single_connector_modes, virtio_gpu_plane_init, drm_atomic_helper_commit, virtio_gpu_crtc_atomic_check, virtio_gpu_enc_mode_set)
+virtio_gpu_user_framebuffer_create -> (drm_gem_fb_destroy, refcount_warn_saturate, drm_gem_fb_create_handle, drm_framebuffer_init, drm_gem_object_free, kmalloc_trace, kfree, drm_atomic_helper_dirtyfb, drm_helper_mode_fill_fb_struct, drm_gem_object_lookup)

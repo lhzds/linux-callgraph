@@ -1,0 +1,5 @@
+fs/proc/stat.o
+get_idle_time -> (get_cpu_idle_time_us)
+proc_stat_init -> (seq_read_iter, stat_open, single_release, proc_create, seq_lseek)
+show_stat -> (get_cpu_iowait_time_us, kstat_irqs_usr, seq_printf, set_normalized_timespec64, irq_get_next_irq, seq_write, getboottime64, arch_irq_stat, nr_context_switches, nr_iowait, seq_put_decimal_ull, seq_putc, nr_running, get_cpu_idle_time_us, nsec_to_clock_t, arch_irq_stat_cpu)
+stat_open -> (single_open_size, show_stat)

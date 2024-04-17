@@ -1,0 +1,6 @@
+block/blk_ioc.o
+__copy_io -> (kmem_cache_alloc_node)
+blk_ioc_init -> (kmem_cache_create)
+exit_io_context -> (_raw_spin_lock, kmem_cache_free, _raw_spin_unlock)
+put_io_context -> (kmem_cache_free)
+set_task_ioprio -> (capable, _raw_spin_unlock, kmem_cache_alloc_node, _raw_spin_lock, security_task_setioprio, __rcu_read_lock, __rcu_read_unlock, kmem_cache_free)

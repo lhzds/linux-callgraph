@@ -1,0 +1,10 @@
+drivers/acpi/glue.o
+acpi_bind_one -> (put_device, mutex_lock, snprintf, _dev_warn, device_set_wakeup_capable, mutex_unlock, kmalloc_trace, _dev_err, get_device, is_acpi_device_node, sysfs_create_link, kfree, set_primary_fwnode)
+acpi_device_notify -> (pci_dma_configure, pci_device_shutdown, pci_bus_num_vf, down_read, pci_acpi_setup, up_read, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, is_acpi_device_node, pci_device_probe, acpi_bind_one)
+acpi_device_notify_remove -> (pci_dma_configure, pci_device_shutdown, acpi_unbind_one, pci_bus_num_vf, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, is_acpi_device_node, pci_acpi_cleanup, pci_device_probe)
+acpi_find_child_by_adr -> (check_one_child, acpi_dev_for_each_child)
+acpi_find_child_device -> (check_one_child, acpi_dev_for_each_child)
+acpi_unbind_one -> (put_device, mutex_lock, snprintf, mutex_unlock, is_acpi_device_node, sysfs_remove_link, kfree, set_primary_fwnode)
+check_one_child -> (acpi_evaluate_integer, match_any, acpi_dev_for_each_child)
+register_acpi_bus_type -> (down_write, _printk, up_write)
+unregister_acpi_bus_type -> (down_write, _printk, up_write)

@@ -1,0 +1,5 @@
+drivers/acpi/acpica/tbinstal.o
+acpi_tb_install_standard_table -> (acpi_ut_release_mutex, acpi_tb_install_table_with_override, acpi_error, acpi_info, acpi_tb_acquire_temp_table, acpi_tb_invalidate_table, acpi_tb_release_temp_table, acpi_tb_notify_table, kfree, acpi_ut_acquire_mutex, acpi_tb_verify_temp_table)
+acpi_tb_install_table_with_override -> (acpi_tb_print_table_header, acpi_tb_override_table, acpi_tb_init_table_descriptor, acpi_tb_get_next_table_descriptor, acpi_ut_set_integer_width)
+acpi_tb_override_table -> (acpi_tb_release_temp_table, acpi_os_physical_table_override, acpi_info, acpi_tb_acquire_temp_table, acpi_tb_validate_temp_table, acpi_os_table_override, acpi_tb_invalidate_table, acpi_tb_init_table_descriptor, kfree, acpi_tb_verify_temp_table)
+acpi_tb_uninstall_table -> (kfree, acpi_tb_invalidate_table)

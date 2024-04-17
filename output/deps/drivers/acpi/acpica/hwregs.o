@@ -1,0 +1,9 @@
+drivers/acpi/acpica/hwregs.o
+acpi_hw_clear_acpi_status -> (acpi_hw_clear_gpe_block, _raw_spin_lock_irqsave, acpi_hw_write, _raw_spin_unlock_irqrestore, acpi_ev_walk_gpe_list)
+acpi_hw_get_bit_register_info -> (acpi_error)
+acpi_hw_read -> (acpi_hw_validate_register, acpi_hw_read_port, acpi_os_read_memory, acpi_hw_get_access_bit_width)
+acpi_hw_register_read -> (acpi_hw_read, acpi_hw_read_port, acpi_error)
+acpi_hw_register_write -> (acpi_hw_read, acpi_hw_write, acpi_hw_write_port, acpi_error)
+acpi_hw_validate_register -> (acpi_warning, acpi_hw_get_access_bit_width, acpi_error)
+acpi_hw_write -> (acpi_hw_validate_register, acpi_hw_write_port, acpi_hw_get_access_bit_width, acpi_os_write_memory)
+acpi_hw_write_pm1_control -> (acpi_hw_write)

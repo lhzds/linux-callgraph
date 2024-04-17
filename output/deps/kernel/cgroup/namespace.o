@@ -1,0 +1,6 @@
+kernel/cgroup/namespace.o
+cgroupns_get -> (_raw_spin_lock, refcount_warn_saturate, _raw_spin_unlock)
+cgroupns_install -> (free_cgroup_ns, refcount_warn_saturate, ns_capable)
+cgroupns_put -> (free_cgroup_ns, refcount_warn_saturate)
+copy_cgroup_ns -> (cgroupns_put, refcount_warn_saturate, put_css_set_locked, cgroupns_install, dec_ucount, refcount_dec_not_one, _raw_spin_lock_irq, _raw_spin_lock_irqsave, cgroupns_get, kmalloc_trace, _raw_spin_unlock_irq, ns_capable, cgroupns_owner, _raw_spin_unlock_irqrestore, inc_ucount, proc_alloc_inum, kfree)
+free_cgroup_ns -> (proc_free_inum, put_css_set_locked, dec_ucount, refcount_dec_not_one, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)

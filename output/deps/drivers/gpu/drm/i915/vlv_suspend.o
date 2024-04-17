@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/vlv_suspend.o
+vlv_resume_prepare -> (intel_clock_gating_init, __drm_dev_dbg, vlv_wait_for_pw_status, _dev_err, __intel_wait_for_register)
+vlv_suspend_cleanup -> (kfree)
+vlv_suspend_complete -> (__drm_dev_dbg, vlv_wait_for_pw_status, __warn_printk, _dev_err, __intel_wait_for_register, dev_driver_string)
+vlv_suspend_init -> (kmalloc_trace)
+vlv_wait_for_pw_status -> (__SCT__might_resched, __traceiter_i915_reg_rw, ktime_get_raw, usleep_range_state, __probestub_i915_reg_rw, __SCT__tp_func_i915_reg_rw)

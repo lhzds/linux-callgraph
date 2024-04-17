@@ -1,0 +1,2 @@
+fs/iomap/swapfile.o
+iomap_swapfile_activate -> (_printk, add_swap_extent, file_path, iomap_iter, vfs_fsync, kmalloc_trace, kfree)

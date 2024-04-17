@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/gem/i915_gem_lmem.o
+__i915_gem_object_create_lmem_with_ps -> (i915_gem_object_create_region)
+i915_gem_object_create_lmem -> (i915_gem_object_create_region)
+i915_gem_object_create_lmem_from_data -> (refcount_warn_saturate, drm_gem_object_free, i915_gem_object_create_region, __i915_gem_object_flush_map, __i915_gem_object_release_map, i915_gem_object_pin_map_unlocked)
+i915_gem_object_lmem_io_map -> (__i915_gem_object_get_dma_address)

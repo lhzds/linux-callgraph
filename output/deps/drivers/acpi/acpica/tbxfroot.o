@@ -1,0 +1,5 @@
+drivers/acpi/acpica/tbxfroot.o
+acpi_find_root_pointer -> (acpi_os_map_memory, acpi_os_unmap_memory, acpi_error, acpi_bios_error, acpi_tb_scan_memory_for_rsdp)
+acpi_tb_get_rsdp_length -> (strncmp)
+acpi_tb_scan_memory_for_rsdp -> (acpi_ut_checksum, strncmp)
+acpi_tb_validate_rsdp -> (acpi_ut_checksum, strncmp)

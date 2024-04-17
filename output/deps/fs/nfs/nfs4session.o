@@ -1,0 +1,11 @@
+fs/nfs/nfs4session.o
+nfs41_wake_and_assign_slot -> (rpc_wake_up_first, nfs41_assign_slot)
+nfs41_wake_slot_table -> (rpc_wake_up_first, nfs4_alloc_slot, nfs41_assign_slot, _find_last_bit, complete)
+nfs4_alloc_slot -> (_find_first_zero_bit, kmalloc_trace)
+nfs4_free_slot -> (complete, _find_last_bit)
+nfs4_lookup_slot -> (kmalloc_trace)
+nfs4_setup_slot_table -> (_raw_spin_unlock, _raw_spin_lock, kmalloc_trace, rpc_init_priority_wait_queue, __init_swait_queue_head, __init_waitqueue_head, kfree)
+nfs4_shutdown_slot_table -> (rpc_destroy_wait_queue, kfree)
+nfs4_slot_seqid_in_use -> (_raw_spin_lock, kmalloc_trace, _raw_spin_unlock)
+nfs4_slot_tbl_drain_complete -> (complete)
+nfs4_slot_wait_on_seqid -> (init_wait_entry, __SCT__might_resched, nfs4_slot_seqid_in_use, schedule_timeout, finish_wait, prepare_to_wait_event)

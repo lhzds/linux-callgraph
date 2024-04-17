@@ -1,0 +1,7 @@
+lib/logic_pio.o
+find_io_range_by_fwnode -> (__rcu_read_unlock, __rcu_read_lock)
+logic_pio_register_range -> (mutex_unlock, _printk, mutex_lock)
+logic_pio_to_hwaddr -> (__rcu_read_unlock, _printk, __rcu_read_lock)
+logic_pio_trans_cpuaddr -> (__rcu_read_unlock, _printk, __rcu_read_lock)
+logic_pio_trans_hwaddr -> (__rcu_read_unlock, _printk, __rcu_read_lock)
+logic_pio_unregister_range -> (mutex_unlock, synchronize_rcu, mutex_lock)

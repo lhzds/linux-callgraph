@@ -1,0 +1,6 @@
+net/ipv6/netfilter.o
+__nf_ip6_route -> (dst_release, ip6_route_output_flags)
+br_ip6_fragment -> (skb_checksum_help, ipv6_select_ident, ip6_frag_next, kfree_skb_reason, consume_skb, ip6_frag_init, ip6_fraglist_init, ip6_fraglist_prepare, ip6_find_1stfragopt, kfree, kfree_skb_list_reason)
+ip6_route_me_harder -> (__xfrm_decode_session, ip6_route_output_flags, __ipv6_addr_type, dst_release, xfrm_lookup, pskb_expand_head)
+ipv6_netfilter_init -> (ip6_route_input, nf_ip6_reroute, ip6_fragment)
+nf_ip6_reroute -> (ip6_route_me_harder)

@@ -1,0 +1,2 @@
+drivers/pci/mmap.o
+pci_mmap_resource_range -> (cachemode2protval, generic_access_phys, pgprot_writecombine, remap_pfn_range)

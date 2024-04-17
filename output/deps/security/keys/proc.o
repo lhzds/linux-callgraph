@@ -1,0 +1,10 @@
+security/keys/proc.o
+key_proc_init -> (proc_keys_stop, proc_key_users_start, proc_keys_show, proc_create_seq_private, proc_keys_next, proc_key_users_next, proc_keys_start, panic, proc_key_users_show, proc_key_users_stop)
+proc_key_users_next -> (rb_next)
+proc_key_users_show -> (seq_printf)
+proc_key_users_start -> (_raw_spin_lock, rb_first, rb_next)
+proc_key_users_stop -> (_raw_spin_unlock)
+proc_keys_next -> (rb_next)
+proc_keys_show -> (seq_printf, ktime_get_real_seconds, search_cred_keyrings_rcu, lookup_user_key_possessed, key_put, key_task_permission, __rcu_read_lock, seq_putc, __rcu_read_unlock, sprintf)
+proc_keys_start -> (_raw_spin_lock, rb_next)
+proc_keys_stop -> (_raw_spin_unlock)

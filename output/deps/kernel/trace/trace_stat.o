@@ -1,0 +1,8 @@
+kernel/trace/trace_stat.o
+register_stat_tracer -> (_printk, tracing_stat_release, mutex_lock, __mutex_init, mutex_unlock, kmalloc_trace, seq_read, tracefs_create_dir, tracefs_create_file, tracing_stat_open, rb_next_postorder, rb_first_postorder, tracefs_remove, tracing_init_dentry, kfree, seq_lseek)
+stat_seq_next -> (rb_first, rb_next)
+stat_seq_start -> (mutex_lock, rb_first, rb_next)
+stat_seq_stop -> (mutex_unlock)
+tracing_stat_open -> (mutex_lock, rb_insert_color, mutex_unlock, kmalloc_trace, stat_seq_show, stat_seq_start, rb_next_postorder, dummy_cmp, security_locked_down, stat_seq_stop, rb_first_postorder, kfree, stat_seq_next, seq_open)
+tracing_stat_release -> (mutex_lock, seq_release, mutex_unlock, rb_next_postorder, rb_first_postorder, kfree)
+unregister_stat_tracer -> (mutex_lock, mutex_unlock, rb_next_postorder, rb_first_postorder, tracefs_remove, kfree)

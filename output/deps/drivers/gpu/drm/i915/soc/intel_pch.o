@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/soc/intel_pch.o
+intel_detect_pch -> (intel_pch_type, __drm_dev_dbg, pci_get_class, intel_virt_detect_pch, pci_dev_put)
+intel_pch_type -> (__warn_printk, __drm_dev_dbg, dev_driver_string)
+intel_virt_detect_pch -> (intel_pch_type, __warn_printk, __drm_dev_dbg, dev_driver_string)

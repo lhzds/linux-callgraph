@@ -1,0 +1,11 @@
+net/ipv6/udplite.o
+udp_lib_close -> (sk_common_release)
+udplite6_proc_exit -> (udplite6_proc_init_net, unregister_pernet_subsys, udplite6_proc_exit_net)
+udplite6_proc_exit_net -> (remove_proc_entry)
+udplite6_proc_init -> (register_pernet_subsys, udplite6_proc_init_net, udplite6_proc_exit_net)
+udplite6_proc_init_net -> (proc_create_net_data, udp_seq_start, udp_seq_next, udp_seq_stop, udp6_seq_show)
+udplitev6_err -> (__udp6_lib_err)
+udplitev6_exit -> (inet6_getname, inet6_del_protocol, sock_no_listen, udpv6_setsockopt, udp_read_skb, udpv6_recvmsg, ip6_datagram_connect, sock_common_getsockopt, udplitev6_err, sock_common_setsockopt, udp_lib_hash, udp_lib_unhash, udp_ioctl, inet6_unregister_protosw, inet6_compat_ioctl, inet6_sendmsg, udplitev6_sk_init, udplitev6_rcv, udpv6_destroy_sock, sock_no_mmap, udp_disconnect, inet6_recvmsg, inet6_ioctl, inet6_bind, inet_dgram_connect, udp_poll, udpv6_sendmsg, inet_shutdown, udp_v6_get_port, sock_gettstamp, sock_no_accept, udp_lib_close, udpv6_getsockopt, udp_v6_rehash, inet6_release, sock_no_socketpair, sk_set_peek_off)
+udplitev6_init -> (inet6_getname, inet6_del_protocol, sock_no_listen, udpv6_setsockopt, udp_read_skb, udpv6_recvmsg, ip6_datagram_connect, sock_common_getsockopt, udplitev6_err, sock_common_setsockopt, udp_lib_hash, udp_lib_unhash, udp_ioctl, inet6_compat_ioctl, inet6_sendmsg, udplitev6_sk_init, udplitev6_rcv, udpv6_destroy_sock, inet6_register_protosw, udp_disconnect, sock_no_mmap, inet6_recvmsg, inet6_ioctl, inet6_bind, inet_dgram_connect, udp_poll, udpv6_sendmsg, inet_shutdown, udp_v6_get_port, sock_gettstamp, sock_no_accept, udp_lib_close, udpv6_getsockopt, udp_v6_rehash, inet6_release, inet6_add_protocol, sock_no_socketpair, sk_set_peek_off)
+udplitev6_rcv -> (__udp6_lib_rcv)
+udplitev6_sk_init -> (udpv6_init_sock, _printk)

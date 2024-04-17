@@ -1,0 +1,11 @@
+drivers/acpi/acpica/utobject.o
+acpi_ut_allocate_object_desc_dbg -> (kmem_cache_alloc, acpi_error)
+acpi_ut_create_buffer_object -> (kmem_cache_alloc, acpi_ut_remove_reference, acpi_error, __kmalloc)
+acpi_ut_create_integer_object -> (kmem_cache_alloc, acpi_error)
+acpi_ut_create_internal_object_dbg -> (kmem_cache_alloc, acpi_os_release_object, acpi_error)
+acpi_ut_create_package_object -> (kmem_cache_alloc, acpi_error, kfree, __kmalloc)
+acpi_ut_create_string_object -> (kmem_cache_alloc, acpi_ut_remove_reference, acpi_error, __kmalloc)
+acpi_ut_delete_object_desc -> (acpi_os_release_object, acpi_ut_get_descriptor_name, acpi_error)
+acpi_ut_get_element_length -> (acpi_ut_get_simple_object_size)
+acpi_ut_get_object_size -> (acpi_ut_get_simple_object_size, acpi_ut_walk_package_tree, acpi_ut_get_element_length)
+acpi_ut_get_simple_object_size -> (acpi_ut_get_object_type_name, acpi_ut_get_reference_name, acpi_ns_get_pathname_length, acpi_error)

@@ -1,0 +1,4 @@
+sound/hda/hda_bus_type.o
+hda_bus_exit -> (hda_bus_match, bus_unregister, hda_uevent)
+hda_bus_init -> (hda_bus_match, hda_uevent, bus_register)
+hda_uevent -> (snd_hdac_codec_modalias, add_uevent_var)

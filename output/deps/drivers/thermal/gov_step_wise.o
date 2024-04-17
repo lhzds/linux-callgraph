@@ -1,0 +1,2 @@
+drivers/thermal/gov_step_wise.o
+step_wise_throttle -> (__traceiter_thermal_zone_trip, __thermal_zone_get_trip, mutex_lock, __probestub_thermal_zone_trip, mutex_unlock, thermal_cdev_update, __SCT__tp_func_thermal_zone_trip, get_tz_trend)

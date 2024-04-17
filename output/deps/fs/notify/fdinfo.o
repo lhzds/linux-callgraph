@@ -1,0 +1,2 @@
+fs/notify/fdinfo.o
+inotify_show_fdinfo -> (mutex_lock, iput, exportfs_encode_inode_fh, seq_printf, mutex_unlock, __warn_printk, igrab, seq_putc)

@@ -1,0 +1,2 @@
+net/netfilter/nf_conntrack_proto_udp.o
+nf_conntrack_udp_packet -> (__nf_ct_refresh_acct, nf_l4proto_log_invalid, nf_checksum, skb_copy_bits)

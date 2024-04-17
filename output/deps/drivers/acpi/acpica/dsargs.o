@@ -1,0 +1,7 @@
+drivers/acpi/acpica/dsargs.o
+acpi_ds_execute_arguments -> (acpi_ds_create_walk_state, acpi_ds_init_aml_walk, acpi_ps_delete_parse_tree, acpi_ps_alloc_op, acpi_ps_parse_aml, acpi_ds_delete_walk_state)
+acpi_ds_get_bank_field_arguments -> (acpi_ds_execute_arguments, acpi_ns_get_secondary_object, acpi_ut_add_address_range)
+acpi_ds_get_buffer_arguments -> (acpi_ds_execute_arguments, acpi_error)
+acpi_ds_get_buffer_field_arguments -> (acpi_ds_execute_arguments, acpi_ns_get_secondary_object)
+acpi_ds_get_package_arguments -> (acpi_ds_execute_arguments, acpi_error)
+acpi_ds_get_region_arguments -> (acpi_ds_execute_arguments, acpi_ns_get_secondary_object, acpi_ut_add_address_range)

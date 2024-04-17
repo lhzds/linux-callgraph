@@ -1,0 +1,12 @@
+lib/percpu_refcount.o
+__percpu_ref_switch_mode -> (init_wait_entry, _raw_spin_lock_irq, schedule, finish_wait, _raw_spin_unlock_irq, percpu_ref_switch_to_atomic_rcu, prepare_to_wait_event, __rcu_read_lock, call_rcu, __rcu_read_unlock)
+percpu_ref_exit -> (free_percpu, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)
+percpu_ref_init -> (free_percpu, __alloc_percpu_gfp, kmalloc_trace)
+percpu_ref_is_zero -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+percpu_ref_kill_and_confirm -> (__percpu_ref_switch_mode, _raw_spin_lock_irqsave, __warn_printk, __rcu_read_lock, _raw_spin_unlock_irqrestore, __rcu_read_unlock)
+percpu_ref_reinit -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, percpu_ref_resurrect)
+percpu_ref_resurrect -> (__percpu_ref_switch_mode, _raw_spin_lock_irqsave, __rcu_read_lock, _raw_spin_unlock_irqrestore, __rcu_read_unlock)
+percpu_ref_switch_to_atomic -> (__percpu_ref_switch_mode, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+percpu_ref_switch_to_atomic_rcu -> (__wake_up, _printk, free_percpu, __warn_printk, mem_dump_obj, __rcu_read_lock, __rcu_read_unlock)
+percpu_ref_switch_to_atomic_sync -> (init_wait_entry, __percpu_ref_switch_mode, __SCT__might_resched, _raw_spin_lock_irqsave, schedule, finish_wait, prepare_to_wait_event, _raw_spin_unlock_irqrestore)
+percpu_ref_switch_to_percpu -> (__percpu_ref_switch_mode, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

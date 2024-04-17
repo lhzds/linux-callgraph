@@ -1,0 +1,8 @@
+fs/proc/array.o
+do_task_stat -> (refcount_warn_saturate, wq_worker_comm, seq_put_decimal_ll, put_task_stack, seq_put_decimal_ull, task_vsize, __get_task_comm, tty_devnum, __lock_task_sighand, mmput, __task_pid_nr_ns, thread_group_cputime_adjusted, __delayacct_blkio_ticks, get_task_mm, ptrace_may_access, put_pid, pid_nr_ns, get_kthread_comm, task_prio, tty_get_pgrp, _raw_spin_unlock_irqrestore, seq_putc, task_cputime_adjusted, nsec_to_clock_t, seq_puts, KSTK_ESP, seq_printf)
+proc_pid_statm -> (seq_write, mmput, task_statm, seq_putc, seq_put_decimal_ull, get_task_mm)
+proc_pid_status -> (_raw_spin_lock, seq_put_decimal_ull, cpuset_task_status_allowed, task_mem, get_task_cred, _raw_spin_unlock, __lock_task_sighand, mmput, seq_put_hex_ll, __task_pid_nr_ns, __rcu_read_unlock, get_task_mm, __put_cred, pid_nr_ns, proc_task_name, _raw_spin_unlock_irqrestore, seq_putc, seq_puts, seq_printf, __rcu_read_lock, arch_prctl_spec_ctrl_get)
+proc_task_name -> (__get_task_comm, strlen, seq_printf, wq_worker_comm, get_kthread_comm, seq_escape_mem)
+proc_tgid_stat -> (do_task_stat)
+proc_tid_stat -> (do_task_stat)
+render_sigset_t -> (seq_putc, seq_puts)

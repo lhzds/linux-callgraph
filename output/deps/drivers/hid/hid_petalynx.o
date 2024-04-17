@@ -1,0 +1,5 @@
+drivers/hid/hid_petalynx.o
+pl_driver_exit -> (pl_probe, pl_input_mapping, hid_unregister_driver, pl_report_fixup)
+pl_driver_init -> (__hid_register_driver, pl_probe, pl_input_mapping, pl_report_fixup)
+pl_probe -> (_dev_err, hid_hw_start, hid_open_report)
+pl_report_fixup -> (_dev_info)

@@ -1,0 +1,9 @@
+net/sched/cls_cgroup.o
+cls_cgroup_change -> (tcf_exts_init_ex, tcf_em_tree_validate, tcf_exts_destroy, kmalloc_trace, tcf_exts_get_net, tcf_queue_work, __nla_parse, cls_cgroup_destroy_work, kfree, tcf_exts_validate)
+cls_cgroup_classify -> (tcf_action_exec, __tcf_em_tree_match, task_cls_state)
+cls_cgroup_destroy -> (refcount_warn_saturate, tcf_queue_work, tcf_exts_destroy, __put_net, tcf_em_tree_destroy, cls_cgroup_destroy_work, kfree)
+cls_cgroup_destroy_work -> (refcount_warn_saturate, rtnl_lock, tcf_exts_destroy, __put_net, tcf_em_tree_destroy, kfree, rtnl_unlock)
+cls_cgroup_dump -> (nla_put, tcf_exts_dump_stats, tcf_exts_dump, skb_trim, tcf_em_tree_dump)
+exit_cgroup_cls -> (cls_cgroup_classify, cls_cgroup_destroy, cls_cgroup_dump, cls_cgroup_delete, cls_cgroup_walk, cls_cgroup_change, cls_cgroup_get, unregister_tcf_proto_ops, cls_cgroup_init)
+init_cgroup_cls -> (cls_cgroup_classify, register_tcf_proto_ops, cls_cgroup_destroy, cls_cgroup_dump, cls_cgroup_delete, cls_cgroup_walk, cls_cgroup_change, cls_cgroup_get, cls_cgroup_init)
+tcf_exts_get_net -> (refcount_warn_saturate)

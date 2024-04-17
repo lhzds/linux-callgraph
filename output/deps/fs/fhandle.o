@@ -1,0 +1,8 @@
+fs/fhandle.o
+__ia32_compat_sys_open_by_handle_at -> (do_handle_open)
+__ia32_sys_name_to_handle_at -> (__se_sys_name_to_handle_at)
+__ia32_sys_open_by_handle_at -> (do_handle_open)
+__se_sys_name_to_handle_at -> (path_put, exportfs_encode_fh, _copy_from_user, user_path_at_empty, kfree, _copy_to_user, __kmalloc)
+__x64_sys_name_to_handle_at -> (__se_sys_name_to_handle_at)
+__x64_sys_open_by_handle_at -> (do_handle_open)
+do_handle_open -> (get_unused_fd_flags, path_put, _copy_from_user, _raw_spin_unlock, _raw_spin_lock, __fdget, mntput, file_open_root, kfree, put_unused_fd, vfs_dentry_acceptable, fput, capable, fd_install, mntget, __kmalloc, exportfs_decode_fh)

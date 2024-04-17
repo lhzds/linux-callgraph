@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/i915_drm_client.o
+__i915_drm_client_free -> (kfree)
+i915_drm_client_alloc -> (kmalloc_trace)
+i915_drm_client_fdinfo -> (intel_context_get_total_runtime_ns, i915_gem_engines_iter_next, drm_printf, __rcu_read_lock, __rcu_read_unlock)

@@ -1,0 +1,4 @@
+net/mac80211/s1g.o
+drv_twt_teardown_request -> (__traceiter_drv_return_void, __probestub_drv_twt_teardown_request, __SCT__might_resched, __traceiter_drv_twt_teardown_request, __warn_printk, __SCT__tp_func_drv_twt_teardown_request, __probestub_drv_return_void, __SCT__tp_func_drv_return_void)
+ieee80211_s1g_rx_twt_action -> (__SCT__tp_func_drv_add_twt_setup, skb_put, __SCT__might_resched, mutex_lock, __traceiter_drv_return_void, mutex_unlock, sta_info_get_bss, __traceiter_drv_add_twt_setup, __warn_printk, __netdev_alloc_skb, __probestub_drv_add_twt_setup, __probestub_drv_return_void, __SCT__tp_func_drv_return_void, ieee80211_tx_skb_tid, drv_twt_teardown_request)
+ieee80211_s1g_status_twt_action -> (skb_put, mutex_lock, mutex_unlock, sta_info_get_bss, __netdev_alloc_skb, ieee80211_tx_skb_tid, drv_twt_teardown_request)

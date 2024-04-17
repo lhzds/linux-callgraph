@@ -1,0 +1,9 @@
+fs/iomap/direct_io.o
+__iomap_dio_rw -> (iomap_iter, _copy_from_iter, blk_finish_plug, trace_iomap_dio_rw_queued, __SCT__tp_func_iomap_dio_invalidate_fail, __probestub_iomap_dio_rw_begin, iov_iter_revert, __SCT__tp_func_iomap_dio_rw_begin, kmalloc_trace, _copy_to_iter, kiocb_write_and_wait, iomap_dio_bio_iter, __traceiter_iomap_dio_rw_begin, _printk, __traceiter_iomap_dio_invalidate_fail, kiocb_invalidate_pages, iov_iter_zero, __probestub_iomap_dio_invalidate_fail, ___ratelimit, blk_io_schedule, blk_start_plug, sb_init_dio_done_wq, __mark_inode_dirty, kfree)
+iomap_dio_bio_end_io -> (iomap_dio_complete_work, queue_work_on, bio_put, bio_check_pages_dirty, blk_status_to_errno, wake_up_process, iomap_dio_complete, __bio_release_pages)
+iomap_dio_bio_iter -> (iomap_dio_zero, iov_iter_is_aligned, submit_bio, bio_put, iov_iter_npages, bio_set_pages_dirty, iomap_dio_bio_end_io, bio_alloc_bioset, bio_iov_iter_get_pages, iov_iter_revert)
+iomap_dio_complete -> (__traceiter_iomap_dio_complete, __probestub_iomap_dio_complete, vfs_fsync_range, __SCT__tp_func_iomap_dio_complete, kfree, wake_up_bit, kiocb_invalidate_post_direct_write)
+iomap_dio_complete_work -> (iomap_dio_complete)
+iomap_dio_rw -> (iomap_dio_complete, __iomap_dio_rw)
+iomap_dio_zero -> (__bio_add_page, submit_bio, iomap_dio_bio_end_io, bio_alloc_bioset)
+trace_iomap_dio_rw_queued -> (__probestub_iomap_dio_rw_queued, __SCT__tp_func_iomap_dio_rw_queued, __traceiter_iomap_dio_rw_queued)

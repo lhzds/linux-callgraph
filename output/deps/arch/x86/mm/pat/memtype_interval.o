@@ -1,0 +1,4 @@
+arch/x86/mm/pat/memtype_interval.o
+interval_remove -> (__rb_erase_color, interval_augment_rotate, rb_next)
+memtype_check_insert -> (_printk, __rb_insert_augmented, interval_augment_rotate)
+memtype_erase -> (interval_remove, __rb_insert_augmented, memtype_match, interval_augment_rotate)

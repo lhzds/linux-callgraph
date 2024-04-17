@@ -1,0 +1,6 @@
+drivers/acpi/event.o
+acpi_bus_generate_netlink_event -> (kfree_skb_reason, strscpy, netlink_broadcast, __alloc_skb, genlmsg_put, nla_reserve)
+acpi_event_init -> (_printk, genl_register_family)
+acpi_notifier_call_chain -> (strcpy, blocking_notifier_call_chain)
+register_acpi_notifier -> (blocking_notifier_chain_register)
+unregister_acpi_notifier -> (blocking_notifier_chain_unregister)

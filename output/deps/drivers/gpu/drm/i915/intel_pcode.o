@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/intel_pcode.o
+__snb_pcode_rw -> (__warn_printk, __intel_wait_for_register_fw)
+intel_pcode_init -> (_dev_notice, skl_pcode_request, __intel_wait_for_register_fw)
+skl_pcode_request -> (__SCT__might_resched, mutex_lock, __drm_dev_dbg, ktime_get_raw, usleep_range_state, mutex_unlock, __warn_printk, __snb_pcode_rw, local_clock, dev_driver_string)
+snb_pcode_read -> (mutex_lock, __snb_pcode_rw, __drm_dev_dbg, mutex_unlock)
+snb_pcode_read_p -> (mutex_lock, __drm_dev_dbg, mutex_unlock, __snb_pcode_rw, intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+snb_pcode_write_p -> (mutex_lock, __drm_dev_dbg, mutex_unlock, __snb_pcode_rw, intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+snb_pcode_write_timeout -> (mutex_lock, __snb_pcode_rw, __drm_dev_dbg, mutex_unlock)

@@ -1,0 +1,5 @@
+drivers/hid/hid_samsung.o
+samsung_driver_exit -> (samsung_input_mapping, hid_unregister_driver, samsung_report_fixup, samsung_probe)
+samsung_driver_init -> (__hid_register_driver, samsung_report_fixup, samsung_probe, samsung_input_mapping)
+samsung_probe -> (_dev_err, hid_is_usb, hid_hw_start, hid_open_report)
+samsung_report_fixup -> (_dev_info)

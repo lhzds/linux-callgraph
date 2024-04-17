@@ -1,0 +1,7 @@
+arch/x86/kernel/check.o
+check_corruption -> (_printk, delayed_work_timer_fn, __warn_printk, queue_delayed_work_on, check_corruption, round_jiffies_relative)
+set_corruption_check -> (_printk, kstrtoull)
+set_corruption_check_period -> (_printk, kstrtoull)
+set_corruption_check_size -> (_printk, memparse)
+setup_bios_corruption_check -> (_printk, __next_mem_range, memblock_reserve)
+start_periodic_check_for_corruption -> (_printk, delayed_work_timer_fn, check_corruption, queue_delayed_work_on)

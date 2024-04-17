@@ -1,0 +1,7 @@
+arch/x86/kernel/cpu/tsx.o
+tsx_ap_init -> (__SCT__tp_func_write_msr, tsx_clear_cpuid, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, tsx_dev_mode_disable, __probestub_write_msr)
+tsx_clear_cpuid -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+tsx_dev_mode_disable -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+tsx_disable -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+tsx_enable -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+tsx_init -> (_printk, cmdline_find_option, bcmp, tsx_clear_cpuid, tsx_disable, setup_clear_cpu_cap, x86_read_arch_cap_msr, tsx_dev_mode_disable, tsx_enable)

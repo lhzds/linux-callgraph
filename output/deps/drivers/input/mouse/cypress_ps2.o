@@ -1,0 +1,11 @@
+drivers/input/mouse/cypress_ps2.o
+cypress_detect -> (cypress_send_ext_cmd)
+cypress_disconnect -> (psmouse_reset, kfree)
+cypress_init -> (cypress_send_ext_cmd, input_alloc_absinfo, cypress_set_rate, kmalloc_trace, cypress_reconnect, _dev_err, input_set_abs_params, cypress_protocol_handler, input_mt_init_slots, cypress_disconnect, psmouse_reset, kfree, cypress_reset)
+cypress_process_packet -> (input_mt_sync_frame, input_event, input_mt_assign_slots, input_mt_report_finger_count, input_mt_report_slot_state)
+cypress_protocol_handler -> (cypress_process_packet)
+cypress_ps2_ext_cmd -> (ps2_begin_command, ps2_end_command, ps2_sendbyte)
+cypress_reconnect -> (_dev_err, psmouse_reset, cypress_send_ext_cmd)
+cypress_reset -> (psmouse_reset)
+cypress_send_ext_cmd -> (init_wait_entry, __SCT__might_resched, schedule_timeout, finish_wait, prepare_to_wait_event, ps2_end_command, cypress_ps2_ext_cmd, ps2_sendbyte, ps2_begin_command)
+cypress_set_rate -> (ps2_command)

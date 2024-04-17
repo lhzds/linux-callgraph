@@ -1,0 +1,12 @@
+net/ipv4/tcp_fastopen.o
+tcp_fastopen_active_disable_ofo_check -> (rb_next, rb_first, rcuref_get_slowpath, dst_release, __rcu_read_lock, __rcu_read_unlock)
+tcp_fastopen_add_skb -> (skb_clone, sock_rfree, tcp_fin, dst_release, sk_forced_mem_schedule)
+tcp_fastopen_cookie_check -> (tcp_fastopen_cache_get)
+tcp_fastopen_ctx_destroy -> (tcp_fastopen_ctx_free, call_rcu)
+tcp_fastopen_ctx_free -> (kfree_sensitive)
+tcp_fastopen_defer_connect -> (tcp_fastopen_cookie_check, kmalloc_trace)
+tcp_fastopen_destroy_cipher -> (tcp_fastopen_ctx_free, call_rcu)
+tcp_fastopen_get_cipher -> (__rcu_read_unlock, __rcu_read_lock)
+tcp_fastopen_init_key_once -> (kmalloc_trace, get_random_bytes, tcp_fastopen_ctx_free, __rcu_read_lock, call_rcu, __rcu_read_unlock)
+tcp_fastopen_reset_cipher -> (tcp_fastopen_ctx_free, kmalloc_trace, call_rcu)
+tcp_try_fastopen -> (refcount_warn_saturate, bcmp, kmem_cache_free, _raw_spin_unlock, _raw_spin_lock, tcp_fastopen_add_skb, sk_reset_timer, sk_free, tcp_init_transfer, __rcu_read_lock, __rcu_read_unlock, __siphash_unaligned, kfree)

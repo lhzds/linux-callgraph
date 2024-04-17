@@ -1,0 +1,10 @@
+net/netfilter/nf_conntrack_proto_tcp.o
+nf_conntrack_tcp_packet -> (_raw_spin_lock_bh, nf_ct_kill_acct, nf_l4proto_log_invalid, skb_copy_bits, tcp_new, nf_tcp_handle_invalid, nf_ct_delete, nf_ct_seq_offset, tcp_options, nf_ct_l4proto_log_invalid, __nf_ct_refresh_acct, _raw_spin_unlock_bh, nf_checksum, nf_tcp_log_invalid)
+nf_conntrack_tcp_set_closing -> (_raw_spin_lock_bh, _raw_spin_unlock_bh)
+nf_tcp_handle_invalid -> (nf_ct_l4proto_log_invalid)
+nf_tcp_log_invalid -> (nf_ct_l4proto_log_invalid)
+nlattr_to_tcp -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, __nla_parse)
+tcp_new -> (tcp_options)
+tcp_nlattr_tuple_size -> (nla_policy_len)
+tcp_options -> (skb_copy_bits)
+tcp_to_nlattr -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, nla_put)

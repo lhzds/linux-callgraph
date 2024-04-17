@@ -1,0 +1,5 @@
+drivers/cpufreq/cpufreq_performance.o
+cpufreq_fallback_governor -> (cpufreq_gov_performance_limits)
+cpufreq_gov_performance_exit -> (cpufreq_unregister_governor, cpufreq_gov_performance_limits)
+cpufreq_gov_performance_init -> (cpufreq_register_governor, cpufreq_gov_performance_limits)
+cpufreq_gov_performance_limits -> (__cpufreq_driver_target)

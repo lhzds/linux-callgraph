@@ -1,0 +1,10 @@
+net/core/selftests.o
+__net_test_loopback -> (wait_for_completion_timeout, ip_send_check, skb_put, skb_push, dev_remove_pack, kmalloc_trace, __netdev_alloc_skb, __dev_direct_xmit, net_test_loopback_validate, udp4_hwcsum, __init_swait_queue_head, kfree_skb_reason, kfree, dev_add_pack)
+net_selftest -> (netdev_err, __net_test_loopback, phy_loopback)
+net_selftest_get_strings -> (net_test_phy_loopback_udp_mtu, snprintf, net_test_phy_loopback_udp, net_test_phy_loopback_tcp, net_test_phy_loopback_disable, net_test_phy_phydev, net_test_netif_carrier, net_test_phy_loopback_enable)
+net_test_loopback_validate -> (__pskb_pull_tail, consume_skb, skb_copy, kfree_skb_reason, complete)
+net_test_phy_loopback_disable -> (phy_loopback)
+net_test_phy_loopback_enable -> (phy_loopback)
+net_test_phy_loopback_tcp -> (__net_test_loopback)
+net_test_phy_loopback_udp -> (__net_test_loopback)
+net_test_phy_loopback_udp_mtu -> (__net_test_loopback)

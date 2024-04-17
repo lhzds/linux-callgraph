@@ -1,0 +1,4 @@
+drivers/acpi/acpica/utalloc.o
+acpi_ut_create_caches -> (acpi_os_create_cache)
+acpi_ut_delete_caches -> (acpi_os_delete_cache)
+acpi_ut_initialize_buffer -> (__kmalloc)

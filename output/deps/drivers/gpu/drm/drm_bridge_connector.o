@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_bridge_connector.o
+drm_bridge_connector_destroy -> (drm_bridge_hpd_disable, drm_connector_cleanup, kfree, drm_connector_unregister)
+drm_bridge_connector_disable_hpd -> (drm_bridge_hpd_disable)
+drm_bridge_connector_enable_hpd -> (drm_bridge_hpd_enable, drm_bridge_connector_hpd_cb)
+drm_bridge_connector_get_modes -> (drm_connector_update_edid_property, drm_edid_is_valid, kfree, drm_add_edid_modes)
+drm_bridge_connector_hpd_cb -> (mutex_unlock, mutex_lock, drm_kms_helper_hotplug_event)
+drm_bridge_connector_init -> (drm_bridge_is_panel, drm_bridge_connector_enable_hpd, drm_panel_bridge_set_orientation, drm_bridge_connector_destroy, drm_helper_probe_single_connector_modes, drm_bridge_connector_get_modes, kmalloc_trace, drm_atomic_helper_connector_destroy_state, drm_connector_init_with_ddc, drm_atomic_helper_connector_reset, drm_atomic_helper_connector_duplicate_state, kfree, drm_bridge_connector_disable_hpd, drm_bridge_connector_debugfs_init, drm_bridge_connector_detect)

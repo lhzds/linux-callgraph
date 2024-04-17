@@ -1,0 +1,7 @@
+net/core/gen_estimator.o
+est_timer -> (_raw_spin_unlock, _raw_spin_lock, gnet_stats_basic_sync_init, mod_timer, gnet_stats_add_basic)
+gen_estimator_read -> (__rcu_read_unlock, __rcu_read_lock)
+gen_kill_estimator -> (timer_shutdown_sync, kvfree_call_rcu)
+gen_new_estimator -> (_raw_spin_lock_bh, _raw_spin_unlock, kvfree_call_rcu, _raw_spin_lock, init_timer_key, kmalloc_trace, timer_delete_sync, est_timer, gnet_stats_basic_sync_init, mod_timer, _raw_spin_unlock_bh, local_bh_enable, gnet_stats_add_basic)
+gen_replace_estimator -> (gen_new_estimator)
+local_bh_enable -> (__local_bh_enable_ip)

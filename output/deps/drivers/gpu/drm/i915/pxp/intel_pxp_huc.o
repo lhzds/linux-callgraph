@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/pxp/intel_pxp_huc.o
+intel_pxp_huc_load_and_auth -> (__i915_gem_object_get_dma_address, intel_pxp_tee_stream_message, _dev_err)

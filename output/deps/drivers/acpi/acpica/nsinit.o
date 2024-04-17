@@ -1,0 +1,6 @@
+drivers/acpi/acpica/nsinit.o
+acpi_ns_init_one_device -> (acpi_ut_execute_STA, acpi_ns_evaluate)
+acpi_ns_init_one_object -> (acpi_ds_get_package_arguments, acpi_ns_get_attached_object, acpi_ut_get_type_name, acpi_ex_exit_interpreter, acpi_exception, acpi_ex_enter_interpreter, acpi_ns_get_type, acpi_ds_get_bank_field_arguments, acpi_ds_init_package_element, acpi_ut_get_node_name, acpi_ut_walk_package_tree)
+acpi_ns_init_one_package -> (acpi_ds_get_package_arguments, acpi_ds_init_package_element, acpi_ns_get_attached_object, acpi_ut_walk_package_tree)
+acpi_ns_initialize_devices -> (acpi_ev_initialize_op_regions, acpi_ns_walk_namespace, kmalloc_trace, acpi_exception, acpi_ns_init_one_device, acpi_ns_evaluate, acpi_ns_find_ini_methods, kfree, acpi_get_handle)
+acpi_ns_initialize_objects -> (acpi_walk_namespace, acpi_ns_init_one_object, acpi_exception)

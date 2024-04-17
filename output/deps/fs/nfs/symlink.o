@@ -1,0 +1,3 @@
+fs/nfs/symlink.o
+nfs_get_link -> (page_put_link, __folio_put, nfs_symlink_filler, nfs_revalidate_mapping_rcu, pagecache_get_page, read_cache_page, nfs_revalidate_mapping)
+nfs_symlink_filler -> (folio_unlock)

@@ -1,0 +1,13 @@
+drivers/usb/host/xhci_hub.o
+trace_xhci_dbg_quirks -> (__probestub_xhci_dbg_quirks, __SCT__tp_func_xhci_dbg_quirks, __traceiter_xhci_dbg_quirks)
+xhci_bus_resume -> (usb_hcd_is_primary_hcd, _dev_warn, _raw_spin_lock_irqsave, msleep, xhci_ring_ep_doorbell, _raw_spin_unlock_irqrestore, xhci_handshake)
+xhci_bus_suspend -> (usb_hcd_is_primary_hcd, usleep_range_state, xhci_stop_device, _raw_spin_lock_irqsave, msleep, _raw_spin_unlock_irqrestore, usb_amd_pt_check_port)
+xhci_enter_test_mode -> (xhci_start, xhci_disable_slot, pm_runtime_forbid, _raw_spin_lock_irqsave, xhci_free_virt_device, usb_acpi_power_manageable, _dev_err, xhci_halt, _raw_spin_unlock_irqrestore, usb_acpi_set_power_state)
+xhci_exit_test_mode -> (_dev_err, xhci_reset, pm_runtime_allow, xhci_halt)
+xhci_get_resuming_ports -> (usb_hcd_is_primary_hcd)
+xhci_get_rhub -> (usb_hcd_is_primary_hcd)
+xhci_hub_control -> (usb_hcd_is_primary_hcd, usleep_range_state, xhci_stop_device, xhci_ring_device, xhci_find_slot_id_by_port, xhci_ring_ep_doorbell, wait_for_completion_timeout, usb_hcd_start_port_resume, _raw_spin_lock_irqsave, xhci_hc_died, __probestub_xhci_get_port_status, xhci_enter_test_mode, xhci_set_port_power, trace_xhci_dbg_quirks, usb_hcd_end_port_resume, _dev_err, _raw_spin_unlock_irqrestore, mod_timer, xhci_exit_test_mode, xhci_dbg_trace, __traceiter_xhci_get_port_status, _dev_warn, xhci_disable_port, xhci_set_remote_wake_mask, msleep, __SCT__tp_func_xhci_get_port_status, timer_delete_sync)
+xhci_hub_status_data -> (usb_hcd_is_primary_hcd, __SCT__tp_func_xhci_hub_status_data, _raw_spin_lock_irqsave, xhci_hc_died, _raw_spin_unlock_irqrestore, __probestub_xhci_hub_status_data, __traceiter_xhci_hub_status_data)
+xhci_ring_device -> (xhci_ring_ep_doorbell)
+xhci_set_port_power -> (usb_acpi_set_power_state, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, usb_acpi_power_manageable)
+xhci_stop_device -> (xhci_get_ep_ctx, __probestub_xhci_stop_device, _dev_warn, wait_for_completion, xhci_ring_cmd_db, _raw_spin_lock_irqsave, xhci_queue_stop_endpoint, __SCT__tp_func_xhci_stop_device, __traceiter_xhci_stop_device, xhci_free_command, _raw_spin_unlock_irqrestore, xhci_alloc_command)

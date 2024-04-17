@@ -1,0 +1,7 @@
+net/netfilter/nf_queue.o
+local_bh_enable -> (__local_bh_enable_ip)
+nf_queue -> (refcount_warn_saturate, sock_edemux, sock_pfree, rcuref_get_slowpath, kfree_skb_reason, kfree, __kmalloc, sock_gen_put)
+nf_queue_entry_free -> (kfree, sock_gen_put)
+nf_queue_entry_get_refs -> (refcount_warn_saturate)
+nf_queue_nf_hook_drop -> (__rcu_read_unlock, __rcu_read_lock)
+nf_reinject -> (nf_queue, nf_reroute, kfree_skb_reason, kfree, local_bh_enable, sock_gen_put)

@@ -1,0 +1,3 @@
+block/holder.o
+bd_link_disk_holder -> (mutex_lock, mutex_unlock, kmalloc_trace, kobject_put, kobject_get, sysfs_create_link, sysfs_remove_link, kfree)
+bd_unlink_disk_holder -> (mutex_lock, mutex_unlock, kobject_put, sysfs_remove_link, kfree)

@@ -1,0 +1,4 @@
+drivers/gpu/drm/ttm/ttm_execbuf_util.o
+ttm_eu_backoff_reservation -> (ttm_bo_move_to_lru_tail, _raw_spin_lock, ww_mutex_unlock, _raw_spin_unlock)
+ttm_eu_fence_buffer_objects -> (_raw_spin_unlock, ttm_bo_move_to_lru_tail, _raw_spin_lock, ww_mutex_unlock, dma_resv_add_fence)
+ttm_eu_reserve_buffers -> (ww_mutex_trylock, dma_resv_reserve_fences, ww_mutex_unlock, ww_mutex_lock, ww_mutex_lock_interruptible)

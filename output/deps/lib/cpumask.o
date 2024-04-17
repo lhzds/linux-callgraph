@@ -1,0 +1,4 @@
+lib/cpumask.o
+cpumask_any_and_distribute -> (_find_next_and_bit, _find_first_and_bit)
+cpumask_any_distribute -> (_find_first_bit, _find_next_bit)
+cpumask_local_spread -> (sched_numa_find_nth_cpu)

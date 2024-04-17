@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_cache.o
+drm_clflush_pages -> (_printk, wbinvd_on_all_cpus)
+drm_clflush_sg -> (_printk, __sg_page_iter_start, wbinvd_on_all_cpus, __sg_page_iter_next)
+drm_clflush_virt_range -> (_printk, wbinvd_on_all_cpus)
+drm_memcpy_from_wc -> (kernel_fpu_begin_mask, memcpy_fallback, kernel_fpu_end)
+drm_memcpy_init_early -> (static_key_enable)
+memcpy_fallback -> (memcpy_fromio, memcpy_toio)

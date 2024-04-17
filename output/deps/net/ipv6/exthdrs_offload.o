@@ -1,0 +1,2 @@
+net/ipv6/exthdrs_offload.o
+ipv6_exthdrs_offload_init -> (inet6_del_offload, inet6_add_offload)

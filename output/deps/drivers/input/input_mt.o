@@ -1,0 +1,9 @@
+drivers/input/input_mt.o
+input_mt_destroy_slots -> (kfree)
+input_mt_drop_unused -> (input_handle_event, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+input_mt_init_slots -> (input_set_abs_params, kfree, __kmalloc)
+input_mt_release_slots -> (input_handle_event)
+input_mt_report_finger_count -> (input_event)
+input_mt_report_pointer_emulation -> (input_event)
+input_mt_report_slot_state -> (input_event)
+input_mt_sync_frame -> (input_handle_event, _raw_spin_lock_irqsave, input_mt_report_pointer_emulation, _raw_spin_unlock_irqrestore)

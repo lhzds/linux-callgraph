@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/gt/uc/intel_guc_log_debugfs.o
+guc_load_err_log_dump_open -> (guc_load_err_log_dump_show, single_open_size)
+guc_load_err_log_dump_show -> (__drm_puts_seq_file, intel_guc_log_dump, __drm_printfn_seq_file)
+guc_log_dump_open -> (guc_log_dump_show, single_open_size)
+guc_log_dump_show -> (__drm_puts_seq_file, intel_guc_log_dump, __drm_printfn_seq_file)
+guc_log_level_fops_open -> (guc_log_level_set, simple_attr_open, guc_log_level_get)
+guc_log_level_set -> (intel_guc_log_set_level)
+guc_log_relay_open -> (intel_guc_log_relay_open)
+guc_log_relay_release -> (intel_guc_log_relay_close)
+guc_log_relay_write -> (intel_guc_log_relay_start, kstrtoint_from_user, intel_guc_log_relay_flush)
+intel_guc_log_debugfs_register -> (guc_log_relay_write, simple_attr_release, guc_log_relay_release, guc_log_level_fops_open, seq_read, intel_gt_debugfs_register_files, single_release, generic_file_llseek, simple_attr_write, simple_attr_read, guc_load_err_log_dump_open, guc_log_relay_open, seq_lseek, guc_log_dump_open)

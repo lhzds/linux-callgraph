@@ -1,0 +1,4 @@
+drivers/gpu/drm/drm_dumb_buffers.o
+drm_mode_destroy_dumb -> (drm_gem_handle_delete)
+drm_mode_destroy_dumb_ioctl -> (drm_gem_handle_delete)
+drm_mode_mmap_dumb_ioctl -> (drm_gem_dumb_map_offset)

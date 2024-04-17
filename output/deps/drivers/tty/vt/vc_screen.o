@@ -1,0 +1,13 @@
+drivers/tty/vt/vc_screen.o
+vcs_fasync -> (fasync_helper, vcs_poll_data_get)
+vcs_init -> (class_create, vcs_poll, vcs_read, vcs_open, vcs_lseek, vcs_release, __register_chrdev, vcs_write, vcs_make_sysfs, panic, device_create, vcs_fasync)
+vcs_lseek -> (console_lock, console_unlock, vc_SAK, fixed_size_llseek, is_console_locked)
+vcs_make_sysfs -> (device_create)
+vcs_notifier -> (__wake_up, kill_fasync)
+vcs_open -> (console_lock, console_unlock, vc_cons_allocated)
+vcs_poll -> (vcs_poll_data_get)
+vcs_poll_data_get -> (unregister_vt_notifier, register_vt_notifier, vcs_notifier, _raw_spin_unlock, _raw_spin_lock, kmalloc_trace, __init_waitqueue_head, kfree)
+vcs_read -> (console_lock, console_unlock, getconsxy, vc_uniscr_copy_line, vc_SAK, __get_free_pages, vc_uniscr_check, is_console_locked, free_pages, _copy_to_user, screen_pos, vcs_scr_readw)
+vcs_release -> (unregister_vt_notifier, kfree)
+vcs_remove_sysfs -> (device_destroy)
+vcs_write -> (console_lock, console_unlock, _copy_from_user, putconsxy, getconsxy, vc_SAK, vcs_scr_writew, vcs_scr_updated, __get_free_pages, is_console_locked, free_pages, update_region, screen_pos, vcs_scr_readw)

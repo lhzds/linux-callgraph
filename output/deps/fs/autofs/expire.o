@@ -1,0 +1,9 @@
+fs/autofs/expire.o
+autofs_do_expire_multi -> (may_umount_tree, lockref_get, _raw_spin_unlock, synchronize_rcu, autofs_expire_indirect, _raw_spin_lock, dput, __init_swait_queue_head, autofs_wait, complete_all)
+autofs_expire_indirect -> (_raw_spin_unlock, synchronize_rcu, _raw_spin_lock, dput, should_expire, __init_swait_queue_head)
+autofs_expire_multi -> (autofs_do_expire_multi)
+autofs_expire_run -> (_raw_spin_unlock, autofs_expire_indirect, _raw_spin_lock, dput, complete_all, _copy_to_user)
+autofs_expire_wait -> (_raw_spin_unlock, wait_for_completion, _raw_spin_lock, schedule_timeout_uninterruptible, autofs_wait)
+autofs_mount_busy -> (may_umount_tree, path_put, path_get, follow_down_one, is_autofs_dentry)
+get_next_positive_dentry -> (lockref_get, _raw_spin_lock, dput, _raw_spin_unlock)
+should_expire -> (dput, get_next_positive_dentry, autofs_mount_busy, lockref_get)

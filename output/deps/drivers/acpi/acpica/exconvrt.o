@@ -1,0 +1,6 @@
+drivers/acpi/acpica/exconvrt.o
+acpi_ex_convert_to_ascii -> (acpi_ut_hex_to_ascii_char, acpi_ut_short_divide)
+acpi_ex_convert_to_buffer -> (acpi_ut_create_buffer_object, strncpy)
+acpi_ex_convert_to_integer -> (acpi_ex_truncate_for32bit_table, acpi_ut_implicit_strtoul64, acpi_ut_explicit_strtoul64, acpi_ut_create_integer_object)
+acpi_ex_convert_to_string -> (acpi_ut_create_string_object, acpi_ut_hex_to_ascii_char, acpi_ex_convert_to_ascii, acpi_ut_short_divide)
+acpi_ex_convert_to_target_type -> (acpi_ut_create_buffer_object, acpi_ex_truncate_for32bit_table, acpi_ut_get_type_name, acpi_error, acpi_ex_convert_to_string, acpi_ut_create_integer_object, strncpy, acpi_ut_implicit_strtoul64)

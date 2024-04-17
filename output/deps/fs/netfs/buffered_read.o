@@ -1,0 +1,6 @@
+fs/netfs/buffered_read.o
+netfs_read_folio -> (__SCT__tp_func_netfs_read, swapcache_mapping, netfs_put_request, __traceiter_netfs_read, __page_file_index, folio_unlock, netfs_alloc_request, __probestub_netfs_read, netfs_begin_read)
+netfs_readahead -> (__folio_put, __SCT__tp_func_netfs_read, netfs_put_request, __traceiter_netfs_read, netfs_rreq_expand, xa_load, netfs_alloc_request, __probestub_netfs_read, netfs_begin_read)
+netfs_rreq_expand -> (readahead_expand, __traceiter_netfs_read, __probestub_netfs_read, __SCT__tp_func_netfs_read)
+netfs_rreq_unlock_folios -> (__traceiter_netfs_rreq, xas_find, __SCT__tp_func_netfs_rreq, __rcu_read_lock, __page_file_index, __probestub_netfs_rreq, __rcu_read_unlock, folio_unlock)
+netfs_write_begin -> (__traceiter_netfs_failure, __folio_put, __SCT__tp_func_netfs_read, __probestub_netfs_read, netfs_put_request, __traceiter_netfs_read, __filemap_get_folio, netfs_rreq_expand, __probestub_netfs_failure, __page_file_index, folio_wait_private_2_killable, folio_unlock, xa_load, netfs_alloc_request, __SCT__tp_func_netfs_failure, netfs_begin_read)

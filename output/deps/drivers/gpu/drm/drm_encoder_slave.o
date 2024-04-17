@@ -1,0 +1,3 @@
+drivers/gpu/drm/drm_encoder_slave.o
+drm_i2c_encoder_destroy -> (i2c_unregister_device)
+drm_i2c_encoder_init -> (__request_module, i2c_new_client_device, i2c_unregister_device)

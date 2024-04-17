@@ -1,0 +1,11 @@
+drivers/gpu/drm/drm_crtc_helper.o
+__drm_helper_disable_unused_functions -> (drm_helper_crtc_in_use, drm_helper_encoder_in_use, drm_warn_on_modeset_not_all_locked)
+drm_crtc_helper_atomic_check -> (drm_atomic_helper_check_crtc_primary_plane)
+drm_crtc_helper_set_config -> (__drm_err, drm_mode_debug_printmodeline, ___drm_dbg, drm_warn_on_modeset_not_all_locked, drm_crtc_helper_set_mode, drm_mode_object_put, kfree, drm_connector_list_iter_begin, __drm_helper_disable_unused_functions, drm_connector_list_iter_end, drm_mode_object_get, drm_connector_list_iter_next, drm_mode_equal, drm_helper_crtc_in_use, __kmalloc)
+drm_crtc_helper_set_mode -> (drm_calc_timestamping_constants, ___drm_dbg, drm_mode_copy, drm_warn_on_modeset_not_all_locked, drm_mode_destroy, drm_mode_init, drm_mode_duplicate, drm_helper_crtc_in_use)
+drm_helper_connector_dpms -> (drm_connector_list_iter_next, drm_connector_list_iter_begin, drm_connector_list_iter_end)
+drm_helper_crtc_in_use -> (drm_helper_encoder_in_use, mutex_is_locked)
+drm_helper_disable_unused_functions -> (__drm_helper_disable_unused_functions, drm_modeset_unlock_all, drm_modeset_lock_all)
+drm_helper_encoder_in_use -> (drm_connector_list_iter_next, drm_connector_list_iter_begin, drm_connector_list_iter_end, mutex_is_locked)
+drm_helper_force_disable_all -> (drm_modeset_unlock_all, drm_mode_set_config_internal, drm_modeset_lock_all)
+drm_helper_resume_force_mode -> (__drm_err, drm_modeset_lock_all, drm_modeset_unlock_all, drm_crtc_helper_set_mode, drm_connector_list_iter_begin, __drm_helper_disable_unused_functions, drm_connector_list_iter_end, drm_connector_list_iter_next)

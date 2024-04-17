@@ -1,0 +1,4 @@
+drivers/acpi/acpica/pstree.o
+acpi_ps_append_arg -> (acpi_ps_get_opcode_info, acpi_error)
+acpi_ps_get_arg -> (acpi_ps_get_opcode_info)
+acpi_ps_get_depth_next -> (acpi_ps_get_opcode_info)

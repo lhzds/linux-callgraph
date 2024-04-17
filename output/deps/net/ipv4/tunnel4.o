@@ -1,0 +1,7 @@
+net/ipv4/tunnel4.o
+tunnel4_fini -> (_printk, inet_del_protocol, tunnel4_rcv, tunnel4_err, tunnel64_err, tunnel64_rcv)
+tunnel4_init -> (_printk, inet_del_protocol, tunnel4_rcv, inet_add_protocol, tunnel4_err, tunnel64_err, tunnel64_rcv)
+tunnel4_rcv -> (__icmp_send, __pskb_pull_tail, kfree_skb_reason)
+tunnel64_rcv -> (__icmp_send, __pskb_pull_tail, kfree_skb_reason)
+xfrm4_tunnel_deregister -> (mutex_unlock, synchronize_net, mutex_lock)
+xfrm4_tunnel_register -> (mutex_unlock, mutex_lock)

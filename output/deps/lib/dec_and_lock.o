@@ -1,0 +1,5 @@
+lib/dec_and_lock.o
+_atomic_dec_and_lock -> (_raw_spin_lock, _raw_spin_unlock)
+_atomic_dec_and_lock_irqsave -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+_atomic_dec_and_raw_lock -> (_raw_spin_lock, _raw_spin_unlock)
+_atomic_dec_and_raw_lock_irqsave -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

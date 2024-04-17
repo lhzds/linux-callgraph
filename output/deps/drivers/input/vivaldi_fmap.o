@@ -1,0 +1,2 @@
+drivers/input/vivaldi_fmap.o
+vivaldi_function_row_physmap_show -> (scnprintf)

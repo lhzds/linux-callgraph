@@ -1,0 +1,2 @@
+lib/base64.o
+base64_decode -> (memchr)

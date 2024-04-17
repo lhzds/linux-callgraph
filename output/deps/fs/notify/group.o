@@ -1,0 +1,7 @@
+fs/notify/group.o
+fsnotify_alloc_group -> (__init_waitqueue_head, kmalloc_trace, __mutex_init)
+fsnotify_destroy_group -> (init_wait_entry, __SCT__might_resched, refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, schedule, fsnotify_clear_marks_by_group, finish_wait, fsnotify_wait_marks_destroyed, prepare_to_wait_event, fsnotify_flush_notify, kfree)
+fsnotify_fasync -> (fasync_helper)
+fsnotify_get_group -> (refcount_warn_saturate)
+fsnotify_group_stop_queueing -> (_raw_spin_lock, _raw_spin_unlock)
+fsnotify_put_group -> (refcount_warn_saturate, kfree)

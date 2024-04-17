@@ -1,0 +1,4 @@
+kernel/dma.o
+free_dma -> (_printk)
+proc_dma_init -> (proc_create_single_data, proc_dma_show)
+proc_dma_show -> (seq_printf)

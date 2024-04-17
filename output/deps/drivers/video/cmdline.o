@@ -1,0 +1,4 @@
+drivers/video/cmdline.o
+__video_get_options -> (strncmp, strlen)
+video_get_options -> (strncmp, strlen)
+video_setup -> (strncmp, strchr)

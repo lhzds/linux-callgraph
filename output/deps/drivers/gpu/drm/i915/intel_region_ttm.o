@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/intel_region_ttm.o
+intel_region_ttm_device_fini -> (ttm_device_fini)
+intel_region_ttm_device_init -> (i915_ttm_driver, ttm_device_init)
+intel_region_ttm_fini -> (mutex_lock, refcount_warn_saturate, mutex_unlock, i915_ttm_buddy_man_fini, msleep, drain_workqueue, i915_gem_flush_free_objects, dma_fence_release)
+intel_region_ttm_init -> (i915_ttm_buddy_man_init)
+intel_region_ttm_resource_to_rsgt -> (i915_rsgt_from_mm_node, i915_rsgt_from_buddy_resource)

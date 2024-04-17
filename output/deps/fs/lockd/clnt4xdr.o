@@ -1,0 +1,10 @@
+fs/lockd/clnt4xdr.o
+encode_nlm4_lock -> (xdr_reserve_space, strlen, xdr_encode_opaque)
+nlm4_xdr_dec_res -> (xdr_inline_decode)
+nlm4_xdr_dec_testres -> (locks_init_lock, nlm4svc_set_file_lock_range, xdr_inline_decode)
+nlm4_xdr_enc_cancargs -> (encode_nlm4_lock, xdr_reserve_space, xdr_encode_opaque)
+nlm4_xdr_enc_lockargs -> (encode_nlm4_lock, xdr_reserve_space, xdr_encode_opaque)
+nlm4_xdr_enc_res -> (xdr_reserve_space, xdr_encode_opaque)
+nlm4_xdr_enc_testargs -> (encode_nlm4_lock, xdr_reserve_space, xdr_encode_opaque)
+nlm4_xdr_enc_testres -> (xdr_reserve_space, xdr_encode_opaque)
+nlm4_xdr_enc_unlockargs -> (encode_nlm4_lock, xdr_reserve_space, xdr_encode_opaque)

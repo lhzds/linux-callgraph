@@ -1,0 +1,5 @@
+drivers/base/map.o
+kobj_lookup -> (mutex_unlock, mutex_lock)
+kobj_map -> (mutex_unlock, mutex_lock, __kmalloc)
+kobj_map_init -> (kmalloc_trace, kfree)
+kobj_unmap -> (mutex_lock, kfree, mutex_unlock)

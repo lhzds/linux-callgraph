@@ -1,0 +1,13 @@
+drivers/usb/core/hcd_pci.o
+check_root_hub_suspended -> (_dev_warn)
+hcd_pci_restore -> (resume_common)
+hcd_pci_resume -> (resume_common)
+hcd_pci_runtime_resume -> (resume_common)
+hcd_pci_runtime_suspend -> (suspend_common)
+hcd_pci_suspend -> (suspend_common)
+hcd_pci_suspend_noirq -> (pci_prepare_to_sleep, _dev_warn, pci_save_state, device_set_wakeup_enable, __suspend_report_result)
+resume_common -> (pci_get_device, device_pm_wait_for_dev, usb_hc_died, _dev_err, pci_enable_device, pci_set_master)
+suspend_common -> (pci_irq_vector, _dev_warn, synchronize_irq, pci_disable_device, __suspend_report_result)
+usb_hcd_pci_probe -> (mutex_lock, pci_alloc_irq_vectors, pci_dev_run_wake, usb_hcd_amd_remote_wakeup_quirk, device_wakeup_enable, usb_set_configuration, pci_disable_device, pci_irq_vector, mutex_unlock, down_read, _dev_err, pci_enable_device, __devm_request_region, pci_free_irq_vectors, down_write, usb_create_hcd, devm_ioremap, up_write, pci_get_device, up_read, usb_add_hcd, usb_put_hcd, usb_disabled, pci_set_master)
+usb_hcd_pci_remove -> (down_write, usb_hcd_irq, up_write, pci_dev_run_wake, pci_get_device, down_read, up_read, usb_put_hcd, usb_remove_hcd, pci_disable_device, pci_free_irq_vectors)
+usb_hcd_pci_shutdown -> (usb_hcd_is_primary_hcd, free_irq, pci_disable_device)

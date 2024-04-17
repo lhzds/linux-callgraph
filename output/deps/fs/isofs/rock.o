@@ -1,0 +1,7 @@
+fs/isofs/rock.o
+get_rock_ridge_filename -> (_printk, memchr, rock_continue, kfree, rock_check_overflow)
+parse_rock_ridge_inode -> (parse_rock_ridge_inode_internal)
+parse_rock_ridge_inode_internal -> (_printk, iput, rock_continue, set_nlink, __isofs_iget, kfree, iso_date, rock_check_overflow)
+rock_check_overflow -> (_printk)
+rock_continue -> (_printk, kfree, __bread_gfp, __kmalloc)
+rock_ridge_symlink_read_folio -> (_printk, rock_continue, __brelse, unlock_page, kfree, __bread_gfp, rock_check_overflow)

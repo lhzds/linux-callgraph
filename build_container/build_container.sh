@@ -1,3 +1,4 @@
 #!/bin/bash
-docker buildx build -f Dockerfile -t kernel_builder:0.1 .
+CURDIR=$(dirname $(realpath $0))
 
+docker buildx build -f $CURDIR/Dockerfile -t kernel_builder:0.1 .

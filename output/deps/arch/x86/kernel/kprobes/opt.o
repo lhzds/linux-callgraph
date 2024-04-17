@@ -1,0 +1,9 @@
+arch/x86/kernel/kprobes/opt.o
+__recover_optprobed_insn -> (copy_from_kernel_nofault, get_kprobe, optprobe_queued_unopt)
+arch_check_optimized_kprobe -> (get_kprobe, kprobe_disarmed)
+arch_optimize_kprobes -> (text_poke_bp)
+arch_prepare_optimized_kprobe -> (__copy_instruction, free_optinsn_page, __free_insn_slot, alloc_optinsn_page, alternatives_text_reserved, insn_decode, text_poke, optimized_callback, recover_probed_instruction, jump_label_text_reserved, can_boost, synthesize_reljump, perf_event_text_poke, __get_insn_slot, __kmalloc, kallsyms_lookup_size_offset, search_exception_tables, synthesize_relcall, static_call_text_reserved, kfree)
+arch_remove_optimized_kprobe -> (free_optinsn_page, __free_insn_slot, alloc_optinsn_page, perf_event_text_poke)
+arch_unoptimize_kprobe -> (text_poke, text_poke_sync, perf_event_text_poke)
+arch_unoptimize_kprobes -> (text_poke, text_poke_sync, perf_event_text_poke)
+optimized_callback -> (kprobes_inc_nmissed_count, opt_pre_handler)

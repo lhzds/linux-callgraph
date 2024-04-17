@@ -1,0 +1,11 @@
+drivers/video/hdmi.o
+hdmi_audio_infoframe_pack -> (hdmi_audio_infoframe_pack_only)
+hdmi_avi_infoframe_pack -> (hdmi_avi_infoframe_pack_only)
+hdmi_drm_infoframe_pack -> (hdmi_drm_infoframe_pack_only)
+hdmi_infoframe_check -> (__warn_printk)
+hdmi_infoframe_log -> (_dev_printk, strncpy)
+hdmi_infoframe_pack -> (hdmi_avi_infoframe_pack_only, hdmi_spd_infoframe_pack, __warn_printk, hdmi_audio_infoframe_pack_only, hdmi_drm_infoframe_pack_only, hdmi_vendor_infoframe_pack_only)
+hdmi_infoframe_pack_only -> (hdmi_avi_infoframe_pack_only, __warn_printk, hdmi_audio_infoframe_pack_only, hdmi_vendor_infoframe_pack_only, hdmi_drm_infoframe_pack_only)
+hdmi_infoframe_unpack -> (hdmi_drm_infoframe_unpack_only, strlen)
+hdmi_spd_infoframe_init -> (strlen)
+hdmi_vendor_infoframe_pack -> (hdmi_vendor_infoframe_pack_only)

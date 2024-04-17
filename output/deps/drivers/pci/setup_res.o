@@ -1,0 +1,11 @@
+drivers/pci/setup_res.o
+_pci_assign_resource -> (pcibios_align_resource, pci_bus_alloc_resource)
+pci_assign_resource -> (pci_revert_fw_address, _pci_assign_resource, resource_alignment, _dev_info, pci_update_resource, pci_cardbus_resource_alignment)
+pci_claim_resource -> (pci_find_parent_resource, _dev_info, request_resource_conflict)
+pci_disable_bridge_window -> (pci_write_config_dword)
+pci_enable_resources -> (_dev_err, pci_write_config_word, _dev_info, pci_read_config_word)
+pci_reassign_resource -> (_dev_info, pci_update_resource, _pci_assign_resource)
+pci_release_resource -> (release_resource, _dev_info)
+pci_resize_resource -> (pci_rebar_get_possible_sizes, pci_rebar_get_current_size, pci_reassign_bridge_resources, pci_find_host_bridge, pci_read_config_word, pci_rebar_set_size)
+pci_revert_fw_address -> (pci_find_parent_resource, _dev_info, pcibios_retrieve_fw_addr, request_resource_conflict)
+pci_update_resource -> (pci_write_config_word, pci_read_config_dword, pcibios_resource_to_bus, _dev_err, pci_read_config_word, pci_write_config_dword)

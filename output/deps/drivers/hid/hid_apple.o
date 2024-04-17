@@ -1,0 +1,10 @@
+drivers/hid/hid_apple.o
+apple_backlight_led_set -> (kmalloc_trace, hid_hw_raw_request, kfree)
+apple_driver_exit -> (apple_probe, apple_report_fixup, apple_input_mapping, apple_input_configured, apple_remove, apple_event, apple_input_mapped, hid_unregister_driver)
+apple_driver_init -> (__hid_register_driver, apple_probe, apple_report_fixup, apple_input_mapping, apple_input_configured, apple_remove, apple_event, apple_input_mapped)
+apple_event -> (input_event)
+apple_input_configured -> (_dev_info, strncmp)
+apple_input_mapped -> (___ratelimit, _printk)
+apple_probe -> (init_timer_key, hid_hw_raw_request, apple_battery_timer_tick, kmalloc_trace, devm_led_classdev_register_ext, hid_hw_start, _dev_err, hid_open_report, mod_timer, apple_backlight_led_set, kfree, devm_kmalloc)
+apple_remove -> (timer_delete_sync, hid_hw_stop)
+apple_report_fixup -> (kmemdup, _dev_info)

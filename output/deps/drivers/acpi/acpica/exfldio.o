@@ -1,0 +1,6 @@
+drivers/acpi/acpica/exfldio.o
+acpi_ex_access_region -> (acpi_ut_get_region_name, acpi_ut_get_object_type_name, acpi_error, acpi_is_valid_space_id, acpi_ut_get_node_name, acpi_ds_get_region_arguments, acpi_ev_address_space_dispatch)
+acpi_ex_extract_from_field -> (acpi_ex_field_datum_io, acpi_error)
+acpi_ex_field_datum_io -> (acpi_error, acpi_ds_get_buffer_field_arguments, acpi_ex_access_region, acpi_ex_insert_into_field, acpi_ex_extract_from_field)
+acpi_ex_insert_into_field -> (acpi_ex_write_with_update_rule, kfree, __kmalloc)
+acpi_ex_write_with_update_rule -> (acpi_ex_field_datum_io, acpi_error)

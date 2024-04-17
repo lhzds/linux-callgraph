@@ -1,0 +1,3 @@
+drivers/acpi/acpica/exoparg6.o
+acpi_ex_do_match -> (acpi_ex_do_logical_op)
+acpi_ex_opcode_6A_0T_1R -> (acpi_ex_load_table_op, acpi_error, acpi_ut_remove_reference, acpi_ut_create_integer_object, acpi_ex_do_match)

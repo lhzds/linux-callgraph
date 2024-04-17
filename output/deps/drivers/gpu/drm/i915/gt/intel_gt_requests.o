@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gt/intel_gt_requests.o
+engine_retire -> (refcount_warn_saturate, __intel_timeline_free, mutex_unlock, mutex_trylock, i915_request_retire)
+intel_engine_add_retire -> (queue_work_on, refcount_warn_saturate)
+intel_engine_fini_retire -> (flush_work)
+intel_engine_init_retire -> (engine_retire)
+intel_gt_fini_requests -> (cancel_delayed_work_sync, flush_work)
+intel_gt_init_requests -> (delayed_work_timer_fn, init_timer_key, retire_work_handler)
+intel_gt_park_requests -> (cancel_delayed_work)
+intel_gt_retire_requests_timeout -> (__intel_engine_flush_submission, refcount_warn_saturate, __intel_timeline_free, dma_fence_wait_timeout, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, flush_delayed_work, flush_work, __rcu_read_lock, mutex_trylock, __rcu_read_unlock, i915_request_retire, dma_fence_release)
+intel_gt_unpark_requests -> (round_jiffies_up_relative, queue_delayed_work_on)
+intel_gt_watchdog_work -> (_printk, i915_request_cancel, refcount_warn_saturate, __rcu_read_lock, __rcu_read_unlock, dma_fence_release)
+retire_work_handler -> (round_jiffies_up_relative, queue_delayed_work_on, intel_gt_retire_requests_timeout)

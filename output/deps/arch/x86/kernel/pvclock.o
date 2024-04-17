@@ -1,0 +1,4 @@
+arch/x86/kernel/pvclock.o
+pvclock_clocksource_read -> (rcu_cpu_stall_reset, clocksource_touch_watchdog)
+pvclock_read_wallclock -> (set_normalized_timespec64, pvclock_clocksource_read)
+pvclock_touch_watchdogs -> (rcu_cpu_stall_reset, clocksource_touch_watchdog)

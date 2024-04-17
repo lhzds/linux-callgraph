@@ -1,0 +1,7 @@
+net/ipv4/fib_notifier.o
+call_fib4_notifier -> (call_fib_notifier)
+call_fib4_notifiers -> (__warn_printk, call_fib_notifiers, rtnl_is_locked)
+fib4_dump -> (fib_notify, fib4_rules_dump)
+fib4_notifier_exit -> (fib_notifier_ops_unregister)
+fib4_notifier_init -> (fib_notifier_ops_register, fib4_seq_read, fib4_dump)
+fib4_seq_read -> (fib4_rules_seq_read, __warn_printk, rtnl_is_locked)

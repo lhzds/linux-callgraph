@@ -1,0 +1,4 @@
+init/calibrate.o
+calibrate_delay -> (_printk, calibrate_delay_converge, calibrate_delay_is_known, calibration_delay_done, read_current_timer)
+calibrate_delay_converge -> (__delay)
+lpj_setup -> (simple_strtoul)

@@ -1,0 +1,6 @@
+lib/mpi/mpi_mod.o
+mpi_barrett_free -> (kfree, mpi_free)
+mpi_barrett_init -> (mpi_normalize, mpi_alloc, mpi_fdiv_q, mpi_copy, kmalloc_trace, mpi_lshift_limbs, mpi_set_ui)
+mpi_mod -> (mpi_fdiv_r)
+mpi_mod_barrett -> (mpi_normalize, mpi_sub, mpi_fdiv_r, mpi_alloc, mpi_set, mpi_mul, mpi_cmp, mpi_lshift_limbs, mpi_set_ui, mpi_add, mpi_rshift_limbs)
+mpi_mul_barrett -> (mpi_mod_barrett, mpi_mul)

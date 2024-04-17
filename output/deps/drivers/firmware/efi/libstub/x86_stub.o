@@ -1,0 +1,6 @@
+drivers/firmware/efi/libstub/x86_stub.o
+adjust_memory_range_protection -> (__efi64_thunk, efi_printk)
+efi_exit -> (__efi64_thunk)
+efi_main -> (efi_setup_gop, get_efi_config_table, __efi64_thunk, efi_get_secureboot, memcmp, memcpy, efi_parse_options, efi_retrieve_tpm2_eventlog, efi_exit, efi_exit_boot_services, efi_load_initrd, efi_get_memory_map, efi_random_get_seed, exit_boot_func, memset, efi_relocate_kernel, efi_printk, adjust_memory_range_protection)
+efi_pe_entry -> (__efi64_thunk, memcpy, efi_free, efi_convert_cmdline, efi_exit, efi_stub_entry, efi_allocate_pages, memset, efi_printk)
+exit_boot_func -> (memcpy)

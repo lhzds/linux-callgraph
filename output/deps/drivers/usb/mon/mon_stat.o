@@ -1,0 +1,4 @@
+drivers/usb/mon/mon_stat.o
+mon_stat_open -> (kmalloc_trace, snprintf)
+mon_stat_read -> (simple_read_from_buffer)
+mon_stat_release -> (kfree)

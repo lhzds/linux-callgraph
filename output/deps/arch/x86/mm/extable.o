@@ -1,0 +1,4 @@
+arch/x86/mm/extable.o
+early_fixup_exception -> (early_printk, show_regs, fixup_exception, report_bug)
+ex_get_fixup_type -> (search_exception_tables)
+fixup_exception -> (_printk, show_stack_regs, pt_regs_offset, search_exception_tables, __warn_printk, insn_decode, fpu_reset_from_exception_fixup, insn_get_modrm_reg_ptr, ex_handler_msr_mce, insn_get_addr_ref)

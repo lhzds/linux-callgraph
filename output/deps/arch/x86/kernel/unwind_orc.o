@@ -1,0 +1,8 @@
+arch/x86/kernel/unwind_orc.o
+__unwind_start -> (unwind_next_frame, ret_from_fork, get_stack_info)
+deref_stack_reg -> (get_stack_info)
+unwind_dump -> (_printk_deferred, get_stack_info)
+unwind_get_return_address -> (__kernel_text_address)
+unwind_init -> (_printk_deferred)
+unwind_module_init -> (orc_sort_cmp, sort, mutex_lock, mutex_unlock, orc_sort_swap)
+unwind_next_frame -> (rethook_find_ret_addr, _printk_deferred, get_stack_info, __module_address, deref_stack_reg, unwind_dump)

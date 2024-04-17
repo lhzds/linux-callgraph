@@ -1,0 +1,5 @@
+drivers/pps/kapi.o
+pps_echo_client_default -> (_dev_info)
+pps_event -> (__wake_up, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kill_fasync)
+pps_register_source -> (_printk, pps_register_cdev, kmalloc_trace, pps_echo_client_default, kfree, __init_waitqueue_head, _dev_info)
+pps_unregister_source -> (pps_unregister_cdev)

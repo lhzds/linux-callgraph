@@ -1,0 +1,2 @@
+drivers/video/nomodeset.o
+disable_modeset -> (_printk)

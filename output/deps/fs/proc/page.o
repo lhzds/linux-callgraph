@@ -1,0 +1,5 @@
+fs/proc/page.o
+kpagecount_read -> (__SCT__cond_resched)
+kpageflags_read -> (stable_page_flags, __SCT__cond_resched)
+proc_page_init -> (mem_lseek, proc_create, kpageflags_read, kpagecount_read)
+stable_page_flags -> (is_free_buddy_page, PageHuge)

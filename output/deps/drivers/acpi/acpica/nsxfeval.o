@@ -1,0 +1,10 @@
+drivers/acpi/acpica/nsxfeval.o
+acpi_attach_data -> (acpi_ut_acquire_mutex, acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ns_attach_data)
+acpi_detach_data -> (acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ns_detach_data, acpi_ut_acquire_mutex)
+acpi_evaluate_object -> (acpi_ut_delete_internal_object_list, acpi_ns_validate_handle, acpi_ut_initialize_buffer, acpi_ex_exit_interpreter, kmalloc_trace, acpi_ex_enter_interpreter, acpi_ut_predefined_warning, acpi_ut_remove_reference, acpi_ns_evaluate, acpi_ut_copy_eobject_to_iobject, acpi_ut_copy_iobject_to_eobject, acpi_ut_add_reference, kfree, __kmalloc, acpi_ut_get_object_size)
+acpi_evaluate_object_typed -> (acpi_evaluate_object, acpi_ut_get_type_name, acpi_error, acpi_ns_get_external_pathname, kfree, acpi_get_handle)
+acpi_get_data -> (acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ns_get_attached_data, acpi_ut_acquire_mutex)
+acpi_get_data_full -> (acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ns_get_attached_data, acpi_ut_acquire_mutex)
+acpi_get_devices -> (acpi_ut_release_mutex, acpi_ns_get_device_callback, acpi_ut_acquire_mutex, acpi_ns_walk_namespace)
+acpi_ns_get_device_callback -> (acpi_ns_validate_handle, acpi_ut_release_mutex, strcmp, acpi_ut_execute_CID, kfree, acpi_ut_execute_HID, acpi_ut_execute_STA, acpi_ut_acquire_mutex)
+acpi_walk_namespace -> (acpi_ut_release_read_lock, acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ns_walk_namespace, acpi_ut_acquire_read_lock, acpi_ut_acquire_mutex)

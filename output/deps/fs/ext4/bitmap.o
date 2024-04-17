@@ -1,0 +1,6 @@
+fs/ext4/bitmap.o
+ext4_block_bitmap_csum_set -> (crypto_shash_update)
+ext4_block_bitmap_csum_verify -> (crypto_shash_update)
+ext4_count_free -> (memweight)
+ext4_inode_bitmap_csum_set -> (crypto_shash_update)
+ext4_inode_bitmap_csum_verify -> (crypto_shash_update)

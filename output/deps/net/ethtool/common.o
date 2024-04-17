@@ -1,0 +1,6 @@
+net/ethtool/common.o
+convert_legacy_settings_to_link_ksettings -> (ethtool_convert_legacy_u32_to_link_mode)
+ethtool_get_max_rxfh_channel -> (kfree, __kmalloc)
+ethtool_get_max_rxnfc_channel -> (kvmalloc_node, kvfree)
+ethtool_get_phc_vclocks -> (ptp_get_vclocks_index)
+ethtool_set_ethtool_phy_ops -> (rtnl_unlock, rtnl_lock)

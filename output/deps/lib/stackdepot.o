@@ -1,0 +1,9 @@
+lib/stackdepot.o
+__stack_depot_save -> (filter_irq_stacks, memcpy, _raw_spin_lock_irqsave, __warn_printk, _raw_spin_unlock_irqrestore, free_pages, alloc_pages)
+disable_stack_depot -> (_printk, kstrtobool)
+stack_depot_early_init -> (_printk, alloc_large_system_hash)
+stack_depot_fetch -> (__warn_printk)
+stack_depot_init -> (_printk, mutex_lock, nr_free_buffer_pages, kvmalloc_node, mutex_unlock)
+stack_depot_print -> (__warn_printk, stack_trace_print)
+stack_depot_save -> (__stack_depot_save)
+stack_depot_snprint -> (__warn_printk, stack_trace_snprint)

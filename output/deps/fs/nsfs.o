@@ -1,0 +1,13 @@
+fs/nsfs.o
+__ns_get_path -> (compat_ptr_ioctl, iput, new_inode_pseudo, d_alloc_anon, lockref_get_not_dead, ns_ioctl, dput, d_delete, __rcu_read_lock, current_time, __rcu_read_unlock, mntget, d_instantiate)
+ns_dname -> (dynamic_dname)
+ns_get_name -> (snprintf)
+ns_get_path -> (__ns_get_path)
+ns_get_path_cb -> (__ns_get_path)
+ns_ioctl -> (put_unused_fd, open_related_ns, get_unused_fd_flags)
+nsfs_evict -> (clear_inode)
+nsfs_init -> (nsfs_init_fs_context, panic, kill_anon_super, kern_mount)
+nsfs_init_fs_context -> (nsfs_evict, init_pseudo, nsfs_show_path, ns_dname, always_delete_dentry, ns_prune_dentry, simple_statfs)
+nsfs_show_path -> (seq_printf)
+open_related_ns -> (path_put, put_unused_fd, dentry_open, fd_install, __ns_get_path, get_unused_fd_flags)
+proc_ns_file -> (compat_ptr_ioctl, ns_ioctl)

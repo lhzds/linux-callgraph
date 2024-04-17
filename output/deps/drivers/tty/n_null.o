@@ -1,0 +1,3 @@
+drivers/tty/n_null.o
+n_null_exit -> (n_null_open, n_null_receivebuf, tty_unregister_ldisc, n_null_write, n_null_close, n_null_read)
+n_null_init -> (tty_register_ldisc, n_null_open, n_null_receivebuf, n_null_write, n_null_close, n_null_read)

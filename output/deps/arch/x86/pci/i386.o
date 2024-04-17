@@ -1,0 +1,9 @@
+arch/x86/pci/i386.o
+pcibios_allocate_bus_resources -> (pci_claim_bridge_resource, pcibios_allocate_bus_resources)
+pcibios_allocate_resources -> (pci_read_config_dword, pcibios_allocate_resources, _raw_spin_lock_irqsave, kmalloc_trace, pci_claim_resource, pci_dev_get, _raw_spin_unlock_irqrestore, pci_read_config_word, pci_write_config_dword, _dev_info)
+pcibios_allocate_rom_resources -> (pci_claim_resource, pcibios_allocate_rom_resources)
+pcibios_assign_resources -> (pcibios_allocate_rom_resources, pci_assign_unassigned_resources, pcibios_fw_addr_list_del)
+pcibios_fw_addr_list_del -> (pci_dev_put, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)
+pcibios_resource_survey -> (pcibios_allocate_resources, ioapic_insert_resources, e820__reserve_resources_late, pcibios_allocate_bus_resources)
+pcibios_resource_survey_bus -> (pcibios_allocate_resources, pcibios_allocate_rom_resources, _dev_printk, pcibios_allocate_bus_resources)
+pcibios_retrieve_fw_addr -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

@@ -1,0 +1,10 @@
+mm/early_ioremap.o
+__early_ioremap -> (native_set_fixmap, __early_set_fixmap, __warn_printk)
+check_early_ioremap_leak -> (__warn_printk)
+copy_from_early_mem -> (early_iounmap, early_memremap)
+early_ioremap -> (__early_ioremap)
+early_iounmap -> (native_set_fixmap, __early_set_fixmap, __warn_printk)
+early_memremap -> (__early_ioremap, early_memremap_pgprot_adjust)
+early_memremap_prot -> (__early_ioremap)
+early_memremap_ro -> (__early_ioremap, early_memremap_pgprot_adjust)
+early_memunmap -> (early_iounmap)

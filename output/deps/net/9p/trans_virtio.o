@@ -1,0 +1,13 @@
+net/9p/trans_virtio.o
+p9_get_mapped_pages -> (init_wait_entry, __SCT__might_resched, iov_iter_get_pages_alloc2, iov_iter_advance, schedule, finish_wait, iov_iter_single_seg_count, is_vmalloc_addr, vmalloc_to_page, prepare_to_wait_event, __kmalloc)
+p9_mount_tag_show -> (strlen)
+p9_virtio_cancelled -> (p9_req_put)
+p9_virtio_cleanup -> (p9_virtio_cancelled, p9_virtio_close, p9_virtio_zc_request, p9_virtio_cancel, p9_virtio_create, p9_virtio_request, v9fs_unregister_trans, unregister_virtio_driver, p9_virtio_remove, p9_virtio_probe)
+p9_virtio_close -> (mutex_unlock, mutex_lock)
+p9_virtio_create -> (mutex_unlock, _printk, mutex_lock, strcmp)
+p9_virtio_init -> (p9_virtio_cancelled, register_virtio_driver, p9_virtio_close, p9_virtio_zc_request, p9_virtio_cancel, p9_virtio_create, v9fs_register_trans, p9_virtio_request, v9fs_unregister_trans, p9_virtio_remove, p9_virtio_probe)
+p9_virtio_probe -> (_printk, __SCT__might_resched, mutex_lock, req_done, sg_init_table, nr_free_buffer_pages, mutex_unlock, kmalloc_trace, _dev_err, sysfs_create_file_ns, p9_mount_tag_show, virtio_check_driver_offered_feature, __init_waitqueue_head, kfree, sysfs_remove_file_ns, kobject_uevent, __kmalloc)
+p9_virtio_remove -> (mutex_lock, mutex_unlock, virtio_reset_device, msleep, p9_mount_tag_show, _dev_emerg, kfree, sysfs_remove_file_ns, kobject_uevent)
+p9_virtio_request -> (init_wait_entry, __SCT__might_resched, virtqueue_kick, _raw_spin_lock_irqsave, schedule, finish_wait, prepare_to_wait_event, _raw_spin_unlock_irqrestore, pack_sg_list, virtqueue_add_sgs)
+p9_virtio_zc_request -> (init_wait_entry, __wake_up, __SCT__might_resched, p9_release_pages, pack_sg_list_p, virtqueue_kick, _raw_spin_lock_irqsave, schedule, finish_wait, p9_get_mapped_pages, handle_rerror, prepare_to_wait_event, kvfree, _raw_spin_unlock_irqrestore, pack_sg_list, p9_req_put, virtqueue_add_sgs)
+req_done -> (__wake_up, p9_client_cb, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, virtqueue_get_buf)

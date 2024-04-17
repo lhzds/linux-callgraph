@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/intel_gt_engines_debugfs.o
+engines_open -> (single_open, engines_show)
+engines_show -> (intel_engine_dump, __drm_puts_seq_file, __drm_printfn_seq_file)
+intel_gt_engines_debugfs_register -> (seq_read, intel_gt_debugfs_register_files, single_release, engines_open, seq_lseek)

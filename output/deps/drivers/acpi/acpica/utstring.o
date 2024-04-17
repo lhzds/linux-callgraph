@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utstring.o
+acpi_ut_print_string -> (acpi_os_printf)
+acpi_ut_repair_name -> (acpi_ut_valid_name_char, acpi_warning)

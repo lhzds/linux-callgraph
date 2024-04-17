@@ -1,0 +1,6 @@
+drivers/gpu/drm/drm_self_refresh_helper.o
+drm_self_refresh_helper_alter_state -> (mutex_unlock, mod_delayed_work_on, __msecs_to_jiffies, mutex_lock)
+drm_self_refresh_helper_cleanup -> (cancel_delayed_work_sync, kfree)
+drm_self_refresh_helper_entry_work -> (refcount_warn_saturate, drm_modeset_acquire_fini, drm_modeset_backoff, drm_atomic_get_crtc_state, drm_atomic_state_alloc, drm_atomic_add_affected_connectors, drm_modeset_acquire_init, drm_modeset_drop_locks, drm_atomic_commit, drm_atomic_state_clear, __drm_atomic_state_free)
+drm_self_refresh_helper_init -> (__mutex_init, delayed_work_timer_fn, kmalloc_trace, init_timer_key, drm_self_refresh_helper_entry_work)
+drm_self_refresh_helper_update_avg_times -> (mutex_unlock, mutex_lock)

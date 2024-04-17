@@ -1,0 +1,7 @@
+net/netfilter/xt_SECMARK.o
+secmark_tg_check -> (_printk, security_secmark_refcount_inc, strlen, strcmp, security_secmark_relabel_packet, ___ratelimit, security_secctx_to_secid)
+secmark_tg_check_v0 -> (secmark_tg_check)
+secmark_tg_check_v1 -> (secmark_tg_check)
+secmark_tg_destroy -> (security_secmark_refcount_dec)
+secmark_tg_exit -> (xt_unregister_targets, secmark_tg_check_v0, secmark_tg_check_v1, secmark_tg_destroy, secmark_tg_v1, secmark_tg_v0)
+secmark_tg_init -> (secmark_tg_check_v0, secmark_tg_check_v1, secmark_tg_destroy, secmark_tg_v1, xt_register_targets, secmark_tg_v0)

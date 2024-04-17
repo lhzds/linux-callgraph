@@ -1,0 +1,5 @@
+lib/generic_radix_tree.o
+__genradix_free -> (genradix_free_recurse)
+__genradix_prealloc -> (__genradix_ptr_alloc)
+__genradix_ptr_alloc -> (free_pages, __get_free_pages)
+genradix_free_recurse -> (genradix_free_recurse, free_pages)

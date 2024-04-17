@@ -1,0 +1,3 @@
+sound/hda/intel_sdw_acpi.o
+sdw_intel_acpi_cb -> (acpi_evaluate_integer, _printk, acpi_fetch_acpi_dev)
+sdw_intel_acpi_scan -> (snprintf, _dev_warn, fwnode_property_read_u32_array, sdw_intel_acpi_cb, _dev_err, acpi_walk_namespace, fwnode_property_read_u8_array, fwnode_get_named_child_node, acpi_fetch_acpi_dev)

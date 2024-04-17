@@ -1,0 +1,7 @@
+fs/nls/nls_base.o
+__register_nls -> (uni2char, _raw_spin_lock, char2uni, _raw_spin_unlock)
+find_nls -> (strcmp, uni2char, _raw_spin_lock, _raw_spin_unlock, char2uni)
+load_nls -> (__request_module, find_nls)
+load_nls_default -> (__request_module, find_nls, uni2char, char2uni)
+unregister_nls -> (uni2char, _raw_spin_lock, char2uni, _raw_spin_unlock)
+utf8s_to_utf16s -> (utf8_to_utf32)

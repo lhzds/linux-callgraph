@@ -1,0 +1,2 @@
+net/core/request_sock.o
+reqsk_fastopen_remove -> (_raw_spin_lock_bh, refcount_warn_saturate, kmem_cache_free, sk_free, _raw_spin_unlock_bh, kfree)

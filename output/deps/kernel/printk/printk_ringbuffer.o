@@ -1,0 +1,9 @@
+kernel/printk/printk_ringbuffer.o
+_prb_read_valid -> (memchr, get_data)
+data_alloc -> (data_push_tail)
+prb_first_valid_seq -> (_prb_read_valid)
+prb_next_seq -> (_prb_read_valid)
+prb_read_valid -> (_prb_read_valid)
+prb_read_valid_info -> (_prb_read_valid)
+prb_reserve -> (data_alloc, data_push_tail)
+prb_reserve_in_last -> (data_alloc, _printk, data_push_tail, get_data)

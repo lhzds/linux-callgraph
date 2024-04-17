@@ -1,0 +1,13 @@
+drivers/pps/pps.o
+pps_cdev_compat_ioctl -> (_copy_from_user, pps_cdev_pps_fetch, _raw_spin_lock_irq, pps_cdev_ioctl, _raw_spin_unlock_irq, _copy_to_user)
+pps_cdev_fasync -> (fasync_helper)
+pps_cdev_ioctl -> (_copy_from_user, pps_cdev_pps_fetch, _raw_spin_lock_irq, _raw_spin_unlock_irq, _dev_err, capable, _copy_to_user)
+pps_cdev_open -> (kobject_get)
+pps_cdev_pps_fetch -> (init_wait_entry, __SCT__might_resched, schedule_timeout, schedule, finish_wait, prepare_to_wait_event)
+pps_cdev_release -> (kobject_put)
+pps_device_destruct -> (mutex_lock, mutex_unlock, cdev_del, idr_remove, kfree)
+pps_exit -> (class_destroy, unregister_chrdev_region)
+pps_init -> (_printk, class_destroy, class_create, alloc_chrdev_region)
+pps_lookup_dev -> (__rcu_read_unlock, idr_get_next, __rcu_read_lock)
+pps_register_cdev -> (pps_device_destruct, _printk, pps_cdev_poll, mutex_lock, pps_cdev_open, pps_cdev_release, idr_alloc, idr_remove, mutex_unlock, cdev_del, pps_cdev_ioctl, pps_cdev_fasync, pps_cdev_compat_ioctl, cdev_add, cdev_init, device_create)
+pps_unregister_cdev -> (device_destroy)

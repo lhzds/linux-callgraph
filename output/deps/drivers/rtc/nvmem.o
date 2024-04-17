@@ -1,0 +1,2 @@
+drivers/rtc/nvmem.o
+devm_rtc_nvmem_register -> (_dev_err, devm_nvmem_register)

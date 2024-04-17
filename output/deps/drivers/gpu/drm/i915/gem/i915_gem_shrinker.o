@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/gem/i915_gem_shrinker.o
+__i915_gem_object_make_purgeable -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+__i915_gem_object_make_shrinkable -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+i915_gem_driver_register__shrinker -> (i915_gem_shrinker_vmap, i915_gem_shrinker_scan, i915_gem_shrinker_oom, i915_gem_shrinker_count, register_shrinker, register_vmap_purge_notifier, __warn_printk, register_oom_notifier, dev_driver_string)
+i915_gem_driver_unregister__shrinker -> (__warn_printk, unregister_oom_notifier, unregister_shrinker, unregister_vmap_purge_notifier, dev_driver_string)
+i915_gem_object_make_purgeable -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+i915_gem_object_make_shrinkable -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+i915_gem_object_make_unshrinkable -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+i915_gem_shrink -> (__probestub_i915_gem_shrink, refcount_warn_saturate, intel_runtime_pm_get_if_in_use, __traceiter_i915_gem_shrink, drm_gem_object_free, _raw_spin_lock_irqsave, __SCT__tp_func_i915_gem_shrink, intel_vm_no_concurrent_access_wa, i915_gem_object_unbind, is_vmalloc_addr, ww_mutex_trylock, ww_mutex_unlock, _raw_spin_unlock_irqrestore, intel_gt_retire_requests_timeout, intel_runtime_pm_put_unchecked, __i915_gem_object_put_pages, ww_mutex_lock, ww_mutex_lock_interruptible)
+i915_gem_shrink_all -> (intel_runtime_pm_put_unchecked, i915_gem_shrink, intel_runtime_pm_get)
+i915_gem_shrinker_oom -> (_printk, _raw_spin_lock_irqsave, i915_gem_shrink, _raw_spin_unlock_irqrestore, intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+i915_gem_shrinker_scan -> (intel_runtime_pm_put_unchecked, i915_gem_shrink, intel_runtime_pm_get)
+i915_gem_shrinker_vmap -> (mutex_lock, __i915_vma_unbind, mutex_unlock, ww_mutex_trylock, i915_gem_shrink, intel_runtime_pm_put_unchecked, ww_mutex_unlock, intel_runtime_pm_get)

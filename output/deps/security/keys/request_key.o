@@ -1,0 +1,10 @@
+security/keys/request_key.o
+call_sbin_request_key -> (umh_keys_init, __put_cred, key_link, keyring_alloc, refcount_warn_saturate, key_validate, look_up_user_keyrings, call_usermodehelper_exec, key_revoke, key_put, call_usermodehelper_setup, sprintf, key_reject_and_link, umh_keys_cleanup)
+complete_request_key -> (key_revoke, key_reject_and_link)
+request_key_and_link -> (mutex_lock, __key_link_end, refcount_warn_saturate, look_up_user_keyrings, key_user_lookup, keyring_describe, key_put, key_task_permission, keyring_free_preparse, __key_link, search_process_keyrings_rcu, keyring_destroy, key_alloc, __rcu_read_unlock, key_link, strlen, keyring_revoke, mutex_unlock, down_read, request_key_auth_new, keyring_preparse, key_user_put, key_default_cmp, keyring_read, keyring_instantiate, up_read, __key_link_check_live_key, __rcu_read_lock, __key_link_begin, __key_link_lock, key_reject_and_link)
+request_key_rcu -> (key_default_cmp, search_process_keyrings_rcu, strlen)
+request_key_tag -> (__SCT__might_resched, strlen, key_validate, bit_wait, out_of_line_wait_on_bit, key_put, request_key_and_link)
+request_key_with_auxdata -> (__SCT__might_resched, key_validate, bit_wait, out_of_line_wait_on_bit, key_put, request_key_and_link)
+umh_keys_cleanup -> (key_put)
+umh_keys_init -> (install_session_keyring_to_cred)
+wait_for_key_construction -> (bit_wait, __SCT__might_resched, key_validate, out_of_line_wait_on_bit)

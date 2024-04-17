@@ -1,0 +1,6 @@
+arch/x86/kernel/kdebugfs.o
+arch_kdebugfs_init -> (boot_params_kdebugfs_init, debugfs_create_dir)
+boot_params_kdebugfs_init -> (debugfs_create_blob, create_setup_data_nodes, debugfs_remove, debugfs_create_dir, debugfs_create_x16)
+create_setup_data_node -> (setup_data_read, debugfs_create_x32, default_llseek, debugfs_create_file, simple_open, debugfs_create_dir, sprintf)
+create_setup_data_nodes -> (create_setup_data_node, memremap, kmalloc_trace, debugfs_remove, debugfs_create_dir, kfree, memunmap)
+setup_data_read -> (memunmap, _copy_to_user, memremap)

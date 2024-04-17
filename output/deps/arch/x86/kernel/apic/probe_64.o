@@ -1,0 +1,3 @@
+arch/x86/kernel/apic/probe_64.o
+default_acpi_madt_oem_check -> (_printk)
+default_setup_apic_routing -> (_printk, enable_IR_x2apic)

@@ -1,0 +1,4 @@
+drivers/input/input_compat.o
+input_event_from_user -> (_copy_from_user)
+input_event_to_user -> (_copy_to_user)
+input_ff_effect_from_user -> (_copy_from_user)

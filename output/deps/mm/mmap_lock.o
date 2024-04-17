@@ -1,0 +1,13 @@
+mm/mmap_lock.o
+__mmap_lock_do_trace_acquire_returned -> (__SCT__tp_func_mmap_lock_acquire_returned, trace_mmap_lock_reg, trace_mmap_lock_unreg, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned)
+__mmap_lock_do_trace_released -> (trace_mmap_lock_reg, __probestub_mmap_lock_released, trace_mmap_lock_unreg, __traceiter_mmap_lock_released, __SCT__tp_func_mmap_lock_released)
+__mmap_lock_do_trace_start_locking -> (trace_mmap_lock_reg, __traceiter_mmap_lock_start_locking, __SCT__tp_func_mmap_lock_start_locking, trace_mmap_lock_unreg, __probestub_mmap_lock_start_locking)
+__traceiter_mmap_lock_acquire_returned -> (__SCT__tp_func_mmap_lock_acquire_returned, trace_mmap_lock_reg, trace_mmap_lock_unreg, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned)
+__traceiter_mmap_lock_released -> (trace_mmap_lock_reg, __probestub_mmap_lock_released, trace_mmap_lock_unreg, __traceiter_mmap_lock_released, __SCT__tp_func_mmap_lock_released)
+__traceiter_mmap_lock_start_locking -> (trace_mmap_lock_reg, __traceiter_mmap_lock_start_locking, __SCT__tp_func_mmap_lock_start_locking, trace_mmap_lock_unreg, __probestub_mmap_lock_start_locking)
+perf_trace_mmap_lock -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+perf_trace_mmap_lock_acquire_returned -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_mmap_lock -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_event_raw_event_mmap_lock_acquire_returned -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_raw_output_mmap_lock -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)
+trace_raw_output_mmap_lock_acquire_returned -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)

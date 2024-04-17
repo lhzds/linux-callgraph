@@ -1,0 +1,11 @@
+kernel/trace/trace_event_perf.o
+perf_kprobe_destroy -> (mutex_lock, perf_trace_event_unreg, mutex_unlock, destroy_local_trace_kprobe, trace_event_dyn_put_ref)
+perf_kprobe_init -> (mutex_lock, mutex_unlock, perf_trace_event_init, strndup_user, create_local_trace_kprobe, destroy_local_trace_kprobe, kfree)
+perf_trace_buf_alloc -> (__warn_printk, perf_swevent_get_recursion_context)
+perf_trace_buf_update -> (tracing_gen_ctx_irq_test)
+perf_trace_destroy -> (mutex_unlock, mutex_lock, perf_trace_event_unreg, trace_event_dyn_put_ref)
+perf_trace_event_init -> (free_percpu, __alloc_percpu, perf_trace_event_unreg, ftrace_event_is_function, security_perf_event_open, capable)
+perf_trace_event_unreg -> (synchronize_rcu, free_percpu, synchronize_srcu)
+perf_trace_init -> (mutex_lock, mutex_unlock, perf_trace_event_init, trace_event_dyn_try_get_ref, trace_event_dyn_put_ref)
+perf_uprobe_destroy -> (mutex_lock, perf_trace_event_unreg, mutex_unlock, trace_event_dyn_put_ref, destroy_local_trace_uprobe)
+perf_uprobe_init -> (mutex_lock, mutex_unlock, perf_trace_event_init, strndup_user, kfree, create_local_trace_uprobe, destroy_local_trace_uprobe)

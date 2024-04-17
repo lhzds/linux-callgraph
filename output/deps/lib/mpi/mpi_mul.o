@@ -1,0 +1,3 @@
+lib/mpi/mpi_mul.o
+mpi_mul -> (mpi_assign_limb_space, mpihelp_mul, mpi_alloc_limb_space, mpi_free_limb_space, mpi_resize)
+mpi_mulm -> (mpi_tdiv_r, mpi_mul)

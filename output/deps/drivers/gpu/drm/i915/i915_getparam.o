@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/i915_getparam.o
+i915_getparam_ioctl -> (__drm_dev_dbg, intel_engine_lookup_user, i915_gem_mmap_gtt_version, i915_perf_ioctl_version, intel_huc_check_status, intel_sseu_subslice_total, intel_pxp_get_readiness_status, intel_has_gpu_reset, intel_has_reset_engine, capable, intel_sseu_get_hsw_subslices, intel_engines_has_context_isolation, i915_perf_oa_timestamp_frequency, i915_cmd_parser_get_version)

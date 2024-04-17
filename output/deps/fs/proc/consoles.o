@@ -1,0 +1,5 @@
+fs/proc/consoles.o
+c_start -> (console_list_lock)
+c_stop -> (console_list_unlock)
+proc_consoles_init -> (show_console_dev, proc_create_seq_private, c_next, c_stop, c_start)
+show_console_dev -> (console_lock, seq_pad, console_unlock, seq_printf, seq_putc)

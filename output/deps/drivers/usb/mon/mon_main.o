@@ -1,0 +1,10 @@
+drivers/usb/mon/mon_main.o
+mon_bus_init -> (mutex_lock, mutex_unlock, kmalloc_trace, mon_text_add, mon_bin_add)
+mon_complete -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+mon_exit -> (mon_bin_del, _printk, mon_notify, mon_text_exit, mutex_lock, refcount_warn_saturate, usb_mon_deregister, mutex_unlock, mon_text_del, kfree, mon_bin_exit, usb_unregister_notify)
+mon_init -> (mon_text_init, _printk, idr_get_next, mon_notify, mon_submit_error, mon_text_exit, mutex_lock, mutex_unlock, usb_register_notify, mon_submit, usb_mon_register, mon_bin_init, mon_text_add, mon_bin_add, mon_bus_init, mon_bin_exit, mon_complete)
+mon_notify -> (mon_bin_del, mutex_lock, refcount_warn_saturate, mutex_unlock, mon_text_del, mon_bus_init, kfree)
+mon_reader_add -> (refcount_warn_saturate, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+mon_reader_del -> (refcount_warn_saturate, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)
+mon_submit -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+mon_submit_error -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

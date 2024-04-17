@@ -1,0 +1,5 @@
+net/netfilter/nf_sockopt.o
+nf_getsockopt -> (mutex_unlock, mutex_lock)
+nf_register_sockopt -> (mutex_unlock, mutex_lock)
+nf_setsockopt -> (mutex_unlock, mutex_lock)
+nf_unregister_sockopt -> (mutex_unlock, mutex_lock)

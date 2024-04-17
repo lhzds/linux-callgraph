@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/gt/gen6_engine_cs.o
+gen6_emit_bb_start -> (intel_ring_begin)
+gen6_emit_flush_rcs -> (intel_ring_begin)
+gen6_emit_flush_vcs -> (intel_ring_begin)
+gen6_emit_flush_xcs -> (intel_ring_begin)
+gen6_irq_disable -> (gen5_gt_disable_irq)
+gen6_irq_enable -> (gen5_gt_enable_irq)
+gen7_emit_flush_rcs -> (intel_ring_begin)
+hsw_emit_bb_start -> (intel_ring_begin)
+hsw_irq_disable_vecs -> (gen6_gt_pm_mask_irq)
+hsw_irq_enable_vecs -> (gen6_gt_pm_unmask_irq)

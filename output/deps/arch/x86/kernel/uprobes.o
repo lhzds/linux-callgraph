@@ -1,0 +1,10 @@
+arch/x86/kernel/uprobes.o
+arch_uprobe_analyze_insn -> (insn_rip_relative, inat_get_opcode_attribute, default_post_xol_op, push_emulate_op, default_abort_op, insn_decode, default_pre_xol_op, branch_post_xol_op, branch_emulate_op)
+arch_uprobe_exception_notify -> (uprobe_post_sstep_notifier, uprobe_pre_sstep_notifier)
+arch_uprobe_post_xol -> (send_sig)
+arch_uprobe_pre_xol -> (set_task_blockstep)
+arch_uprobe_skip_sstep -> (send_sig)
+arch_uretprobe_hijack_return_addr -> (_printk, _copy_to_user, force_sig, _copy_from_user)
+branch_emulate_op -> (_copy_to_user)
+default_post_xol_op -> (_copy_to_user)
+push_emulate_op -> (_copy_to_user)

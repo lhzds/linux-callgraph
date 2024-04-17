@@ -1,0 +1,5 @@
+drivers/cpuidle/governor.o
+cpuidle_find_governor -> (strncasecmp)
+cpuidle_governor_latency_req -> (get_cpu_device, pm_qos_read_value, cpu_latency_qos_limit)
+cpuidle_register_governor -> (cpuidle_disabled, mutex_lock, mutex_unlock, cpuidle_switch_governor, strncasecmp)
+cpuidle_switch_governor -> (_printk, cpuidle_uninstall_idle_handler, cpuidle_enable_device, cpuidle_install_idle_handler, cpuidle_disable_device)

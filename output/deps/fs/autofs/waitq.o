@@ -1,0 +1,5 @@
+fs/autofs/waitq.o
+autofs_catatonic_mode -> (__wake_up, mutex_lock, mutex_unlock, fput, kfree)
+autofs_notify_daemon -> (_printk, __kernel_write, mutex_lock, mutex_unlock, _raw_spin_lock_irqsave, recalc_sigpending, autofs_catatonic_mode, autofs_wait_release, _raw_spin_unlock_irqrestore, fput)
+autofs_wait -> (__SCT__might_resched, mutex_lock, _raw_spin_lock, schedule, sprintf, init_wait_entry, path_has_submounts, autofs_notify_daemon, bcmp, full_name_hash, _raw_spin_unlock, kmalloc_trace, __task_pid_nr_ns, prepare_to_wait_event, d_lookup, mutex_lock_interruptible, dentry_path_raw, strlen, mutex_unlock, __init_waitqueue_head, schedule_timeout_interruptible, dput, finish_wait, kfree)
+autofs_wait_release -> (mutex_lock, __wake_up, kfree, mutex_unlock)

@@ -1,0 +1,4 @@
+arch/x86/kernel/crash_dump_64.o
+copy_oldmem_page -> (ioremap_cache, _copy_to_iter, iounmap)
+copy_oldmem_page_encrypted -> (_copy_to_iter, iounmap, ioremap_encrypted)
+elfcorehdr_read -> (read_from_oldmem, iov_iter_kvec)

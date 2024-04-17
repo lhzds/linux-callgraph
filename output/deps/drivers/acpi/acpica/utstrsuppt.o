@@ -1,0 +1,4 @@
+drivers/acpi/acpica/utstrsuppt.o
+acpi_ut_convert_decimal_string -> (acpi_ut_ascii_char_to_hex, acpi_ut_short_divide)
+acpi_ut_convert_hex_string -> (acpi_ut_ascii_char_to_hex, acpi_ut_short_divide)
+acpi_ut_convert_octal_string -> (acpi_ut_ascii_char_to_hex, acpi_ut_short_divide)

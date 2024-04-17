@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gt/intel_sa_media.o
+intel_sa_mediagt_setup -> (intel_uncore_init_early, __warn_printk, drmm_kmalloc, intel_gt_common_init_early, dev_driver_string)

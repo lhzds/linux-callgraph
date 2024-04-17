@@ -1,0 +1,2 @@
+kernel/crash_dump.o
+setup_elfcorehdr -> (memparse)

@@ -1,0 +1,7 @@
+drivers/acpi/acpica/nsalloc.o
+acpi_ns_create_node -> (kmem_cache_alloc)
+acpi_ns_delete_children -> (acpi_ut_remove_reference, acpi_ns_detach_object, acpi_os_release_object, acpi_error)
+acpi_ns_delete_namespace_by_owner -> (acpi_ns_delete_children, acpi_ut_release_mutex, acpi_ns_get_next_node, acpi_os_release_object, acpi_ut_remove_reference, acpi_ns_detach_object, acpi_ut_acquire_mutex)
+acpi_ns_delete_namespace_subtree -> (acpi_ns_delete_children, acpi_ut_release_mutex, acpi_ns_get_next_node, acpi_ns_detach_object, acpi_ut_acquire_mutex)
+acpi_ns_delete_node -> (acpi_ut_remove_reference, acpi_ns_detach_object, acpi_os_release_object)
+acpi_ns_remove_node -> (acpi_ut_remove_reference, acpi_ns_detach_object, acpi_os_release_object)

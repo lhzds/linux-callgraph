@@ -1,0 +1,2 @@
+net/ipv4/netlink.o
+rtm_getroute_parse_ip_proto -> (do_trace_netlink_extack)

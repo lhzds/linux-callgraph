@@ -1,0 +1,7 @@
+net/sysctl_net.o
+net_ctl_permissions -> (ns_capable_noaudit)
+net_sysctl_init -> (register_pernet_subsys, sysctl_net_init, unregister_sysctl_table, register_sysctl, sysctl_net_exit)
+register_net_sysctl -> (__warn_printk, is_module_address, __register_sysctl_table)
+sysctl_net_exit -> (retire_sysctl_set)
+sysctl_net_init -> (net_ctl_header_lookup, net_ctl_set_ownership, is_seen, setup_sysctl_set, net_ctl_permissions)
+unregister_net_sysctl_table -> (unregister_sysctl_table)

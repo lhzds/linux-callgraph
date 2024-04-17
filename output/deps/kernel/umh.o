@@ -1,0 +1,13 @@
+kernel/umh.o
+__usermodehelper_disable -> (down_write, __wake_up, __SCT__might_resched, init_wait_entry, up_write, schedule_timeout, finish_wait, prepare_to_wait_event)
+__usermodehelper_set_disable_depth -> (down_write, __wake_up, up_write)
+call_usermodehelper -> (call_usermodehelper_exec, call_usermodehelper_exec_work, kmalloc_trace)
+call_usermodehelper_exec -> (__wake_up, queue_work_on, kfree, wait_for_completion_state)
+call_usermodehelper_exec_async -> (commit_creds, do_exit, abort_creds, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irq, set_user_nice, flush_signal_handlers, _raw_spin_unlock_irq, kfree, wait_for_initramfs, prepare_kernel_cred, complete, kernel_execve)
+call_usermodehelper_exec_work -> (kernel_sigaction, kernel_wait, call_usermodehelper_exec_async, kfree, complete, user_mode_thread)
+call_usermodehelper_setup -> (call_usermodehelper_exec_work, kmalloc_trace)
+init_umh_sysctls -> (proc_cap_handler, __register_sysctl_init)
+proc_cap_handler -> (capable, _raw_spin_lock, proc_doulongvec_minmax, _raw_spin_unlock)
+usermodehelper_read_lock_wait -> (autoremove_wake_function, schedule_timeout, down_read, up_read, finish_wait, prepare_to_wait)
+usermodehelper_read_trylock -> (__SCT__might_resched, autoremove_wake_function, down_read, up_read, schedule, finish_wait, freezing_slow_path, __refrigerator, prepare_to_wait)
+usermodehelper_read_unlock -> (up_read)

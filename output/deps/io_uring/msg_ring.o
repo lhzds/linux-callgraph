@@ -1,0 +1,6 @@
+io_uring/msg_ring.o
+io_double_lock_ctx -> (mutex_lock, mutex_trylock)
+io_msg_ring -> (mutex_lock, task_work_add, mutex_unlock, io_msg_tw_fd_complete, io_double_lock_ctx, io_msg_tw_complete, io_post_aux_cqe, io_is_uring_fops, __io_fixed_fd_install, mutex_trylock)
+io_msg_ring_cleanup -> (fput)
+io_msg_tw_complete -> (mutex_lock, mutex_unlock, io_post_aux_cqe, io_req_task_complete, __io_req_task_work_add)
+io_msg_tw_fd_complete -> (mutex_lock, mutex_unlock, io_post_aux_cqe, __io_fixed_fd_install, io_req_task_complete, __io_req_task_work_add)

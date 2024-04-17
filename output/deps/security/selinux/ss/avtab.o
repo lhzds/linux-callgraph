@@ -1,0 +1,10 @@
+security/selinux/ss/avtab.o
+avtab_alloc -> (kvmalloc_node)
+avtab_alloc_dup -> (kvmalloc_node)
+avtab_cache_init -> (kmem_cache_create)
+avtab_destroy -> (kmem_cache_free, kvfree)
+avtab_insert_nonunique -> (kmem_cache_alloc, kmem_cache_free)
+avtab_insertf -> (kmem_cache_alloc, kmem_cache_free)
+avtab_read -> (_printk, avtab_read_item, kvmalloc_node, kvfree, avtab_insertf, kmem_cache_free)
+avtab_read_item -> (policydb_type_isvalid, _printk, policydb_class_isvalid)
+avtab_write -> (avtab_write_item)

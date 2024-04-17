@@ -1,0 +1,4 @@
+net/core/netevent.o
+call_netevent_notifiers -> (atomic_notifier_call_chain)
+register_netevent_notifier -> (atomic_notifier_chain_register)
+unregister_netevent_notifier -> (atomic_notifier_chain_unregister)

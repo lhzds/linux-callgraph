@@ -1,0 +1,6 @@
+mm/interval_tree.o
+anon_vma_interval_tree_insert -> (__anon_vma_interval_tree_augment_rotate, __rb_insert_augmented)
+anon_vma_interval_tree_remove -> (__anon_vma_interval_tree_augment_rotate, __rb_erase_color, rb_next)
+vma_interval_tree_insert -> (__rb_insert_augmented, vma_interval_tree_augment_rotate)
+vma_interval_tree_insert_after -> (__rb_insert_augmented, vma_interval_tree_augment_rotate)
+vma_interval_tree_remove -> (__rb_erase_color, rb_next, vma_interval_tree_augment_rotate)

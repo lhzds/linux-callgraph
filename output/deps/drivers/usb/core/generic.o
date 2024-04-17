@@ -1,0 +1,8 @@
+drivers/usb/core/generic.o
+__check_for_non_generic_match -> (usb_generic_driver_resume, usb_driver_applicable, usb_generic_driver_suspend, usb_generic_driver_disconnect, usb_generic_driver_probe, usb_generic_driver_match)
+usb_choose_configuration -> (_dev_info, _dev_warn, usb_device_is_owned)
+usb_generic_driver_disconnect -> (usb_notify_remove_device, usb_set_configuration)
+usb_generic_driver_match -> (usb_uevent, usb_device_match, __check_for_non_generic_match, bus_for_each_drv)
+usb_generic_driver_probe -> (_dev_err, usb_choose_configuration, usb_set_configuration, usb_notify_add_device)
+usb_generic_driver_resume -> (usb_port_resume, usbfs_notify_resume, hcd_bus_resume)
+usb_generic_driver_suspend -> (hcd_bus_suspend, usb_port_suspend, usbfs_notify_suspend)

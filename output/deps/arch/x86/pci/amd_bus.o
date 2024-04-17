@@ -1,0 +1,7 @@
+arch/x86/pci/amd_bus.o
+amd_bus_cpu_online -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+amd_postcore_init -> (pci_io_ecs_init, early_root_info_init)
+early_root_info_init -> (_printk, alloc_pci_root_info, early_pci_allowed, read_pci_config, native_read_msr, subtract_range, update_res, add_range, amd_get_mmconfig_range)
+native_read_msr -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+pci_enable_pci_io_ecs -> (write_pci_config, early_is_amd_nb, read_pci_config)
+pci_io_ecs_init -> (amd_bus_cpu_online, early_pci_allowed, pci_enable_pci_io_ecs, __cpuhp_setup_state)

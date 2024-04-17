@@ -1,0 +1,6 @@
+drivers/firmware/efi/libstub/lib_cmdline.o
+get_option -> (simple_strtoull)
+get_options -> (get_option, simple_strtol)
+memparse -> (simple_strtoull)
+next_arg -> (skip_spaces)
+parse_option_str -> (strncmp, strlen)

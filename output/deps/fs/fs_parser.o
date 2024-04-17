@@ -1,0 +1,12 @@
+fs/fs_parser.o
+__fs_parse -> (logfc, strcmp)
+fs_lookup_param -> (logfc, path_put, getname_kernel, putname, filename_lookup)
+fs_param_is_blob -> (logfc)
+fs_param_is_bool -> (logfc, strcmp)
+fs_param_is_enum -> (logfc, strcmp)
+fs_param_is_fd -> (logfc, kstrtouint)
+fs_param_is_s32 -> (kstrtoint, logfc)
+fs_param_is_string -> (logfc)
+fs_param_is_u32 -> (logfc, kstrtouint)
+fs_param_is_u64 -> (kstrtoull, logfc)
+lookup_constant -> (strcmp)

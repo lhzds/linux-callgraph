@@ -1,0 +1,7 @@
+mm/mincore.o
+__ia32_sys_mincore -> (__se_sys_mincore)
+__mincore_unmapped_range -> (linear_hugepage_index, filemap_get_incore_folio, __folio_put)
+__se_sys_mincore -> (mincore_hugetlb, __get_free_pages, trace_mmap_lock_unreg, _copy_to_user, __mmap_lock_do_trace_start_locking, free_pages, mincore_pte_range, __traceiter_mmap_lock_released, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned, __SCT__tp_func_mmap_lock_acquire_returned, down_read, __probestub_mmap_lock_released, walk_page_range, mtree_load, __SCT__tp_func_mmap_lock_start_locking, __probestub_mmap_lock_start_locking, __mmap_lock_do_trace_released, mincore_unmapped_range, trace_mmap_lock_reg, up_read, __traceiter_mmap_lock_start_locking, inode_permission, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_acquire_returned, inode_owner_or_capable)
+__x64_sys_mincore -> (__se_sys_mincore)
+mincore_pte_range -> (__pte_offset_map_lock, __mincore_unmapped_range, __folio_put, _raw_spin_unlock, filemap_get_incore_folio, __SCT__cond_resched)
+mincore_unmapped_range -> (__mincore_unmapped_range)

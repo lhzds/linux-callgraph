@@ -1,0 +1,8 @@
+io_uring/openclose.o
+__io_close_fixed -> (mutex_unlock, mutex_lock, io_fixed_fd_remove)
+io_close -> (mutex_lock, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, io_is_uring_fops, io_fixed_fd_remove, filp_close, __close_fd_get_file)
+io_open_cleanup -> (putname)
+io_openat -> (io_openat2)
+io_openat2 -> (__get_unused_fd_flags, put_unused_fd, fd_install, putname, io_fixed_fd_install, build_open_flags, do_filp_open)
+io_openat2_prep -> (check_zeroed_user, getname, _copy_from_user)
+io_openat_prep -> (build_open_how, getname)

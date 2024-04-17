@@ -1,0 +1,6 @@
+net/ethtool/mm.o
+ethnl_set_mm -> (do_trace_netlink_extack)
+ethtool_dev_mm_supported -> (ethnl_ops_complete, __warn_printk, ethnl_ops_begin, rtnl_is_locked)
+mm_fill_reply -> (nla_put, mm_put_stats)
+mm_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)
+mm_put_stats -> (nla_put, nla_put_64bit, skb_trim)

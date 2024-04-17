@@ -1,0 +1,2 @@
+arch/x86/realmode/rm/video_mode.o
+set_mode -> (vga_crtc, __outb, __outw, __inb)

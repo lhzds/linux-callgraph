@@ -1,0 +1,12 @@
+drivers/input/input_poller.o
+input_dev_get_poll_interval -> (sprintf)
+input_dev_get_poll_max -> (sprintf)
+input_dev_get_poll_min -> (sprintf)
+input_dev_poller_start -> (__msecs_to_jiffies, queue_delayed_work_on, round_jiffies_relative)
+input_dev_poller_stop -> (cancel_delayed_work_sync)
+input_dev_poller_work -> (__msecs_to_jiffies, queue_delayed_work_on, round_jiffies_relative)
+input_dev_set_poll_interval -> (cancel_delayed_work_sync, mutex_lock, mutex_unlock, kstrtouint, input_device_enabled, __msecs_to_jiffies, queue_delayed_work_on, round_jiffies_relative)
+input_set_max_poll_interval -> (_dev_err)
+input_set_min_poll_interval -> (_dev_err)
+input_set_poll_interval -> (_dev_err)
+input_setup_polling -> (delayed_work_timer_fn, kmalloc_trace, init_timer_key, _dev_err, input_dev_poller_work)

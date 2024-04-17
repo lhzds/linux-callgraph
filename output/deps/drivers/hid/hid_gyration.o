@@ -1,0 +1,4 @@
+drivers/hid/hid_gyration.o
+gyration_driver_exit -> (gyration_input_mapping, hid_unregister_driver, gyration_event)
+gyration_driver_init -> (__hid_register_driver, gyration_input_mapping, gyration_event)
+gyration_event -> (input_event)

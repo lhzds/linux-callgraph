@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/intel_vga.o
+intel_vga_disable -> (vga_put, vga_get, __const_udelay)
+intel_vga_redisable -> (intel_display_power_put_unchecked, intel_display_power_get_if_enabled, __drm_dev_dbg, intel_vga_disable)
+intel_vga_redisable_power_on -> (__drm_dev_dbg, intel_vga_disable)
+intel_vga_register -> (vga_client_register, intel_vga_set_decode)
+intel_vga_reset_io_mem -> (vga_put, vga_get)
+intel_vga_set_decode -> (intel_gmch_vga_set_state)
+intel_vga_unregister -> (vga_client_register)

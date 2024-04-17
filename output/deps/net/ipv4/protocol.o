@@ -1,0 +1,3 @@
+net/ipv4/protocol.o
+inet_del_offload -> (synchronize_net)
+inet_del_protocol -> (synchronize_net)

@@ -1,0 +1,4 @@
+net/ethtool/module.o
+ethnl_set_module_validate -> (do_trace_netlink_extack)
+module_fill_reply -> (nla_put)
+module_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)

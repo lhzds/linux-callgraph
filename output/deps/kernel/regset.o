@@ -1,0 +1,4 @@
+kernel/regset.o
+copy_regset_to_user -> (kfree, _copy_to_user, __kmalloc)
+regset_get -> (kfree, __kmalloc)
+regset_get_alloc -> (kfree, __kmalloc)

@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/display/intel_vrr.o
+intel_vrr_disable -> (__intel_wait_for_register)

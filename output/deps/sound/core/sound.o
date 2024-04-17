@@ -1,0 +1,10 @@
+sound/core/sound.o
+alsa_sound_exit -> (snd_info_done, __unregister_chrdev)
+alsa_sound_init -> (_printk, snd_info_init, __unregister_chrdev, noop_llseek, snd_open, __register_chrdev)
+snd_lookup_minor_data -> (mutex_lock, get_device, mutex_unlock)
+snd_minor_info_init -> (snd_info_register, snd_info_create_module_entry, snd_minor_info_read)
+snd_minor_info_read -> (mutex_unlock, mutex_lock, seq_printf)
+snd_open -> (snd_card_locked, put_device, mutex_lock, mutex_unlock, __request_module, snd_card_ref)
+snd_register_device -> (mutex_lock, mutex_unlock, kmalloc_trace, device_add, kfree)
+snd_request_card -> (__request_module, snd_card_locked)
+snd_unregister_device -> (mutex_lock, device_del, kfree, mutex_unlock)

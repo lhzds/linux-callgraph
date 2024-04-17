@@ -1,0 +1,3 @@
+net/9p/error.o
+p9_error_init -> (strlen, jhash)
+p9_errstr2errno -> (_printk, jhash, bcmp)

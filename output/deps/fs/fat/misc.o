@@ -1,0 +1,9 @@
+fs/fat/misc.o
+__fat_fs_error -> (panic, _fat_msg)
+_fat_msg -> (_printk)
+fat_chain_add -> (fat_sync_inode, fat_cache_inval_inode, __fat_fs_error, fat_ent_write, __mark_inode_dirty, inode_needs_sync, fat_ent_read, fat_get_cluster, __brelse)
+fat_clusters_flush -> (mark_buffer_dirty, __bread_gfp, _fat_msg, __brelse)
+fat_sync_bhs -> (__SCT__might_resched, write_dirty_buffer, __wait_on_buffer)
+fat_time_unix2fat -> (time64_to_tm)
+fat_truncate_time -> (current_time)
+fat_update_time -> (__mark_inode_dirty, current_time, inode_maybe_inc_iversion)

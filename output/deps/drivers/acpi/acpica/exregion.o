@@ -1,0 +1,4 @@
+drivers/acpi/acpica/exregion.o
+acpi_ex_pci_config_space_handler -> (acpi_os_write_pci_configuration, acpi_os_read_pci_configuration)
+acpi_ex_system_io_space_handler -> (acpi_hw_read_port, acpi_hw_write_port)
+acpi_ex_system_memory_space_handler -> (kmalloc_trace, acpi_os_map_memory, acpi_error, kfree)

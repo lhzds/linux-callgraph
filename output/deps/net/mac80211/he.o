@@ -1,0 +1,2 @@
+net/mac80211/he.o
+ieee80211_he_cap_ie_to_sta_he_cap -> (ieee80211_sta_recalc_aggregates, ieee80211_sta_cur_vht_bw, ieee80211_sta_cap_rx_bw)

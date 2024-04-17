@@ -1,0 +1,2 @@
+fs/nfs/dns_resolve.o
+nfs_dns_resolve_name -> (dns_query, rpc_pton, kfree)

@@ -1,0 +1,9 @@
+fs/attr.o
+fsnotify_change -> (__fsnotify_parent, fsnotify)
+inode_newsize_ok -> (send_sig)
+may_setattr -> (inode_owner_or_capable, inode_permission)
+notify_change -> (make_vfsgid, fsnotify_change, ihold, make_vfsuid, timestamp_truncate, inode_permission, security_inode_setattr, __break_lease, from_vfsuid, current_time, from_vfsgid, security_inode_need_killpriv, inode_owner_or_capable, simple_setattr)
+setattr_copy -> (make_vfsgid, from_vfsuid, in_group_or_capable, from_vfsgid)
+setattr_prepare -> (make_vfsgid, capable_wrt_inode_uidgid, make_vfsuid, ns_capable, security_inode_killpriv, vfsgid_in_group_p, in_group_or_capable, inode_owner_or_capable, send_sig)
+setattr_should_drop_sgid -> (make_vfsgid, in_group_or_capable)
+setattr_should_drop_suidgid -> (capable, make_vfsgid, in_group_or_capable)

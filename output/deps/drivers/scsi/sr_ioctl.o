@@ -1,0 +1,11 @@
+drivers/scsi/sr_ioctl.o
+sr_audio_ioctl -> (kmalloc_trace, kfree, sr_read_tocentry, sr_do_ioctl)
+sr_disk_status -> (kmalloc_trace, kfree, sr_read_tocentry, sr_do_ioctl)
+sr_do_ioctl -> (scsi_block_when_processing_errors, scsi_execute_cmd, sdev_prefix_printk, msleep)
+sr_drive_status -> (cdrom_get_media_event, scsi_test_unit_ready)
+sr_get_mcn -> (kmalloc_trace, kfree, sr_do_ioctl)
+sr_is_xa -> (sr_set_blocklength, kmalloc_trace, sdev_prefix_printk, kfree, sr_do_ioctl)
+sr_lock_door -> (scsi_set_medium_removal)
+sr_read_tocentry -> (kmalloc_trace, kfree, sr_do_ioctl)
+sr_select_speed -> (sr_do_ioctl)
+sr_tray_move -> (sr_do_ioctl)

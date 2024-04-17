@@ -1,0 +1,5 @@
+net/netfilter/xt_addrtype.o
+addrtype_mt_checkentry_v1 -> (___ratelimit, _printk)
+addrtype_mt_v0 -> (inet_dev_addr_type)
+addrtype_mt_v1 -> (inet_dev_addr_type, match_type6)
+match_type6 -> (__nf_ip6_route, __ipv6_addr_type, dst_release, ipv6_chk_addr)

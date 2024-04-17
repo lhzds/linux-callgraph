@@ -1,0 +1,3 @@
+drivers/scsi/scsi_bsg.o
+scsi_bsg_register_queue -> (scsi_bsg_sg_io_fn, bsg_register_queue)
+scsi_bsg_sg_io_fn -> (_printk, scsi_alloc_request, scsi_cmd_allowed, _copy_from_user, blk_rq_map_user, blk_execute_rq, blk_rq_unmap_user, _copy_to_user, blk_mq_free_request)

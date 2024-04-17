@@ -1,0 +1,2 @@
+lib/bust_spinlocks.o
+bust_spinlocks -> (console_unblank, wake_up_klogd)

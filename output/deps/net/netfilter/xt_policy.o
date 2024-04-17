@@ -1,0 +1,5 @@
+net/netfilter/xt_policy.o
+policy_mt -> (match_xfrm_state)
+policy_mt_check -> (___ratelimit, _printk)
+policy_mt_exit -> (xt_unregister_matches, policy_mt_check, policy_mt)
+policy_mt_init -> (xt_register_matches, policy_mt_check, policy_mt)

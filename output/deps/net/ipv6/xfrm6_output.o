@@ -1,0 +1,6 @@
+net/ipv6/xfrm6_output.o
+__xfrm6_output -> (ip6_mtu, xfrm_output, kfree_skb_reason, ip6_fragment, ip6_output, xfrm_local_error, ipv6_local_rxpmtu, ipv4_mtu, ip_output, __xfrm6_output_finish)
+__xfrm6_output_finish -> (xfrm_output)
+xfrm6_local_error -> (ipv6_local_error)
+xfrm6_local_rxpmtu -> (ipv6_local_rxpmtu)
+xfrm6_output -> (__rcu_read_unlock, nf_hook_slow, __rcu_read_lock, __xfrm6_output)

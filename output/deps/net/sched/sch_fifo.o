@@ -1,0 +1,9 @@
+net/sched/sch_fifo.o
+fifo_create_dflt -> (qdisc_put, kmalloc_trace, strncmp, kfree, qdisc_create_dflt)
+fifo_dump -> (nla_put, qdisc_offload_dump_helper)
+fifo_hd_dump -> (nla_put)
+fifo_hd_init -> (fifo_destroy, fifo_init, qdisc_reset_queue, fifo_dump, bfifo_enqueue, qdisc_peek_head, qdisc_dequeue_head)
+fifo_init -> (fifo_destroy, fifo_init, qdisc_reset_queue, fifo_dump, bfifo_enqueue, qdisc_peek_head, qdisc_dequeue_head)
+fifo_set_limit -> (kmalloc_trace, kfree, strncmp)
+pfifo_tail_enqueue -> (qdisc_tree_reduce_backlog, __qdisc_queue_drop_head)
+qdisc_reset_queue -> (rtnl_kfree_skbs, __warn_printk, rtnl_is_locked)

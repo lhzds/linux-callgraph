@@ -1,0 +1,5 @@
+fs/nfs/nfs4namespace.o
+nfs4_negotiate_security -> (rpcauth_lookupcred, nfs_auth_info_match, __folio_put, put_rpccred, rpcauth_get_pseudoflavor, rpc_shutdown_client, rpc_clone_client_set_auth, alloc_pages, nfs4_proc_secinfo)
+nfs4_replace_transport -> (memchr, rpc_pton, kmalloc_trace, rpc_net_ns, kmemdup_nul, __get_free_pages, nfs4_update_server, nfs_dns_resolve_name, rpc_uaddr2sockaddr, free_pages, kfree)
+nfs4_submount -> (nfs4_proc_fs_locations, rpc_pton, kmalloc_large, memchr, kmalloc_trace, nfs4_get_referral_tree, strchr, __free_pages, alloc_pages, dget_parent, nfs_alloc_fattr, strncmp, nfs_path, nfs4_proc_lookup_mountpoint, __kmalloc, dput, nfs_do_submount, nfs_dns_resolve_name, rpc_shutdown_client, rpc_uaddr2sockaddr, kfree)
+nfs_parse_server_name -> (rpc_uaddr2sockaddr, nfs_dns_resolve_name, rpc_pton)

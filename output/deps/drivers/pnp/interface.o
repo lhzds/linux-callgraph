@@ -1,0 +1,6 @@
+drivers/pnp/interface.o
+id_show -> (sprintf)
+options_show -> (pnp_option_priority_name, kmalloc_trace, _find_first_bit, kfree, pnp_printf)
+pnp_printf -> (vsnprintf)
+resources_show -> (pnp_resource_type, pnp_resource_type_name, kmalloc_trace, kfree, pnp_printf)
+resources_store -> (mutex_lock, pnp_auto_config_dev, pnp_add_io_resource, mutex_unlock, pnp_disable_dev, pnp_init_resources, pnp_add_mem_resource, strncasecmp, pnp_activate_dev, pnp_add_irq_resource, skip_spaces, pnp_add_dma_resource, _dev_info, simple_strtoull, pnp_add_bus_resource)

@@ -1,0 +1,8 @@
+drivers/firmware/efi/vars.o
+efivar_lock -> (down_interruptible, up)
+efivar_set_variable -> (ucs2_strsize, down_interruptible, up)
+efivar_set_variable_locked -> (ucs2_strsize)
+efivar_trylock -> (up, down_trylock)
+efivar_unlock -> (up)
+efivars_register -> (_printk, down_interruptible, up)
+efivars_unregister -> (_printk, down_interruptible, up)

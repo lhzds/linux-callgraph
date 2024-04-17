@@ -1,0 +1,3 @@
+drivers/usb/storage/sierra_ms.o
+sierra_ms_init -> (usb_control_msg, kmalloc_trace, schedule_timeout_uninterruptible, truinst_show, kfree, device_create_file)
+truinst_show -> (usb_control_msg, kmalloc_trace, kfree, snprintf)

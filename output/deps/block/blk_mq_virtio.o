@@ -1,0 +1,2 @@
+block/blk_mq_virtio.o
+blk_mq_virtio_map_queues -> (blk_mq_map_queues)

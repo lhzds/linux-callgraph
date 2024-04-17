@@ -1,0 +1,2 @@
+net/sched/sch_blackhole.o
+blackhole_init -> (blackhole_enqueue, register_qdisc, blackhole_dequeue)

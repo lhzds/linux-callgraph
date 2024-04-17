@@ -1,0 +1,5 @@
+fs/nls/nls_utf8.o
+char2uni -> (utf8_to_utf32)
+exit_nls_utf8 -> (uni2char, unregister_nls, char2uni)
+init_nls_utf8 -> (uni2char, __register_nls, char2uni)
+uni2char -> (utf32_to_utf8)

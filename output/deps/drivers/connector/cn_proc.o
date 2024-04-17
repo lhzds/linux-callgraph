@@ -1,0 +1,11 @@
+drivers/connector/cn_proc.o
+cn_proc_init -> (_printk, cn_proc_mcast_ctl, cn_add_callback)
+cn_proc_mcast_ctl -> (cn_netlink_send, ktime_get, task_active_pid_ns, __netlink_ns_capable)
+proc_comm_connector -> (ktime_get, cn_netlink_send, __get_task_comm)
+proc_coredump_connector -> (__rcu_read_unlock, cn_netlink_send, ktime_get, __rcu_read_lock)
+proc_exec_connector -> (cn_netlink_send, ktime_get)
+proc_exit_connector -> (__rcu_read_unlock, cn_netlink_send, ktime_get, __rcu_read_lock)
+proc_fork_connector -> (__rcu_read_unlock, cn_netlink_send, ktime_get, __rcu_read_lock)
+proc_id_connector -> (__rcu_read_unlock, cn_netlink_send, ktime_get, __rcu_read_lock)
+proc_ptrace_connector -> (cn_netlink_send, ktime_get)
+proc_sid_connector -> (cn_netlink_send, ktime_get)

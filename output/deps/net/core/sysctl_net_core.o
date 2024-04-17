@@ -1,0 +1,12 @@
+net/core/sysctl_net_core.o
+fb_tunnels_only_for_init_net_sysctl_setup -> (strncmp)
+flow_limit_cpu_sysctl -> (mutex_lock, kvfree_call_rcu, mutex_unlock, scnprintf, __kmalloc_node, bitmap_parse, __rcu_read_lock, __rcu_read_unlock)
+flow_limit_table_len_sysctl -> (mutex_unlock, mutex_lock, proc_dointvec)
+proc_do_dev_weight -> (mutex_unlock, mutex_lock, proc_dointvec)
+proc_do_rss_key -> (snprintf, proc_dostring)
+rps_default_mask_sysctl -> (rtnl_lock, kmalloc_trace, scnprintf, bitmap_parse, rps_cpumask_housekeeping, rtnl_unlock)
+rps_sock_flow_sysctl -> (static_key_slow_dec, mutex_lock, vmalloc, kvfree_call_rcu, mutex_unlock, proc_dointvec, static_key_slow_inc)
+set_default_qdisc -> (qdisc_set_default, qdisc_get_default, proc_dostring)
+sysctl_core_init -> (register_pernet_subsys, sysctl_core_net_exit, proc_do_dev_weight, flow_limit_table_len_sysctl, set_default_qdisc, proc_do_static_key, proc_dointvec, proc_do_rss_key, rps_sock_flow_sysctl, register_net_sysctl, flow_limit_cpu_sysctl, sysctl_core_net_init, proc_dointvec_minmax, proc_dointvec_jiffies)
+sysctl_core_net_exit -> (rps_default_mask_sysctl, proc_dou8vec_minmax, kfree, unregister_net_sysctl_table, proc_dointvec_minmax)
+sysctl_core_net_init -> (rps_default_mask_sysctl, proc_dou8vec_minmax, kmemdup, register_net_sysctl, kfree, proc_dointvec_minmax)

@@ -1,0 +1,9 @@
+drivers/acpi/acpica/nsrepair2.o
+acpi_ns_complex_repairs -> (acpi_ns_repair_FDE, acpi_ns_repair_TSS, acpi_ns_repair_PSS, acpi_ns_repair_ALR, acpi_ns_repair_PRT, acpi_ns_repair_CID, acpi_ns_repair_CST, acpi_ns_repair_HID)
+acpi_ns_repair_CID -> (acpi_ns_repair_HID)
+acpi_ns_repair_CST -> (acpi_ns_check_sorted_list, acpi_ut_remove_reference, acpi_ut_predefined_warning)
+acpi_ns_repair_FDE -> (acpi_ut_predefined_warning, acpi_ut_create_buffer_object, acpi_ut_remove_reference)
+acpi_ns_repair_HID -> (acpi_ut_predefined_warning, acpi_ut_create_string_object, acpi_ut_remove_reference)
+acpi_ns_repair_PRT -> (acpi_ut_predefined_warning)
+acpi_ns_repair_PSS -> (acpi_ut_predefined_warning)
+acpi_ns_repair_TSS -> (acpi_ns_get_node)

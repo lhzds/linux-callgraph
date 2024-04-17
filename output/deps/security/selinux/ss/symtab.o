@@ -1,0 +1,4 @@
+security/selinux/ss/symtab.o
+symtab_init -> (hashtab_init)
+symtab_insert -> (__hashtab_insert, strlen, strcmp, __SCT__cond_resched)
+symtab_search -> (strlen, strcmp)

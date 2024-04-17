@@ -1,0 +1,3 @@
+fs/isofs/dir.o
+get_acorn_filename -> (sprintf, strncmp)
+isofs_readdir -> (get_joliet_filename, _printk, isofs_bread, _raw_spin_unlock, _raw_spin_lock, get_acorn_filename, __get_free_pages, get_rock_ridge_filename, free_pages, __brelse)

@@ -1,0 +1,8 @@
+drivers/acpi/acpica/exutils.o
+acpi_ex_acquire_global_lock -> (acpi_exception, acpi_ex_acquire_mutex_object)
+acpi_ex_eisa_id_to_string -> (acpi_ut_hex_to_ascii_char, acpi_warning, acpi_ut_dword_byte_swap)
+acpi_ex_enter_interpreter -> (acpi_ut_acquire_mutex, acpi_error)
+acpi_ex_exit_interpreter -> (acpi_ut_release_mutex, acpi_error)
+acpi_ex_integer_to_string -> (acpi_ut_short_divide)
+acpi_ex_pci_cls_to_string -> (acpi_ut_hex_to_ascii_char)
+acpi_ex_release_global_lock -> (acpi_ex_release_mutex_object, acpi_exception)

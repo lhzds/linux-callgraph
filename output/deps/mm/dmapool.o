@@ -1,0 +1,9 @@
+mm/dmapool.o
+dma_pool_alloc -> (dma_alloc_attrs, __SCT__might_resched, _raw_spin_lock_irqsave, kmalloc_trace, _raw_spin_unlock_irqrestore, kfree)
+dma_pool_create -> (mutex_lock, mutex_unlock, pools_show, kmalloc_trace, kfree, device_create_file, strscpy)
+dma_pool_destroy -> (device_remove_file, mutex_lock, mutex_unlock, pools_show, _dev_err, dma_free_attrs, kfree)
+dma_pool_free -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+dmam_pool_create -> (__devres_alloc_node, dma_pool_create, devres_add, dmam_pool_release, devres_free)
+dmam_pool_destroy -> (dmam_pool_release, devres_release, dmam_pool_match)
+dmam_pool_release -> (dma_pool_destroy)
+pools_show -> (mutex_unlock, mutex_lock, sysfs_emit_at, sysfs_emit)

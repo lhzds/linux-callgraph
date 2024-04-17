@@ -1,0 +1,5 @@
+net/sunrpc/auth_null.o
+nul_create -> (nul_destroy, nul_lookup_cred, refcount_warn_saturate, nul_create)
+nul_lookup_cred -> (nul_lookup_cred, refcount_warn_saturate, rpcauth_wrap_req_encode, nul_create, nul_validate, nul_destroy, nul_marshal, nul_match, rpcauth_unwrap_resp_decode, nul_refresh, nul_destroy_cred)
+nul_marshal -> (xdr_reserve_space)
+nul_validate -> (xdr_inline_decode)

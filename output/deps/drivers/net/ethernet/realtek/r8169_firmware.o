@@ -1,0 +1,4 @@
+drivers/net/ethernet/realtek/r8169_firmware.o
+rtl_fw_release_firmware -> (release_firmware)
+rtl_fw_request_firmware -> (_dev_err, release_firmware, request_firmware, strscpy)
+rtl_fw_write_firmware -> (msleep)

@@ -1,0 +1,7 @@
+net/sched/ematch.o
+__tcf_em_tree_match -> (_printk, net_ratelimit)
+tcf_em_register -> (_raw_write_lock, _raw_write_unlock)
+tcf_em_tree_destroy -> (kfree)
+tcf_em_tree_dump -> (nla_put, nla_put_nohdr)
+tcf_em_tree_validate -> (rtnl_lock, _raw_read_unlock, _raw_read_lock, __request_module, __nla_parse, kmemdup, tcf_em_tree_destroy, __rtnl_unlock, __kmalloc)
+tcf_em_unregister -> (_raw_write_lock, _raw_write_unlock)

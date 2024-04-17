@@ -1,0 +1,8 @@
+drivers/acpi/container.o
+acpi_container_init -> (container_device_attach, acpi_scan_add_handler, container_device_online, container_device_detach)
+acpi_container_offline -> (check_offline, is_acpi_device_node, acpi_dev_for_each_child)
+acpi_container_release -> (kfree)
+check_offline -> (acpi_scan_is_offline)
+container_device_attach -> (put_device, device_register, acpi_container_release, kmalloc_trace, trivial_online, acpi_container_offline, dev_set_name, container_offline, set_primary_fwnode)
+container_device_detach -> (device_unregister)
+container_device_online -> (kobject_uevent)

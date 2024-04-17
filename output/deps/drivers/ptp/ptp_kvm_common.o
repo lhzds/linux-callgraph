@@ -1,0 +1,6 @@
+drivers/ptp/ptp_kvm_common.o
+ptp_kvm_exit -> (kvm_arch_ptp_exit, ptp_clock_unregister)
+ptp_kvm_get_time_fn -> (_raw_spin_lock, kvm_arch_ptp_get_crosststamp, _raw_spin_unlock)
+ptp_kvm_getcrosststamp -> (ptp_kvm_get_time_fn, get_device_system_crosststamp)
+ptp_kvm_gettime -> (_raw_spin_lock, kvm_arch_ptp_get_clock, _raw_spin_unlock)
+ptp_kvm_init -> (_printk, ptp_kvm_gettime, ptp_kvm_adjtime, ptp_kvm_enable, ptp_kvm_adjfine, ptp_kvm_settime, ptp_clock_register, ptp_kvm_getcrosststamp, kvm_arch_ptp_init)

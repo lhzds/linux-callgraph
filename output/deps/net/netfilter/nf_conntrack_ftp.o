@@ -1,0 +1,6 @@
+net/netfilter/nf_conntrack_ftp.o
+help -> (_raw_spin_lock_bh, nf_ct_expect_alloc, nf_ct_expect_related_report, skb_copy_bits, bcmp, try_rfc1123, __pskb_pull_tail, try_epsv_response, nf_ct_helper_log, strncasecmp, nf_ct_expect_init, __nf_ct_ext_find, try_eprt, _raw_spin_unlock_bh, nf_ct_expect_put, try_rfc959)
+nf_conntrack_ftp_fini -> (nf_conntrack_helpers_unregister)
+nf_conntrack_ftp_init -> (_printk, nf_conntrack_helpers_register, help, nf_ct_ftp_from_nlattr, nf_ct_helper_init)
+nf_ct_ftp_from_nlattr -> (__nf_ct_ext_find)
+try_eprt -> (in6_pton)

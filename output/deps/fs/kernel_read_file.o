@@ -1,0 +1,5 @@
+fs/kernel_read_file.o
+kernel_read_file -> (security_kernel_post_read_file, vmalloc, security_kernel_read_file, kernel_read, vfree)
+kernel_read_file_from_fd -> (fput, kernel_read_file, __fdget)
+kernel_read_file_from_path -> (kernel_read_file, filp_open, fput)
+kernel_read_file_from_path_initns -> (do_no_restart_syscall, path_put, _raw_spin_unlock, _raw_spin_lock, path_get, kernel_read_file, fput, file_open_root)

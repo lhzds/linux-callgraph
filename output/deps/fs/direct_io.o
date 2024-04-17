@@ -1,0 +1,11 @@
+fs/direct_io.o
+__blockdev_direct_IO -> (kmem_cache_alloc, bio_put, blk_finish_plug, bio_check_pages_dirty, filemap_write_and_wait_range, submit_page_section, clean_bdev_aliases, dio_send_cur_page, _raw_spin_lock_irqsave, bio_set_pages_dirty, dio_zero_block, dio_complete, unpin_user_pages, kmem_cache_free, submit_bio, _raw_spin_unlock_irqrestore, blk_start_plug, blk_io_schedule, unpin_user_page, down_write, iov_iter_alignment, up_write, sb_init_dio_done_wq, iov_iter_extract_pages, iov_iter_npages, __bio_release_pages)
+dio_aio_complete_work -> (dio_complete)
+dio_bio_end_aio -> (dio_aio_complete_work, queue_work_on, _raw_spin_lock_irqsave, bio_put, bio_check_pages_dirty, _raw_spin_unlock_irqrestore, wake_up_process, dio_complete, __bio_release_pages)
+dio_bio_end_io -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, wake_up_process)
+dio_complete -> (vfs_fsync_range, kmem_cache_free, wake_up_bit, kiocb_invalidate_post_direct_write)
+dio_init -> (kmem_cache_create)
+dio_new_bio -> (_raw_spin_lock_irqsave, bio_put, bio_check_pages_dirty, blk_status_to_errno, bio_alloc_bioset, _raw_spin_unlock_irqrestore, __bio_release_pages)
+dio_send_cur_page -> (dio_new_bio, submit_bio, _raw_spin_lock_irqsave, folio_add_pin, bio_set_pages_dirty, bio_add_page, _raw_spin_unlock_irqrestore)
+dio_zero_block -> (submit_page_section)
+submit_page_section -> (dio_send_cur_page, submit_bio, _raw_spin_lock_irqsave, folio_add_pin, bio_set_pages_dirty, _raw_spin_unlock_irqrestore, unpin_user_page)

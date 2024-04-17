@@ -1,0 +1,5 @@
+kernel/user.o
+alloc_uid -> (kmem_cache_alloc, refcount_warn_saturate, _raw_spin_lock_irq, __percpu_counter_init, _raw_spin_unlock_irq, percpu_counter_destroy, kmem_cache_free)
+find_user -> (refcount_warn_saturate, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+free_uid -> (refcount_dec_and_lock_irqsave, kmem_cache_free, _raw_spin_unlock_irqrestore, percpu_counter_destroy)
+uid_cache_init -> (kmem_cache_create, _raw_spin_lock_irq, __percpu_counter_init, _raw_spin_unlock_irq, panic)

@@ -1,0 +1,4 @@
+drivers/gpu/drm/ttm/ttm_sys_manager.o
+ttm_sys_man_alloc -> (ttm_resource_init, kmalloc_trace)
+ttm_sys_man_free -> (kfree, ttm_resource_fini)
+ttm_sys_man_init -> (ttm_resource_manager_init, ttm_sys_man_alloc, ttm_sys_man_free)

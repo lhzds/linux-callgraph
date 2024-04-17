@@ -1,0 +1,2 @@
+kernel/irq/dummychip.o
+ack_bad -> (___ratelimit, _printk, ack_bad_irq)

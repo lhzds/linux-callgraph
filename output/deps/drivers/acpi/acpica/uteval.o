@@ -1,0 +1,5 @@
+drivers/acpi/acpica/uteval.o
+acpi_ut_evaluate_numeric_object -> (acpi_ut_evaluate_object, acpi_ut_remove_reference)
+acpi_ut_evaluate_object -> (acpi_ut_get_object_type_name, kmalloc_trace, acpi_error, acpi_ut_remove_reference, acpi_ns_evaluate, acpi_ut_method_error, kfree)
+acpi_ut_execute_STA -> (acpi_ut_evaluate_object, acpi_ut_remove_reference)
+acpi_ut_execute_power_methods -> (acpi_ut_evaluate_object, acpi_ut_remove_reference)

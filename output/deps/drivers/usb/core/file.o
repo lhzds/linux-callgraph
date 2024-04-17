@@ -1,0 +1,6 @@
+drivers/usb/core/file.o
+usb_deregister_dev -> (down_write, class_destroy, mutex_lock, refcount_warn_saturate, up_write, mutex_unlock, device_destroy, kfree)
+usb_major_cleanup -> (__unregister_chrdev)
+usb_major_init -> (_printk, usb_open, noop_llseek, __register_chrdev)
+usb_open -> (down_read, up_read)
+usb_register_dev -> (down_write, _printk, class_create, mutex_lock, refcount_warn_saturate, snprintf, up_write, mutex_unlock, kmalloc_trace, strrchr, kfree, device_create, usb_devnode)

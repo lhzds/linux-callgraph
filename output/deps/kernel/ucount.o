@@ -1,0 +1,13 @@
+kernel/ucount.o
+alloc_ucounts -> (_atomic_dec_and_lock_irqsave, _raw_spin_lock_irq, kmalloc_trace, _raw_spin_unlock_irq, _raw_spin_unlock_irqrestore, kfree)
+dec_rlimit_put_ucounts -> (do_dec_rlimit_put_ucounts)
+dec_ucount -> (_atomic_dec_and_lock_irqsave, kfree, _raw_spin_unlock_irqrestore)
+do_dec_rlimit_put_ucounts -> (_atomic_dec_and_lock_irqsave, kfree, _raw_spin_unlock_irqrestore)
+get_ucounts -> (_atomic_dec_and_lock_irqsave, kfree, _raw_spin_unlock_irqrestore)
+inc_rlimit_get_ucounts -> (do_dec_rlimit_put_ucounts, _atomic_dec_and_lock_irqsave, kfree, _raw_spin_unlock_irqrestore)
+inc_ucount -> (alloc_ucounts, _atomic_dec_and_lock_irqsave, kfree, _raw_spin_unlock_irqrestore)
+put_ucounts -> (_atomic_dec_and_lock_irqsave, kfree, _raw_spin_unlock_irqrestore)
+retire_userns_sysctls -> (unregister_sysctl_table, kfree, retire_sysctl_set)
+set_permissions -> (ns_capable)
+setup_userns_sysctls -> (set_permissions, set_lookup, __register_sysctl_table, setup_sysctl_set, kmemdup, retire_sysctl_set, proc_doulongvec_minmax, kfree, set_is_seen)
+user_namespace_sysctl_init -> (_raw_spin_lock_irq, register_sysctl, setup_userns_sysctls, _raw_spin_unlock_irq)

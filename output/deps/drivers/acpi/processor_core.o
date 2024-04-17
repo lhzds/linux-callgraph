@@ -1,0 +1,5 @@
+drivers/acpi/processor_core.o
+acpi_get_cpuid -> (acpi_get_phys_id)
+acpi_get_ioapic_id -> (acpi_evaluate_object, kfree, acpi_get_table)
+acpi_get_phys_id -> (acpi_evaluate_object, map_madt_entry, kfree, acpi_get_table)
+acpi_map_madt_entry -> (map_madt_entry, acpi_put_table, acpi_get_table)

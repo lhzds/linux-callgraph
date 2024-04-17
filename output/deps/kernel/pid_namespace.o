@@ -1,0 +1,13 @@
+kernel/pid_namespace.o
+copy_pid_ns -> (kmem_cache_alloc, pidns_install, kmem_cache_create, mutex_lock, refcount_warn_saturate, dec_ucount, snprintf, mutex_unlock, idr_destroy, pidns_put, pidns_owner, inc_ucount, proc_alloc_inum, task_active_pid_ns, pidns_get, kmem_cache_free, pidns_get_parent)
+delayed_free_pidns -> (kmem_cache_free, dec_ucount)
+pid_mfd_noexec_dointvec_minmax -> (proc_dointvec_minmax, task_active_pid_ns, ns_capable)
+pid_namespaces_init -> (register_sysctl, kmem_cache_create, pid_mfd_noexec_dointvec_minmax)
+pidns_for_children_get -> (proc_free_inum, refcount_warn_saturate, _raw_spin_unlock, _raw_read_unlock, _raw_spin_lock, delayed_free_pidns, idr_destroy, _raw_read_lock, call_rcu)
+pidns_get -> (__rcu_read_unlock, refcount_warn_saturate, __rcu_read_lock, task_active_pid_ns)
+pidns_get_parent -> (refcount_warn_saturate, task_active_pid_ns)
+pidns_install -> (proc_free_inum, refcount_warn_saturate, delayed_free_pidns, idr_destroy, ns_capable, call_rcu, task_active_pid_ns)
+pidns_put -> (proc_free_inum, refcount_warn_saturate, delayed_free_pidns, idr_destroy, call_rcu)
+put_pid_ns -> (proc_free_inum, refcount_warn_saturate, delayed_free_pidns, idr_destroy, call_rcu)
+reboot_pid_ns -> (_raw_read_unlock, send_sig, do_exit, _raw_read_lock)
+zap_pid_ns_processes -> (exit_tasks_rcu_start, exit_tasks_rcu_stop, idr_get_next, acct_exit_ns, group_send_sig_info, _raw_read_unlock, _raw_spin_lock_irq, schedule, pid_task, _raw_read_lock, _raw_spin_unlock_irq, __rcu_read_lock, __rcu_read_unlock, kernel_wait4, disable_pid_allocation)

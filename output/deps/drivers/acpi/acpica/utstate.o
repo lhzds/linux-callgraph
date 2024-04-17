@@ -1,0 +1,7 @@
+drivers/acpi/acpica/utstate.o
+acpi_ut_create_control_state -> (kmem_cache_alloc)
+acpi_ut_create_generic_state -> (kmem_cache_alloc)
+acpi_ut_create_pkg_state -> (kmem_cache_alloc)
+acpi_ut_create_thread_state -> (kmem_cache_alloc, acpi_error)
+acpi_ut_create_update_state -> (kmem_cache_alloc)
+acpi_ut_delete_generic_state -> (acpi_os_release_object)

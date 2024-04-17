@@ -1,0 +1,11 @@
+net/ipv4/ip_input.o
+ip_call_ra_chain -> (skb_clone, ip_defrag, raw_rcv)
+ip_list_rcv -> (ip_sublist_rcv, ip_rcv_core)
+ip_local_deliver -> (nf_hook_slow, ip_local_deliver_finish, __rcu_read_lock, ip_defrag, __rcu_read_unlock)
+ip_local_deliver_finish -> (__rcu_read_unlock, __rcu_read_lock, ip_protocol_deliver_rcu, ktime_get_with_offset)
+ip_protocol_deliver_rcu -> (nf_conntrack_destroy, __xfrm_policy_check, refcount_warn_saturate, kfree_skb_reason, raw_local_deliver, tcp_v4_rcv, consume_skb, udp_rcv, __icmp_send)
+ip_rcv -> (ip_rcv_finish, nf_hook_slow, ip_local_deliver, __rcu_read_lock, ip_rcv_core, ip6_input, __rcu_read_unlock, ip_rcv_finish_core)
+ip_rcv_core -> (netdev_core_stats_alloc, skb_clone, __pskb_pull_tail, consume_skb, pskb_trim_rcsum_slow, kfree_skb_reason, sock_pfree)
+ip_rcv_finish -> (ip_rcv_finish_core, ip_local_deliver, ip6_input)
+ip_rcv_finish_core -> (_printk, ip_options_compile, kfree_skb_reason, ip_route_use_hint, udp_v4_early_demux, net_ratelimit, pskb_expand_head, ip_options_rcv_srr, ip_route_input_noref, tcp_v4_early_demux)
+ip_sublist_rcv -> (nf_hook_slow_list, ip_rcv_finish, ip_local_deliver, __rcu_read_lock, ip6_input, __rcu_read_unlock, ip_rcv_finish_core)

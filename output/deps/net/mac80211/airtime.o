@@ -1,0 +1,4 @@
+net/mac80211/airtime.o
+ieee80211_calc_expected_tx_airtime -> (ieee80211_calc_rx_airtime, ieee80211_get_rate_duration)
+ieee80211_calc_rx_airtime -> (ieee80211_get_rate_duration)
+ieee80211_calc_tx_airtime -> (ieee80211_calc_rx_airtime)

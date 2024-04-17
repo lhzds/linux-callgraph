@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/i915_suspend.o
+i915_restore_display -> (intel_gmbus_reset, pci_write_config_word, intel_vga_redisable)
+i915_save_display -> (pci_read_config_word)

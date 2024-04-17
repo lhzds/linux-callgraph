@@ -1,0 +1,2 @@
+drivers/usb/host/xhci_dbg.o
+xhci_get_slot_state -> (xhci_get_slot_ctx)

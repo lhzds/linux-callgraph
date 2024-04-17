@@ -1,0 +1,8 @@
+fs/fat/cache.o
+fat_bmap -> (fat_get_mapped_cluster)
+fat_cache_add -> (kmem_cache_alloc, _raw_spin_lock, kmem_cache_free, _raw_spin_unlock)
+fat_cache_destroy -> (kmem_cache_destroy)
+fat_cache_init -> (init_once, kmem_cache_create)
+fat_cache_inval_inode -> (_raw_spin_lock, kmem_cache_free, _raw_spin_unlock)
+fat_get_cluster -> (__fat_fs_error, _raw_spin_unlock, _raw_spin_lock, fat_cache_add, fat_ent_read, ___ratelimit, __brelse)
+fat_get_mapped_cluster -> (__fat_fs_error, fat_get_cluster)

@@ -1,0 +1,2 @@
+fs/ext4/hash.o
+ext4fs_dirhash -> (str2hashbuf_signed, __ext4_warning, __ext4_warning_inode, str2hashbuf_unsigned)

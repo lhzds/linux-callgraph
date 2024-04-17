@@ -1,0 +1,7 @@
+crypto/geniv.o
+aead_exit_geniv -> (crypto_put_default_null_skcipher, crypto_destroy_tfm)
+aead_geniv_alloc -> (aead_geniv_free, aead_geniv_setkey, crypto_grab_aead, crypto_drop_spawn, snprintf, crypto_attr_alg_name, kmalloc_trace, crypto_check_attr_type, aead_geniv_setauthsize, kfree)
+aead_geniv_free -> (crypto_drop_spawn, kfree)
+aead_geniv_setauthsize -> (crypto_aead_setauthsize)
+aead_geniv_setkey -> (crypto_aead_setkey)
+aead_init_geniv -> (crypto_put_default_null_skcipher, crypto_put_default_rng, crypto_spawn_tfm2, crypto_get_default_null_skcipher, crypto_get_default_rng)

@@ -1,0 +1,6 @@
+drivers/gpu/drm/virtio/virtgpu_trace_points.o
+__traceiter_virtio_gpu_cmd_queue -> (__probestub_virtio_gpu_cmd_queue, __traceiter_virtio_gpu_cmd_queue, __SCT__tp_func_virtio_gpu_cmd_queue)
+__traceiter_virtio_gpu_cmd_response -> (__traceiter_virtio_gpu_cmd_response, __probestub_virtio_gpu_cmd_response, __SCT__tp_func_virtio_gpu_cmd_response)
+perf_trace_virtio_gpu_cmd -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_virtio_gpu_cmd -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_raw_output_virtio_gpu_cmd -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)

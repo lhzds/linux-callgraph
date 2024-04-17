@@ -1,0 +1,5 @@
+fs/nfs/callback_xdr.o
+decode_getattr_args -> (xdr_inline_decode)
+decode_recall_args -> (xdr_inline_decode)
+encode_getattr_res -> (xdr_reserve_space)
+nfs4_callback_compound -> (__SCT__tp_func_nfs_cb_no_clp, encode_getattr_res, nfs_put_client, __probestub_nfs_cb_no_clp, nfs4_callback_getattr, __probestub_nfs_cb_badprinc, nfs4_find_client_ident, __traceiter_nfs_cb_no_clp, nfs4_callback_recall, decode_getattr_args, _printk, xdr_encode_opaque, check_gss_callback_principal, __SCT__tp_func_nfs_cb_badprinc, ___ratelimit, xdr_inline_decode, decode_recall_args, xdr_reserve_space, __traceiter_nfs_cb_badprinc)

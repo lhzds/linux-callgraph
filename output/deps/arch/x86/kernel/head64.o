@@ -1,0 +1,6 @@
+arch/x86/kernel/head64.o
+__native_tlb_flush_global -> (native_write_cr4)
+clear_page -> (clear_page_rep, clear_page_orig, clear_page_erms)
+do_early_exception -> (__early_make_pgtable, early_fixup_exception)
+x86_64_start_kernel -> (__native_tlb_flush_global, copy_bootdata, x86_64_start_reservations, reset_early_page_tables, idt_setup_early_handler, cr4_init_shadow, clear_page, load_ucode_bsp)
+x86_64_start_reservations -> (start_kernel, copy_bootdata, x86_early_init_platform_quirks)

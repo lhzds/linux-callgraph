@@ -1,0 +1,6 @@
+crypto/echainiv.o
+echainiv_aead_create -> (aead_init_geniv, aead_geniv_alloc, echainiv_decrypt, aead_register_instance, aead_exit_geniv, echainiv_encrypt)
+echainiv_decrypt -> (scatterwalk_map_and_copy, crypto_aead_decrypt)
+echainiv_encrypt -> (crypto_skcipher_encrypt, crypto_aead_encrypt, scatterwalk_map_and_copy)
+echainiv_module_exit -> (echainiv_aead_create, crypto_unregister_template)
+echainiv_module_init -> (crypto_register_template, echainiv_aead_create)

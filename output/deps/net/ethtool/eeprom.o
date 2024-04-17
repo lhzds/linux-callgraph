@@ -1,0 +1,5 @@
+net/ethtool/eeprom.o
+eeprom_cleanup_data -> (kfree)
+eeprom_fill_reply -> (nla_put)
+eeprom_parse_request -> (do_trace_netlink_extack)
+eeprom_prepare_data -> (ethtool_get_module_info_call, kfree, ethnl_ops_complete, ethnl_ops_begin, ethtool_get_module_eeprom_call, __kmalloc)

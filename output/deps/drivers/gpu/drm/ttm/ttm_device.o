@@ -1,0 +1,7 @@
+drivers/gpu/drm/ttm/ttm_device.o
+ttm_device_clear_dma_mappings -> (ttm_device_clear_lru_dma_mappings)
+ttm_device_clear_lru_dma_mappings -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, ttm_bo_put, ttm_tt_unpopulate)
+ttm_device_fini -> (mutex_lock, ttm_pool_fini, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, destroy_workqueue, ttm_pool_mgr_fini, debugfs_remove, drain_workqueue, __free_pages)
+ttm_device_init -> (mutex_lock, si_meminfo, mutex_unlock, alloc_workqueue, debugfs_create_atomic_t, ttm_pool_init, ttm_pool_mgr_fini, debugfs_remove, ttm_tt_mgr_init, debugfs_create_dir, ttm_pool_mgr_init, __free_pages, alloc_pages, ttm_sys_man_init)
+ttm_device_swapout -> (_raw_spin_unlock, ttm_resource_manager_first, _raw_spin_lock, ttm_bo_swapout, ttm_resource_manager_next)
+ttm_global_swapout -> (mutex_unlock, mutex_lock, ttm_device_swapout)

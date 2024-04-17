@@ -1,0 +1,7 @@
+crypto/asymmetric_keys/signature.o
+create_signature -> (asymmetric_key_eds_op)
+decrypt_blob -> (asymmetric_key_eds_op)
+encrypt_blob -> (asymmetric_key_eds_op)
+public_key_signature_free -> (kfree)
+query_asymmetric_key -> (asymmetric_key_free_preparse, asymmetric_key_destroy, asymmetric_key_match_free, asymmetric_key_match_preparse, asymmetric_key_preparse, query_asymmetric_key, asymmetric_key_verify_signature, asymmetric_key_eds_op, asymmetric_key_describe, asymmetric_lookup_restriction, generic_key_instantiate)
+verify_signature -> (asymmetric_key_free_preparse, asymmetric_key_destroy, asymmetric_key_match_free, asymmetric_key_match_preparse, asymmetric_key_preparse, query_asymmetric_key, asymmetric_key_verify_signature, asymmetric_key_eds_op, asymmetric_key_describe, asymmetric_lookup_restriction, generic_key_instantiate)

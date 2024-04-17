@@ -1,0 +1,7 @@
+kernel/utsname.o
+copy_utsname -> (kmem_cache_alloc, proc_free_inum, refcount_warn_saturate, utsns_put, dec_ucount, down_read, up_read, inc_ucount, proc_alloc_inum, utsns_owner, utsns_install, utsns_get, kmem_cache_free)
+free_uts_ns -> (proc_free_inum, kmem_cache_free, dec_ucount)
+uts_ns_init -> (kmem_cache_create_usercopy)
+utsns_get -> (_raw_spin_lock, refcount_warn_saturate, _raw_spin_unlock)
+utsns_install -> (proc_free_inum, refcount_warn_saturate, dec_ucount, ns_capable, kmem_cache_free)
+utsns_put -> (proc_free_inum, kmem_cache_free, refcount_warn_saturate, dec_ucount)

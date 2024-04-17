@@ -1,0 +1,6 @@
+drivers/hid/hid_chicony.o
+ch_driver_exit -> (ch_input_mapping, ch_probe, ch_switch12_report_fixup, hid_unregister_driver, ch_raw_event)
+ch_driver_init -> (__hid_register_driver, ch_input_mapping, ch_probe, ch_switch12_report_fixup, ch_raw_event)
+ch_probe -> (_dev_err, hid_is_usb, hid_hw_start, hid_open_report)
+ch_raw_event -> (input_event, _dev_warn)
+ch_switch12_report_fixup -> (_dev_info)

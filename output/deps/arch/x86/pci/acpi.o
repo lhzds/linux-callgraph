@@ -1,0 +1,10 @@
+arch/x86/pci/acpi.o
+pci_acpi_crs_quirks -> (_printk, set_no_e820, set_use_crs, set_nouse_crs, dmi_check_system, dmi_get_bios_year, set_ignore_seg)
+pci_acpi_init -> (acpi_irq_penalty_init, x86_init_noop, amd_iommu_init, init_ISA_irqs, pcibios_fixup_irqs, pci_acpi_init, setup_boot_APIC_clock, x86_wallclock_init, bool_x86_init_noop, native_create_pci_msi_domain, probe_roms, apic_intr_mode_init, default_find_smp_config, native_init_IRQ, x86_default_set_root_pointer, pirq_enable_irq, _printk, reserve_standard_io_resources, acpi_pci_irq_enable, acpi_generic_reduced_hw_init, iommu_init_noop, intel_iommu_init, acpi_pci_irq_disable, pci_get_device, paging_init, pcibios_irq_init, x86_default_get_root_pointer, default_get_smp_config, e820__memory_setup_default, default_banner, hpet_time_init, pirq_disable_irq, apic_intr_mode_select)
+pci_acpi_root_init_info -> (pci_mmcfg_read, pci_mmconfig_insert, _dev_warn, _dev_err, pci_mmcfg_write)
+pci_acpi_root_prepare_resources -> (x86_pci_root_bus_resources, acpi_pci_probe_root_resources, _dev_printk, kfree)
+pci_acpi_root_release_info -> (pci_mmconfig_delete, kfree)
+pci_acpi_scan_root -> (_printk, _dev_info, pci_acpi_root_prepare_resources, pci_acpi_root_init_info, pci_read, pci_acpi_root_release_info, kmalloc_trace, pci_find_bus, acpi_pci_root_create, x86_pci_root_bus_node, pcie_bus_configure_settings, _dev_err, pci_write, acpi_get_node)
+pcibios_root_bridge_prepare -> (set_primary_fwnode)
+set_ignore_seg -> (_printk)
+set_no_e820 -> (_printk)

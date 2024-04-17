@@ -1,0 +1,7 @@
+drivers/cpuidle/cpuidle_haltpoll.o
+default_enter_idle -> (arch_cpu_idle)
+haltpoll_cpu_offline -> (cpuidle_unregister_device, arch_haltpoll_disable)
+haltpoll_cpu_online -> (_printk, arch_haltpoll_enable, cpuidle_register_device)
+haltpoll_exit -> (haltpoll_uninit)
+haltpoll_init -> (cpuidle_register_driver, __alloc_percpu, cpuidle_poll_state_init, haltpoll_cpu_offline, cpuidle_unregister_driver, default_enter_idle, haltpoll_cpu_online, haltpoll_uninit, kvm_arch_para_hints, kvm_para_available, __cpuhp_setup_state)
+haltpoll_uninit -> (__cpuhp_remove_state, free_percpu, cpuidle_unregister_driver, default_enter_idle)

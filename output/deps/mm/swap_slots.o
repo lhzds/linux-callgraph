@@ -1,0 +1,9 @@
+mm/swap_slots.o
+alloc_swap_slot_cache -> (mutex_lock, __mutex_init, kvmalloc_node, mutex_unlock, kvfree)
+disable_swap_slots_cache_lock -> (cpus_read_lock, drain_slots_cache_cpu, mutex_lock, cpus_read_unlock)
+drain_slots_cache_cpu -> (mutex_lock, mutex_unlock, _raw_spin_lock_irq, _raw_spin_unlock_irq, kvfree, swapcache_free_entries)
+enable_swap_slots_cache -> (has_usable_swap, mutex_lock, free_slot_cache, mutex_unlock, __warn_printk, __cpuhp_setup_state, alloc_swap_slot_cache)
+folio_alloc_swap -> (mutex_unlock, drain_slots_cache_cpu, get_swap_pages, mutex_lock)
+free_slot_cache -> (mutex_unlock, drain_slots_cache_cpu, mutex_lock)
+free_swap_slot -> (_raw_spin_lock_irq, swapcache_free_entries, _raw_spin_unlock_irq)
+reenable_swap_slots_cache_unlock -> (mutex_unlock, has_usable_swap)

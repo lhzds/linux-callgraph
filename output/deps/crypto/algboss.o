@@ -1,0 +1,6 @@
+crypto/algboss.o
+crypto_alg_put -> (refcount_warn_saturate)
+cryptomgr_exit -> (crypto_unregister_notifier, cryptomgr_notify)
+cryptomgr_init -> (crypto_register_notifier, cryptomgr_notify)
+cryptomgr_notify -> (refcount_warn_saturate, kmalloc_trace, cryptomgr_probe, wake_up_process, kfree, kthread_create_on_node)
+cryptomgr_probe -> (crypto_alg_put, kfree, crypto_lookup_template, __module_put_and_kthread_exit, complete_all)

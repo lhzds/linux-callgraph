@@ -1,0 +1,5 @@
+net/ipv4/tcp_recovery.o
+tcp_newreno_mark_lost -> (rb_first, tcp_mark_skb_lost, tcp_fragment)
+tcp_rack_detect_loss -> (tcp_mark_skb_lost)
+tcp_rack_mark_lost -> (tcp_rack_detect_loss, sk_reset_timer, __usecs_to_jiffies)
+tcp_rack_reo_timeout -> (tcp_xmit_retransmit_queue, tcp_rearm_rto, tcp_rack_detect_loss, tcp_cwnd_reduction, tcp_enter_recovery)

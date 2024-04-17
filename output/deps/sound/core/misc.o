@@ -1,0 +1,6 @@
+sound/core/misc.o
+release_and_free_resource -> (release_resource, kfree)
+snd_fasync_free -> (snd_fasync_work_fn, kfree, flush_work)
+snd_fasync_helper -> (fasync_helper, _raw_spin_lock_irq, kmalloc_trace, _raw_spin_unlock_irq, kfree)
+snd_fasync_work_fn -> (_raw_spin_lock_irq, kill_fasync, _raw_spin_unlock_irq)
+snd_kill_fasync -> (snd_fasync_work_fn, queue_work_on, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

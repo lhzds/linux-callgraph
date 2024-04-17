@@ -1,0 +1,4 @@
+drivers/ptp/ptp_chardev.o
+ptp_ioctl -> (ptp_set_pinfunc, memdup_user, ktime_get_real_ts64, _copy_from_user, mutex_unlock, ns_to_timespec64, capable, kfree, _copy_to_user, mutex_lock_interruptible)
+ptp_read -> (init_wait_entry, __SCT__might_resched, mutex_unlock, _raw_spin_lock_irqsave, kmalloc_trace, finish_wait, schedule, prepare_to_wait_event, _raw_spin_unlock_irqrestore, kfree, _copy_to_user, mutex_lock_interruptible)
+ptp_set_pinfunc -> (_printk)

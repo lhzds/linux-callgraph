@@ -1,0 +1,11 @@
+block/blk_stat.o
+blk_alloc_queue_stats -> (kmalloc_trace)
+blk_free_queue_stats -> (kfree)
+blk_stat_add -> (__rcu_read_unlock, __rcu_read_lock)
+blk_stat_add_callback -> (_raw_spin_lock_irqsave, blk_queue_flag_set, _raw_spin_unlock_irqrestore)
+blk_stat_alloc_callback -> (__alloc_percpu, init_timer_key, kmalloc_trace, blk_stat_timer_fn, kfree, __kmalloc)
+blk_stat_disable_accounting -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, blk_queue_flag_clear)
+blk_stat_enable_accounting -> (_raw_spin_lock_irqsave, blk_queue_flag_set, _raw_spin_unlock_irqrestore)
+blk_stat_free_callback -> (blk_stat_free_callback_rcu, call_rcu)
+blk_stat_free_callback_rcu -> (free_percpu, kfree)
+blk_stat_remove_callback -> (timer_delete_sync, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, blk_queue_flag_clear)

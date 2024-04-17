@@ -1,0 +1,6 @@
+lib/xz/xz_dec_lzma2.o
+lzma_main -> (lzma_len)
+xz_dec_lzma2_create -> (kfree, kmalloc_large, vmalloc)
+xz_dec_lzma2_end -> (vfree, kfree)
+xz_dec_lzma2_reset -> (vfree, vmalloc)
+xz_dec_lzma2_run -> (lzma_main)

@@ -1,0 +1,6 @@
+kernel/iomem.o
+devm_memremap -> (__devres_alloc_node, memremap, devm_memremap_release, devres_add, devres_free)
+devm_memremap_release -> (iounmap, is_vmalloc_addr)
+devm_memunmap -> (devm_memremap_match, devm_memremap_release, devres_release)
+memremap -> (__warn_printk, region_intersects, ioremap_wc, ioremap_cache, ioremap_wt)
+memunmap -> (iounmap, is_vmalloc_addr)

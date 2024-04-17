@@ -1,0 +1,11 @@
+drivers/iommu/intel/pasid.o
+intel_pasid_alloc_table -> (__SCT__might_resched, pci_max_pasids, pci_dma_configure, pci_device_shutdown, pci_bus_num_vf, kmalloc_trace, pci_uevent, pci_bus_match, clflush_cache_range, pci_dma_cleanup, pci_device_remove, __alloc_pages, kfree, pci_device_probe)
+intel_pasid_free_table -> (pci_dma_configure, pci_device_shutdown, pci_bus_num_vf, pci_uevent, pci_bus_match, pci_dma_cleanup, free_pgtable_page, pci_device_remove, free_pages, kfree, pci_device_probe)
+intel_pasid_get_entry -> (clflush_cache_range, free_pgtable_page, alloc_pgtable_page)
+intel_pasid_setup_first_level -> (_printk, _raw_spin_unlock, _raw_spin_lock, iommu_flush_write_buffer, qi_submit_sync, clflush_cache_range, intel_pasid_get_entry, qi_flush_piotlb)
+intel_pasid_setup_page_snoop_control -> (_raw_spin_unlock, _raw_spin_lock, qi_submit_sync, clflush_cache_range, qi_flush_dev_iotlb_pasid, intel_pasid_get_entry, qi_flush_dev_iotlb, qi_flush_piotlb)
+intel_pasid_setup_pass_through -> (_raw_spin_unlock, _raw_spin_lock, iommu_flush_write_buffer, qi_submit_sync, clflush_cache_range, intel_pasid_get_entry, qi_flush_piotlb)
+intel_pasid_setup_second_level -> (_printk, _raw_spin_unlock, _raw_spin_lock, iommu_flush_write_buffer, qi_submit_sync, _dev_err, clflush_cache_range, intel_pasid_get_entry, xa_load, qi_flush_piotlb)
+intel_pasid_tear_down_entry -> (_raw_spin_unlock, _raw_spin_lock, qi_submit_sync, clflush_cache_range, qi_flush_dev_iotlb_pasid, intel_pasid_get_entry, qi_flush_dev_iotlb, qi_flush_piotlb)
+vcmd_alloc_pasid -> (_printk, _raw_spin_lock_irqsave, panic, _raw_spin_unlock_irqrestore)
+vcmd_free_pasid -> (_printk, _raw_spin_lock_irqsave, panic, _raw_spin_unlock_irqrestore)

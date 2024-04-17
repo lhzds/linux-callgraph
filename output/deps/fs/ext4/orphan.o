@@ -1,0 +1,9 @@
+fs/ext4/orphan.o
+ext4_init_orphan_info -> (iput, __ext4_msg, __ext4_error, __ext4_iget, crypto_shash_update, ext4_bread, kfree, __brelse, __kmalloc)
+ext4_orphan_add -> (ext4_superblock_csum_set, _printk, __ext4_journal_get_write_access, ext4_mark_iloc_dirty, mutex_lock, __ext4_std_error, mutex_unlock, lock_buffer, ext4_reserve_inode_write, is_bad_inode, __SCT__cond_resched, __ext4_handle_dirty_metadata, unlock_buffer, __brelse)
+ext4_orphan_cleanup -> (dquot_quota_on_mount, __ext4_msg, ext4_orphan_get, dquot_quota_off, ext4_process_orphan, ext4_enable_quotas, ext4_feature_set_ok)
+ext4_orphan_del -> (ext4_superblock_csum_set, __ext4_journal_get_write_access, ext4_mark_iloc_dirty, mutex_lock, __ext4_std_error, mutex_unlock, lock_buffer, ext4_reserve_inode_write, __ext4_handle_dirty_metadata, unlock_buffer, __brelse)
+ext4_orphan_file_block_trigger -> (crypto_shash_update)
+ext4_process_orphan -> (down_write, iput, __ext4_msg, __ext4_std_error, ext4_truncate, up_write, ext4_orphan_del, truncate_inode_pages, dquot_initialize)
+ext4_release_orphan_info -> (kfree, __brelse)
+lock_buffer -> (__SCT__might_resched, __lock_buffer)

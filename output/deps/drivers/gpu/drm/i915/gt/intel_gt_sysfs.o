@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/gt/intel_gt_sysfs.o
+id_show -> (kdev_minor_to_i915, strncmp, sysfs_emit)
+intel_gt_sysfs_get_drvdata -> (kdev_minor_to_i915, strncmp)
+intel_gt_sysfs_register -> (kobject_create_and_add, kobj_attr_store, _dev_warn, kobject_put, intel_gt_sysfs_pm_init, kobject_init_and_add, id_show, kobj_attr_show, kobj_gt_release)
+intel_gt_sysfs_unregister -> (kobject_put)
+is_object_gt -> (strncmp)

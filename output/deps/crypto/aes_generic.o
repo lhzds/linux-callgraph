@@ -1,0 +1,4 @@
+crypto/aes_generic.o
+aes_fini -> (crypto_unregister_alg, crypto_aes_set_key, crypto_aes_encrypt, crypto_aes_decrypt)
+aes_init -> (crypto_aes_set_key, crypto_aes_encrypt, crypto_aes_decrypt, crypto_register_alg)
+crypto_aes_set_key -> (aes_expandkey)

@@ -1,0 +1,12 @@
+net/xfrm/xfrm_input.o
+local_bh_enable -> (__local_bh_enable_ip)
+secpath_set -> (skb_ext_add)
+xfrm_input -> (refcount_warn_saturate, _raw_spin_lock, kfree_skb_reason, __skb_ext_del, xfrm_state_afinfo_get_rcu, xfrm_state_lookup, nf_conntrack_destroy, _raw_spin_unlock, gro_cells_receive, xfrm_state_check_expire, skb_ext_add, __rcu_read_unlock, xfrm_offload, xfrm_audit_state_notfound, xfrm_replay_check, ktime_get_real_seconds, xfrm_replay_advance, xfrm_parse_spi, xfrm_audit_state_icvfail, __pskb_pull_tail, skb_push, xfrm_replay_seqhi, xfrm_replay_recheck, rcuref_get_slowpath, __rcu_read_lock, dst_release, pskb_expand_head)
+xfrm_input_init -> (init_dummy_netdev, gro_cells_init, xfrm_trans_reinject)
+xfrm_input_register_afinfo -> (_raw_spin_lock_bh, _raw_spin_unlock_bh)
+xfrm_input_resume -> (xfrm_input)
+xfrm_input_unregister_afinfo -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, synchronize_rcu)
+xfrm_parse_spi -> (__pskb_pull_tail)
+xfrm_trans_queue -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, queue_work_on)
+xfrm_trans_queue_net -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, queue_work_on)
+xfrm_trans_reinject -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, local_bh_enable)

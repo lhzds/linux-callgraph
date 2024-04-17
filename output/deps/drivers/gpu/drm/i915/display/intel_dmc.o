@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/display/intel_dmc.o
+assert_dmc_loaded -> (__warn_printk, dev_driver_string)
+dmc_load_work_fn -> (__drm_dev_dbg, _dev_warn, intel_step_name, release_firmware, intel_dmc_load_program, _dev_err, _dev_notice, intel_display_power_put_unchecked, _dev_info, request_firmware, __kmalloc)
+intel_dmc_debugfs_register -> (seq_read, debugfs_create_file, single_release, intel_dmc_debugfs_status_open, seq_lseek)
+intel_dmc_debugfs_status_open -> (single_open, intel_dmc_debugfs_status_show)
+intel_dmc_debugfs_status_show -> (intel_runtime_pm_put_unchecked, seq_printf, intel_runtime_pm_get)
+intel_dmc_disable_program -> (pipedmc_clock_gating_wa)
+intel_dmc_fini -> (__warn_printk, flush_work, intel_display_power_put_unchecked, kfree, dev_driver_string)
+intel_dmc_init -> (dmc_load_work_fn, __drm_dev_dbg, intel_display_power_get, __warn_printk, kmalloc_trace, queue_work_on, kfree, _dev_info, dev_driver_string)
+intel_dmc_load_program -> (pipedmc_clock_gating_wa, __drm_dev_dbg, __traceiter_i915_reg_rw, __warn_printk, __probestub_i915_reg_rw, __SCT__tp_func_i915_reg_rw)
+intel_dmc_print_error_state -> (i915_error_printf)
+intel_dmc_resume -> (intel_display_power_get, __warn_printk, dev_driver_string)
+intel_dmc_suspend -> (intel_display_power_put_unchecked, flush_work)

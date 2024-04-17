@@ -1,0 +1,5 @@
+fs/nfs/callback.o
+check_gss_callback_principal -> (bcmp, strcmp)
+nfs4_callback_svc -> (kthread_freezable_should_stop, svc_exit_thread, svc_process, flush_signals, svc_recv, set_freezable)
+nfs_callback_down -> (svc_set_num_threads, mutex_lock, refcount_warn_saturate, svc_destroy, mutex_unlock, svc_xprt_destroy_all, __rcu_read_lock, __rcu_read_unlock)
+nfs_callback_up -> (_printk, svc_set_num_threads, mutex_lock, refcount_warn_saturate, svc_destroy, svc_generic_init_request, mutex_unlock, svc_generic_rpcbind_set, svc_rpcb_cleanup, svc_xprt_destroy_all, svc_create, __rcu_read_lock, nfs4_callback_svc, nfs_callback_dispatch, __rcu_read_unlock, svc_bind, svc_xprt_create, nfs_callback_authenticate)

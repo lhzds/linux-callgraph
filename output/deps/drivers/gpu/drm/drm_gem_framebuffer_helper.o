@@ -1,0 +1,13 @@
+drivers/gpu/drm/drm_gem_framebuffer_helper.o
+drm_gem_fb_afbc_init -> (drm_format_info_bpp, __drm_dev_dbg, drm_get_format_info)
+drm_gem_fb_begin_cpu_access -> (_dev_err, drm_gem_fb_get_obj, dma_buf_end_cpu_access, dma_buf_begin_cpu_access)
+drm_gem_fb_create -> (drm_gem_fb_init_with_funcs, drm_gem_fb_destroy, drm_gem_fb_create_handle, kmalloc_trace, kfree)
+drm_gem_fb_create_handle -> (drm_gem_handle_create)
+drm_gem_fb_create_with_dirty -> (drm_gem_fb_init_with_funcs, drm_gem_fb_destroy, drm_gem_fb_create_handle, kmalloc_trace, drm_atomic_helper_dirtyfb, kfree)
+drm_gem_fb_create_with_funcs -> (drm_gem_fb_init_with_funcs, kfree, kmalloc_trace)
+drm_gem_fb_destroy -> (refcount_warn_saturate, drm_framebuffer_cleanup, drm_gem_object_free, kfree)
+drm_gem_fb_end_cpu_access -> (_dev_err, drm_gem_fb_get_obj, dma_buf_end_cpu_access)
+drm_gem_fb_get_obj -> (__warn_printk, dev_driver_string)
+drm_gem_fb_init_with_funcs -> (drm_format_info_min_pitch, __drm_dev_dbg, refcount_warn_saturate, drm_any_plane_has_format, drm_framebuffer_init, drm_gem_object_free, _dev_err, drm_get_format_info, drm_helper_mode_fill_fb_struct, drm_gem_object_lookup)
+drm_gem_fb_vmap -> (drm_gem_fb_get_obj, drm_gem_vmap_unlocked, drm_gem_vunmap_unlocked)
+drm_gem_fb_vunmap -> (drm_gem_fb_get_obj, drm_gem_vunmap_unlocked)

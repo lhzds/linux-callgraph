@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/gem/i915_gem_pm.o
+i915_gem_backup_suspend -> (i915_gem_suspend, lmem_suspend, i915_ttm_recover_region)
+i915_gem_freeze -> (i915_gem_shrink_all)
+i915_gem_freeze_late -> (i915_gem_drain_freed_objects, i915_gem_cpu_write_needs_clflush, wbinvd_on_all_cpus, i915_gem_shrink, intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+i915_gem_resume -> (_dev_err, intel_gt_set_wedged, lmem_restore, intel_gt_resume)
+i915_gem_suspend -> (intel_gt_suspend_prepare, intel_wakeref_auto, i915_gem_drain_freed_objects, __flush_workqueue)
+i915_gem_suspend_late -> (i915_gem_cpu_write_needs_clflush, _raw_spin_lock_irqsave, wbinvd_on_all_cpus, _raw_spin_unlock_irqrestore, intel_gt_suspend_late)
+lmem_restore -> (i915_ttm_restore_region)
+lmem_suspend -> (i915_ttm_backup_region)

@@ -1,0 +1,12 @@
+net/netfilter/nf_nat_masquerade.o
+device_cmp -> (__nf_ct_ext_find)
+inet_cmp -> (__nf_ct_ext_find)
+iterate_cleanup_work -> (refcount_warn_saturate, kfree, nf_ct_iterate_cleanup_net, __put_net)
+masq_device_event -> (device_cmp, nf_nat_masq_schedule)
+masq_inet6_event -> (nf_nat_masq_schedule, inet_cmp)
+masq_inet_event -> (nf_nat_masq_schedule, inet_cmp)
+nf_nat_masq_schedule -> (refcount_warn_saturate, iterate_cleanup_work, queue_work_on, kmalloc_trace, __put_net)
+nf_nat_masquerade_inet_register_notifiers -> (mutex_lock, register_inetaddr_notifier, register_netdevice_notifier, mutex_unlock, masq_device_event, unregister_netdevice_notifier, unregister_inetaddr_notifier, masq_inet6_event, masq_inet_event, register_inet6addr_notifier)
+nf_nat_masquerade_inet_unregister_notifiers -> (mutex_lock, mutex_unlock, unregister_inet6addr_notifier, masq_device_event, unregister_netdevice_notifier, unregister_inetaddr_notifier, masq_inet6_event, masq_inet_event)
+nf_nat_masquerade_ipv4 -> (_printk, nf_nat_setup_info, inet_select_addr, nf_ct_nat_ext_add)
+nf_nat_masquerade_ipv6 -> (nf_nat_setup_info, ipv6_dev_get_saddr, nf_ct_nat_ext_add)

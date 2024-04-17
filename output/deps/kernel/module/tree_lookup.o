@@ -1,0 +1,5 @@
+kernel/module/tree_lookup.o
+__mod_tree_insert -> (rb_insert_color)
+mod_tree_insert -> (__mod_tree_insert)
+mod_tree_remove -> (rb_erase)
+mod_tree_remove_init -> (rb_erase)

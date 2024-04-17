@@ -1,0 +1,4 @@
+lib/timerqueue.o
+timerqueue_add -> (rb_insert_color)
+timerqueue_del -> (rb_erase, rb_next)
+timerqueue_iterate_next -> (rb_next)

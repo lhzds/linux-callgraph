@@ -1,0 +1,6 @@
+drivers/gpu/drm/ttm/ttm_range_manager.o
+ttm_range_man_alloc -> (_raw_spin_unlock, ttm_resource_init, _raw_spin_lock, kmalloc_trace, ttm_resource_fini, drm_mm_insert_node_in_range, kfree)
+ttm_range_man_debug -> (_raw_spin_lock, drm_mm_print, _raw_spin_unlock)
+ttm_range_man_fini_nocheck -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, drm_mm_takedown, ttm_resource_manager_evict_all, kfree, dma_fence_release)
+ttm_range_man_free -> (_raw_spin_unlock, _raw_spin_lock, drm_mm_remove_node, ttm_resource_fini, kfree)
+ttm_range_man_init_nocheck -> (ttm_range_man_compatible, kmalloc_trace, drm_mm_init, ttm_range_man_free, ttm_range_man_debug, ttm_range_man_alloc, ttm_resource_manager_init, ttm_range_man_intersects)

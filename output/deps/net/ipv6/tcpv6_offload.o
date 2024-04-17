@@ -1,0 +1,6 @@
+net/ipv6/tcpv6_offload.o
+__tcp_v6_send_check -> (csum_ipv6_magic)
+tcp6_gro_complete -> (csum_ipv6_magic, tcp_gro_complete)
+tcp6_gro_receive -> (csum_ipv6_magic, __skb_gro_checksum_complete, tcp_gro_receive)
+tcp6_gso_segment -> (__tcp_v6_send_check, __pskb_pull_tail, tcp_gso_segment)
+tcpv6_offload_init -> (tcp6_gro_complete, tcp6_gso_segment, inet6_add_offload, tcp6_gro_receive)

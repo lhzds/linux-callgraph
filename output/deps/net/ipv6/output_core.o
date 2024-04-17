@@ -1,0 +1,7 @@
+net/ipv6/output_core.o
+__ip6_local_out -> (__rcu_read_unlock, nf_hook_slow, __rcu_read_lock, dst_output)
+dst_output -> (ip_output, ip6_output)
+ip6_dst_hoplimit -> (__rcu_read_unlock, __rcu_read_lock)
+ip6_local_out -> (nf_hook_slow, dst_output, __rcu_read_lock, ip6_output, __rcu_read_unlock, ip_output)
+ipv6_proxy_select_ident -> (get_random_u32, skb_copy_bits)
+ipv6_select_ident -> (get_random_u32)

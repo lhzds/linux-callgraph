@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gem/i915_gem_tiling.o
+i915_gem_get_tiling_ioctl -> (__rcu_read_unlock, __rcu_read_lock, idr_find)
+i915_gem_object_set_tiling -> (mutex_lock, refcount_warn_saturate, bitmap_free, __i915_vma_unbind, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, i915_gem_object_make_unshrinkable, i915_gem_object_make_shrinkable, bitmap_zalloc, i915_gem_object_release_mmap_gtt, ww_mutex_unlock, ww_mutex_lock)
+i915_gem_set_tiling_ioctl -> (refcount_warn_saturate, drm_gem_object_free, i915_gem_object_set_tiling, __rcu_read_lock, __rcu_read_unlock, idr_find)

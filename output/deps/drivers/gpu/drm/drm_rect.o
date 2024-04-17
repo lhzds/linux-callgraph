@@ -1,0 +1,2 @@
+drivers/gpu/drm/drm_rect.o
+drm_rect_debug_print -> (___drm_dbg)

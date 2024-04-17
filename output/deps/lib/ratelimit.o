@@ -1,0 +1,2 @@
+lib/ratelimit.o
+___ratelimit -> (_printk_deferred, _raw_spin_trylock, _raw_spin_unlock_irqrestore)

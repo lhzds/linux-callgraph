@@ -1,0 +1,10 @@
+drivers/pnp/quirks.o
+pnp_fixup_device -> (quirk_awe32_resources, compare_pnp_id, quirk_amd_mmconfig_area, _dev_printk, quirk_intel_mch, quirk_sb16audio_resources, quirk_cmi8330_resources, quirk_ad1815_mpu_resources, quirk_system_pci_resources, quirk_add_irq_optional_dependent_sets)
+quirk_ad1815_mpu_resources -> (_dev_info)
+quirk_add_irq_optional_dependent_sets -> (_dev_err, kmalloc_trace, dbg_pnp_show_option, _dev_info)
+quirk_amd_mmconfig_area -> (_dev_info, pnp_add_mem_resource, amd_get_mmconfig_range)
+quirk_awe32_resources -> (_dev_err, kmalloc_trace, _dev_info)
+quirk_cmi8330_resources -> (_dev_info)
+quirk_intel_mch -> (pci_read_config_dword, pci_get_device, pcibios_bus_to_resource, pci_dev_put, _dev_info)
+quirk_sb16audio_resources -> (_dev_info)
+quirk_system_pci_resources -> (pci_get_device, pnp_get_resource, _dev_warn)

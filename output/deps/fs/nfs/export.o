@@ -1,0 +1,3 @@
+fs/nfs/export.o
+nfs_fh_to_dentry -> (__probestub_nfs_fh_to_dentry, nfs_ilookup, nfs_alloc_fattr_with_label, kfree, __traceiter_nfs_fh_to_dentry, nfs_fhget, __SCT__tp_func_nfs_fh_to_dentry, d_obtain_alias)
+nfs_get_parent -> (d_obtain_alias, nfs_fhget, nfs_alloc_fattr_with_label, kfree)

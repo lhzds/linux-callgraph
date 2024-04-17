@@ -1,0 +1,4 @@
+kernel/irq/resend.o
+check_irq_resend -> (_raw_spin_unlock, _raw_spin_lock, irq_chip_retrigger_hierarchy, irq_to_desc, resend_irqs, __tasklet_schedule)
+clear_irq_resend -> (_raw_spin_lock, _raw_spin_unlock)
+resend_irqs -> (_raw_spin_lock, _raw_spin_lock_irq, _raw_spin_unlock_irq, _raw_spin_unlock)

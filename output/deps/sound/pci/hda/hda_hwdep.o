@@ -1,0 +1,5 @@
+sound/pci/hda/hda_hwdep.o
+hda_hwdep_ioctl -> (snd_hdac_codec_read)
+hda_hwdep_ioctl_compat -> (hda_hwdep_ioctl)
+hda_hwdep_open -> (capable)
+snd_hda_create_hwdep -> (hda_hwdep_open, snd_hwdep_new, hda_hwdep_ioctl, sprintf, hda_hwdep_ioctl_compat)

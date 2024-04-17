@@ -1,0 +1,13 @@
+kernel/profile.o
+create_proc_profile -> (profile_prepare_cpu, read_profile, profile_dead_cpu, __cpuhp_remove_state, proc_set_size, profile_online_cpu, default_llseek, proc_create, write_profile, __cpuhp_setup_state)
+create_prof_cpu_mask -> (prof_cpu_mask_proc_write, seq_read, single_release, prof_cpu_mask_proc_open, proc_create, seq_lseek)
+prof_cpu_mask_proc_open -> (single_open, prof_cpu_mask_proc_show)
+prof_cpu_mask_proc_show -> (seq_printf)
+prof_cpu_mask_proc_write -> (bitmap_parse_user)
+profile_dead_cpu -> (__free_pages)
+profile_init -> (vzalloc, _printk, alloc_pages_exact, __kmalloc)
+profile_prepare_cpu -> (__alloc_pages, profile_dead_cpu)
+profile_setup -> (_printk, strlen, strncmp, get_option, force_schedstat_enabled)
+profile_tick -> (profile_hits, profile_pc)
+read_profile -> (mutex_lock, mutex_unlock, on_each_cpu_cond_mask, _copy_to_user, __profile_flip_buffers)
+write_profile -> (mutex_lock, _copy_from_user, mutex_unlock, on_each_cpu_cond_mask, setup_profiling_timer, __profile_flip_buffers)

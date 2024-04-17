@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/gt/uc/intel_guc_ads.o
+__guc_ads_init -> (guc_capture_prep_lists, fill_engine_enable_masks, memcpy_toio, __i915_gem_object_flush_map, guc_prep_golden_context)
+guc_capture_prep_lists -> (fill_engine_enable_masks, _dev_warn, memcpy_toio, intel_guc_capture_getnullheader, intel_guc_capture_getlistsize, intel_guc_capture_getlist)
+guc_mmio_reg_add -> (guc_mmio_reg_cmp, bsearch, __warn_printk, krealloc)
+guc_prep_golden_context -> (fill_engine_enable_masks, intel_engine_context_size)
+intel_guc_ads_create -> (guc_capture_prep_lists, __drm_dev_dbg, i915_gem_object_is_lmem, guc_mmio_reg_add, intel_guc_allocate_and_map_vma, __guc_ads_init, intel_gt_mcr_get_nonterminated_steering, guc_prep_golden_context, kfree)
+intel_guc_ads_destroy -> (i915_vma_unpin_and_release, kfree)
+intel_guc_ads_init_late -> (_dev_err, shmem_read_to_iosys_map, intel_engine_context_size)
+intel_guc_ads_print_policy_info -> (drm_printf)
+intel_guc_ads_reset -> (__guc_ads_init, memset_io)
+intel_guc_global_policies_update -> (__SCT__might_resched, intel_guc_ct_send, intel_runtime_pm_put_unchecked, intel_runtime_pm_get, msleep_interruptible)

@@ -1,0 +1,4 @@
+lib/buildid.o
+build_id_parse -> (pagecache_get_page, bcmp, __folio_put, strcmp)
+build_id_parse_buf -> (strcmp)
+init_vmlinux_build_id -> (build_id_parse_buf)

@@ -1,0 +1,10 @@
+fs/filesystems.o
+__ia32_sys_sysfs -> (__se_sys_sysfs)
+__se_sys_sysfs -> (strlen, strcmp, _raw_read_unlock, getname, _raw_read_lock, putname, _copy_to_user)
+__x64_sys_sysfs -> (__se_sys_sysfs)
+filesystems_proc_show -> (_raw_read_unlock, seq_printf, _raw_read_lock)
+get_fs_type -> (_printk, strlen, _raw_read_unlock, strncmp, _raw_read_lock, __request_module, strchr)
+list_bdev_fs_names -> (_printk, strlen, _raw_read_unlock, _raw_read_lock)
+proc_filesystems_init -> (proc_create_single_data, filesystems_proc_show)
+register_filesystem -> (strlen, _raw_write_lock, strncmp, _raw_write_unlock, strchr)
+unregister_filesystem -> (synchronize_rcu, _raw_write_lock, _raw_write_unlock)

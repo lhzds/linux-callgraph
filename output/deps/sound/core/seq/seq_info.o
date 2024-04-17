@@ -1,0 +1,4 @@
+sound/core/seq/seq_info.o
+create_info_entry -> (snd_info_free_entry, snd_info_register, snd_info_create_module_entry)
+snd_seq_info_done -> (snd_info_free_entry)
+snd_seq_info_init -> (snd_seq_info_timer_read, create_info_entry, snd_seq_info_queues_read, snd_seq_info_done, snd_seq_info_clients_read)

@@ -1,0 +1,10 @@
+block/blk_map.o
+bio_copy_kern_endio -> (kfree, bio_uninit, bio_free_pages)
+bio_copy_kern_endio_read -> (kfree, bio_uninit, bio_free_pages)
+bio_map_kern_endio -> (kfree, bio_uninit)
+blk_rq_append_bio -> (ll_back_merge_fn)
+blk_rq_map_kern -> (bio_kmalloc, bio_copy_kern_endio_read, bio_uninit, bio_copy_kern_endio, bio_free_pages, bio_init, ll_back_merge_fn, bio_map_kern_endio, is_vmalloc_addr, vmalloc_to_page, bio_add_pc_page, kfree, alloc_pages)
+blk_rq_map_user -> (blk_rq_map_user_iov, import_ubuf)
+blk_rq_map_user_io -> (import_iovec, blk_rq_map_user_iov, kfree, import_ubuf)
+blk_rq_map_user_iov -> (iov_iter_advance, bio_put, kvfree, blk_rq_unmap_user, bio_add_pc_page, iov_iter_revert, bio_init, bio_iov_bvec_set, __free_pages, alloc_pages, bio_kmalloc, bio_uninit, bio_free_pages, bio_add_hw_page, iov_iter_gap_alignment, bio_alloc_bioset, __kmalloc, unpin_user_page, iov_iter_alignment, copy_page_from_iter, ll_back_merge_fn, iov_iter_extract_pages, iov_iter_npages, zero_fill_bio, __bio_release_pages, kfree)
+blk_rq_unmap_user -> (bio_uninit, bio_free_pages, bio_put, copy_page_to_iter, __bio_release_pages, kfree)

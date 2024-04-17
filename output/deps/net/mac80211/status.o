@@ -1,0 +1,11 @@
+net/mac80211/status.o
+ieee80211_free_txskb -> (ieee80211_report_used_skb, dev_kfree_skb_any_reason)
+ieee80211_handle_filtered_frame -> (skb_queue_tail, ieee80211_report_used_skb, ieee80211_add_pending_skb, round_jiffies, dev_kfree_skb_any_reason, sta_info_recalc_tim, mod_timer, ieee80211_clear_fast_xmit)
+ieee80211_purge_tx_queue -> (ieee80211_report_used_skb, dev_kfree_skb_any_reason)
+ieee80211_report_low_ack -> (cfg80211_cqm_pktloss_notify)
+ieee80211_report_used_skb -> (wiphy_work_queue, cfg80211_mgmt_tx_status_ext, skb_complete_wifi_ack, _raw_spin_lock, sta_info_get_by_addrs, dev_kfree_skb_any_reason, cfg80211_control_port_tx_status, ieee80211_mgd_conn_tx_status, ieee80211_subif_start_xmit, _raw_spin_unlock, _raw_spin_lock_irqsave, ieee80211_sta_update_pending_airtime, __rcu_read_unlock, _printk, led_trigger_blink_oneshot, ieee80211_s1g_is_twt_setup, _raw_spin_unlock_irqrestore, kfree_skb_list_reason, skb_queue_tail, skb_clone, cfg80211_probe_status, __rcu_read_lock, idr_remove)
+ieee80211_tx_monitor -> (_printk, skb_clone, skb_push, consume_skb, __warn_printk, netif_rx, __rcu_read_lock, __rcu_read_unlock)
+ieee80211_tx_rate_update -> (rate_control_tx_status)
+ieee80211_tx_status -> (__rcu_read_unlock, ieee80211_tx_status_ext, __rcu_read_lock, sta_info_get_by_addrs)
+ieee80211_tx_status_ext -> (ieee80211_report_used_skb, ieee80211_queue_work, ieee80211_tx_monitor, cfg80211_cqm_pktloss_notify, consume_skb, rate_control_tx_status, ieee80211_send_bar, ieee80211_sta_tx_notify, mod_timer, __rcu_read_lock, ieee80211_sta_update_pending_airtime, __rcu_read_unlock, ieee80211_handle_filtered_frame)
+ieee80211_tx_status_irqsafe -> (skb_queue_tail, ieee80211_report_used_skb, dev_kfree_skb_any_reason, __tasklet_schedule, skb_dequeue)

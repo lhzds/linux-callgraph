@@ -1,0 +1,7 @@
+fs/nfs/io.o
+nfs_end_io_direct -> (up_read)
+nfs_end_io_read -> (up_read)
+nfs_end_io_write -> (up_write)
+nfs_start_io_direct -> (down_write, down_read, up_read, nfs_sync_mapping, downgrade_write)
+nfs_start_io_read -> (down_write, down_read, up_read, inode_dio_wait, downgrade_write)
+nfs_start_io_write -> (down_write, inode_dio_wait)

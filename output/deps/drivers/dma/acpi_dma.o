@@ -1,0 +1,9 @@
+drivers/dma/acpi_dma.o
+acpi_dma_controller_free -> (mutex_lock, kfree, mutex_unlock)
+acpi_dma_controller_register -> (dma_set_coherent_mask, mutex_lock, acpi_put_table, _dev_warn, dma_set_mask, mutex_unlock, kmalloc_trace, acpi_dev_free_resource_list, acpi_dev_get_resources, is_acpi_device_node, acpi_register_gsi, acpi_get_table)
+acpi_dma_request_slave_chan_by_index -> (mutex_lock, mutex_unlock, acpi_dev_free_resource_list, acpi_dev_get_resources, is_acpi_device_node, acpi_dma_parse_fixed_dma)
+acpi_dma_request_slave_chan_by_name -> (device_property_match_string, strcmp, acpi_dma_request_slave_chan_by_index)
+acpi_dma_simple_xlate -> (__dma_request_channel)
+devm_acpi_dma_controller_free -> (devres_release, devm_acpi_dma_release)
+devm_acpi_dma_controller_register -> (acpi_dma_controller_register, __devres_alloc_node, devm_acpi_dma_release, devres_add, devres_free)
+devm_acpi_dma_release -> (mutex_lock, kfree, mutex_unlock)

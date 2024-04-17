@@ -1,0 +1,3 @@
+drivers/usb/core/devices.o
+usb_device_dump -> (mutex_lock, mutex_unlock, usb_decode_interval, usb_hub_find_child, usb_device_dump, __get_free_pages, free_pages, _copy_to_user, sprintf)
+usb_device_read -> (mutex_unlock, idr_get_next, mutex_lock, usb_device_dump)

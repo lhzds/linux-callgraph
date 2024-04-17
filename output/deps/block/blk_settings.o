@@ -1,0 +1,10 @@
+block/blk_settings.o
+blk_queue_can_use_dma_map_merging -> (dma_get_merge_boundary)
+blk_queue_max_hw_sectors -> (_printk)
+blk_queue_max_segment_size -> (_printk)
+blk_queue_max_segments -> (_printk)
+blk_queue_segment_boundary -> (_printk)
+blk_queue_write_cache -> (blk_queue_flag_set, blk_queue_flag_clear)
+blk_set_queue_depth -> (__rq_qos_queue_depth_changed)
+blk_stack_limits -> (gcd, lcm_not_zero)
+disk_stack_limits -> (_printk, blk_stack_limits)

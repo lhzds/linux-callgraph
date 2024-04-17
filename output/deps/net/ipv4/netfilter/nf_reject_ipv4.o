@@ -1,0 +1,10 @@
+net/ipv4/netfilter/nf_reject_ipv4.o
+nf_reject_ip_tcphdr_get -> (skb_copy_bits, nf_ip_checksum)
+nf_reject_ip_tcphdr_put -> (skb_put)
+nf_reject_iphdr_put -> (skb_put)
+nf_reject_iphdr_validate -> (__pskb_pull_tail)
+nf_reject_skb_v4_tcp_reset -> (ip_send_check, nf_reject_ip_tcphdr_put, skb_put, nf_reject_ip_tcphdr_get, nf_reject_iphdr_validate, __alloc_skb)
+nf_reject_skb_v4_unreach -> (ip_send_check, nf_reject_verify_csum, skb_put, __pskb_pull_tail, nf_ip_checksum, csum_partial, nf_reject_iphdr_validate, __alloc_skb, pskb_trim_rcsum_slow)
+nf_reject_verify_csum -> (skb_copy_bits)
+nf_send_reset -> (nf_reject_ip_tcphdr_put, ip6_mtu, skb_put, nf_reject_ip_tcphdr_get, ip_route_me_harder, ip_local_out, kfree_skb_reason, nf_ct_attach, nf_ip_route, __alloc_skb, nf_ct_set_closing, ipv4_mtu)
+nf_send_unreach -> (skb_copy_bits, __icmp_send, nf_ip_route, nf_ip_checksum)

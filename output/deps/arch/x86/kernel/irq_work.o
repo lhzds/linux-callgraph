@@ -1,0 +1,3 @@
+arch/x86/kernel/irq_work.o
+__sysvec_irq_work -> (__traceiter_irq_work_entry, __probestub_irq_work_entry, __SCT__tp_func_irq_work_entry, __probestub_irq_work_exit, __SCT__tp_func_irq_work_exit, __traceiter_irq_work_exit, irq_work_run)
+sysvec_irq_work -> (irqentry_exit, irq_exit_rcu, irq_enter_rcu, irqentry_enter, __sysvec_irq_work)

@@ -1,0 +1,10 @@
+drivers/scsi/scsi_ioctl.o
+get_sg_io_hdr -> (_copy_from_user)
+ioctl_internal_command -> (scsi_print_sense_hdr, scsi_execute_cmd, sdev_prefix_printk)
+put_sg_io_hdr -> (_copy_to_user)
+scsi_cmd_allowed -> (capable)
+scsi_complete_sghdr_rq -> (_copy_to_user, blk_rq_unmap_user)
+scsi_ioctl -> (put_sg_io_hdr, _copy_to_user, scsi_test_unit_ready, scsi_cmd_allowed, _copy_from_user, blk_execute_rq, scsi_ioctl_reset, _printk, sg_io, strlen, jiffies_to_msecs, blk_rq_map_kern, get_sg_io_hdr, ioctl_internal_command, jiffies_to_clock_t, __kmalloc, blk_mq_free_request, scsi_alloc_request, clock_t_to_jiffies, kfree)
+scsi_ioctl_block_when_processing_errors -> (scsi_block_when_processing_errors)
+scsi_set_medium_removal -> (ioctl_internal_command)
+sg_io -> (scsi_alloc_request, scsi_cmd_allowed, _copy_from_user, jiffies_to_msecs, blk_execute_rq, blk_rq_map_user_io, scsi_complete_sghdr_rq, __msecs_to_jiffies, blk_mq_free_request)

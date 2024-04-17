@@ -1,0 +1,10 @@
+net/rfkill/input.o
+rfkill_connect -> (input_open_device, input_unregister_handle, kmalloc_trace, input_register_handle, kfree)
+rfkill_disconnect -> (input_unregister_handle, input_close_device, kfree)
+rfkill_event -> (rfkill_schedule_global_op, rfkill_schedule_toggle)
+rfkill_handler_exit -> (cancel_delayed_work_sync, rfkill_connect, delayed_work_timer_fn, rfkill_event, rfkill_op_handler, input_unregister_handler, rfkill_start, rfkill_disconnect)
+rfkill_handler_init -> (rfkill_connect, input_register_handler, rfkill_event, rfkill_start, rfkill_disconnect)
+rfkill_op_handler -> (rfkill_epo, rfkill_switch_all, _raw_spin_lock_irq, __warn_printk, _raw_spin_unlock_irq, rfkill_restore_states, rfkill_is_epo_lock_active, rfkill_remove_epo_lock, rfkill_get_global_sw_state)
+rfkill_schedule_global_op -> (delayed_work_timer_fn, _raw_spin_lock_irqsave, rfkill_op_handler, _raw_spin_unlock_irqrestore, rfkill_is_epo_lock_active, mod_delayed_work_on, queue_delayed_work_on)
+rfkill_schedule_toggle -> (delayed_work_timer_fn, _raw_spin_lock_irqsave, rfkill_op_handler, _raw_spin_unlock_irqrestore, rfkill_is_epo_lock_active, queue_delayed_work_on)
+rfkill_start -> (rfkill_schedule_global_op, _raw_spin_lock_irq, _raw_spin_unlock_irq)

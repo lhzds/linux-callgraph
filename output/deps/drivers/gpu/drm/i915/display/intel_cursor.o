@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/display/intel_cursor.o
+i845_check_cursor -> (__warn_printk, __drm_dev_dbg, intel_check_cursor, dev_driver_string)
+i845_cursor_disable_arm -> (i845_cursor_update_arm)
+i845_cursor_get_hw_state -> (intel_display_power_put_unchecked, intel_display_power_get_if_enabled)
+i845_cursor_update_arm -> (__probestub_i915_reg_rw, __traceiter_i915_reg_rw, __SCT__tp_func_i915_reg_rw)
+i9xx_check_cursor -> (__warn_printk, __drm_dev_dbg, intel_check_cursor, dev_driver_string)
+i9xx_cursor_disable_arm -> (i9xx_cursor_update_arm)
+i9xx_cursor_get_hw_state -> (intel_display_power_put_unchecked, intel_display_power_get_if_enabled)
+i9xx_cursor_update_arm -> (__traceiter_i915_reg_rw, skl_write_cursor_wm, intel_psr2_disable_plane_sel_fetch_arm, intel_psr2_program_plane_sel_fetch_arm, __probestub_i915_reg_rw, __SCT__tp_func_i915_reg_rw)
+intel_check_cursor -> (__drm_dev_dbg, intel_plane_check_src_coordinates, intel_plane_compute_aligned_offset, intel_atomic_plane_check_clipping, intel_add_fb_offsets, intel_plane_compute_gtt)
+intel_cursor_format_mod_supported -> (intel_fb_plane_supports_modifier)
+intel_cursor_plane_create -> (i9xx_check_cursor, i9xx_cursor_disable_arm, intel_plane_duplicate_state, i9xx_cursor_max_stride, i845_cursor_get_hw_state, i845_cursor_update_arm, intel_plane_helper_add, intel_cursor_format_mod_supported, intel_fb_plane_get_modifiers, intel_plane_free, i9xx_cursor_update_arm, intel_plane_destroy, i845_check_cursor, intel_plane_alloc, i845_cursor_disable_arm, intel_legacy_cursor_update, i9xx_cursor_get_hw_state, drm_plane_create_zpos_immutable_property, drm_atomic_helper_disable_plane, intel_plane_destroy_state, drm_universal_plane_init, drm_plane_create_rotation_property, drm_plane_enable_fb_damage_clips, i845_cursor_max_stride, kfree)
+intel_legacy_cursor_update -> (__intel_fb_flush, intel_plane_destroy_state, intel_plane_atomic_check_with_state, intel_plane_update_arm, drm_atomic_helper_update_plane, intel_plane_disable_arm, try_wait_for_completion, intel_frontbuffer_track, intel_plane_copy_uapi_to_hw_state, intel_plane_pin_fb, intel_plane_update_noarm, intel_crtc_destroy_state, intel_plane_unpin_fb, drm_atomic_set_fb_for_plane, intel_plane_duplicate_state, intel_crtc_duplicate_state)

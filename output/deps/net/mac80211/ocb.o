@@ -1,0 +1,7 @@
+net/mac80211/ocb.o
+ieee80211_ocb_housekeeping_timer -> (wiphy_work_queue)
+ieee80211_ocb_join -> (wiphy_work_queue, mutex_lock, mutex_unlock, ieee80211_link_use_channel, netif_carrier_on, ieee80211_bss_info_change_notify)
+ieee80211_ocb_leave -> (_raw_spin_lock_bh, netif_carrier_off, mutex_lock, __sta_info_flush, mutex_unlock, sta_info_free, ieee80211_link_release_channel, skb_queue_purge, timer_delete_sync, _raw_spin_unlock_bh, ieee80211_bss_info_change_notify)
+ieee80211_ocb_rx_no_sta -> (wiphy_work_queue, _printk, _raw_spin_unlock, _raw_spin_lock, sta_info_alloc, net_ratelimit, __rcu_read_lock, __rcu_read_unlock, ieee80211_mandatory_rates)
+ieee80211_ocb_setup_sdata -> (init_timer_key, ieee80211_ocb_housekeeping_timer)
+ieee80211_ocb_work -> (_raw_spin_lock_bh, mutex_lock, sta_info_get, rate_control_rate_init, ieee80211_sta_expire, mutex_unlock, round_jiffies, mod_timer, sta_info_insert_rcu, __rcu_read_unlock, _raw_spin_unlock_bh, sta_info_move_state)

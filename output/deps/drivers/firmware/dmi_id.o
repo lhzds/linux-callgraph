@@ -1,0 +1,7 @@
+drivers/firmware/dmi_id.o
+dmi_dev_uevent -> (get_modalias, add_uevent_var)
+dmi_id_init -> (put_device, device_register, kmalloc_trace, dmi_dev_uevent, kfree, dmi_id_init_attr_table, dev_set_name, class_unregister, class_register)
+dmi_id_init_attr_table -> (dmi_get_system_info, sys_dmi_modalias_show, sys_dmi_field_show)
+get_modalias -> (dmi_get_system_info, strlen, scnprintf, kfree, __kmalloc)
+sys_dmi_field_show -> (dmi_get_system_info, scnprintf)
+sys_dmi_modalias_show -> (get_modalias)

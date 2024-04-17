@@ -1,0 +1,4 @@
+kernel/utsname_sysctl.o
+proc_do_uts_string -> (down_write, up_write, proc_dostring, down_read, up_read, proc_sys_poll_notify, add_device_randomness)
+uts_proc_notify -> (proc_do_uts_string, proc_sys_poll_notify)
+utsname_sysctl_init -> (proc_do_uts_string, register_sysctl)

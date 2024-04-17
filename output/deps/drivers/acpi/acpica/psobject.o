@@ -1,0 +1,5 @@
+drivers/acpi/acpica/psobject.o
+acpi_ps_build_named_op -> (acpi_ps_next_parse_state, acpi_ps_get_next_arg, acpi_ps_append_arg, acpi_exception)
+acpi_ps_complete_final_op -> (acpi_ps_has_completed_scope, acpi_ps_pop_scope, acpi_ps_next_parse_state, acpi_ps_complete_this_op, acpi_ps_get_opcode_info)
+acpi_ps_complete_op -> (acpi_ps_has_completed_scope, acpi_ns_delete_children, acpi_ut_delete_generic_state, acpi_ps_delete_parse_tree, acpi_ut_pop_generic_state, acpi_info, acpi_ps_pop_scope, acpi_ps_next_parse_state, acpi_ps_complete_this_op, acpi_ps_get_opcode_info, acpi_ns_remove_node)
+acpi_ps_create_op -> (acpi_ps_peek_opcode, acpi_ps_get_argument_count, acpi_ps_free_op, acpi_ps_get_opcode_size, acpi_ps_alloc_op, acpi_ps_build_named_op, acpi_ps_append_arg, acpi_error, acpi_ps_get_parent_scope, acpi_ps_next_parse_state, acpi_ps_get_opcode_info)

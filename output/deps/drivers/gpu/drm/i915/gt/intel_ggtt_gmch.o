@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/gt/intel_ggtt_gmch.o
+gmch_ggtt_clear_range -> (intel_gmch_gtt_clear_range)
+gmch_ggtt_insert_entries -> (intel_gmch_gtt_insert_sg_entries)
+gmch_ggtt_insert_page -> (intel_gmch_gtt_insert_page)
+gmch_ggtt_invalidate -> (intel_gmch_gtt_flush)
+gmch_ggtt_remove -> (intel_gmch_remove)
+intel_ggtt_gmch_enable_hw -> (intel_gmch_enable_gtt)
+intel_ggtt_gmch_flush -> (intel_gmch_gtt_flush)
+intel_ggtt_gmch_probe -> (intel_ggtt_unbind_vma, intel_gmch_gtt_get, gmch_ggtt_insert_page, i915_vtd_active, gmch_ggtt_clear_range, gmch_ggtt_invalidate, _dev_err, _dev_notice, alloc_pt_dma, gmch_ggtt_insert_entries, gmch_ggtt_remove, intel_gmch_probe, intel_ggtt_bind_vma)

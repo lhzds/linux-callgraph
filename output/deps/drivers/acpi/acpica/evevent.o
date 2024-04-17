@@ -1,0 +1,5 @@
+drivers/acpi/acpica/evevent.o
+acpi_any_fixed_event_status_set -> (acpi_hw_register_read)
+acpi_ev_fixed_event_detect -> (acpi_ut_get_event_name, acpi_write_bit_register, acpi_hw_register_read, acpi_error)
+acpi_ev_initialize_events -> (acpi_write_bit_register, acpi_ev_gpe_initialize, acpi_exception)
+acpi_ev_install_xrupt_handlers -> (acpi_ev_install_sci_handler, acpi_ev_init_global_lock_handler, acpi_exception)

@@ -1,0 +1,2 @@
+arch/x86/mm/hugetlbpage.o
+hugetlb_get_unmapped_area -> (mmap_address_hint_valid, arch_get_unmapped_area, get_mmap_base, task_size_32bit, task_size_64bit, find_vma, vm_unmapped_area)

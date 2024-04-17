@@ -1,0 +1,8 @@
+arch/x86/mm/cpu_entry_area.o
+cea_map_percpu_pages -> (cea_set_pte, per_cpu_ptr_to_phys)
+cea_set_pte -> (set_pte_vaddr)
+init_cea_offsets -> (get_random_u32)
+percpu_setup_debug_store -> (set_pte_vaddr, cea_map_percpu_pages, get_cpu_entry_area)
+percpu_setup_exception_stacks -> (cea_map_percpu_pages, get_cpu_entry_area)
+setup_cpu_entry_area -> (percpu_setup_debug_store, cea_set_pte, per_cpu_ptr_to_phys, get_cpu_entry_area, percpu_setup_exception_stacks, cea_map_percpu_pages)
+setup_cpu_entry_areas -> (setup_cpu_entry_area, init_cea_offsets)

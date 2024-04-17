@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_ioc32.o
+compat_drm_getclient -> (drm_ioctl_kernel, _copy_to_user, drm_getclient, _copy_from_user)
+compat_drm_getunique -> (drm_getunique, drm_ioctl_kernel, _copy_to_user, _copy_from_user)
+compat_drm_mode_addfb2 -> (drm_ioctl_kernel, drm_mode_addfb2, _copy_from_user)
+compat_drm_version -> (drm_version, drm_ioctl_kernel, _copy_to_user, _copy_from_user)
+compat_drm_wait_vblank -> (drm_ioctl_kernel, _copy_to_user, drm_wait_vblank_ioctl, _copy_from_user)
+drm_compat_ioctl -> (__drm_dev_dbg, compat_drm_getstats, compat_drm_getclient, compat_drm_getunique, compat_drm_update_draw, compat_drm_setunique, compat_drm_wait_vblank, compat_drm_version, compat_drm_mode_addfb2, drm_ioctl)

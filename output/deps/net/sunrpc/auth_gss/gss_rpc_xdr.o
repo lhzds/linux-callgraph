@@ -1,0 +1,9 @@
+net/sunrpc/auth_gss/gss_rpc_xdr.o
+dummy_dec_opt_array -> (xdr_inline_decode)
+gssx_dec_accept_sec_context -> (gssx_dec_option_array, gssx_dec_name, gssx_dec_buffer, kmemdup, dummy_dec_opt_array, __free_pages, xdr_inline_decode, alloc_pages)
+gssx_dec_buffer -> (kmemdup, xdr_inline_decode)
+gssx_dec_name -> (kmemdup, xdr_inline_decode, dummy_dec_opt_array)
+gssx_dec_option_array -> (bcmp, groups_free, groups_alloc, groups_sort, kmalloc_trace, kfree, xdr_inline_decode)
+gssx_enc_accept_sec_context -> (xdr_inline_pages, gssx_enc_cb, xdr_encode_opaque, xdr_reserve_space, gssx_enc_name, xdr_write_pages)
+gssx_enc_cb -> (xdr_reserve_space, xdr_encode_opaque)
+gssx_enc_name -> (xdr_reserve_space, xdr_encode_opaque)

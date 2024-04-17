@@ -1,0 +1,7 @@
+drivers/usb/core/quirks.o
+quirks_param_set -> (kstrdup, mutex_lock, param_set_copystring, mutex_unlock, strsep, kstrtou16, kfree, __kmalloc)
+usb_detect_interface_quirks -> (usb_detect_static_quirks)
+usb_detect_quirks -> (mutex_unlock, mutex_lock, usb_detect_static_quirks)
+usb_detect_static_quirks -> (usb_match_device, usb_match_one_id_intf)
+usb_endpoint_is_ignored -> (usb_match_device, usb_match_one_id_intf)
+usb_release_quirk_list -> (mutex_lock, kfree, mutex_unlock)

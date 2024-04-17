@@ -1,0 +1,3 @@
+net/unix/sysctl_net_unix.o
+unix_sysctl_register -> (kmemdup, register_net_sysctl, kfree, proc_dointvec)
+unix_sysctl_unregister -> (kfree, unregister_net_sysctl_table)

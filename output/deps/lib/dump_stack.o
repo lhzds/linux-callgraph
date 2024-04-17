@@ -1,0 +1,6 @@
+lib/dump_stack.o
+dump_stack -> (dump_stack_lvl)
+dump_stack_lvl -> (show_stack, dump_stack_print_info, __printk_cpu_sync_wait, __printk_cpu_sync_put, __printk_cpu_sync_try_get)
+dump_stack_print_info -> (print_stop_info, _printk, strcspn, print_tainted, print_worker_info, kexec_crash_loaded)
+dump_stack_set_arch_desc -> (vsnprintf)
+show_regs_print_info -> (dump_stack_print_info)

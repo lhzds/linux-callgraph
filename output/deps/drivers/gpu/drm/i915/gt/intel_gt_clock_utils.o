@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gt/intel_gt_clock_utils.o
+intel_gt_init_clock_frequency -> (__warn_printk)

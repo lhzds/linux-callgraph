@@ -1,0 +1,6 @@
+net/sunrpc/socklib.o
+csum_partial_copy_to_xdr -> (netdev_rx_csum_fault, xdr_skb_read_bits, csum_partial, skb_checksum, xdr_skb_read_and_csum_bits, xdr_partial_copy_from_skb)
+xdr_partial_copy_from_skb -> (alloc_pages)
+xdr_skb_read_and_csum_bits -> (skb_copy_and_csum_bits)
+xdr_skb_read_bits -> (skb_copy_bits)
+xprt_sock_sendmsg -> (iov_iter_kvec, xdr_buf_pagecount, iov_iter_advance, sock_sendmsg, iov_iter_bvec)

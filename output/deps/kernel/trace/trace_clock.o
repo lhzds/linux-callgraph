@@ -1,0 +1,5 @@
+kernel/trace/trace_clock.o
+trace_clock -> (local_clock)
+trace_clock_global -> (sched_clock_cpu)
+trace_clock_jiffies -> (jiffies_64_to_clock_t)
+trace_clock_local -> (sched_clock)

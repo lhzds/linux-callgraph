@@ -1,0 +1,9 @@
+drivers/firmware/efi/earlycon.o
+efi_earlycon_map -> (pgprot_writecombine, early_memremap_prot)
+efi_earlycon_remap_fb -> (console_list_lock, memremap, console_list_unlock)
+efi_earlycon_reprobe -> (setup_earlycon)
+efi_earlycon_scroll_up -> (efi_earlycon_unmap, efi_earlycon_map)
+efi_earlycon_setup -> (efi_earlycon_write, efi_earlycon_scroll_up, get_default_font, strcmp)
+efi_earlycon_unmap -> (early_memunmap)
+efi_earlycon_unmap_fb -> (console_list_lock, memunmap, console_list_unlock)
+efi_earlycon_write -> (efi_earlycon_unmap, efi_earlycon_scroll_up, strnchrnul, efi_earlycon_map)

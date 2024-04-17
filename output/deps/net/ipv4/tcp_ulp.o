@@ -1,0 +1,5 @@
+net/ipv4/tcp_ulp.o
+tcp_get_available_ulp -> (__rcu_read_unlock, snprintf, __rcu_read_lock)
+tcp_register_ulp -> (_raw_spin_lock, strcmp, _raw_spin_unlock)
+tcp_set_ulp -> (capable, strcmp, __request_module, __rcu_read_lock, __rcu_read_unlock)
+tcp_unregister_ulp -> (synchronize_rcu, _raw_spin_lock, _raw_spin_unlock)

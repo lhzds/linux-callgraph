@@ -1,0 +1,12 @@
+drivers/usb/core/endpoint.o
+bEndpointAddress_show -> (sprintf)
+bInterval_show -> (sprintf)
+bLength_show -> (sprintf)
+bmAttributes_show -> (sprintf)
+direction_show -> (sprintf)
+ep_device_release -> (kfree)
+interval_show -> (sprintf, usb_decode_interval)
+type_show -> (sprintf)
+usb_create_ep_devs -> (put_device, device_register, ep_device_release, type_show, kmalloc_trace, interval_show, bInterval_show, direction_show, dev_set_name, wMaxPacketSize_show, bLength_show, bmAttributes_show, bEndpointAddress_show)
+usb_remove_ep_devs -> (device_unregister)
+wMaxPacketSize_show -> (sprintf)

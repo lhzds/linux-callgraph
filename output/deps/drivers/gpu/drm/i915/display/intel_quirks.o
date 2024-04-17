@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/display/intel_quirks.o
+intel_dmi_no_pps_backlight -> (_printk)
+intel_dmi_reverse_brightness -> (_printk)
+intel_init_quirks -> (_dev_info, intel_dmi_no_pps_backlight, quirk_backlight_present, quirk_increase_ddi_disabled_time, dmi_check_system, quirk_ssc_force_disable, intel_dmi_reverse_brightness, quirk_invert_brightness, quirk_increase_t12_delay)
+quirk_backlight_present -> (_dev_info)
+quirk_increase_ddi_disabled_time -> (_dev_info)
+quirk_increase_t12_delay -> (_dev_info)
+quirk_invert_brightness -> (_dev_info)
+quirk_ssc_force_disable -> (_dev_info)

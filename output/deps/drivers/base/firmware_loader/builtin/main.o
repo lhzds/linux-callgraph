@@ -1,0 +1,3 @@
+drivers/base/firmware_loader/builtin/main.o
+firmware_request_builtin -> (strcmp)
+firmware_request_builtin_buf -> (strcmp)

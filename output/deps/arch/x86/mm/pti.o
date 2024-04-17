@@ -1,0 +1,11 @@
+arch/x86/mm/pti.o
+pti_check_boottime_disable -> (_printk, cmdline_find_option, bcmp, cpu_mitigations_off, cmdline_find_option_bool)
+pti_clone_p4d -> (pti_user_pagetable_walk_p4d)
+pti_clone_pgtable -> (pti_user_pagetable_walk_pmd)
+pti_clone_user_shared -> (per_cpu_ptr_to_phys, pti_clone_p4d, pti_user_pagetable_walk_pte)
+pti_finalize -> (set_memory_global, pti_clone_pgtable, ptdump_walk_user_pgd_level_checkwx)
+pti_init -> (pti_clone_user_shared, _printk, pti_clone_pgtable, set_memory_nonglobal, pti_clone_p4d, pti_setup_vsyscall)
+pti_setup_vsyscall -> (lookup_address, set_vsyscall_pgtable_user_bits, pti_user_pagetable_walk_pte)
+pti_user_pagetable_walk_p4d -> (__warn_printk, __get_free_pages)
+pti_user_pagetable_walk_pmd -> (pti_user_pagetable_walk_p4d, __get_free_pages)
+pti_user_pagetable_walk_pte -> (__warn_printk, __get_free_pages, pti_user_pagetable_walk_pmd)

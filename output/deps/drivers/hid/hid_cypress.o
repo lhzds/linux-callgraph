@@ -1,0 +1,6 @@
+drivers/hid/hid_cypress.o
+cp_driver_exit -> (cp_report_fixup, cp_event, cp_probe, cp_input_mapped, hid_unregister_driver)
+cp_driver_init -> (__hid_register_driver, cp_report_fixup, cp_event, cp_probe, cp_input_mapped)
+cp_event -> (input_event)
+cp_probe -> (_dev_err, hid_hw_start, hid_open_report)
+cp_report_fixup -> (_dev_info)

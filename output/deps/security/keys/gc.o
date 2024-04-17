@@ -1,0 +1,7 @@
+security/keys/gc.o
+key_garbage_collector -> (rb_next, _raw_spin_lock, key_garbage_collector, keyring_describe, keyring_free_preparse, _raw_spin_unlock, synchronize_rcu, rb_first, keyring_destroy, wake_up_bit, keyring_gc, keyring_revoke, keyring_preparse, __SCT__cond_resched, keyring_restriction_gc, mod_timer, ktime_get_real_seconds, keyring_read, down_write, key_gc_unused_keys, up_write, keyring_instantiate, key_gc_timer_func, queue_work_on, rb_erase)
+key_gc_keytype -> (__SCT__might_resched, bit_wait, queue_work_on, key_garbage_collector, out_of_line_wait_on_bit)
+key_gc_timer_func -> (queue_work_on, key_garbage_collector)
+key_gc_unused_keys -> (kmem_cache_free, _raw_spin_unlock, _raw_spin_lock, security_key_free, key_user_put, key_put_tag, kfree)
+key_schedule_gc -> (key_gc_timer_func, queue_work_on, key_garbage_collector, mod_timer, ktime_get_real_seconds)
+key_schedule_gc_links -> (queue_work_on, key_garbage_collector)

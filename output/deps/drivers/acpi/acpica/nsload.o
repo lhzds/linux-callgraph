@@ -1,0 +1,2 @@
+drivers/acpi/acpica/nsload.o
+acpi_ns_load_table -> (acpi_ds_initialize_objects, acpi_ns_delete_namespace_by_owner, acpi_ns_parse_table, acpi_tb_release_owner_id, acpi_ex_exit_interpreter, acpi_ex_enter_interpreter, acpi_tb_set_table_loaded_flag, acpi_tb_is_table_loaded, acpi_tb_allocate_owner_id)

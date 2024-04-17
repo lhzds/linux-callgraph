@@ -1,0 +1,4 @@
+sound/sound_core.o
+cleanup_soundcore -> (sound_devnode, class_unregister)
+init_soundcore -> (sound_devnode, class_register)
+sound_devnode -> (kasprintf)

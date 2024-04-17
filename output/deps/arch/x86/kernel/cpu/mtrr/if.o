@@ -1,0 +1,7 @@
+arch/x86/kernel/cpu/mtrr/if.o
+mtrr_close -> (single_release, mtrr_del, kfree)
+mtrr_if_init -> (mtrr_ioctl, seq_read, mtrr_open, proc_create, mtrr_write, seq_lseek, mtrr_close)
+mtrr_ioctl -> (_copy_from_user, mtrr_add_page, mtrr_del_page, mtrr_add, mtrr_del, _copy_to_user, __kmalloc)
+mtrr_open -> (capable, mtrr_seq_show, single_open)
+mtrr_seq_show -> (seq_printf)
+mtrr_write -> (bcmp, strlen, mtrr_add_page, simple_strtoul, match_string, strncmp, mtrr_del_page, strncpy_from_user, skip_spaces, simple_strtoull)

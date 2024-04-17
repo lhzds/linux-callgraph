@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/display/intel_global_state.o
+intel_atomic_clear_global_state -> (refcount_warn_saturate)
+intel_atomic_get_global_obj_state -> (refcount_warn_saturate, __drm_dev_dbg, __warn_printk, krealloc, dev_driver_string)
+intel_atomic_global_obj_cleanup -> (refcount_warn_saturate, __warn_printk, dev_driver_string)
+intel_atomic_lock_global_state -> (drm_modeset_lock)
+intel_atomic_serialize_global_state -> (intel_atomic_get_crtc_state)
+intel_atomic_swap_global_state -> (refcount_warn_saturate, __warn_printk, dev_driver_string)

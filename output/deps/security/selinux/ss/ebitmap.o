@@ -1,0 +1,11 @@
+security/selinux/ss/ebitmap.o
+ebitmap_and -> (_find_first_bit, ebitmap_set_bit, _find_next_bit)
+ebitmap_cache_init -> (kmem_cache_create)
+ebitmap_cmp -> (bcmp)
+ebitmap_cpy -> (kmem_cache_alloc, kmem_cache_free)
+ebitmap_destroy -> (kmem_cache_free)
+ebitmap_netlbl_export -> (kfree, netlbl_catmap_setlong)
+ebitmap_netlbl_import -> (kmem_cache_alloc, netlbl_catmap_getlong, kmem_cache_free)
+ebitmap_read -> (kmem_cache_alloc, _printk, kmem_cache_free)
+ebitmap_set_bit -> (kmem_cache_alloc, _find_first_bit, kmem_cache_free)
+ebitmap_write -> (_find_first_bit, _find_next_bit)

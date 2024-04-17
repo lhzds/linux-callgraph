@@ -1,0 +1,8 @@
+fs/ext4/dir.o
+__ext4_check_dir_entry -> (__ext4_error_file, __ext4_error_inode)
+ext4_check_all_de -> (__ext4_check_dir_entry)
+ext4_dir_llseek -> (generic_file_llseek_size, ext4_llseek)
+ext4_htree_free_dir_info -> (kfree, rb_next_postorder, rb_first_postorder)
+ext4_htree_store_dirent -> (rb_insert_color, __kmalloc)
+ext4_readdir -> (rb_next, ext4_read_inline_dir, inode_query_iversion, __ext4_check_dir_entry, kmalloc_trace, rb_first, ext4_bread, __brelse, down_read, __SCT__cond_resched, rb_first_postorder, page_cache_sync_ra, __ext4_msg, __ext4_error_file, ext4_dirblock_csum_verify, up_read, ext4_htree_fill_tree, rb_next_postorder, kfree, ext4_map_blocks)
+ext4_release_dir -> (kfree, rb_next_postorder, rb_first_postorder)

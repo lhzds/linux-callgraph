@@ -1,0 +1,8 @@
+drivers/acpi/acpica/utcopy.o
+acpi_ut_copy_eobject_to_iobject -> (acpi_ut_get_type_name, acpi_ut_create_package_object, acpi_error, acpi_ut_remove_reference, acpi_ut_copy_eobject_to_iobject, acpi_ut_create_internal_object_dbg, __kmalloc)
+acpi_ut_copy_ielement_to_eelement -> (acpi_ut_copy_isimple_to_esimple)
+acpi_ut_copy_ielement_to_ielement -> (acpi_ut_remove_reference, acpi_ut_copy_simple_object, acpi_ut_create_internal_object_dbg, acpi_ut_create_package_object)
+acpi_ut_copy_iobject_to_eobject -> (acpi_ut_copy_isimple_to_esimple, acpi_ut_copy_ielement_to_eelement, acpi_ut_walk_package_tree)
+acpi_ut_copy_iobject_to_iobject -> (acpi_ut_walk_package_tree, acpi_error, acpi_ut_remove_reference, acpi_ut_copy_simple_object, acpi_ut_copy_ielement_to_ielement, acpi_ut_create_internal_object_dbg, __kmalloc)
+acpi_ut_copy_isimple_to_esimple -> (acpi_ut_get_type_name, acpi_error, acpi_ns_get_type)
+acpi_ut_copy_simple_object -> (acpi_os_create_semaphore, acpi_ut_add_reference, __kmalloc)

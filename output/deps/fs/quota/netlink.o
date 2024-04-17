@@ -1,0 +1,3 @@
+fs/quota/netlink.o
+quota_init -> (_printk, genl_register_family)
+quota_send_warning -> (nla_put, _printk, kfree_skb_reason, netlink_broadcast, __alloc_skb, from_kqid_munged, nla_put_64bit, genlmsg_put)

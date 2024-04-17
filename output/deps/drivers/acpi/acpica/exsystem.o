@@ -1,0 +1,8 @@
+drivers/acpi/acpica/exsystem.o
+acpi_ex_system_do_sleep -> (acpi_os_sleep, acpi_ex_exit_interpreter, acpi_ex_enter_interpreter)
+acpi_ex_system_do_stall -> (acpi_warning, acpi_os_stall, acpi_error)
+acpi_ex_system_reset_event -> (acpi_os_create_semaphore, acpi_os_delete_semaphore)
+acpi_ex_system_signal_event -> (acpi_os_signal_semaphore)
+acpi_ex_system_wait_event -> (acpi_ex_exit_interpreter, acpi_os_wait_semaphore, acpi_ex_enter_interpreter)
+acpi_ex_system_wait_mutex -> (acpi_ex_exit_interpreter, acpi_os_wait_semaphore, acpi_ex_enter_interpreter)
+acpi_ex_system_wait_semaphore -> (acpi_ex_exit_interpreter, acpi_os_wait_semaphore, acpi_ex_enter_interpreter)

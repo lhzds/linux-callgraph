@@ -1,0 +1,13 @@
+drivers/cpufreq/cpufreq_governor.o
+cpufreq_dbs_data_release -> (kfree)
+cpufreq_dbs_governor_exit -> (mutex_lock, have_governor_per_policy, gov_attr_set_put, mutex_unlock)
+cpufreq_dbs_governor_init -> (governor_store, _printk, have_governor_per_policy, mutex_lock, cpufreq_dbs_data_release, __mutex_init, mutex_unlock, get_governor_parent_kobj, kmalloc_trace, kobject_put, gov_attr_set_init, dbs_irq_work, gov_attr_set_get, kobject_init_and_add, cpufreq_policy_transition_delay_us, kfree, dbs_work_handler, governor_show)
+cpufreq_dbs_governor_limits -> (__cpufreq_driver_target, mutex_lock, mutex_unlock)
+cpufreq_dbs_governor_start -> (cpufreq_add_update_util_hook, dbs_update_util_handler, get_cpu_idle_time)
+cpufreq_dbs_governor_stop -> (synchronize_rcu, irq_work_sync, cpufreq_remove_update_util_hook, cancel_work_sync)
+dbs_irq_work -> (queue_work_on)
+dbs_update -> (get_cpu_idle_time)
+dbs_update_util_handler -> (cpufreq_this_cpu_can_update, irq_work_queue)
+dbs_work_handler -> (mutex_unlock, mutex_lock)
+gov_update_cpu_data -> (get_cpu_idle_time)
+sampling_rate_store -> (mutex_unlock, mutex_lock, sscanf)

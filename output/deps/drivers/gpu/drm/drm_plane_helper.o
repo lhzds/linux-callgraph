@@ -1,0 +1,6 @@
+drivers/gpu/drm/drm_plane_helper.o
+drm_plane_helper_atomic_check -> (drm_atomic_helper_check_plane_state)
+drm_plane_helper_destroy -> (kfree, drm_plane_cleanup)
+drm_plane_helper_disable_primary -> (__warn_printk, dev_driver_string)
+drm_plane_helper_update_primary -> (__kmalloc, __warn_printk, get_connectors_for_crtc, kfree, drm_atomic_helper_check_plane_state, dev_driver_string)
+get_connectors_for_crtc -> (drm_connector_list_iter_next, drm_connector_list_iter_begin, drm_connector_list_iter_end, mutex_is_locked)

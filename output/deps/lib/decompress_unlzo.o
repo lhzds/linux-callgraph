@@ -1,0 +1,2 @@
+lib/decompress_unlzo.o
+unlzo -> (parse_header, kfree, kmalloc_large, lzo1x_decompress_safe)

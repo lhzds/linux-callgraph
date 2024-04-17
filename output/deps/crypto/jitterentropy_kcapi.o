@@ -1,0 +1,11 @@
+crypto/jitterentropy_kcapi.o
+jent_get_nstime -> (ktime_get)
+jent_hash_time -> (___ratelimit, _printk, crypto_shash_finup, crypto_shash_update)
+jent_kcapi_cleanup -> (_raw_spin_unlock, _raw_spin_lock, jent_entropy_collector_free, kfree, crypto_destroy_tfm)
+jent_kcapi_init -> (_printk, jent_kcapi_cleanup, jent_entropy_collector_alloc, crypto_alloc_shash, __kmalloc)
+jent_kcapi_random -> (_printk, _raw_spin_unlock, _raw_spin_lock, ___ratelimit, jent_read_entropy)
+jent_mod_exit -> (jent_kcapi_random, crypto_unregister_rng, jent_kcapi_cleanup, jent_kcapi_reset, jent_kcapi_init)
+jent_mod_init -> (_printk, jent_entropy_init, jent_kcapi_random, jent_kcapi_cleanup, crypto_register_rng, jent_kcapi_reset, crypto_alloc_shash, jent_kcapi_init, crypto_destroy_tfm)
+jent_read_random_block -> (crypto_shash_final, crypto_shash_update)
+jent_zalloc -> (__kmalloc)
+jent_zfree -> (kfree_sensitive)

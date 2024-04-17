@@ -1,0 +1,4 @@
+drivers/pcmcia/cardbus.o
+cardbus_config_irq_and_cls -> (pci_read_config_byte, cardbus_config_irq_and_cls, pci_set_cacheline_size, pci_write_config_byte)
+cb_alloc -> (pci_bus_add_devices, pci_scan_slot, pci_unlock_rescan_remove, pci_bus_size_bridges, pci_lock_rescan_remove, pci_scan_bridge, cardbus_config_irq_and_cls, pci_bus_assign_resources, pci_fixup_cardbus)
+cb_free -> (pci_unlock_rescan_remove, pci_stop_and_remove_bus_device, pci_lock_rescan_remove)

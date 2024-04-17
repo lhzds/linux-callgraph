@@ -1,0 +1,4 @@
+crypto/scatterwalk.o
+scatterwalk_copychunks -> (sg_next)
+scatterwalk_ffwd -> (sg_init_table, sg_next)
+scatterwalk_map_and_copy -> (sg_init_table, sg_next)

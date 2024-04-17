@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/gem/i915_gem_region.o
+__i915_gem_object_create_region -> (__SCT__tp_func_i915_gem_object_create, __traceiter_i915_gem_object_create, i915_gem_object_free, i915_gem_object_alloc, __probestub_i915_gem_object_create)
+i915_gem_object_create_region -> (__i915_gem_object_create_region)
+i915_gem_object_create_region_at -> (__i915_gem_object_create_region)
+i915_gem_object_init_memory_region -> (mutex_unlock, mutex_lock)
+i915_gem_object_release_memory_region -> (mutex_unlock, mutex_lock)
+i915_gem_process_region -> (mutex_lock, refcount_warn_saturate, mutex_unlock, i915_gem_ww_ctx_fini, drm_gem_object_free, i915_gem_ww_ctx_init, i915_gem_ww_ctx_backoff, ww_mutex_lock, ww_mutex_lock_interruptible)

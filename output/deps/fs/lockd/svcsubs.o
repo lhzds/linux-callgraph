@@ -1,0 +1,10 @@
+fs/lockd/svcsubs.o
+nlm_lookup_file -> (mutex_lock, bcmp, __mutex_init, mutex_unlock, kmalloc_trace, kfree)
+nlm_release_file -> (_printk, mutex_lock, nlmsvc_grant_deferred, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, nlmsvc_put_owner, nlmsvc_get_owner, kfree, nlmsvc_notify_blocked)
+nlm_traverse_files -> (_printk, mutex_lock, nlmsvc_grant_deferred, _raw_spin_unlock, locks_init_lock, _raw_spin_lock, mutex_unlock, nlmsvc_put_owner, nlmsvc_traverse_blocks, nlmsvc_traverse_shares, nlmsvc_get_owner, vfs_lock_file, kfree, nlmsvc_notify_blocked)
+nlmsvc_free_host_resources -> (_printk, nlm_traverse_files, nlmsvc_same_host)
+nlmsvc_invalidate_all -> (nlmsvc_is_client, nlm_traverse_files)
+nlmsvc_mark_resources -> (nlm_traverse_files, nlmsvc_mark_host)
+nlmsvc_match_ip -> (__ipv6_addr_type)
+nlmsvc_unlock_all_by_ip -> (nlm_traverse_files, nlmsvc_match_ip)
+nlmsvc_unlock_all_by_sb -> (nlm_traverse_files, nlmsvc_always_match, nlmsvc_match_sb)

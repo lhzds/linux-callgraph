@@ -1,0 +1,6 @@
+net/netlink/policy.o
+__netlink_policy_dump_write_attr -> (nla_put, nla_get_range_unsigned, netlink_policy_dump_get_policy_idx, nla_put_64bit, nla_get_range_signed, skb_trim)
+netlink_policy_dump_add_policy -> (kmalloc_trace, kfree, krealloc)
+netlink_policy_dump_free -> (kfree)
+netlink_policy_dump_write -> (nla_put, __netlink_policy_dump_write_attr, skb_trim)
+netlink_policy_dump_write_attr -> (__netlink_policy_dump_write_attr)

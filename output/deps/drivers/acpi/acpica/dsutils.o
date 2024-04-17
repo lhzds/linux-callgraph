@@ -1,0 +1,10 @@
+drivers/acpi/acpica/dsutils.o
+acpi_ds_clear_implicit_return -> (acpi_ut_remove_reference)
+acpi_ds_clear_operands -> (acpi_ut_remove_reference)
+acpi_ds_create_operand -> (acpi_ns_lookup, acpi_ut_create_internal_object_dbg, acpi_ut_prefixed_namespace_error, acpi_ut_delete_object_desc, acpi_exception, acpi_ds_obj_stack_push, acpi_ds_result_pop, acpi_ps_get_opcode_info, kfree, acpi_ex_get_name_string, acpi_ds_init_object_from_op)
+acpi_ds_create_operands -> (acpi_exception, acpi_ds_obj_stack_pop_and_delete, acpi_ds_create_operand)
+acpi_ds_delete_result_if_not_used -> (acpi_ds_result_pop, acpi_ut_remove_reference, acpi_ds_is_result_used, acpi_error)
+acpi_ds_do_implicit_return -> (acpi_ut_remove_reference, acpi_ut_add_reference)
+acpi_ds_evaluate_name_path -> (acpi_ds_result_push, acpi_ds_obj_stack_pop, acpi_ex_resolve_to_value, acpi_ut_copy_iobject_to_iobject, acpi_ut_remove_reference, acpi_ds_create_operand)
+acpi_ds_is_result_used -> (acpi_ut_remove_reference, acpi_ps_get_opcode_info, acpi_ut_add_reference, acpi_error)
+acpi_ds_resolve_operands -> (acpi_ex_resolve_to_value)

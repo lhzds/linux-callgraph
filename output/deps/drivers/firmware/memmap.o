@@ -1,0 +1,12 @@
+drivers/firmware/memmap.o
+add_sysfs_fw_map_entry -> (kobject_put, kobject_add, kset_create_and_add)
+end_show -> (snprintf)
+firmware_map_add_early -> (memblock_alloc_try_nid, firmware_map_add_entry)
+firmware_map_add_entry -> (kobject_init, _raw_spin_unlock, type_show, _raw_spin_lock, start_show, end_show, release_firmware_map_entry, memmap_attr_show)
+firmware_map_add_hotplug -> (_raw_spin_unlock, _raw_spin_lock, add_sysfs_fw_map_entry, kmalloc_trace, firmware_map_add_entry, firmware_map_find_entry_in_list)
+firmware_map_find_entry_in_list -> (strcmp)
+firmware_map_remove -> (_raw_spin_lock, kobject_put, firmware_map_find_entry_in_list, _raw_spin_unlock)
+firmware_memmap_init -> (add_sysfs_fw_map_entry)
+release_firmware_map_entry -> (_raw_spin_lock, kfree, _raw_spin_unlock)
+start_show -> (snprintf)
+type_show -> (snprintf)

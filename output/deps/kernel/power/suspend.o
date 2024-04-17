@@ -1,0 +1,9 @@
+kernel/power/suspend.o
+mem_sleep_default_setup -> (strcmp)
+pm_suspend -> (pm_prepare_console, pm_notifier_call_chain, pm_restore_console, mutex_trylock, freeze_processes, thaw_processes, pm_notifier_call_chain_robust, __probestub_suspend_resume, ksys_sync_helper, __traceiter_suspend_resume, __const_udelay, freeze_kernel_threads, _printk, pm_restore_gfp_mask, mutex_unlock, suspend_devices_and_enter, pm_restrict_gfp_mask, __SCT__tp_func_suspend_resume, pm_debug_messages_should_print)
+s2idle_set_ops -> (unlock_system_sleep, lock_system_sleep)
+s2idle_wake -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, swake_up_one)
+suspend_devices_and_enter -> (cpus_read_unlock, finish_swait, schedule, dpm_resume_noirq, dpm_suspend_late, resume_console, arch_suspend_disable_irqs, suspend_console, cpus_read_lock, __probestub_suspend_resume, cpuidle_pause, cpuidle_resume, __traceiter_suspend_resume, _raw_spin_lock_irq, freeze_secondary_cpus, __const_udelay, suspend_test, thaw_secondary_cpus, arch_suspend_enable_irqs, _printk, trace_suspend_resume, prepare_to_swait_event, _raw_spin_unlock_irq, dpm_suspend_noirq, syscore_resume, dpm_suspend_start, wake_up_all_idle_cpus, dpm_resume_end, __SCT__tp_func_suspend_resume, pm_wakeup_pending, pm_debug_messages_should_print, dpm_resume_early, syscore_suspend)
+suspend_set_ops -> (unlock_system_sleep, lock_system_sleep)
+suspend_test -> (_printk, __const_udelay)
+trace_suspend_resume -> (__traceiter_suspend_resume, __probestub_suspend_resume, __SCT__tp_func_suspend_resume)

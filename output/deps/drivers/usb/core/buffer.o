@@ -1,0 +1,7 @@
+drivers/usb/core/buffer.o
+hcd_buffer_alloc -> (dma_alloc_attrs, dma_pool_alloc, gen_pool_dma_alloc, __kmalloc)
+hcd_buffer_alloc_pages -> (dma_alloc_attrs, gen_pool_dma_alloc_align, __get_free_pages)
+hcd_buffer_create -> (dma_pool_destroy, snprintf, dma_pool_create)
+hcd_buffer_destroy -> (dma_pool_destroy)
+hcd_buffer_free -> (dma_free_attrs, dma_pool_free, gen_pool_free_owner, kfree)
+hcd_buffer_free_pages -> (free_pages, dma_free_attrs, gen_pool_free_owner)

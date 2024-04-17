@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utcksum.o
+acpi_ut_verify_cdat_checksum -> (acpi_bios_warning)
+acpi_ut_verify_checksum -> (acpi_bios_warning)

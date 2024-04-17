@@ -1,0 +1,4 @@
+fs/binfmt_script.o
+exit_script_binfmt -> (unregister_binfmt, load_script)
+init_script_binfmt -> (__register_binfmt, load_script)
+load_script -> (remove_arg_zero, open_exec, strnchr, bprm_change_interp, copy_string_kernel)

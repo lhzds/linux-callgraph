@@ -1,0 +1,12 @@
+net/ipv4/ipmr_base.o
+mr_dump -> (__rcu_read_unlock, call_fib_notifier, __rcu_read_lock)
+mr_fill_mroute -> (nla_put, nla_reserve_nohdr, __rcu_read_lock, nla_put_64bit, __rcu_read_unlock, jiffies_to_clock_t, skb_trim)
+mr_mfc_find_any -> (rht_bucket_nested, bcmp, mr_mfc_find_any_parent)
+mr_mfc_find_any_parent -> (rht_bucket_nested, bcmp)
+mr_mfc_find_parent -> (rht_bucket_nested, bcmp)
+mr_mfc_seq_idx -> (__rcu_read_unlock, _raw_spin_unlock_bh, _raw_spin_lock_bh, __rcu_read_lock)
+mr_mfc_seq_next -> (__rcu_read_unlock, _raw_spin_unlock_bh, _raw_spin_lock_bh, __rcu_read_lock)
+mr_rtm_dumproute -> (__rcu_read_unlock, mr_table_dump, __rcu_read_lock)
+mr_table_alloc -> (rhltable_init, kmalloc_trace, init_timer_key, kfree)
+mr_table_dump -> (_raw_spin_lock_bh, _raw_spin_unlock_bh)
+vif_device_init -> (dev_get_iflink)

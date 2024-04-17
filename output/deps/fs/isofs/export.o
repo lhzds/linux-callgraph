@@ -1,0 +1,4 @@
+fs/isofs/export.o
+isofs_export_get_parent -> (_printk, __brelse, __isofs_iget, d_obtain_alias, __bread_gfp)
+isofs_fh_to_dentry -> (__isofs_iget, d_obtain_alias, iput)
+isofs_fh_to_parent -> (__isofs_iget, d_obtain_alias, iput)

@@ -1,0 +1,5 @@
+fs/ext4/symlink.o
+ext4_encrypted_get_link -> (ext4_inode_is_fast_symlink, __brelse, __ext4_error_inode, ext4_bread)
+ext4_encrypted_symlink_getattr -> (ext4_getattr)
+ext4_free_link -> (__brelse)
+ext4_get_link -> (ext4_getblk, __ext4_error_inode, ext4_bread, ext4_free_link, ext4_read_inline_link, kfree_link)

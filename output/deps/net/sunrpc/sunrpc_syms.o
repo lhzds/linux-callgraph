@@ -1,0 +1,5 @@
+net/sunrpc/sunrpc_syms.o
+cleanup_sunrpc -> (rcu_barrier, unregister_rpc_pipefs, rpcauth_remove_module, xprt_multipath_cleanup_ids, sunrpc_init_net, xprt_cleanup_ids, rpc_sysfs_exit, unregister_pernet_subsys, svc_cleanup_xprt_sock, auth_domain_cleanup, sunrpc_exit_net, cleanup_socket_xprt, rpc_destroy_mempool, rpc_cleanup_clids)
+init_sunrpc -> (register_pernet_subsys, rpcauth_init_module, rpcauth_remove_module, rpc_sysfs_init, sunrpc_init_net, sunrpc_exit_net, svc_init_xprt_sock, cache_initialize, unregister_pernet_subsys, init_socket_xprt, rpc_init_mempool, register_rpc_pipefs, rpc_destroy_mempool, unregister_rpc_pipefs)
+sunrpc_exit_net -> (unix_gid_cache_destroy, rpc_pipefs_exit_net, __rcu_read_lock, ip_map_cache_destroy, __rcu_read_unlock, rpc_proc_exit)
+sunrpc_init_net -> (unix_gid_cache_destroy, rpc_proc_init, rpc_proc_exit, ip_map_cache_create, __rcu_read_lock, unix_gid_cache_create, ip_map_cache_destroy, __rcu_read_unlock, rpc_pipefs_init_net)

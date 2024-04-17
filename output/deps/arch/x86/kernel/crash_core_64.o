@@ -1,0 +1,2 @@
+arch/x86/kernel/crash_core_64.o
+arch_crash_save_vmcoreinfo -> (vmcoreinfo_append_str)

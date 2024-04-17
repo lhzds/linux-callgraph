@@ -1,0 +1,5 @@
+net/netfilter/xt_CONNSECMARK.o
+connsecmark_tg_check -> (___ratelimit, _printk, nf_ct_netns_get, strcmp)
+connsecmark_tg_destroy -> (nf_ct_netns_put)
+connsecmark_tg_exit -> (connsecmark_tg_destroy, xt_unregister_target, connsecmark_tg_check, connsecmark_tg)
+connsecmark_tg_init -> (connsecmark_tg_destroy, xt_register_target, connsecmark_tg_check, connsecmark_tg)

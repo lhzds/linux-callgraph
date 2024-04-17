@@ -1,0 +1,8 @@
+lib/parser.o
+match_hex -> (simple_strtol)
+match_int -> (simple_strtol)
+match_octal -> (simple_strtol)
+match_strdup -> (kmemdup_nul)
+match_token -> (strlen, strcmp, simple_strtoul, strncmp, simple_strtol, strchr)
+match_u64 -> (kstrtoull)
+match_uint -> (kstrtouint)

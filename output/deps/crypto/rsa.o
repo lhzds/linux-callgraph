@@ -1,0 +1,9 @@
+crypto/rsa.o
+rsa_dec -> (mpi_sub, mpi_cmp_ui, mpi_alloc, mpi_mulm, mpi_write_to_sgl, mpi_mul, mpi_cmp, mpi_powm, mpi_read_raw_from_sgl, mpi_free, mpi_addm)
+rsa_enc -> (mpi_cmp_ui, mpi_alloc, mpi_write_to_sgl, mpi_powm, mpi_cmp, mpi_read_raw_from_sgl, mpi_free)
+rsa_exit -> (rsa_dec, rsa_enc, pkcs1pad_create, rsa_set_priv_key, rsa_set_pub_key, rsa_max_size, rsa_exit_tfm, crypto_unregister_template, crypto_unregister_akcipher)
+rsa_exit_tfm -> (mpi_free)
+rsa_free_mpi_key -> (mpi_free)
+rsa_init -> (rsa_dec, rsa_enc, rsa_set_pub_key, rsa_exit_tfm, pkcs1pad_create, rsa_set_priv_key, crypto_register_template, rsa_max_size, crypto_register_akcipher, crypto_unregister_akcipher)
+rsa_set_priv_key -> (rsa_free_mpi_key, rsa_parse_priv_key, mpi_read_raw_data, mpi_free)
+rsa_set_pub_key -> (rsa_parse_pub_key, mpi_read_raw_data, mpi_free)

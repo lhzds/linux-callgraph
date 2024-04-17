@@ -1,0 +1,3 @@
+net/xfrm/xfrm_hash.o
+xfrm_hash_alloc -> (vzalloc, __get_free_pages, __kmalloc)
+xfrm_hash_free -> (free_pages, vfree, kfree)

@@ -1,0 +1,7 @@
+sound/pci/hda/hda_proc.o
+print_amp_vals -> (snd_hdac_codec_read, _snd_hdac_read_parm, seq_printf, snd_hdac_get_connections)
+print_codec_info -> (bcmp, snd_hda_get_dev_select, snd_hdac_get_sub_nodes, print_pcm_caps, snd_hdac_codec_read, print_power_state, snd_hdac_get_connections, print_amp_vals, print_nid_array, snd_hdac_codec_write, snd_hda_get_conn_list, snd_hdac_power_up, snd_hdac_power_down, __kmalloc, seq_printf, snd_hda_set_dev_select, snd_hda_get_devices, kfree, snd_hdac_read_parm_uncached)
+print_nid_array -> (seq_printf)
+print_pcm_caps -> (snd_print_pcm_bits, snd_hdac_read_parm_uncached, seq_printf)
+print_power_state -> (snd_hdac_read_parm_uncached, snd_hdac_codec_read, seq_printf)
+snd_hda_codec_proc_new -> (print_codec_info, snd_card_rw_proc_new, snprintf)

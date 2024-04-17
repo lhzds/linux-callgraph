@@ -1,0 +1,6 @@
+net/ipv6/syncookies.o
+__cookie_v6_check -> (__do_once_done, __siphash_unaligned, __do_once_start, get_random_bytes)
+__cookie_v6_init_sequence -> (__do_once_done, __siphash_unaligned, __do_once_start, get_random_bytes)
+cookie_v6_check -> (refcount_warn_saturate, tcp_v6_init_ts_off, tcp_v6_md5_lookup, tcp_v6_route_req, cookie_timestamp_decode, ip6_dst_lookup_flow, cookie_tcp_reqsk_alloc, cookie_ecn_ok, tcp_v6_send_synack, secure_tcpv6_ts_off, tcp_rtx_synack, security_inet_conn_request, tcp_get_cookie_sock, kmem_cache_free, fl6_update_dst, tcp_v6_send_reset, tcp_v6_reqsk_send_ack, tcp_parse_options, sk_free, get_random_u32, __ipv6_addr_type, tcp_syn_ack_timeout, __cookie_v6_check, cookie_v6_init_sequence, refcount_inc, ipv6_opt_accepted, tcp_v6_md5_hash_skb, security_req_classify_flow, tcp_v6_reqsk_destructor, kfree, tcp_select_initial_window, tcp_v6_init_seq)
+cookie_v6_init_sequence -> (__cookie_v6_init_sequence)
+refcount_inc -> (refcount_warn_saturate)

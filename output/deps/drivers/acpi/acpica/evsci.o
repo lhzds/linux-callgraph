@@ -1,0 +1,6 @@
+drivers/acpi/acpica/evsci.o
+acpi_ev_gpe_xrupt_handler -> (acpi_ev_gpe_detect)
+acpi_ev_install_sci_handler -> (acpi_ev_sci_xrupt_handler, acpi_os_install_interrupt_handler)
+acpi_ev_remove_all_sci_handlers -> (acpi_os_acquire_lock, acpi_os_remove_interrupt_handler, acpi_ev_sci_xrupt_handler, kfree, acpi_os_release_lock)
+acpi_ev_sci_dispatch -> (acpi_os_acquire_lock, acpi_os_release_lock)
+acpi_ev_sci_xrupt_handler -> (acpi_os_acquire_lock, acpi_os_release_lock, acpi_ev_fixed_event_detect, acpi_ev_gpe_detect)

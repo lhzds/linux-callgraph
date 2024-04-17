@@ -1,0 +1,7 @@
+arch/x86/pci/mmconfig_64.o
+pci_mmcfg_arch_free -> (iounmap)
+pci_mmcfg_arch_init -> (pci_mmcfg_read, pci_mmcfg_arch_map, pci_mmcfg_arch_free, pci_mmcfg_write)
+pci_mmcfg_arch_map -> (_printk, ioremap)
+pci_mmcfg_arch_unmap -> (iounmap)
+pci_mmcfg_read -> (__rcu_read_unlock, pci_mmconfig_lookup, __rcu_read_lock)
+pci_mmcfg_write -> (__rcu_read_unlock, pci_mmconfig_lookup, __rcu_read_lock)

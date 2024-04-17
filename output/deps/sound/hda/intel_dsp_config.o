@@ -1,0 +1,3 @@
+sound/hda/intel_dsp_config.o
+snd_intel_acpi_dsp_driver_probe -> (_dev_warn)
+snd_intel_dsp_driver_probe -> (_dev_err, _dev_info)

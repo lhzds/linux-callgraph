@@ -1,0 +1,6 @@
+block/blk_rq_qos.o
+rq_qos_add -> (mutex_lock, blk_mq_freeze_queue, blk_mq_debugfs_register_rqos, blk_mq_unfreeze_queue, mutex_unlock)
+rq_qos_del -> (mutex_lock, blk_mq_freeze_queue, blk_mq_unfreeze_queue, mutex_unlock, blk_mq_debugfs_unregister_rqos)
+rq_qos_exit -> (mutex_unlock, mutex_lock)
+rq_qos_wait -> (io_schedule, rq_qos_wake_function, finish_wait, prepare_to_wait_exclusive)
+rq_qos_wake_function -> (wake_up_process)

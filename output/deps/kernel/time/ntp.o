@@ -1,0 +1,8 @@
+kernel/time/ntp.o
+__do_adjtimex -> (__ktime_get_real_seconds)
+ntp_init -> (hrtimer_init, sync_timer_callback)
+ntp_notify_cmos_timer -> (sync_hw_clock, queue_work_on)
+ntp_tick_adj_setup -> (kstrtoll)
+second_overflow -> (_printk)
+sync_hw_clock -> (ktime_get_real_ts64, update_persistent_clock64, set_normalized_timespec64, rtc_class_open, rtc_time64_to_tm, rtc_set_time, ktime_get_real_seconds, hrtimer_start_range_ns, rtc_class_close)
+sync_timer_callback -> (sync_hw_clock, queue_work_on)

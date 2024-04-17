@@ -1,0 +1,3 @@
+drivers/hid/hid_topseed.o
+ts_driver_exit -> (hid_unregister_driver, ts_input_mapping)
+ts_driver_init -> (__hid_register_driver, ts_input_mapping)

@@ -1,0 +1,8 @@
+drivers/thermal/intel/x86_pkg_temp_thermal.o
+native_read_msr -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+pkg_temp_thermal_threshold_work_fn -> (__SCT__tp_func_write_msr, mutex_lock, thermal_zone_device_update, mutex_unlock, _raw_spin_lock_irq, do_trace_read_msr, _raw_spin_unlock_irq, thermal_clear_package_intr_status, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+pkg_thermal_cpu_offline -> (__SCT__tp_func_write_msr, cancel_delayed_work_sync, mutex_lock, mutex_unlock, _raw_spin_lock_irq, queue_delayed_work_on, thermal_zone_device_unregister, _raw_spin_unlock_irq, __traceiter_write_msr, do_trace_write_msr, __msecs_to_jiffies, kfree, __probestub_write_msr)
+pkg_thermal_cpu_online -> (sys_set_trip_temp, native_read_msr, pkg_temp_thermal_threshold_work_fn, rdmsr_on_cpu, delayed_work_timer_fn, _raw_spin_lock_irq, init_timer_key, kmalloc_trace, sys_get_curr_temp, _raw_spin_unlock_irq, kfree, thermal_zone_device_unregister, thermal_zone_device_register_with_trips, intel_tcc_get_tjmax, thermal_zone_device_enable, __kmalloc)
+pkg_thermal_notify -> (__SCT__tp_func_write_msr, _raw_spin_lock_irqsave, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, _raw_spin_unlock_irqrestore, __SCT__tp_func_read_msr, __probestub_read_msr, __msecs_to_jiffies, queue_delayed_work_on, __probestub_write_msr)
+sys_get_curr_temp -> (thermal_zone_device_priv, intel_tcc_get_temp)
+sys_set_trip_temp -> (thermal_zone_device_priv, wrmsr_on_cpu, intel_tcc_get_tjmax, rdmsr_on_cpu)

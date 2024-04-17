@@ -1,0 +1,4 @@
+lib/kasprintf.o
+kasprintf -> (kvasprintf)
+kvasprintf -> (__warn_printk, __kmalloc_node_track_caller, vsnprintf)
+kvasprintf_const -> (kstrdup_const, kvasprintf, strcmp, strchr)

@@ -1,0 +1,5 @@
+drivers/char/hw_random/via_rng.o
+via_rng_data_present -> (__const_udelay)
+via_rng_init -> (_printk, __SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+via_rng_mod_exit -> (hwrng_unregister, via_rng_data_present, via_rng_init, via_rng_data_read)
+via_rng_mod_init -> (_printk, via_rng_data_present, hwrng_register, via_rng_data_read, via_rng_init)

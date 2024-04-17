@@ -1,0 +1,6 @@
+lib/sg_pool.o
+sg_alloc_table_chained -> (sg_pool_free, sg_pool_alloc, sg_init_table, __sg_free_table, __sg_alloc_table)
+sg_free_table_chained -> (sg_pool_free, __sg_free_table)
+sg_pool_alloc -> (mempool_alloc)
+sg_pool_free -> (mempool_free)
+sg_pool_init -> (_printk, kmem_cache_create, mempool_alloc_slab, mempool_destroy, mempool_free_slab, mempool_create, kmem_cache_destroy)

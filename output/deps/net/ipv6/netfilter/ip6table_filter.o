@@ -1,0 +1,7 @@
+net/ipv6/netfilter/ip6table_filter.o
+ip6table_filter_fini -> (ip6table_filter_net_exit, ip6table_filter_net_pre_exit, ip6table_filter_net_init, unregister_pernet_subsys, xt_unregister_template, kfree)
+ip6table_filter_init -> (register_pernet_subsys, ip6table_filter_net_exit, xt_hook_ops_alloc, ip6table_filter_net_pre_exit, ip6table_filter_table_init, ip6table_filter_net_init, xt_unregister_template, kfree, xt_register_template, ip6t_do_table)
+ip6table_filter_net_exit -> (ip6t_unregister_table_exit)
+ip6table_filter_net_init -> (ip6t_alloc_initial_table, ip6t_register_table, kfree)
+ip6table_filter_net_pre_exit -> (ip6t_unregister_table_pre_exit)
+ip6table_filter_table_init -> (ip6t_alloc_initial_table, ip6t_register_table, kfree)

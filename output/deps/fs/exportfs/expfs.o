@@ -1,0 +1,7 @@
+fs/exportfs/expfs.o
+exportfs_decode_fh -> (exportfs_decode_fh_raw)
+exportfs_decode_fh_raw -> (down_write, strlen, up_write, lookup_one, find_acceptable_alias, dput, exportfs_get_name, reconnect_path)
+exportfs_encode_fh -> (dput, dget_parent)
+exportfs_get_name -> (filldir_one, iterate_dir, dentry_open, vfs_getattr_nosec, fput)
+find_acceptable_alias -> (lockref_get, _raw_spin_lock, dput, _raw_spin_unlock)
+reconnect_path -> (down_write, lockref_get, lookup_one_unlocked, strlen, dget_parent, _raw_spin_unlock, up_write, _raw_spin_lock, dput, exportfs_get_name)

@@ -1,0 +1,5 @@
+net/core/gso.o
+__skb_gso_segment -> (skb_mac_gso_segment, skb_cow_head, skb_warn_bad_offload)
+skb_cow_head -> (pskb_expand_head)
+skb_eth_gso_segment -> (__rcu_read_unlock, __rcu_read_lock)
+skb_mac_gso_segment -> (__rcu_read_unlock, skb_network_protocol, __rcu_read_lock)

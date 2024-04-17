@@ -1,0 +1,5 @@
+lib/decompress_bunzip2.o
+bunzip2 -> (start_bunzip, read_bunzip, kmalloc_trace, vfree, kfree)
+get_next_block -> (get_bits)
+read_bunzip -> (get_next_block)
+start_bunzip -> (get_bits, kmalloc_large, vmalloc)

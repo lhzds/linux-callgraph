@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/i915_hwmon.o
+hwm_attributes_visible -> (hwm_power1_max_interval_store, hwm_power1_max_interval_show)
+hwm_energy -> (mutex_unlock, intel_runtime_pm_put_unchecked, mutex_lock, intel_runtime_pm_get)
+hwm_gt_read -> (hwm_energy)
+hwm_is_visible -> (snb_pcode_read_p)
+hwm_power1_max_interval_show -> (intel_runtime_pm_put_unchecked, intel_runtime_pm_get, sysfs_emit)
+hwm_power1_max_interval_store -> (mutex_lock, mutex_unlock, kstrtoull, intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+hwm_read -> (snb_pcode_read_p, intel_runtime_pm_put_unchecked, hwm_energy, intel_runtime_pm_get)
+hwm_write -> (mutex_lock, autoremove_wake_function, mutex_unlock, schedule, finish_wait, snb_pcode_write_p, intel_runtime_pm_put_unchecked, prepare_to_wait, intel_runtime_pm_get)
+i915_hwmon_power_max_disable -> (mutex_unlock, mutex_lock)
+i915_hwmon_power_max_restore -> (mutex_unlock, __wake_up, mutex_lock)
+i915_hwmon_register -> (hwm_power1_max_interval_show, snprintf, __mutex_init, hwm_gt_read, hwm_gt_is_visible, hwm_energy, hwm_write, hwm_is_visible, hwm_power1_max_interval_store, hwm_attributes_visible, intel_runtime_pm_put_unchecked, __init_waitqueue_head, hwm_read, intel_runtime_pm_get, devm_hwmon_device_register_with_info, devm_kmalloc)

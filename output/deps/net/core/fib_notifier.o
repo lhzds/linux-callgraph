@@ -1,0 +1,10 @@
+net/core/fib_notifier.o
+call_fib_notifiers -> (__rcu_read_unlock, __rcu_read_lock, atomic_notifier_call_chain)
+fib_notifier_init -> (register_pernet_subsys, fib_notifier_net_init, fib_notifier_net_exit)
+fib_notifier_net_exit -> (__rcu_read_unlock, __rcu_read_lock)
+fib_notifier_net_init -> (__rcu_read_unlock, __rcu_read_lock)
+fib_notifier_ops_register -> (__rcu_read_unlock, kfree, __rcu_read_lock, kmemdup)
+fib_notifier_ops_unregister -> (kvfree_call_rcu)
+fib_seq_sum -> (__rcu_read_unlock, rtnl_unlock, __rcu_read_lock, rtnl_lock)
+register_fib_notifier -> (fib_seq_sum, __rcu_read_lock, __rcu_read_unlock, atomic_notifier_chain_unregister, atomic_notifier_chain_register)
+unregister_fib_notifier -> (__rcu_read_unlock, atomic_notifier_chain_unregister, __rcu_read_lock)

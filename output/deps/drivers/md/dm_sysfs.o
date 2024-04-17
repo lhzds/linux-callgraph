@@ -1,0 +1,9 @@
+drivers/md/dm_sysfs.o
+dm_attr_name_show -> (dm_copy_name_and_uuid, strlen)
+dm_attr_show -> (dm_put, dm_get_from_kobject)
+dm_attr_store -> (dm_put, dm_get_from_kobject)
+dm_attr_suspended_show -> (sprintf, dm_suspended_md, strlen)
+dm_attr_use_blk_mq_show -> (sprintf, strlen)
+dm_attr_uuid_show -> (dm_copy_name_and_uuid, strlen)
+dm_sysfs_exit -> (wait_for_completion, kobject_put, dm_kobject)
+dm_sysfs_init -> (dm_attr_name_show, dm_attr_uuid_show, dm_attr_store, dm_attr_use_blk_mq_show, dm_kobject_release, dm_attr_rq_based_seq_io_merge_deadline_store, dm_kobject, dm_attr_show, dm_attr_rq_based_seq_io_merge_deadline_show, dm_disk, kobject_init_and_add, dm_attr_suspended_show)

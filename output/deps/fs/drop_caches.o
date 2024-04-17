@@ -1,0 +1,3 @@
+fs/drop_caches.o
+drop_caches_sysctl_handler -> (_printk, drop_slab, drop_pagecache_sb, iterate_supers, proc_dointvec_minmax)
+drop_pagecache_sb -> (iput, invalidate_mapping_pages, _raw_spin_unlock, _raw_spin_lock, __SCT__cond_resched, __iget)

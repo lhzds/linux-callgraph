@@ -1,0 +1,4 @@
+drivers/acpi/x86/utils.o
+acpi_device_override_status -> (acpi_get_name, strcmp, dmi_check_system, kfree, x86_match_cpu, acpi_match_device_ids)
+acpi_quirk_skip_acpi_ac_and_battery -> (_printk, dmi_first_match, acpi_dev_present)
+force_storage_d3 -> (x86_match_cpu)

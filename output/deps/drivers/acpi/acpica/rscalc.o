@@ -1,0 +1,3 @@
+drivers/acpi/acpica/rscalc.o
+acpi_rs_get_list_length -> (acpi_ut_get_resource_header_length, acpi_ut_validate_resource, acpi_ut_get_descriptor_length, acpi_ut_get_resource_type, acpi_ut_get_resource_length)
+acpi_rs_get_pci_routing_table_length -> (acpi_ns_get_pathname_length)

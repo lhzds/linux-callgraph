@@ -1,0 +1,5 @@
+drivers/cpufreq/cpufreq_governor_attr_set.o
+gov_attr_set_get -> (mutex_unlock, mutex_lock)
+gov_attr_set_init -> (__mutex_init)
+gov_attr_set_put -> (mutex_lock, kobject_put, mutex_unlock)
+governor_store -> (mutex_unlock, mutex_lock)

@@ -1,0 +1,2 @@
+sound/last.o
+alsa_sound_last_init -> (_printk, snd_card_ref, put_device)

@@ -1,0 +1,4 @@
+drivers/acpi/acpica/evgpeinit.o
+acpi_ev_gpe_initialize -> (acpi_ut_release_mutex, acpi_exception, acpi_error, acpi_ev_create_gpe_block, acpi_ut_acquire_mutex)
+acpi_ev_match_gpe_method -> (acpi_hw_low_set_gpe, acpi_ut_ascii_to_hex_byte, acpi_ev_low_get_gpe_info, acpi_error)
+acpi_ev_update_gpes -> (acpi_ev_match_gpe_method, acpi_ut_release_mutex, acpi_ns_walk_namespace, acpi_exception, acpi_info, acpi_ut_acquire_mutex)

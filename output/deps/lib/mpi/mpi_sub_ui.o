@@ -1,0 +1,2 @@
+lib/mpi/mpi_sub_ui.o
+mpi_sub_ui -> (mpi_normalize, mpi_resize)

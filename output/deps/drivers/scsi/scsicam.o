@@ -1,0 +1,4 @@
+drivers/scsi/scsicam.o
+scsi_bios_ptable -> (kmemdup, __folio_put, read_cache_folio)
+scsi_partsize -> (kmemdup, kfree, __folio_put, read_cache_folio)
+scsicam_bios_param -> (scsi_partsize)

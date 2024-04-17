@@ -1,0 +1,3 @@
+net/ipv6/mcast_snoop.o
+ipv6_mc_check_mld -> (__pskb_pull_tail, ipv6_skip_exthdr, skb_checksum_trimmed, __ipv6_addr_type, kfree_skb_reason, ipv6_mc_validate_checksum)
+ipv6_mc_validate_checksum -> (csum_ipv6_magic, __skb_checksum_complete)

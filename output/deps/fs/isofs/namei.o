@@ -1,0 +1,2 @@
+fs/isofs/namei.o
+isofs_lookup -> (get_joliet_filename, _printk, isofs_bread, bcmp, isofs_name_translate, d_splice_alias, get_acorn_filename, get_rock_ridge_filename, __isofs_iget, __free_pages, __brelse, alloc_pages)

@@ -1,0 +1,7 @@
+arch/x86/kernel/time.o
+clocksource_arch_init -> (_printk)
+hpet_time_init -> (setup_default_timer_irq, hpet_enable, pit_timer_init)
+profile_pc -> (in_lock_functions)
+setup_default_timer_irq -> (_printk, timer_interrupt, request_threaded_irq)
+time_init -> (x86_late_time_init)
+x86_late_time_init -> (use_tpause_delay, x86_init_noop, amd_iommu_init, init_ISA_irqs, pcibios_fixup_irqs, pci_acpi_init, setup_boot_APIC_clock, x86_wallclock_init, native_create_pci_msi_domain, probe_roms, apic_intr_mode_init, default_find_smp_config, native_init_IRQ, x86_default_set_root_pointer, reserve_standard_io_resources, acpi_generic_reduced_hw_init, iommu_init_noop, intel_iommu_init, paging_init, pcibios_irq_init, x86_default_get_root_pointer, default_get_smp_config, e820__memory_setup_default, default_banner, hpet_time_init, tsc_init, bool_x86_init_noop, apic_intr_mode_select)

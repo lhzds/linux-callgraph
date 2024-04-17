@@ -1,0 +1,3 @@
+fs/ext4/xattr_hurd.o
+ext4_xattr_hurd_get -> (ext4_xattr_get)
+ext4_xattr_hurd_set -> (ext4_xattr_set)

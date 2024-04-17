@@ -1,0 +1,2 @@
+drivers/usb/storage/option_ms.o
+option_ms_init -> (usb_stor_bulk_transfer_buf, bcmp, memcmp, kmalloc_trace, kfree)

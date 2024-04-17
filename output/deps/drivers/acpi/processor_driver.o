@@ -1,0 +1,10 @@
+drivers/acpi/processor_driver.o
+__acpi_processor_start -> (acpi_idle_enter_s2idle, acpi_processor_ppc_has_changed, cpuidle_get_driver, acpi_processor_thermal_init, acpi_processor_thermal_exit, acpi_processor_get_throttling_info, acpi_processor_power_init, acpi_idle_enter, acpi_processor_power_exit, acpi_idle_lpi_enter, acpi_cppc_processor_probe, acpi_install_notify_handler, acpi_idle_play_dead, acpi_processor_notify)
+acpi_processor_driver_exit -> (driver_unregister, acpi_processor_stop, cpufreq_unregister_notifier, __cpuhp_remove_state, cpu_subsys_match, cpu_subsys_online, cpu_uevent, cpu_subsys_offline, acpi_processor_notifier, acpi_processor_start)
+acpi_processor_driver_init -> (driver_unregister, acpi_processor_throttling_init, acpi_soft_cpu_online, cpufreq_register_notifier, acpi_processor_stop, driver_register, cpu_subsys_match, cpu_subsys_online, cpu_uevent, acpi_soft_cpu_dead, acpi_processor_ignore_ppc_init, __cpuhp_setup_state, cpu_subsys_offline, acpi_processor_notifier, acpi_processor_start)
+acpi_processor_notifier -> (acpi_thermal_cpufreq_exit, acpi_thermal_cpufreq_init, acpi_processor_ppc_init, acpi_processor_ppc_exit)
+acpi_processor_notify -> (acpi_processor_power_state_has_changed, acpi_bus_generate_netlink_event, acpi_processor_ppc_has_changed, acpi_processor_tstate_has_changed)
+acpi_processor_start -> (__acpi_processor_start, cpu_hotplug_disable, cpu_hotplug_enable, is_acpi_device_node)
+acpi_processor_stop -> (acpi_cppc_processor_exit, acpi_processor_thermal_exit, is_acpi_device_node, acpi_processor_power_exit, acpi_processor_notify, acpi_remove_notify_handler)
+acpi_soft_cpu_dead -> (acpi_processor_reevaluate_tstate, acpi_fetch_acpi_dev)
+acpi_soft_cpu_online -> (_printk, acpi_processor_ppc_has_changed, __warn_printk, __acpi_processor_start, acpi_processor_reevaluate_tstate, acpi_processor_hotplug, acpi_fetch_acpi_dev, acpi_processor_tstate_has_changed)

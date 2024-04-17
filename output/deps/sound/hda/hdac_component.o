@@ -1,0 +1,6 @@
+sound/hda/hdac_component.o
+hdac_component_master_bind -> (hdac_acomp_release, devres_find, component_bind_all, complete_all, component_unbind_all)
+hdac_component_master_unbind -> (hdac_acomp_release, devres_find, component_unbind_all)
+snd_hdac_acomp_exit -> (hdac_acomp_release, devres_destroy, hdac_component_master_unbind, component_master_del, hdac_component_master_bind)
+snd_hdac_acomp_init -> (_dev_info, component_match_add_typed, devres_destroy, __devres_alloc_node, hdac_acomp_release, hdac_component_master_unbind, devres_find, hdac_component_master_bind, devres_add, __init_swait_queue_head, component_master_add_with_match)
+snd_hdac_display_power -> (mutex_unlock, mutex_lock)

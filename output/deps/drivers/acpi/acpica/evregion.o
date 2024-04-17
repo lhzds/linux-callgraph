@@ -1,0 +1,8 @@
+drivers/acpi/acpica/evregion.o
+acpi_ev_address_space_dispatch -> (acpi_ut_get_region_name, acpi_os_wait_semaphore, acpi_os_signal_semaphore, acpi_ex_exit_interpreter, acpi_ns_get_secondary_object, acpi_exception, acpi_ex_enter_interpreter, acpi_error, acpi_ut_get_node_name)
+acpi_ev_attach_region -> (acpi_ut_add_reference)
+acpi_ev_detach_region -> (acpi_ut_get_region_name, acpi_ut_release_mutex, acpi_ns_get_secondary_object, acpi_exception, acpi_error, acpi_ev_execute_reg_method, acpi_ut_remove_reference, acpi_ut_acquire_mutex)
+acpi_ev_execute_reg_method -> (acpi_ns_search_one_scope, acpi_ns_get_secondary_object, kmalloc_trace, acpi_ut_remove_reference, acpi_ut_create_integer_object, acpi_ns_evaluate, kfree)
+acpi_ev_execute_reg_methods -> (acpi_ut_release_mutex, acpi_ns_get_next_node, acpi_ns_walk_namespace, acpi_evaluate_object, acpi_ev_reg_run, acpi_ut_acquire_mutex, acpi_get_handle)
+acpi_ev_initialize_op_regions -> (acpi_ut_release_mutex, acpi_ev_execute_reg_methods, acpi_ev_has_default_handler, acpi_ut_acquire_mutex)
+acpi_ev_reg_run -> (acpi_ev_execute_reg_method, acpi_ns_validate_handle, acpi_ns_get_attached_object)

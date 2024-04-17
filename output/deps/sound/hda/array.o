@@ -1,0 +1,3 @@
+sound/hda/array.o
+snd_array_free -> (kfree)
+snd_array_new -> (krealloc)

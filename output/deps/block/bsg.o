@@ -1,0 +1,9 @@
+block/bsg.o
+bsg_device_release -> (kfree, ida_free)
+bsg_devnode -> (kasprintf)
+bsg_init -> (_printk, bsg_devnode, alloc_chrdev_region, class_unregister, class_register)
+bsg_ioctl -> (_printk, _copy_from_user, clock_t_to_jiffies, ___ratelimit, __msecs_to_jiffies, jiffies_to_clock_t, _copy_to_user)
+bsg_open -> (blk_get_queue)
+bsg_register_queue -> (put_device, cdev_device_del, bsg_open, compat_ptr_ioctl, cdev_device_add, device_initialize, bsg_ioctl, kmalloc_trace, default_llseek, bsg_devnode, _dev_err, sysfs_create_link, dev_set_name, ida_alloc_range, bsg_release, kfree, cdev_init, bsg_device_release)
+bsg_release -> (blk_put_queue)
+bsg_unregister_queue -> (put_device, cdev_device_del, sysfs_remove_link)

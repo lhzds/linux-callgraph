@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/i915_ttm_buddy_manager.o
+i915_ttm_buddy_man_alloc -> (drm_buddy_alloc_blocks, mutex_lock, mutex_unlock, ttm_resource_init, kmalloc_trace, ttm_resource_fini, drm_buddy_free_list, drm_buddy_block_trim, kfree)
+i915_ttm_buddy_man_avail -> (mutex_unlock, mutex_lock)
+i915_ttm_buddy_man_debug -> (mutex_lock, mutex_unlock, drm_buddy_block_print, drm_printf, drm_buddy_print)
+i915_ttm_buddy_man_fini -> (mutex_lock, refcount_warn_saturate, mutex_unlock, drm_buddy_free_list, drm_buddy_fini, ttm_resource_manager_evict_all, kfree, dma_fence_release)
+i915_ttm_buddy_man_free -> (mutex_lock, mutex_unlock, ttm_resource_fini, drm_buddy_free_list, kfree)
+i915_ttm_buddy_man_init -> (drm_buddy_init, i915_ttm_buddy_man_compatible, __mutex_init, kmalloc_trace, i915_ttm_buddy_man_alloc, i915_ttm_buddy_man_free, i915_ttm_buddy_man_intersects, ttm_resource_manager_init, i915_ttm_buddy_man_debug, kfree)
+i915_ttm_buddy_man_reserve -> (drm_buddy_alloc_blocks, mutex_lock, mutex_unlock)

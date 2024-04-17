@@ -1,0 +1,6 @@
+drivers/acpi/acpica/exmutex.o
+acpi_ex_acquire_mutex -> (acpi_ex_system_wait_mutex, acpi_ev_acquire_global_lock, acpi_ut_get_node_name, acpi_error)
+acpi_ex_acquire_mutex_object -> (acpi_ex_system_wait_mutex, acpi_ev_acquire_global_lock)
+acpi_ex_release_all_mutexes -> (acpi_os_signal_semaphore, acpi_ev_release_global_lock)
+acpi_ex_release_mutex -> (acpi_ut_get_node_name, acpi_os_signal_semaphore, acpi_ev_release_global_lock, acpi_error)
+acpi_ex_release_mutex_object -> (acpi_os_signal_semaphore, acpi_ev_release_global_lock)

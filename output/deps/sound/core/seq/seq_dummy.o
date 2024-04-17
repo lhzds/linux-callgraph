@@ -1,0 +1,8 @@
+sound/core/seq/seq_dummy.o
+alsa_seq_dummy_exit -> (snd_seq_delete_kernel_client)
+alsa_seq_dummy_init -> (register_client)
+create_port -> (dummy_free, dummy_input, kmalloc_trace, snd_seq_kernel_client_ctl, sprintf, kfree)
+delete_client -> (snd_seq_delete_kernel_client)
+dummy_free -> (kfree)
+dummy_input -> (snd_seq_kernel_client_dispatch)
+register_client -> (snd_seq_kernel_client_put, _printk, snd_seq_delete_kernel_client, snd_seq_kernel_client_get, snd_seq_create_kernel_client, create_port)

@@ -1,0 +1,10 @@
+drivers/base/devtmpfs.o
+devtmpfs_create_node -> (device_get_devnode, _raw_spin_unlock, wait_for_completion, _raw_spin_lock, wake_up_process, __init_swait_queue_head, kfree, block_uevent)
+devtmpfs_delete_node -> (device_get_devnode, _raw_spin_unlock, wait_for_completion, _raw_spin_lock, wake_up_process, __init_swait_queue_head, kfree)
+devtmpfs_init -> (unregister_filesystem, _printk, devtmpfsd, shmem_init_fs_context, public_dev_mount, wait_for_completion, register_filesystem, kill_litter_super, vfs_kern_mount, wake_up_process, kthread_create_on_node)
+devtmpfs_mount -> (_printk, init_mount)
+devtmpfs_setup -> (init_chdir, init_mount, init_chroot, ksys_unshare)
+devtmpfs_work_loop -> (kstrdup, path_put, _raw_spin_lock, schedule, vfs_rmdir, strrchr, _raw_spin_unlock, vfs_unlink, vfs_mknod, done_path_create, kern_path_create, strchr, vfs_mkdir, block_uevent, down_write, up_write, dput, notify_change, vfs_getattr, complete, kern_path_locked, kfree)
+devtmpfsd -> (devtmpfs_work_loop, complete, devtmpfs_setup)
+mount_param -> (simple_strtoul)
+public_dev_mount -> (down_write, lockref_get, reconfigure_single, deactivate_locked_super)

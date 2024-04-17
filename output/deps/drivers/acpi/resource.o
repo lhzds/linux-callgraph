@@ -1,0 +1,13 @@
+drivers/acpi/resource.o
+acpi_dev_free_resource_list -> (resource_list_free)
+acpi_dev_get_dma_resources -> (resource_list_free, acpi_walk_resources, acpi_has_method, is_memory, acpi_dev_process_resource)
+acpi_dev_get_irqresource -> (acpi_get_override_irq, _printk, acpi_register_gsi, dmi_check_system)
+acpi_dev_get_memory_resources -> (resource_list_free, acpi_walk_resources, acpi_has_method, is_memory, acpi_dev_process_resource)
+acpi_dev_get_resources -> (acpi_walk_resources, acpi_dev_process_resource, resource_list_free, acpi_has_method)
+acpi_dev_process_resource -> (acpi_dev_resource_memory, acpi_dev_resource_interrupt, acpi_decode_space, acpi_resource_to_address64, resource_list_create_entry)
+acpi_dev_resource_address_space -> (acpi_decode_space, acpi_resource_to_address64)
+acpi_dev_resource_ext_address_space -> (acpi_decode_space)
+acpi_dev_resource_interrupt -> (acpi_register_gsi, acpi_dev_get_irqresource)
+acpi_res_consumer_cb -> (resource_list_free, acpi_walk_resources, acpi_has_method, acpi_dev_process_resource, acpi_fetch_acpi_dev)
+acpi_resource_consumer -> (acpi_get_devices, acpi_res_consumer_cb)
+is_memory -> (acpi_dev_filter_resource_type, acpi_dev_resource_memory, acpi_decode_space, acpi_resource_to_address64)

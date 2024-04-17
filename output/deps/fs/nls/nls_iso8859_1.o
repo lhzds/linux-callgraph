@@ -1,0 +1,3 @@
+fs/nls/nls_iso8859_1.o
+exit_nls_iso8859_1 -> (uni2char, unregister_nls, char2uni)
+init_nls_iso8859_1 -> (uni2char, __register_nls, char2uni)

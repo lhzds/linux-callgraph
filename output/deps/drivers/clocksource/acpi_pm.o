@@ -1,0 +1,5 @@
+drivers/clocksource/acpi_pm.o
+acpi_pm_check_blacklist -> (_printk, acpi_pm_read, acpi_pm_read_slow)
+acpi_pm_check_graylist -> (_printk, acpi_pm_read, acpi_pm_read_slow)
+init_acpi_pm_clocksource -> (_printk, __udelay, tsc_clocksource_watchdog_disabled, __clocksource_register_scale, acpi_pm_read)
+parse_pmtmr -> (_printk, kstrtouint)

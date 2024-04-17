@@ -1,0 +1,2 @@
+drivers/base/container.o
+container_dev_init -> (_printk, trivial_online, subsys_system_register, container_offline)

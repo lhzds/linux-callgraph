@@ -1,0 +1,10 @@
+drivers/i2c/i2c_smbus.o
+i2c_handle_smbus_alert -> (queue_work_on)
+i2c_register_spd -> (_dev_warn, dmi_memdev_handle, i2c_new_scanned_device, dmi_memdev_type, dmi_memdev_size, _dev_info, strscpy)
+smbalert_driver_exit -> (smbalert_remove, i2c_del_driver, smbalert_probe)
+smbalert_driver_init -> (smbalert_remove, i2c_register_driver, smbalert_probe)
+smbalert_probe -> (fwnode_irq_get_byname, smbus_alert, smbalert_work, __dev_fwnode, devm_request_threaded_irq, _dev_info, devm_kmalloc)
+smbalert_remove -> (cancel_work_sync)
+smbalert_work -> (smbus_do_alert, device_for_each_child, i2c_smbus_read_byte)
+smbus_alert -> (smbus_do_alert, device_for_each_child, i2c_smbus_read_byte)
+smbus_do_alert -> (mutex_unlock, i2c_verify_client, mutex_lock, _dev_warn)

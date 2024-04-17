@@ -1,0 +1,5 @@
+net/netfilter/xt_state.o
+state_mt_check -> (___ratelimit, _printk, nf_ct_netns_get)
+state_mt_destroy -> (nf_ct_netns_put)
+state_mt_exit -> (state_mt_check, xt_unregister_match, state_mt, state_mt_destroy)
+state_mt_init -> (xt_register_match, state_mt_check, state_mt, state_mt_destroy)

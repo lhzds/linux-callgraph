@@ -1,0 +1,5 @@
+drivers/acpi/acpica/utmutex.o
+acpi_ut_acquire_mutex -> (acpi_ut_get_mutex_name, acpi_os_wait_semaphore, acpi_exception)
+acpi_ut_mutex_initialize -> (acpi_os_create_semaphore, kmalloc_trace, acpi_ut_create_rw_lock)
+acpi_ut_mutex_terminate -> (kfree, acpi_os_delete_semaphore, acpi_os_delete_lock, acpi_ut_delete_rw_lock)
+acpi_ut_release_mutex -> (acpi_ut_get_mutex_name, acpi_os_signal_semaphore, acpi_error)

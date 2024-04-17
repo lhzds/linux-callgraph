@@ -1,0 +1,12 @@
+lib/flex_proportions.o
+__fprop_add_percpu -> (percpu_counter_add_batch, fprop_reflect_period_percpu)
+__fprop_add_percpu_max -> (fprop_fraction_percpu, percpu_counter_add_batch, fprop_reflect_period_percpu)
+__fprop_inc_single -> (percpu_counter_add_batch, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+fprop_fraction_percpu -> (fprop_reflect_period_percpu)
+fprop_fraction_single -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+fprop_global_destroy -> (percpu_counter_destroy)
+fprop_global_init -> (__percpu_counter_init)
+fprop_local_destroy_percpu -> (percpu_counter_destroy)
+fprop_local_init_percpu -> (__percpu_counter_init)
+fprop_new_period -> (__percpu_counter_sum, percpu_counter_add_batch)
+fprop_reflect_period_percpu -> (percpu_counter_set, __percpu_counter_sum, percpu_counter_add_batch, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

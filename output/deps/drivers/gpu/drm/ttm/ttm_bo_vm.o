@@ -1,0 +1,12 @@
+drivers/gpu/drm/ttm/ttm_bo_vm.o
+mmap_read_unlock -> (trace_mmap_lock_reg, up_read, __probestub_mmap_lock_released, trace_mmap_lock_unreg, __traceiter_mmap_lock_released, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_released)
+ttm_bo_get -> (refcount_warn_saturate)
+ttm_bo_mmap_obj -> (down_write, refcount_warn_saturate, up_write, ttm_bo_vm_access, ttm_bo_vm_open, ttm_bo_vm_fault, ttm_bo_vm_close)
+ttm_bo_release_dummy_page -> (__free_pages)
+ttm_bo_vm_access -> (_raw_spin_unlock, ttm_bo_move_to_lru_tail, _raw_spin_lock, ttm_bo_kunmap, ttm_bo_kmap, ww_mutex_unlock, ww_mutex_lock_interruptible)
+ttm_bo_vm_close -> (ttm_bo_put)
+ttm_bo_vm_dummy_page -> (vmf_insert_pfn_prot, __drmm_add_action_or_reset, alloc_pages, ttm_bo_release_dummy_page)
+ttm_bo_vm_fault -> (vmf_insert_pfn_prot, __drmm_add_action_or_reset, ttm_bo_release_dummy_page, ttm_bo_vm_reserve, drm_dev_exit, ttm_bo_vm_fault_reserved, drm_dev_enter, ww_mutex_unlock, alloc_pages)
+ttm_bo_vm_fault_reserved -> (refcount_warn_saturate, vmf_insert_pfn_prot, dma_resv_test_signaled, ttm_tt_populate, dma_resv_wait_timeout, ttm_bo_put, up_read, trace_mmap_lock_reg, __probestub_mmap_lock_released, ttm_mem_io_reserve, trace_mmap_lock_unreg, ttm_io_prot, __traceiter_mmap_lock_released, ww_mutex_unlock, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_released)
+ttm_bo_vm_open -> (refcount_warn_saturate)
+ttm_bo_vm_reserve -> (mmap_read_unlock, ttm_bo_put, ww_mutex_trylock, ttm_bo_get, ww_mutex_unlock, ww_mutex_lock_interruptible)

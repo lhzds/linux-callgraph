@@ -1,0 +1,10 @@
+net/core/dst_cache.o
+dst_cache_destroy -> (free_percpu, dst_release)
+dst_cache_get -> (dst_cache_per_cpu_get)
+dst_cache_get_ip4 -> (dst_cache_per_cpu_get)
+dst_cache_get_ip6 -> (dst_cache_per_cpu_get)
+dst_cache_init -> (__alloc_percpu_gfp)
+dst_cache_per_cpu_get -> (rcuref_get_slowpath, dst_release)
+dst_cache_reset_now -> (dst_release)
+dst_cache_set_ip4 -> (rcuref_get_slowpath, dst_release)
+dst_cache_set_ip6 -> (__rcu_read_unlock, dst_release, __rcu_read_lock, rcuref_get_slowpath)

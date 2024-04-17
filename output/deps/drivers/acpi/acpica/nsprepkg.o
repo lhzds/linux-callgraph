@@ -1,0 +1,3 @@
+drivers/acpi/acpica/nsprepkg.o
+acpi_ns_check_package -> (acpi_ns_remove_null_elements, acpi_ns_check_object_type, acpi_ut_predefined_warning, acpi_ns_wrap_with_package, acpi_ns_check_package_list)
+acpi_ns_check_package_list -> (acpi_ut_predefined_warning, acpi_ns_check_object_type, acpi_error)

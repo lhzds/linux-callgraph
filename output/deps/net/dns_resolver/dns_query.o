@@ -1,0 +1,2 @@
+net/dns_resolver/dns_query.o
+dns_query -> (key_validate, key_invalidate, key_put, dns_resolver_preparse, user_revoke, kmemdup_nul, dns_resolver_describe, _printk, strlen, dns_resolver_free_preparse, down_read, revert_creds, dns_resolver_match_preparse, override_creds, __kmalloc, generic_key_instantiate, up_read, request_key_tag, user_destroy, dns_resolver_read, kfree)

@@ -1,0 +1,3 @@
+arch/x86/kernel/setup_percpu.o
+pcpu_populate_pte -> (populate_extra_pte)
+setup_per_cpu_areas -> (_printk, switch_gdt_and_percpu_base, pcpu_cpu_distance, pcpu_cpu_to_node, setup_node_to_cpumask_map, panic, pcpu_embed_first_chunk, pcpu_page_first_chunk, setup_cpu_local_masks)

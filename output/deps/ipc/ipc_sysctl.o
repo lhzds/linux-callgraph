@@ -1,0 +1,8 @@
+ipc/ipc_sysctl.o
+ipc_mni_extend -> (_printk)
+ipc_sysctl_init -> (_printk, setup_ipc_sysctls)
+proc_ipc_auto_msgmni -> (_printk, proc_dointvec_minmax)
+proc_ipc_dointvec_minmax_orphans -> (proc_dointvec_minmax, shm_destroy_orphaned)
+proc_ipc_sem_dointvec -> (proc_dointvec)
+retire_ipc_sysctls -> (unregister_sysctl_table, kfree, retire_sysctl_set)
+setup_ipc_sysctls -> (set_lookup, ipc_permissions, proc_ipc_auto_msgmni, __register_sysctl_table, proc_ipc_dointvec_minmax_orphans, setup_sysctl_set, proc_ipc_sem_dointvec, kmemdup, retire_sysctl_set, proc_doulongvec_minmax, kfree, set_is_seen, proc_dointvec_minmax)

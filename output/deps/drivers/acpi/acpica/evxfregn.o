@@ -1,0 +1,5 @@
+drivers/acpi/acpica/evxfregn.o
+acpi_execute_reg_methods -> (acpi_ns_validate_handle, acpi_ev_execute_reg_methods, acpi_ut_release_mutex, acpi_ut_acquire_mutex)
+acpi_install_address_space_handler -> (acpi_ev_install_space_handler, acpi_ns_validate_handle, acpi_ev_execute_reg_methods, acpi_ut_release_mutex, acpi_ut_acquire_mutex)
+acpi_install_address_space_handler_no_reg -> (acpi_ev_install_space_handler, acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ut_acquire_mutex)
+acpi_remove_address_space_handler -> (acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_os_signal_semaphore, acpi_ns_get_attached_object, acpi_ev_detach_region, acpi_ut_remove_reference, acpi_ut_acquire_mutex)

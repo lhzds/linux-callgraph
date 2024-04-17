@@ -1,0 +1,3 @@
+drivers/acpi/acpica/exnames.o
+acpi_ex_get_name_string -> (kmalloc_trace, acpi_ex_name_segment, acpi_error, kfree, __kmalloc)
+acpi_ex_name_segment -> (acpi_ut_valid_name_char, strcat, acpi_error)

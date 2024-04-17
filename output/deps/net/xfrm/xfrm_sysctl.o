@@ -1,0 +1,3 @@
+net/xfrm/xfrm_sysctl.o
+xfrm_sysctl_fini -> (kfree, unregister_net_sysctl_table)
+xfrm_sysctl_init -> (proc_dointvec, kmemdup, register_net_sysctl, proc_douintvec, kfree)

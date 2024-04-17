@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/i915_sysfs.o
+error_state_read -> (__i915_gpu_coredump_free, refcount_warn_saturate, i915_gpu_coredump_copy_to_buffer, i915_first_error_state)
+error_state_write -> (__drm_dev_dbg, i915_reset_error_state)
+i915_l3_read -> (_raw_spin_lock, _raw_spin_unlock)
+i915_l3_write -> (_raw_spin_lock, kfree, kmalloc_trace, _raw_spin_unlock)
+i915_setup_sysfs -> (kobject_create_and_add, error_state_write, device_create_bin_file, _dev_warn, _dev_err, error_state_read, i915_l3_read, sysfs_create_bin_file, intel_engines_add_sysfs, i915_l3_write)
+i915_teardown_sysfs -> (error_state_write, sysfs_remove_bin_file, kobject_put, error_state_read, device_remove_bin_file, i915_l3_read, i915_l3_write)

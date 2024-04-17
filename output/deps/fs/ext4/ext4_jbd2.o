@@ -1,0 +1,10 @@
+fs/ext4/ext4_jbd2.o
+__ext4_forget -> (_printk, __SCT__tp_func_ext4_forget, __SCT__might_resched, __ext4_error, ext4_decode_error, __traceiter_ext4_forget, jbd2_journal_revoke, __bforget, __probestub_ext4_forget, jbd2_journal_forget)
+__ext4_handle_dirty_metadata -> (_printk, __SCT__might_resched, ext4_journal_abort_handle, inode_needs_sync, jbd2_journal_dirty_metadata, mark_buffer_dirty, __ext4_error_inode, sync_dirty_buffer, mark_buffer_dirty_inode)
+__ext4_journal_ensure_credits -> (jbd2_journal_extend)
+__ext4_journal_get_create_access -> (_printk, jbd2_journal_get_create_access, ext4_decode_error, jbd2_journal_set_triggers)
+__ext4_journal_get_write_access -> (_printk, __SCT__might_resched, jbd2_journal_set_triggers, __ext4_error, _raw_spin_unlock, _raw_spin_lock, ext4_decode_error, errseq_check_and_advance, jbd2_journal_get_write_access, errseq_check)
+__ext4_journal_start_reserved -> (__SCT__tp_func_ext4_journal_start_reserved, __SCT__might_resched, __ext4_error, jbd2_journal_start_reserved, __traceiter_ext4_journal_start_reserved, jbd2_journal_free_reserved, __probestub_ext4_journal_start_reserved)
+__ext4_journal_start_sb -> (__SCT__might_resched, __SCT__tp_func_ext4_journal_start_sb, __ext4_error, jbd2__journal_start, __traceiter_ext4_journal_start_inode, __SCT__tp_func_ext4_journal_start_inode, __traceiter_ext4_journal_start_sb, __probestub_ext4_journal_start_inode, __probestub_ext4_journal_start_sb)
+__ext4_journal_stop -> (__ext4_std_error, jbd2_journal_stop)
+ext4_journal_abort_handle -> (_printk, ext4_decode_error)

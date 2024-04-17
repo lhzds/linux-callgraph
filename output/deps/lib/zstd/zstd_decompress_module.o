@@ -1,0 +1,13 @@
+lib/zstd/zstd_decompress_module.o
+zstd_dctx_workspace_bound -> (ZSTD_estimateDCtxSize)
+zstd_decompress_dctx -> (ZSTD_decompressDCtx)
+zstd_decompress_stream -> (ZSTD_decompressStream)
+zstd_dstream_workspace_bound -> (ZSTD_estimateDStreamSize)
+zstd_find_frame_compressed_size -> (ZSTD_findFrameCompressedSize)
+zstd_get_error_code -> (ZSTD_getErrorCode)
+zstd_get_error_name -> (ZSTD_getErrorName)
+zstd_get_frame_header -> (ZSTD_getFrameHeader)
+zstd_init_dctx -> (ZSTD_initStaticDCtx)
+zstd_init_dstream -> (ZSTD_initStaticDStream)
+zstd_is_error -> (ZSTD_isError)
+zstd_reset_dstream -> (ZSTD_resetDStream)

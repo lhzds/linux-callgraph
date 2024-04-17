@@ -1,0 +1,12 @@
+arch/x86/kernel/apic/msi.o
+dmar_alloc_hwirq -> (dmar_msi_mask, mutex_lock, init_irq_alloc_info, __irq_domain_alloc_irqs, irq_domain_free_fwnode, mutex_unlock, irq_chip_ack_parent, irq_chip_retrigger_hierarchy, dmar_msi_write_msg, dmar_msi_compose_msg, dmar_msi_unmask, msi_create_irq_domain, __irq_domain_alloc_fwnode, msi_domain_set_affinity, dmar_msi_init)
+dmar_free_hwirq -> (irq_domain_free_irqs)
+dmar_msi_compose_msg -> (__irq_msi_compose_msg, irqd_cfg)
+dmar_msi_init -> (handle_edge_irq, irq_domain_set_info)
+dmar_msi_write_msg -> (dmar_msi_write)
+msi_set_affinity -> (__irq_msi_compose_msg, lock_vector_lock, irqd_cfg, unlock_vector_lock)
+native_create_pci_msi_domain -> (x86_init_dev_msi_info)
+pci_msi_prepare -> (init_irq_alloc_info)
+x86_init_dev_msi_info -> (handle_edge_irq, x86_msi_prepare, irq_chip_retrigger_hierarchy, irq_chip_ack_parent, msi_set_affinity)
+x86_msi_prepare -> (init_irq_alloc_info)
+x86_create_pci_msi_domain -> (x86_init_noop, amd_iommu_init, init_ISA_irqs, pcibios_fixup_irqs, pci_acpi_init, setup_boot_APIC_clock, x86_wallclock_init, native_create_pci_msi_domain, probe_roms, apic_intr_mode_init, default_find_smp_config, native_init_IRQ, x86_default_set_root_pointer, reserve_standard_io_resources, acpi_generic_reduced_hw_init, iommu_init_noop, intel_iommu_init, paging_init, pcibios_irq_init, x86_default_get_root_pointer, default_get_smp_config, e820__memory_setup_default, default_banner, hpet_time_init, bool_x86_init_noop, apic_intr_mode_select)

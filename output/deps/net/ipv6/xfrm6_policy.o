@@ -1,0 +1,10 @@
+net/ipv6/xfrm6_policy.o
+xfrm6_dst_destroy -> (refcount_warn_saturate, in6_dev_finish_destroy, __xfrm_state_destroy, rt6_uncached_list_del, xfrm_policy_destroy, dst_release, __dst_destroy_metrics_generic)
+xfrm6_dst_ifdown -> (refcount_warn_saturate, in6_dev_finish_destroy, __rcu_read_lock, xfrm_dst_ifdown, __rcu_read_unlock)
+xfrm6_dst_lookup -> (dst_release, ip6_route_output_flags)
+xfrm6_fill_dst -> (__rcu_read_unlock, rt6_uncached_list_add, refcount_warn_saturate, __rcu_read_lock)
+xfrm6_fini -> (xfrm6_state_fini, xfrm6_dst_lookup, xfrm6_dst_ifdown, xfrm6_net_init, unregister_pernet_subsys, xfrm_policy_unregister_afinfo, xfrm6_redirect, xfrm6_get_saddr, dst_cow_metrics_generic, xfrm6_fill_dst, xfrm6_protocol_fini, xfrm6_dst_destroy, __ip6_local_out, xfrm6_update_pmtu, xfrm6_net_exit, ip6_blackhole_route)
+xfrm6_get_saddr -> (dst_release, ipv6_dev_get_saddr, ip6_route_output_flags)
+xfrm6_init -> (xfrm6_net_init, xfrm6_state_init, xfrm6_dst_destroy, xfrm6_dst_lookup, xfrm6_get_saddr, xfrm6_net_exit, xfrm6_state_fini, xfrm6_dst_ifdown, xfrm_policy_unregister_afinfo, dst_cow_metrics_generic, xfrm6_protocol_fini, xfrm6_update_pmtu, xfrm_policy_register_afinfo, register_pernet_subsys, xfrm6_protocol_init, xfrm6_redirect, xfrm6_fill_dst, __ip6_local_out, ip6_blackhole_route)
+xfrm6_net_exit -> (kfree, unregister_net_sysctl_table, percpu_counter_destroy)
+xfrm6_net_init -> (xfrm6_dst_ifdown, __percpu_counter_init, percpu_counter_destroy, proc_dointvec, xfrm6_redirect, dst_cow_metrics_generic, kmemdup, register_net_sysctl, xfrm6_dst_destroy, __ip6_local_out, kfree, xfrm6_update_pmtu)

@@ -1,0 +1,2 @@
+lib/random32.o
+prandom_seed_full_state -> (get_random_bytes)

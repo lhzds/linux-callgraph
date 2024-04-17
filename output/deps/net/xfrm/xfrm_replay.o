@@ -1,0 +1,8 @@
+net/xfrm/xfrm_replay.o
+xfrm_init_replay -> (do_trace_netlink_extack)
+xfrm_replay_advance -> (__rcu_read_unlock, netlink_has_listeners, xfrm_replay_notify, __rcu_read_lock)
+xfrm_replay_check -> (xfrm_replay_check_esn, xfrm_audit_state_replay)
+xfrm_replay_check_esn -> (xfrm_audit_state_replay)
+xfrm_replay_notify -> (mod_timer, bcmp, km_state_notify)
+xfrm_replay_overflow -> (xfrm_replay_notify, netlink_has_listeners, __rcu_read_lock, xfrm_audit_state_replay_overflow, __rcu_read_unlock)
+xfrm_replay_recheck -> (xfrm_replay_check_esn, xfrm_audit_state_replay)

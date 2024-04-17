@@ -1,0 +1,11 @@
+fs/compat_binfmt_elf.o
+create_elf_tables -> (arch_align_stack, get_sigframe_size, trace_mmap_lock_unreg, _copy_to_user, __mmap_lock_do_trace_start_locking, __traceiter_mmap_lock_released, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned, __SCT__tp_func_mmap_lock_acquire_returned, find_extend_vma_locked, get_random_bytes, __probestub_mmap_lock_released, down_write_killable, __SCT__tp_func_mmap_lock_start_locking, __probestub_mmap_lock_start_locking, __mmap_lock_do_trace_released, up_write, trace_mmap_lock_reg, __traceiter_mmap_lock_start_locking, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_acquire_returned, strnlen_user)
+elf_core_dump -> (dump_skip_to, file_path, kvmalloc_node, writenote, copy_siginfo_to_external32, kvfree, thread_group_cputime, dump_emit, regset_get, __get_task_comm, _copy_from_user, regset_get_alloc, kmalloc_trace, __task_pid_nr_ns, dump_user_range, __rcu_read_unlock, strlen, ns_to_kernel_old_timeval, __kmalloc, task_user_regset_view, __rcu_read_lock, kfree)
+elf_map -> (vm_mmap, _printk, vm_munmap)
+exit_compat_elf_binfmt -> (unregister_binfmt, elf_core_dump, load_elf_binary)
+init_compat_elf_binfmt -> (__register_binfmt, elf_core_dump, load_elf_binary)
+load_elf_binary -> (set_brk, load_elf_interp, begin_new_exec, compat_start_thread, kernel_read, load_elf_binary, setup_arg_pages, load_elf_phdrs, elf_core_dump, finalize_exec, bcmp, kmalloc_trace, fput, padzero, setup_new_exec, set_personality_ia32, arch_mmap_rnd, vm_mmap, total_mapping_size, set_binfmt, open_exec, __kmalloc, elf_map, compat_arch_setup_additional_pages, would_dump, randomize_stack_top, maximum_alignment, kfree, arch_randomize_brk, create_elf_tables)
+load_elf_interp -> (elf_map, vm_brk_flags)
+load_elf_phdrs -> (kernel_read, kfree, __kmalloc)
+set_brk -> (vm_brk_flags)
+writenote -> (strlen, dump_align, dump_emit)

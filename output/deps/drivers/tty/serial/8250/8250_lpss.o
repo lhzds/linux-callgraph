@@ -1,0 +1,13 @@
+drivers/tty/serial/8250/8250_lpss.o
+byt_get_mctrl -> (serial8250_do_get_mctrl)
+byt_serial_exit -> (put_device)
+byt_serial_setup -> (pci_get_slot, byt_get_mctrl, byt_set_termios)
+byt_set_termios -> (dw8250_do_set_termios, tty_termios_baud_rate, rational_best_approximation)
+ehl_serial_exit -> (serial8250_get_port)
+ehl_serial_setup -> (dw8250_do_set_termios)
+lpss8250_pci_driver_exit -> (byt_serial_exit, lpss8250_probe, byt_serial_setup, lpss8250_remove, qrk_serial_exit, ehl_serial_exit, pci_unregister_driver, qrk_serial_setup, ehl_serial_setup)
+lpss8250_pci_driver_init -> (byt_serial_exit, lpss8250_probe, byt_serial_setup, lpss8250_remove, qrk_serial_exit, __pci_register_driver, ehl_serial_exit, qrk_serial_setup, ehl_serial_setup)
+lpss8250_probe -> (pci_irq_vector, pci_alloc_irq_vectors, pcim_enable_device, serial8250_register_8250_port, lpss8250_dma_filter, pcim_iomap, dw8250_setup_port, pci_set_master, pci_free_irq_vectors, devm_kmalloc)
+lpss8250_remove -> (serial8250_unregister_port, pci_free_irq_vectors)
+qrk_serial_exit -> (dw_dma_remove, pci_iounmap)
+qrk_serial_setup -> (pci_try_set_mwi, pci_irq_vector, dw_dma_probe, pci_ioremap_bar)

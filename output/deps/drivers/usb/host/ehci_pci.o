@@ -1,0 +1,7 @@
+drivers/usb/host/ehci_pci.o
+ehci_pci_cleanup -> (hcd_pci_suspend, hcd_pci_suspend_noirq, hcd_pci_restore, hcd_pci_poweroff_late, check_root_hub_suspended, pci_unregister_driver, hcd_pci_resume_noirq, ehci_pci_probe, usb_hcd_pci_shutdown, hcd_pci_runtime_resume, ehci_pci_remove, hcd_pci_resume, hcd_pci_runtime_suspend)
+ehci_pci_init -> (ehci_pci_setup, hcd_pci_suspend, ehci_pci_resume, ehci_suspend, hcd_pci_suspend_noirq, hcd_pci_restore, __pci_register_driver, usb_disabled, hcd_pci_poweroff_late, check_root_hub_suspended, hcd_pci_resume_noirq, ehci_pci_probe, ehci_init_driver, usb_hcd_pci_shutdown, hcd_pci_runtime_resume, ehci_pci_remove, hcd_pci_resume, hcd_pci_runtime_suspend)
+ehci_pci_probe -> (pci_match_id, usb_hcd_pci_probe)
+ehci_pci_remove -> (usb_hcd_pci_remove, pci_clear_mwi)
+ehci_pci_resume -> (pci_set_mwi, ehci_resume)
+ehci_pci_setup -> (dma_set_coherent_mask, ehci_setup, pci_find_capability, usb_amd_hang_symptom_quirk, _dev_warn, device_set_wakeup_capable, pci_read_config_dword, usb_amd_quirk_pll_check, pci_read_config_byte, pci_read_config_word, _dev_info, pci_set_mwi, pci_write_config_byte)

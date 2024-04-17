@@ -1,0 +1,9 @@
+fs/fat/file.o
+fat_cont_expand -> (sync_mapping_buffers, fat_truncate_time, filemap_fdatawrite_range, generic_cont_expand_simple, __mark_inode_dirty, filemap_fdatawait_range, write_inode_now)
+fat_fallocate -> (down_write, up_write, fat_add_cluster, fat_cont_expand)
+fat_file_fsync -> (sync_mapping_buffers, blkdev_issue_flush, __generic_file_fsync)
+fat_file_release -> (fat_flush_inodes, io_schedule_timeout)
+fat_generic_ioctl -> (down_write, mnt_want_write_file, fat_setattr, up_write, _copy_from_user, down_read, __mark_inode_dirty, up_read, fsnotify, security_inode_setattr, __fsnotify_parent, current_time, fat_trim_fs, capable, mnt_drop_write_file, _copy_to_user)
+fat_getattr -> (generic_fillattr)
+fat_setattr -> (down_write, make_vfsgid, fat_truncate_time, up_write, make_vfsuid, __mark_inode_dirty, from_vfsgid, truncate_setsize, fat_truncate_blocks, setattr_prepare, vfsgid_in_group_p, from_vfsuid, fat_cont_expand, setattr_copy, inode_dio_wait, fat_block_truncate_page)
+fat_truncate_blocks -> (fat_sync_inode, fat_cache_inval_inode, __fat_fs_error, fat_ent_write, fat_truncate_time, __mark_inode_dirty, fat_ent_read, fat_free_clusters, fat_get_cluster, fat_flush_inodes, __brelse)

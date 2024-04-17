@@ -1,0 +1,6 @@
+net/ipv4/ip_forward.o
+NF_HOOK -> (__rcu_read_unlock, ip_forward_finish, nf_hook_slow, __rcu_read_lock)
+ip_exceeds_mtu -> (skb_gso_validate_network_len)
+ip_forward -> (__skb_warn_lro_forwarding, __xfrm_policy_check, NF_HOOK, ip_rt_send_redirect, kfree_skb_reason, __xfrm_route_forward, skb_cow, __icmp_send, ip_exceeds_mtu, ip_dst_mtu_maybe_forward, ip_call_ra_chain)
+ip_forward_finish -> (ip_forward_options, ip_output, ip6_output)
+skb_cow -> (pskb_expand_head)

@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/i915_deps.o
+i915_deps_add_dependency -> (refcount_warn_saturate, dma_fence_wait_timeout, dma_fence_signal, kfree, dma_fence_release, __kmalloc)
+i915_deps_add_resv -> (i915_deps_add_dependency, dma_resv_iter_first, dma_resv_iter_next)
+i915_deps_fini -> (refcount_warn_saturate, kfree, dma_fence_release)
+i915_deps_init -> (kfree)
+i915_deps_sync -> (dma_fence_signal, dma_fence_wait_timeout)

@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/display/intel_dsi.o
+intel_dsi_get_modes -> (intel_panel_get_modes)
+intel_dsi_host_init -> (kmalloc_trace, kfree)
+intel_dsi_mode_valid -> (intel_panel_mode_valid, __drm_dev_dbg, intel_mode_valid_max_plane_size, intel_panel_fixed_mode)

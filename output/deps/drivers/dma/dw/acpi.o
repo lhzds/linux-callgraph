@@ -1,0 +1,4 @@
+drivers/dma/dw/acpi.o
+dw_dma_acpi_controller_free -> (is_acpi_device_node, acpi_dma_controller_free)
+dw_dma_acpi_controller_register -> (acpi_dma_controller_register, acpi_dma_simple_xlate, _dev_err, dw_dma_acpi_filter, is_acpi_device_node, devm_kmalloc)
+dw_dma_acpi_filter -> (dw_dma_filter)

@@ -1,0 +1,3 @@
+io_uring/advise.o
+io_fadvise -> (vfs_fadvise)
+io_madvise -> (do_madvise)

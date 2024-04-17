@@ -1,0 +1,7 @@
+drivers/macintosh/mac_hid.o
+mac_hid_emumouse_connect -> (_printk, input_open_device, input_unregister_handle, kmalloc_trace, input_register_handle, kfree)
+mac_hid_emumouse_disconnect -> (input_unregister_handle, input_close_device, kfree)
+mac_hid_emumouse_filter -> (input_event)
+mac_hid_exit -> (input_unregister_device, mac_hid_emumouse_filter, unregister_sysctl_table, input_unregister_handler, mac_hid_emumouse_disconnect, mac_hid_emumouse_connect)
+mac_hid_init -> (register_sysctl, proc_dointvec, mac_hid_toggle_emumouse)
+mac_hid_toggle_emumouse -> (mutex_lock_killable, mac_hid_emumouse_connect, input_unregister_device, mac_hid_emumouse_filter, mutex_unlock, input_register_handler, input_free_device, proc_dointvec, input_register_device, input_unregister_handler, mac_hid_emumouse_disconnect, input_allocate_device)

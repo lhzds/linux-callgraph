@@ -1,0 +1,3 @@
+drivers/acpi/acpica/dspkginit.o
+acpi_ds_build_internal_package_obj -> (acpi_exception, acpi_error, acpi_info, acpi_ut_remove_reference, acpi_ds_init_package_element, acpi_ut_add_reference, acpi_ut_create_internal_object_dbg, acpi_ds_build_internal_object, __kmalloc, acpi_ut_delete_object_desc)
+acpi_ds_init_package_element -> (acpi_ns_lookup, acpi_ex_resolve_node_to_value, acpi_exception, acpi_error, acpi_ut_remove_reference, kfree, acpi_ns_externalize_name)

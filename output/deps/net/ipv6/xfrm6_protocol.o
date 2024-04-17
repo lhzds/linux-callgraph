@@ -1,0 +1,9 @@
+net/ipv6/xfrm6_protocol.o
+xfrm6_ah_rcv -> (kfree_skb_reason, icmp6_send)
+xfrm6_esp_rcv -> (kfree_skb_reason, icmp6_send)
+xfrm6_ipcomp_rcv -> (kfree_skb_reason, icmp6_send)
+xfrm6_protocol_deregister -> (_printk, inet6_del_protocol, mutex_lock, mutex_unlock, xfrm6_ipcomp_rcv, xfrm6_ah_rcv, synchronize_net, xfrm6_esp_err, xfrm6_esp_rcv, xfrm6_ah_err, xfrm6_ipcomp_err)
+xfrm6_protocol_fini -> (xfrm_input_unregister_afinfo, xfrm6_rcv_cb)
+xfrm6_protocol_init -> (xfrm_input_register_afinfo, xfrm6_rcv_cb)
+xfrm6_protocol_register -> (_printk, mutex_lock, mutex_unlock, xfrm6_ipcomp_rcv, xfrm6_ah_rcv, xfrm6_esp_err, xfrm6_esp_rcv, xfrm6_ipcomp_err, xfrm6_ah_err, inet6_add_protocol)
+xfrm6_rcv_encap -> (ip6_route_input_lookup, kfree_skb_reason, icmp6_send)

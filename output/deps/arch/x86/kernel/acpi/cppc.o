@@ -1,0 +1,4 @@
+arch/x86/kernel/acpi/cppc.o
+cpc_read_ffh -> (rdmsrl_safe_on_cpu)
+cpc_write_ffh -> (rdmsrl_safe_on_cpu, wrmsrl_safe_on_cpu)
+init_freq_invariance_cppc -> (mutex_lock, amd_get_highest_perf, mutex_unlock, freq_invariance_set_perf_ratio, cppc_get_perf_caps)

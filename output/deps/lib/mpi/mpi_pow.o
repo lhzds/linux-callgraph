@@ -1,0 +1,3 @@
+lib/mpi/mpi_pow.o
+mpi_powm -> (mpihelp_rshift, mpi_assign_limb_space, mpihelp_mul_karatsuba_case, mpihelp_mul, mpihelp_release_karatsuba_ctx, mpi_alloc_limb_space, mpihelp_sub, mpihelp_lshift, mpi_free_limb_space, __SCT__cond_resched, mpih_sqr_n_basecase, mpihelp_divrem, mpih_sqr_n, mpi_resize)
+mpihelp_sub -> (mpihelp_sub_n)

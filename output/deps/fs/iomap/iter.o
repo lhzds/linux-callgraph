@@ -1,0 +1,2 @@
+fs/iomap/iter.o
+iomap_iter -> (__traceiter_iomap_iter_dstmap, __SCT__tp_func_iomap_iter, __probestub_iomap_iter_srcmap, __SCT__tp_func_iomap_iter_dstmap, __probestub_iomap_iter_dstmap, __traceiter_iomap_iter, __SCT__tp_func_iomap_iter_srcmap, __traceiter_iomap_iter_srcmap, __probestub_iomap_iter)

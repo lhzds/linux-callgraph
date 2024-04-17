@@ -1,0 +1,10 @@
+fs/lockd/clntlock.o
+nlmclnt_dequeue_block -> (_raw_spin_lock, _raw_spin_unlock)
+nlmclnt_done -> (lockd_down, nlmclnt_release_host)
+nlmclnt_grant -> (__wake_up, bcmp, _raw_spin_unlock, __traceiter_nlmclnt_grant, _raw_spin_lock, __probestub_nlmclnt_grant, __ipv6_addr_type, __SCT__tp_func_nlmclnt_grant)
+nlmclnt_init -> (lockd_down, lockd_up, nlmclnt_lookup_host, nlm_bind_host, nlmclnt_release_host)
+nlmclnt_prepare_block -> (__init_waitqueue_head)
+nlmclnt_queue_block -> (_raw_spin_lock, _raw_spin_unlock)
+nlmclnt_recovery -> (_printk, reclaimer, nlm_get_host, wake_up_process, kthread_create_on_node)
+nlmclnt_wait -> (init_wait_entry, __SCT__might_resched, schedule_timeout, finish_wait, prepare_to_wait_event)
+reclaimer -> (down_write, __wake_up, kernel_sigaction, lockd_down, nlm_rebind_host, up_write, _raw_spin_unlock, lockd_up, _raw_spin_lock, kmalloc_trace, nlmclnt_reclaim, kfree, nlmclnt_release_host)

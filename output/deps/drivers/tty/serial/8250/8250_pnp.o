@@ -1,0 +1,8 @@
+drivers/tty/serial/8250/8250_pnp.o
+check_name -> (strstr)
+serial8250_pnp_exit -> (serial_pnp_resume, serial_pnp_remove, pnp_unregister_driver, serial_pnp_probe, serial_pnp_suspend)
+serial8250_pnp_init -> (serial_pnp_resume, serial_pnp_remove, pnp_register_driver, serial_pnp_probe, serial_pnp_suspend)
+serial_pnp_probe -> (device_property_read_u32_array, check_name, serial8250_register_8250_port, pnp_get_resource, pnp_possible_config, serial8250_get_port)
+serial_pnp_remove -> (serial8250_unregister_port)
+serial_pnp_resume -> (serial8250_resume_port)
+serial_pnp_suspend -> (serial8250_suspend_port)

@@ -1,0 +1,2 @@
+drivers/base/init.o
+driver_init -> (container_dev_init, cpu_dev_init, devices_init, devtmpfs_init, platform_bus_init, bdi_init, node_dev_init, classes_init, firmware_init, auxiliary_bus_init, buses_init)

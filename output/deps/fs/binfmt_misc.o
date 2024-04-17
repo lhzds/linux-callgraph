@@ -1,0 +1,13 @@
+fs/binfmt_misc.o
+bm_entry_read -> (strlen, free_pages, simple_read_from_buffer, bin2hex, __get_free_pages, sprintf)
+bm_entry_write -> (down_write, simple_release_fs, up_write, _copy_from_user, _raw_write_lock, dput, d_drop, _raw_write_unlock, drop_nlink)
+bm_evict_inode -> (filp_close, clear_inode, kfree)
+bm_fill_super -> (bm_evict_inode, default_llseek, bm_status_read, noop_llseek, bm_status_write, simple_fill_super, bm_register_write, simple_statfs)
+bm_get_tree -> (get_tree_single, bm_fill_super)
+bm_init_fs_context -> (bm_get_tree)
+bm_register_write -> (iput, bm_init_fs_context, default_llseek, new_inode, _raw_write_unlock, lookup_one_len, kill_litter_super, d_instantiate, simple_pin_fs, _copy_from_user, string_unescape, bm_entry_write, strchr, _printk, lockref_get, strlen, kstrtoint, _raw_write_lock, get_next_ino, bm_entry_read, current_time, open_exec, filp_close, __kmalloc, down_write, up_write, strcmp, dput, scanarg, kfree)
+bm_status_read -> (simple_read_from_buffer)
+bm_status_write -> (down_write, simple_release_fs, up_write, _copy_from_user, _raw_write_lock, dput, d_drop, _raw_write_unlock, drop_nlink)
+exit_misc_binfmt -> (unregister_filesystem, unregister_binfmt, load_misc_binary, bm_init_fs_context, kill_litter_super)
+init_misc_binfmt -> (__register_binfmt, register_filesystem, load_misc_binary, bm_init_fs_context, kill_litter_super)
+load_misc_binary -> (lockref_get, strcmp, _raw_read_unlock, dput, _raw_read_lock, remove_arg_zero, dentry_open, open_exec, strrchr, bprm_change_interp, copy_string_kernel)

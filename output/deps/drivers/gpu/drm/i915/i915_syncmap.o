@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/i915_syncmap.o
+__sync_free -> (__sync_free, kfree)
+__sync_set -> (kmalloc_trace)
+i915_syncmap_free -> (__sync_free)
+i915_syncmap_set -> (__sync_set)

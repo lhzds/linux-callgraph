@@ -1,0 +1,4 @@
+kernel/time/jiffies.o
+clocksource_default_clock -> (jiffies_read)
+init_jiffies_clocksource -> (jiffies_read, __clocksource_register_scale)
+register_refined_jiffies -> (jiffies_read, __clocksource_register_scale)

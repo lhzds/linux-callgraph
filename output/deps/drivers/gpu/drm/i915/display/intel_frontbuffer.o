@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/display/intel_frontbuffer.o
+__intel_fb_flush -> (_raw_spin_lock, frontbuffer_flush, _raw_spin_unlock)
+__intel_fb_invalidate -> (intel_fbc_invalidate, __SCT__might_resched, intel_psr_invalidate, __traceiter_intel_frontbuffer_invalidate, _raw_spin_unlock, _raw_spin_lock, __probestub_intel_frontbuffer_invalidate, __SCT__tp_func_intel_frontbuffer_invalidate, intel_drrs_invalidate)
+frontbuffer_active -> (refcount_warn_saturate)
+frontbuffer_flush -> (__probestub_intel_frontbuffer_flush, __SCT__might_resched, _raw_spin_unlock, __traceiter_intel_frontbuffer_flush, __SCT__tp_func_intel_frontbuffer_flush, _raw_spin_lock, intel_psr_flush, intel_drrs_flush, intel_fbc_flush)
+frontbuffer_retire -> (_raw_spin_lock, intel_frontbuffer_put, frontbuffer_flush, _raw_spin_unlock)
+intel_frontbuffer_flip -> (_raw_spin_lock, frontbuffer_flush, _raw_spin_unlock)
+intel_frontbuffer_flip_complete -> (_raw_spin_lock, frontbuffer_flush, _raw_spin_unlock)
+intel_frontbuffer_flip_prepare -> (_raw_spin_lock, _raw_spin_unlock)
+intel_frontbuffer_get -> (frontbuffer_retire, refcount_warn_saturate, _raw_spin_unlock, __i915_active_init, _raw_spin_lock, frontbuffer_active, kmalloc_trace, kref_get_unless_zero, intel_frontbuffer_put, __rcu_read_lock, __rcu_read_unlock, kfree)
+intel_frontbuffer_put -> (refcount_warn_saturate, _raw_spin_unlock, i915_active_fini, _raw_spin_lock, kvfree_call_rcu, drm_gem_object_free, __warn_printk, refcount_dec_and_lock, dev_driver_string)
+intel_frontbuffer_track -> (__warn_printk, dev_driver_string)
+kref_get_unless_zero -> (refcount_warn_saturate)

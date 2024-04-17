@@ -1,0 +1,5 @@
+drivers/iommu/amd/io_pgtable_v2.o
+free_pgtable -> (free_pages, free_pgtable)
+iommu_v2_map_pages -> (_printk, amd_iommu_flush_page, amd_iommu_flush_tlb, __alloc_pages, free_pages, free_pgtable, dump_stack)
+v2_alloc_pgtable -> (v2_tlb_flush_walk, iommu_v2_map_pages, amd_iommu_domain_set_gcr3, iommu_v2_iova_to_phys, iommu_v2_unmap_pages, v2_tlb_add_page, __alloc_pages, v2_tlb_flush_all, free_pages)
+v2_free_pgtable -> (amd_iommu_domain_update, free_pgtable)

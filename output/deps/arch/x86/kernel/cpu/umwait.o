@@ -1,0 +1,10 @@
+arch/x86/kernel/cpu/umwait.o
+enable_c02_show -> (sprintf)
+enable_c02_store -> (mutex_lock, mutex_unlock, umwait_update_control_msr, kstrtobool, on_each_cpu_cond_mask)
+max_time_show -> (sprintf)
+max_time_store -> (mutex_lock, mutex_unlock, umwait_update_control_msr, on_each_cpu_cond_mask, kstrtouint)
+umwait_cpu_offline -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+umwait_cpu_online -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+umwait_init -> (cpu_uevent, __traceiter_read_msr, sysfs_create_group, umwait_cpu_offline, cpu_subsys_offline, __probestub_read_msr, put_device, max_time_show, umwait_cpu_online, enable_c02_store, __cpuhp_setup_state, enable_c02_show, cpu_subsys_match, cpu_subsys_online, umwait_syscore_resume, max_time_store, bus_get_dev_root, do_trace_read_msr, register_syscore_ops, __SCT__tp_func_read_msr)
+umwait_syscore_resume -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+umwait_update_control_msr -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)

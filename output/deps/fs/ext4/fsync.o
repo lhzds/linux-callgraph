@@ -1,0 +1,2 @@
+fs/ext4/fsync.o
+ext4_sync_file -> (__probestub_ext4_sync_file_exit, __SCT__tp_func_ext4_sync_file_enter, __traceiter_ext4_sync_file_exit, __SCT__tp_func_ext4_sync_file_exit, file_write_and_wait_range, sync_inode_metadata, generic_buffers_fsync_noflush, __traceiter_ext4_sync_file_enter, __probestub_ext4_sync_file_enter, sync_mapping_buffers, _printk, ext4_fc_commit, dget_parent, jbd2_trans_will_send_data_barrier, blkdev_issue_flush, d_find_any_alias, ext4_force_commit, dput, file_check_and_advance_wb_err)

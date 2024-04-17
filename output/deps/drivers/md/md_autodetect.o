@@ -1,0 +1,6 @@
+drivers/md/md_autodetect.o
+autodetect_raid -> (wait_for_device_probe, _printk, md_autostart_arrays)
+md_run_setup -> (_printk, md_setup_drive, autodetect_raid)
+md_setup -> (_printk, get_option)
+md_setup_drive -> (_printk, early_lookup_bdev, snprintf, md_set_array_info, strncmp, md_add_new_disk, mddev_unlock, init_stat, strchr, md_alloc, do_md_run, mddev_put, sprintf, mutex_lock_interruptible)
+raid_setup -> (strncmp, strlen, strchr)

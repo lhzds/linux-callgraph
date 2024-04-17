@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/intel_engine_pm.o
+__engine_park -> (_raw_spin_unlock, i915_request_add_active_barriers, _raw_spin_lock, __intel_breadcrumbs_park, __i915_request_commit, dma_fence_add_callback, duration, __i915_request_create, intel_engine_park_heartbeat, ktime_get, __i915_request_queue_bh, __intel_wakeref_put_last)
+__engine_unpark -> (__intel_wakeref_get_first, __intel_engine_flush_submission, __SCT__might_resched, intel_engine_unpark_heartbeat)
+intel_engine_init__pm -> (__engine_park, __intel_wakeref_init, __engine_unpark, intel_engine_init_heartbeat)

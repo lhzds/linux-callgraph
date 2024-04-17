@@ -1,0 +1,2 @@
+kernel/ksyms_common.o
+kallsyms_show_value -> (security_capable)

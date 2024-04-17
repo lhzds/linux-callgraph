@@ -1,0 +1,2 @@
+lib/errseq.o
+errseq_set -> (__warn_printk)

@@ -1,0 +1,7 @@
+net/core/stream.o
+sk_stream_error -> (send_sig)
+sk_stream_kill_queues -> (__sk_mem_reclaim, skb_queue_purge, kfree_skb_reason)
+sk_stream_wait_close -> (woken_wake_function, release_sock, wait_woken, add_wait_queue, remove_wait_queue, lock_sock_nested)
+sk_stream_wait_connect -> (woken_wake_function, release_sock, wait_woken, add_wait_queue, remove_wait_queue, lock_sock_nested)
+sk_stream_wait_memory -> (tcp_stream_memory_free, woken_wake_function, release_sock, wait_woken, add_wait_queue, remove_wait_queue, get_random_u8, lock_sock_nested)
+sk_stream_write_space -> (__wake_up, tcp_stream_memory_free, sock_wake_async, __rcu_read_lock, __rcu_read_unlock)

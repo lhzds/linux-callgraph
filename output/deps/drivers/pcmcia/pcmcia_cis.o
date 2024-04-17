@@ -1,0 +1,9 @@
+drivers/pcmcia/pcmcia_cis.o
+pccard_loop_tuple -> (_dev_warn, pccard_get_tuple_data, kmalloc_trace, pcmcia_parse_tuple, pccard_get_next_tuple, pccard_get_first_tuple, kfree)
+pccard_read_tuple -> (_dev_warn, pccard_get_tuple_data, kmalloc_trace, pcmcia_parse_tuple, pccard_get_first_tuple, kfree)
+pcmcia_do_get_mac -> (_dev_warn, dev_addr_mod)
+pcmcia_do_get_tuple -> (__kmalloc)
+pcmcia_get_mac_from_cis -> (pcmcia_do_get_mac, pcmcia_loop_tuple)
+pcmcia_get_tuple -> (pcmcia_do_get_tuple, pcmcia_loop_tuple)
+pcmcia_loop_config -> (pcmcia_do_loop_config, kmalloc_trace, pccard_loop_tuple, kfree)
+pcmcia_loop_tuple -> (_dev_warn, pccard_get_tuple_data, kmalloc_trace, pccard_get_next_tuple, pccard_get_first_tuple, kfree)

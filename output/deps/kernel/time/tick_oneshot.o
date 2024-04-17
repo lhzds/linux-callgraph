@@ -1,0 +1,6 @@
+kernel/time/tick_oneshot.o
+tick_init_highres -> (tick_switch_to_oneshot, hrtimer_interrupt)
+tick_program_event -> (clockevents_switch_state, clockevents_program_event)
+tick_resume_oneshot -> (clockevents_switch_state, ktime_get, clockevents_program_event)
+tick_setup_oneshot -> (clockevents_switch_state, clockevents_program_event)
+tick_switch_to_oneshot -> (_printk, clockevents_switch_state, tick_broadcast_switch_to_oneshot)

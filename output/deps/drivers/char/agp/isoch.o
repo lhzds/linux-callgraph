@@ -1,0 +1,3 @@
+drivers/char/agp/isoch.o
+agp_3_5_enable -> (pci_find_capability, pci_write_config_word, pci_read_config_dword, pci_get_device, agp_3_5_nonisochronous_node_enable, kmalloc_trace, pci_read_config_byte, kfree, _dev_err, pci_read_config_word, pci_write_config_dword, _dev_info, __kmalloc)
+agp_3_5_nonisochronous_node_enable -> (pci_write_config_dword, pci_read_config_dword)

@@ -1,0 +1,4 @@
+lib/zlib_deflate/deftree.o
+build_tree -> (gen_codes)
+zlib_tr_flush_block -> (zlib_tr_stored_block, build_tree, compress_block, init_block, send_tree)
+zlib_tr_init -> (init_block, gen_codes)

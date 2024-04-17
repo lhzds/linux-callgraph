@@ -1,0 +1,10 @@
+crypto/cmac.o
+cmac_clone_tfm -> (crypto_clone_cipher)
+cmac_create -> (cmac_exit_tfm, crypto_grab_spawn, crypto_attr_alg_name, crypto_inst_setname, crypto_cmac_digest_setkey, crypto_cmac_digest_update, kmalloc_trace, shash_free_singlespawn_instance, crypto_cmac_digest_final, crypto_cmac_digest_init, cmac_init_tfm, cmac_clone_tfm, crypto_check_attr_type, shash_register_instance)
+cmac_exit_tfm -> (crypto_destroy_tfm)
+cmac_init_tfm -> (crypto_spawn_tfm)
+crypto_cmac_digest_final -> (crypto_cipher_encrypt_one, __crypto_xor)
+crypto_cmac_digest_setkey -> (crypto_cipher_setkey, crypto_cipher_encrypt_one)
+crypto_cmac_digest_update -> (crypto_cipher_encrypt_one, __crypto_xor)
+crypto_cmac_module_exit -> (cmac_create, crypto_unregister_template)
+crypto_cmac_module_init -> (crypto_register_template, cmac_create)

@@ -1,0 +1,9 @@
+net/dns_resolver/dns_key.o
+dns_resolver_cmp -> (_printk, strncasecmp, strlen, strcasecmp)
+dns_resolver_describe -> (seq_printf, seq_puts)
+dns_resolver_free_preparse -> (kfree)
+dns_resolver_match_preparse -> (dns_resolver_cmp)
+dns_resolver_preparse -> (_printk, bcmp, memchr, kstrtoull, ___ratelimit, __kmalloc)
+dns_resolver_read -> (user_read)
+exit_dns_resolver -> (__put_cred, dns_resolver_free_preparse, dns_resolver_preparse, key_revoke, unregister_key_type, user_revoke, dns_resolver_describe, dns_resolver_match_preparse, user_destroy, dns_resolver_read, generic_key_instantiate)
+init_dns_resolver -> (_printk, __put_cred, keyring_alloc, register_key_type, do_no_restart_syscall, dns_resolver_free_preparse, dns_resolver_preparse, key_put, user_revoke, prepare_kernel_cred, dns_resolver_describe, dns_resolver_match_preparse, user_destroy, dns_resolver_read, generic_key_instantiate)

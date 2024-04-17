@@ -1,0 +1,5 @@
+drivers/acpi/acpi_pnp.o
+acpi_is_pnp_device -> (acpi_pnp_attach, acpi_pnp_match, acpi_match_device_ids)
+acpi_pnp_attach -> (acpi_match_device_ids)
+acpi_pnp_init -> (acpi_pnp_attach, acpi_scan_add_handler, acpi_pnp_match)
+acpi_pnp_match -> (strlen, bcmp)

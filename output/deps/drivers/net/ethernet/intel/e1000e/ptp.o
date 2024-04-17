@@ -1,0 +1,10 @@
+drivers/net/ethernet/intel/e1000e/ptp.o
+e1000e_phc_adjfine -> (_raw_spin_lock_irqsave, e1000e_get_base_timinca, _raw_spin_unlock_irqrestore, __ew32)
+e1000e_phc_adjtime -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+e1000e_phc_get_syncdevicetime -> (_raw_spin_lock_irqsave, convert_art_to_tsc, __const_udelay, _raw_spin_unlock_irqrestore, timecounter_cyc2time, __ew32)
+e1000e_phc_getcrosststamp -> (e1000e_phc_get_syncdevicetime, get_device_system_crosststamp)
+e1000e_phc_gettimex -> (e1000e_read_systim, _raw_spin_lock_irqsave, ns_to_timespec64, _raw_spin_unlock_irqrestore, timecounter_cyc2time)
+e1000e_phc_settime -> (_raw_spin_lock_irqsave, timecounter_init, _raw_spin_unlock_irqrestore)
+e1000e_ptp_init -> (netdev_err, e1000e_phc_settime, e1000e_phc_getcrosststamp, snprintf, e1000e_systim_overflow_work, delayed_work_timer_fn, e1000e_phc_gettimex, init_timer_key, e1000e_phc_enable, ptp_clock_register, e1000e_phc_adjfine, e1000e_phc_adjtime, queue_delayed_work_on, netdev_info)
+e1000e_ptp_remove -> (cancel_delayed_work_sync, netdev_info, ptp_clock_unregister)
+e1000e_systim_overflow_work -> (timecounter_read, ns_to_timespec64, queue_delayed_work_on)

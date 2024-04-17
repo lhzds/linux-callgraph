@@ -1,0 +1,10 @@
+io_uring/sqpoll.o
+io_put_sq_data -> (refcount_warn_saturate, io_sq_thread_stop, kfree)
+io_run_task_work -> (__rseq_handle_notify_resume, task_work_run, blkcg_maybe_throttle_current)
+io_sq_offload_create -> (refcount_warn_saturate, __mutex_init, __fdget, wake_up_new_task, io_sq_thread_unpark, kmalloc_trace, io_is_uring_fops, io_uring_alloc_task_context, create_io_thread, fput, io_sq_thread_park, security_uring_sqpoll, __init_swait_queue_head, io_sq_thread, __init_waitqueue_head, __msecs_to_jiffies, complete, io_sq_thread_finish)
+io_sq_thread -> (mutex_lock, get_signal, __set_task_comm, schedule, prepare_to_wait, autoremove_wake_function, blkcg_maybe_throttle_current, __rseq_handle_notify_resume, __wake_up, task_work_run, do_exit, snprintf, mutex_unlock, io_do_iopoll, __SCT__cond_resched, revert_creds, io_uring_cancel_generic, override_creds, io_submit_sqes, io_run_task_work, finish_wait, set_cpus_allowed_ptr, complete)
+io_sq_thread_finish -> (mutex_lock, refcount_warn_saturate, mutex_unlock, wake_up_process, io_sq_thread_stop, kfree)
+io_sq_thread_park -> (mutex_lock, wake_up_process)
+io_sq_thread_stop -> (mutex_unlock, wait_for_completion, mutex_lock, wake_up_process)
+io_sq_thread_unpark -> (mutex_unlock)
+io_sqpoll_wait_sq -> (schedule, autoremove_wake_function, finish_wait, prepare_to_wait)

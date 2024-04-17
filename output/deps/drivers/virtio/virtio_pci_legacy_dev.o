@@ -1,0 +1,13 @@
+drivers/virtio/virtio_pci_legacy_dev.o
+vp_legacy_config_vector -> (ioread16, iowrite16)
+vp_legacy_get_driver_features -> (ioread32)
+vp_legacy_get_features -> (ioread32)
+vp_legacy_get_queue_enable -> (iowrite16, ioread32)
+vp_legacy_get_queue_size -> (ioread16, iowrite16)
+vp_legacy_get_status -> (ioread8)
+vp_legacy_probe -> (dma_set_coherent_mask, pci_iomap, _dev_warn, dma_set_mask, pci_request_region, pci_release_region)
+vp_legacy_queue_vector -> (ioread16, iowrite16)
+vp_legacy_remove -> (pci_iounmap, pci_release_region)
+vp_legacy_set_features -> (iowrite32)
+vp_legacy_set_queue_address -> (iowrite16, iowrite32)
+vp_legacy_set_status -> (iowrite8)

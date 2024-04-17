@@ -1,0 +1,12 @@
+fs/ext4/migrate.o
+ext4_ext_migrate -> (ext4_ext_tree_init, ext4_journal_ensure_credits, __ext4_new_inode, clear_nlink, finish_range, iput, update_tind_extent_range, update_dind_extent_range, down_read, percpu_down_write, ext4_ext_swap_inode_data, up_read, percpu_up_write, unlock_new_inode, update_ind_extent_range, __ext4_journal_stop, __ext4_journal_start_sb, free_ext_block)
+ext4_ext_swap_inode_data -> (down_write, __ext4_journal_ensure_credits, up_write, __ext4_mark_inode_dirty, _raw_spin_unlock, _raw_spin_lock, ext4_sb_bread, jbd2__journal_restart, free_dind_blocks, ext4_free_blocks)
+ext4_ind_migrate -> (down_write, up_write, ext4_alloc_da_blocks, __ext4_mark_inode_dirty, percpu_down_write, percpu_up_write, ext4_ext_check_inode, __ext4_journal_stop, __ext4_journal_start_sb)
+ext4_journal_ensure_credits -> (jbd2__journal_restart, __ext4_journal_ensure_credits)
+finish_range -> (down_write, ext4_find_extent, up_write, ext4_ext_insert_extent, ext4_free_ext_path, ext4_datasem_ensure_credits, ext4_ext_calc_credits_for_single_extent)
+free_dind_blocks -> (jbd2__journal_restart, ext4_sb_bread, __ext4_journal_ensure_credits, ext4_free_blocks)
+free_ext_block -> (free_ext_idx)
+free_ext_idx -> (__ext4_journal_ensure_credits, ext4_sb_bread, free_ext_idx, jbd2__journal_restart, ext4_free_blocks)
+update_dind_extent_range -> (update_ind_extent_range, ext4_sb_bread)
+update_ind_extent_range -> (ext4_sb_bread, finish_range)
+update_tind_extent_range -> (update_ind_extent_range, ext4_sb_bread)

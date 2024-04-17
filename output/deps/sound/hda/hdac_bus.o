@@ -1,0 +1,11 @@
+sound/hda/hdac_bus.o
+snd_hdac_bus_add_device -> (_dev_err)
+snd_hdac_bus_exec_verb -> (mutex_unlock, mutex_lock, snd_hdac_bus_exec_verb_unlocked)
+snd_hdac_bus_exec_verb_unlocked -> (__probestub_hda_get_response, __traceiter_hda_send_cmd, __traceiter_hda_get_response, __SCT__tp_func_hda_send_cmd, __SCT__tp_func_hda_get_response, __probestub_hda_send_cmd)
+snd_hdac_bus_exit -> (cancel_work_sync)
+snd_hdac_bus_init -> (snd_hdac_bus_send_cmd, __mutex_init, snd_hdac_bus_link_power, snd_hdac_bus_process_unsol_events, __init_waitqueue_head, snd_hdac_bus_get_response)
+snd_hdac_bus_process_unsol_events -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+snd_hdac_bus_queue_event -> (__SCT__tp_func_hda_unsol_event, __traceiter_hda_unsol_event, queue_work_on, __probestub_hda_unsol_event)
+snd_hdac_bus_remove_device -> (flush_work)
+snd_hdac_codec_link_down -> (snd_hdac_bus_link_power)
+snd_hdac_codec_link_up -> (snd_hdac_bus_link_power)

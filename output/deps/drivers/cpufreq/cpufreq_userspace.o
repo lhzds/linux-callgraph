@@ -1,0 +1,11 @@
+drivers/cpufreq/cpufreq_userspace.o
+cpufreq_default_governor -> (cpufreq_userspace_policy_limits, cpufreq_set, cpufreq_userspace_policy_start, cpufreq_userspace_policy_stop, show_speed, cpufreq_userspace_policy_init, cpufreq_userspace_policy_exit)
+cpufreq_gov_userspace_exit -> (cpufreq_userspace_policy_limits, cpufreq_set, cpufreq_unregister_governor, cpufreq_userspace_policy_start, cpufreq_userspace_policy_stop, show_speed, cpufreq_userspace_policy_init, cpufreq_userspace_policy_exit)
+cpufreq_gov_userspace_init -> (cpufreq_userspace_policy_limits, cpufreq_set, cpufreq_userspace_policy_start, cpufreq_userspace_policy_stop, show_speed, cpufreq_userspace_policy_init, cpufreq_userspace_policy_exit, cpufreq_register_governor)
+cpufreq_set -> (__cpufreq_driver_target, mutex_lock, mutex_unlock)
+cpufreq_userspace_policy_exit -> (mutex_lock, kfree, mutex_unlock)
+cpufreq_userspace_policy_init -> (kmalloc_trace)
+cpufreq_userspace_policy_limits -> (__cpufreq_driver_target, mutex_lock, mutex_unlock)
+cpufreq_userspace_policy_start -> (mutex_unlock, mutex_lock)
+cpufreq_userspace_policy_stop -> (mutex_unlock, mutex_lock)
+show_speed -> (sprintf)

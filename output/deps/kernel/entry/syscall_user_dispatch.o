@@ -1,0 +1,5 @@
+kernel/entry/syscall_user_dispatch.o
+syscall_user_dispatch -> (trigger_sigsys, force_exit_sig, arch_syscall_is_vdso_sigreturn)
+syscall_user_dispatch_get_config -> (_copy_to_user)
+syscall_user_dispatch_set_config -> (_copy_from_user)
+trigger_sigsys -> (force_sig_info)

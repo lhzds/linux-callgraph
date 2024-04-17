@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/display/intel_ddi_buf_trans.o
+dg2_get_snps_buf_trans -> (intel_dp_is_uhbr)
+intel_ddi_buf_trans_init -> (intel_port_to_phy, adls_get_combo_buf_trans, dg2_get_snps_buf_trans, tgl_get_dkl_buf_trans, skl_u_get_buf_trans, icl_get_combo_buf_trans, __warn_printk, skl_get_buf_trans, kbl_get_buf_trans, mtl_get_cx0_buf_trans, kbl_y_get_buf_trans, dg1_get_combo_buf_trans, bdw_get_buf_trans, icl_get_mg_buf_trans, hsw_get_buf_trans, adlp_get_dkl_buf_trans, skl_y_get_buf_trans, ehl_get_combo_buf_trans, bxt_get_buf_trans, rkl_get_combo_buf_trans, jsl_get_combo_buf_trans, adlp_get_combo_buf_trans, intel_phy_is_combo, kbl_u_get_buf_trans, tgl_get_combo_buf_trans)
+mtl_get_cx0_buf_trans -> (intel_is_c10phy, intel_port_to_phy)

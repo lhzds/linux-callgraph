@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/display/intel_lpe_audio.o
+intel_lpe_audio_init -> (intel_irqs_enabled, lpe_audio_irq_mask, pm_runtime_no_callbacks, __drm_dev_dbg, handle_simple_irq, irq_set_chip_and_handler_name, __warn_printk, __irq_alloc_descs, kmalloc_trace, pci_dev_present, kfree, _dev_err, platform_device_register_full, irq_free_descs, irq_set_chip_data, lpe_audio_irq_unmask, _dev_info, dev_driver_string)
+intel_lpe_audio_irq_handler -> (___ratelimit, generic_handle_irq, _dev_err)
+intel_lpe_audio_notify -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+intel_lpe_audio_teardown -> (irq_free_descs, platform_device_unregister)

@@ -1,0 +1,8 @@
+sound/pci/hda/hda_bind.o
+__hda_codec_driver_register -> (hda_codec_pm_thaw, driver_register, hda_codec_driver_remove, hda_codec_pm_freeze, hda_bus_match, hda_codec_driver_probe, hda_codec_pm_restore, hda_codec_match, hda_codec_pm_resume, hda_codec_runtime_suspend, hda_codec_pm_prepare, hda_uevent, hda_codec_driver_shutdown, hda_codec_runtime_resume, hda_codec_pm_complete, hda_codec_unsol_event, hda_codec_pm_suspend)
+hda_codec_driver_probe -> (snd_hda_codec_build_controls, snd_hda_codec_build_pcms, snd_hda_codec_cleanup_for_unbind, snprintf, snd_card_register, snd_hdac_regmap_init, snd_hdac_device_set_chip_name, snd_hda_codec_register)
+hda_codec_driver_remove -> (init_wait_entry, __SCT__might_resched, refcount_warn_saturate, snd_hda_codec_cleanup_for_unbind, schedule, finish_wait, snd_hda_codec_disconnect_pcms, prepare_to_wait_event, snd_hda_jack_tbl_disconnect)
+hda_codec_driver_shutdown -> (snd_hda_codec_shutdown)
+hda_codec_driver_unregister -> (driver_unregister)
+snd_hda_codec_configure -> (device_attach, snd_hdac_device_register)
+snd_hda_codec_set_name -> (snd_hdac_device_set_chip_name, snprintf)

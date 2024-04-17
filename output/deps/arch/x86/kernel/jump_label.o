@@ -1,0 +1,7 @@
+arch/x86/kernel/jump_label.o
+__jump_label_patch -> (_printk, insn_decode, bcmp)
+arch_jump_entry_size -> (insn_decode)
+arch_jump_label_transform -> (jump_label_transform)
+arch_jump_label_transform_apply -> (mutex_unlock, text_poke_finish, mutex_lock)
+arch_jump_label_transform_queue -> (mutex_lock, mutex_unlock, text_poke_queue, __jump_label_patch, jump_label_transform)
+jump_label_transform -> (mutex_lock, text_poke_bp, mutex_unlock, text_poke_early, __jump_label_patch)

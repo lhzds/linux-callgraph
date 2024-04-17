@@ -1,0 +1,6 @@
+kernel/kexec.o
+__ia32_compat_sys_kexec_load -> (_copy_from_user, security_kernel_load_data, kexec_load_permitted, do_kexec_load, security_locked_down, kfree, __kmalloc)
+__ia32_sys_kexec_load -> (__se_sys_kexec_load)
+__se_sys_kexec_load -> (memdup_user, security_kernel_load_data, kexec_load_permitted, do_kexec_load, security_locked_down, kfree)
+__x64_sys_kexec_load -> (__se_sys_kexec_load)
+do_kexec_load -> (kimage_alloc_control_pages, _printk, kimage_free, kimage_load_segment, do_kimage_alloc_init, kimage_free_page_list, kimage_terminate, arch_kexec_unprotect_crashkres, sanity_check_segment_list, kimage_crash_copy_vmcoreinfo, kfree, machine_kexec_prepare, arch_kexec_protect_crashkres)

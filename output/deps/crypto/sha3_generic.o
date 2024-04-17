@@ -1,0 +1,5 @@
+crypto/sha3_generic.o
+crypto_sha3_final -> (keccakf)
+crypto_sha3_update -> (keccakf)
+sha3_generic_mod_fini -> (crypto_sha3_final, crypto_sha3_update, crypto_sha3_init, crypto_unregister_shashes)
+sha3_generic_mod_init -> (crypto_register_shashes, crypto_sha3_update, crypto_sha3_init, crypto_sha3_final)

@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gt/uc/intel_guc_fw.o
+intel_guc_fw_upload -> (__SCT__might_resched, __drm_dev_dbg, _dev_warn, ktime_get_raw, usleep_range_state, intel_uc_fw_upload, intel_uc_fw_copy_rsa, ktime_get, _dev_info, intel_rps_read_actual_frequency)

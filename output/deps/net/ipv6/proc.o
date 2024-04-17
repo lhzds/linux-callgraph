@@ -1,0 +1,12 @@
+net/ipv6/proc.o
+ipv6_misc_proc_exit -> (ipv6_proc_exit_net, ipv6_proc_init_net, unregister_pernet_subsys)
+ipv6_misc_proc_init -> (ipv6_proc_exit_net, ipv6_proc_init_net, register_pernet_subsys)
+ipv6_proc_exit_net -> (remove_proc_entry)
+ipv6_proc_init_net -> (remove_proc_entry, snmp6_seq_show, proc_create_net_single, sockstat6_seq_show, proc_mkdir)
+snmp6_dev_seq_show -> (seq_printf, snmp6_seq_show_icmpv6msg)
+snmp6_register_dev -> (proc_create_single_data, snmp6_dev_seq_show)
+snmp6_seq_show -> (snmp6_seq_show_item, seq_printf, snmp6_seq_show_icmpv6msg)
+snmp6_seq_show_icmpv6msg -> (snprintf, seq_printf)
+snmp6_seq_show_item -> (seq_printf)
+snmp6_unregister_dev -> (proc_remove)
+sockstat6_seq_show -> (udp_abort, compat_rawv6_ioctl, udpv6_splice_eof, tcp_recvmsg, inet_csk_accept, udpv6_setsockopt, rawv6_setsockopt, udpv6_recvmsg, rawv6_bind, tcp_release_cb, ip6_datagram_connect, udpv6_pre_connect, tcp_sendmsg, ip6_datagram_release_cb, tcp_disconnect, rawv6_close, tcp_leave_memory_pressure, udp_lib_hash, udp_lib_unhash, udp_ioctl, __udp_disconnect, tcp_v6_connect, tcp_abort, tcp_v4_destroy_sock, udplitev6_sk_init, rawv6_recvmsg, inet_csk_get_port, udpv6_destroy_sock, udp_disconnect, inet6_hash, tcp_shutdown, rawv6_init_sk, tcp_enter_memory_pressure, tcp_setsockopt, inet_put_port, tcp_ioctl, tcp_getsockopt, tcp_v6_init_sock, tcp_stream_memory_free, udpv6_sendmsg, ip6_datagram_connect_v6_only, raw_unhash_sk, inet_unhash, raw_hash_sk, sock_prot_inuse_get, tcp_bpf_bypass_getsockopt, tcp_splice_eof, udp_v6_get_port, rawv6_sendmsg, udpv6_init_sock, tcp_close, rawv6_rcv_skb, tcp_set_keepalive, raw6_destroy, tcp_v6_do_rcv, udp_lib_close, udpv6_getsockopt, seq_printf, udp_v6_rehash, rawv6_getsockopt, raw_abort, rawv6_ioctl, tcp_v6_pre_connect)

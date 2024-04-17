@@ -1,0 +1,7 @@
+drivers/iommu/iommu_sysfs.o
+iommu_dev_init -> (release_device, class_register)
+iommu_device_link -> (sysfs_add_link_to_group, sysfs_remove_link_from_group, sysfs_create_link_nowarn)
+iommu_device_sysfs_add -> (put_device, device_initialize, kmalloc_trace, device_add, kobject_set_name_vargs, release_device)
+iommu_device_sysfs_remove -> (device_unregister)
+iommu_device_unlink -> (sysfs_remove_link, sysfs_remove_link_from_group)
+release_device -> (kfree)

@@ -1,0 +1,12 @@
+net/ipv4/inet_timewait_sock.o
+__inet_twsk_schedule -> (mod_timer, refcount_warn_saturate, mod_timer_pending)
+inet_twsk_alloc -> (kmem_cache_alloc, init_timer_key, tw_timer_handler)
+inet_twsk_bind_unhash -> (inet_bind2_bucket_destroy, inet_bind_bucket_destroy, refcount_warn_saturate)
+inet_twsk_deschedule_put -> (refcount_warn_saturate, kmem_cache_free, timer_delete_sync, inet_twsk_kill)
+inet_twsk_free -> (kmem_cache_free)
+inet_twsk_hashdance -> (_raw_spin_lock, inet_bhashfn_portaddr, _raw_spin_unlock)
+inet_twsk_kill -> (refcount_warn_saturate, _raw_spin_unlock, inet_bind2_bucket_destroy, _raw_spin_lock, inet_bhashfn_portaddr, inet_bind_bucket_destroy, kmem_cache_free)
+inet_twsk_purge -> (refcount_warn_saturate, __SCT__cond_resched, __rcu_read_lock, __rcu_read_unlock, inet_twsk_deschedule_put, kmem_cache_free, local_bh_enable, inet_csk_reqsk_queue_drop_and_put)
+inet_twsk_put -> (refcount_warn_saturate, kmem_cache_free)
+local_bh_enable -> (__local_bh_enable_ip)
+tw_timer_handler -> (inet_twsk_kill)

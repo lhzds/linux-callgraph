@@ -1,0 +1,6 @@
+net/ethtool/strset.o
+strset_cleanup_data -> (kfree)
+strset_fill_reply -> (nla_put, skb_trim, strnlen, nla_reserve)
+strset_parse_request -> (do_trace_netlink_extack, __warn_printk, __nla_validate, __nla_parse)
+strset_prepare_data -> (do_trace_netlink_extack, ethnl_ops_complete, ethnl_ops_begin, kfree, __kmalloc)
+strset_reply_size -> (strnlen)

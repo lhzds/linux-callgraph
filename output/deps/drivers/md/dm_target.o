@@ -1,0 +1,8 @@
+drivers/md/dm_target.o
+dm_get_target_type -> (__request_module, down_read, up_read, strcmp)
+dm_put_target_type -> (down_read, up_read)
+dm_register_target -> (down_write, _printk, up_write, strcmp)
+dm_target_exit -> (down_write, _printk, up_write, io_err_io_hints, io_err_clone_and_map_rq, strcmp, io_err_ctr, io_err_map, io_err_dax_direct_access, io_err_dtr, io_err_release_clone_rq)
+dm_target_init -> (dm_register_target, io_err_io_hints, io_err_clone_and_map_rq, io_err_ctr, io_err_map, io_err_dax_direct_access, io_err_dtr, io_err_release_clone_rq)
+dm_target_iterate -> (down_read, up_read)
+dm_unregister_target -> (down_write, _printk, up_write, strcmp)

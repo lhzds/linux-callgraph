@@ -1,0 +1,4 @@
+net/ethtool/features.o
+ethnl_set_features -> (do_trace_netlink_extack, ethnl_reply_init, netdev_features_change, netlink_unicast, rtnl_lock, __warn_printk, ethnl_parse_bitset, ethnl_put_bitset, ethnl_bitset_size, __netdev_update_features, kfree_skb_reason, rtnl_unlock, ethnl_parse_header_dev_get)
+features_fill_reply -> (ethnl_put_bitset32)
+features_reply_size -> (ethnl_bitset32_size)

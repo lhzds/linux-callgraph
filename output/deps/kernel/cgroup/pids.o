@@ -1,0 +1,9 @@
+kernel/cgroup/pids.o
+pids_can_attach -> (cgroup_taskset_next, cgroup_taskset_first)
+pids_can_fork -> (_printk, cgroup_file_notify, pr_cont_kernfs_path)
+pids_cancel_attach -> (cgroup_taskset_next, cgroup_taskset_first)
+pids_css_alloc -> (kmalloc_trace)
+pids_css_free -> (kfree)
+pids_events_show -> (of_css, seq_printf)
+pids_max_show -> (of_css, seq_printf)
+pids_max_write -> (of_css, strim, kstrtoll, strcmp)

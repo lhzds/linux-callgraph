@@ -1,0 +1,2 @@
+arch/x86/kernel/cpu/rdrand.o
+x86_init_rdrand -> (_printk, clear_cpu_cap)

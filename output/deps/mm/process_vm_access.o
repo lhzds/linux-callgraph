@@ -1,0 +1,6 @@
+mm/process_vm_access.o
+__ia32_sys_process_vm_readv -> (process_vm_rw)
+__ia32_sys_process_vm_writev -> (process_vm_rw)
+__x64_sys_process_vm_readv -> (process_vm_rw)
+__x64_sys_process_vm_writev -> (process_vm_rw)
+process_vm_rw -> (refcount_warn_saturate, trace_mmap_lock_unreg, import_iovec, __mmap_lock_do_trace_start_locking, iovec_from_user, find_get_task_by_vpid, mmput, __traceiter_mmap_lock_released, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned, __SCT__tp_func_mmap_lock_acquire_returned, down_read, __probestub_mmap_lock_released, copy_page_to_iter, __SCT__tp_func_mmap_lock_start_locking, __put_task_struct, __probestub_mmap_lock_start_locking, mm_access, pin_user_pages_remote, __kmalloc, __mmap_lock_do_trace_released, copy_page_from_iter, trace_mmap_lock_reg, up_read, __traceiter_mmap_lock_start_locking, unpin_user_pages_dirty_lock, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_acquire_returned, kfree)

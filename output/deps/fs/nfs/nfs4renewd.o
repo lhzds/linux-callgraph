@@ -1,0 +1,5 @@
+fs/nfs/nfs4renewd.o
+nfs4_kill_renewd -> (cancel_delayed_work_sync)
+nfs4_renew_state -> (nfs_expire_all_delegations, __put_cred, nfs_delegations_present, _raw_spin_unlock, _raw_spin_lock, nfs_expire_unreferenced_delegations, mod_delayed_work_on)
+nfs4_schedule_state_renewal -> (_raw_spin_lock, mod_delayed_work_on, _raw_spin_unlock)
+nfs4_set_lease_period -> (_raw_spin_lock, rpc_set_connect_timeout, _raw_spin_unlock)

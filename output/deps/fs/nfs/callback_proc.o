@@ -1,0 +1,3 @@
+fs/nfs/callback_proc.o
+nfs4_callback_getattr -> (iput, nfs_delegation_find_inode, nfs4_get_valid_delegation, nfs_sb_deactive, __traceiter_nfs4_cb_getattr, __SCT__tp_func_nfs4_cb_getattr, __probestub_nfs4_cb_getattr, __rcu_read_lock, __rcu_read_unlock)
+nfs4_callback_recall -> (iput, nfs_delegation_find_inode, nfs_async_inode_return_delegation, __traceiter_nfs4_cb_recall, __probestub_nfs4_cb_recall, nfs_sb_deactive, __SCT__tp_func_nfs4_cb_recall)

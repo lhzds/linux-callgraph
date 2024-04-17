@@ -1,0 +1,5 @@
+drivers/net/phy/mdio_devres.o
+__devm_mdiobus_register -> (__devres_alloc_node, __mdiobus_register, mdiobus_devres_match, devres_find, devm_mdiobus_unregister, devres_add, devm_mdiobus_free, devres_free)
+devm_mdiobus_alloc_size -> (__devres_alloc_node, devres_add, devm_mdiobus_free, mdiobus_alloc_size, devres_free)
+devm_mdiobus_free -> (mdiobus_free)
+devm_mdiobus_unregister -> (mdiobus_unregister)

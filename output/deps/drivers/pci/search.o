@@ -1,0 +1,11 @@
+drivers/pci/search.o
+pci_dev_present -> (bus_find_device, pci_device_shutdown, pci_dma_configure, pci_bus_num_vf, pci_dev_put, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe, match_pci_dev_by_id)
+pci_do_find_bus -> (pci_do_find_bus)
+pci_find_bus -> (down_read, pci_do_find_bus, up_read)
+pci_find_next_bus -> (down_read, up_read)
+pci_for_each_dma_alias -> (pci_real_dma_dev, _find_next_bit)
+pci_get_class -> (bus_find_device, pci_device_shutdown, pci_dma_configure, pci_bus_num_vf, pci_dev_put, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe, match_pci_dev_by_id)
+pci_get_device -> (bus_find_device, pci_device_shutdown, pci_dma_configure, pci_bus_num_vf, pci_dev_put, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe, match_pci_dev_by_id)
+pci_get_domain_bus_and_slot -> (bus_find_device, pci_device_shutdown, pci_dma_configure, pci_bus_num_vf, pci_dev_put, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe, match_pci_dev_by_id)
+pci_get_slot -> (down_read, up_read, pci_dev_get)
+pci_get_subsys -> (bus_find_device, pci_device_shutdown, pci_dma_configure, pci_bus_num_vf, pci_dev_put, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe, match_pci_dev_by_id)

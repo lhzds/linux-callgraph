@@ -1,0 +1,10 @@
+fs/ioctl.o
+__ia32_compat_sys_ioctl -> (do_vfs_ioctl, _copy_from_user, __fdget, vfs_fallocate, security_file_ioctl, vfs_clone_file_range, fput)
+__ia32_sys_ioctl -> (__se_sys_ioctl)
+__se_sys_ioctl -> (fput, security_file_ioctl, do_vfs_ioctl, __fdget)
+__x64_sys_ioctl -> (__se_sys_ioctl)
+copy_fsxattr_to_user -> (_copy_to_user)
+do_vfs_ioctl -> (mnt_want_write_file, __fdget, _raw_spin_lock, inode_get_bytes, mnt_drop_write_file, _copy_to_user, _copy_from_user, _raw_spin_unlock, vfs_dedupe_file_range, fput, capable, _printk, memdup_user, vfs_fallocate, ns_capable, freeze_super, ___ratelimit, bmap, vfs_clone_file_range, vfs_fileattr_set, kfree, thaw_super, set_close_on_exec)
+fiemap_fill_next_extent -> (_copy_to_user)
+fiemap_prep -> (filemap_write_and_wait_range)
+vfs_fileattr_set -> (capable, inode_owner_or_capable, up_write, down_write)

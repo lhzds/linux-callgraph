@@ -1,0 +1,8 @@
+sound/core/hrtimer.o
+snd_hrtimer_callback -> (_raw_spin_lock, snd_timer_interrupt, _raw_spin_unlock)
+snd_hrtimer_close -> (kfree, _raw_spin_lock_irq, hrtimer_cancel, _raw_spin_unlock_irq)
+snd_hrtimer_exit -> (snd_timer_global_free)
+snd_hrtimer_init -> (snd_hrtimer_stop, snd_timer_global_free, snd_timer_global_register, snd_hrtimer_close, snd_timer_global_new, snd_hrtimer_start, snd_hrtimer_open)
+snd_hrtimer_open -> (hrtimer_init, kmalloc_trace, snd_hrtimer_callback)
+snd_hrtimer_start -> (hrtimer_start_range_ns)
+snd_hrtimer_stop -> (hrtimer_try_to_cancel)

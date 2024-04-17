@@ -1,0 +1,11 @@
+crypto/hmac.o
+hmac_clone_tfm -> (crypto_clone_shash)
+hmac_create -> (hmac_setkey, hmac_update, hmac_clone_tfm, shash_register_instance, crypto_attr_alg_name, crypto_inst_setname, hmac_init, hmac_final, hmac_import, kmalloc_trace, shash_free_singlespawn_instance, shash_no_setkey, crypto_grab_shash, hmac_init_tfm, hmac_export, crypto_check_attr_type, hmac_finup, hmac_exit_tfm)
+hmac_exit_tfm -> (crypto_destroy_tfm)
+hmac_final -> (crypto_shash_final, crypto_shash_finup)
+hmac_finup -> (crypto_shash_finup)
+hmac_init_tfm -> (crypto_spawn_tfm2)
+hmac_module_exit -> (crypto_unregister_template, hmac_create)
+hmac_module_init -> (crypto_register_template, hmac_create)
+hmac_setkey -> (crypto_shash_digest, crypto_shash_update)
+hmac_update -> (crypto_shash_update)

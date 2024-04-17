@@ -1,0 +1,2 @@
+init/version.o
+early_hostname -> (_printk, utsns_put, utsns_owner, utsns_install, utsns_get, strlcpy)

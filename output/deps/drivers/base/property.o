@@ -1,0 +1,13 @@
+drivers/base/property.o
+device_get_phy_mode -> (fwnode_get_phy_mode)
+device_property_match_string -> (fwnode_property_match_string)
+fwnode_connection_find_match -> (fwnode_graph_devcon_matches, fwnode_devcon_matches)
+fwnode_connection_find_matches -> (fwnode_graph_devcon_matches, fwnode_devcon_matches)
+fwnode_get_next_parent_dev -> (get_device)
+fwnode_get_phy_mode -> (strcasecmp)
+fwnode_graph_devcon_matches -> (fwnode_graph_get_next_endpoint)
+fwnode_graph_get_endpoint_by_id -> (fwnode_graph_get_remote_port_parent, fwnode_graph_get_next_endpoint)
+fwnode_graph_get_endpoint_count -> (fwnode_graph_get_remote_port_parent, fwnode_graph_get_next_endpoint)
+fwnode_graph_get_next_endpoint -> (fwnode_graph_get_next_endpoint)
+fwnode_irq_get_byname -> (fwnode_property_match_string)
+fwnode_property_match_string -> (kfree, match_string, __kmalloc)

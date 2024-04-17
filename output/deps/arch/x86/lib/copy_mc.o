@@ -1,0 +1,5 @@
+arch/x86/lib/copy_mc.o
+copy_mc_fragile_handle_tail -> (copy_mc_fragile)
+copy_mc_to_kernel -> (copy_mc_fragile, copy_mc_enhanced_fast_string)
+copy_mc_to_user -> (copy_mc_fragile, copy_mc_enhanced_fast_string)
+enable_copy_mc_fragile -> (static_key_slow_inc)

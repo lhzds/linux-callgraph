@@ -1,0 +1,4 @@
+arch/x86/kernel/umip.o
+fixup_umip_exception -> (insn_decode_from_regs, force_sig_info_umip_fault, down_read, up_read, insn_get_modrm, insn_fetch_from_user, __copy_overflow, insn_get_modrm_rm_off, umip_printk, _copy_to_user, insn_get_addr_ref)
+force_sig_info_umip_fault -> (unhandled_signal, umip_printk, force_sig_fault)
+umip_printk -> (___ratelimit, _printk)

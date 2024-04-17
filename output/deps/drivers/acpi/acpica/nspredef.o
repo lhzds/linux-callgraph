@@ -1,0 +1,3 @@
+drivers/acpi/acpica/nspredef.o
+acpi_ns_check_object_type -> (acpi_ut_get_reference_name, acpi_ut_get_object_type_name, acpi_ut_get_expected_return_types, acpi_ut_get_type_name, acpi_ns_simple_repair, acpi_ut_predefined_warning)
+acpi_ns_check_return_value -> (acpi_ns_check_package, acpi_ns_check_object_type, acpi_ns_complex_repairs)

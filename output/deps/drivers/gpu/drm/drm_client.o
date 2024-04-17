@@ -1,0 +1,13 @@
+drivers/gpu/drm/drm_client.o
+drm_client_buffer_vmap -> (drm_gem_vmap_unlocked)
+drm_client_buffer_vunmap -> (drm_gem_vunmap_unlocked)
+drm_client_debugfs_init -> (drm_debugfs_add_files, drm_client_debugfs_internal_clients)
+drm_client_debugfs_internal_clients -> (mutex_lock, mutex_unlock, __drm_puts_seq_file, drm_printf, __drm_printfn_seq_file)
+drm_client_dev_hotplug -> (mutex_unlock, mutex_lock, __drm_dev_dbg)
+drm_client_dev_restore -> (mutex_unlock, mutex_lock, __drm_dev_dbg)
+drm_client_dev_unregister -> (mutex_lock, drm_client_release, mutex_unlock, kfree)
+drm_client_framebuffer_create -> (drm_mode_addfb, refcount_warn_saturate, drm_gem_object_free, kmalloc_trace, drm_framebuffer_lookup, drm_mode_object_put, kfree, drm_gem_vunmap_unlocked, drm_format_info_bpp, drm_mode_destroy_dumb, drm_format_info, drm_gem_object_lookup, drm_mode_create_dumb, strscpy)
+drm_client_framebuffer_delete -> (refcount_warn_saturate, drm_gem_object_free, drm_mode_rmfb, _dev_err, drm_gem_vunmap_unlocked, kfree)
+drm_client_init -> (mutex_lock, drm_file_alloc, drm_dev_get, mutex_unlock, drm_client_modeset_create, drm_client_modeset_free)
+drm_client_register -> (mutex_unlock, mutex_lock, __drm_dev_dbg)
+drm_client_release -> (mutex_lock, __drm_dev_dbg, mutex_unlock, drm_dev_put, drm_client_modeset_free, drm_file_free)

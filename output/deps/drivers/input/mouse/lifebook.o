@@ -1,0 +1,8 @@
+drivers/input/mouse/lifebook.o
+lifebook_absolute_mode -> (psmouse_reset, ps2_command)
+lifebook_detect -> (strcmp)
+lifebook_disconnect -> (psmouse_reset, kfree, input_unregister_device)
+lifebook_init -> (snprintf, lifebook_absolute_mode, input_set_capability, input_free_device, kmalloc_trace, lifebook_set_resolution, kfree, ps2_command, input_set_abs_params, input_register_device, psmouse_reset, input_allocate_device, lifebook_process_byte, lifebook_disconnect)
+lifebook_module_init -> (lifebook_set_6byte_proto, dmi_check_system, lifebook_limit_serio3)
+lifebook_process_byte -> (psmouse_report_standard_buttons, input_event, _dev_warn, psmouse_report_standard_motion)
+lifebook_set_resolution -> (ps2_command)

@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/i915_gem_evict.o
+grab_vma -> (refcount_warn_saturate, drm_gem_object_free, ww_mutex_trylock)
+i915_gem_evict_for_node -> (refcount_warn_saturate, __i915_vma_unbind, __traceiter_i915_gem_evict_node, drm_gem_object_free, __drm_mm_interval_first, __probestub_i915_gem_evict_node, __SCT__tp_func_i915_gem_evict_node, intel_gt_retire_requests_timeout, grab_vma, ww_mutex_unlock)
+i915_gem_evict_something -> (__probestub_i915_gem_evict, drm_mm_scan_color_evict, refcount_warn_saturate, __i915_vma_unbind, drm_mm_scan_add_block, drm_mm_scan_init_with_range, drm_gem_object_free, drm_mm_scan_remove_block, __SCT__tp_func_i915_gem_evict, __SCT__cond_resched, intel_gt_wait_for_idle, intel_gt_retire_requests_timeout, grab_vma, ww_mutex_unlock, __traceiter_i915_gem_evict)
+i915_gem_evict_vm -> (refcount_warn_saturate, __i915_vma_unbind, __probestub_i915_gem_evict_vm, __SCT__tp_func_i915_gem_evict_vm, drm_gem_object_free, ww_mutex_trylock, __traceiter_i915_gem_evict_vm, intel_gt_wait_for_idle, ww_mutex_unlock)

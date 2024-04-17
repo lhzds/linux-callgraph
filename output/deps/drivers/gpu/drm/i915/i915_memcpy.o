@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/i915_memcpy.o
+i915_memcpy_from_wc -> (kernel_fpu_begin_mask, kernel_fpu_end)
+i915_memcpy_init_early -> (static_key_enable)
+i915_unaligned_memcpy_from_wc -> (kernel_fpu_begin_mask, kernel_fpu_end)

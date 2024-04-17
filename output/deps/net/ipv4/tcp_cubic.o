@@ -1,0 +1,4 @@
+net/ipv4/tcp_cubic.o
+cubictcp_cong_avoid -> (tcp_cong_avoid_ai, tcp_slow_start, __usecs_to_jiffies)
+cubictcp_register -> (cubictcp_recalc_ssthresh, tcp_register_congestion_control, tcp_reno_undo_cwnd, cubictcp_cwnd_event, cubictcp_init, cubictcp_acked, cubictcp_cong_avoid, cubictcp_state)
+cubictcp_unregister -> (cubictcp_recalc_ssthresh, tcp_reno_undo_cwnd, tcp_unregister_congestion_control, cubictcp_cwnd_event, cubictcp_init, cubictcp_acked, cubictcp_cong_avoid, cubictcp_state)

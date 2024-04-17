@@ -1,0 +1,9 @@
+net/sunrpc/auth_unix.o
+rpc_destroy_authunix -> (mempool_destroy)
+rpc_init_authunix -> (mempool_create, mempool_kmalloc, mempool_kfree)
+unx_create -> (unx_lookup_cred, unx_destroy, refcount_warn_saturate, unx_create)
+unx_destroy_cred -> (unx_free_cred_callback, call_rcu)
+unx_free_cred_callback -> (__put_cred, mempool_free)
+unx_lookup_cred -> (unx_destroy_cred, rpcauth_wrap_req_encode, kmalloc_trace, rpcauth_init_cred, unx_refresh, mempool_alloc, unx_match, unx_validate, rpcauth_unwrap_resp_decode, unx_marshal, rpc_task_gfp_mask)
+unx_marshal -> (xdr_reserve_space, xdr_encode_opaque)
+unx_validate -> (xdr_inline_decode)

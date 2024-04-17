@@ -1,0 +1,4 @@
+net/ethtool/rss.o
+rss_cleanup_data -> (kfree)
+rss_fill_reply -> (nla_put)
+rss_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin, __kmalloc)

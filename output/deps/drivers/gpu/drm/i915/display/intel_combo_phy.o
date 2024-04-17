@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/display/intel_combo_phy.o
+icl_combo_phy_verify_state -> (__drm_dev_dbg, __warn_printk, intel_bios_is_dsi_present, _dev_err, intel_bios_is_port_present)
+intel_combo_phy_init -> (__drm_dev_dbg, __warn_printk, intel_phy_is_combo, intel_bios_is_dsi_present, _dev_err, icl_combo_phy_verify_state, intel_bios_is_port_present)
+intel_combo_phy_power_up_lanes -> (__warn_printk, dev_driver_string)
+intel_combo_phy_uninit -> (icl_combo_phy_verify_state, intel_phy_is_combo, __drm_dev_dbg, _dev_warn)

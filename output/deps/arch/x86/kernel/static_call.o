@@ -1,0 +1,4 @@
+arch/x86/kernel/static_call.o
+__static_call_fixup -> (mutex_lock, bcmp, mutex_unlock, __x86_return_thunk, __static_call_transform, kernel_text_address)
+__static_call_transform -> (bcmp, text_poke_bp, text_poke_early, __x86_return_thunk, callthunks_translate_call_dest, srso_return_thunk, __x86_return_skl, retbleed_return_thunk, srso_alias_return_thunk, __static_call_return0, __static_call_return)
+arch_static_call_transform -> (_printk, mutex_lock, bcmp, mutex_unlock, __static_call_transform)

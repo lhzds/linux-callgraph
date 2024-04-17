@@ -1,0 +1,9 @@
+drivers/net/phy/fixed_phy.o
+__fixed_phy_register -> (__SCT__might_resched, phy_advertise_supported, phy_device_register, swphy_validate_state, kmalloc_trace, get_phy_device, ida_free, phy_device_free, ida_alloc_range, kfree)
+fixed_mdio_bus_exit -> (mdiobus_unregister, kfree, ida_destroy, mdiobus_free, platform_device_unregister)
+fixed_mdio_bus_init -> (fixed_mdio_read, fixed_mdio_write, __mdiobus_register, mdiobus_free, mdiobus_alloc_size, platform_device_unregister, platform_device_register_full)
+fixed_mdio_read -> (swphy_read_reg)
+fixed_phy_add -> (swphy_validate_state, kmalloc_trace)
+fixed_phy_register -> (__fixed_phy_register)
+fixed_phy_register_with_gpiod -> (__fixed_phy_register)
+fixed_phy_unregister -> (__SCT__might_resched, kfree, phy_device_remove, ida_free)

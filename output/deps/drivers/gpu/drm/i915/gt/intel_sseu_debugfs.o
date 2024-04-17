@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/gt/intel_sseu_debugfs.o
+i915_print_sseu_info -> (intel_sseu_print_ss_info, intel_sseu_subslice_total, seq_printf)
+intel_sseu_debugfs_register -> (seq_read, sseu_topology_open, intel_gt_debugfs_register_files, single_release, sseu_status_open, seq_lseek)
+intel_sseu_status -> (gen9_sseu_device_status, gen11_sseu_device_status, seq_printf, intel_sseu_set_info, kmalloc_trace, intel_sseu_subslice_total, seq_puts, intel_sseu_print_ss_info, intel_runtime_pm_put_unchecked, kfree, intel_runtime_pm_get, i915_print_sseu_info)
+sseu_status_open -> (single_open, sseu_status_show)
+sseu_status_show -> (intel_sseu_status)
+sseu_topology_open -> (single_open, sseu_topology_show)
+sseu_topology_show -> (__drm_puts_seq_file, __drm_printfn_seq_file, intel_sseu_print_topology)

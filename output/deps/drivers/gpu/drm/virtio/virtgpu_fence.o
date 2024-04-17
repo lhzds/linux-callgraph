@@ -1,0 +1,6 @@
+drivers/gpu/drm/virtio/virtgpu_fence.o
+virtio_gpu_fence_alloc -> (virtio_gpu_timeline_value_str, virtio_gpu_fence_signaled, dma_fence_init, virtio_gpu_get_driver_name, kmalloc_trace, virtio_gpu_get_timeline_name, virtio_gpu_fence_value_str)
+virtio_gpu_fence_emit -> (__probestub_dma_fence_emit, __SCT__tp_func_dma_fence_emit, refcount_warn_saturate, _raw_spin_lock_irqsave, __traceiter_dma_fence_emit, _raw_spin_unlock_irqrestore)
+virtio_gpu_fence_event_process -> (drm_send_event, refcount_warn_saturate, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, dma_fence_release, dma_fence_signal_locked)
+virtio_gpu_fence_value_str -> (snprintf)
+virtio_gpu_timeline_value_str -> (snprintf)

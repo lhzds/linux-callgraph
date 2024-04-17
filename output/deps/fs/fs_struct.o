@@ -1,0 +1,8 @@
+fs/fs_struct.o
+chroot_fs_refs -> (do_no_restart_syscall, path_put, _raw_spin_unlock, _raw_read_unlock, _raw_spin_lock, path_get, _raw_read_lock)
+copy_fs_struct -> (kmem_cache_alloc, _raw_spin_lock, path_get, _raw_spin_unlock)
+exit_fs -> (_raw_spin_lock, kmem_cache_free, path_put, _raw_spin_unlock)
+free_fs_struct -> (kmem_cache_free, path_put)
+set_fs_pwd -> (_raw_spin_lock, path_get, path_put, _raw_spin_unlock)
+set_fs_root -> (_raw_spin_lock, path_get, path_put, _raw_spin_unlock)
+unshare_fs_struct -> (kmem_cache_alloc, path_put, _raw_spin_unlock, _raw_spin_lock, path_get, kmem_cache_free)

@@ -1,0 +1,4 @@
+drivers/ptp/ptp_kvm_x86.o
+kvm_arch_ptp_get_clock -> (___ratelimit, _printk)
+kvm_arch_ptp_get_crosststamp -> (___ratelimit, _printk, kvm_cs_enable, kvm_clock_get_cycles)
+kvm_arch_ptp_init -> (pvclock_get_pvti_cpu0_va, slow_virt_to_phys, kvm_para_available)

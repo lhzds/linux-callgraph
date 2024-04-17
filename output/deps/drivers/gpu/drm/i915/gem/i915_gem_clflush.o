@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gem/i915_gem_clflush.o
+clflush_release -> (refcount_warn_saturate, drm_gem_object_free)
+clflush_work -> (drm_clflush_sg, __i915_gem_object_flush_frontbuffer)
+i915_gem_clflush_object -> (refcount_warn_saturate, __i915_gem_object_get_pages, dma_fence_work_init, i915_sw_fence_commit, __probestub_i915_gem_object_clflush, clflush_release, drm_clflush_sg, i915_sw_fence_await_reservation, __i915_gem_object_flush_frontbuffer, kmalloc_trace, kfree, __traceiter_i915_gem_object_clflush, i915_gem_object_has_struct_page, clflush_work, dma_resv_reserve_fences, dma_resv_add_fence, i915_fence_context_timeout, __SCT__tp_func_i915_gem_object_clflush)

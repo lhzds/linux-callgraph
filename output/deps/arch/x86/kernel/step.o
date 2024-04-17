@@ -1,0 +1,7 @@
+arch/x86/kernel/step.o
+convert_ip_to_linear -> (mutex_unlock, mutex_lock)
+enable_step -> (__SCT__tp_func_write_msr, mutex_lock, access_process_vm, mutex_unlock, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+set_task_blockstep -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+user_disable_single_step -> (__SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+user_enable_block_step -> (enable_step)
+user_enable_single_step -> (enable_step)

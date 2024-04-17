@@ -1,0 +1,10 @@
+drivers/input/mouse/psmouse_smbus.o
+psmouse_smbus_cleanup -> (mutex_lock, kfree, mutex_unlock)
+psmouse_smbus_create_companion -> (i2c_new_scanned_device, i2c_verify_adapter)
+psmouse_smbus_disconnect -> (device_link_remove, mutex_lock, psmouse_smbus_remove_i2c_device, mutex_unlock, queue_work_on, kmalloc_trace, kfree)
+psmouse_smbus_init -> (device_link_add, mutex_lock, _dev_warn, psmouse_smbus_process_byte, mutex_unlock, kmalloc_trace, psmouse_deactivate, i2c_for_each_dev, psmouse_smbus_reconnect, kmemdup, psmouse_smbus_create_companion, psmouse_smbus_disconnect, kfree)
+psmouse_smbus_module_exit -> (i2c_device_shutdown, i2c_device_remove, bus_unregister_notifier, destroy_workqueue, psmouse_smbus_notifier_call, i2c_device_match, i2c_device_probe)
+psmouse_smbus_module_init -> (_printk, i2c_device_shutdown, i2c_device_remove, alloc_workqueue, destroy_workqueue, psmouse_smbus_notifier_call, bus_register_notifier, i2c_device_match, i2c_device_probe)
+psmouse_smbus_notifier_call -> (i2c_client_dev_release, device_link_remove, mutex_lock, i2c_adapter_dev_release, serio_rescan, mutex_unlock, i2c_device_uevent, kfree)
+psmouse_smbus_reconnect -> (psmouse_deactivate)
+psmouse_smbus_remove_i2c_device -> (kfree, i2c_unregister_device)

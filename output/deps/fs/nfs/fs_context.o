@@ -1,0 +1,11 @@
+fs/nfs/fs_context.o
+nfs_fs_context_dup -> (kmemdup, kfree, nfs_alloc_fhandle)
+nfs_fs_context_free -> (kfree, nfs_free_server, put_nfs_version)
+nfs_fs_context_parse_monolithic -> (__probestub_nfs_mount_path, kstrdup, strlen, logfc, _copy_from_user, fs_param_is_enum, fs_param_is_string, generic_parse_monolithic, nfs_kill_super, strndup_user, __SCT__tp_func_nfs_mount_path, nfs_init_fs_context, fs_param_is_u32, vfs_parse_fs_string, __traceiter_nfs_mount_path)
+nfs_fs_context_parse_param -> (__SCT__tp_func_nfs_mount_option, __probestub_nfs_mount_option, trace_nfs_mount_assign, logfc, nfs_parse_security_flavors, fs_param_is_enum, fs_param_is_string, lookup_constant, rpc_pton, xprt_find_transport_ident, nfs_parse_version_string, nfs_parse_xprtsec_policy, fs_param_is_u32, kfree, __traceiter_nfs_mount_option, __fs_parse)
+nfs_get_tree -> (__probestub_nfs_mount_path, strlen, logfc, memchr, __SCT__tp_func_nfs_mount_path, nfs_get_tree_common, kmemdup_nul, __traceiter_nfs_mount_path, strchr, get_nfs_version, kfree)
+nfs_init_fs_context -> (refcount_warn_saturate, nfs_get_tree, nfs_alloc_fhandle, kmalloc_trace, __put_net, nfs_fs_context_free, nfs_fs_context_parse_param, nfs_fs_context_parse_monolithic, nfs_reconfigure, kfree, nfs_fs_context_dup)
+nfs_parse_security_flavors -> (__traceiter_nfs_mount_assign, logfc, __probestub_nfs_mount_assign, strsep, lookup_constant, __SCT__tp_func_nfs_mount_assign)
+nfs_parse_version_string -> (lookup_constant, logfc)
+nfs_parse_xprtsec_policy -> (__traceiter_nfs_mount_assign, logfc, __probestub_nfs_mount_assign, lookup_constant, __SCT__tp_func_nfs_mount_assign)
+trace_nfs_mount_assign -> (__probestub_nfs_mount_assign, __traceiter_nfs_mount_assign, __SCT__tp_func_nfs_mount_assign)

@@ -1,0 +1,6 @@
+kernel/cgroup/freezer.o
+cgroup_enter_frozen -> (cgroup_update_frozen, _raw_spin_lock_irq, _raw_spin_unlock_irq)
+cgroup_freeze -> (css_task_iter_start, css_task_iter_next, __probestub_cgroup_notify_frozen, signal_wake_up_state, __SCT__tp_func_cgroup_unfreeze, __lock_task_sighand, _raw_spin_lock_irq, _raw_spin_lock_irqsave, wake_up_process, cgroup_update_frozen, cgroup_file_notify, __SCT__tp_func_cgroup_notify_frozen, __probestub_cgroup_unfreeze, _raw_spin_unlock_irq, _raw_spin_unlock_irqrestore, __traceiter_cgroup_unfreeze, __SCT__tp_func_cgroup_freeze, css_next_descendant_pre, css_task_iter_end, __traceiter_cgroup_freeze, __traceiter_cgroup_notify_frozen, __probestub_cgroup_freeze, kernfs_path_from_node)
+cgroup_freezer_migrate_task -> (__lock_task_sighand, signal_wake_up_state, _raw_spin_unlock_irqrestore, wake_up_process, cgroup_update_frozen)
+cgroup_leave_frozen -> (_raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irq, _raw_spin_unlock_irq, cgroup_update_frozen)
+cgroup_update_frozen -> (cgroup_file_notify, __SCT__tp_func_cgroup_notify_frozen, __traceiter_cgroup_notify_frozen, _raw_spin_lock_irqsave, __probestub_cgroup_notify_frozen, _raw_spin_unlock_irqrestore, kernfs_path_from_node, __cgroup_task_count)

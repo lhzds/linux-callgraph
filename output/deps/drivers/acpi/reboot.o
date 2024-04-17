@@ -1,0 +1,2 @@
+drivers/acpi/reboot.o
+acpi_reboot -> (acpi_reset, pci_find_bus, pci_bus_write_config_byte, __const_udelay)

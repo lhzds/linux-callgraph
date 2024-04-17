@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/uc/intel_guc_rc.o
+__guc_rc_control -> (_dev_err, _dev_info, intel_guc_ct_send)
+intel_guc_rc_disable -> (__guc_rc_control)
+intel_guc_rc_enable -> (__guc_rc_control)

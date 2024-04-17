@@ -1,0 +1,9 @@
+arch/x86/kernel/ksysfs.o
+boot_params_ksysfs_init -> (kobject_create_and_add, boot_params_data_read, sysfs_remove_group, kobject_put, create_setup_data_nodes, version_show, sysfs_create_group)
+create_setup_data_node -> (kobject_create_and_add, snprintf, type_show, kobject_put, setup_data_data_read, get_setup_data_size, sysfs_create_group)
+create_setup_data_nodes -> (kobject_create_and_add, create_setup_data_node, sysfs_remove_group, get_setup_data_total_num, type_show, kobject_put, setup_data_data_read, kfree, __kmalloc)
+get_setup_data_size -> (memunmap, memremap)
+get_setup_data_total_num -> (memunmap, memremap)
+setup_data_data_read -> (kstrtoint, memunmap, memremap)
+type_show -> (kstrtoint, sprintf, memunmap, memremap)
+version_show -> (sprintf)

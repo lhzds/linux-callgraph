@@ -1,0 +1,7 @@
+net/ipv4/netfilter/iptable_filter.o
+iptable_filter_fini -> (iptable_filter_net_pre_exit, iptable_filter_net_exit, unregister_pernet_subsys, iptable_filter_net_init, xt_unregister_template, kfree)
+iptable_filter_init -> (ipt_do_table, register_pernet_subsys, xt_hook_ops_alloc, iptable_filter_net_pre_exit, iptable_filter_net_exit, iptable_filter_net_init, iptable_filter_table_init, xt_unregister_template, kfree, xt_register_template)
+iptable_filter_net_exit -> (ipt_unregister_table_exit)
+iptable_filter_net_init -> (ipt_alloc_initial_table, kfree, ipt_register_table)
+iptable_filter_net_pre_exit -> (ipt_unregister_table_pre_exit)
+iptable_filter_table_init -> (ipt_alloc_initial_table, kfree, ipt_register_table)

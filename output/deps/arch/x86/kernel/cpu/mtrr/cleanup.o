@@ -1,0 +1,4 @@
+arch/x86/kernel/cpu/mtrr/cleanup.o
+amd_special_default_mtrr -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+mtrr_trim_uncached_memory -> (_printk, e820__update_table_print, do_trace_read_msr, e820__range_update, x86_get_mtrr_mem_range, __traceiter_read_msr, __probestub_read_msr, __SCT__tp_func_read_msr)
+x86_get_mtrr_mem_range -> (_printk, subtract_range, add_range_with_merge, clean_sort_range)

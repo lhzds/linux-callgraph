@@ -1,0 +1,8 @@
+fs/lockd/trace.o
+__traceiter_nlmclnt_grant -> (__traceiter_nlmclnt_grant, __SCT__tp_func_nlmclnt_grant, __probestub_nlmclnt_grant)
+__traceiter_nlmclnt_lock -> (__SCT__tp_func_nlmclnt_lock, __traceiter_nlmclnt_lock, __probestub_nlmclnt_lock)
+__traceiter_nlmclnt_test -> (__SCT__tp_func_nlmclnt_test, __probestub_nlmclnt_test, __traceiter_nlmclnt_test)
+__traceiter_nlmclnt_unlock -> (__probestub_nlmclnt_unlock, __traceiter_nlmclnt_unlock, __SCT__tp_func_nlmclnt_unlock)
+perf_trace_nlmclnt_lock_event -> (crc32_le, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_nlmclnt_lock_event -> (trace_event_buffer_reserve, crc32_le, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_raw_output_nlmclnt_lock_event -> (trace_print_symbols_seq, trace_handle_return, trace_raw_output_prep, trace_event_printf)

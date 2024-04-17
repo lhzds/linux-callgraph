@@ -1,0 +1,3 @@
+drivers/input/touchscreen.o
+touchscreen_parse_properties -> (device_property_present, _dev_warn, input_alloc_absinfo, device_property_read_u32_array)
+touchscreen_report_pos -> (input_event)

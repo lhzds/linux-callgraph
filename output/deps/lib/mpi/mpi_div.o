@@ -1,0 +1,6 @@
+lib/mpi/mpi_div.o
+mpi_fdiv_q -> (mpi_alloc, mpi_fdiv_qr, mpi_free)
+mpi_fdiv_qr -> (mpi_tdiv_qr, mpi_copy, mpi_free, mpi_add, mpi_sub_ui)
+mpi_fdiv_r -> (mpi_free, mpi_tdiv_qr, mpi_copy, mpi_add)
+mpi_tdiv_qr -> (mpihelp_rshift, mpihelp_mod_1, mpi_alloc_limb_space, mpihelp_lshift, mpi_free_limb_space, mpihelp_divmod_1, mpihelp_divrem, mpi_resize)
+mpi_tdiv_r -> (mpi_tdiv_qr)

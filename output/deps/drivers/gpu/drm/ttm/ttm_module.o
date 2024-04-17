@@ -1,0 +1,2 @@
+drivers/gpu/drm/ttm/ttm_module.o
+ttm_prot_from_caching -> (cachemode2protval, pgprot_writecombine)

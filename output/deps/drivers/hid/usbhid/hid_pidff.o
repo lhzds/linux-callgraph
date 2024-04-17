@@ -1,0 +1,10 @@
+drivers/hid/usbhid/hid_pidff.o
+hid_device_io_stop -> (down, _dev_warn)
+hid_pidff_init -> (input_ff_create, pidff_find_reports, _dev_notice, pidff_upload_effect, pidff_erase_effect, kmalloc_trace, up, pidff_set_gain, _printk, hid_device_io_stop, pidff_playback, _dev_err, down, _dev_info, pidff_request_effect_upload, _dev_warn, hid_hw_request, pidff_set_autocenter, kfree)
+pidff_erase_effect -> (hid_hw_request)
+pidff_playback -> (hid_hw_request)
+pidff_request_effect_upload -> (_dev_err, hid_hw_request)
+pidff_set_autocenter -> (hid_hw_request)
+pidff_set_condition_report -> (hid_hw_request)
+pidff_set_gain -> (hid_hw_request)
+pidff_upload_effect -> (_dev_err, pidff_set_condition_report, hid_hw_request, pidff_request_effect_upload)

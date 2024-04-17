@@ -1,0 +1,9 @@
+lib/zstd/common/entropy_common.o
+FSE_getErrorName -> (ERR_getErrorString)
+FSE_readNCount -> (FSE_readNCount_bmi2)
+FSE_readNCount_bmi2 -> (FSE_readNCount_body_bmi2, FSE_readNCount_bmi2)
+FSE_readNCount_body_bmi2 -> (FSE_readNCount_bmi2)
+HUF_getErrorName -> (ERR_getErrorString)
+HUF_readStats -> (HUF_readStats_wksp)
+HUF_readStats_body_bmi2 -> (FSE_decompress_wksp_bmi2)
+HUF_readStats_wksp -> (HUF_readStats_body_bmi2, FSE_decompress_wksp_bmi2)

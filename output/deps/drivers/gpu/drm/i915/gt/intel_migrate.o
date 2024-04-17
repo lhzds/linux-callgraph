@@ -1,0 +1,13 @@
+drivers/gpu/drm/i915/gt/intel_migrate.o
+emit_copy_ccs -> (intel_ring_begin)
+emit_pte -> (intel_ring_update_space, intel_ring_begin)
+insert_pte -> (__px_dma, i915_gem_object_is_lmem, i915_gem_get_pat_index)
+intel_context_migrate_clear -> (emit_pte, refcount_warn_saturate, i915_request_add, i915_request_create, i915_request_await_deps, __SCT__cond_resched, intel_ring_begin, dma_fence_release)
+intel_context_migrate_copy -> (emit_pte, refcount_warn_saturate, emit_copy_ccs, i915_request_add, i915_request_create, i915_request_await_deps, __SCT__cond_resched, intel_ring_begin, sg_next, dma_fence_release)
+intel_migrate_clear -> (refcount_warn_saturate, intel_context_migrate_clear, __intel_context_do_pin_ww, intel_migrate_create_context, __intel_context_do_unpin)
+intel_migrate_copy -> (refcount_warn_saturate, intel_context_migrate_copy, __intel_context_do_pin_ww, intel_migrate_create_context, __intel_context_do_unpin)
+intel_migrate_create_context -> (get_random_u32, i915_vm_release, refcount_warn_saturate, intel_context_create)
+intel_migrate_fini -> (intel_engine_destroy_pinned_context)
+intel_migrate_init -> (refcount_warn_saturate, i915_vm_free_pt_stash, i915_vm_release, i915_ppgtt_create, i915_vm_map_pt_stash, intel_engine_create_pinned_context, i915_gem_ww_ctx_fini, i915_vm_lock_objects, xehpsdv_insert_pte, insert_pte, xehpsdv_toggle_pdes, i915_gem_ww_ctx_init, i915_vm_alloc_pt_stash, i915_gem_ww_ctx_backoff)
+xehpsdv_insert_pte -> (__px_dma, i915_gem_get_pat_index)
+xehpsdv_toggle_pdes -> (i915_gem_get_pat_index)

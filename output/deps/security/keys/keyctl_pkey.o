@@ -1,0 +1,6 @@
+security/keys/keyctl_pkey.o
+keyctl_pkey_e_d_s -> (memdup_user, key_put, keyctl_pkey_params_get_2, kfree, _copy_to_user, __kmalloc)
+keyctl_pkey_params_get -> (match_token, strsep, strndup_user, lookup_user_key)
+keyctl_pkey_params_get_2 -> (keyctl_pkey_params_get, _copy_from_user)
+keyctl_pkey_query -> (key_put, kfree, _copy_to_user, keyctl_pkey_params_get)
+keyctl_pkey_verify -> (memdup_user, _copy_from_user, keyctl_pkey_params_get, key_put, kfree)

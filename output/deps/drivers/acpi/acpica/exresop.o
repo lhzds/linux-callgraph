@@ -1,0 +1,2 @@
+drivers/acpi/acpica/exresop.o
+acpi_ex_resolve_operands -> (acpi_ut_get_descriptor_name, acpi_ns_get_attached_object, acpi_ex_convert_to_buffer, acpi_ut_get_object_type_name, acpi_ut_get_type_name, acpi_ex_resolve_to_value, acpi_error, acpi_ex_convert_to_string, acpi_ut_remove_reference, acpi_ex_convert_to_integer, acpi_ps_get_opcode_info, acpi_ut_valid_object_type)

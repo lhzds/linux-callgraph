@@ -1,0 +1,2 @@
+drivers/acpi/spcr.o
+acpi_parse_spcr -> (_printk, bcmp, acpi_put_table, snprintf, strlen, add_preferred_console, setup_earlycon, acpi_get_table)

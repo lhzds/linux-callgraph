@@ -1,0 +1,5 @@
+drivers/cpuidle/driver.o
+cpuidle_driver_state_disabled -> (mutex_unlock, _raw_spin_lock, mutex_lock, _raw_spin_unlock)
+cpuidle_register_driver -> (cpuidle_disabled, mutex_lock, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, on_each_cpu_cond_mask, cpuidle_switch_governor, cpuidle_find_governor, cpuidle_setup_broadcast_timer)
+cpuidle_setup_broadcast_timer -> (tick_broadcast_control)
+cpuidle_unregister_driver -> (mutex_lock, _raw_spin_unlock, mutex_unlock, _raw_spin_lock, on_each_cpu_cond_mask, cpuidle_switch_governor, cpuidle_setup_broadcast_timer)

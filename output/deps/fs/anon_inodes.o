@@ -1,0 +1,9 @@
+fs/anon_inodes.o
+__anon_inode_getfile -> (alloc_file_pseudo, iput, strlen, ihold, security_inode_init_security_anon, alloc_anon_inode)
+anon_inode_getfd -> (alloc_file_pseudo, iput, ihold, put_unused_fd, fd_install, get_unused_fd_flags)
+anon_inode_getfd_secure -> (put_unused_fd, fd_install, __anon_inode_getfile, get_unused_fd_flags)
+anon_inode_getfile -> (alloc_file_pseudo, ihold, iput)
+anon_inode_getfile_secure -> (__anon_inode_getfile)
+anon_inode_init -> (kern_mount, kill_anon_super, alloc_anon_inode, panic, anon_inodefs_init_fs_context)
+anon_inodefs_dname -> (dynamic_dname)
+anon_inodefs_init_fs_context -> (anon_inodefs_dname, init_pseudo)

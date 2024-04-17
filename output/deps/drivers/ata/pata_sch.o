@@ -1,0 +1,6 @@
+drivers/ata/pata_sch.o
+sch_init_one -> (ata_scsi_slave_config, ata_scsi_slave_destroy, sch_set_dmamode, ata_bmdma_start, ata_scsi_unlock_native_capacity, ata_print_version, ata_bmdma_setup, ata_scsi_ioctl, ata_pci_bmdma_init_one, ata_bmdma_post_internal_cmd, ata_bmdma_port_start, ata_scsi_queuecmd, ata_std_bios_param, ata_bmdma_irq_clear, ata_cable_unknown, ata_bmdma_qc_prep, sch_set_piomode, ata_scsi_dma_need_drain, ata_bmdma_stop, ata_bmdma_error_handler, ata_bmdma_qc_issue, ata_bmdma_status)
+sch_pci_driver_exit -> (ata_pci_device_resume, ata_pci_device_suspend, ata_pci_remove_one, pci_unregister_driver, sch_init_one)
+sch_pci_driver_init -> (ata_pci_device_resume, ata_pci_device_suspend, ata_pci_remove_one, __pci_register_driver, sch_init_one)
+sch_set_dmamode -> (pci_write_config_dword, pci_read_config_dword)
+sch_set_piomode -> (pci_write_config_dword, pci_read_config_dword)

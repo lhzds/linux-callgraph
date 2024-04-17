@@ -1,0 +1,3 @@
+fs/proc/loadavg.o
+loadavg_proc_show -> (nr_running, task_active_pid_ns, seq_printf, get_avenrun)
+proc_loadavg_init -> (loadavg_proc_show, proc_create_single_data)

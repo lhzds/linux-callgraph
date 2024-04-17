@@ -1,0 +1,6 @@
+fs/sysfs/mount.o
+sysfs_fs_context_free -> (kobj_ns_drop, kernfs_free_fs_context, kfree)
+sysfs_get_tree -> (kernfs_get_tree)
+sysfs_init -> (kernfs_root_to_node, kernfs_create_root, sysfs_init_fs_context, register_filesystem, kernfs_destroy_root, sysfs_kill_sb)
+sysfs_init_fs_context -> (kobj_ns_current_may_mount, kmalloc_trace, sysfs_get_tree, kobj_ns_grab_current, sysfs_fs_context_free)
+sysfs_kill_sb -> (kobj_ns_drop, kernfs_super_ns, kernfs_kill_sb)

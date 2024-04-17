@@ -1,0 +1,3 @@
+drivers/acpi/acpica/hwacpi.o
+acpi_hw_get_mode -> (acpi_read_bit_register)
+acpi_hw_set_mode -> (acpi_hw_write_port, acpi_exception, acpi_error)

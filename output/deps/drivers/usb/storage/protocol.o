@@ -1,0 +1,6 @@
+drivers/usb/storage/protocol.o
+usb_stor_access_xfer_buf -> (sg_nents, sg_miter_stop, sg_miter_next, sg_next, sg_miter_skip, sg_miter_start)
+usb_stor_pad12_command -> (usb_stor_invoke_transport)
+usb_stor_set_xfer_buf -> (usb_stor_access_xfer_buf)
+usb_stor_transparent_scsi_command -> (usb_stor_invoke_transport)
+usb_stor_ufi_command -> (usb_stor_invoke_transport)

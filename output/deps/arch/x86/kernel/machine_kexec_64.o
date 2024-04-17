@@ -1,0 +1,9 @@
+arch/x86/kernel/machine_kexec_64.o
+alloc_pgt_page -> (kimage_alloc_control_pages, clear_page_rep, clear_page_orig, clear_page_erms)
+arch_kexec_protect_crashkres -> (kexec_mark_crashkres)
+arch_kexec_unprotect_crashkres -> (kexec_mark_crashkres)
+kexec_mark_crashkres -> (set_pages_ro, set_pages_rw)
+machine_kexec -> (restore_boot_irq_mode, __memcpy, relocate_kernel, clear_IO_APIC, cet_disable)
+machine_kexec_cleanup -> (free_pages)
+machine_kexec_prepare -> (virt_efi_query_variable_info, walk_iomem_res_desc, efi_thunk_query_variable_info_nonblocking, virt_efi_get_time, efi_thunk_query_variable_info, efi_thunk_update_capsule, virt_efi_get_next_high_mono_count, virt_efi_get_variable, efi_thunk_get_wakeup_time, virt_efi_set_variable_nonblocking, virt_efi_get_next_variable, efi_thunk_get_time, virt_efi_query_capsule_caps, efi_thunk_get_next_high_mono_count, virt_efi_set_wakeup_time, efi_thunk_get_variable, virt_efi_set_time, efi_thunk_set_wakeup_time, get_zeroed_page, efi_thunk_reset_system, efi_thunk_query_capsule_caps, efi_thunk_set_variable, __pti_set_user_pgtbl, virt_efi_update_capsule, efi_thunk_set_variable_nonblocking, virt_efi_get_wakeup_time, mem_region_callback, alloc_pgt_page, clear_page_orig, clear_page_rep, kernel_ident_mapping_init, virt_efi_set_variable, virt_efi_reset_system, efi_thunk_set_time, clear_page_erms, virt_efi_query_variable_info_nonblocking, efi_thunk_get_next_variable)
+mem_region_callback -> (kernel_ident_mapping_init)

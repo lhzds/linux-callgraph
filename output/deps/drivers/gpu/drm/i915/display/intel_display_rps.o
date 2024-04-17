@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/display/intel_display_rps.o
+do_rps_boost -> (refcount_warn_saturate, intel_rps_boost, drm_crtc_vblank_put, __rcu_read_lock, __rcu_read_unlock, kfree, dma_fence_release)
+intel_display_rps_boost_after_vblank -> (i915_fence_enable_signaling, i915_fence_wait, refcount_warn_saturate, i915_fence_signaled, drm_crtc_vblank_waitqueue, add_wait_queue, kmalloc_trace, i915_fence_get_driver_name, i915_fence_get_timeline_name, i915_fence_release, drm_crtc_vblank_put, do_rps_boost, drm_crtc_vblank_get)
+intel_display_rps_mark_interactive -> (intel_rps_mark_interactive)

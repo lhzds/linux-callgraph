@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gem/i915_gem_throttle.o
+i915_gem_throttle_ioctl -> (mutex_lock, refcount_warn_saturate, mutex_unlock, i915_gem_engines_iter_next, xa_find_after, i915_request_wait, __rcu_read_lock, intel_gt_terminally_wedged, __rcu_read_unlock, xa_find, dma_fence_release, i915_gem_context_release)

@@ -1,0 +1,4 @@
+net/ethtool/tsinfo.o
+tsinfo_fill_reply -> (nla_put, ethnl_put_bitset32)
+tsinfo_prepare_data -> (ethnl_ops_complete, __ethtool_get_ts_info, ethnl_ops_begin)
+tsinfo_reply_size -> (ethnl_bitset32_size)

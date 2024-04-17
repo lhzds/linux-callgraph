@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/display/dvo_ch7017.o
+ch7017_destroy -> (kfree)
+ch7017_dpms -> (i2c_transfer, msleep)
+ch7017_dump_regs -> (___drm_dbg, i2c_transfer)
+ch7017_get_hw_state -> (i2c_transfer)
+ch7017_init -> (kmalloc_trace, ___drm_dbg, kfree, i2c_transfer)
+ch7017_mode_set -> (___drm_dbg, ch7017_dump_regs, i2c_transfer, msleep)

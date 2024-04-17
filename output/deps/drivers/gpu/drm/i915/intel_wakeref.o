@@ -1,0 +1,10 @@
+drivers/gpu/drm/i915/intel_wakeref.o
+__intel_wakeref_get_first -> (mutex_unlock, intel_runtime_pm_put_unchecked, mutex_lock, intel_runtime_pm_get)
+__intel_wakeref_init -> (__intel_wakeref_put_work, delayed_work_timer_fn, init_timer_key, __mutex_init)
+__intel_wakeref_put_last -> (mutex_unlock, intel_runtime_pm_put_unchecked, mutex_trylock, mod_delayed_work_on, wake_up_var)
+__intel_wakeref_put_work -> (mutex_unlock, mutex_lock, wake_up_var, intel_runtime_pm_put_unchecked)
+intel_wakeref_auto -> (refcount_warn_saturate, intel_runtime_pm_get_if_in_use, timer_delete_sync, _raw_spin_lock_irqsave, __warn_printk, _raw_spin_unlock_irqrestore, intel_runtime_pm_put_unchecked, mod_timer, refcount_dec_and_lock_irqsave)
+intel_wakeref_auto_fini -> (timer_delete_sync, refcount_dec_and_lock_irqsave, _raw_spin_unlock_irqrestore, intel_runtime_pm_put_unchecked)
+intel_wakeref_auto_init -> (wakeref_auto_timeout, init_timer_key)
+intel_wakeref_wait_for_idle -> (init_wait_var_entry, __SCT__might_resched, mutex_lock, mutex_unlock, flush_delayed_work, schedule, finish_wait, prepare_to_wait_event, __var_waitqueue)
+wakeref_auto_timeout -> (refcount_dec_and_lock_irqsave, _raw_spin_unlock_irqrestore, intel_runtime_pm_put_unchecked)

@@ -1,0 +1,8 @@
+net/ipv4/netfilter/nf_defrag_ipv4.o
+defrag4_net_exit -> (ipv4_conntrack_defrag, nf_unregister_net_hooks)
+ipv4_conntrack_defrag -> (local_bh_enable, ip_defrag)
+local_bh_enable -> (__local_bh_enable_ip)
+nf_defrag_fini -> (defrag4_net_exit, unregister_pernet_subsys)
+nf_defrag_init -> (register_pernet_subsys, defrag4_net_exit)
+nf_defrag_ipv4_disable -> (mutex_unlock, ipv4_conntrack_defrag, mutex_lock, nf_unregister_net_hooks)
+nf_defrag_ipv4_enable -> (mutex_unlock, ipv4_conntrack_defrag, mutex_lock, nf_register_net_hooks)

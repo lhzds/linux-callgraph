@@ -1,0 +1,5 @@
+arch/x86/kernel/cpu/mce/genpool.o
+mce_gen_pool_add -> (_printk, llist_add_batch, gen_pool_alloc_algo_owner, ___ratelimit, filter_mce)
+mce_gen_pool_init -> (gen_pool_add_owner, gen_pool_create, gen_pool_destroy)
+mce_gen_pool_prepare_records -> (llist_add_batch)
+mce_gen_pool_process -> (llist_reverse_order, blocking_notifier_call_chain, gen_pool_free_owner)

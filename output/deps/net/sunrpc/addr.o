@@ -1,0 +1,6 @@
+net/sunrpc/addr.o
+rpc_ntop -> (__ipv6_addr_type, strcat, snprintf, rpc_ntop6_noscopeid)
+rpc_ntop6_noscopeid -> (snprintf)
+rpc_pton -> (in6_pton, kstrtouint, __ipv6_addr_type, dev_get_by_name, in4_pton)
+rpc_sockaddr2uaddr -> (kstrdup, snprintf, strlcat)
+rpc_uaddr2sockaddr -> (strrchr, kstrtou8, strlen, rpc_pton)

@@ -1,0 +1,6 @@
+fs/nfs_common/nfsacl.o
+nfs_stream_decode_acl -> (sort, refcount_warn_saturate, xdr_decode_array2, kvfree_call_rcu, xdr_stream_pos, cmp_acl_entry, xdr_inline_decode)
+nfs_stream_encode_acl -> (xdr_encode_array2, xdr_reserve_space, xdr_stream_pos, xdr_nfsace_encode, posix_acl_init)
+nfsacl_decode -> (sort, refcount_warn_saturate, xdr_decode_array2, kvfree_call_rcu, cmp_acl_entry, xdr_decode_word)
+nfsacl_encode -> (xdr_encode_word, posix_acl_init, xdr_encode_array2, xdr_nfsace_encode)
+xdr_nfsace_decode -> (posix_acl_alloc)

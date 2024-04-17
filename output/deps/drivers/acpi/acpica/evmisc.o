@@ -1,0 +1,4 @@
+drivers/acpi/acpica/evmisc.o
+acpi_ev_notify_dispatch -> (acpi_ut_delete_generic_state)
+acpi_ev_queue_notify_request -> (acpi_ns_get_attached_object, acpi_ev_notify_dispatch, acpi_ut_delete_generic_state, acpi_os_execute, acpi_ut_create_generic_state)
+acpi_ev_terminate -> (acpi_ev_delete_gpe_handlers, acpi_hw_disable_gpe_block, acpi_ev_remove_global_lock_handler, acpi_exception, acpi_error, acpi_disable_event, acpi_warning, acpi_disable, acpi_ev_remove_all_sci_handlers, acpi_ev_walk_gpe_list)

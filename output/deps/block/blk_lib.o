@@ -1,0 +1,7 @@
+block/blk_lib.o
+__blkdev_issue_discard -> (___ratelimit, _printk, blk_next_bio, __SCT__cond_resched)
+__blkdev_issue_zero_pages -> (blk_next_bio, bio_add_page, __SCT__cond_resched)
+__blkdev_issue_zeroout -> (blk_next_bio, __blkdev_issue_zero_pages, __SCT__cond_resched)
+blkdev_issue_discard -> (submit_bio_wait, bio_put, blk_finish_plug, __blkdev_issue_discard, blk_start_plug)
+blkdev_issue_secure_erase -> (submit_bio_wait, bio_put, blk_finish_plug, __SCT__cond_resched, blk_next_bio, blk_start_plug)
+blkdev_issue_zeroout -> (submit_bio_wait, __blkdev_issue_zero_pages, bio_put, blk_finish_plug, __SCT__cond_resched, blk_next_bio, blk_start_plug)

@@ -1,0 +1,4 @@
+drivers/hid/hid_redragon.o
+redragon_driver_exit -> (hid_unregister_driver, redragon_report_fixup)
+redragon_driver_init -> (__hid_register_driver, redragon_report_fixup)
+redragon_report_fixup -> (_dev_info)

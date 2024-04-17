@@ -1,0 +1,6 @@
+drivers/connector/cn_queue.o
+cn_queue_add_callback -> (_raw_spin_lock_bh, _printk, refcount_warn_saturate, snprintf, kmalloc_trace, _raw_spin_unlock_bh, kfree)
+cn_queue_alloc_dev -> (kmalloc_trace, snprintf)
+cn_queue_del_callback -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, kfree, refcount_warn_saturate)
+cn_queue_free_dev -> (_raw_spin_lock_bh, _printk, msleep, _raw_spin_unlock_bh, kfree)
+cn_queue_release_callback -> (refcount_warn_saturate, kfree)

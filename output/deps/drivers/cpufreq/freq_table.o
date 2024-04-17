@@ -1,0 +1,6 @@
+drivers/cpufreq/freq_table.o
+cpufreq_frequency_table_cpuinfo -> (cpufreq_boost_enabled)
+cpufreq_table_index_unsorted -> (__warn_printk)
+cpufreq_table_validate_and_sort -> (cpufreq_boost_enabled, _printk, has_target_index)
+scaling_available_frequencies_show -> (sprintf)
+scaling_boost_frequencies_show -> (sprintf)

@@ -1,0 +1,9 @@
+sound/core/jack.o
+snd_jack_add_new_kctl -> (snd_kctl_jack_new, snd_ctl_add, snd_ctl_free_one, kmalloc_trace, snd_jack_kctl_private_free)
+snd_jack_dev_disconnect -> (mutex_unlock, mutex_lock, input_free_device, input_unregister_device)
+snd_jack_dev_free -> (down_write, mutex_lock, up_write, input_unregister_device, mutex_unlock, snd_ctl_remove, input_free_device, kfree)
+snd_jack_dev_register -> (mutex_lock, snprintf, mutex_unlock, input_set_capability, input_register_device)
+snd_jack_kctl_private_free -> (kfree)
+snd_jack_new -> (snd_kctl_jack_new, kstrdup, snd_jack_dev_register, snd_ctl_add, __mutex_init, snd_ctl_free_one, snd_jack_dev_disconnect, input_set_capability, input_free_device, kmalloc_trace, snd_device_new, kfree, snd_jack_dev_free, input_allocate_device, snd_jack_kctl_private_free)
+snd_jack_report -> (put_device, snd_kctl_jack_report, get_device, input_event)
+snd_jack_set_parent -> (mutex_unlock, mutex_lock)

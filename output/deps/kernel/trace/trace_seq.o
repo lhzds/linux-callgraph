@@ -1,0 +1,13 @@
+kernel/trace/trace_seq.o
+trace_print_seq -> (seq_buf_print_seq)
+trace_seq_bitmask -> (seq_buf_printf)
+trace_seq_bprintf -> (seq_buf_bprintf)
+trace_seq_hex_dump -> (seq_buf_hex_dump)
+trace_seq_path -> (seq_buf_path)
+trace_seq_printf -> (seq_buf_vprintf)
+trace_seq_putc -> (seq_buf_putc)
+trace_seq_putmem -> (seq_buf_putmem)
+trace_seq_putmem_hex -> (seq_buf_putmem_hex)
+trace_seq_puts -> (seq_buf_putmem, strlen)
+trace_seq_to_user -> (seq_buf_to_user)
+trace_seq_vprintf -> (seq_buf_vprintf)

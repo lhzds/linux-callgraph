@@ -1,0 +1,5 @@
+drivers/gpu/drm/virtio/virtgpu_debugfs.o
+virtio_gpu_debugfs_host_visible_mm -> (__drm_puts_seq_file, drm_mm_print, __drm_printfn_seq_file, seq_puts)
+virtio_gpu_debugfs_init -> (virtio_gpu_debugfs_irq_info, drm_debugfs_create_files, virtio_gpu_features, virtio_gpu_debugfs_host_visible_mm)
+virtio_gpu_debugfs_irq_info -> (seq_printf)
+virtio_gpu_features -> (seq_printf)

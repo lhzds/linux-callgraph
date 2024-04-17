@@ -1,0 +1,10 @@
+arch/x86/pci/direct.o
+pci_check_type1 -> (pci_sanity_check, pci_conf1_write, pci_conf1_read)
+pci_check_type2 -> (pci_conf2_write, pci_sanity_check, pci_conf2_read)
+pci_conf1_read -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+pci_conf1_write -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+pci_conf2_read -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+pci_conf2_write -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+pci_direct_init -> (_printk, pci_conf2_write, pci_conf2_read, pci_conf1_write, pci_conf1_read)
+pci_direct_probe -> (__request_region, pci_conf2_write, pci_check_type2, __release_region, pci_check_type1, pci_conf2_read, pci_conf1_write, pci_conf1_read)
+pci_sanity_check -> (dmi_get_bios_year)

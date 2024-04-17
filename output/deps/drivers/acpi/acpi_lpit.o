@@ -1,0 +1,4 @@
+drivers/acpi/acpi_lpit.o
+acpi_init_lpit -> (put_device, acpi_put_table, bus_get_dev_root, cpu_subsys_match, cpu_subsys_online, cpu_uevent, low_power_idle_system_residency_us_show, sysfs_add_file_to_group, ioremap, cpu_subsys_offline, low_power_idle_cpu_residency_us_show, acpi_get_table)
+low_power_idle_cpu_residency_us_show -> (do_trace_read_msr, __traceiter_read_msr, __probestub_read_msr, sprintf, __SCT__tp_func_read_msr)
+low_power_idle_system_residency_us_show -> (acpi_os_read_iomem, sprintf)

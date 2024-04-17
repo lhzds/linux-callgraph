@@ -1,0 +1,2 @@
+lib/mpi/mpih_div.o
+mpihelp_divrem -> (mpihelp_sub_n, mpihelp_add_n, mpihelp_cmp, mpihelp_submul_1)

@@ -1,0 +1,4 @@
+drivers/gpu/drm/drm_aperture.o
+devm_aperture_acquire_from_firmware -> (platform_uevent, __warn_printk, platform_probe, platform_match, platform_shutdown, platform_dma_cleanup, devm_aperture_acquire_for_platform_device, platform_remove, dev_driver_string, platform_dma_configure)
+drm_aperture_remove_conflicting_framebuffers -> (aperture_remove_conflicting_devices)
+drm_aperture_remove_conflicting_pci_framebuffers -> (aperture_remove_conflicting_pci_devices)

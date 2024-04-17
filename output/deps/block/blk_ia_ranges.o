@@ -1,0 +1,8 @@
+block/blk_ia_ranges.o
+blk_ia_range_nr_sectors_show -> (sprintf)
+blk_ia_range_sector_show -> (sprintf)
+blk_ia_ranges_sysfs_release -> (kfree)
+disk_alloc_independent_access_ranges -> (__kmalloc_node)
+disk_register_independent_access_ranges -> (kobject_del, blk_ia_range_nr_sectors_show, kobject_put, blk_ia_range_sysfs_nop_release, blk_ia_ranges_sysfs_release, blk_ia_range_sector_show, kobject_init_and_add, blk_ia_range_sysfs_show)
+disk_set_independent_access_ranges -> (_printk, mutex_lock, kobject_del, mutex_unlock, kobject_put, kfree, disk_register_independent_access_ranges)
+disk_unregister_independent_access_ranges -> (kobject_put, kfree, kobject_del)

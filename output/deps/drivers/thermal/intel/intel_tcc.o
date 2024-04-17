@@ -1,0 +1,5 @@
+drivers/thermal/intel/intel_tcc.o
+intel_tcc_get_offset -> (do_trace_read_msr, __traceiter_read_msr, __probestub_read_msr, rdmsr_safe_on_cpu, __SCT__tp_func_read_msr)
+intel_tcc_get_temp -> (do_trace_read_msr, __traceiter_read_msr, __probestub_read_msr, rdmsr_safe_on_cpu, __SCT__tp_func_read_msr)
+intel_tcc_get_tjmax -> (do_trace_read_msr, __traceiter_read_msr, __probestub_read_msr, rdmsr_safe_on_cpu, __SCT__tp_func_read_msr)
+intel_tcc_set_offset -> (__SCT__tp_func_write_msr, wrmsr_safe_on_cpu, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, rdmsr_safe_on_cpu, __probestub_write_msr)

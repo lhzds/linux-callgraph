@@ -1,0 +1,8 @@
+drivers/tty/serial/serial_port.o
+serial_base_port_exit -> (serial_port_runtime_resume, pm_runtime_force_suspend, serial_port_remove, serial_base_driver_unregister, serial_port_probe, pm_runtime_force_resume)
+serial_base_port_init -> (serial_port_runtime_resume, pm_runtime_force_suspend, serial_port_remove, serial_port_probe, serial_base_driver_register, pm_runtime_force_resume)
+serial_port_probe -> (pm_runtime_set_autosuspend_delay, __pm_runtime_use_autosuspend, pm_runtime_enable)
+serial_port_remove -> (__pm_runtime_disable, __pm_runtime_use_autosuspend)
+serial_port_runtime_resume -> (ktime_get_mono_fast_ns, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+uart_add_one_port -> (serial_ctrl_register_port)
+uart_remove_one_port -> (serial_ctrl_unregister_port)

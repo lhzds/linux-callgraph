@@ -1,0 +1,2 @@
+net/ipv4/metrics.o
+ip_fib_metrics_init -> (nla_strscpy, do_trace_netlink_extack, kmalloc_trace, tcp_ca_get_key_by_name, kfree)

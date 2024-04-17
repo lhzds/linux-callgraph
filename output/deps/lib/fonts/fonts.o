@@ -1,0 +1,2 @@
+lib/fonts/fonts.o
+find_font -> (strcmp)

@@ -1,0 +1,2 @@
+lib/decompress_unxz.o
+unxz -> (xz_dec_init, xz_dec_end, kmalloc_trace, kfree, xz_dec_run)

@@ -1,0 +1,9 @@
+security/keys/user_defined.o
+logon_vet_description -> (strchr)
+user_describe -> (seq_printf, seq_puts)
+user_destroy -> (kfree_sensitive)
+user_free_payload_rcu -> (kfree_sensitive)
+user_free_preparse -> (kfree_sensitive)
+user_preparse -> (__kmalloc)
+user_revoke -> (user_free_payload_rcu, call_rcu, key_payload_reserve)
+user_update -> (user_free_payload_rcu, call_rcu, key_payload_reserve)

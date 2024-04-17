@@ -1,0 +1,4 @@
+drivers/acpi/acpica/psparse.o
+acpi_ps_complete_this_op -> (acpi_ps_delete_parse_tree, acpi_ps_get_opcode_info, acpi_ps_alloc_op, acpi_ex_stop_trace_opcode)
+acpi_ps_next_parse_state -> (acpi_ps_get_next_package_end, acpi_ds_is_result_used)
+acpi_ps_parse_aml -> (acpi_ds_call_control_method, acpi_ex_enter_interpreter, acpi_ut_create_thread_state, acpi_ut_create_integer_object, acpi_ds_push_walk_state, acpi_ds_scope_stack_clear, acpi_ds_delete_walk_state, acpi_ds_pop_walk_state, acpi_ps_cleanup_scope, acpi_ut_delete_generic_state, acpi_os_printf, acpi_ut_method_error, acpi_ex_release_all_mutexes, acpi_ds_method_error, acpi_ds_clear_implicit_return, acpi_ps_parse_loop, acpi_ds_restart_control_method, acpi_ex_exit_interpreter, acpi_ds_get_current_walk_state, acpi_ut_remove_reference, acpi_ns_print_node_pathname, kfree, acpi_ds_terminate_control_method)

@@ -1,0 +1,6 @@
+net/netfilter/xt_NFLOG.o
+nflog_tg -> (nf_log_packet)
+nflog_tg_check -> (__request_module, nf_logger_find_get)
+nflog_tg_destroy -> (nf_logger_put)
+nflog_tg_exit -> (xt_unregister_target, nflog_tg_check, nflog_tg_destroy, nflog_tg)
+nflog_tg_init -> (xt_register_target, nflog_tg_check, nflog_tg_destroy, nflog_tg)

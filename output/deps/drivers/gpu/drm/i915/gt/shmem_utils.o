@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/gt/shmem_utils.o
+__shmem_rw -> (__SCT__might_resched, set_page_dirty, shmem_read_mapping_page_gfp, __folio_put, mark_page_accessed)
+shmem_create_from_data -> (__shmem_rw, shmem_file_setup, fput)
+shmem_create_from_object -> (i915_gem_object_pin_map_unlocked, shmem_file_setup, fput, __shmem_rw, i915_gem_object_is_shmem, i915_coherent_map_type)
+shmem_pin_map -> (shmem_read_mapping_page_gfp, __folio_put, kvmalloc_node, kvfree, vmap)
+shmem_read -> (__shmem_rw)
+shmem_read_to_iosys_map -> (__SCT__might_resched, shmem_read_mapping_page_gfp, __folio_put, memcpy_toio, mark_page_accessed)
+shmem_unpin_map -> (vfree)
+shmem_write -> (__shmem_rw)

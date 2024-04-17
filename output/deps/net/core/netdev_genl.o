@@ -1,0 +1,7 @@
+net/core/netdev_genl.o
+netdev_genl_dev_notify -> (netdev_nl_dev_fill, netlink_broadcast, __alloc_skb, netlink_has_listeners, kfree_skb_reason)
+netdev_genl_init -> (netdev_genl_netdevice_event, unregister_netdevice_notifier, genl_register_family, register_netdevice_notifier)
+netdev_genl_netdevice_event -> (netdev_genl_dev_notify)
+netdev_nl_dev_fill -> (nla_put, genlmsg_put, nla_put_64bit, skb_trim)
+netdev_nl_dev_get_doit -> (netlink_unicast, rtnl_lock, netdev_nl_dev_fill, __alloc_skb, __dev_get_by_index, kfree_skb_reason, rtnl_unlock)
+netdev_nl_dev_get_dumpit -> (netdev_nl_dev_fill, rtnl_unlock, rtnl_lock)

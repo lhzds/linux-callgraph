@@ -1,0 +1,4 @@
+net/ethtool/pause.o
+pause_fill_reply -> (nla_put, nla_put_64bit, skb_trim)
+pause_parse_request -> (do_trace_netlink_extack)
+pause_prepare_data -> (do_trace_netlink_extack, ethnl_ops_complete, ethnl_ops_begin, __ethtool_dev_mm_supported)

@@ -1,0 +1,13 @@
+drivers/usb/early/ehci_dbgp.o
+__find_dbgp -> (read_pci_config, find_cap)
+_dbgp_external_startup -> (dbgp_wait_until_done, dbgp_control_msg, __const_udelay)
+dbgp_control_msg -> (dbgp_wait_until_done)
+dbgp_wait_until_done -> (__const_udelay)
+detect_set_debug_port -> (nvidia_set_debug_port, default_set_debug_port, read_pci_config)
+early_dbgp_init -> (write_pci_config_byte, ehci_setup, early_pci_allowed, find_dbgp, read_pci_config, simple_strtoul, detect_set_debug_port, cachemode2protval, native_set_fixmap, read_pci_config_byte)
+early_dbgp_write -> (_dbgp_external_startup, dbgp_wait_until_done)
+early_ehci_bios_handoff -> (write_pci_config_byte, read_pci_config, __const_udelay)
+ehci_setup -> (_dbgp_external_startup, default_set_debug_port, early_ehci_bios_handoff)
+find_cap -> (read_pci_config_16, read_pci_config_byte)
+find_dbgp -> (__find_dbgp)
+nvidia_set_debug_port -> (write_pci_config, read_pci_config)

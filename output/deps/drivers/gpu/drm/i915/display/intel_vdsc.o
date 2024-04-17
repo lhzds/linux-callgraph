@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/display/intel_vdsc.o
+intel_dsc_compute_params -> (drm_dsc_set_rc_buf_thresh, __drm_dev_dbg, intel_lookup_range_min_qp, drm_dsc_setup_rc_params, intel_lookup_range_max_qp)
+intel_dsc_disable -> (__warn_printk, dev_driver_string)
+intel_dsc_dp_pps_write -> (drm_dsc_pps_payload_pack, drm_dsc_dp_pps_header_init)
+intel_dsc_dsi_pps_write -> (mipi_dsi_compression_mode, drm_dsc_pps_payload_pack, mipi_dsi_picture_parameter_set)
+intel_dsc_enable -> (intel_crtc_is_bigjoiner_slave, __warn_printk, __drm_dev_dbg, dev_driver_string)
+intel_dsc_get_config -> (intel_display_power_put_unchecked, intel_display_power_get_if_enabled, __warn_printk, dev_driver_string)
+intel_dsc_power_domain -> (__warn_printk, dev_driver_string)
+intel_uncompressed_joiner_enable -> (intel_crtc_is_bigjoiner_slave, __warn_printk, dev_driver_string)

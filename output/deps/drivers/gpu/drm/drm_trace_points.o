@@ -1,0 +1,13 @@
+drivers/gpu/drm/drm_trace_points.o
+__traceiter_drm_vblank_event -> (__SCT__tp_func_drm_vblank_event, __traceiter_drm_vblank_event, __probestub_drm_vblank_event)
+__traceiter_drm_vblank_event_delivered -> (__traceiter_drm_vblank_event_delivered, __probestub_drm_vblank_event_delivered, __SCT__tp_func_drm_vblank_event_delivered)
+__traceiter_drm_vblank_event_queued -> (__SCT__tp_func_drm_vblank_event_queued, __traceiter_drm_vblank_event_queued, __probestub_drm_vblank_event_queued)
+perf_trace_drm_vblank_event -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+perf_trace_drm_vblank_event_delivered -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+perf_trace_drm_vblank_event_queued -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_drm_vblank_event -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_event_raw_event_drm_vblank_event_delivered -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_event_raw_event_drm_vblank_event_queued -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_raw_output_drm_vblank_event -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)
+trace_raw_output_drm_vblank_event_delivered -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)
+trace_raw_output_drm_vblank_event_queued -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)

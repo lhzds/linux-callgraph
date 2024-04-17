@@ -1,0 +1,6 @@
+fs/nfs/nfsroot.o
+nfs_root_data -> (_printk, root_nfs_data)
+nfs_root_setup -> (sprintf, strlen, root_nfs_parse_addr, strscpy)
+root_nfs_cat -> (strlen, strlcat)
+root_nfs_data -> (_printk, snprintf, root_nfs_parse_options, kmalloc_trace, kfree, root_nfs_cat)
+root_nfs_parse_options -> (strscpy, strsep, root_nfs_cat, strcmp)

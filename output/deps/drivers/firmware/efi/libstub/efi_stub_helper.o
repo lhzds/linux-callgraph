@@ -1,0 +1,10 @@
+drivers/firmware/efi/libstub/efi_stub_helper.o
+efi_apply_loadoptions_quirk -> (efi_printk)
+efi_convert_cmdline -> (efi_apply_loadoptions_quirk, snprintf, __efi64_thunk, efi_measure_tagged_event, efi_printk)
+efi_exit_boot_services -> (__efi64_thunk, efi_pci_disable_bridge_busmaster, efi_get_memory_map)
+efi_load_initrd -> (__efi64_thunk, handle_cmdline_files, efi_measure_tagged_event, efi_free, efi_allocate_pages, efi_printk)
+efi_measure_tagged_event -> (__efi64_thunk, memcpy, efi_printk)
+efi_parse_options -> (strlen, strcmp, __efi64_thunk, memcpy, strncmp, strnlen, next_arg, parse_option_str, efi_parse_option_graphics, skip_spaces)
+efi_remap_image -> (__efi64_thunk, efi_printk)
+efi_wait_for_key -> (__efi64_thunk)
+get_efi_config_table -> (memcmp)

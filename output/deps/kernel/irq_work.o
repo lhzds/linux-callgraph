@@ -1,0 +1,8 @@
+kernel/irq_work.o
+__irq_work_queue_local -> (arch_irq_work_raise, llist_add_batch, __SCT__tp_func_ipi_send_cpu, __traceiter_ipi_send_cpu, __probestub_ipi_send_cpu, tick_nohz_tick_stopped)
+irq_work_queue -> (__irq_work_queue_local)
+irq_work_queue_on -> (__irq_work_queue_local, __smp_call_single_queue)
+irq_work_run -> (rcuwait_wake_up)
+irq_work_single -> (rcuwait_wake_up)
+irq_work_sync -> (__SCT__might_resched, schedule, finish_rcuwait)
+irq_work_tick -> (rcuwait_wake_up)

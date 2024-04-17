@@ -1,0 +1,8 @@
+net/ipv4/syncookies.o
+__cookie_v4_check -> (__do_once_done, __do_once_start, get_random_bytes, siphash_2u64)
+__cookie_v4_init_sequence -> (__do_once_done, __do_once_start, get_random_bytes, siphash_2u64)
+cookie_tcp_reqsk_alloc -> (inet_reqsk_alloc)
+cookie_v4_check -> (__ip_options_echo, tcp_v4_route_req, tcp_v4_init_seq, tcp_v4_reqsk_send_ack, tcp_rtx_synack, tcp_v4_reqsk_destructor, security_inet_conn_request, tcp_get_cookie_sock, tcp_v4_md5_lookup, cookie_v4_init_sequence, tcp_parse_options, tcp_v4_init_ts_off, get_random_u32, tcp_v4_send_synack, tcp_v4_send_reset, tcp_syn_ack_timeout, tcp_v4_md5_hash_skb, ip_route_output_flow, secure_tcp_ts_off, __kmalloc, inet_reqsk_alloc, security_req_classify_flow, __cookie_v4_check, reqsk_free, kfree, tcp_select_initial_window)
+cookie_v4_init_sequence -> (__cookie_v4_init_sequence)
+reqsk_free -> (refcount_warn_saturate, kfree, kmem_cache_free, sk_free)
+tcp_get_cookie_sock -> (refcount_warn_saturate, kmem_cache_free, _raw_spin_unlock, inet_csk_reqsk_queue_add, sk_free, kfree)

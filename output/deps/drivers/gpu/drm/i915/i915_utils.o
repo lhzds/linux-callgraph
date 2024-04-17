@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/i915_utils.o
+__i915_printk -> (_dev_notice, test_taint, _dev_printk)
+add_taint_for_CI -> (__i915_printk, add_taint)
+cancel_timer -> (timer_delete)
+set_timer_ms -> (mod_timer, __msecs_to_jiffies, timer_delete)

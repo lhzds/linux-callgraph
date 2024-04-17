@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gt/intel_rc6.o
+gen6_rc6_enable -> (_dev_err, snb_pcode_write_timeout, __drm_dev_dbg, snb_pcode_read)
+intel_check_bios_c6_setup -> (intel_runtime_pm_put_unchecked, intel_runtime_pm_get)
+intel_rc6_disable -> (intel_guc_rc_disable, intel_uncore_forcewake_put, intel_uncore_forcewake_get, __pm_runtime_resume)
+intel_rc6_enable -> (gen6_rc6_enable, __pm_runtime_idle, intel_uncore_forcewake_get, __warn_printk, gen8_rc6_enable, intel_uncore_forcewake_put, intel_guc_rc_enable, _dev_notice, gen9_rc6_enable, dev_driver_string)
+intel_rc6_fini -> (refcount_warn_saturate, intel_rc6_disable, drm_gem_object_free, __pm_runtime_idle)
+intel_rc6_init -> (__drm_dev_dbg, intel_uncore_forcewake_get, __pm_runtime_resume, __warn_printk, intel_uncore_forcewake_put, _dev_notice, intel_guc_rc_disable, i915_gem_object_create_stolen, intel_vgpu_active, intel_runtime_pm_put_unchecked, intel_runtime_pm_get, i915_gem_object_create_region_at, dev_driver_string)
+intel_rc6_park -> (_dev_notice, intel_rc6_disable)
+intel_rc6_print_residency -> (intel_runtime_pm_put_unchecked, seq_printf, intel_runtime_pm_get, intel_rc6_residency_ns)
+intel_rc6_residency_ns -> (_raw_spin_lock_irqsave, intel_uncore_forcewake_for_reg, intel_uncore_forcewake_get__locked, _raw_spin_unlock_irqrestore, intel_uncore_forcewake_put__locked)
+intel_rc6_residency_us -> (intel_rc6_residency_ns)
+intel_rc6_sanitize -> (intel_guc_rc_disable, intel_uncore_forcewake_put, intel_uncore_forcewake_get, __pm_runtime_resume)

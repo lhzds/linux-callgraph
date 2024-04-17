@@ -1,0 +1,7 @@
+sound/core/seq/seq_prioq.o
+snd_seq_prioq_cell_in -> (_printk, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+snd_seq_prioq_cell_out -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+snd_seq_prioq_delete -> (snd_seq_cell_free, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)
+snd_seq_prioq_leave -> (snd_seq_cell_free, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+snd_seq_prioq_new -> (kmalloc_trace)
+snd_seq_prioq_remove_events -> (snd_seq_cell_free, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

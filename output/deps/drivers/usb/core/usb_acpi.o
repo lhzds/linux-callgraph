@@ -1,0 +1,9 @@
+drivers/usb/core/usb_acpi.o
+usb_acpi_find_companion -> (acpi_find_child_device, usb_acpi_get_companion_for_port, usb_port_device_release, usb_release_dev, acpi_evaluate_object, usb_hub_to_struct_hub, is_acpi_device_node, acpi_get_physical_device_location, usb_dev_uevent, kfree, usb_devnode)
+usb_acpi_get_companion_for_port -> (is_acpi_device_node, usb_hcd_find_raw_port_number, acpi_fetch_acpi_dev, acpi_find_child_by_adr, usb_get_hub_port_acpi_handle)
+usb_acpi_port_lpm_incapable -> (guid_parse, acpi_check_dsm, acpi_evaluate_dsm, kfree, usb_get_hub_port_acpi_handle)
+usb_acpi_power_manageable -> (usb_get_hub_port_acpi_handle, acpi_bus_power_manageable)
+usb_acpi_register -> (usb_acpi_find_companion, usb_acpi_bus_match, register_acpi_bus_type)
+usb_acpi_set_power_state -> (usb_get_hub_port_acpi_handle, usb_hub_to_struct_hub, acpi_bus_set_power)
+usb_acpi_unregister -> (unregister_acpi_bus_type, usb_acpi_bus_match, usb_acpi_find_companion)
+usb_acpi_bus_match -> (usb_dev_uevent, usb_port_device_release, usb_devnode, usb_release_dev)

@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/gt/uc/intel_guc_debugfs.o
+guc_info_open -> (guc_info_show, single_open)
+guc_info_show -> (__drm_puts_seq_file, drm_puts, intel_guc_log_info, intel_guc_ads_print_policy_info, intel_guc_submission_print_info, intel_guc_ct_print_info, __drm_printfn_seq_file, intel_guc_load_status)
+guc_registered_contexts_open -> (single_open, guc_registered_contexts_show)
+guc_registered_contexts_show -> (__drm_puts_seq_file, __drm_printfn_seq_file, intel_guc_submission_print_context_info)
+guc_sched_disable_delay_ms_fops_open -> (guc_sched_disable_delay_ms_get, simple_attr_open, guc_sched_disable_delay_ms_set)
+guc_sched_disable_gucid_threshold_fops_open -> (guc_sched_disable_gucid_threshold_get, simple_attr_open, guc_sched_disable_gucid_threshold_set)
+guc_sched_disable_gucid_threshold_set -> (intel_guc_sched_disable_gucid_threshold_max)
+guc_slpc_info_open -> (guc_slpc_info_show, single_open)
+guc_slpc_info_show -> (__drm_puts_seq_file, intel_guc_slpc_print_info, __drm_printfn_seq_file)
+intel_guc_debugfs_register -> (guc_sched_disable_gucid_threshold_fops_open, intel_eval_slpc_support, intel_guc_log_debugfs_register, simple_attr_release, seq_read, intel_gt_debugfs_register_files, seq_lseek, single_release, guc_slpc_info_open, guc_info_open, simple_attr_write, guc_sched_disable_delay_ms_fops_open, simple_attr_read, guc_registered_contexts_open, generic_file_llseek)

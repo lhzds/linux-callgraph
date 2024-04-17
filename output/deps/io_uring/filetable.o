@@ -1,0 +1,7 @@
+io_uring/filetable.o
+__io_fixed_fd_install -> (io_queue_rsrc_removal, _find_next_zero_bit, io_is_uring_fops, io_file_get_flags, __io_scm_file_account, unix_get_socket)
+io_alloc_file_tables -> (kvmalloc_node, kvfree, bitmap_zalloc)
+io_fixed_fd_install -> (__io_fixed_fd_install, mutex_lock, mutex_unlock, fput)
+io_fixed_fd_remove -> (io_queue_rsrc_removal)
+io_free_file_tables -> (kvfree, bitmap_free)
+io_register_file_alloc_range -> (_copy_from_user)

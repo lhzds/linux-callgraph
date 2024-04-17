@@ -1,0 +1,3 @@
+net/sunrpc/auth_gss/gss_krb5_seqnum.o
+krb5_get_seq_num -> (krb5_decrypt, kmalloc_trace, kfree)
+krb5_make_seq_num -> (kmalloc_trace, kfree, krb5_encrypt)

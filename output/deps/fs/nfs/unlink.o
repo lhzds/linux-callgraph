@@ -1,0 +1,10 @@
+fs/nfs/unlink.o
+nfs_async_rename -> (lockref_get, rpc_run_task, nfs_rename_prepare, ihold, kmalloc_trace, nfs_fattr_init, nfs_sb_active, nfs_async_rename_done, nfs_async_rename_release)
+nfs_async_rename_done -> (rpc_restart_call_prepare, __probestub_nfs_sillyrename_rename, __SCT__tp_func_nfs_sillyrename_rename, __traceiter_nfs_sillyrename_rename)
+nfs_async_rename_release -> (__put_cred, iput, _raw_spin_unlock, nfs_force_lookup_revalidate, _raw_spin_lock, dput, nfs_sb_deactive, kfree)
+nfs_async_unlink_done -> (__probestub_nfs_sillyrename_unlink, rpc_restart_call_prepare, __SCT__tp_func_nfs_sillyrename_unlink, __traceiter_nfs_sillyrename_unlink)
+nfs_async_unlink_release -> (__put_cred, up_read, dput, __d_lookup_unhash_wake, nfs_sb_deactive, kfree)
+nfs_cancel_async_unlink -> (_raw_spin_lock, __put_cred, kfree, _raw_spin_unlock)
+nfs_complete_sillyrename -> (nfs_cancel_async_unlink)
+nfs_complete_unlink -> (__put_cred, nfs_unlink_prepare, bcmp, rpc_run_task, _raw_spin_unlock, nfs_async_unlink_done, _raw_spin_lock, down_read, up_read, dput, nfs_fattr_init, nfs_sb_active, nfs_async_unlink_release, rpc_put_task_async, d_alloc_parallel, kfree)
+nfs_sillyrename -> (kstrdup, iput, nfs_complete_sillyrename, _raw_spin_lock, nfs_async_rename, nfs_set_cache_invalid, nfs_inc_attr_generation_counter, lookup_one_len, _raw_spin_unlock, rpc_wait_for_completion_task, kmalloc_trace, __put_cred, rpc_put_task, ihold, d_drop, __init_waitqueue_head, scnprintf, dput, d_move, nfs_set_verifier, kfree, nfs_cancel_async_unlink)

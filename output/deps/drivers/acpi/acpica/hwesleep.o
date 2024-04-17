@@ -1,0 +1,5 @@
+drivers/acpi/acpica/hwesleep.o
+acpi_hw_execute_sleep_method -> (acpi_evaluate_object, acpi_exception)
+acpi_hw_extended_sleep -> (acpi_read, acpi_os_enter_sleep, acpi_write)
+acpi_hw_extended_wake -> (acpi_evaluate_object, acpi_write, acpi_exception)
+acpi_hw_extended_wake_prep -> (acpi_write)

@@ -1,0 +1,4 @@
+drivers/acpi/acpica/psargs.o
+acpi_ps_get_next_arg -> (acpi_ps_set_name, acpi_ps_get_next_simple_arg, acpi_ps_peek_opcode, acpi_ps_free_op, acpi_ps_alloc_op, acpi_ps_append_arg, acpi_error, acpi_ps_get_next_namepath, acpi_ps_is_leading_char)
+acpi_ps_get_next_namepath -> (acpi_ns_lookup, acpi_ns_get_attached_object, acpi_ps_init_op, acpi_ds_method_error, acpi_ps_alloc_op, acpi_ps_append_arg, acpi_error, acpi_ut_prefixed_namespace_error)
+acpi_ps_get_next_simple_arg -> (acpi_ps_init_op, acpi_error)

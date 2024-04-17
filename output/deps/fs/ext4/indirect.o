@@ -1,0 +1,11 @@
+fs/ext4/indirect.o
+ext4_clear_blocks -> (ext4_inode_block_valid, __ext4_std_error, ext4_ind_truncate_ensure_credits, ext4_inode_journal_mode, __ext4_error_inode, ext4_free_blocks)
+ext4_find_shared -> (__brelse, ext4_get_branch)
+ext4_free_branches -> (ext4_free_branches, __ext4_journal_get_write_access, ext4_inode_block_valid, ext4_ind_truncate_ensure_credits, ext4_sb_bread, __ext4_handle_dirty_metadata, __ext4_error_inode, ext4_free_data, __brelse, ext4_free_blocks)
+ext4_free_data -> (__ext4_handle_dirty_metadata, __ext4_journal_get_write_access, ext4_clear_blocks, __ext4_error_inode)
+ext4_get_branch -> (bh_uptodate_or_lock, ext4_read_bh, ext4_check_blockref, __getblk_gfp)
+ext4_ind_map_blocks -> (__SCT__might_resched, __ext4_journal_get_create_access, __probestub_ext4_ind_map_blocks_enter, ext4_get_branch, __SCT__tp_func_ext4_ind_map_blocks_enter, __lock_buffer, __traceiter_ext4_ind_map_blocks_exit, __probestub_ext4_ind_map_blocks_exit, __SCT__tp_func_ext4_ind_map_blocks_exit, ext4_splice_branch, __brelse, _printk, __traceiter_ext4_ind_map_blocks_enter, ext4_inode_to_goal_block, ext4_free_blocks, ext4_mb_new_blocks, ext4_new_meta_blocks, ext4_update_inode_fsync_trans, __getblk_gfp, __ext4_error_inode, __ext4_handle_dirty_metadata, unlock_buffer, __ext4_warning, ext4_da_update_reserve_space)
+ext4_ind_remove_space -> (ext4_free_branches, ext4_find_shared, __ext4_warning, __brelse, ext4_clear_blocks)
+ext4_ind_truncate -> (ext4_free_branches, ext4_find_shared, ext4_es_remove_extent, __ext4_warning, __brelse, ext4_clear_blocks)
+ext4_ind_truncate_ensure_credits -> (down_write, __ext4_journal_get_write_access, __ext4_journal_ensure_credits, up_write, __ext4_mark_inode_dirty, jbd2__journal_restart, ext4_discard_preallocations, __ext4_handle_dirty_metadata)
+ext4_splice_branch -> (__ext4_journal_get_write_access, __ext4_mark_inode_dirty, __ext4_handle_dirty_metadata, ext4_free_blocks)

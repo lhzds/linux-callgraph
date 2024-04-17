@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/gt/intel_gsc.o
+gsc_destroy_one -> (put_device, refcount_warn_saturate, intel_huc_unregister_gsc_notifier, device_del, drm_gem_object_free, irq_free_descs)
+gsc_release_dev -> (kfree)
+intel_gsc_fini -> (gsc_destroy_one)
+intel_gsc_init -> (refcount_warn_saturate, __drm_dev_dbg, i915_gem_object_create_lmem, handle_simple_irq, irq_set_chip_and_handler_name, put_device, kmalloc_trace, __auxiliary_device_add, gsc_irq_unmask, __i915_gem_object_get_dma_address, intel_huc_unregister_gsc_notifier, drm_gem_object_free, __irq_alloc_descs, _dev_err, gsc_irq_mask, irq_set_chip_data, intel_huc_register_gsc_notifier, auxiliary_device_init, i915_gem_object_pin_pages_unlocked, gsc_release_dev, _dev_warn, kfree, gsc_destroy_one)
+intel_gsc_irq_handler -> (___ratelimit, _dev_warn, generic_handle_irq, _dev_err)

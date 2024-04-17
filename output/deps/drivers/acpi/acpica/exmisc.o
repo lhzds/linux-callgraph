@@ -1,0 +1,4 @@
+drivers/acpi/acpica/exmisc.o
+acpi_ex_do_logical_numeric_op -> (acpi_error)
+acpi_ex_do_logical_op -> (memcmp, acpi_ex_convert_to_buffer, acpi_error, acpi_ex_convert_to_string, acpi_ut_remove_reference, acpi_ex_convert_to_integer)
+acpi_ex_get_object_reference -> (acpi_ut_create_internal_object_dbg, acpi_error)

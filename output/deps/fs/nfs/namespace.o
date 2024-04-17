@@ -1,0 +1,11 @@
+fs/nfs/namespace.o
+nfs_d_automount -> (fs_context_for_submount, refcount_warn_saturate, nfs_expire_automounts, up_write, vfs_create_mount, nfs_alloc_fattr, delayed_work_timer_fn, __put_net, put_fs_context, queue_delayed_work_on, mntget, mnt_set_expiry)
+nfs_do_submount -> (logfc, kmalloc_trace, nfs_path, vfs_parse_fs_string, kfree, vfs_get_tree)
+nfs_expire_automounts -> (mark_mounts_for_expiry, delayed_work_timer_fn, queue_delayed_work_on, nfs_expire_automounts)
+nfs_namespace_getattr -> (generic_fillattr, nfs_getattr)
+nfs_namespace_setattr -> (nfs_setattr)
+nfs_path -> (strlen, _raw_spin_unlock, _raw_spin_lock, __rcu_read_lock, __rcu_read_unlock)
+nfs_release_automount_timer -> (delayed_work_timer_fn, nfs_expire_automounts, cancel_delayed_work)
+nfs_submount -> (nfs_do_submount, dput, dget_parent)
+param_get_nfs_timeout -> (sysfs_emit)
+param_set_nfs_timeout -> (nfs_expire_automounts, delayed_work_timer_fn, cancel_delayed_work, mod_delayed_work_on, kstrtoll)

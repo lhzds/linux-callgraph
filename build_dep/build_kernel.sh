@@ -1,8 +1,12 @@
 #!/bin/bash
 CURDIR=$(dirname $(realpath $0))
-SRCDIR="$CURDIR/src"
-BUILDDIR="$CURDIR/build/"
-KERNEL_VER="6.5"
+ROOTDIR=$(dirname $(dirname $(realpath $0)))
+echo "root is $ROOTDIR"
+
+
+OUTDIR=$ROOTDIR/output
+SRCDIR=$OUTDIR/src
+BUILDDIR=$OUTDIR/build
 
 KERNEL_SRC_PATH="$SRCDIR/linux-$KERNEL_VER/"
 KERNEL_TARGET_BUILD_PATH="$BUILDDIR/linux-$KERNEL_VER-target/"
@@ -34,4 +38,3 @@ popd
 
 # 3. 重新编译生成 .bc 文件
 ${CURDIR}/buildir.py $KERNEL_TARGET_BUILD_PATH
-

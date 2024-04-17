@@ -1,0 +1,4 @@
+fs/isofs/compress.o
+zisofs_cleanup -> (vfree)
+zisofs_init -> (zlib_inflate_workspacesize, vmalloc)
+zisofs_read_folio -> (isofs_bread, _printk, __SCT__might_resched, mutex_lock, __folio_put, __wait_on_buffer, zlib_inflate, mutex_unlock, unlock_page, zlib_inflateInit2, isofs_get_blocks, pagecache_get_page, __bh_read_batch, zlib_inflateEnd, kfree, __brelse, __kmalloc)

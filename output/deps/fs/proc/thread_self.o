@@ -1,0 +1,4 @@
+fs/proc/thread_self.o
+proc_setup_thread_self -> (d_alloc_name, _printk, down_write, up_write, dput, new_inode, proc_thread_self_get_link, current_time, d_add)
+proc_thread_self_get_link -> (sprintf, kmalloc_trace, kfree_link, __task_pid_nr_ns)
+proc_thread_self_init -> (proc_alloc_inum)

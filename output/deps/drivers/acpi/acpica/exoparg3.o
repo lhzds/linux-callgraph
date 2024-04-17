@@ -1,0 +1,3 @@
+drivers/acpi/acpica/exoparg3.o
+acpi_ex_opcode_3A_0T_0R -> (kmalloc_trace, kfree, acpi_os_signal, acpi_error)
+acpi_ex_opcode_3A_1T_1R -> (acpi_error, acpi_ex_store, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg, __kmalloc)

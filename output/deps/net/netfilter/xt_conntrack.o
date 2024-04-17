@@ -1,0 +1,8 @@
+net/netfilter/xt_conntrack.o
+conntrack_mt_check -> (___ratelimit, _printk, nf_ct_netns_get)
+conntrack_mt_destroy -> (nf_ct_netns_put)
+conntrack_mt_exit -> (xt_unregister_matches, conntrack_mt_check, conntrack_mt_v3, conntrack_mt_destroy, conntrack_mt_v2, conntrack_mt_v1)
+conntrack_mt_init -> (xt_register_matches, conntrack_mt_check, conntrack_mt_v3, conntrack_mt_destroy, conntrack_mt_v2, conntrack_mt_v1)
+conntrack_mt_v1 -> (conntrack_mt)
+conntrack_mt_v2 -> (conntrack_mt)
+conntrack_mt_v3 -> (conntrack_mt)

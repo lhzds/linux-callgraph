@@ -1,0 +1,9 @@
+sound/core/seq/seq_fifo.o
+snd_seq_fifo_cell_out -> (_raw_spin_lock_irqsave, add_wait_queue, schedule, _raw_spin_unlock_irqrestore, remove_wait_queue, default_wake_function)
+snd_seq_fifo_cell_putback -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+snd_seq_fifo_clear -> (snd_use_lock_sync_helper, _raw_spin_lock_irq, snd_seq_cell_free, _raw_spin_unlock_irq)
+snd_seq_fifo_delete -> (__wake_up, snd_seq_pool_delete, snd_use_lock_sync_helper, _raw_spin_lock_irq, snd_seq_cell_free, _raw_spin_unlock_irq, snd_seq_pool_mark_closing, snd_seq_pool_done, kfree)
+snd_seq_fifo_event_in -> (__wake_up, _raw_spin_lock_irqsave, snd_seq_event_dup, _raw_spin_unlock_irqrestore)
+snd_seq_fifo_new -> (snd_seq_pool_delete, snd_seq_pool_init, kmalloc_trace, snd_seq_pool_new, __init_waitqueue_head, kfree)
+snd_seq_fifo_resize -> (snd_seq_pool_delete, snd_seq_pool_init, _raw_spin_lock_irq, snd_use_lock_sync_helper, snd_seq_cell_free, _raw_spin_unlock_irq, snd_seq_pool_new, snd_seq_pool_mark_closing)
+snd_seq_fifo_unused_cells -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

@@ -1,0 +1,4 @@
+drivers/acpi/acpica/dswscope.o
+acpi_ds_scope_stack_clear -> (acpi_ut_delete_generic_state)
+acpi_ds_scope_stack_pop -> (acpi_ut_delete_generic_state, acpi_ut_pop_generic_state)
+acpi_ds_scope_stack_push -> (acpi_ut_push_generic_state, acpi_error, acpi_warning, acpi_ut_valid_object_type, acpi_ut_create_generic_state)

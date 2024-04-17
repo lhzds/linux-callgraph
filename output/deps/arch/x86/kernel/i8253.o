@@ -1,0 +1,2 @@
+arch/x86/kernel/i8253.o
+pit_timer_init -> (pit_set_oneshot, apic_needs_pit, pit_set_periodic, pit_shutdown, clockevent_i8253_init, pit_next_event)

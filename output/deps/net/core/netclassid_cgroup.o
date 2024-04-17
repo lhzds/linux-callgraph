@@ -1,0 +1,6 @@
+net/core/netclassid_cgroup.o
+cgrp_attach -> (_raw_spin_unlock, cgroup_taskset_first, _raw_spin_lock, __SCT__cond_resched, iterate_fd, update_classid_sock, cgroup_taskset_next)
+cgrp_css_alloc -> (kmalloc_trace)
+cgrp_css_free -> (kfree)
+update_classid_sock -> (sock_from_file)
+write_classid -> (css_task_iter_end, _raw_spin_unlock, _raw_spin_lock, css_task_iter_start, css_task_iter_next, __SCT__cond_resched, iterate_fd, update_classid_sock)

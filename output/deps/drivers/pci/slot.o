@@ -1,0 +1,12 @@
+drivers/pci/slot.o
+address_read_file -> (sysfs_emit)
+cur_speed_read_file -> (pci_speed_string, sysfs_emit)
+make_slot_name -> (kstrdup, strlen, kobject_put, kset_find_obj, sprintf, kfree, __kmalloc)
+max_speed_read_file -> (pci_speed_string, sysfs_emit)
+pci_create_slot -> (mutex_lock, max_speed_read_file, pci_slot_release, strcmp, mutex_unlock, down_read, pci_slot_attr_store, kmalloc_trace, kobject_put, up_read, kfree, kobject_get, pci_slot_attr_show, address_read_file, kobject_init_and_add, make_slot_name, cur_speed_read_file, kobject_rename)
+pci_destroy_slot -> (mutex_lock, kobject_put, mutex_unlock)
+pci_dev_assign_slot -> (mutex_unlock, mutex_lock)
+pci_hp_create_module_link -> (_dev_err, kobject_put, sysfs_create_link, kset_find_obj)
+pci_hp_remove_module_link -> (sysfs_remove_link)
+pci_slot_init -> (_printk, pci_dma_configure, pci_device_shutdown, kset_create_and_add, pci_bus_num_vf, pci_uevent, pci_bus_match, pci_dma_cleanup, bus_get_kset, pci_device_remove, pci_device_probe)
+pci_slot_release -> (down_read, up_read, kfree)

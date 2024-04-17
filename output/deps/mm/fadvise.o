@@ -1,0 +1,8 @@
+mm/fadvise.o
+__ia32_sys_fadvise64 -> (fput, generic_fadvise, __fdget)
+__ia32_sys_fadvise64_64 -> (fput, generic_fadvise, __fdget)
+__x64_sys_fadvise64 -> (fput, generic_fadvise, __fdget)
+__x64_sys_fadvise64_64 -> (fput, generic_fadvise, __fdget)
+generic_fadvise -> (lru_add_drain_all, invalidate_mapping_pages, _raw_spin_unlock, mapping_try_invalidate, _raw_spin_lock, inode_to_bdi, __filemap_fdatawrite_range, lru_add_drain, force_page_cache_ra)
+ksys_fadvise64_64 -> (fput, generic_fadvise, __fdget)
+vfs_fadvise -> (generic_fadvise)

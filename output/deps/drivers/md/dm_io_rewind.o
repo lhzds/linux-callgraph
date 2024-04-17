@@ -1,0 +1,2 @@
+drivers/md/dm_io_rewind.o
+dm_io_rewind -> (__warn_printk, bio_alloc_clone, bio_trim, bio_chain)

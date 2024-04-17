@@ -1,0 +1,2 @@
+lib/decompress.o
+decompress_method -> (unlzma, bcmp, unxz, unzstd, unlzo, gunzip, unlz4, bunzip2)

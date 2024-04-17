@@ -1,0 +1,10 @@
+net/core/gen_stats.o
+___gnet_stats_copy_basic -> (_raw_spin_unlock_bh, kfree, nla_put_64bit)
+gnet_stats_copy_app -> (kmemdup, _raw_spin_unlock_bh, kfree, nla_put_64bit)
+gnet_stats_copy_basic -> (___gnet_stats_copy_basic)
+gnet_stats_copy_basic_hw -> (___gnet_stats_copy_basic)
+gnet_stats_copy_queue -> (_raw_spin_unlock_bh, kfree, nla_put_64bit)
+gnet_stats_copy_rate_est -> (_raw_spin_unlock_bh, kfree, nla_put_64bit, gen_estimator_read)
+gnet_stats_finish_copy -> (_raw_spin_unlock_bh, kfree, nla_put_64bit)
+gnet_stats_start_copy -> (gnet_stats_start_copy_compat)
+gnet_stats_start_copy_compat -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, kfree, nla_put_64bit)

@@ -1,0 +1,3 @@
+drivers/acpi/x86/apple.o
+acpi_extract_apple_properties -> (__bitmap_weight, bitmap_free, acpi_os_allocate_zeroed, acpi_data_add_props, bitmap_zalloc, acpi_evaluate_dsm, acpi_handle_printk, kfree, _find_next_bit)
+acpi_os_allocate_zeroed -> (__kmalloc)

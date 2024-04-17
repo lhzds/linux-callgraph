@@ -1,0 +1,5 @@
+net/ipv4/netfilter/ipt_REJECT.o
+reject_tg -> (nf_send_unreach, nf_send_reset)
+reject_tg_check -> (___ratelimit, _printk)
+reject_tg_exit -> (xt_unregister_target, reject_tg_check, reject_tg)
+reject_tg_init -> (xt_register_target, reject_tg_check, reject_tg)

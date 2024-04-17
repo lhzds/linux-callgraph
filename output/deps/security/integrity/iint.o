@@ -1,0 +1,7 @@
+security/integrity/iint.o
+init_once -> (__mutex_init)
+integrity_iint_find -> (_raw_read_unlock, _raw_read_lock)
+integrity_iintcache_init -> (init_once, kmem_cache_create)
+integrity_inode_free -> (kmem_cache_free, _raw_write_lock, rb_erase, _raw_write_unlock, kfree)
+integrity_inode_get -> (kmem_cache_alloc, rb_insert_color, _raw_read_unlock, _raw_write_lock, _raw_read_lock, _raw_write_unlock, kmem_cache_free)
+integrity_kernel_read -> (__kernel_read)

@@ -1,0 +1,6 @@
+lib/mpi/mpi_add.o
+mpi_add -> (mpihelp_sub_n, mpihelp_add_n, mpihelp_cmp, mpi_resize)
+mpi_add_ui -> (mpi_resize)
+mpi_addm -> (mpi_mod, mpi_add)
+mpi_sub -> (mpi_free, mpi_copy, mpi_add)
+mpi_subm -> (mpi_free, mpi_mod, mpi_copy, mpi_add)

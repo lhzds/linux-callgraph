@@ -1,0 +1,3 @@
+crypto/cipher.o
+crypto_cipher_setkey -> (kfree, __kmalloc)
+crypto_clone_cipher -> (__crypto_alloc_tfmgfp, crypto_mod_get, crypto_mod_put)

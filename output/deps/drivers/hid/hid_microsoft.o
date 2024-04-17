@@ -1,0 +1,9 @@
+drivers/hid/hid_microsoft.o
+ms_driver_exit -> (ms_report_fixup, ms_probe, ms_event, ms_input_mapped, ms_input_mapping, hid_unregister_driver, ms_remove)
+ms_driver_init -> (__hid_register_driver, ms_report_fixup, ms_probe, ms_input_mapped, ms_input_mapping, ms_event, ms_remove)
+ms_event -> (input_event)
+ms_ff_worker -> (hid_hw_output_report, _dev_warn)
+ms_play_effect -> (queue_work_on)
+ms_probe -> (input_set_capability, hid_hw_start, _dev_err, hid_open_report, ms_ff_worker, ms_play_effect, input_ff_create_memless, devm_kmalloc)
+ms_remove -> (hid_hw_stop, cancel_work_sync)
+ms_report_fixup -> (_dev_info)

@@ -1,0 +1,6 @@
+drivers/acpi/wakeup.o
+acpi_disable_wakeup_devices -> (acpi_set_gpe_wake_mask, acpi_disable_wakeup_device_power)
+acpi_enable_wakeup_devices -> (acpi_enable_wakeup_device_power, acpi_set_gpe_wake_mask)
+acpi_register_wakeup_handler -> (mutex_lock, kmalloc_trace, mutex_unlock)
+acpi_unregister_wakeup_handler -> (mutex_lock, kfree, mutex_unlock)
+acpi_wakeup_device_init -> (mutex_unlock, device_set_wakeup_enable, mutex_lock, acpi_enable_gpe)

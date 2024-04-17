@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/display/intel_dsb.o
+intel_dsb_cleanup -> (i915_vma_unpin_and_release, kfree)
+intel_dsb_commit -> (_dev_err, __warn_printk, dev_driver_string)
+intel_dsb_prepare -> (refcount_warn_saturate, i915_vma_unpin_and_release, drm_gem_object_free, kmalloc_trace, kfree, i915_gem_object_pin_map_unlocked, intel_runtime_pm_put_unchecked, i915_gem_object_create_internal, _dev_info, i915_gem_object_ggtt_pin, intel_runtime_pm_get)
+intel_dsb_reg_write -> (__warn_printk, dev_driver_string)
+intel_dsb_wait -> (_dev_err, __SCT__might_resched, ktime_get_raw, usleep_range_state)

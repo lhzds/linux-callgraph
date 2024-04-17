@@ -1,0 +1,3 @@
+sound/core/memory.o
+copy_from_user_toio -> (memcpy_toio, _copy_from_user)
+copy_to_user_fromio -> (memcpy_fromio, _copy_to_user)

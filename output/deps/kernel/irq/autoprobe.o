@@ -1,0 +1,4 @@
+kernel/irq/autoprobe.o
+probe_irq_mask -> (mutex_unlock, _raw_spin_lock_irq, irq_shutdown_and_deactivate, irq_to_desc, _raw_spin_unlock_irq)
+probe_irq_off -> (mutex_unlock, _raw_spin_lock_irq, irq_shutdown_and_deactivate, irq_to_desc, _raw_spin_unlock_irq)
+probe_irq_on -> (async_synchronize_full, mutex_lock, _raw_spin_lock_irq, irq_shutdown_and_deactivate, _raw_spin_unlock_irq, irq_to_desc, msleep, irq_activate_and_startup)

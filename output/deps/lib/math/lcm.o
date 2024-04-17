@@ -1,0 +1,3 @@
+lib/math/lcm.o
+lcm -> (gcd)
+lcm_not_zero -> (gcd)

@@ -1,0 +1,5 @@
+drivers/thermal/thermal_helpers.o
+__thermal_cdev_update -> (__probestub_cdev_update, __traceiter_cdev_update, __SCT__tp_func_cdev_update)
+get_thermal_instance -> (mutex_unlock, mutex_lock)
+thermal_cdev_update -> (mutex_unlock, mutex_lock, __thermal_cdev_update)
+thermal_zone_get_temp -> (mutex_unlock, mutex_lock)

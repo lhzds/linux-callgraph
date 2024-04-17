@@ -1,0 +1,13 @@
+drivers/gpu/drm/ttm/ttm_tt.o
+ttm_kmap_iter_tt_init -> (ttm_prot_from_caching, ttm_kmap_iter_tt_unmap_local, ttm_kmap_iter_tt_map_local)
+ttm_sg_tt_init -> (kvmalloc_node, _printk)
+ttm_tt_create -> (_printk)
+ttm_tt_debugfs_shrink_open -> (single_open, ttm_tt_debugfs_shrink_show)
+ttm_tt_debugfs_shrink_show -> (ttm_global_swapout, seq_printf)
+ttm_tt_fini -> (kvfree, fput)
+ttm_tt_init -> (kvmalloc_node, _printk)
+ttm_tt_mgr_init -> (seq_read, debugfs_create_file, single_release, ttm_tt_debugfs_shrink_open, seq_lseek)
+ttm_tt_populate -> (ttm_pool_alloc, ttm_global_swapout, ttm_tt_swapin, ttm_tt_unpopulate)
+ttm_tt_swapin -> (copy_page, shmem_read_mapping_page_gfp, __folio_put, fput)
+ttm_tt_swapout -> (ttm_pool_free, _printk, set_page_dirty, shmem_read_mapping_page_gfp, __folio_put, mark_page_accessed, fput, copy_page, shmem_file_setup)
+ttm_tt_unpopulate -> (ttm_pool_free)

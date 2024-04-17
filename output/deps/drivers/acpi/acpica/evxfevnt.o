@@ -1,0 +1,7 @@
+drivers/acpi/acpica/evxfevnt.o
+acpi_clear_event -> (acpi_write_bit_register)
+acpi_disable -> (acpi_hw_get_mode, acpi_hw_set_mode, acpi_error)
+acpi_disable_event -> (acpi_ut_get_event_name, acpi_write_bit_register, acpi_read_bit_register, acpi_error)
+acpi_enable -> (acpi_hw_get_mode, acpi_warning, acpi_os_stall, acpi_error, acpi_hw_set_mode)
+acpi_enable_event -> (acpi_ut_get_event_name, acpi_write_bit_register, acpi_read_bit_register, acpi_error)
+acpi_get_event_status -> (acpi_read_bit_register)

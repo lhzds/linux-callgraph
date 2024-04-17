@@ -1,0 +1,11 @@
+net/mac80211/agg_rx.o
+___ieee80211_start_rx_ba_session -> (skb_put, ___ieee80211_stop_rx_ba_session, drv_ampdu_action, init_timer_key, kmalloc_trace, __netdev_alloc_skb, sta_rx_agg_session_timer_expired, mod_timer, __rcu_read_lock, sta_rx_agg_reorder_timer_expired, __usecs_to_jiffies, __rcu_read_unlock, ieee80211_tx_skb_tid, kfree, __kmalloc)
+___ieee80211_stop_rx_ba_session -> (_raw_spin_lock_bh, _printk, drv_ampdu_action, call_rcu, timer_delete_sync, _raw_spin_unlock_bh, ieee80211_free_tid_rx, ieee80211_send_delba)
+__ieee80211_stop_rx_ba_session -> (mutex_unlock, ___ieee80211_stop_rx_ba_session, mutex_lock)
+ieee80211_free_tid_rx -> (kfree_skb_reason, kfree)
+ieee80211_manage_rx_ba_offl -> (__rcu_read_unlock, ieee80211_queue_work, __rcu_read_lock, sta_info_get_bss)
+ieee80211_process_addba_request -> (mutex_lock, mutex_unlock, ieee802_11_parse_elems_full, kfree, ___ieee80211_start_rx_ba_session)
+ieee80211_rx_ba_timer_expired -> (__rcu_read_unlock, ieee80211_queue_work, __rcu_read_lock, sta_info_get_bss)
+ieee80211_stop_rx_ba_session -> (__rcu_read_unlock, ieee80211_queue_work, __rcu_read_lock, sta_info_get_bss)
+sta_rx_agg_reorder_timer_expired -> (__rcu_read_unlock, ieee80211_release_reorder_timeout, __rcu_read_lock)
+sta_rx_agg_session_timer_expired -> (mod_timer, ieee80211_queue_work, __usecs_to_jiffies)

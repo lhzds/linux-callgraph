@@ -1,0 +1,7 @@
+net/netfilter/nf_conntrack_standalone.o
+nf_conntrack_count -> (__rcu_read_unlock, __rcu_read_lock)
+nf_conntrack_hash_sysctl -> (nf_conntrack_hash_resize, proc_dointvec)
+nf_conntrack_pernet_exit -> (nf_ct_netns_put, nf_conntrack_cleanup_net_list, __rcu_read_lock, __rcu_read_unlock, kfree, unregister_net_sysctl_table)
+nf_conntrack_pernet_init -> (nf_conntrack_init_net, proc_dou8vec_minmax, unregister_net_sysctl_table, proc_dointvec, kmemdup, __rcu_read_lock, register_net_sysctl, __rcu_read_unlock, nf_ct_netns_get, kfree, nf_conntrack_hash_sysctl, proc_dointvec_jiffies, nf_conntrack_cleanup_net)
+nf_conntrack_standalone_fini -> (nf_conntrack_cleanup_end, nf_conntrack_cleanup_start, unregister_pernet_subsys, nf_conntrack_pernet_exit, nf_conntrack_pernet_init, unregister_net_sysctl_table)
+nf_conntrack_standalone_init -> (nf_conntrack_init_end, _printk, register_pernet_subsys, nf_conntrack_cleanup_end, nf_conntrack_init_start, proc_dointvec, nf_conntrack_pernet_init, register_net_sysctl, unregister_net_sysctl_table, nf_conntrack_pernet_exit)

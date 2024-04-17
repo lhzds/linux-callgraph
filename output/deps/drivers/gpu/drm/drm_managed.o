@@ -1,0 +1,8 @@
+drivers/gpu/drm/drm_managed.o
+__drmm_add_action -> (kstrdup_const, __drm_dev_dbg, __kmalloc_node_track_caller, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+__drmm_add_action_or_reset -> (__drmm_add_action)
+drm_managed_release -> (kfree, __drm_dev_dbg, kfree_const)
+drmm_add_final_kfree -> (ksize)
+drmm_kfree -> (__drm_dev_dbg, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree, kfree_const)
+drmm_kmalloc -> (kstrdup_const, __drm_dev_dbg, __kmalloc_node_track_caller, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+drmm_kstrdup -> (drmm_kmalloc, strlen)

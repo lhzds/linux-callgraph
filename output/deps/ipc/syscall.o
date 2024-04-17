@@ -1,0 +1,3 @@
+ipc/syscall.o
+__ia32_compat_sys_ipc -> (compat_ksys_ipc)
+compat_ksys_ipc -> (_copy_from_user, do_shmat, ksys_msgget, ksys_shmget, ksys_shmdt, compat_ksys_old_shmctl, compat_ksys_semtimedop, ksys_semget, compat_ksys_msgsnd, ksys_semtimedop, compat_ksys_old_semctl, compat_ksys_old_msgctl, compat_ksys_msgrcv)

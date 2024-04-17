@@ -1,0 +1,5 @@
+lib/crypto/sha256.o
+sha224_final -> (sha256_transform_blocks)
+sha256 -> (sha256_transform_blocks, sha256_final)
+sha256_final -> (sha256_transform_blocks)
+sha256_update -> (sha256_transform_blocks)

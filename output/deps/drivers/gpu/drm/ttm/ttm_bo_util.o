@@ -1,0 +1,13 @@
+drivers/gpu/drm/ttm/ttm_bo_util.o
+ttm_bo_kmap -> (ttm_prot_from_caching, __SCT__might_resched, ttm_tt_populate, ioremap_wc, vmap, ioremap, ioremap_cache)
+ttm_bo_kunmap -> (vunmap, iounmap)
+ttm_bo_move_accel_cleanup -> (ttm_buffer_object_transfer, refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, dma_resv_wait_timeout, ttm_bo_put, ttm_bo_tt_destroy, ww_mutex_unlock, ttm_resource_free, dma_resv_add_fence, dma_fence_release)
+ttm_bo_move_memcpy -> (ttm_bo_move_sync_cleanup, ttm_tt_populate, ttm_kmap_iter_linear_io_init, ttm_kmap_iter_linear_io_fini, ttm_move_memcpy, ttm_kmap_iter_tt_init)
+ttm_bo_move_sync_cleanup -> (ttm_resource_free, dma_resv_wait_timeout, ttm_bo_tt_destroy)
+ttm_bo_pipeline_gutting -> (ttm_buffer_object_transfer, ttm_tt_create, dma_resv_test_signaled, dma_resv_copy_fences, dma_resv_wait_timeout, ttm_bo_put, ttm_tt_destroy, ttm_tt_unpopulate, ww_mutex_unlock, ttm_resource_free)
+ttm_bo_vmap -> (ttm_prot_from_caching, ttm_tt_populate, ioremap_wc, vmap, ioremap, ioremap_cache)
+ttm_bo_vunmap -> (vunmap, iounmap)
+ttm_buffer_object_transfer -> (ttm_bo_set_bulk_move, refcount_warn_saturate, _raw_spin_unlock, ttm_bo_move_to_lru_tail, _raw_spin_lock, ttm_resource_set_bo, kmalloc_trace, ww_mutex_trylock, dma_resv_init, dma_resv_reserve_fences, kfree, ttm_transfered_destroy)
+ttm_io_prot -> (ttm_prot_from_caching)
+ttm_move_memcpy -> (memset_io, drm_memcpy_from_wc)
+ttm_transfered_destroy -> (ttm_bo_put, kfree, dma_resv_fini)

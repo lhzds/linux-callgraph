@@ -1,0 +1,6 @@
+drivers/acpi/nvs.o
+acpi_nvs_register -> (_printk, kfree, kmalloc_trace)
+suspend_nvs_alloc -> (free_pages, acpi_os_unmap_iomem, __get_free_pages, iounmap)
+suspend_nvs_free -> (free_pages, acpi_os_unmap_iomem, iounmap)
+suspend_nvs_restore -> (_printk)
+suspend_nvs_save -> (_printk, acpi_os_get_iomem, acpi_os_unmap_iomem, iounmap, free_pages, ioremap_cache)

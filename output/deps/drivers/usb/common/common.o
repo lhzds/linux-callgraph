@@ -1,0 +1,7 @@
+drivers/usb/common/common.o
+usb_common_exit -> (debugfs_remove)
+usb_common_init -> (debugfs_create_dir)
+usb_get_dr_mode -> (match_string, device_property_read_string)
+usb_get_maximum_speed -> (match_string, device_property_read_string)
+usb_get_maximum_ssp_rate -> (match_string, device_property_read_string)
+usb_get_role_switch_default_mode -> (match_string, device_property_read_string)

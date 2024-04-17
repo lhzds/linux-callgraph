@@ -1,0 +1,8 @@
+fs/notify/inotify/inotify_fsnotify.o
+idr_callback -> (_printk, __warn_printk)
+inotify_free_event -> (kfree)
+inotify_free_group_priv -> (idr_destroy, idr_callback, dec_ucount, idr_for_each)
+inotify_free_mark -> (kmem_cache_free)
+inotify_freeing_mark -> (inotify_ignored_and_remove_idr)
+inotify_handle_inode_event -> (fsnotify_insert_event, fsnotify_destroy_mark, strcpy, fsnotify_destroy_event, inotify_merge, __kmalloc)
+inotify_merge -> (strcmp)

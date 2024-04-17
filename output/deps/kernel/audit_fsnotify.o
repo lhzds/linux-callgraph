@@ -1,0 +1,7 @@
+kernel/audit_fsnotify.o
+audit_alloc_mark -> (up_write, path_put, kmalloc_trace, dput, kern_path_locked, fsnotify_init_mark, fsnotify_put_mark, fsnotify_add_mark)
+audit_fsnotify_free_mark -> (kfree)
+audit_fsnotify_init -> (audit_fsnotify_free_mark, audit_panic, audit_mark_handle_event, fsnotify_alloc_group)
+audit_mark_handle_event -> (audit_log_end, audit_log_untrustedstring, audit_compare_dname_path, audit_log_key, audit_del_rule, audit_log_format, audit_log_start, audit_log_session_info)
+audit_remove_mark -> (fsnotify_destroy_mark, fsnotify_put_mark)
+audit_remove_mark_rule -> (fsnotify_destroy_mark, fsnotify_put_mark)

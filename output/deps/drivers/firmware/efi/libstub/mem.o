@@ -1,0 +1,4 @@
+drivers/firmware/efi/libstub/mem.o
+efi_allocate_pages -> (__efi64_thunk)
+efi_free -> (__efi64_thunk)
+efi_get_memory_map -> (__efi64_thunk)

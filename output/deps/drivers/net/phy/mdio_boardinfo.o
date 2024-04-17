@@ -1,0 +1,3 @@
+drivers/net/phy/mdio_boardinfo.o
+mdiobus_register_board_info -> (mutex_unlock, mutex_lock, __kmalloc)
+mdiobus_setup_mdiodev_from_board_info -> (mutex_unlock, mutex_lock, strcmp)

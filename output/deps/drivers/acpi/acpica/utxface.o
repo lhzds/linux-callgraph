@@ -1,0 +1,9 @@
+drivers/acpi/acpica/utxface.o
+acpi_check_address_range -> (acpi_ut_release_mutex, acpi_ut_check_address_range, acpi_ut_acquire_mutex)
+acpi_decode_pld_buffer -> (kmalloc_trace)
+acpi_install_interface -> (acpi_ut_install_interface, acpi_os_wait_semaphore, acpi_os_signal_semaphore, acpi_ut_get_interface)
+acpi_install_interface_handler -> (acpi_os_wait_semaphore, acpi_os_signal_semaphore)
+acpi_purge_cached_objects -> (acpi_os_purge_cache)
+acpi_remove_interface -> (acpi_os_wait_semaphore, acpi_os_signal_semaphore, acpi_ut_remove_interface)
+acpi_terminate -> (acpi_ut_subsystem_shutdown, acpi_ut_mutex_terminate, acpi_os_terminate)
+acpi_update_interfaces -> (acpi_os_wait_semaphore, acpi_os_signal_semaphore, acpi_ut_update_interfaces)

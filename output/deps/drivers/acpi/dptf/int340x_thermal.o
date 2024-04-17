@@ -1,0 +1,2 @@
+drivers/acpi/dptf/int340x_thermal.o
+acpi_int340x_thermal_init -> (acpi_scan_add_handler, int340x_thermal_handler_attach)

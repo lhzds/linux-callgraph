@@ -1,0 +1,9 @@
+mm/pgtable_generic.o
+__pte_offset_map -> (pmd_clear_bad)
+__pte_offset_map_lock -> (_raw_spin_lock, pmd_clear_bad, _raw_spin_unlock)
+p4d_clear_bad -> (_printk, __pti_set_user_pgtbl)
+pgd_clear_bad -> (_printk, __pti_set_user_pgtbl)
+pmd_clear_bad -> (_printk)
+pte_offset_map_nolock -> (_printk)
+ptep_clear_flush -> (flush_tlb_mm_range)
+pud_clear_bad -> (_printk)

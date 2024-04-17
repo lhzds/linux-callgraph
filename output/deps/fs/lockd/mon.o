@@ -1,0 +1,11 @@
+fs/lockd/mon.o
+nsm_get_handle -> (_printk, __printk_ratelimit, bcmp, refcount_warn_saturate, memchr, _raw_spin_unlock, strlen, _raw_spin_lock, __ipv6_addr_type, rpc_ntop, __rcu_read_lock, __rcu_read_unlock, ktime_get, kfree, __kmalloc)
+nsm_mon_unmon -> (nsm_xdr_dec_stat, nsm_xdr_enc_mon, nsm_xdr_dec_stat_res, rpc_create, nsm_xdr_enc_unmon, rpc_shutdown_client, rpc_force_rebind, rpc_call_sync)
+nsm_monitor -> (___ratelimit, _printk, nsm_mon_unmon)
+nsm_reboot_lookup -> (refcount_warn_saturate, bcmp, _raw_spin_unlock, _raw_spin_lock, __rcu_read_lock, __rcu_read_unlock)
+nsm_release -> (refcount_dec_and_lock, kfree, _raw_spin_unlock)
+nsm_unmonitor -> (_printk, nsm_mon_unmon)
+nsm_xdr_dec_stat -> (xdr_inline_decode)
+nsm_xdr_dec_stat_res -> (xdr_inline_decode)
+nsm_xdr_enc_mon -> (xdr_reserve_space, strlen, xdr_encode_opaque_fixed, xdr_encode_opaque)
+nsm_xdr_enc_unmon -> (xdr_reserve_space, strlen, xdr_encode_opaque)

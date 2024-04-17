@@ -1,0 +1,11 @@
+drivers/acpi/dock.o
+acpi_dock_add -> (docked_show, acpi_ata_match, undock_store, uid_show, sysfs_remove_group, type_show, kmalloc_trace, flags_show, platform_device_register_full, sysfs_create_group, acpi_dock_match, acpi_handle_printk, _dev_info, platform_device_unregister, acpi_device_is_battery)
+dock_notify -> (acpi_evaluate_integer, acpi_lock_hp_context, acpi_bus_scan, acpi_unlock_hp_context, kobject_uevent_env, acpi_evaluate_lck, handle_eject_request, acpi_handle_printk, acpi_update_all_gpes)
+docked_show -> (acpi_fetch_acpi_dev, sysfs_emit)
+flags_show -> (sysfs_emit)
+handle_eject_request -> (acpi_evaluate_integer, acpi_lock_hp_context, acpi_unlock_hp_context, acpi_bus_trim, kobject_uevent_env, acpi_evaluate_lck, acpi_handle_printk, acpi_evaluate_ej0)
+is_dock_device -> (acpi_dock_match)
+register_dock_dependent_device -> (kmalloc_trace)
+type_show -> (sysfs_emit)
+uid_show -> (acpi_evaluate_integer, sysfs_emit)
+undock_store -> (handle_eject_request, acpi_scan_lock_release, acpi_scan_lock_acquire)

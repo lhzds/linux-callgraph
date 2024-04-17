@@ -1,0 +1,3 @@
+fs/proc/version.o
+proc_version_init -> (proc_create_single_data, version_proc_show)
+version_proc_show -> (seq_printf)

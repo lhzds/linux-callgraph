@@ -1,0 +1,3 @@
+kernel/module/kmod.o
+__request_module -> (__SCT__tp_func_module_request, _printk, down_timeout, kstrdup, call_usermodehelper_exec, kmalloc_trace, vsnprintf, kfree, up, __traceiter_module_request, call_usermodehelper_setup, free_modprobe_argv, __probestub_module_request, security_kernel_module_request, ___ratelimit, current_is_async)
+free_modprobe_argv -> (kfree)

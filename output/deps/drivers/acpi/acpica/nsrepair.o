@@ -1,0 +1,4 @@
+drivers/acpi/acpica/nsrepair.o
+acpi_ns_repair_null_element -> (acpi_ut_create_buffer_object, acpi_ut_create_string_object, acpi_ut_create_integer_object)
+acpi_ns_simple_repair -> (acpi_ut_create_buffer_object, acpi_ut_create_string_object, acpi_ns_convert_to_buffer, acpi_ns_convert_to_reference, acpi_ns_convert_to_integer, acpi_exception, acpi_ns_convert_to_string, acpi_ns_convert_to_resource, acpi_ns_convert_to_unicode, acpi_ut_create_package_object, acpi_ut_create_integer_object, acpi_ut_predefined_warning, acpi_ut_remove_reference)
+acpi_ns_wrap_with_package -> (acpi_ut_create_package_object)

@@ -1,0 +1,5 @@
+arch/x86/kernel/module.o
+apply_relocate_add -> (_printk, mutex_lock, bcmp, mutex_unlock, memcpy, text_poke_sync, text_poke)
+module_alloc -> (mutex_unlock, get_random_u16, mutex_lock, __vmalloc_node_range)
+module_arch_cleanup -> (alternatives_smp_module_del)
+module_finalize -> (apply_retpolines, strcmp, apply_alternatives, apply_fineibt, apply_paravirt, apply_seal_endbr, unwind_module_init, callthunks_patch_module_calls, alternatives_smp_module_add, apply_returns)

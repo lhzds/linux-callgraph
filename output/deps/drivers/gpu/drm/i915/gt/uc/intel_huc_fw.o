@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/gt/uc/intel_huc_fw.o
+intel_huc_fw_auth_via_gsccs -> (msleep, _dev_err, i915_gem_object_pin_map_unlocked, intel_gsc_uc_heci_cmd_emit_mtl_header, intel_gsc_uc_heci_cmd_submit_packet, i915_coherent_map_type)
+intel_huc_fw_get_binary_info -> (_dev_err, strcmp)
+intel_huc_fw_load_and_auth_via_gsc -> (intel_huc_is_authenticated, intel_huc_wait_for_auth_complete, intel_pxp_huc_load_and_auth)
+intel_huc_fw_upload -> (intel_uc_fw_upload)

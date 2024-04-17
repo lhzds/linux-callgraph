@@ -1,0 +1,5 @@
+net/ethtool/plca.o
+plca_get_cfg_fill_reply -> (nla_put)
+plca_get_cfg_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)
+plca_get_status_fill_reply -> (nla_put)
+plca_get_status_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)

@@ -1,0 +1,4 @@
+net/ipv4/netfilter/iptable_nat.o
+iptable_nat_net_exit -> (ipt_unregister_table_exit)
+iptable_nat_net_pre_exit -> (__rcu_read_unlock, kfree, __rcu_read_lock, nf_nat_ipv4_unregister_fn)
+iptable_nat_table_init -> (ipt_do_table, nf_nat_ipv4_unregister_fn, ipt_register_table, ipt_alloc_initial_table, xt_find_table, nf_nat_ipv4_register_fn, kmemdup, __rcu_read_lock, __rcu_read_unlock, kfree, ipt_unregister_table_exit)

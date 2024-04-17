@@ -1,0 +1,7 @@
+net/core/secure_seq.o
+secure_ipv4_port_ephemeral -> (__do_once_done, __do_once_start, get_random_bytes, siphash_2u64)
+secure_ipv6_port_ephemeral -> (__do_once_done, __siphash_unaligned, __do_once_start, get_random_bytes)
+secure_tcp_seq -> (__do_once_done, ktime_get_with_offset, get_random_bytes, siphash_3u32, __do_once_start)
+secure_tcp_ts_off -> (__do_once_done, __do_once_start, get_random_bytes, siphash_1u64)
+secure_tcpv6_seq -> (__do_once_done, ktime_get_with_offset, get_random_bytes, __siphash_unaligned, __do_once_start)
+secure_tcpv6_ts_off -> (__do_once_done, __siphash_unaligned, __do_once_start, get_random_bytes)

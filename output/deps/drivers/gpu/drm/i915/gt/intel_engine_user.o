@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/intel_engine_user.o
+intel_engine_add_user -> (llist_add_batch)
+intel_engines_driver_register -> (rb_insert_color, __drm_dev_dbg, rb_next, list_sort, rb_first, scnprintf, engine_cmp)
+intel_engines_has_context_isolation -> (rb_first, rb_next)

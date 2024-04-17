@@ -1,0 +1,11 @@
+drivers/acpi/acpica/rsutils.o
+acpi_rs_get_aei_method_data -> (acpi_ut_evaluate_object, acpi_ut_remove_reference, acpi_rs_create_resource_list)
+acpi_rs_get_crs_method_data -> (acpi_ut_evaluate_object, acpi_ut_remove_reference, acpi_rs_create_resource_list)
+acpi_rs_get_method_data -> (acpi_ut_evaluate_object, acpi_ut_remove_reference, acpi_rs_create_resource_list)
+acpi_rs_get_prs_method_data -> (acpi_ut_evaluate_object, acpi_ut_remove_reference, acpi_rs_create_resource_list)
+acpi_rs_get_prt_method_data -> (acpi_ut_evaluate_object, acpi_rs_create_pci_routing_table, acpi_ut_remove_reference)
+acpi_rs_get_resource_source -> (strlen)
+acpi_rs_set_resource_header -> (acpi_ut_get_resource_header_length)
+acpi_rs_set_resource_length -> (acpi_ut_get_resource_header_length)
+acpi_rs_set_resource_source -> (strcpy)
+acpi_rs_set_srs_method_data -> (kmalloc_trace, kfree, acpi_ut_remove_reference, acpi_ns_evaluate, acpi_rs_create_aml_resources, acpi_ut_create_internal_object_dbg)

@@ -1,0 +1,3 @@
+kernel/printk/sysctl.o
+printk_sysctl_init -> (proc_dointvec_minmax_sysadmin, devkmsg_sysctl_set_loglvl, proc_dointvec, __register_sysctl_init, proc_dointvec_minmax, proc_dointvec_jiffies)
+proc_dointvec_minmax_sysadmin -> (capable, proc_dointvec_minmax)

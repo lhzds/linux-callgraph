@@ -1,0 +1,11 @@
+kernel/locking/rwsem.o
+down_read -> (rwsem_mark_wake, __SCT__might_resched, __traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, _raw_spin_lock_irq, _raw_spin_unlock_irq, schedule_preempt_disabled, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end, wake_up_q)
+down_read_interruptible -> (rwsem_mark_wake, __SCT__might_resched, __traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, _raw_spin_lock_irq, _raw_spin_unlock_irq, schedule_preempt_disabled, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end, wake_up_q)
+down_read_killable -> (rwsem_mark_wake, __SCT__might_resched, __traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, _raw_spin_lock_irq, _raw_spin_unlock_irq, schedule_preempt_disabled, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end, wake_up_q)
+down_write -> (__SCT__might_resched, rwsem_down_write_slowpath)
+down_write_killable -> (__SCT__might_resched, rwsem_down_write_slowpath)
+downgrade_write -> (rwsem_mark_wake, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, wake_up_q)
+rwsem_down_write_slowpath -> (rwsem_mark_wake, __traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, osq_unlock, _raw_spin_lock_irq, osq_lock, rwsem_spin_on_owner, _raw_spin_unlock_irq, sched_clock, schedule_preempt_disabled, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end, wake_up_q)
+rwsem_mark_wake -> (wake_q_add_safe, refcount_warn_saturate, wake_q_add)
+up_read -> (rwsem_mark_wake, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, wake_up_q)
+up_write -> (rwsem_mark_wake, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, wake_up_q)

@@ -1,0 +1,11 @@
+block/early_lookup.o
+bdevt_str -> (snprintf)
+blk_lookup_devt -> (class_dev_iter_init, strcmp, disk_release, block_uevent, class_dev_iter_exit, block_devnode, part_devt, class_dev_iter_next)
+devt_from_devname -> (simple_strtoul, blk_lookup_devt, strlen, strcpy)
+devt_from_devnum -> (simple_strtoul, sscanf)
+devt_from_partlabel -> (class_find_device, put_device, match_dev_by_label, block_uevent)
+devt_from_partuuid -> (_printk, put_device, strlen, match_dev_by_uuid, sscanf, class_find_device, part_devt, strchr, block_uevent)
+early_lookup_bdev -> (devt_from_devnum, devt_from_devname, devt_from_partuuid, strncmp, devt_from_partlabel)
+match_dev_by_label -> (strcmp)
+match_dev_by_uuid -> (strncasecmp)
+printk_all_partitions -> (_printk, class_dev_iter_init, disk_release, block_uevent, class_dev_iter_exit, bdevt_str, __rcu_read_lock, block_devnode, __rcu_read_unlock, xa_find, xa_find_after, class_dev_iter_next)

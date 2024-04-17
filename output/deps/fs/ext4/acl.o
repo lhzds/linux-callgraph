@@ -1,0 +1,5 @@
+fs/ext4/acl.o
+__ext4_set_acl -> (ext4_xattr_set_handle, kfree, set_cached_acl, __kmalloc)
+ext4_get_acl -> (ext4_xattr_get, refcount_warn_saturate, posix_acl_alloc, kvfree_call_rcu, kfree, __kmalloc)
+ext4_init_acl -> (refcount_warn_saturate, posix_acl_create, __ext4_set_acl, kvfree_call_rcu)
+ext4_set_acl -> (__ext4_mark_inode_dirty, __ext4_journal_start_sb, posix_acl_update_mode, ext4_xattr_set_credits, __ext4_set_acl, current_time, __ext4_journal_stop, dquot_initialize, ext4_should_retry_alloc)

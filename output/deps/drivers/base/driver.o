@@ -1,0 +1,10 @@
+drivers/base/driver.o
+driver_add_groups -> (sysfs_create_groups)
+driver_create_file -> (sysfs_create_file_ns)
+driver_find_device -> (klist_iter_exit, klist_next, get_device, klist_iter_init_node)
+driver_for_each_device -> (klist_iter_exit, klist_next, klist_iter_init_node)
+driver_register -> (_printk, bus_remove_driver, driver_find, bus_add_driver, deferred_probe_extend_timeout, sysfs_create_groups, bus_is_registered, kobject_uevent)
+driver_remove_file -> (sysfs_remove_file_ns)
+driver_remove_groups -> (sysfs_remove_groups)
+driver_set_override -> (mutex_lock, strlen, kstrndup, mutex_unlock, strnchr, kfree)
+driver_unregister -> (__warn_printk, sysfs_remove_groups, bus_remove_driver)

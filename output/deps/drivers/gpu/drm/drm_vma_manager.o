@@ -1,0 +1,10 @@
+drivers/gpu/drm/drm_vma_manager.o
+drm_vma_node_allow -> (vma_node_allow)
+drm_vma_node_allow_once -> (vma_node_allow)
+drm_vma_node_is_allowed -> (_raw_read_unlock, _raw_read_lock)
+drm_vma_node_revoke -> (kfree, _raw_write_lock, rb_erase, _raw_write_unlock)
+drm_vma_offset_add -> (drm_mm_insert_node_in_range, _raw_write_lock, _raw_write_unlock)
+drm_vma_offset_manager_destroy -> (drm_mm_takedown)
+drm_vma_offset_manager_init -> (drm_mm_init)
+drm_vma_offset_remove -> (drm_mm_remove_node, _raw_write_lock, _raw_write_unlock)
+vma_node_allow -> (rb_insert_color, kmalloc_trace, _raw_write_lock, _raw_write_unlock, kfree)

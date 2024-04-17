@@ -1,0 +1,2 @@
+lib/is_single_threaded.o
+current_is_single_threaded -> (__rcu_read_unlock, do_no_restart_syscall, __rcu_read_lock)

@@ -1,0 +1,3 @@
+kernel/locking/qrwlock.o
+queued_read_lock_slowpath -> (__traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, queued_spin_lock_slowpath, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end)
+queued_write_lock_slowpath -> (__traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, queued_spin_lock_slowpath, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end)

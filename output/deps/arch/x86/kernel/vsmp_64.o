@@ -1,0 +1,7 @@
+arch/x86/kernel/vsmp_64.o
+apicid_phys_pkg_id -> (hard_smp_processor_id)
+detect_vsmp_box -> (early_pci_allowed, read_pci_config)
+set_vsmp_ctl -> (early_iounmap, _printk, early_ioremap, read_pci_config)
+vsmp_apic_post_init -> (apicid_phys_pkg_id)
+vsmp_cap_cpus -> (early_iounmap, _printk, early_ioremap, read_pci_config)
+vsmp_init -> (mach_set_cmos_time, enc_status_change_prepare_noop, is_ISA_range, tsc_restore_sched_clock_state, mach_get_cmos_time, x86_op_int_noop, set_vsmp_ctl, detect_vsmp_box, vmware_get_tsc_khz, disable_iommus, kvm_save_sched_clock_state, hv_get_nmi_reason, intel_iommu_shutdown, kvm_get_wallclock, is_private_mmio_noop, kvm_get_tsc_khz, vsmp_apic_post_init, reserve_real_mode, enc_status_change_finish_noop, default_nmi_init, native_calibrate_tsc, native_calibrate_cpu_early, init_real_mode, hv_get_tsc_khz, iommu_shutdown_noop, enc_tlb_flush_required_noop, native_calibrate_cpu, enc_cache_flush_required_noop, default_get_nmi_reason, kvm_set_wallclock, kvm_apic_init, kvm_restore_sched_clock_state, vsmp_cap_cpus, tsc_save_sched_clock_state)

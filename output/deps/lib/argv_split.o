@@ -1,0 +1,3 @@
+lib/argv_split.o
+argv_free -> (kfree)
+argv_split -> (kfree, kstrndup, __kmalloc)

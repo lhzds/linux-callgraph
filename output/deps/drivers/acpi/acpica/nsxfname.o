@@ -1,0 +1,5 @@
+drivers/acpi/acpica/nsxfname.o
+acpi_get_handle -> (acpi_ns_validate_handle, strcmp, acpi_ns_get_node)
+acpi_get_name -> (acpi_ut_release_mutex, acpi_ns_handle_to_pathname, acpi_ut_validate_buffer, acpi_ut_acquire_mutex, acpi_ns_handle_to_name)
+acpi_get_object_info -> (acpi_ut_evaluate_numeric_object, __kmalloc, acpi_ns_validate_handle, acpi_ut_execute_CLS, acpi_ut_is_pci_root_bridge, acpi_ut_execute_UID, acpi_ut_release_mutex, acpi_ut_execute_power_methods, acpi_ut_execute_CID, acpi_ut_execute_HID, kfree, acpi_ut_acquire_mutex)
+acpi_install_method -> (acpi_ns_lookup, acpi_ut_release_mutex, acpi_ps_get_next_package_end, acpi_ps_get_next_namestring, acpi_ps_peek_opcode, acpi_ps_get_opcode_size, acpi_ns_attach_object, acpi_ut_remove_reference, acpi_ut_acquire_mutex, kfree, acpi_ut_create_internal_object_dbg, __kmalloc)

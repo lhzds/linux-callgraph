@@ -1,0 +1,4 @@
+drivers/virtio/virtio_dma_buf.o
+is_virtio_dma_buf -> (virtio_dma_buf_attach)
+virtio_dma_buf_export -> (dma_buf_export, virtio_dma_buf_attach)
+virtio_dma_buf_get_uuid -> (virtio_dma_buf_attach)

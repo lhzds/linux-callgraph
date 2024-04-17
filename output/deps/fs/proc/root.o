@@ -1,0 +1,12 @@
+fs/proc/root.o
+proc_fill_super -> (generic_read_dir, _printk, proc_root_readdir, refcount_warn_saturate, proc_alloc_inode, proc_show_options, proc_setup_self, generic_delete_inode, proc_evict_inode, kmalloc_trace, simple_statfs, proc_root_getattr, d_make_root, proc_get_inode, proc_root_lookup, proc_setup_thread_self, proc_free_inode, generic_file_llseek)
+proc_fs_context_free -> (put_pid_ns, kfree)
+proc_get_tree -> (proc_fill_super, get_tree_nodev)
+proc_init_fs_context -> (proc_get_tree, refcount_warn_saturate, proc_fs_context_free, kmalloc_trace, proc_parse_param, task_active_pid_ns, proc_reconfigure)
+proc_kill_sb -> (put_pid_ns, kfree, dput, kill_anon_super)
+proc_parse_param -> (logfc, strcmp, fs_param_is_string, kstrtouint, fs_param_is_u32, strchr, __fs_parse)
+proc_reconfigure -> (sync_filesystem)
+proc_root_getattr -> (generic_read_dir, proc_root_readdir, nr_processes, generic_fillattr, proc_root_getattr, proc_root_lookup, generic_file_llseek)
+proc_root_init -> (proc_symlink, proc_create_mount_point, proc_self_init, fs_param_is_string, register_filesystem, proc_sys_init, set_proc_pid_nlink, proc_kill_sb, fs_param_is_u32, proc_tty_init, proc_init_kmemcache, proc_thread_self_init, proc_mkdir, proc_net_init, proc_init_fs_context)
+proc_root_lookup -> (proc_pid_lookup, proc_lookup)
+proc_root_readdir -> (proc_pid_readdir, proc_readdir)

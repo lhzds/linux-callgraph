@@ -1,0 +1,9 @@
+fs/nfs_common/grace.o
+exit_grace -> (grace_init_net, grace_exit_net, unregister_pernet_subsys)
+grace_exit_net -> (__rcu_read_unlock, __warn_printk, __rcu_read_lock)
+grace_init_net -> (__rcu_read_unlock, __rcu_read_lock)
+init_grace -> (register_pernet_subsys, grace_init_net, grace_exit_net)
+locks_end_grace -> (_raw_spin_lock, _raw_spin_unlock)
+locks_in_grace -> (__rcu_read_unlock, __rcu_read_lock)
+locks_start_grace -> (_raw_spin_unlock, _raw_spin_lock, __warn_printk, __rcu_read_lock, __rcu_read_unlock)
+opens_in_grace -> (__rcu_read_unlock, _raw_spin_lock, __rcu_read_lock, _raw_spin_unlock)

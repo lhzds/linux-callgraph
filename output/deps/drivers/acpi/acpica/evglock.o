@@ -1,0 +1,6 @@
+drivers/acpi/acpica/evglock.o
+acpi_ev_acquire_global_lock -> (acpi_os_acquire_lock, __acpi_acquire_global_lock, acpi_ex_system_wait_semaphore, acpi_ex_system_wait_mutex, acpi_os_release_lock)
+acpi_ev_global_lock_handler -> (acpi_os_acquire_lock, acpi_os_release_lock, acpi_os_signal_semaphore, acpi_error)
+acpi_ev_init_global_lock_handler -> (kmalloc_trace, acpi_install_fixed_event_handler, acpi_ev_global_lock_handler, acpi_error)
+acpi_ev_release_global_lock -> (acpi_warning, acpi_write_bit_register, acpi_os_signal_semaphore, __acpi_release_global_lock)
+acpi_ev_remove_global_lock_handler -> (acpi_ev_global_lock_handler, acpi_os_delete_lock, acpi_remove_fixed_event_handler)

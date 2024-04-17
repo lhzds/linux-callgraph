@@ -1,0 +1,2 @@
+drivers/scsi/scsi_trace.o
+scsi_trace_parse_cdb -> (trace_seq_putc, trace_seq_printf, trace_seq_puts)

@@ -1,0 +1,13 @@
+kernel/time/posix_clock.o
+pc_clock_adjtime -> (fget, down_read, up_read, posix_clock_open, fput)
+pc_clock_getres -> (fget, down_read, up_read, posix_clock_open, fput)
+pc_clock_gettime -> (fget, down_read, up_read, posix_clock_open, fput)
+pc_clock_settime -> (fget, down_read, up_read, posix_clock_open, fput)
+posix_clock_compat_ioctl -> (down_read, up_read)
+posix_clock_ioctl -> (down_read, up_read)
+posix_clock_open -> (down_read, up_read, get_device)
+posix_clock_poll -> (down_read, up_read)
+posix_clock_read -> (down_read, up_read)
+posix_clock_register -> (_printk, __init_rwsem, cdev_device_add, posix_clock_compat_ioctl, posix_clock_read, posix_clock_open, posix_clock_release, posix_clock_ioctl, posix_clock_poll, cdev_init)
+posix_clock_release -> (put_device)
+posix_clock_unregister -> (down_write, put_device, cdev_device_del, up_write)

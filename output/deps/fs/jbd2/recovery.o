@@ -1,0 +1,8 @@
+fs/jbd2/recovery.o
+calc_chksums -> (crc32_be, _printk, journal_tag_bytes, jread)
+do_one_pass -> (_printk, __SCT__might_resched, jbd2_journal_test_revoke, jread, __lock_buffer, jbd2_commit_block_csum_verify, __SCT__cond_resched, crypto_shash_update, jbd2_journal_set_revoke, jbd2_descriptor_block_csum_verify, mark_buffer_dirty, calc_chksums, __getblk_gfp, unlock_buffer, journal_tag_bytes, __brelse)
+jbd2_commit_block_csum_verify -> (crypto_shash_update)
+jbd2_descriptor_block_csum_verify -> (crypto_shash_update)
+jbd2_journal_recover -> (jbd2_journal_clear_revoke, blkdev_issue_flush, sync_blockdev, do_one_pass)
+jbd2_journal_skip_recovery -> (_printk, do_one_pass)
+jread -> (_printk, __SCT__might_resched, __wait_on_buffer, jbd2_journal_bmap, bh_uptodate_or_lock, __bh_read, __getblk_gfp, __bh_read_batch, __brelse)

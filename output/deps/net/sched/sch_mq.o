@@ -1,0 +1,7 @@
+net/sched/sch_mq.o
+mq_attach -> (qdisc_put, kfree, qdisc_hash_add, dev_graft_qdisc)
+mq_destroy -> (qdisc_put, kfree)
+mq_dump -> (_raw_spin_lock_bh, gnet_stats_add_queue, qdisc_offload_dump_helper, gnet_stats_basic_sync_init, _raw_spin_unlock_bh, gnet_stats_add_basic)
+mq_dump_class_stats -> (gnet_stats_copy_queue, gnet_stats_copy_basic)
+mq_graft -> (dev_activate, dev_deactivate, qdisc_offload_graft_helper, dev_graft_qdisc)
+mq_init -> (pfifo_fast_change_tx_queue_len, pfifo_fast_dump, pfifo_fast_destroy, pfifo_fast_peek, pfifo_fast_dequeue, pfifo_fast_reset, pfifo_fast_init, qdisc_create_dflt, pfifo_fast_enqueue, __kmalloc)

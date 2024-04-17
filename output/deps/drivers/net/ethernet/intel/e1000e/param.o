@@ -1,0 +1,3 @@
+drivers/net/ethernet/intel/e1000e/param.o
+e1000_validate_option -> (_dev_info)
+e1000e_check_options -> (kstrdup, e1000e_set_kmrn_lock_loss_workaround_ich8lan, e1000_validate_option, _dev_err, _dev_notice, kfree, _dev_info)

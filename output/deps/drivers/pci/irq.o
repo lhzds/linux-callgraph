@@ -1,0 +1,3 @@
+drivers/pci/irq.o
+pci_free_irq -> (pci_irq_vector, kfree, free_irq)
+pci_request_irq -> (pci_irq_vector, kfree, kvasprintf, request_threaded_irq)

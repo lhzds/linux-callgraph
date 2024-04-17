@@ -1,0 +1,7 @@
+drivers/net/netconsole.o
+cleanup_netconsole -> (console_list_lock, write_msg, write_ext_msg, netpoll_cleanup, unregister_netdevice_notifier, netconsole_netdev_event, console_list_unlock, unregister_console, kfree)
+init_netconsole -> (_printk, write_msg, register_console, register_netdevice_notifier, write_ext_msg, strsep, kmalloc_trace, _raw_spin_lock_irqsave, netpoll_cleanup, netconsole_netdev_event, netpoll_setup, _raw_spin_unlock_irqrestore, netpoll_parse_options, kfree, strscpy)
+netconsole_netdev_event -> (_printk, __netpoll_cleanup, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, strscpy)
+option_setup -> (strscpy)
+write_ext_msg -> (memchr, scnprintf, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, netpoll_send_udp)
+write_msg -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, netpoll_send_udp)

@@ -1,0 +1,10 @@
+fs/remap_range.o
+__generic_remap_file_range_prep -> (vfs_dedupe_file_range_compare, generic_write_check_limits, generic_remap_check_len, filemap_write_and_wait_range, file_modified, inode_dio_wait)
+do_clone_file_range -> (fsnotify_access, security_file_permission, fsnotify_modify, generic_file_rw_checks)
+fsnotify_access -> (__fsnotify_parent, backing_file_real_path, fsnotify)
+fsnotify_modify -> (__fsnotify_parent, backing_file_real_path, fsnotify)
+generic_remap_file_range_prep -> (__generic_remap_file_range_prep)
+vfs_clone_file_range -> (do_clone_file_range, __SCT__might_resched, __percpu_down_read, rcuwait_wake_up)
+vfs_dedupe_file_range -> (fput, security_file_permission, vfs_dedupe_file_range_one, __fdget)
+vfs_dedupe_file_range_compare -> (__SCT__might_resched, bcmp, __folio_put, folio_unlock, __folio_lock, read_cache_folio)
+vfs_dedupe_file_range_one -> (mnt_want_write_file, security_file_permission, make_vfsuid, inode_permission, capable, mnt_drop_write_file)

@@ -1,0 +1,2 @@
+arch/x86/lib/csum_partial_64.o
+ip_compute_csum -> (csum_partial)

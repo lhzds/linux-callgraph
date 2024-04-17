@@ -1,0 +1,6 @@
+drivers/tty/tty_audit.o
+tty_audit_add_data -> (mutex_lock, __mutex_init, mutex_unlock, kmalloc_trace, tty_audit_log, audit_log_lost, kfree)
+tty_audit_exit -> (tty_audit_log, kfree)
+tty_audit_log -> (__get_task_comm, audit_log_end, audit_log_n_hex, audit_log_untrustedstring, __rcu_read_lock, audit_log_format, __rcu_read_unlock, audit_log_start)
+tty_audit_push -> (mutex_unlock, tty_audit_log, mutex_lock)
+tty_audit_tiocsti -> (tty_audit_push, tty_audit_log)

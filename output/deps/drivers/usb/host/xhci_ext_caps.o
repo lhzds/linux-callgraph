@@ -1,0 +1,3 @@
+drivers/usb/host/xhci_ext_caps.o
+xhci_ext_cap_init -> (platform_device_unregister, platform_device_put, device_create_managed_software_node, xhci_intel_unregister_pdev, platform_device_add, _dev_err, __devm_add_action, platform_device_add_resources, platform_device_alloc)
+xhci_intel_unregister_pdev -> (platform_device_unregister)

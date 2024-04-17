@@ -1,0 +1,12 @@
+kernel/futex/pi.o
+fixup_pi_owner -> (fixup_pi_state_owner)
+fixup_pi_state_owner -> (__rt_mutex_futex_trylock, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irq, futex_get_value_locked, pi_state_update_owner, __task_pid_nr_ns, __SCT__cond_resched, _raw_spin_unlock_irq, futex_cmpxchg_value_locked, fault_in_user_writeable)
+futex_lock_pi -> (hrtimer_sleeper_start_expires, _raw_spin_lock, __futex_queue, futex_q_lock, futex_lock_pi_atomic, _raw_spin_unlock, get_futex_key, _raw_spin_lock_irq, kmalloc_trace, rt_mutex_wait_proxy_lock, fault_in_user_writeable, futex_setup_timer, hrtimer_cancel, fixup_pi_state_owner, rt_mutex_futex_trylock, __SCT__cond_resched, _raw_spin_unlock_irq, rt_mutex_cleanup_proxy_lock, futex_q_unlock, futex_unqueue_pi, __rt_mutex_start_proxy_lock, wait_for_owner_exiting)
+futex_lock_pi_atomic -> (refcount_warn_saturate, rt_mutex_init_proxy_locked, put_task_struct, find_get_task_by_vpid, _raw_spin_lock_irq, futex_get_value_locked, _raw_spin_unlock_irq, __task_pid_nr_ns, futex_top_waiter, handle_exit_race, futex_cmpxchg_value_locked, __put_task_struct)
+futex_unlock_pi -> (refcount_warn_saturate, __rt_mutex_futex_unlock, rt_mutex_postunlock, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irq, futex_hash, get_futex_key, pi_state_update_owner, __task_pid_nr_ns, __SCT__cond_resched, _raw_spin_unlock_irq, futex_top_waiter, futex_cmpxchg_value_locked, put_pi_state, fault_in_user_writeable)
+get_pi_state -> (refcount_warn_saturate)
+handle_exit_race -> (futex_get_value_locked)
+pi_state_update_owner -> (_raw_spin_lock, _raw_spin_unlock)
+put_pi_state -> (refcount_warn_saturate, rt_mutex_proxy_unlock, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)
+put_task_struct -> (refcount_warn_saturate, __put_task_struct)
+refill_pi_state_cache -> (kmalloc_trace)

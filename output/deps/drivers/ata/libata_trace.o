@@ -1,0 +1,8 @@
+drivers/ata/libata_trace.o
+libata_trace_parse_eh_action -> (trace_seq_putc, trace_seq_printf)
+libata_trace_parse_eh_err_mask -> (trace_seq_putc, trace_seq_printf)
+libata_trace_parse_host_stat -> (trace_seq_putc, trace_seq_printf)
+libata_trace_parse_qc_flags -> (trace_seq_putc, trace_seq_printf)
+libata_trace_parse_status -> (trace_seq_putc, trace_seq_printf)
+libata_trace_parse_subcmd -> (trace_seq_putc, trace_seq_printf)
+libata_trace_parse_tf_flags -> (trace_seq_putc, trace_seq_printf)

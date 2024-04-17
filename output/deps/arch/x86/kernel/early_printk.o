@@ -1,0 +1,7 @@
+arch/x86/kernel/early_printk.o
+early_console_register -> (_printk, register_console)
+early_pci_serial_init -> (write_pci_config, io_serial_out, read_pci_config, strcmp, simple_strtoul, strncmp, kstrtoull, mem32_serial_in, early_ioremap, io_serial_in, mem32_serial_out, early_serial_hw_init)
+early_serial_hw_init -> (io_serial_in, io_serial_out)
+early_serial_init -> (io_serial_out, simple_strtoul, strncmp, io_serial_in, simple_strtoull, early_serial_hw_init, strcspn)
+early_serial_write -> (io_serial_in, io_serial_out)
+setup_early_printk -> (early_console_register, strncmp, early_pci_serial_init, early_serial_init, early_serial_write, early_vga_write, early_dbgp_init, early_dbgp_write, strstr)

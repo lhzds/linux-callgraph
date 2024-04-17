@@ -1,0 +1,8 @@
+net/core/utils.o
+in4_pton -> (strlen, hex_to_bin)
+in6_pton -> (strlen, hex_to_bin, in4_pton)
+inet6_pton -> (strlen, in6_pton, kstrtouint, __ipv6_addr_type, dev_get_by_name)
+inet_addr_is_any -> (_printk, bcmp)
+inet_proto_csum_replace16 -> (csum_partial)
+inet_pton_with_scope -> (_printk, strlen, inet6_pton, kstrtou16, in4_pton)
+net_ratelimit -> (___ratelimit)

@@ -1,0 +1,5 @@
+kernel/module/strict_rwx.o
+module_enable_nx -> (find_vm_area, set_memory_nx)
+module_enable_ro -> (set_memory_ro, find_vm_area)
+module_enable_x -> (find_vm_area, set_memory_x)
+module_enforce_rwx_sections -> (_printk)

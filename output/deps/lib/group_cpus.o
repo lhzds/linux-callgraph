@@ -1,0 +1,3 @@
+lib/group_cpus.o
+__group_cpus_evenly -> (ncpus_cmp_func, sort, kfree, __kmalloc)
+group_cpus_evenly -> (cpus_read_unlock, __group_cpus_evenly, cpus_read_lock, kfree, __kmalloc)

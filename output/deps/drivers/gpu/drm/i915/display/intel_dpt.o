@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/intel_dpt.o
+dpt_cleanup -> (refcount_warn_saturate, drm_gem_object_free)
+intel_dpt_create -> (refcount_warn_saturate, __drm_dev_dbg, i915_gem_object_create_lmem, i915_gem_object_set_cache_level, i915_gem_object_create_stolen, dpt_insert_entries, i915_gem_object_create_shmem, dpt_clear_range, kmalloc_trace, ww_mutex_unlock, drm_gem_object_free, dpt_insert_page, i915_address_space_init, intel_remapped_info_size, dpt_unbind_vma, dpt_bind_vma, intel_fb_needs_pot_stride_remap, dpt_cleanup, ww_mutex_lock_interruptible)
+intel_dpt_destroy -> (i915_vm_release, refcount_warn_saturate)
+intel_dpt_pin -> (refcount_warn_saturate, i915_gem_ww_ctx_fini, i915_gem_object_is_stolen, i915_gem_ww_ctx_init, i915_gem_object_ggtt_pin_ww, i915_vma_pin_iomap, ww_mutex_lock_interruptible, intel_runtime_pm_put_unchecked, i915_gem_ww_ctx_backoff, ww_mutex_lock, intel_runtime_pm_get)
+intel_dpt_resume -> (mutex_unlock, i915_ggtt_resume_vm, mutex_is_locked, mutex_lock)
+intel_dpt_suspend -> (mutex_lock, i915_ggtt_suspend_vm, mutex_is_locked, mutex_unlock)
+intel_dpt_unpin -> (refcount_warn_saturate, drm_gem_object_free, i915_vma_unpin_iomap)

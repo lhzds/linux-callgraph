@@ -1,0 +1,5 @@
+net/ethtool/debug.o
+debug_fill_reply -> (ethnl_put_bitset32)
+debug_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)
+debug_reply_size -> (ethnl_bitset32_size)
+ethnl_set_debug -> (ethnl_update_bitset32)

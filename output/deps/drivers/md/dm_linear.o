@@ -1,0 +1,7 @@
+drivers/md/dm_linear.o
+dm_linear_exit -> (dm_unregister_target, linear_prepare_ioctl, linear_map, linear_ctr, linear_iterate_devices, linear_dtr, linear_status)
+dm_linear_init -> (_printk, dm_register_target, linear_prepare_ioctl, linear_map, linear_ctr, linear_iterate_devices, linear_dtr, linear_status)
+linear_ctr -> (dm_get_device, kmalloc_trace, sscanf, dm_table_get_mode, kfree)
+linear_dtr -> (dm_put_device, kfree)
+linear_map -> (bio_associate_blkg)
+linear_status -> (scnprintf)

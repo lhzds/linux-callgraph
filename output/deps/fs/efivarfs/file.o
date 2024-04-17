@@ -1,0 +1,3 @@
+fs/efivarfs/file.o
+efivarfs_file_read -> (efivar_entry_get, simple_read_from_buffer, msleep, ___ratelimit, efivar_entry_size, kfree, __kmalloc)
+efivarfs_file_write -> (down_write, memdup_user, up_write, _copy_from_user, dput, d_delete, efivar_entry_set_get_size, current_time, kfree, drop_nlink)

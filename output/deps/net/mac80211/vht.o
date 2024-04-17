@@ -1,0 +1,8 @@
+net/mac80211/vht.o
+__ieee80211_vht_handle_opmode -> (_printk, ieee80211_sta_cur_vht_bw, cfg80211_sta_opmode_change_notify, ieee80211_sta_set_rx_nss, ___ratelimit)
+ieee80211_process_mu_groups -> (bcmp, ieee80211_link_info_change_notify)
+ieee80211_sta_cap_rx_bw -> (__rcu_read_unlock, __rcu_read_lock)
+ieee80211_sta_cur_vht_bw -> (__rcu_read_unlock, ieee80211_sta_cap_rx_bw, __rcu_read_lock)
+ieee80211_update_mu_groups -> (__rcu_read_unlock, __rcu_read_lock)
+ieee80211_vht_cap_ie_to_sta_vht_cap -> (_printk, ieee80211_apply_vhtcap_overrides, ieee80211_sta_cur_vht_bw, ieee80211_sta_recalc_aggregates)
+ieee80211_vht_handle_opmode -> (ieee80211_recalc_min_chandef, rate_control_rate_update, __ieee80211_vht_handle_opmode)

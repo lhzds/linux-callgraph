@@ -1,0 +1,8 @@
+drivers/input/mouse/focaltech.o
+focaltech_detect -> (psmouse_matches_pnp_id)
+focaltech_disconnect -> (psmouse_reset, kfree, ps2_command)
+focaltech_init -> (focaltech_reset, kmalloc_trace, ps2_command, focaltech_reconnect, focaltech_set_resolution, _dev_err, input_set_abs_params, focaltech_set_rate, focaltech_set_scale, input_mt_init_slots, psmouse_reset, kfree, focaltech_disconnect, focaltech_switch_protocol, focaltech_process_byte)
+focaltech_process_byte -> (_dev_err, input_event, input_mt_report_slot_state, input_mt_report_pointer_emulation)
+focaltech_reconnect -> (_dev_err, psmouse_reset, ps2_command, focaltech_switch_protocol)
+focaltech_reset -> (psmouse_reset, ps2_command)
+focaltech_switch_protocol -> (ps2_command)

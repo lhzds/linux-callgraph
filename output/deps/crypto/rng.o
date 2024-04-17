@@ -1,0 +1,11 @@
+crypto/rng.o
+crypto_alloc_rng -> (crypto_alg_extsize, crypto_alloc_tfm_node, crypto_rng_show, crypto_rng_init_tfm)
+crypto_del_default_rng -> (mutex_unlock, mutex_lock, crypto_destroy_tfm)
+crypto_get_default_rng -> (kfree_sensitive, mutex_lock, mutex_unlock, crypto_alg_extsize, get_random_bytes, crypto_rng_show, crypto_destroy_tfm, wait_for_random_bytes, crypto_alloc_tfm_node, __kmalloc, crypto_rng_init_tfm)
+crypto_put_default_rng -> (mutex_unlock, mutex_lock)
+crypto_register_rng -> (crypto_rng_show, crypto_alg_extsize, crypto_register_alg, crypto_rng_init_tfm)
+crypto_register_rngs -> (crypto_unregister_alg, crypto_alg_extsize, crypto_rng_show, crypto_register_alg, crypto_rng_init_tfm)
+crypto_rng_reset -> (wait_for_random_bytes, kfree_sensitive, get_random_bytes, __kmalloc)
+crypto_rng_show -> (seq_printf)
+crypto_unregister_rng -> (crypto_unregister_alg)
+crypto_unregister_rngs -> (crypto_unregister_alg)

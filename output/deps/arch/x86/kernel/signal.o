@@ -1,0 +1,6 @@
+arch/x86/kernel/signal.o
+arch_do_signal_or_restart -> (__set_current_blocked, get_signal, ia32_setup_rt_frame, ia32_setup_frame, x64_setup_rt_frame, signal_setup_done, user_disable_single_step, __rseq_handle_notify_resume, fpu__clear_user_states)
+get_sigframe -> (_printk, __printk_ratelimit, fpu__alloc_mathframe, copy_fpstate_to_sigframe)
+init_sigframe_size -> (_printk, fpu__get_fpstate_size)
+signal_fault -> (_printk, __printk_ratelimit, print_vma_addr, force_sig)
+strict_sas_size -> (kstrtobool)

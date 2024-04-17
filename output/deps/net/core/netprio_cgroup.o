@@ -1,0 +1,11 @@
+net/core/netprio_cgroup.o
+cgrp_css_alloc -> (kmalloc_trace)
+cgrp_css_free -> (kfree)
+cgrp_css_online -> (netprio_set_prio, rtnl_unlock, rtnl_lock)
+init_cgroup_netprio -> (register_netdevice_notifier, netprio_device_event)
+net_prio_attach -> (cgroup_taskset_first, _raw_spin_unlock, _raw_spin_lock, iterate_fd, cgroup_taskset_next, update_netprio)
+netprio_device_event -> (kvfree_call_rcu)
+netprio_set_prio -> (__kmalloc, kvfree_call_rcu)
+read_priomap -> (__rcu_read_unlock, of_css, __rcu_read_lock, seq_printf)
+update_netprio -> (sock_from_file)
+write_priomap -> (netprio_set_prio, of_css, rtnl_lock, sscanf, dev_get_by_name, rtnl_unlock)

@@ -1,0 +1,4 @@
+drivers/hid/hid_sunplus.o
+sp_driver_exit -> (sp_input_mapping, hid_unregister_driver, sp_report_fixup)
+sp_driver_init -> (__hid_register_driver, sp_input_mapping, sp_report_fixup)
+sp_report_fixup -> (_dev_info)

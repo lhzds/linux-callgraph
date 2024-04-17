@@ -1,0 +1,9 @@
+fs/proc/proc_tty.o
+proc_tty_init -> (t_next, tty_ldiscs_seq_stop, t_start, tty_ldiscs_seq_next, tty_ldiscs_seq_show, proc_create_seq_private, show_tty_driver, t_stop, proc_mkdir_mode, proc_mkdir, tty_ldiscs_seq_start)
+proc_tty_register_driver -> (proc_create_single_data)
+proc_tty_unregister_driver -> (remove_proc_entry)
+show_tty_driver -> (seq_printf, show_tty_range, seq_puts)
+show_tty_range -> (seq_printf, seq_putc, seq_puts)
+t_next -> (seq_list_next)
+t_start -> (seq_list_start, mutex_lock)
+t_stop -> (mutex_unlock)

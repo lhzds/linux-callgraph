@@ -1,0 +1,6 @@
+arch/x86/kernel/signal_32.o
+__ia32_compat_sys_rt_sigreturn -> (set_current_blocked, ia32_restore_sigcontext, compat_restore_altstack, signal_fault)
+__ia32_compat_sys_sigreturn -> (set_current_blocked, signal_fault, ia32_restore_sigcontext)
+ia32_restore_sigcontext -> (fpu__restore_sig, do_no_restart_syscall, asm_load_gs_index, _copy_from_user)
+ia32_setup_frame -> (get_sigframe)
+ia32_setup_rt_frame -> (__copy_siginfo_to_user32, get_sigframe)

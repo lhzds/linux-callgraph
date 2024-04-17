@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/intel_region_lmem.o
+intel_gt_setup_lmem -> (__drm_dev_dbg, intel_uncore_forcewake_put, pci_write_config_dword, intel_memory_region_reserve, pci_assign_unassigned_bus_resources, intel_runtime_pm_get, intel_uncore_forcewake_get, pci_read_config_dword, pci_resize_resource, intel_memory_region_create, region_lmem_init, pci_bus_resource_n, _dev_err, intel_runtime_pm_put_unchecked, intel_gt_mcr_read_any, _dev_info, pci_rebar_get_possible_sizes, region_lmem_release, i915_pci_resource_valid, pci_release_resource, intel_memory_region_destroy, __i915_gem_ttm_object_init)
+region_lmem_init -> (ioremap_wc, pgprot_writecombine, iounmap, intel_region_ttm_init)
+region_lmem_release -> (iounmap, intel_region_ttm_fini)

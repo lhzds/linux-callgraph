@@ -1,0 +1,4 @@
+drivers/power/supply/power_supply_leds.o
+power_supply_create_triggers -> (led_trigger_register_simple, kfree, kasprintf)
+power_supply_remove_triggers -> (led_trigger_unregister_simple, kfree)
+power_supply_update_leds -> (led_trigger_blink, led_trigger_event, power_supply_get_property)

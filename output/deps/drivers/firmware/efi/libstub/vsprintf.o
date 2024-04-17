@@ -1,0 +1,3 @@
+drivers/firmware/efi/libstub/vsprintf.o
+snprintf -> (vsnprintf)
+vsnprintf -> (strnlen, get_int)

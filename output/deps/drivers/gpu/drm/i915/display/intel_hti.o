@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/display/intel_hti.o
+intel_hti_uses_phy -> (__warn_printk, dev_driver_string)

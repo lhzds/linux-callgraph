@@ -1,0 +1,13 @@
+drivers/gpu/drm/virtio/virtgpu_ioctl.o
+virtio_gpu_context_init_ioctl -> (memdup_user, virtio_gpu_notify, mutex_lock, virtio_gpu_create_context_locked, mutex_unlock, dma_fence_context_alloc, kfree)
+virtio_gpu_create_context -> (mutex_lock, __get_task_comm, strlen, mutex_unlock, virtio_gpu_cmd_context_create)
+virtio_gpu_create_context_locked -> (virtio_gpu_cmd_context_create, __get_task_comm, strlen)
+virtio_gpu_get_caps_ioctl -> (init_wait_entry, __SCT__might_resched, virtio_gpu_notify, _raw_spin_unlock, schedule_timeout, _raw_spin_lock, finish_wait, prepare_to_wait_event, virtio_gpu_cmd_get_capset, _copy_to_user)
+virtio_gpu_getparam_ioctl -> (_copy_to_user)
+virtio_gpu_map_ioctl -> (virtio_gpu_mode_dumb_mmap)
+virtio_gpu_resource_create_blob_ioctl -> (virtio_gpu_object_create, memdup_user, refcount_warn_saturate, virtio_gpu_create_context, drm_gem_object_free, virtio_gpu_vram_create, virtio_gpu_cmd_submit, drm_gem_handle_create, drm_gem_object_release, virtio_gpu_resource_assign_uuid)
+virtio_gpu_resource_create_ioctl -> (virtio_gpu_object_create, refcount_warn_saturate, virtio_gpu_fence_alloc, virtio_gpu_create_context, drm_gem_object_free, drm_gem_handle_create, drm_gem_object_release, dma_fence_release)
+virtio_gpu_resource_info_ioctl -> (refcount_warn_saturate, drm_gem_object_free, drm_gem_object_lookup)
+virtio_gpu_transfer_from_host_ioctl -> (virtio_gpu_cmd_transfer_from_host_3d, virtio_gpu_notify, refcount_warn_saturate, virtio_gpu_fence_alloc, virtio_gpu_create_context, virtio_gpu_array_put_free, virtio_gpu_array_lock_resv, dma_fence_release, virtio_gpu_array_from_handles, virtio_gpu_array_unlock_resv)
+virtio_gpu_transfer_to_host_ioctl -> (virtio_gpu_notify, refcount_warn_saturate, virtio_gpu_fence_alloc, virtio_gpu_create_context, virtio_gpu_array_put_free, virtio_gpu_array_lock_resv, dma_fence_release, virtio_gpu_cmd_transfer_to_host_2d, virtio_gpu_array_from_handles, virtio_gpu_array_unlock_resv, virtio_gpu_cmd_transfer_to_host_3d)
+virtio_gpu_wait_ioctl -> (refcount_warn_saturate, dma_resv_test_signaled, dma_resv_wait_timeout, drm_gem_object_free, drm_gem_object_lookup)

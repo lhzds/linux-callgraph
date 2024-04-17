@@ -1,0 +1,12 @@
+arch/x86/kernel/cpu/amd.o
+amd_check_microcode -> (on_each_cpu_cond_mask, zenbleed_check_cpu)
+amd_set_dr_addr_mask -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+bsp_init_amd -> (_printk, do_trace_read_msr, get_random_u32, __traceiter_read_msr, __probestub_read_msr, use_mwaitx_delay, __SCT__tp_func_read_msr)
+cpu_has_amd_erratum -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+cpu_has_ibpb_brtype_microcode -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+early_init_amd -> (_printk, read_pci_config, do_trace_read_msr, setup_clear_cpu_cap, __traceiter_read_msr, cpu_has_amd_erratum, __probestub_read_msr, msr_set_bit, __SCT__tp_func_read_msr)
+init_amd -> (clear_cpu_cap, __SCT__tp_func_write_msr, x86_init_noop, fam10h_check_enable_mmcfg, __traceiter_write_msr, __traceiter_read_msr, numa_cpu_node, init_spectral_chicken, __probestub_read_msr, kvm_setup_secondary_clock, msr_clear_bit, wrmsr_safe_regs, __warn_printk, check_enable_amd_mmconf_dmi, do_trace_write_msr, zenbleed_check, __probestub_write_msr, _printk, rdmsr_safe_regs, detect_extended_topology, cpu_has_amd_erratum, msr_set_bit, cacheinfo_amd_init_llc_id, check_null_seg_clears_base, hard_smp_processor_id, do_trace_read_msr, cpu_detect_cache_sizes, get_llc_id, init_amd_cacheinfo, numa_set_node, setup_secondary_APIC_clock, __SCT__tp_func_read_msr, early_init_amd)
+init_spectral_chicken -> (clear_cpu_cap, __SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+rdrand_cmdline -> (strcmp)
+zenbleed_check -> (_printk, msr_set_bit, cpu_has_amd_erratum, msr_clear_bit)
+zenbleed_check_cpu -> (zenbleed_check)

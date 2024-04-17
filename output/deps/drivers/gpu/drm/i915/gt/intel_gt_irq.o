@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/gt/intel_gt_irq.o
+gen11_gt_irq_handler -> (_raw_spin_unlock, _raw_spin_lock, __warn_printk, _dev_err, intel_guc_ct_event_handler, intel_gsc_irq_handler, local_clock, intel_gsc_proxy_irq_handler, gen11_rps_irq_handler)
+gen11_gt_reset_one_iir -> (_dev_err, local_clock)
+gen5_gt_irq_postinstall -> (gen3_irq_init)
+gen5_gt_irq_reset -> (gen3_irq_reset)
+gen6_gt_irq_handler -> (_raw_spin_lock, queue_work_on, __drm_dev_dbg, _raw_spin_unlock)
+gen8_gt_irq_handler -> (intel_guc_ct_event_handler, gen6_rps_irq_handler)
+gen8_gt_irq_postinstall -> (gen3_irq_init)
+gen8_gt_irq_reset -> (gen3_irq_reset)

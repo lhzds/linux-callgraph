@@ -1,0 +1,8 @@
+net/netlabel/netlabel_calipso.o
+netlbl_calipso_add -> (security_current_getsecid_subj, kmalloc_trace)
+netlbl_calipso_genl_init -> (netlbl_calipso_listall, netlbl_calipso_list, netlbl_calipso_remove, netlbl_calipso_add, genl_register_family)
+netlbl_calipso_list -> (nla_put, netlink_unicast, kfree_skb_reason, netlbl_calipso_list, netlbl_calipso_listall, __alloc_skb, netlbl_calipso_remove, netlbl_calipso_add, genlmsg_put)
+netlbl_calipso_listall -> (netlbl_calipso_listall_cb)
+netlbl_calipso_listall_cb -> (nla_put, netlbl_calipso_listall, netlbl_calipso_list, netlbl_calipso_remove, netlbl_calipso_add, genlmsg_put, skb_trim)
+netlbl_calipso_remove -> (security_current_getsecid_subj, netlbl_calipso_remove_cb, netlbl_domhsh_walk)
+netlbl_calipso_remove_cb -> (netlbl_domhsh_remove_entry)

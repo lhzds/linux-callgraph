@@ -1,0 +1,4 @@
+lib/oid_registry.o
+parse_OID -> (look_up_OID)
+sprint_OID -> (sprint_oid)
+sprint_oid -> (snprintf)

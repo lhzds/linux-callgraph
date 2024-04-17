@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gt/intel_context_sseu.o
+intel_context_reconfigure_sseu -> (__intel_wakeref_get_first, __SCT__might_resched, bcmp, mutex_unlock, intel_context_prepare_remote_request, i915_request_add, i915_request_create, intel_ring_begin, intel_sseu_make_rpcs, mutex_lock_interruptible, __intel_context_do_unpin, __intel_wakeref_put_last)

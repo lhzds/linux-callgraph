@@ -1,0 +1,8 @@
+net/core/scm.o
+__scm_destroy -> (free_uid, kfree, fput)
+__scm_send -> (put_pid, refcount_warn_saturate, kmalloc_trace, fget_raw, __task_pid_nr_ns, ns_capable, free_uid, find_get_pid, pid_vnr, fput, task_active_pid_ns, kfree)
+put_cmsg -> (put_cmsg_compat)
+put_cmsg_scm_timestamping -> (put_cmsg)
+put_cmsg_scm_timestamping64 -> (put_cmsg)
+scm_detach_fds -> (free_uid, fput, scm_detach_fds_compat, __receive_fd, kfree)
+scm_fp_dup -> (refcount_warn_saturate, kmemdup)

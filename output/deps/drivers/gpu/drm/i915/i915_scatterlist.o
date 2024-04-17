@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/i915_scatterlist.o
+i915_refct_sgt_init -> (i915_refct_sgt_release)
+i915_refct_sgt_put -> (refcount_warn_saturate)
+i915_refct_sgt_release -> (sg_free_table, kfree)
+i915_rsgt_from_buddy_resource -> (i915_sg_trim, refcount_warn_saturate, kmalloc_trace, sg_alloc_table, i915_refct_sgt_put, i915_refct_sgt_release)
+i915_rsgt_from_mm_node -> (i915_sg_trim, refcount_warn_saturate, kmalloc_trace, sg_alloc_table, i915_refct_sgt_put, i915_refct_sgt_release)
+i915_sg_trim -> (sg_free_table, sg_alloc_table, sg_next)

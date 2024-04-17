@@ -1,0 +1,9 @@
+net/core/link_watch.o
+__linkwatch_run_queue -> (dev_activate, rfc2863_policy, netdev_state_change, linkwatch_urgent_event, delayed_work_timer_fn, dev_deactivate, _raw_spin_lock_irq, linkwatch_event, _raw_spin_unlock_irq, mod_delayed_work_on, queue_delayed_work_on)
+linkwatch_event -> (__linkwatch_run_queue, rtnl_unlock, rtnl_lock)
+linkwatch_fire_event -> (linkwatch_urgent_event, linkwatch_event, delayed_work_timer_fn, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, mod_delayed_work_on, queue_delayed_work_on)
+linkwatch_forget_dev -> (dev_activate, rfc2863_policy, netdev_state_change, dev_deactivate, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+linkwatch_init_dev -> (rfc2863_policy)
+linkwatch_run_queue -> (__linkwatch_run_queue)
+linkwatch_urgent_event -> (dev_get_iflink)
+rfc2863_policy -> (dev_get_iflink, _raw_write_lock, __dev_get_by_index, _raw_write_unlock)

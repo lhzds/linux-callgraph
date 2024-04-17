@@ -1,0 +1,10 @@
+fs/ext4/sysfs.o
+ext4_attr_show -> (__percpu_counter_sum, sysfs_emit, __task_pid_nr_ns)
+ext4_attr_store -> (capable, skip_spaces, kstrtoull, __ext4_error)
+ext4_exit_sysfs -> (remove_proc_entry, kobject_put)
+ext4_feat_release -> (kfree)
+ext4_init_sysfs -> (kobject_create_and_add, ext4_attr_show, kmalloc_trace, kobject_put, kobject_init_and_add, proc_mkdir, ext4_feat_release, ext4_attr_store)
+ext4_notify_error_sysfs -> (sysfs_notify)
+ext4_register_sysfs -> (ext4_mb_seq_groups_next, ext4_mb_seq_groups_start, ext4_sb_release, ext4_fc_info_show, kobject_put, ext4_seq_options_show, ext4_seq_es_shrinker_info_show, ext4_attr_store, ext4_mb_seq_structs_summary_stop, proc_create_single_data, ext4_mb_seq_groups_show, kobject_init_and_add, proc_mkdir, proc_create_seq_private, __init_swait_queue_head, ext4_seq_mb_stats_show, ext4_mb_seq_structs_summary_show, ext4_mb_seq_structs_summary_start, wait_for_completion, ext4_attr_show, ext4_mb_seq_groups_stop, ext4_mb_seq_structs_summary_next)
+ext4_sb_release -> (complete)
+ext4_unregister_sysfs -> (remove_proc_subtree, kobject_del)

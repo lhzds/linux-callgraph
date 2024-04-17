@@ -1,0 +1,5 @@
+fs/lockd/procfs.o
+lockd_create_procfs -> (simple_transaction_release, remove_proc_entry, nlm_end_grace_write, default_llseek, nlm_end_grace_read, proc_mkdir, proc_create)
+lockd_remove_procfs -> (remove_proc_entry)
+nlm_end_grace_read -> (__rcu_read_unlock, __rcu_read_lock, simple_read_from_buffer)
+nlm_end_grace_write -> (__rcu_read_unlock, __rcu_read_lock, simple_transaction_get, locks_end_grace)

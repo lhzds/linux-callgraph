@@ -1,0 +1,4 @@
+drivers/acpi/acpica/nsxfobj.o
+acpi_get_next_object -> (acpi_ut_acquire_mutex, acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ns_get_next_node_typed)
+acpi_get_parent -> (acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ut_acquire_mutex)
+acpi_get_type -> (acpi_ns_validate_handle, acpi_ut_release_mutex, acpi_ut_acquire_mutex)

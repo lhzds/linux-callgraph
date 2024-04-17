@@ -1,0 +1,5 @@
+drivers/gpu/drm/ttm/ttm_agp_backend.o
+ttm_agp_bind -> (_printk, agp_bind_memory, agp_allocate_memory)
+ttm_agp_destroy -> (agp_unbind_memory, agp_free_memory, ttm_tt_fini, kfree)
+ttm_agp_tt_create -> (kmalloc_trace, kfree, ttm_tt_init)
+ttm_agp_unbind -> (agp_unbind_memory, agp_free_memory)

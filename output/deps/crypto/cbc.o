@@ -1,0 +1,6 @@
+crypto/cbc.o
+crypto_cbc_create -> (crypto_cbc_encrypt, skcipher_alloc_instance_simple, skcipher_register_instance, crypto_cbc_decrypt)
+crypto_cbc_decrypt -> (skcipher_walk_virt, __crypto_xor, skcipher_walk_done)
+crypto_cbc_encrypt -> (skcipher_walk_virt, __crypto_xor, skcipher_walk_done)
+crypto_cbc_module_exit -> (crypto_cbc_create, crypto_unregister_template)
+crypto_cbc_module_init -> (crypto_register_template, crypto_cbc_create)

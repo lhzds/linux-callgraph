@@ -1,0 +1,9 @@
+drivers/acpi/processor_throttling.o
+__acpi_processor_set_throttling -> (_printk, work_on_cpu, acpi_processor_throttling_fn)
+acpi_processor_get_throttling_fadt -> (__request_region)
+acpi_processor_get_throttling_info -> (_printk, acpi_evaluation_failure_warn, acpi_processor_get_throttling_ptc, acpi_format_exception, acpi_evaluate_integer, acpi_evaluate_object, acpi_processor_get_throttling_fadt, work_on_cpu, __acpi_processor_set_throttling, __acpi_processor_get_throttling, acpi_processor_set_throttling_fadt, acpi_processor_set_throttling_ptc, acpi_handle_printk, kfree, acpi_extract_package, __kmalloc)
+acpi_processor_get_throttling_ptc -> (_printk, acpi_os_read_port, do_trace_read_msr, __traceiter_read_msr, __acpi_processor_set_throttling, __probestub_read_msr, __SCT__tp_func_read_msr)
+acpi_processor_reevaluate_tstate -> (work_on_cpu, __acpi_processor_set_throttling, __acpi_processor_get_throttling)
+acpi_processor_set_throttling -> (__acpi_processor_set_throttling)
+acpi_processor_set_throttling_ptc -> (_printk, __SCT__tp_func_write_msr, __traceiter_write_msr, do_trace_write_msr, acpi_os_write_port, __probestub_write_msr)
+acpi_processor_tstate_has_changed -> (acpi_evaluate_integer, acpi_evaluation_failure_warn, __acpi_processor_set_throttling)

@@ -1,0 +1,3 @@
+security/keys/permission.o
+key_task_permission -> (groups_search, security_key_permission)
+key_validate -> (ktime_get_real_seconds)

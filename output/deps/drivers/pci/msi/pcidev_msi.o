@@ -1,0 +1,3 @@
+drivers/pci/msi/pcidev_msi.o
+pci_msi_init -> (pci_find_capability, pci_write_config_word, pci_read_config_word)
+pci_msix_init -> (pci_find_capability, pci_write_config_word, pci_read_config_word)

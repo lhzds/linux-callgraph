@@ -1,0 +1,5 @@
+drivers/hid/hid_a4tech.o
+a4_driver_exit -> (a4_input_mapped, a4_input_mapping, a4_event, a4_probe, hid_unregister_driver)
+a4_driver_init -> (__hid_register_driver, a4_input_mapped, a4_input_mapping, a4_event, a4_probe)
+a4_event -> (input_event)
+a4_probe -> (_dev_err, hid_open_report, devm_kmalloc, hid_hw_start)

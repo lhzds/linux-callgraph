@@ -1,0 +1,9 @@
+net/ipv6/seg6.o
+seg6_exit -> (seg6_genl_dumphmac_done, seg6_genl_set_tunsrc, unregister_pernet_subsys, seg6_net_init, genl_unregister_family, seg6_genl_dumphmac_start, seg6_genl_get_tunsrc, seg6_genl_sethmac, seg6_net_exit, seg6_genl_dumphmac)
+seg6_genl_get_tunsrc -> (nla_put, netlink_unicast, seg6_genl_dumphmac_done, kfree_skb_reason, seg6_genl_set_tunsrc, __alloc_skb, seg6_genl_dumphmac_start, seg6_genl_get_tunsrc, __rcu_read_lock, __rcu_read_unlock, seg6_genl_sethmac, genlmsg_put, seg6_genl_dumphmac)
+seg6_genl_set_tunsrc -> (mutex_lock, mutex_unlock, synchronize_net, kmemdup, kfree)
+seg6_get_srh -> (ipv6_find_hdr, __pskb_pull_tail)
+seg6_icmp_srh -> (seg6_get_srh)
+seg6_init -> (register_pernet_subsys, _printk, seg6_genl_dumphmac_done, seg6_genl_set_tunsrc, seg6_net_init, genl_unregister_family, seg6_genl_dumphmac_start, seg6_genl_get_tunsrc, genl_register_family, seg6_genl_sethmac, seg6_net_exit, seg6_genl_dumphmac)
+seg6_net_exit -> (kfree)
+seg6_net_init -> (kmalloc_trace, kfree, __mutex_init)

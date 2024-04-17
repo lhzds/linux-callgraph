@@ -1,0 +1,3 @@
+fs/iomap/fiemap.o
+iomap_bmap -> (iomap_iter, filemap_write_and_wait_range)
+iomap_fiemap -> (fiemap_fill_next_extent, fiemap_prep, iomap_iter)

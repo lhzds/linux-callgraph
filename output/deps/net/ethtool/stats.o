@@ -1,0 +1,10 @@
+net/ethtool/stats.o
+stat_put -> (nla_put, nla_put_64bit, skb_trim)
+stats_fill_reply -> (nla_put, stats_put_ctrl_stats, stat_put, stats_put_stats, stats_put_rmon_stats, stats_put_mac_stats, skb_trim)
+stats_parse_request -> (do_trace_netlink_extack, ethnl_update_bitset)
+stats_prepare_data -> (do_trace_netlink_extack, ethnl_ops_complete, ethnl_ops_begin, __ethtool_dev_mm_supported)
+stats_put_ctrl_stats -> (stat_put)
+stats_put_mac_stats -> (stat_put)
+stats_put_rmon_hist -> (nla_put, nla_put_64bit, skb_trim)
+stats_put_rmon_stats -> (stat_put, stats_put_rmon_hist)
+stats_put_stats -> (nla_put, skb_trim)

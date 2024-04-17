@@ -1,0 +1,12 @@
+drivers/ptp/ptp_vclock.o
+ptp_convert_timestamp -> (mutex_unlock, __rcu_read_lock, __rcu_read_unlock, timecounter_cyc2time, mutex_lock_interruptible)
+ptp_get_vclocks_index -> (put_device, snprintf, mutex_unlock, class_find_device, device_match_name, __kmalloc, mutex_lock_interruptible)
+ptp_vclock_adjfine -> (mutex_unlock, timecounter_read, mutex_lock_interruptible)
+ptp_vclock_adjtime -> (mutex_unlock, mutex_lock_interruptible)
+ptp_vclock_getcrosststamp -> (mutex_unlock, timecounter_cyc2time, mutex_lock_interruptible)
+ptp_vclock_gettime -> (mutex_unlock, ns_to_timespec64, timecounter_read, mutex_lock_interruptible)
+ptp_vclock_gettimex -> (mutex_unlock, ns_to_timespec64, timecounter_cyc2time, mutex_lock_interruptible)
+ptp_vclock_refresh -> (mutex_unlock, ns_to_timespec64, timecounter_read, mutex_lock_interruptible)
+ptp_vclock_register -> (ptp_schedule_worker, ptp_vclock_adjfine, ptp_vclock_adjtime, ptp_vclock_gettimex, snprintf, __mutex_init, _raw_spin_unlock, _raw_spin_lock, ptp_vclock_gettime, kmalloc_trace, ptp_vclock_read, ptp_vclock_getcrosststamp, ptp_vclock_refresh, ptp_clock_register, ptp_vclock_settime, kfree, timecounter_init)
+ptp_vclock_settime -> (mutex_unlock, timecounter_init, mutex_lock_interruptible)
+ptp_vclock_unregister -> (_raw_spin_unlock, synchronize_rcu, _raw_spin_lock, ptp_clock_unregister, kfree)

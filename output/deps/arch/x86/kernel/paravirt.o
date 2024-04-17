@@ -1,0 +1,7 @@
+arch/x86/kernel/paravirt.o
+default_banner -> (_printk)
+native_pv_lock_init -> (static_key_disable)
+paravirt_disable_iospace -> (request_resource)
+paravirt_patch -> (native_flush_tlb_local, native_flush_tlb_one_user, native_flush_tlb_multi, native_flush_tlb_global, native_io_delay, _paravirt_nop, paravirt_BUG, tlb_remove_page)
+paravirt_set_sched_clock -> (__SCT__pv_sched_clock, native_sched_clock, __static_call_update)
+tlb_remove_page -> (__tlb_remove_page_size, tlb_flush_mmu)

@@ -1,0 +1,6 @@
+drivers/dma/dw/dw.o
+dw_dma_disable -> (do_dw_dma_off)
+dw_dma_enable -> (do_dw_dma_on)
+dw_dma_probe -> (dw_dma_encode_maxburst, dw_dma_suspend_chan, dw_dma_disable, dw_dma_prepare_ctllo, dw_dma_set_device_name, dw_dma_enable, dw_dma_bytes2block, dw_dma_initialize_chan, dw_dma_block2bytes, do_dma_probe, dw_dma_resume_chan, devm_kmalloc)
+dw_dma_remove -> (do_dma_remove)
+dw_dma_set_device_name -> (snprintf)

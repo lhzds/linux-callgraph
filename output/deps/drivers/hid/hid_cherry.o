@@ -1,0 +1,4 @@
+drivers/hid/hid_cherry.o
+ch_driver_exit -> (ch_report_fixup, hid_unregister_driver, ch_input_mapping)
+ch_driver_init -> (__hid_register_driver, ch_report_fixup, ch_input_mapping)
+ch_report_fixup -> (_dev_info)

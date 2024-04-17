@@ -1,0 +1,2 @@
+arch/x86/events/probe.o
+perf_msr_probe -> (do_trace_read_msr, not_visible, __traceiter_read_msr, __probestub_read_msr, __SCT__tp_func_read_msr)

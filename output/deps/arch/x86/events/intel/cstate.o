@@ -1,0 +1,13 @@
+arch/x86/events/intel/cstate.o
+cstate_cpu_exit -> (cstate_pmu_event_update, cstate_pmu_event_del, cstate_pmu_event_init, perf_pmu_migrate_context, __cstate_core_event_show, cstate_get_attr_cpumask, __cstate_pkg_event_show, cstate_pmu_event_start, perf_event_sysfs_show, cstate_pmu_event_add, cstate_pmu_event_stop)
+cstate_get_attr_cpumask -> (cstate_pmu_event_update, cstate_pmu_event_del, cstate_pmu_event_init, __cstate_core_event_show, cstate_get_attr_cpumask, __cstate_pkg_event_show, cstate_pmu_event_start, bitmap_print_to_pagebuf, perf_event_sysfs_show, cstate_pmu_event_add, cstate_pmu_event_stop)
+cstate_init -> (_printk, cstate_pmu_event_update, cstate_pmu_event_del, cstate_pmu_event_init, perf_pmu_register, __cstate_core_event_show, __cpuhp_remove_state, __cstate_pkg_event_show, cstate_get_attr_cpumask, cstate_pmu_event_start, perf_event_sysfs_show, cstate_cpu_init, cstate_pmu_event_add, perf_pmu_unregister, cstate_cpu_exit, cstate_pmu_event_stop, __cpuhp_setup_state)
+cstate_pmu_event_add -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+cstate_pmu_event_del -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+cstate_pmu_event_init -> (cstate_pmu_event_update, cstate_pmu_event_del, cstate_pmu_event_init, __cstate_core_event_show, cstate_get_attr_cpumask, __cstate_pkg_event_show, cstate_pmu_event_start, test_msr, perf_event_sysfs_show, cstate_pmu_event_add, cstate_pmu_event_stop)
+cstate_pmu_event_start -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+cstate_pmu_event_stop -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+cstate_pmu_event_update -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+cstate_pmu_exit -> (cstate_pmu_event_update, cstate_pmu_event_del, cstate_pmu_event_init, __cstate_core_event_show, __cpuhp_remove_state, __cstate_pkg_event_show, cstate_get_attr_cpumask, cstate_pmu_event_start, perf_event_sysfs_show, cstate_pmu_event_add, perf_pmu_unregister, cstate_pmu_event_stop)
+cstate_pmu_init -> (cstate_init, x86_match_cpu, cstate_probe)
+cstate_probe -> (test_msr, perf_event_sysfs_show, perf_msr_probe)

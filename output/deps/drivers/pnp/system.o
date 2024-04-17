@@ -1,0 +1,4 @@
+drivers/pnp/system.o
+pnp_system_init -> (pnp_register_driver, system_pnp_probe)
+reserve_range -> (__request_region, snprintf, kmalloc_trace, kfree, _dev_info)
+system_pnp_probe -> (pnp_get_resource, reserve_range)

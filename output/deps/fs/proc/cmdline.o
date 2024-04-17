@@ -1,0 +1,3 @@
+fs/proc/cmdline.o
+cmdline_proc_show -> (seq_putc, seq_puts)
+proc_cmdline_init -> (cmdline_proc_show, proc_create_single_data)

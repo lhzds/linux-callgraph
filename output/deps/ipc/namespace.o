@@ -1,0 +1,8 @@
+ipc/namespace.o
+copy_ipcs -> (proc_free_inum, refcount_warn_saturate, ipcns_owner, shm_init_ns, dec_ucount, kmalloc_trace, msg_init_ns, inc_ucount, ipcns_put, setup_ipc_sysctls, retire_mq_sysctls, ipcns_install, setup_mq_sysctls, proc_alloc_inum, ipcns_get, mq_init_ns, flush_work, sem_init_ns, free_ipc, kfree)
+free_ipc -> (mnt_make_shortterm, retire_ipc_sysctls, proc_free_inum, dec_ucount, synchronize_rcu, mntput, msg_exit_ns, sem_exit_ns, retire_mq_sysctls, kfree, shm_exit_ns)
+free_ipcs -> (down_write, up_write, _raw_spin_lock, __rcu_read_lock, idr_find)
+ipcns_get -> (_raw_spin_lock, refcount_warn_saturate, _raw_spin_unlock)
+ipcns_install -> (refcount_warn_saturate, _raw_spin_unlock, queue_work_on, refcount_dec_and_lock, llist_add_batch, ns_capable, free_ipc, mq_clear_sbinfo)
+ipcns_put -> (_raw_spin_unlock, queue_work_on, refcount_dec_and_lock, llist_add_batch, free_ipc, mq_clear_sbinfo)
+put_ipc_ns -> (_raw_spin_unlock, queue_work_on, refcount_dec_and_lock, llist_add_batch, free_ipc, mq_clear_sbinfo)

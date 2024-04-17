@@ -1,0 +1,2 @@
+lib/mpi/mpi_inv.o
+mpi_invm -> (mpi_sub, mpi_cmp_ui, mpi_test_bit, mpi_alloc, mpi_set, mpi_copy, mpi_rshift, mpi_add, mpi_free, mpi_alloc_set_ui)

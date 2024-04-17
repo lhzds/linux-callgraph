@@ -1,0 +1,2 @@
+net/ipv4/xfrm4_state.o
+xfrm4_state_init -> (xfrm4_transport_finish, xfrm_state_register_afinfo, xfrm4_output, xfrm4_local_error)

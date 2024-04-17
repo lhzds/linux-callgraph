@@ -1,0 +1,11 @@
+net/ipv4/tcp_minisocks.o
+local_bh_enable -> (__local_bh_enable_ip)
+tcp_ca_openreq_child -> (tcp_ca_find_key, __rcu_read_lock, tcp_set_ca_state, tcp_assign_congestion_control, __rcu_read_unlock)
+tcp_check_req -> (inet_csk_complete_hashdance, inet_csk_reqsk_queue_drop, inet_rtx_syn_ack, tcp_parse_options, mod_timer_pending, tcp_oow_rate_limited, ktime_get_seconds, tcp_synack_rtt_meas, reqsk_fastopen_remove, tcp_reset)
+tcp_child_process -> (refcount_warn_saturate, _raw_spin_unlock, sk_free, rcuref_get_slowpath, tcp_rcv_state_process)
+tcp_create_openreq_child -> (tcp_init_xmit_timers, ktime_get_seconds, inet_csk_clone_lock, inet_csk_reset_keepalive_timer)
+tcp_openreq_init_rwin -> (tcp_select_initial_window)
+tcp_time_wait -> (__inet_twsk_schedule, tcp_done, jump_label_update_timeout, tcp_update_metrics, delayed_work_timer_fn, tcp_alloc_md5sig_pool, inet_twsk_hashdance, static_key_fast_inc_not_disabled, inet_twsk_alloc, kmemdup, kfree, local_bh_enable)
+tcp_timewait_state_process -> (__inet_twsk_schedule, inet_twsk_put, tcp_parse_options, tcp_oow_rate_limited, ktime_get_seconds, inet_twsk_deschedule_put)
+tcp_twsk_destructor -> (delayed_work_timer_fn, jump_label_update_timeout, kvfree_call_rcu, __static_key_slow_dec_deferred)
+tcp_twsk_purge -> (inet_twsk_purge)

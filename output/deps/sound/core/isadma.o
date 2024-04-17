@@ -1,0 +1,6 @@
+sound/core/isadma.o
+__snd_release_dma -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, free_dma)
+snd_devm_request_dma -> (free_dma, request_dma, __devres_alloc_node, __snd_release_dma, devres_add)
+snd_dma_disable -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+snd_dma_pointer -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+snd_dma_program -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

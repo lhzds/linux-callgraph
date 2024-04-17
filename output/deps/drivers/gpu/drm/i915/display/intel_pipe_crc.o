@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/intel_pipe_crc.o
+get_new_crc_ctl_reg -> (skl_pipe_crc_ctl_reg, i9xx_pipe_crc_auto_source)
+i9xx_pipe_crc_auto_source -> (__warn_printk, drm_modeset_unlock_all, drm_modeset_lock_all, dev_driver_string)
+intel_crtc_crc_setup_workarounds -> (__drm_atomic_state_free, refcount_warn_saturate, drm_modeset_acquire_fini, drm_modeset_backoff, __warn_printk, drm_atomic_state_alloc, intel_atomic_get_crtc_state, drm_modeset_acquire_init, drm_modeset_drop_locks, drm_atomic_commit, drm_atomic_state_clear, dev_driver_string)
+intel_crtc_disable_pipe_crc -> (intel_synchronize_irq, _raw_spin_lock_irq, _raw_spin_unlock_irq)
+intel_crtc_enable_pipe_crc -> (get_new_crc_ctl_reg)
+intel_crtc_set_crc_source -> (intel_display_power_get_if_enabled, __drm_dev_dbg, match_string, intel_display_power_put_unchecked, intel_crtc_crc_setup_workarounds, get_new_crc_ctl_reg)
+intel_crtc_verify_crc_source -> (match_string, __drm_dev_dbg)

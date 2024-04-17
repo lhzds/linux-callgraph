@@ -1,0 +1,2 @@
+drivers/firmware/efi/libstub/tpm.o
+efi_retrieve_tpm2_eventlog -> (get_efi_config_table, __efi64_thunk, memcpy, memcmp, memset, efi_printk)

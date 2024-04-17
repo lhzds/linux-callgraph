@@ -1,0 +1,9 @@
+mm/list_lru.o
+__list_lru_init -> (__kmalloc)
+list_lru_add -> (_raw_spin_lock, _raw_spin_unlock)
+list_lru_count_one -> (__rcu_read_unlock, __rcu_read_lock)
+list_lru_del -> (_raw_spin_lock, _raw_spin_unlock)
+list_lru_destroy -> (kfree)
+list_lru_walk_node -> (_raw_spin_lock, _raw_spin_unlock, __list_lru_walk_one)
+list_lru_walk_one -> (_raw_spin_lock, _raw_spin_unlock, __list_lru_walk_one)
+list_lru_walk_one_irq -> (_raw_spin_lock_irq, _raw_spin_unlock_irq, __list_lru_walk_one)

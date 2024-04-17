@@ -1,0 +1,5 @@
+io_uring/cancel.o
+__io_async_cancel -> (mutex_lock, io_wq_cancel_cb, mutex_unlock, io_cancel_cb, io_try_cancel)
+io_async_cancel -> (io_file_get_normal, io_file_get_fixed, __io_async_cancel)
+io_sync_cancel -> (mutex_lock, autoremove_wake_function, io_run_task_work_sig, schedule_hrtimeout, _copy_from_user, __fdget, mutex_unlock, finish_wait, prepare_to_wait, fput, __io_async_cancel, ktime_get)
+io_try_cancel -> (io_wq_cancel_cb, _raw_spin_unlock, _raw_spin_lock, io_timeout_cancel, io_poll_cancel, io_cancel_cb)

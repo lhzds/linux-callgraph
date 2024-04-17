@@ -1,0 +1,7 @@
+fs/ext4/fsmap.o
+ext4_getfsmap -> (ext4_getfsmap_datadev, ext4_getfsmap_logdev, ext4_getfsmap_dev_compare, sort)
+ext4_getfsmap_datadev -> (ext4_mballoc_query_range, ext4_getfsmap_compare, __traceiter_ext4_fsmap_low_key, __SCT__tp_func_ext4_fsmap_low_key, ext4_getfsmap_datadev_helper, ext4_get_group_desc, list_sort, kmalloc_trace, __traceiter_ext4_fsmap_high_key, ext4_block_bitmap, ext4_get_group_no_and_offset, __probestub_ext4_fsmap_high_key, ext4_inode_table, ext4_inode_bitmap, __probestub_ext4_fsmap_low_key, ext4_getfsmap_helper, __SCT__tp_func_ext4_fsmap_high_key, ext4_bg_num_gdb, ext4_bg_has_super, kfree)
+ext4_getfsmap_datadev_helper -> (ext4_getfsmap_helper, kfree)
+ext4_getfsmap_helper -> (ext4_get_group_no_and_offset, __SCT__tp_func_ext4_fsmap_mapping, trace_ext4_fsmap_mapping, __traceiter_ext4_fsmap_mapping, __probestub_ext4_fsmap_mapping)
+ext4_getfsmap_logdev -> (__traceiter_ext4_fsmap_low_key, ext4_getfsmap_helper, __SCT__tp_func_ext4_fsmap_low_key, __probestub_ext4_fsmap_high_key, __SCT__tp_func_ext4_fsmap_high_key, __traceiter_ext4_fsmap_high_key, __probestub_ext4_fsmap_low_key)
+trace_ext4_fsmap_mapping -> (__traceiter_ext4_fsmap_mapping, __SCT__tp_func_ext4_fsmap_mapping, __probestub_ext4_fsmap_mapping)

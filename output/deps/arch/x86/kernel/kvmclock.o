@@ -1,0 +1,13 @@
+arch/x86/kernel/kvmclock.o
+kvm_check_and_clear_guest_paused -> (pvclock_touch_watchdogs)
+kvm_clock_get_cycles -> (pvclock_clocksource_read_nowd)
+kvm_get_preset_lpj -> (pvclock_tsc_khz)
+kvm_get_tsc_khz -> (pvclock_tsc_khz)
+kvm_get_wallclock -> (__SCT__tp_func_write_msr, slow_virt_to_phys, pvclock_read_wallclock, __traceiter_write_msr, do_trace_write_msr, __probestub_write_msr)
+kvm_restore_sched_clock_state -> (__SCT__tp_func_write_msr, __traceiter_write_msr, do_trace_write_msr, __probestub_write_msr, slow_virt_to_phys)
+kvm_sched_clock_read -> (pvclock_clocksource_read_nowd)
+kvm_setup_secondary_clock -> (__SCT__tp_func_write_msr, __traceiter_write_msr, do_trace_write_msr, __probestub_write_msr, slow_virt_to_phys)
+kvm_setup_vsyscall_timeinfo -> (kvm_cs_enable, kvm_clock_get_cycles, pvclock_read_flags, kvmclock_init_mem, kvm_para_available)
+kvmclock_disable -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+kvmclock_init -> (kvm_cs_enable, __SCT__tp_func_write_msr, kvm_sched_clock_read, mach_set_cmos_time, enc_status_change_prepare_noop, is_ISA_range, x86_init_noop, tsc_restore_sched_clock_state, __traceiter_write_msr, clear_sched_clock_stable, kvm_clock_get_cycles, mach_get_cmos_time, paravirt_set_sched_clock, x86_op_int_noop, pvclock_set_flags, kvm_arch_para_features, check_tsc_unstable, disable_iommus, slow_virt_to_phys, vmware_get_tsc_khz, kvm_save_sched_clock_state, hv_get_nmi_reason, kvm_setup_secondary_clock, intel_iommu_shutdown, kvm_get_wallclock, kvm_get_tsc_khz, is_private_mmio_noop, vsmp_apic_post_init, do_trace_write_msr, reserve_real_mode, kvmclock_setup_percpu, enc_status_change_finish_noop, __probestub_write_msr, __cpuhp_setup_state, _printk, default_nmi_init, native_calibrate_tsc, native_calibrate_cpu_early, pvclock_set_pvti_cpu0_va, init_real_mode, __clocksource_register_scale, kvm_get_preset_lpj, hv_get_tsc_khz, pvclock_clocksource_read_nowd, iommu_shutdown_noop, enc_tlb_flush_required_noop, native_calibrate_cpu, enc_cache_flush_required_noop, kvm_set_wallclock, default_get_nmi_reason, kvm_apic_init, kvm_restore_sched_clock_state, pvclock_read_flags, setup_secondary_APIC_clock, tsc_save_sched_clock_state, kvm_para_available)
+kvmclock_init_mem -> (_printk, alloc_pages)

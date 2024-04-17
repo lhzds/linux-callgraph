@@ -1,0 +1,10 @@
+fs/9p/v9fs.o
+exit_v9fs -> (unregister_filesystem, rcu_barrier, sysfs_remove_group, kobject_put, v9fs_kill_super, v9fs_mount, kmem_cache_destroy)
+init_v9fs -> (_printk, rcu_barrier, kmem_cache_create, sysfs_remove_group, kobject_put, register_filesystem, v9fs_mount, v9fs_kill_super, v9fs_inode_init_once, v9fs_sysfs_init, kmem_cache_destroy)
+v9fs_inode_init_once -> (inode_init_once)
+v9fs_session_begin_cancel -> (p9_client_begin_disconnect)
+v9fs_session_cancel -> (p9_client_disconnect)
+v9fs_session_close -> (_raw_spin_lock, kfree, p9_client_destroy, _raw_spin_unlock)
+v9fs_session_init -> (_printk, kstrdup, p9_client_attach, __init_rwsem, match_strdup, _raw_spin_unlock, kstrtoint, _raw_spin_lock, match_int, p9_client_create, p9_is_proto_dotu, strcmp, strsep, kstrtouint, p9_client_destroy, p9_is_proto_dotl, match_token, kfree)
+v9fs_show_options -> (p9_show_client_options, seq_printf, strcmp, seq_puts)
+v9fs_sysfs_init -> (kobject_create_and_add, kobject_put, sysfs_create_group)

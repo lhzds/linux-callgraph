@@ -1,0 +1,2 @@
+net/sunrpc/auth_gss/gss_generic_token.o
+g_verify_token_header -> (bcmp)

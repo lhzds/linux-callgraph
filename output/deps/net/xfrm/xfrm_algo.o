@@ -1,0 +1,9 @@
+net/xfrm/xfrm_algo.o
+xfrm_aalg_get_byid -> (crypto_has_alg)
+xfrm_aalg_get_byname -> (crypto_has_alg, strcmp)
+xfrm_aead_get_byname -> (crypto_has_alg, strcmp)
+xfrm_calg_get_byid -> (crypto_has_alg)
+xfrm_calg_get_byname -> (crypto_has_alg, strcmp)
+xfrm_ealg_get_byid -> (crypto_has_alg)
+xfrm_ealg_get_byname -> (crypto_has_alg, strcmp)
+xfrm_probe_algs -> (crypto_has_ahash, crypto_has_alg, crypto_has_skcipher)

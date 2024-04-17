@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/display/intel_dkl_phy.o
+intel_dkl_phy_posting_read -> (_raw_spin_lock, __warn_printk, dev_driver_string, _raw_spin_unlock)
+intel_dkl_phy_read -> (_raw_spin_lock, __warn_printk, dev_driver_string, _raw_spin_unlock)
+intel_dkl_phy_rmw -> (_raw_spin_lock, __warn_printk, dev_driver_string, _raw_spin_unlock)
+intel_dkl_phy_write -> (_raw_spin_lock, __warn_printk, dev_driver_string, _raw_spin_unlock)

@@ -1,0 +1,11 @@
+drivers/gpu/drm/drm_client_modeset.o
+drm_client_modeset_check -> (mutex_unlock, mutex_lock, drm_client_modeset_commit_atomic)
+drm_client_modeset_commit -> (drm_client_modeset_commit_locked, drm_master_internal_release, drm_master_internal_acquire)
+drm_client_modeset_commit_atomic -> (__drm_atomic_helper_disable_plane, refcount_warn_saturate, drm_modeset_acquire_fini, __drm_atomic_helper_set_config, drm_modeset_backoff, drm_atomic_state_alloc, drm_client_rotation, drm_atomic_get_plane_state, drm_atomic_check_only, drm_atomic_commit, drm_atomic_state_clear, drm_modeset_acquire_init, drm_modeset_drop_locks, __drm_atomic_state_free)
+drm_client_modeset_commit_locked -> (mutex_lock, drm_mode_set_config_internal, drm_modeset_lock_all, mutex_unlock, drm_modeset_unlock_all, drm_plane_force_disable, drm_mode_plane_set_obj_prop, drm_client_modeset_commit_atomic)
+drm_client_modeset_create -> (drm_client_modeset_free, __mutex_init, __kmalloc)
+drm_client_modeset_dpms -> (drm_modeset_lock_all_ctx, mutex_lock, drm_modeset_backoff, mutex_unlock, drm_master_internal_acquire, drm_client_modeset_commit_atomic, drm_master_internal_release, drm_modeset_acquire_init, drm_modeset_drop_locks, drm_object_property_set_value, drm_modeset_acquire_fini)
+drm_client_modeset_free -> (mutex_lock, mutex_unlock, drm_mode_destroy, drm_mode_object_put, kfree)
+drm_client_modeset_probe -> (mutex_lock, drm_modeset_backoff, drm_connector_list_iter_begin, drm_connector_list_iter_end, drm_mode_match, drm_mode_duplicate, drm_connector_list_iter_next, __drm_err, drm_modeset_lock_all_ctx, drm_connector_pick_cmdline_mode, drm_mode_find_dmt, drm_mode_object_get, krealloc, _printk, ___drm_dbg, mutex_unlock, drm_client_pick_crtcs, drm_mode_destroy, drm_mode_object_put, drm_modeset_acquire_init, drm_modeset_drop_locks, __kmalloc, kfree, drm_modeset_acquire_fini)
+drm_client_pick_crtcs -> (drm_mode_equal, drm_client_pick_crtcs, __kmalloc, kfree)
+drm_connector_pick_cmdline_mode -> (drm_mode_vrefresh)

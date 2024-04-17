@@ -1,0 +1,6 @@
+kernel/static_call_inline.o
+__static_call_init -> (static_call_site_swap, sort, kmalloc_trace, static_call_site_cmp, arch_static_call_transform)
+__static_call_update -> (mutex_lock, cpus_read_unlock, mutex_unlock, __warn_printk, cpus_read_lock, kernel_text_address, arch_static_call_transform)
+static_call_init -> (static_call_module_notify, _printk, mutex_lock, cpus_read_unlock, __static_call_init, mutex_unlock, register_module_notifier, cpus_read_lock)
+static_call_module_notify -> (_printk, mutex_lock, cpus_read_unlock, __static_call_init, mutex_unlock, __warn_printk, kfree, cpus_read_lock, kernel_text_address)
+static_call_text_reserved -> (__module_text_address)

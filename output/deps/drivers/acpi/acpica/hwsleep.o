@@ -1,0 +1,4 @@
+drivers/acpi/acpica/hwsleep.o
+acpi_hw_legacy_sleep -> (acpi_hw_register_read, acpi_hw_get_bit_register_info, acpi_hw_clear_acpi_status, acpi_hw_enable_all_wakeup_gpes, acpi_write_bit_register, acpi_os_stall, acpi_read_bit_register, acpi_hw_register_write, acpi_os_enter_sleep, acpi_hw_disable_all_gpes, acpi_hw_write_pm1_control)
+acpi_hw_legacy_wake -> (acpi_hw_execute_sleep_method, acpi_write_bit_register, acpi_hw_enable_all_runtime_gpes, acpi_hw_disable_all_gpes)
+acpi_hw_legacy_wake_prep -> (acpi_hw_register_read, acpi_hw_get_bit_register_info, acpi_hw_write_pm1_control)

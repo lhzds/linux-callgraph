@@ -1,0 +1,3 @@
+net/netfilter/nf_conntrack_extend.o
+nf_ct_ext_add -> (krealloc)
+nf_ct_ext_bump_genid -> (msleep)

@@ -1,0 +1,6 @@
+io_uring/uring_cmd.o
+__io_uring_cmd_do_in_task -> (__io_req_task_work_add, io_uring_cmd_work)
+io_uring_cmd -> (security_uring_cmd, io_alloc_async_data)
+io_uring_cmd_do_in_task_lazy -> (__io_req_task_work_add, io_uring_cmd_work)
+io_uring_cmd_done -> (io_req_task_complete)
+io_uring_cmd_import_fixed -> (io_import_fixed)

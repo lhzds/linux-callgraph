@@ -1,0 +1,7 @@
+drivers/acpi/acpica/excreate.o
+acpi_ex_create_event -> (acpi_ns_attach_object, acpi_ut_remove_reference, acpi_os_create_semaphore, acpi_ut_create_internal_object_dbg)
+acpi_ex_create_method -> (acpi_ns_attach_object, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg)
+acpi_ex_create_mutex -> (acpi_ns_attach_object, acpi_ut_remove_reference, acpi_os_create_semaphore, acpi_ut_create_internal_object_dbg)
+acpi_ex_create_power_resource -> (acpi_ns_attach_object, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg)
+acpi_ex_create_processor -> (acpi_ns_attach_object, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg)
+acpi_ex_create_region -> (acpi_ns_get_attached_object, acpi_ns_get_secondary_object, acpi_error, acpi_ns_attach_object, acpi_is_valid_space_id, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg)

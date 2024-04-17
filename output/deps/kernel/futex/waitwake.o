@@ -1,0 +1,9 @@
+kernel/futex/waitwake.o
+futex_wait -> (futex_setup_timer, futex_wait_setup, hrtimer_cancel, hrtimer_sleeper_start_expires, _raw_spin_unlock, futex_unqueue, schedule, __futex_queue, futex_wait_restart)
+futex_wait_multiple -> (hrtimer_sleeper_start_expires, _raw_spin_unlock, get_futex_key, futex_unqueue, schedule, futex_get_value_locked, __futex_queue, futex_q_lock, futex_q_unlock)
+futex_wait_queue -> (schedule, hrtimer_sleeper_start_expires, _raw_spin_unlock, __futex_queue)
+futex_wait_restart -> (futex_wait, do_no_restart_syscall)
+futex_wait_setup -> (futex_q_lock, get_futex_key, futex_q_unlock, futex_get_value_locked)
+futex_wake -> (_raw_spin_unlock, _raw_spin_lock, futex_hash, get_futex_key, futex_wake_mark, wake_up_q)
+futex_wake_mark -> (refcount_warn_saturate, __futex_unqueue, wake_q_add_safe, __warn_printk)
+futex_wake_op -> (_printk, __get_task_comm, _raw_spin_unlock, _raw_spin_lock, futex_hash, get_futex_key, __SCT__cond_resched, futex_wake_mark, ___ratelimit, fault_in_user_writeable, wake_up_q)

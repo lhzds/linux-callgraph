@@ -1,0 +1,9 @@
+crypto/asymmetric_keys/restrict.o
+__key_get -> (refcount_warn_saturate)
+ca_keys_setup -> (_printk, strlen, strcmp, strncmp, __asymmetric_key_hex_to_key_id)
+key_or_keyring_common -> (asymmetric_key_free_preparse, asymmetric_key_match_free, key_validate, asymmetric_key_id_same, keyring_describe, key_put, asymmetric_key_eds_op, keyring_free_preparse, asymmetric_lookup_restriction, asymmetric_key_verify_signature, keyring_destroy, find_asymmetric_key, asymmetric_key_destroy, match_either_id, keyring_revoke, keyring_preparse, asymmetric_key_match_preparse, asymmetric_key_preparse, query_asymmetric_key, __key_get, generic_key_instantiate, keyring_read, keyring_instantiate, verify_signature, asymmetric_key_describe)
+match_either_id -> (asymmetric_key_id_same)
+restrict_link_by_key_or_keyring -> (key_or_keyring_common)
+restrict_link_by_key_or_keyring_chain -> (key_or_keyring_common)
+restrict_link_by_signature -> (asymmetric_key_free_preparse, asymmetric_key_destroy, asymmetric_key_id_partial, asymmetric_key_match_free, asymmetric_key_match_preparse, asymmetric_key_preparse, asymmetric_lookup_restriction, query_asymmetric_key, asymmetric_key_verify_signature, key_put, asymmetric_key_eds_op, verify_signature, asymmetric_key_describe, find_asymmetric_key, generic_key_instantiate)
+restrict_link_by_ca -> (asymmetric_key_free_preparse, asymmetric_key_destroy, asymmetric_key_match_free, asymmetric_key_match_preparse, asymmetric_key_preparse, query_asymmetric_key, asymmetric_key_verify_signature, asymmetric_key_eds_op, asymmetric_key_describe, asymmetric_lookup_restriction, generic_key_instantiate)

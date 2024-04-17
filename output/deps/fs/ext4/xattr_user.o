@@ -1,0 +1,3 @@
+fs/ext4/xattr_user.o
+ext4_xattr_user_get -> (ext4_xattr_get)
+ext4_xattr_user_set -> (ext4_xattr_set)

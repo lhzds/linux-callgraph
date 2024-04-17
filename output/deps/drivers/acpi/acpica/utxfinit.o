@@ -1,0 +1,4 @@
+drivers/acpi/acpica/utxfinit.o
+acpi_enable_subsystem -> (acpi_hw_get_mode, acpi_enable, acpi_ev_install_xrupt_handlers, acpi_tb_initialize_facs, acpi_ev_initialize_events, acpi_warning)
+acpi_initialize_objects -> (acpi_purge_cached_objects, acpi_ns_initialize_devices)
+acpi_initialize_subsystem -> (acpi_ut_init_globals, acpi_exception, acpi_ut_mutex_initialize, acpi_ut_initialize_interfaces, acpi_os_initialize, acpi_ns_root_initialize)

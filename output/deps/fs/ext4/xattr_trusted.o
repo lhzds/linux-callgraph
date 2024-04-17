@@ -1,0 +1,4 @@
+fs/ext4/xattr_trusted.o
+ext4_xattr_trusted_get -> (ext4_xattr_get)
+ext4_xattr_trusted_list -> (capable)
+ext4_xattr_trusted_set -> (ext4_xattr_set)

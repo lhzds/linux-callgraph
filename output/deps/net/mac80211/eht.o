@@ -1,0 +1,2 @@
+net/mac80211/eht.o
+ieee80211_eht_cap_ie_to_sta_eht_cap -> (ieee80211_sta_cur_vht_bw, ieee80211_sta_cap_rx_bw)

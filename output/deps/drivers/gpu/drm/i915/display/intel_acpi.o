@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/display/intel_acpi.o
+intel_acpi_assign_connector_fwnodes -> (acpi_find_child_device, fwnode_handle_get, device_get_next_child_node, drm_connector_list_iter_begin, drm_connector_list_iter_end, is_acpi_device_node, drm_connector_list_iter_next, fwnode_handle_put)
+intel_acpi_device_id_update -> (drm_connector_list_iter_next, drm_connector_list_iter_begin, drm_connector_list_iter_end, __warn_printk)
+intel_acpi_video_register -> (acpi_video_register, drm_connector_list_iter_begin, drm_connector_list_iter_end, drm_connector_list_iter_next, acpi_video_register_backlight)
+intel_dsm_get_bios_data_funcs_supported -> (kfree, acpi_evaluate_dsm, is_acpi_device_node)
+intel_register_dsm_handler -> (___drm_dbg, acpi_get_name, pci_get_class, acpi_check_dsm, acpi_evaluate_dsm, is_acpi_device_node, kfree)

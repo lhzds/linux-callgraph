@@ -1,0 +1,4 @@
+arch/x86/kernel/cpu/mce/threshold.o
+__sysvec_threshold -> (__probestub_threshold_apic_entry, __traceiter_threshold_apic_exit, __SCT__tp_func_threshold_apic_entry, __traceiter_threshold_apic_entry, default_threshold_interrupt, __probestub_threshold_apic_exit, __SCT__tp_func_threshold_apic_exit)
+default_threshold_interrupt -> (_printk)
+sysvec_threshold -> (irqentry_exit, __sysvec_threshold, irq_exit_rcu, irq_enter_rcu, irqentry_enter)

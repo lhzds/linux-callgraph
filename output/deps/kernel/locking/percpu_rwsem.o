@@ -1,0 +1,8 @@
+kernel/locking/percpu_rwsem.o
+__percpu_down_read -> (__traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, rcuwait_wake_up, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end, percpu_rwsem_wait)
+__percpu_init_rwsem -> (__init_waitqueue_head, __alloc_percpu, rcu_sync_init)
+percpu_down_write -> (__traceiter_contention_end, __SCT__might_resched, finish_rcuwait, __traceiter_contention_begin, __SCT__tp_func_contention_end, schedule, rcu_sync_enter, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end, percpu_rwsem_wait)
+percpu_free_rwsem -> (free_percpu, rcu_sync_dtor)
+percpu_rwsem_wait -> (percpu_rwsem_wake_function, _raw_spin_lock_irq, schedule, rcuwait_wake_up, _raw_spin_unlock_irq)
+percpu_rwsem_wake_function -> (wake_up_process, rcuwait_wake_up, refcount_warn_saturate, __put_task_struct)
+percpu_up_write -> (__wake_up, rcu_sync_exit)

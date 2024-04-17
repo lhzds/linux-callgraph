@@ -1,0 +1,2 @@
+drivers/net/phy/linkmode.o
+linkmode_resolve_pause -> (__bitmap_and)

@@ -1,0 +1,11 @@
+mm/mremap.o
+__ia32_sys_mremap -> (__se_sys_mremap)
+__se_sys_mremap -> (trace_mmap_lock_unreg, vma_to_resize, vma_merge, __mmap_lock_do_trace_start_locking, find_vma_intersection, do_munmap, may_expand_vm, vm_stat_account, __traceiter_mmap_lock_released, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned, __SCT__tp_func_mmap_lock_acquire_returned, __probestub_mmap_lock_released, down_write_killable, mtree_load, __SCT__tp_func_mmap_lock_start_locking, __probestub_mmap_lock_start_locking, __mmap_lock_do_trace_released, __mm_populate, security_vm_enough_memory_mm, up_write, move_vma, percpu_counter_add_batch, get_unmapped_area, trace_mmap_lock_reg, __traceiter_mmap_lock_start_locking, do_vmi_munmap, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_acquire_returned)
+__x64_sys_mremap -> (__se_sys_mremap)
+alloc_new_pud -> (__p4d_alloc, __pud_alloc)
+get_old_pud -> (pgd_clear_bad, pud_clear_bad, p4d_clear_bad)
+move_page_tables -> (down_write, __mmu_notifier_invalidate_range_start, __SCT__might_resched, __pte_offset_map_lock, up_write, __pmd_alloc, __pte_alloc, _raw_spin_unlock, _raw_spin_lock, flush_tlb_mm_range, get_old_pud, alloc_new_pud, flush_tlb_batched_pending, __mmu_notifier_invalidate_range_end, __SCT__cond_resched, move_hugetlb_page_tables, move_pgt_entry, pte_offset_map_nolock)
+move_pgt_entry -> (down_write, up_write, _raw_spin_unlock, _raw_spin_lock, flush_tlb_mm_range)
+move_vma -> (down_write, security_vm_enough_memory_mm, up_write, move_page_tables, percpu_counter_add_batch, clear_vma_resv_huge_pages, copy_vma, mas_prev, vm_flags_clear, vm_stat_account, do_vmi_munmap, mas_find, unlink_anon_vmas, untrack_pfn_clear)
+vm_flags_clear -> (down_write, up_write)
+vma_to_resize -> (may_expand_vm, _printk, mtree_load, mlock_future_ok)

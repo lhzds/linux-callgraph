@@ -1,0 +1,2 @@
+fs/netfs/iterator.o
+netfs_extract_user_iter -> (_printk, kvmalloc_node, iov_iter_extract_pages, iov_iter_npages, iov_iter_bvec)

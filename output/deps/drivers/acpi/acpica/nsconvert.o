@@ -1,0 +1,7 @@
+drivers/acpi/acpica/nsconvert.o
+acpi_ns_convert_to_buffer -> (acpi_ex_convert_to_buffer, acpi_ut_create_buffer_object)
+acpi_ns_convert_to_integer -> (acpi_ut_strtoul64, acpi_ut_create_integer_object)
+acpi_ns_convert_to_reference -> (acpi_ns_lookup, acpi_ut_add_reference, kfree, acpi_ut_create_internal_object_dbg, acpi_ns_internalize_name, acpi_ut_prefixed_namespace_error)
+acpi_ns_convert_to_resource -> (acpi_ut_create_buffer_object)
+acpi_ns_convert_to_string -> (acpi_ut_create_string_object, acpi_ex_convert_to_string)
+acpi_ns_convert_to_unicode -> (acpi_ut_create_buffer_object)

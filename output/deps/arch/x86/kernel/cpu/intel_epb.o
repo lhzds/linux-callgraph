@@ -1,0 +1,8 @@
+arch/x86/kernel/cpu/intel_epb.o
+energy_perf_bias_show -> (sprintf, rdmsrl_on_cpu)
+energy_perf_bias_store -> (wrmsrl_on_cpu, __sysfs_match_string, kstrtoull, rdmsrl_on_cpu)
+intel_epb_init -> (__cpuhp_remove_state, intel_epb_save, x86_match_cpu, intel_epb_online, intel_epb_offline, register_syscore_ops, intel_epb_restore, __cpuhp_setup_state)
+intel_epb_offline -> (sysfs_unmerge_group, do_trace_read_msr, energy_perf_bias_show, __traceiter_read_msr, __probestub_read_msr, get_cpu_device, energy_perf_bias_store, __SCT__tp_func_read_msr)
+intel_epb_online -> (sysfs_merge_group, energy_perf_bias_show, get_cpu_device, energy_perf_bias_store, intel_epb_restore)
+intel_epb_restore -> (_printk, __SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+intel_epb_save -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)

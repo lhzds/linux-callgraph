@@ -1,0 +1,8 @@
+security/device_cgroup.o
+devcgroup_access_write -> (of_css, css_next_descendant_pre, mutex_lock, capable, kvfree_call_rcu, mutex_unlock, kstrtouint, strim, kmemdup, __rcu_read_lock, css_has_online_children, __rcu_read_unlock, parent_has_perm, kfree)
+devcgroup_check_permission -> (__rcu_read_unlock, __rcu_read_lock)
+devcgroup_css_alloc -> (kmalloc_trace)
+devcgroup_css_free -> (kfree, kvfree_call_rcu)
+devcgroup_offline -> (mutex_unlock, mutex_lock)
+devcgroup_online -> (kmemdup, kfree, mutex_lock, mutex_unlock)
+devcgroup_seq_show -> (of_css, seq_printf, __rcu_read_lock, __rcu_read_unlock, sprintf)

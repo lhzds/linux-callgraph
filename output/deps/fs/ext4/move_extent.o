@@ -1,0 +1,5 @@
+fs/ext4/move_extent.o
+ext4_double_down_write_data_sem -> (down_write)
+ext4_double_up_write_data_sem -> (up_write)
+ext4_move_extents -> (ext4_find_extent, lock_two_nondirectories, up_write, ext4_ext_next_allocated_block, move_extent_per_page, unlock_two_nondirectories, ext4_discard_preallocations, ext4_free_ext_path, ext4_inode_journal_mode, mext_check_arguments, ext4_double_down_write_data_sem, inode_dio_wait, __ext4_msg)
+move_extent_per_page -> (ext4_read_bh, ext4_get_block, jbd2_journal_force_commit_nested, __ext4_journal_stop, ext4_double_down_write_data_sem, __folio_put, __filemap_get_folio, create_empty_buffers, ext4_find_extent, folio_wait_writeback, ext4_writepage_trans_blocks, down_write, jbd2_journal_inode_ranged_write, ext4_swap_extents, up_write, bh_uptodate_or_lock, block_commit_write, ext4_free_ext_path, __ext4_error_inode, __ext4_journal_start_sb, folio_unlock, filemap_release_folio, ext4_should_retry_alloc)

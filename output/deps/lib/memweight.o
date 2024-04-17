@@ -1,0 +1,2 @@
+lib/memweight.o
+memweight -> (__bitmap_weight)

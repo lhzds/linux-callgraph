@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/display/hsw_ips.o
+hsw_ips_compute_config -> (intel_atomic_get_cdclk_state)
+hsw_ips_crtc_debugfs_add -> (debugfs_attr_write, simple_attr_release, hsw_ips_debugfs_status_open, debugfs_attr_read, hsw_ips_debugfs_false_color_fops_open, seq_read, debugfs_create_file, single_release, seq_lseek)
+hsw_ips_debugfs_false_color_fops_open -> (simple_attr_open, hsw_ips_debugfs_false_color_get, hsw_ips_debugfs_false_color_set)
+hsw_ips_debugfs_false_color_set -> (hsw_ips_enable, drm_modeset_unlock, try_wait_for_completion, drm_modeset_lock)
+hsw_ips_debugfs_status_open -> (single_open, hsw_ips_debugfs_status_show)
+hsw_ips_debugfs_status_show -> (intel_runtime_pm_put_unchecked, seq_printf, intel_runtime_pm_get, seq_puts)
+hsw_ips_disable -> (__warn_printk, _dev_err, snb_pcode_write_timeout, __intel_wait_for_register, dev_driver_string)
+hsw_ips_enable -> (__warn_printk, _dev_err, snb_pcode_write_timeout, __intel_wait_for_register, dev_driver_string)
+hsw_ips_post_update -> (hsw_ips_enable)
+hsw_ips_pre_update -> (hsw_ips_disable)

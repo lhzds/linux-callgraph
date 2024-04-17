@@ -1,0 +1,4 @@
+arch/x86/mm/mmap.o
+arch_mmap_rnd -> (get_random_u64)
+arch_pick_mmap_layout -> (get_random_u64)
+pfn_modify_allowed -> (capable)

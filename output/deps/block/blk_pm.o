@@ -1,0 +1,7 @@
+block/blk_pm.o
+blk_pm_runtime_init -> (__pm_runtime_use_autosuspend, pm_runtime_set_autosuspend_delay)
+blk_post_runtime_resume -> (ktime_get_mono_fast_ns, _raw_spin_lock_irq, _raw_spin_unlock_irq, __pm_runtime_suspend, blk_clear_pm_only)
+blk_post_runtime_suspend -> (_raw_spin_lock_irq, blk_clear_pm_only, ktime_get_mono_fast_ns, _raw_spin_unlock_irq)
+blk_pre_runtime_resume -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+blk_pre_runtime_suspend -> (ktime_get_mono_fast_ns, blk_mq_unfreeze_queue, blk_set_pm_only, _raw_spin_lock_irq, blk_freeze_queue_start, _raw_spin_unlock_irq, blk_clear_pm_only, percpu_ref_is_zero, percpu_ref_switch_to_atomic_sync)
+blk_set_runtime_active -> (ktime_get_mono_fast_ns, _raw_spin_lock_irq, _raw_spin_unlock_irq, __pm_runtime_suspend, blk_clear_pm_only)

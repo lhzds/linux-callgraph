@@ -1,0 +1,7 @@
+drivers/input/ff_core.o
+erase_effect -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+input_ff_create -> (__mutex_init, input_ff_event, _dev_err, input_ff_flush, kfree, __kmalloc, _find_next_bit)
+input_ff_destroy -> (kfree)
+input_ff_erase -> (mutex_unlock, erase_effect, mutex_lock)
+input_ff_flush -> (mutex_unlock, erase_effect, mutex_lock)
+input_ff_upload -> (mutex_unlock, _raw_spin_lock_irq, mutex_lock, _raw_spin_unlock_irq)

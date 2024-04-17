@@ -1,0 +1,10 @@
+net/netfilter/xt_nat.o
+xt_dnat_target_v0 -> (nf_nat_setup_info)
+xt_dnat_target_v1 -> (nf_nat_setup_info)
+xt_dnat_target_v2 -> (nf_nat_setup_info)
+xt_nat_checkentry -> (nf_ct_netns_get)
+xt_nat_checkentry_v0 -> (___ratelimit, _printk, nf_ct_netns_get)
+xt_nat_destroy -> (nf_ct_netns_put)
+xt_snat_target_v0 -> (nf_nat_setup_info)
+xt_snat_target_v1 -> (nf_nat_setup_info)
+xt_snat_target_v2 -> (nf_nat_setup_info)

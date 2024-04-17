@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/gt/intel_mocs.o
+__init_mocs_table -> (__warn_printk, dev_driver_string)
+get_mocs_settings -> (__warn_printk, dev_driver_string)
+init_l3cc_table -> (intel_gt_mcr_multicast_write_fw, intel_gt_mcr_unlock, intel_gt_mcr_lock)
+intel_mocs_init -> (init_l3cc_table, get_mocs_settings, __init_mocs_table)
+intel_mocs_init_engine -> (init_l3cc_table, get_mocs_settings, assert_forcewakes_active, __init_mocs_table)
+intel_set_mocs_index -> (get_mocs_settings)

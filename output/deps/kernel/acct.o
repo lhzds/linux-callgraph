@@ -1,0 +1,12 @@
+kernel/acct.o
+__ia32_sys_acct -> (__se_sys_acct)
+__se_sys_acct -> (__mnt_want_write, mutex_lock, file_open_name, acct_pin_kill, __mnt_drop_write, getname, kmalloc_trace, pin_kill, pin_insert, capable, mutex_unlock, task_active_pid_ns, putname, __init_swait_queue_head, filp_close, __init_waitqueue_head, mnt_clone_internal, __mutex_init, mntput, __rcu_read_lock, kfree, close_work)
+__x64_sys_acct -> (__se_sys_acct)
+acct_collect -> (__mmap_lock_do_trace_acquire_returned, trace_mmap_lock_unreg, __mmap_lock_do_trace_start_locking, _raw_spin_lock_irq, __traceiter_mmap_lock_released, __traceiter_mmap_lock_acquire_returned, __probestub_mmap_lock_acquire_returned, __SCT__tp_func_mmap_lock_acquire_returned, down_read, __probestub_mmap_lock_released, _raw_spin_unlock_irq, __SCT__tp_func_mmap_lock_start_locking, __probestub_mmap_lock_start_locking, __mmap_lock_do_trace_released, trace_mmap_lock_reg, up_read, __traceiter_mmap_lock_start_locking, __SCT__tp_func_mmap_lock_released, mas_find)
+acct_exit_ns -> (pin_kill, __rcu_read_lock)
+acct_pin_kill -> (mutex_lock, pin_remove, mutex_unlock, kvfree_call_rcu, queue_work_on, wait_for_completion, do_acct_process)
+acct_process -> (slow_acct_process, task_active_pid_ns)
+close_work -> (__fput_sync, complete)
+do_acct_process -> (_printk, __kernel_write, tty_devnum, _raw_spin_lock_irq, rcuwait_wake_up, _raw_spin_unlock_irq, revert_creds, vfs_statfs, __percpu_down_read, ktime_get_real_seconds, ktime_get, override_creds, strlcpy)
+kernel_acct_sysctls_init -> (__register_sysctl_init, proc_dointvec)
+slow_acct_process -> (mutex_lock, kvfree_call_rcu, mutex_unlock, do_acct_process, __rcu_read_lock, __rcu_read_unlock)

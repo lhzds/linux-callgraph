@@ -1,0 +1,7 @@
+drivers/tty/serial/earlycon.o
+earlycon_init -> (simple_strtoul, strlen, strscpy)
+earlycon_print_info -> (_printk)
+param_setup_earlycon -> (setup_earlycon)
+parse_options -> (_printk, simple_strtoul, uart_parse_earlycon, kstrtouint, strchr, strscpy, strcspn)
+register_earlycon -> (earlycon_print_info, register_console, parse_options, earlycon_init, native_set_fixmap)
+setup_earlycon -> (console_list_lock, strlen, strncmp, console_list_unlock, register_earlycon)

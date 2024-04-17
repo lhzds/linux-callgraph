@@ -1,0 +1,5 @@
+net/wireless/ocb.o
+__cfg80211_join_ocb -> (__traceiter_rdev_join_ocb, __SCT__tp_func_rdev_return_int, __probestub_rdev_join_ocb, __traceiter_rdev_return_int, __SCT__tp_func_rdev_join_ocb, __probestub_rdev_return_int)
+__cfg80211_leave_ocb -> (__traceiter_rdev_leave_ocb, __SCT__tp_func_rdev_return_int, __probestub_rdev_leave_ocb, __traceiter_rdev_return_int, __SCT__tp_func_rdev_leave_ocb, __probestub_rdev_return_int)
+cfg80211_join_ocb -> (mutex_unlock, mutex_lock, __cfg80211_join_ocb)
+cfg80211_leave_ocb -> (mutex_unlock, mutex_lock, __cfg80211_leave_ocb)

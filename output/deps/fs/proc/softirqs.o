@@ -1,0 +1,3 @@
+fs/proc/softirqs.o
+proc_softirqs_init -> (proc_create_single_data, show_softirqs)
+show_softirqs -> (seq_printf, seq_putc, seq_puts)

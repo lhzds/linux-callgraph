@@ -1,0 +1,10 @@
+arch/x86/kernel/smp.o
+__sysvec_call_function -> (__SCT__tp_func_call_function_exit, __probestub_call_function_exit, __probestub_call_function_entry, __traceiter_call_function_entry, __SCT__tp_func_call_function_entry, __traceiter_call_function_exit, generic_smp_call_function_single_interrupt)
+__sysvec_call_function_single -> (__traceiter_call_function_single_entry, __SCT__tp_func_call_function_single_entry, __SCT__tp_func_call_function_single_exit, __probestub_call_function_single_entry, __traceiter_call_function_single_exit, __probestub_call_function_single_exit, generic_smp_call_function_single_interrupt)
+__sysvec_reboot -> (cpu_emergency_disable_virtualization, stop_this_cpu)
+native_stop_other_cpus -> (smp_stop_nmi_callback, _printk, smp_park_other_cpus_in_init, disable_local_APIC, apic_send_IPI_allbutself, __const_udelay, mcheck_cpu_clear, smp_kick_mwait_play_dead, __register_nmi_handler)
+smp_stop_nmi_callback -> (cpu_emergency_disable_virtualization, stop_this_cpu)
+sysvec_call_function -> (irqentry_exit, irq_exit_rcu, __sysvec_call_function, irq_enter_rcu, irqentry_enter)
+sysvec_call_function_single -> (irqentry_exit, __sysvec_call_function_single, irq_exit_rcu, irq_enter_rcu, irqentry_enter)
+sysvec_reboot -> (irq_enter_rcu, __sysvec_reboot, irqentry_enter, irqentry_exit)
+sysvec_reschedule_ipi -> (irqentry_exit, __probestub_reschedule_entry, __SCT__tp_func_reschedule_entry, __SCT__tp_func_reschedule_exit, __traceiter_reschedule_exit, irqentry_enter, __probestub_reschedule_exit, __traceiter_reschedule_entry)

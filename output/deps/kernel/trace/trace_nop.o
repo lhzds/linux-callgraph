@@ -1,0 +1,2 @@
+kernel/trace/trace_nop.o
+nop_set_flag -> (_printk)

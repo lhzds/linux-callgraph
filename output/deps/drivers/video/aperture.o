@@ -1,0 +1,7 @@
+drivers/video/aperture.o
+__aperture_remove_legacy_vga_devices -> (mutex_unlock, vga_remove_vgacon, mutex_lock)
+aperture_detach_platform_device -> (platform_device_unregister)
+aperture_remove_conflicting_devices -> (mutex_unlock, mutex_lock)
+aperture_remove_conflicting_pci_devices -> (mutex_unlock, vga_remove_vgacon, mutex_lock, vga_default_device)
+devm_aperture_acquire_for_platform_device -> (mutex_lock, devm_aperture_acquire_release, mutex_unlock, aperture_detach_platform_device, __devm_add_action, devm_kmalloc)
+devm_aperture_acquire_release -> (mutex_unlock, mutex_lock)

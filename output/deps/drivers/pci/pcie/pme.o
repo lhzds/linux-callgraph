@@ -1,0 +1,13 @@
+drivers/pci/pcie/pme.o
+pcie_pme_can_wakeup -> (device_set_wakeup_capable)
+pcie_pme_check_wakeup -> (pcie_pme_check_wakeup)
+pcie_pme_init -> (pcie_pme_resume, pcie_port_service_register, pcie_pme_probe, pcie_pme_remove, pcie_pme_suspend)
+pcie_pme_interrupt_enable -> (pcie_capability_clear_and_set_word)
+pcie_pme_irq -> (pcie_capability_read_dword, queue_work_on, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, pcie_capability_clear_and_set_word)
+pcie_pme_probe -> (device_set_wakeup_capable, kmalloc_trace, kfree, request_threaded_irq, pci_walk_bus, pcie_pme_irq, pcie_walk_rcec, pcie_capability_clear_and_set_word, pcie_pme_can_wakeup, _dev_info, pcie_pme_work_fn, pcie_clear_root_pme_status)
+pcie_pme_remove -> (free_irq, _raw_spin_lock_irq, _raw_spin_unlock_irq, pcie_capability_clear_and_set_word, kfree, cancel_work_sync, pcie_clear_root_pme_status)
+pcie_pme_resume -> (irq_set_irq_wake, _raw_spin_lock_irq, _raw_spin_unlock_irq, pcie_capability_clear_and_set_word, pcie_clear_root_pme_status)
+pcie_pme_setup -> (strncmp)
+pcie_pme_suspend -> (pcie_pme_check_wakeup, irq_set_irq_wake, synchronize_irq, down_read, _raw_spin_lock_irq, up_read, _raw_spin_unlock_irq, pcie_capability_clear_and_set_word, pcie_clear_root_pme_status)
+pcie_pme_walk_bus -> (pci_check_pme_status, pm_wakeup_dev_event, pcie_pme_walk_bus, __pm_runtime_resume)
+pcie_pme_work_fn -> (__pm_runtime_resume, pcie_capability_read_dword, down_read, _raw_spin_lock_irq, pci_find_bus, up_read, pcie_pme_walk_bus, _raw_spin_unlock_irq, pci_check_pme_status, pci_dev_put, pci_dev_get, pm_wakeup_dev_event, pcie_capability_clear_and_set_word, _dev_info, pcie_clear_root_pme_status)

@@ -1,0 +1,8 @@
+fs/sysfs/dir.o
+sysfs_create_dir_ns -> (_printk, kernfs_create_dir_ns, kmalloc_trace, kobject_get_ownership, kernfs_path_from_node, kfree, dump_stack)
+sysfs_create_mount_point -> (_printk, kmalloc_trace, kernfs_path_from_node, kernfs_create_empty_dir, kfree, dump_stack)
+sysfs_move_dir_ns -> (kernfs_rename_ns)
+sysfs_remove_dir -> (_raw_spin_lock, kernfs_remove, _raw_spin_unlock)
+sysfs_remove_mount_point -> (kernfs_remove_by_name_ns)
+sysfs_rename_dir_ns -> (kernfs_get_parent, kernfs_put, kernfs_rename_ns)
+sysfs_warn_dup -> (_printk, kmalloc_trace, kernfs_path_from_node, kfree, dump_stack)

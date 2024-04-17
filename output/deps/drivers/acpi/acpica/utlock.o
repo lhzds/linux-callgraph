@@ -1,0 +1,7 @@
+drivers/acpi/acpica/utlock.o
+acpi_ut_acquire_read_lock -> (acpi_os_wait_semaphore, acpi_os_signal_semaphore)
+acpi_ut_acquire_write_lock -> (acpi_os_wait_semaphore)
+acpi_ut_create_rw_lock -> (acpi_os_create_semaphore)
+acpi_ut_delete_rw_lock -> (acpi_os_delete_semaphore)
+acpi_ut_release_read_lock -> (acpi_os_wait_semaphore, acpi_os_signal_semaphore)
+acpi_ut_release_write_lock -> (acpi_os_signal_semaphore)

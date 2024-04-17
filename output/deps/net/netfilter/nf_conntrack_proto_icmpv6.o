@@ -1,0 +1,7 @@
+net/netfilter/nf_conntrack_proto_icmpv6.o
+icmpv6_nlattr_tuple_size -> (nla_policy_len)
+icmpv6_pkt_to_tuple -> (skb_copy_bits)
+icmpv6_tuple_to_nlattr -> (nla_put)
+nf_conntrack_icmpv6_error -> (nf_l4proto_log_invalid, skb_copy_bits, nf_conntrack_icmpv6_redirect, nf_conntrack_inet_error, nf_ip6_checksum)
+nf_conntrack_icmpv6_packet -> (__nf_ct_refresh_acct)
+nf_conntrack_icmpv6_redirect -> (nf_l4proto_log_invalid, __ipv6_addr_type, nf_conntrack_inet_error, skb_copy_bits)

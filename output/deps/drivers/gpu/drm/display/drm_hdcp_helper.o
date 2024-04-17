@@ -1,0 +1,4 @@
+drivers/gpu/drm/display/drm_hdcp_helper.o
+drm_connector_attach_content_protection_property -> (drm_property_create_enum, drm_object_attach_property)
+drm_hdcp_check_ksvs_revoked -> (__drm_err, ___drm_dbg, bcmp, request_firmware_direct, release_firmware, kfree, __kmalloc)
+drm_hdcp_update_content_protection -> (mutex_is_locked, drm_sysfs_connector_status_event)

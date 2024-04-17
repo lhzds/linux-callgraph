@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/i915_mitigations.o
+mitigations_get -> (scnprintf)
+mitigations_set -> (_printk, kstrdup, strcmp, strsep, strncmp, strim, kfree)

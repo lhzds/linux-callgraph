@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gem/i915_gem_busy.o
+i915_gem_busy_ioctl -> (refcount_warn_saturate, dma_fence_array_set_deadline, dma_resv_iter_next_unlocked, i915_fence_wait, dma_fence_array_get_driver_name, __rcu_read_unlock, dma_fence_release, idr_find, i915_fence_enable_signaling, dma_fence_array_enable_signaling, i915_fence_get_driver_name, i915_fence_signaled, dma_fence_array_release, dma_resv_iter_first_unlocked, dma_fence_array_get_timeline_name, i915_fence_get_timeline_name, i915_fence_release, __rcu_read_lock, dma_fence_array_signaled)

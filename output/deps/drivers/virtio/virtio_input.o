@@ -1,0 +1,12 @@
+drivers/virtio/virtio_input.o
+virtinput_cfg_bits -> (__SCT__might_resched, kfree, __kmalloc)
+virtinput_fill_evt -> (sg_init_one, virtqueue_get_vring_size, virtqueue_add_inbuf, virtqueue_kick, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+virtinput_freeze -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+virtinput_probe -> (__SCT__might_resched, snprintf, virtinput_fill_evt, virtinput_status, input_alloc_absinfo, virtinput_recv_events, _raw_spin_lock_irqsave, input_free_device, kmalloc_trace, kfree, input_set_abs_params, input_mt_init_slots, _raw_spin_unlock_irqrestore, input_register_device, virtinput_recv_status, virtinput_cfg_bits, input_allocate_device)
+virtinput_recv_events -> (sg_init_one, virtqueue_add_inbuf, virtqueue_kick, _raw_spin_lock_irqsave, input_event, _raw_spin_unlock_irqrestore, virtqueue_get_buf)
+virtinput_recv_status -> (_raw_spin_lock_irqsave, virtqueue_get_buf, _raw_spin_unlock_irqrestore, kfree)
+virtinput_remove -> (input_unregister_device, _raw_spin_lock_irqsave, virtio_reset_device, _raw_spin_unlock_irqrestore, virtqueue_detach_unused_buf, kfree)
+virtinput_restore -> (virtinput_recv_status, virtinput_fill_evt, virtinput_recv_events)
+virtinput_status -> (sg_init_one, virtqueue_kick, kmalloc_trace, _raw_spin_lock_irqsave, virtqueue_add_outbuf, _raw_spin_unlock_irqrestore, kfree)
+virtio_input_driver_exit -> (virtinput_freeze, virtinput_restore, virtinput_remove, unregister_virtio_driver, virtinput_probe)
+virtio_input_driver_init -> (register_virtio_driver, virtinput_freeze, virtinput_restore, virtinput_remove, virtinput_probe)

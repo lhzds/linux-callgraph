@@ -1,0 +1,2 @@
+drivers/gpu/drm/display/drm_hdmi_helper.o
+drm_hdmi_infoframe_set_hdr_metadata -> (___drm_dbg, hdmi_drm_infoframe_init)

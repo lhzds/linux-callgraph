@@ -1,0 +1,2 @@
+arch/x86/kernel/cpu/centaur.o
+init_centaur -> (_printk, __SCT__tp_func_write_msr, detect_num_cpu_cores, init_intel_cacheinfo, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, init_ia32_feat_ctl, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)

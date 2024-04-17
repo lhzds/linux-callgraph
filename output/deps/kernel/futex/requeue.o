@@ -1,0 +1,5 @@
+kernel/futex/requeue.o
+futex_requeue -> (_raw_spin_lock, rt_mutex_start_proxy_lock, futex_top_waiter, futex_lock_pi_atomic, _raw_spin_unlock, futex_requeue_pi_complete, get_futex_key, get_pi_state, fault_in_user_writeable, futex_hash, __SCT__cond_resched, refill_pi_state_cache, futex_wake_mark, requeue_pi_wake_futex, futex_get_value_locked, put_pi_state, requeue_futex, wait_for_owner_exiting, wake_up_q)
+futex_wait_requeue_pi -> (futex_setup_timer, futex_wait_setup, hrtimer_cancel, _raw_spin_unlock, plist_del, _raw_spin_lock, get_futex_key, futex_unqueue_pi, futex_wait_queue, fixup_pi_owner, rt_mutex_wait_proxy_lock, rt_mutex_cleanup_proxy_lock, put_pi_state, futex_q_unlock)
+requeue_futex -> (plist_add, plist_del)
+requeue_pi_wake_futex -> (__futex_unqueue, wake_up_state)

@@ -1,0 +1,5 @@
+lib/mpi/mpi_cmp.o
+do_mpi_cmp -> (mpi_normalize, mpihelp_cmp)
+mpi_cmp -> (do_mpi_cmp)
+mpi_cmp_ui -> (mpi_normalize)
+mpi_cmpabs -> (mpi_normalize, mpihelp_cmp)

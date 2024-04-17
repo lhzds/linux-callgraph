@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/i915_gem_ww.o
+i915_gem_ww_ctx_backoff -> (refcount_warn_saturate, i915_gem_ww_ctx_unlock_all, drm_gem_object_free, ww_mutex_lock, ww_mutex_lock_interruptible)
+i915_gem_ww_ctx_fini -> (i915_gem_ww_ctx_unlock_all)
+i915_gem_ww_ctx_unlock_all -> (refcount_warn_saturate, drm_gem_object_free, ww_mutex_unlock)
+i915_gem_ww_unlock_single -> (refcount_warn_saturate, drm_gem_object_free, ww_mutex_unlock)

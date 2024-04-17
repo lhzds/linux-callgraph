@@ -1,0 +1,9 @@
+drivers/net/loopback.o
+blackhole_netdev_init -> (dev_activate, rtnl_lock, blackhole_netdev_setup, alloc_netdev_mqs, dev_init_scheduler, rtnl_unlock)
+blackhole_netdev_setup -> (netif_set_tso_max_size, blackhole_netdev_xmit)
+blackhole_netdev_xmit -> (_printk, kfree_skb_reason, net_ratelimit)
+loopback_dev_free -> (free_percpu)
+loopback_dev_init -> (__alloc_percpu_gfp)
+loopback_net_init -> (free_netdev, loopback_setup, alloc_netdev_mqs, register_netdev, panic)
+loopback_setup -> (always_on, eth_header_parse_protocol, eth_mac_addr, netif_set_tso_max_size, eth_header, loopback_dev_free, ethtool_op_get_ts_info, eth_header_parse, eth_header_cache, loopback_dev_init, eth_header_cache_update, loopback_get_stats64, loopback_xmit)
+loopback_xmit -> (rcuref_get_slowpath, __netif_rx, skb_tstamp_tx, eth_type_trans)

@@ -1,0 +1,4 @@
+drivers/rtc/lib.o
+rtc_ktime_to_tm -> (ns_to_timespec64)
+rtc_tm_to_ktime -> (mktime64)
+rtc_tm_to_time64 -> (mktime64)

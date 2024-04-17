@@ -1,0 +1,7 @@
+net/mac80211/tkip.o
+drv_update_tkip_key -> (__traceiter_drv_return_void, __warn_printk, __SCT__tp_func_drv_update_tkip_key, __traceiter_drv_update_tkip_key, __probestub_drv_update_tkip_key, __probestub_drv_return_void, __SCT__tp_func_drv_return_void)
+ieee80211_get_tkip_p1k_iv -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, tkip_mixing_phase1)
+ieee80211_get_tkip_p2k -> (tkip_mixing_phase1, _raw_spin_unlock, _raw_spin_lock, ieee80211_hdrlen, tkip_mixing_phase2)
+ieee80211_get_tkip_rx_p1k -> (tkip_mixing_phase1)
+ieee80211_tkip_decrypt_data -> (drv_update_tkip_key, tkip_mixing_phase1, ieee80211_wep_decrypt_data, tkip_mixing_phase2)
+ieee80211_tkip_encrypt_data -> (ieee80211_wep_encrypt_data, ieee80211_get_tkip_p2k)

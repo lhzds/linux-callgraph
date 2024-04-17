@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/soc/intel_gmch.o
+intel_gmch_bar_setup -> (__drm_dev_dbg, pci_read_config_dword, pcibios_align_resource, pnp_range_reserved, pci_write_config_dword, pci_bus_alloc_resource)
+intel_gmch_bar_teardown -> (release_resource, pci_write_config_dword, pci_read_config_dword)
+intel_gmch_bridge_release -> (pci_dev_put)
+intel_gmch_bridge_setup -> (_dev_err, intel_gmch_bridge_release, __drmm_add_action_or_reset, pci_get_domain_bus_and_slot)
+intel_gmch_vga_set_state -> (_dev_err, pci_write_config_word, pci_read_config_word)

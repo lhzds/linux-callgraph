@@ -1,0 +1,11 @@
+drivers/mailbox/pcc.o
+acpi_pcc_probe -> (_printk, acpi_put_table, acpi_table_parse_entries_array, parse_pcc_subspace, acpi_get_table)
+pcc_chan_reg_read_modify_write -> (acpi_read, acpi_write)
+pcc_init -> (__platform_create_bundle, acpi_pcc_probe, pcc_mbox_probe)
+pcc_mbox_free_channel -> (mbox_free_channel)
+pcc_mbox_irq -> (mbox_chan_received_data, pcc_chan_reg_read_modify_write, acpi_read, acpi_write)
+pcc_mbox_probe -> (_printk, acpi_put_table, mbox_controller_register, pcc_shutdown, pcc_send_data, acpi_get_table, pcc_startup, acpi_register_gsi, ioremap_cache, devm_kmalloc)
+pcc_mbox_request_channel -> (_printk, mbox_bind_client)
+pcc_send_data -> (pcc_chan_reg_read_modify_write)
+pcc_shutdown -> (devm_free_irq)
+pcc_startup -> (_dev_err, devm_request_threaded_irq, pcc_mbox_irq)

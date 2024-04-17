@@ -1,0 +1,5 @@
+lib/pci_iomap.o
+pci_iomap -> (ioport_map, ioremap)
+pci_iomap_range -> (ioport_map, ioremap)
+pci_iomap_wc -> (ioremap_wc)
+pci_iomap_wc_range -> (ioremap_wc)

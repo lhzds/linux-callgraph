@@ -1,0 +1,6 @@
+net/ethtool/linkmodes.o
+ethnl_set_linkmodes -> (do_trace_netlink_extack, ethnl_update_bitset, __bitmap_equal, __ethtool_get_link_ksettings)
+ethnl_set_linkmodes_validate -> (do_trace_netlink_extack)
+linkmodes_fill_reply -> (nla_put, ethnl_put_bitset)
+linkmodes_prepare_data -> (do_trace_netlink_extack, __ethtool_get_link_ksettings, _find_first_bit, ethnl_ops_complete, ethnl_ops_begin)
+linkmodes_reply_size -> (ethnl_bitset_size)

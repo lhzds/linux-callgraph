@@ -1,0 +1,3 @@
+drivers/acpi/acpica/extrace.o
+acpi_ex_start_trace_method -> (acpi_ns_get_normalized_pathname, kfree, strcmp)
+acpi_ex_stop_trace_method -> (acpi_ns_get_normalized_pathname, kfree)

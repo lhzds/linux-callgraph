@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/intel_renderstate.o
+intel_renderstate_emit -> (_i915_vma_move_to_active)
+intel_renderstate_fini -> (refcount_warn_saturate, i915_vma_close, i915_gem_ww_ctx_fini, drm_gem_object_free, __intel_context_do_unpin)
+intel_renderstate_init -> (refcount_warn_saturate, i915_vma_pin_ww, i915_gem_ww_ctx_fini, drm_gem_object_free, __i915_gem_object_flush_map, i915_vma_instance, __i915_gem_object_release_map, _dev_err, i915_gem_object_pin_map, __intel_context_do_pin_ww, i915_gem_ww_ctx_init, ww_mutex_lock_interruptible, i915_gem_object_create_internal, i915_gem_ww_ctx_backoff, ww_mutex_lock, __intel_context_do_unpin)

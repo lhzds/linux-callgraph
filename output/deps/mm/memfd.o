@@ -1,0 +1,5 @@
+mm/memfd.o
+__ia32_sys_memfd_create -> (__se_sys_memfd_create)
+__se_sys_memfd_create -> (default_llseek, migrate_folio, __get_task_comm, _copy_from_user, hugetlbfs_read_iter, hugetlb_get_unmapped_area, shmem_error_remove_page, hugetlb_file_setup, _printk, noop_dirty_folio, is_file_shm_hugepages, task_active_pid_ns, shmem_writepage, shmem_write_end, shmem_write_begin, fd_install, hugetlbfs_fallocate, __kmalloc, put_unused_fd, shmem_file_setup, hugetlbfs_file_mmap, strnlen_user, kfree, noop_fsync, get_unused_fd_flags)
+__x64_sys_memfd_create -> (__se_sys_memfd_create)
+memfd_fcntl -> (lru_add_drain_all, xas_find, default_llseek, migrate_folio, hugetlbfs_read_iter, _raw_spin_lock_irq, hugetlb_get_unmapped_area, schedule_timeout_killable, shmem_error_remove_page, noop_dirty_folio, xas_find_marked, is_file_shm_hugepages, xas_set_mark, _raw_spin_unlock_irq, __SCT__cond_resched, shmem_writepage, shmem_write_end, shmem_write_begin, xas_clear_mark, xas_pause, down_write, hugetlbfs_fallocate, up_write, folio_total_mapcount, hugetlbfs_file_mmap, lru_add_drain, noop_fsync)

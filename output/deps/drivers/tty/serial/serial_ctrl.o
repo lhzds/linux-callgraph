@@ -1,0 +1,7 @@
+drivers/tty/serial/serial_ctrl.o
+serial_base_ctrl_exit -> (serial_base_driver_unregister, serial_ctrl_remove, serial_ctrl_probe)
+serial_base_ctrl_init -> (serial_ctrl_remove, serial_base_driver_register, serial_ctrl_probe)
+serial_ctrl_probe -> (pm_runtime_enable)
+serial_ctrl_register_port -> (serial_core_register_port)
+serial_ctrl_remove -> (__pm_runtime_disable)
+serial_ctrl_unregister_port -> (serial_core_unregister_port)

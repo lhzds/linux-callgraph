@@ -1,0 +1,3 @@
+kernel/exec_domain.o
+execdomains_proc_show -> (seq_puts)
+proc_execdomains_init -> (proc_create_single_data, execdomains_proc_show)

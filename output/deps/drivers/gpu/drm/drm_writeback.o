@@ -1,0 +1,9 @@
+drivers/gpu/drm/drm_writeback.o
+cleanup_work -> (drm_writeback_cleanup_job)
+drm_writeback_cleanup_job -> (refcount_warn_saturate, kfree, dma_fence_release, drm_mode_object_put)
+drm_writeback_connector_init -> (drm_writeback_connector_init_with_encoder, drm_encoder_init, drm_encoder_cleanup)
+drm_writeback_connector_init_with_encoder -> (drm_connector_init, drm_property_create_blob, drm_property_create_range, snprintf, drm_connector_attach_encoder, drm_connector_cleanup, drm_property_create_object, drm_object_attach_property, drm_property_create, dma_fence_context_alloc, drm_property_blob_put)
+drm_writeback_get_out_fence -> (drm_writeback_fence_get_timeline_name, dma_fence_init, kmalloc_trace, drm_writeback_fence_enable_signaling, drm_writeback_fence_get_driver_name)
+drm_writeback_queue_job -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+drm_writeback_set_fb -> (kmalloc_trace, drm_mode_object_get, drm_mode_object_put)
+drm_writeback_signal_completion -> (refcount_warn_saturate, cleanup_work, queue_work_on, _raw_spin_lock_irqsave, dma_fence_signal, _raw_spin_unlock_irqrestore, dma_fence_release)

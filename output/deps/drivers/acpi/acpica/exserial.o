@@ -1,0 +1,5 @@
+drivers/acpi/acpica/exserial.o
+acpi_ex_read_gpio -> (acpi_ex_access_region, acpi_ex_release_global_lock, acpi_ex_acquire_global_lock)
+acpi_ex_read_serial_bus -> (acpi_ut_create_buffer_object, acpi_ex_get_protocol_buffer_length, acpi_ex_acquire_global_lock, acpi_error, acpi_ex_access_region, acpi_ex_release_global_lock)
+acpi_ex_write_gpio -> (acpi_ex_access_region, acpi_ex_release_global_lock, acpi_ex_acquire_global_lock)
+acpi_ex_write_serial_bus -> (acpi_ut_create_buffer_object, acpi_ex_get_protocol_buffer_length, acpi_ut_get_object_type_name, acpi_ex_acquire_global_lock, acpi_error, acpi_ex_access_region, acpi_ex_release_global_lock)

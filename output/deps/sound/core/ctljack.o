@@ -1,0 +1,3 @@
+sound/core/ctljack.o
+snd_kctl_jack_new -> (snd_ctl_new1, snprintf, strlen, jack_detect_kctl_get, strncmp, snd_ctl_boolean_mono_info, snd_ctl_find_id, strscpy)
+snd_kctl_jack_report -> (snd_ctl_notify)

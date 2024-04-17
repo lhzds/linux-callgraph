@@ -1,0 +1,4 @@
+mm/msync.o
+__ia32_sys_msync -> (__se_sys_msync)
+__se_sys_msync -> (trace_mmap_lock_unreg, __mmap_lock_do_trace_start_locking, __traceiter_mmap_lock_released, __traceiter_mmap_lock_acquire_returned, fput, __probestub_mmap_lock_acquire_returned, __SCT__tp_func_mmap_lock_acquire_returned, down_read, __probestub_mmap_lock_released, __SCT__tp_func_mmap_lock_start_locking, __probestub_mmap_lock_start_locking, find_vma, __mmap_lock_do_trace_released, trace_mmap_lock_reg, up_read, __traceiter_mmap_lock_start_locking, vfs_fsync_range, __SCT__tp_func_mmap_lock_released, __mmap_lock_do_trace_acquire_returned)
+__x64_sys_msync -> (__se_sys_msync)

@@ -1,0 +1,8 @@
+fs/ext4/mmp.o
+__dump_mmp_msg -> (__ext4_warning)
+ext4_multi_mount_protect -> (__dump_mmp_msg, snprintf, read_mmp_block, kmmpd, get_random_u32, wake_up_process, schedule_timeout_interruptible, __ext4_warning, __brelse, kthread_create_on_node, write_mmp_block_thawed)
+ext4_stop_mmpd -> (kthread_stop, __brelse)
+kmmpd -> (bcmp, __ext4_error, read_mmp_block, schedule, kthread_should_stop, ktime_get_real_seconds, schedule_timeout_interruptible, __ext4_warning, write_mmp_block)
+read_mmp_block -> (__SCT__might_resched, __lock_buffer, ext4_read_bh, crypto_shash_update, __getblk_gfp, __ext4_warning, __brelse)
+write_mmp_block -> (__SCT__might_resched, __percpu_down_read, rcuwait_wake_up, write_mmp_block_thawed)
+write_mmp_block_thawed -> (__SCT__might_resched, __wait_on_buffer, __lock_buffer, end_buffer_write_sync, submit_bh, crypto_shash_update)

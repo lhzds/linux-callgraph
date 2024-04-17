@@ -1,0 +1,12 @@
+lib/klist.o
+klist_add_before -> (_raw_spin_lock, _raw_spin_unlock)
+klist_add_behind -> (_raw_spin_lock, _raw_spin_unlock)
+klist_add_head -> (_raw_spin_lock, _raw_spin_unlock)
+klist_add_tail -> (_raw_spin_lock, _raw_spin_unlock)
+klist_dec_and_del -> (_raw_spin_lock, refcount_warn_saturate, wake_up_process, _raw_spin_unlock)
+klist_del -> (klist_dec_and_del, _raw_spin_lock, _raw_spin_unlock)
+klist_iter_exit -> (klist_dec_and_del, _raw_spin_lock, _raw_spin_unlock)
+klist_iter_init_node -> (refcount_warn_saturate)
+klist_next -> (klist_dec_and_del, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, refcount_warn_saturate)
+klist_prev -> (klist_dec_and_del, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, refcount_warn_saturate)
+klist_remove -> (klist_dec_and_del, _raw_spin_lock, schedule, _raw_spin_unlock)

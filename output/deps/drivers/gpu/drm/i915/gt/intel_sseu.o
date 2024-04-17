@@ -1,0 +1,10 @@
+drivers/gpu/drm/i915/gt/intel_sseu.o
+hsw_sseu_info_init -> (__warn_printk)
+intel_slicemask_from_xehp_dssmask -> (__bitmap_intersects)
+intel_sseu_copy_eumask_to_user -> (__copy_overflow, _copy_to_user)
+intel_sseu_copy_ssmask_to_user -> (__copy_overflow, _copy_to_user)
+intel_sseu_dump -> (drm_printf)
+intel_sseu_info_init -> (gen11_compute_sseu_info, xehp_load_dss_mask, hsw_sseu_info_init, __warn_printk, cherryview_sseu_info_init, dev_driver_string)
+intel_sseu_print_ss_info -> (seq_printf)
+intel_sseu_print_topology -> (drm_printf)
+xehp_load_dss_mask -> (bitmap_from_arr32)

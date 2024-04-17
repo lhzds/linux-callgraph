@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/display/intel_load_detect.o
+drm_atomic_state_put -> (refcount_warn_saturate, __drm_atomic_state_free)
+intel_load_detect_get_pipe -> (refcount_warn_saturate, __drm_dev_dbg, mutex_is_locked, intel_atomic_get_crtc_state, __warn_printk, drm_atomic_state_alloc, drm_modeset_lock, drm_atomic_get_connector_state, drm_atomic_state_put, drm_atomic_set_mode_for_crtc, intel_crtc_wait_for_next_vblank, drm_atomic_commit, __drm_atomic_state_free, drm_atomic_set_crtc_for_connector, dev_driver_string, drm_atomic_add_affected_planes, intel_modeset_disable_planes, drm_atomic_get_crtc_state, drm_modeset_unlock)
+intel_load_detect_release_pipe -> (drm_atomic_helper_commit_duplicated_state, refcount_warn_saturate, __drm_dev_dbg, __drm_atomic_state_free)
+intel_modeset_disable_planes -> (drm_atomic_set_crtc_for_plane, drm_atomic_add_affected_planes, drm_atomic_set_fb_for_plane)

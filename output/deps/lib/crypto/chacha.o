@@ -1,0 +1,3 @@
+lib/crypto/chacha.o
+chacha_block_generic -> (chacha_permute)
+hchacha_block_generic -> (chacha_permute)

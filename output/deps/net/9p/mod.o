@@ -1,0 +1,7 @@
+net/9p/mod.o
+exit_p9 -> (_printk, p9_client_exit)
+init_p9 -> (_printk, p9_error_init, p9_client_init)
+v9fs_get_default_trans -> (_raw_spin_lock, v9fs_get_trans_by_name, _raw_spin_unlock)
+v9fs_get_trans_by_name -> (__request_module, _raw_spin_lock, strcmp, _raw_spin_unlock)
+v9fs_register_trans -> (_raw_spin_lock, _raw_spin_unlock)
+v9fs_unregister_trans -> (_raw_spin_lock, _raw_spin_unlock)

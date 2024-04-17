@@ -1,0 +1,9 @@
+kernel/async.o
+async_run_entry_fn -> (__wake_up, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, ktime_get, kfree)
+async_schedule_node -> (async_schedule_node_domain)
+async_schedule_node_domain -> (async_run_entry_fn, kmalloc_trace, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, queue_work_node, kfree)
+async_synchronize_cookie -> (async_synchronize_cookie_domain)
+async_synchronize_cookie_domain -> (init_wait_entry, __SCT__might_resched, _raw_spin_lock_irqsave, schedule, finish_wait, prepare_to_wait_event, _raw_spin_unlock_irqrestore, ktime_get)
+async_synchronize_full -> (async_synchronize_cookie_domain)
+async_synchronize_full_domain -> (async_synchronize_cookie_domain)
+current_is_async -> (kthread_data, async_run_entry_fn)

@@ -1,0 +1,13 @@
+drivers/base/transport_class.o
+anon_transport_class_register -> (anon_transport_dummy_function, attribute_container_register)
+anon_transport_class_unregister -> (attribute_container_unregister)
+transport_add_class_device -> (attribute_container_add_class_device, attribute_container_class_device_del, sysfs_create_group)
+transport_add_device -> (transport_add_class_device, attribute_container_device_trigger_safe, transport_remove_classdev)
+transport_class_register -> (class_register)
+transport_class_unregister -> (class_unregister)
+transport_configure_device -> (attribute_container_device_trigger, transport_configure)
+transport_destroy_classdev -> (put_device, anon_transport_dummy_function)
+transport_destroy_device -> (attribute_container_remove_device, transport_destroy_classdev)
+transport_remove_classdev -> (anon_transport_dummy_function, attribute_container_class_device_del, sysfs_remove_group)
+transport_remove_device -> (attribute_container_device_trigger, transport_remove_classdev)
+transport_setup_device -> (attribute_container_add_device, transport_setup_classdev)

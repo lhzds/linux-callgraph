@@ -1,0 +1,6 @@
+io_uring/notif.o
+io_alloc_notif -> (io_tx_ubuf_callback, io_req_task_complete, io_task_refs_refill, __io_alloc_req_refill)
+io_notif_complete_tw_ext -> (io_req_task_complete)
+io_notif_set_extended -> (io_notif_complete_tw_ext, io_tx_ubuf_callback_ext)
+io_tx_ubuf_callback -> (__io_req_task_work_add, refcount_warn_saturate)
+io_tx_ubuf_callback_ext -> (__io_req_task_work_add, refcount_warn_saturate)

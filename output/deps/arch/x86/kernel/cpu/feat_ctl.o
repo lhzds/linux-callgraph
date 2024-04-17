@@ -1,0 +1,3 @@
+arch/x86/kernel/cpu/feat_ctl.o
+init_ia32_feat_ctl -> (clear_cpu_cap, __SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+nosgx -> (setup_clear_cpu_cap)

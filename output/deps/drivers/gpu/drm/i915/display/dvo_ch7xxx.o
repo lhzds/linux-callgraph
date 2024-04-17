@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/dvo_ch7xxx.o
+ch7xxx_destroy -> (kfree)
+ch7xxx_detect -> (___drm_dbg, i2c_transfer)
+ch7xxx_dpms -> (___drm_dbg, i2c_transfer)
+ch7xxx_dump_regs -> (___drm_dbg, i2c_transfer)
+ch7xxx_get_hw_state -> (___drm_dbg, i2c_transfer)
+ch7xxx_init -> (kmalloc_trace, ___drm_dbg, kfree, i2c_transfer)
+ch7xxx_mode_set -> (___drm_dbg, i2c_transfer)

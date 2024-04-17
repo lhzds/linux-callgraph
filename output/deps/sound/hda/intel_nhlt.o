@@ -1,0 +1,4 @@
+sound/hda/intel_nhlt.o
+intel_nhlt_free -> (acpi_put_table)
+intel_nhlt_get_dmic_geo -> (_dev_warn)
+intel_nhlt_init -> (_dev_warn, acpi_get_table)

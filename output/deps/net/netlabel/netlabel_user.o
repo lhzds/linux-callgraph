@@ -1,0 +1,3 @@
+net/netlabel/netlabel_user.o
+netlbl_audit_start_common -> (security_release_secctx, audit_log_format, security_secid_to_secctx, audit_log_start)
+netlbl_netlink_init -> (netlbl_unlabel_genl_init, netlbl_calipso_genl_init, netlbl_mgmt_genl_init, netlbl_cipsov4_genl_init)

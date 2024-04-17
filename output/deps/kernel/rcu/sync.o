@@ -1,0 +1,6 @@
+kernel/rcu/sync.o
+rcu_sync_dtor -> (rcu_barrier, _raw_spin_lock_irq, _raw_spin_unlock_irq)
+rcu_sync_enter -> (init_wait_entry, __SCT__might_resched, rcu_sync_func, synchronize_rcu, _raw_spin_lock_irq, schedule, finish_wait, _raw_spin_unlock_irq, prepare_to_wait_event)
+rcu_sync_exit -> (_raw_spin_lock_irq, rcu_sync_func, call_rcu, _raw_spin_unlock_irq)
+rcu_sync_func -> (rcu_sync_func, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, call_rcu, __wake_up_locked)
+rcu_sync_init -> (__init_waitqueue_head)

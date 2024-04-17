@@ -1,0 +1,10 @@
+io_uring/tctx.o
+__io_uring_add_tctx_node -> (mutex_lock, xa_store, mutex_unlock, kmalloc_trace, io_wq_max_workers, io_uring_alloc_task_context, xa_load, kfree)
+__io_uring_add_tctx_node_from_submit -> (__io_uring_add_tctx_node)
+__io_uring_free -> (kfree, percpu_counter_destroy)
+io_ringfd_register -> (mutex_lock, fget, _copy_from_user, mutex_unlock, __io_uring_add_tctx_node, io_is_uring_fops, fput, _copy_to_user)
+io_ringfd_unregister -> (fput, _copy_from_user)
+io_uring_alloc_task_context -> (tctx_task_work, mutex_lock, mutex_unlock, io_wq_create, kmalloc_trace, __percpu_counter_init, kfree, percpu_counter_destroy, io_wq_free_work, __init_waitqueue_head, io_wq_submit_work)
+io_uring_clean_tctx -> (__SCT__cond_resched, io_uring_del_tctx_node, io_wq_put_and_exit, xa_find, xa_find_after)
+io_uring_del_tctx_node -> (mutex_lock, kfree, mutex_unlock, xa_erase)
+io_uring_unreg_ringfd -> (fput)

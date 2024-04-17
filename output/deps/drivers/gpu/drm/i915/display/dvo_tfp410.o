@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/dvo_tfp410.o
+tfp410_destroy -> (kfree)
+tfp410_detect -> (___drm_dbg, i2c_transfer)
+tfp410_dpms -> (___drm_dbg, i2c_transfer)
+tfp410_dump_regs -> (___drm_dbg, i2c_transfer)
+tfp410_get_hw_state -> (___drm_dbg, i2c_transfer)
+tfp410_getid -> (___drm_dbg, i2c_transfer)
+tfp410_init -> (kmalloc_trace, ___drm_dbg, kfree, tfp410_getid)

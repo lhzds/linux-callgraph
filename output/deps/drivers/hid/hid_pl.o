@@ -1,0 +1,5 @@
+drivers/hid/hid_pl.o
+hid_plff_play -> (hid_hw_request)
+pl_driver_exit -> (pl_probe, hid_unregister_driver)
+pl_driver_init -> (__hid_register_driver, pl_probe)
+pl_probe -> (kmalloc_trace, hid_hw_start, kfree, _dev_err, hid_hw_request, hid_plff_play, hid_open_report, _dev_info, input_ff_create_memless)

@@ -1,0 +1,4 @@
+drivers/acpi/acpica/nsarguments.o
+acpi_ns_check_acpi_compliance -> (acpi_ut_predefined_bios_error, acpi_ut_get_type_name)
+acpi_ns_check_argument_count -> (acpi_ut_predefined_warning, acpi_ut_get_type_name, acpi_ut_predefined_info)
+acpi_ns_check_argument_types -> (acpi_ut_predefined_warning, acpi_ut_get_type_name)

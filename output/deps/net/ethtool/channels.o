@@ -1,0 +1,4 @@
+net/ethtool/channels.o
+channels_fill_reply -> (nla_put)
+channels_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)
+ethnl_set_channels -> (ethtool_get_max_rxfh_channel, do_trace_netlink_extack, ethtool_get_max_rxnfc_channel)

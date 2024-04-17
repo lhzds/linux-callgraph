@@ -1,0 +1,8 @@
+net/core/failover.o
+failover_event -> (_raw_spin_unlock, _raw_spin_lock, __warn_printk, rtnl_is_locked, failover_slave_unregister, failover_slave_register)
+failover_exit -> (unregister_netdevice_notifier, failover_event)
+failover_init -> (register_netdevice_notifier, failover_event)
+failover_register -> (rtnl_lock, _raw_spin_unlock, _raw_spin_lock, rtnl_unlock, kmalloc_trace, failover_slave_register, netdev_info)
+failover_slave_register -> (netdev_err, netdev_master_upper_dev_link, _raw_spin_unlock, _raw_spin_lock, netdev_rx_handler_unregister, __warn_printk, netdev_rx_handler_register, netdev_upper_dev_unlink, rtnl_is_locked)
+failover_slave_unregister -> (_raw_spin_unlock, _raw_spin_lock, netdev_rx_handler_unregister, __warn_printk, netdev_upper_dev_unlink, rtnl_is_locked)
+failover_unregister -> (_raw_spin_lock, kfree, netdev_info, _raw_spin_unlock)

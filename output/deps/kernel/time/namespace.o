@@ -1,0 +1,12 @@
+kernel/time/namespace.o
+copy_time_ns -> (refcount_warn_saturate, timens_put, dec_ucount, kmalloc_trace, timens_install, kfree, timens_owner, inc_ucount, proc_alloc_inum, __free_pages, timens_get, alloc_pages)
+find_timens_vvar_page -> (__warn_printk)
+free_time_ns -> (proc_free_inum, __free_pages, dec_ucount, kfree)
+proc_timens_set_offset -> (mutex_lock, ktime_get_ts64, proc_free_inum, dec_ucount, _raw_spin_unlock, ktime_get_with_offset, _raw_spin_lock, mutex_unlock, refcount_warn_saturate, set_normalized_timespec64, kfree, ns_to_timespec64, __free_pages, file_ns_capable)
+proc_timens_show_offsets -> (proc_free_inum, refcount_warn_saturate, seq_printf, dec_ucount, _raw_spin_unlock, _raw_spin_lock, kfree, __free_pages)
+timens_commit -> (mutex_lock, timens_put, mutex_unlock, vdso_join_timens, timens_install, arch_get_vdso_data, timens_owner, timens_get)
+timens_for_children_get -> (_raw_spin_lock, refcount_warn_saturate, _raw_spin_unlock)
+timens_get -> (_raw_spin_lock, refcount_warn_saturate, _raw_spin_unlock)
+timens_install -> (proc_free_inum, refcount_warn_saturate, dec_ucount, ns_capable, kfree, current_is_single_threaded, __free_pages)
+timens_on_fork -> (proc_free_inum, refcount_warn_saturate, dec_ucount, kfree, timens_commit, __free_pages)
+timens_put -> (proc_free_inum, refcount_warn_saturate, dec_ucount, kfree, __free_pages)

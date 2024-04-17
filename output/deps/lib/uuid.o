@@ -1,0 +1,7 @@
+lib/uuid.o
+generate_random_guid -> (get_random_bytes)
+generate_random_uuid -> (get_random_bytes)
+guid_gen -> (get_random_bytes)
+guid_parse -> (hex_to_bin)
+uuid_gen -> (get_random_bytes)
+uuid_parse -> (hex_to_bin)

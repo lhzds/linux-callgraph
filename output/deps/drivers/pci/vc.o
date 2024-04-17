@@ -1,0 +1,5 @@
+drivers/pci/vc.o
+pci_allocate_vc_save_buffers -> (_dev_err, pci_find_ext_capability, pci_add_ext_cap_save_buffer, pci_vc_do_save_buffer)
+pci_restore_vc_state -> (pci_find_saved_ext_cap, pci_vc_do_save_buffer, pci_find_ext_capability)
+pci_save_vc_state -> (_dev_err, pci_find_saved_ext_cap, pci_vc_do_save_buffer, pci_find_ext_capability)
+pci_vc_do_save_buffer -> (pci_find_ext_capability, pci_write_config_word, pci_read_config_dword, _dev_err, pci_read_config_word, pci_vc_do_save_buffer, pci_write_config_dword, pci_wait_for_pending)

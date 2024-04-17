@@ -1,0 +1,6 @@
+drivers/input/input_leds.o
+input_leds_brightness_set -> (input_inject_event)
+input_leds_connect -> (input_open_device, input_leds_brightness_set, input_unregister_handle, input_close_device, kasprintf, led_classdev_register_ext, _dev_err, led_classdev_unregister, input_register_handle, kfree, input_leds_brightness_get, __kmalloc)
+input_leds_disconnect -> (input_unregister_handle, input_close_device, led_classdev_unregister, kfree)
+input_leds_exit -> (input_leds_connect, input_leds_disconnect, input_unregister_handler, input_leds_event)
+input_leds_init -> (input_register_handler, input_leds_connect, input_leds_disconnect, input_leds_event)

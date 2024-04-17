@@ -1,0 +1,3 @@
+crypto/rsa_helper.o
+rsa_parse_priv_key -> (asn1_ber_decoder)
+rsa_parse_pub_key -> (asn1_ber_decoder)

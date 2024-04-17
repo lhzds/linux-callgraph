@@ -1,0 +1,4 @@
+drivers/acpi/acpica/exstore.o
+acpi_ex_store -> (acpi_ex_store_object_to_node, acpi_ut_get_object_type_name, acpi_error, acpi_ds_store_object_to_local, acpi_ex_store_object_to_index, acpi_ex_do_debug_object)
+acpi_ex_store_object_to_index -> (acpi_ut_get_object_type_name, acpi_ut_copy_iobject_to_iobject, acpi_error, acpi_ut_remove_reference, acpi_ut_add_reference)
+acpi_ex_store_object_to_node -> (acpi_ex_store_object_to_object, acpi_ns_get_attached_object, acpi_ut_get_object_type_name, acpi_ut_get_type_name, acpi_ex_write_data_to_field, acpi_error, acpi_ns_get_type, acpi_ns_attach_object, acpi_ut_copy_iobject_to_iobject, acpi_ex_resolve_object, acpi_ut_remove_reference)

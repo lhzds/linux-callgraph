@@ -1,0 +1,10 @@
+drivers/firewire/init_ohci1394_dma.o
+get_phy_reg -> (__const_udelay)
+init_ohci1394_controller -> (_printk, read_pci_config, init_ohci1394_reset_and_init_dma, cachemode2protval, native_set_fixmap)
+init_ohci1394_dma_on_all_controllers -> (_printk, init_ohci1394_controller, early_pci_allowed, read_pci_config)
+init_ohci1394_initialize -> (set_phy_reg, get_phy_reg)
+init_ohci1394_reset_and_init_dma -> (init_ohci1394_initialize, init_ohci1394_wait_for_busresets, init_ohci1394_soft_reset, __const_udelay)
+init_ohci1394_soft_reset -> (__const_udelay)
+init_ohci1394_wait_for_busresets -> (__const_udelay)
+set_phy_reg -> (__const_udelay)
+setup_ohci1394_dma -> (strcmp)

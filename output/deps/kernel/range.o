@@ -1,0 +1,4 @@
+kernel/range.o
+clean_sort_range -> (sort, cmp_range)
+sort_range -> (sort, cmp_range)
+subtract_range -> (_printk)

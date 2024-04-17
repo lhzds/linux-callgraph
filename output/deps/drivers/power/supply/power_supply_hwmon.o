@@ -1,0 +1,6 @@
+drivers/power/supply/power_supply_hwmon.o
+power_supply_add_hwmon_sysfs -> (devm_kstrdup, devres_open_group, power_supply_add_hwmon_sysfs, strchr, strreplace, power_supply_hwmon_write, devres_close_group, power_supply_hwmon_is_visible, devm_bitmap_zalloc, power_supply_hwmon_read_string, devres_release_group, devm_hwmon_device_register_with_info, devm_kmalloc, power_supply_hwmon_read)
+power_supply_hwmon_is_visible -> (power_supply_property_is_writeable)
+power_supply_hwmon_read -> (power_supply_get_property)
+power_supply_hwmon_write -> (power_supply_set_property)
+power_supply_remove_hwmon_sysfs -> (power_supply_add_hwmon_sysfs, devres_release_group)

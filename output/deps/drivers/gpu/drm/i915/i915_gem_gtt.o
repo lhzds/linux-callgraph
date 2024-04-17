@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/i915_gem_gtt.o
+i915_gem_gtt_finish_pages -> (dma_unmap_sg_attrs, usleep_range_state)
+i915_gem_gtt_insert -> (i915_gem_evict_something, i915_gem_evict_for_node, drm_mm_reserve_node, drm_mm_insert_node_in_range, get_random_u64)
+i915_gem_gtt_prepare_pages -> (dma_map_sg_attrs, i915_gem_shrink)
+i915_gem_gtt_reserve -> (drm_mm_reserve_node, i915_gem_evict_for_node)

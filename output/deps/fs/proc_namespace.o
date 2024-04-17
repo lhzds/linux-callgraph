@@ -1,0 +1,11 @@
+fs/proc_namespace.o
+mountinfo_open -> (mounts_open_common, show_mountinfo)
+mounts_open -> (mounts_open_common, show_vfsmnt)
+mounts_open_common -> (m_stop, refcount_warn_saturate, path_put, _raw_spin_unlock, _raw_spin_lock, path_get, seq_open_private, m_next, __put_task_struct, get_pid_task, m_show, put_mnt_ns, m_start)
+mounts_release -> (mnt_cursor_del, seq_release_private, put_mnt_ns, path_put)
+mountstats_open -> (show_vfsstat, mounts_open_common)
+show_mnt_opts -> (seq_puts)
+show_mountinfo -> (show_mnt_opts, strlen, seq_path_root, seq_printf, seq_dentry, get_dominating_id, seq_escape_mem, seq_putc, show_sb_opts, seq_puts)
+show_sb_opts -> (security_sb_show_options, seq_puts)
+show_vfsmnt -> (show_sb_opts, show_mnt_opts, strlen, seq_path_root, seq_escape_mem, seq_putc, __mnt_is_readonly, seq_puts)
+show_vfsstat -> (strlen, seq_path_root, seq_escape_mem, seq_putc, seq_puts)

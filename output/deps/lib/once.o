@@ -1,0 +1,6 @@
+lib/once.o
+__do_once_done -> (once_deferred, queue_work_on, kmalloc_trace, _raw_spin_unlock_irqrestore)
+__do_once_sleepable_done -> (mutex_unlock, once_deferred, queue_work_on, kmalloc_trace)
+__do_once_sleepable_start -> (mutex_unlock, mutex_lock)
+__do_once_start -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+once_deferred -> (static_key_count, kfree, static_key_disable)

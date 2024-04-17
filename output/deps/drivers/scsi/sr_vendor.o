@@ -1,0 +1,4 @@
+drivers/scsi/sr_vendor.o
+sr_cd_check -> (sr_is_xa, _bcd2bin, kmalloc_trace, sdev_prefix_printk, sr_disk_status, kfree, sr_do_ioctl)
+sr_set_blocklength -> (kmalloc_trace, kfree, sr_do_ioctl)
+sr_vendor_init -> (strncmp)

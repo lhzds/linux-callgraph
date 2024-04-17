@@ -1,0 +1,4 @@
+drivers/hid/hid_monterey.o
+mr_driver_exit -> (hid_unregister_driver, mr_report_fixup, mr_input_mapping)
+mr_driver_init -> (__hid_register_driver, mr_report_fixup, mr_input_mapping)
+mr_report_fixup -> (_dev_info)

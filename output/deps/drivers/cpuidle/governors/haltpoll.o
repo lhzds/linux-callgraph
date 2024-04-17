@@ -1,0 +1,4 @@
+drivers/cpuidle/governors/haltpoll.o
+haltpoll_reflect -> (__traceiter_guest_halt_poll_ns, __probestub_guest_halt_poll_ns, __SCT__tp_func_guest_halt_poll_ns)
+haltpoll_select -> (cpuidle_governor_latency_req)
+init_haltpoll -> (haltpoll_select, haltpoll_reflect, haltpoll_enable_device, cpuidle_register_governor, kvm_para_available)

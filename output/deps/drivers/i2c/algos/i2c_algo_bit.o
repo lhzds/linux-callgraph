@@ -1,0 +1,12 @@
+drivers/i2c/algos/i2c_algo_bit.o
+__i2c_bit_add_bus -> (sclhi, _printk, bit_func, __udelay, _dev_warn, bit_xfer, bit_xfer_atomic)
+acknak -> (_dev_err, __udelay)
+bit_xfer -> (__udelay, i2c_repstart, i2c_stop, try_address, i2c_outb, _dev_err, acknak)
+bit_xfer_atomic -> (bit_xfer, _dev_warn)
+i2c_bit_add_bus -> (i2c_add_adapter, __i2c_bit_add_bus)
+i2c_bit_add_numbered_bus -> (__i2c_bit_add_bus, i2c_add_numbered_adapter)
+i2c_outb -> (__udelay)
+i2c_repstart -> (__udelay)
+i2c_stop -> (__udelay)
+sclhi -> (__udelay)
+try_address -> (i2c_stop, yield, __udelay, i2c_outb)

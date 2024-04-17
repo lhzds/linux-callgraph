@@ -1,0 +1,5 @@
+net/devres.o
+devm_alloc_etherdev_mqs -> (alloc_etherdev_mqs, __devres_alloc_node, devres_add, devm_free_netdev, devres_free)
+devm_free_netdev -> (free_netdev)
+devm_register_netdev -> (__devres_alloc_node, netdev_devres_match, devres_find, devres_add, devm_free_netdev, register_netdev, devm_unregister_netdev, devres_free)
+devm_unregister_netdev -> (unregister_netdev)

@@ -1,0 +1,6 @@
+lib/mpi/mpi_bit.o
+mpi_lshift -> (mpihelp_rshift, mpi_resize)
+mpi_lshift_limbs -> (mpi_resize)
+mpi_rshift -> (mpihelp_rshift, mpi_resize)
+mpi_set_bit -> (mpi_resize)
+mpi_set_highbit -> (mpi_resize)

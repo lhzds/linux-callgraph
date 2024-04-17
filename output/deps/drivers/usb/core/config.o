@@ -1,0 +1,6 @@
+drivers/usb/core/config.o
+usb_destroy_configuration -> (refcount_warn_saturate, kfree)
+usb_get_bos_descriptor -> (kmalloc_trace, _dev_notice, usb_get_descriptor, kfree, __kmalloc)
+usb_get_configuration -> (usb_endpoint_is_ignored, kmalloc_trace, msleep, _dev_err, _dev_notice, usb_get_descriptor, kfree, __kmalloc)
+usb_release_bos_descriptor -> (kfree)
+usb_release_interface_cache -> (kfree)

@@ -1,0 +1,5 @@
+net/netfilter/nf_nat_ftp.o
+nf_nat_ftp -> (snprintf, nf_nat_follow_master, nf_nat_exp_find_port, nf_ct_helper_log, nf_ct_unexpect_related, __nf_nat_mangle_tcp_packet)
+nf_nat_ftp_fini -> (synchronize_rcu, nf_nat_ftp, nf_nat_helper_unregister)
+nf_nat_ftp_init -> (nf_nat_ftp, nf_nat_helper_register)
+warn_set -> (_printk)

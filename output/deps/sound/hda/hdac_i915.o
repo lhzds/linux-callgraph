@@ -1,0 +1,3 @@
+sound/hda/hdac_i915.o
+i915_component_master_match -> (pci_dma_configure, pci_device_shutdown, strcmp, pci_bus_num_vf, pci_uevent, pci_bus_match, pci_dma_cleanup, pci_device_remove, pci_device_probe)
+snd_hdac_i915_init -> (i915_component_master_match, snd_hdac_acomp_exit, snd_hdac_acomp_init, pci_get_device, pci_dev_put, __request_module, wait_for_completion_killable_timeout, _dev_info)

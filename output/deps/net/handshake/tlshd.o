@@ -1,0 +1,11 @@
+net/handshake/tlshd.o
+tls_client_hello_anon -> (handshake_req_private, tls_handshake_accept, tls_handshake_done, handshake_req_alloc, handshake_req_submit)
+tls_client_hello_psk -> (handshake_req_private, tls_handshake_accept, tls_handshake_done, handshake_req_alloc, handshake_req_submit)
+tls_client_hello_x509 -> (handshake_req_private, tls_handshake_accept, tls_handshake_done, handshake_req_alloc, handshake_req_submit)
+tls_handshake_accept -> (handshake_req_private, nla_put, key_link, strlen, netlink_unicast, handshake_genl_put, __alloc_skb, lookup_user_key, key_put, tls_handshake_put_peer_identity, tls_handshake_put_certificate, skb_trim)
+tls_handshake_cancel -> (handshake_req_cancel)
+tls_handshake_done -> (handshake_req_private)
+tls_handshake_put_certificate -> (nla_put, skb_trim)
+tls_handshake_put_peer_identity -> (nla_put)
+tls_server_hello_psk -> (handshake_req_private, tls_handshake_accept, tls_handshake_done, handshake_req_alloc, handshake_req_submit)
+tls_server_hello_x509 -> (handshake_req_private, tls_handshake_accept, tls_handshake_done, handshake_req_alloc, handshake_req_submit)

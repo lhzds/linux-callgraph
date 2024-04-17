@@ -1,0 +1,9 @@
+lib/mpi/mpicoder.o
+mpi_fromstr -> (strlen, mpi_clear, mpi_resize)
+mpi_get_buffer -> (kfree, __kmalloc)
+mpi_print -> (mpi_get_buffer, kfree, mpi_cmp_ui, mpi_get_nbits)
+mpi_read_from_buffer -> (_printk, mpi_read_raw_data)
+mpi_read_raw_data -> (mpi_alloc, _printk)
+mpi_read_raw_from_sgl -> (_printk, sg_miter_stop, mpi_alloc, sg_nents_for_len, sg_miter_next, sg_miter_start)
+mpi_scanval -> (mpi_alloc, mpi_normalize, mpi_fromstr, mpi_free)
+mpi_write_to_sgl -> (sg_nents_for_len, sg_miter_next, sg_miter_start, sg_miter_stop)

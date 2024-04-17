@@ -1,0 +1,6 @@
+arch/x86/kernel/fpu/regset.o
+convert_from_fxsr -> (__convert_from_fxsr)
+fpregs_get -> (__convert_from_fxsr, fpu_sync_fpstate, copy_xstate_to_uabi_buf)
+xfpregs_get -> (fpu_sync_fpstate, copy_xstate_to_uabi_buf)
+xstateregs_get -> (fpu_sync_fpstate, copy_xstate_to_uabi_buf)
+xstateregs_set -> (copy_uabi_from_kernel_to_xstate, vfree, vmalloc, _copy_from_user)

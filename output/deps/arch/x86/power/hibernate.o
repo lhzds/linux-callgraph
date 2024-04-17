@@ -1,0 +1,5 @@
+arch/x86/power/hibernate.o
+arch_hibernation_header_restore -> (crc32_le, _printk)
+arch_hibernation_header_save -> (crc32_le)
+arch_resume_nosmt -> (cpuhp_smt_disable, cpu_hotplug_enable, cpu_hotplug_disable, cpuhp_smt_enable)
+relocate_restore_code -> (__flush_tlb_all, __memcpy, get_safe_page)

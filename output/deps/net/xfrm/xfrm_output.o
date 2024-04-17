@@ -1,0 +1,6 @@
+net/xfrm/xfrm_output.o
+xfrm_inner_extract_output -> (_printk, ip6_mtu, icmp6_send, xfrm_state_get_afinfo, ipv4_mtu, net_ratelimit, skb_gso_validate_network_len, __rcu_read_unlock, __icmp_send)
+xfrm_local_error -> (__rcu_read_unlock, xfrm_state_get_afinfo)
+xfrm_output -> (skb_checksum_help, __skb_gso_segment, xfrm_output_resume, kfree_skb_reason, __skb_ext_del, kfree_skb_list_reason)
+xfrm_output2 -> (xfrm_output_resume)
+xfrm_output_resume -> (nf_hook_slow, refcount_warn_saturate, xfrm_replay_overflow, kfree_skb_reason, _raw_spin_lock_bh, nf_conntrack_destroy, xfrm_state_check_expire, __rcu_read_unlock, _raw_spin_unlock_bh, ip_output, ip6_output, ktime_get_real_seconds, ip6_find_1stfragopt, xfrm_output2, ip6_dst_hoplimit, rcuref_get_slowpath, xfrm_inner_extract_output, __ip_select_ident, __rcu_read_lock, dst_release, pskb_expand_head)

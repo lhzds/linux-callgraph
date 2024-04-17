@@ -1,0 +1,3 @@
+lib/syscall.o
+collect_syscall -> (put_task_stack, refcount_warn_saturate)
+task_current_syscall -> (wait_task_inactive, collect_syscall)

@@ -1,0 +1,8 @@
+drivers/pci/remove.o
+pci_remove_bus -> (down_write, up_write, pcibios_remove_bus, device_unregister, pci_proc_detach_bus, pci_bus_release_busn_res)
+pci_remove_bus_device -> (down_write, put_device, pcie_aspm_exit_link_state, up_write, device_del, release_resource, pci_remove_bus_device, pci_remove_bus, pci_bridge_d3_update)
+pci_remove_root_bus -> (pci_remove_bus_device, device_del, pci_remove_bus)
+pci_stop_and_remove_bus_device -> (pci_remove_bus_device, pci_stop_bus_device)
+pci_stop_and_remove_bus_device_locked -> (pci_remove_bus_device, pci_unlock_rescan_remove, pci_lock_rescan_remove, pci_stop_bus_device)
+pci_stop_bus_device -> (device_release_driver, pci_pme_active, pci_stop_bus_device, pci_proc_detach_device, pci_remove_sysfs_dev_files)
+pci_stop_root_bus -> (device_release_driver, pci_stop_bus_device)

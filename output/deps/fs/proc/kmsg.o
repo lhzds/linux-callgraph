@@ -1,0 +1,6 @@
+fs/proc/kmsg.o
+kmsg_open -> (do_syslog)
+kmsg_poll -> (do_syslog)
+kmsg_read -> (do_syslog)
+kmsg_release -> (do_syslog)
+proc_kmsg_init -> (kmsg_read, kmsg_release, kmsg_open, proc_create, kmsg_poll, generic_file_llseek)

@@ -1,0 +1,4 @@
+drivers/firmware/efi/libstub/printk.o
+efi_char16_puts -> (__efi64_thunk)
+efi_printk -> (efi_puts, vsnprintf)
+efi_puts -> (efi_char16_puts)

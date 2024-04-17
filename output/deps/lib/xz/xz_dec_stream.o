@@ -1,0 +1,7 @@
+lib/xz/xz_dec_stream.o
+dec_index -> (crc32_le)
+dec_stream_footer -> (crc32_le, bcmp)
+index_update -> (crc32_le)
+xz_dec_end -> (kfree, xz_dec_lzma2_end)
+xz_dec_init -> (kmalloc_trace, kfree, xz_dec_lzma2_create, xz_dec_bcj_create)
+xz_dec_run -> (fill_temp, dec_index, bcmp, xz_dec_lzma2_run, crc32_le, index_update, xz_dec_bcj_reset, dec_stream_footer, crc32_validate, xz_dec_bcj_run, xz_dec_lzma2_reset)

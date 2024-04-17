@@ -1,0 +1,4 @@
+net/mac80211/fils_aead.o
+aes_s2v -> (crypto_shash_finup, crypto_shash_digest, __crypto_xor, crypto_shash_update)
+fils_decrypt_assoc_resp -> (sg_init_one, kfree_sensitive, bcmp, crypto_skcipher_decrypt, crypto_alloc_skcipher, crypto_shash_setkey, aes_s2v, crypto_skcipher_setkey, crypto_alloc_shash, cfg80211_find_elem_match, __kmalloc, crypto_destroy_tfm)
+fils_encrypt_assoc_req -> (crypto_skcipher_encrypt, sg_init_one, skb_put, kfree_sensitive, crypto_alloc_skcipher, crypto_shash_setkey, aes_s2v, crypto_skcipher_setkey, crypto_alloc_shash, kmemdup, cfg80211_find_elem_match, kfree, __kmalloc, crypto_destroy_tfm)

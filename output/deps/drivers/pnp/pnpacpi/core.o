@@ -1,0 +1,11 @@
+drivers/pnp/pnpacpi/core.o
+pnpacpi_add_device -> (put_device, pnp_alloc_dev, pnp_init_resources, pnpacpi_disable_resources, strcmp, pnpacpi_suspend, acpi_has_method, ispnpidacpi, pnpacpi_parse_allocated_resource, pnpacpi_parse_resource_option_data, pnpacpi_set_resources, pnpacpi_get_resources, pnp_add_id, pnp_add_device, pnpacpi_resume, strncpy, pnpacpi_can_wakeup, set_primary_fwnode)
+pnpacpi_add_device_handler -> (acpi_is_pnp_device, acpi_fetch_acpi_dev, pnpacpi_add_device)
+pnpacpi_can_wakeup -> (acpi_bus_can_wakeup, is_acpi_device_node)
+pnpacpi_disable_resources -> (acpi_evaluate_object, acpi_device_set_power, is_acpi_device_node)
+pnpacpi_get_resources -> (_dev_printk, pnpacpi_parse_allocated_resource)
+pnpacpi_init -> (_printk, pnpacpi_disable_resources, pnp_register_protocol, pnpacpi_set_resources, pnpacpi_add_device_handler, pnpacpi_get_resources, pnpacpi_suspend, acpi_get_devices, pnpacpi_resume, pnpacpi_can_wakeup)
+pnpacpi_resume -> (acpi_device_set_power, is_acpi_device_node, acpi_pm_set_device_wakeup)
+pnpacpi_set_resources -> (acpi_set_current_resources, _dev_printk, acpi_device_set_power, pnpacpi_encode_resources, acpi_has_method, pnpacpi_build_resource_template, is_acpi_device_node, kfree)
+pnpacpi_setup -> (strncmp)
+pnpacpi_suspend -> (acpi_device_set_power, is_acpi_device_node, acpi_pm_set_device_wakeup, acpi_pm_device_sleep_state)

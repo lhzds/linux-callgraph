@@ -1,0 +1,3 @@
+drivers/acpi/acpica/exstoren.o
+acpi_ex_resolve_object -> (acpi_ut_get_object_type_name, acpi_ut_get_type_name, acpi_ex_resolve_to_value, acpi_error)
+acpi_ex_store_object_to_object -> (acpi_ex_store_string_to_string, acpi_ut_get_object_type_name, acpi_ex_truncate_for32bit_table, acpi_ut_copy_iobject_to_iobject, acpi_ut_remove_reference, acpi_warning, acpi_ex_convert_to_target_type, acpi_ex_store_buffer_to_buffer)

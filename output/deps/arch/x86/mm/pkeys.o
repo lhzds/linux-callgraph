@@ -1,0 +1,7 @@
+arch/x86/mm/pkeys.o
+__arch_override_mprotect_pkey -> (arch_set_user_pkey_access)
+__execute_only_pkey -> (arch_set_user_pkey_access)
+create_init_pkru_value -> (init_pkru_read_file, default_llseek, init_pkru_write_file, debugfs_create_file)
+init_pkru_read_file -> (sprintf, simple_read_from_buffer)
+init_pkru_write_file -> (kstrtouint, _copy_from_user)
+setup_init_pkru -> (kstrtouint)

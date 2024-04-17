@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/display/dvo_ns2501.o
+ns2501_destroy -> (kfree)
+ns2501_dpms -> (___drm_dbg, i2c_transfer, msleep)
+ns2501_get_hw_state -> (___drm_dbg, i2c_transfer)
+ns2501_init -> (kmalloc_trace, ___drm_dbg, kfree, i2c_transfer)
+ns2501_mode_set -> (___drm_dbg, i2c_transfer)
+ns2501_mode_valid -> (___drm_dbg)

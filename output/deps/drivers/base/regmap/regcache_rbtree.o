@@ -1,0 +1,10 @@
+drivers/base/regmap/regcache_rbtree.o
+rbtree_debugfs_init -> (rbtree_open, seq_read, debugfs_create_file, single_release, seq_lseek)
+rbtree_open -> (single_open, rbtree_show)
+rbtree_show -> (rb_first, seq_printf, rb_next)
+regcache_rbtree_drop -> (__bitmap_clear, rb_first, rb_next)
+regcache_rbtree_exit -> (kfree, rb_first, rb_erase, rb_next)
+regcache_rbtree_init -> (kmalloc_trace, regcache_rbtree_write, regcache_rbtree_exit)
+regcache_rbtree_read -> (regcache_get_val)
+regcache_rbtree_sync -> (regmap_async_complete, rb_first, regcache_sync_block, rb_next)
+regcache_rbtree_write -> (rb_insert_color, kmalloc_trace, __bitmap_shift_left, regcache_set_val, kfree, krealloc, __kmalloc)

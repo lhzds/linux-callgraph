@@ -1,0 +1,4 @@
+fs/nfs/nfs3client.o
+nfs3_clone_server -> (nfs_sysfs_link_rpc_client, rpc_bind_new_program, nfs_clone_server)
+nfs3_create_server -> (nfs_create_server, nfs_sysfs_link_rpc_client, rpc_bind_new_program)
+nfs3_set_ds_client -> (nfs_get_client, rpc_ntop, nfs_init_timeout_values)

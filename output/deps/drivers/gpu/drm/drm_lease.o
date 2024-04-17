@@ -1,0 +1,11 @@
+drivers/gpu/drm/drm_lease.o
+_drm_lease_held -> (drm_master_put, drm_file_get_master, idr_find)
+_drm_lease_revoke -> (idr_get_next, __drm_dev_dbg, idr_remove)
+drm_lease_destroy -> (mutex_lock, __drm_dev_dbg, drm_sysfs_lease_event, mutex_unlock, drm_master_put, idr_remove)
+drm_lease_filter_crtcs -> (mutex_lock, mutex_unlock, drm_master_put, drm_file_get_master, idr_find)
+drm_lease_held -> (mutex_lock, mutex_unlock, drm_master_put, drm_file_get_master, idr_find)
+drm_lease_revoke -> (_drm_lease_revoke, mutex_lock, mutex_unlock)
+drm_mode_create_lease_ioctl -> (drm_master_create, mutex_lock, __drm_dev_dbg, drm_master_get, dentry_open, idr_alloc, drm_master_put, drm_mode_object_lease_required, idr_find, memdup_user, ___drm_dbg, mutex_unlock, idr_destroy, drm_mode_object_put, drm_mode_object_find, fd_install, __kmalloc, idr_get_next, put_unused_fd, kfree, drm_file_get_master, get_unused_fd_flags)
+drm_mode_get_lease_ioctl -> (idr_get_next, ___drm_dbg, mutex_lock, __drm_dev_dbg, mutex_unlock, drm_master_put, drm_file_get_master)
+drm_mode_list_lessees_ioctl -> (mutex_lock, __drm_dev_dbg, mutex_unlock, drm_master_put, drm_file_get_master, radix_tree_tagged)
+drm_mode_revoke_lease_ioctl -> (mutex_lock, __drm_dev_dbg, mutex_unlock, drm_master_put, _drm_lease_revoke, drm_file_get_master, idr_find)

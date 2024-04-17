@@ -1,0 +1,9 @@
+drivers/pci/pci_label.o
+acpi_attr_is_visible -> (acpi_check_dsm, is_acpi_device_node)
+acpi_index_show -> (dsm_get_label)
+dsm_get_label -> (sysfs_emit, utf16s_to_utf8s, acpi_evaluate_dsm, is_acpi_device_node, kfree)
+find_smbios_instance_string -> (strlen, sysfs_emit, dmi_find_device)
+index_show -> (find_smbios_instance_string)
+label_show -> (dsm_get_label)
+smbios_attr_is_visible -> (acpi_check_dsm, is_acpi_device_node, dmi_find_device)
+smbios_label_show -> (find_smbios_instance_string)

@@ -1,0 +1,7 @@
+drivers/pps/sysfs.o
+assert_show -> (sprintf)
+clear_show -> (sprintf)
+echo_show -> (sprintf)
+mode_show -> (sprintf)
+name_show -> (sprintf)
+path_show -> (sprintf)

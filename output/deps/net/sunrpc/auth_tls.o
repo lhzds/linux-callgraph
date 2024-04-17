@@ -1,0 +1,7 @@
+net/sunrpc/auth_tls.o
+rpc_tls_probe_call_prepare -> (rpc_call_start)
+tls_create -> (tls_create, refcount_warn_saturate, tls_lookup_cred, tls_probe, tls_destroy)
+tls_lookup_cred -> (tls_create, refcount_warn_saturate, rpcauth_wrap_req_encode, tls_match, tls_destroy_cred, tls_lookup_cred, tls_refresh, tls_probe, tls_validate, tls_destroy, rpcauth_unwrap_resp_decode, tls_marshal)
+tls_marshal -> (xdr_reserve_space)
+tls_probe -> (rpc_tls_probe_call_done, tls_create, rpcauth_wrap_req_encode, rpc_run_task, rpc_put_task, tls_match, tls_decode_probe, tls_destroy_cred, tls_lookup_cred, tls_refresh, rpc_tls_probe_call_prepare, tls_probe, tls_validate, tls_destroy, rpcauth_unwrap_resp_decode, tls_encode_probe, tls_marshal)
+tls_validate -> (bcmp, xdr_inline_decode)

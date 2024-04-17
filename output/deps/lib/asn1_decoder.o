@@ -1,0 +1,2 @@
+lib/asn1_decoder.o
+asn1_ber_decoder -> (_printk)

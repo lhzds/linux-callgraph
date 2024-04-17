@@ -1,0 +1,6 @@
+init/do_mounts_initrd.o
+create_dev -> (init_unlink, init_mknod)
+early_initrd -> (early_initrdmem)
+early_initrdmem -> (memparse)
+initrd_load -> (init_unlink, create_dev)
+kernel_do_mounts_initrd_sysctls_init -> (__register_sysctl_init, proc_dointvec)

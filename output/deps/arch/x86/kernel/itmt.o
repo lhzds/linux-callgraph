@@ -1,0 +1,4 @@
+arch/x86/kernel/itmt.o
+sched_clear_itmt_support -> (mutex_unlock, rebuild_sched_domains, mutex_lock, unregister_sysctl_table)
+sched_itmt_update_handler -> (mutex_unlock, rebuild_sched_domains, mutex_lock, proc_dointvec_minmax)
+sched_set_itmt_support -> (rebuild_sched_domains, mutex_lock, mutex_unlock, register_sysctl, sched_itmt_update_handler)

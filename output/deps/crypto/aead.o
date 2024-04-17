@@ -1,0 +1,11 @@
+crypto/aead.o
+aead_register_instance -> (crypto_register_instance, crypto_alg_extsize, crypto_aead_show, crypto_aead_init_tfm, crypto_aead_free_instance)
+crypto_aead_init_tfm -> (crypto_aead_exit_tfm)
+crypto_aead_setkey -> (kfree, __kmalloc)
+crypto_aead_show -> (seq_printf)
+crypto_alloc_aead -> (crypto_alg_extsize, crypto_aead_show, crypto_aead_init_tfm, crypto_alloc_tfm_node, crypto_aead_free_instance)
+crypto_grab_aead -> (crypto_grab_spawn, crypto_alg_extsize, crypto_aead_show, crypto_aead_init_tfm, crypto_aead_free_instance)
+crypto_register_aead -> (crypto_alg_extsize, crypto_aead_show, crypto_register_alg, crypto_aead_init_tfm, crypto_aead_free_instance)
+crypto_register_aeads -> (crypto_unregister_alg, crypto_alg_extsize, crypto_aead_show, crypto_register_alg, crypto_aead_init_tfm, crypto_aead_free_instance)
+crypto_unregister_aead -> (crypto_unregister_alg)
+crypto_unregister_aeads -> (crypto_unregister_alg)

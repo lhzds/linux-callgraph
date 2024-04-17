@@ -1,0 +1,2 @@
+drivers/i2c/i2c_boardinfo.o
+i2c_register_board_info -> (down_write, up_write, kmalloc_trace, kmemdup, kfree)

@@ -1,0 +1,9 @@
+block/badblocks.o
+ack_all_badblocks -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+badblocks_clear -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+badblocks_exit -> (devm_kfree, kfree)
+badblocks_init -> (kmalloc_trace)
+badblocks_set -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+badblocks_show -> (snprintf)
+badblocks_store -> (badblocks_set, sscanf)
+devm_init_badblocks -> (kmalloc_trace, devm_kmalloc)

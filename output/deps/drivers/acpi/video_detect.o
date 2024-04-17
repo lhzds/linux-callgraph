@@ -1,0 +1,4 @@
+drivers/acpi/video_detect.o
+__acpi_video_get_backlight_type -> (acpi_osi_is_win8, mutex_lock, video_detect_force_vendor, strcmp, mutex_unlock, dmi_check_system, wmi_evaluate_method, acpi_walk_namespace, video_detect_force_video, video_detect_force_native, find_video, prefer_native_over_acpi_video)
+find_video -> (pci_dev_put, acpi_is_video_device, acpi_get_pci_dev, acpi_fetch_acpi_dev, acpi_match_device_ids)
+prefer_native_over_acpi_video -> (acpi_osi_is_win8, acpi_dev_found)

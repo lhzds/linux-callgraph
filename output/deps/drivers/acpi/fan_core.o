@@ -1,0 +1,10 @@
+drivers/acpi/fan_core.o
+acpi_fan_driver_exit -> (platform_driver_unregister, acpi_fan_resume, acpi_fan_probe, acpi_fan_suspend, acpi_fan_remove)
+acpi_fan_driver_init -> (acpi_fan_resume, acpi_fan_probe, acpi_fan_suspend, __platform_driver_register, acpi_fan_remove)
+acpi_fan_get_fst -> (_dev_err, acpi_evaluate_object, kfree)
+acpi_fan_probe -> (acpi_device_update_power, sort, fan_get_max_state, acpi_evaluate_object, acpi_fan_delete_attributes, acpi_fan_speed_cmp, strncmp, acpi_has_method, kfree, _dev_err, fan_set_cur_state, is_acpi_device_node, sysfs_create_link, thermal_cooling_device_register, acpi_fan_create_attributes, fan_get_cur_state, acpi_extract_package, devm_kmalloc)
+acpi_fan_remove -> (acpi_fan_delete_attributes, sysfs_remove_link, is_acpi_device_node, thermal_cooling_device_unregister)
+acpi_fan_resume -> (_dev_err, acpi_device_update_power, is_acpi_device_node)
+acpi_fan_suspend -> (acpi_device_set_power, is_acpi_device_node)
+fan_get_cur_state -> (acpi_device_update_power, acpi_fan_get_fst)
+fan_set_cur_state -> (acpi_device_set_power, acpi_execute_simple_method)

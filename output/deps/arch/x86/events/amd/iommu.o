@@ -1,0 +1,11 @@
+arch/x86/events/amd/iommu.o
+_init_events_attrs -> (__kmalloc, _iommu_event_show)
+_iommu_cpumask_show -> (bitmap_print_to_pagebuf)
+_iommu_event_show -> (sprintf)
+amd_iommu_pc_init -> (_init_events_attrs, amd_iommu_pc_supported, amd_iommu_get_num_iommus, kfree, init_one_iommu)
+init_one_iommu -> (perf_iommu_event_init, devid_mask_show, amd_iommu_pc_get_max_counters, _iommu_cpumask_show, perf_iommu_del, domid_mask_show, perf_pmu_register, amd_iommu_pc_get_max_banks, domid_show, perf_iommu_start, kmalloc_trace, get_amd_iommu, csource_show, perf_iommu_stop, perf_iommu_add, pasid_show, _printk, snprintf, pasid_mask_show, perf_iommu_read, devid_show, kfree)
+perf_iommu_add -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, perf_iommu_start)
+perf_iommu_del -> (perf_event_update_userpage, perf_iommu_stop, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+perf_iommu_read -> (amd_iommu_pc_get_reg)
+perf_iommu_start -> (perf_event_update_userpage, amd_iommu_pc_set_reg)
+perf_iommu_stop -> (amd_iommu_pc_set_reg, amd_iommu_pc_get_reg)

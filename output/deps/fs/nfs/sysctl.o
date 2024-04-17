@@ -1,0 +1,3 @@
+fs/nfs/sysctl.o
+nfs_register_sysctl -> (register_sysctl, proc_dointvec_jiffies, proc_dointvec)
+nfs_unregister_sysctl -> (unregister_sysctl_table)

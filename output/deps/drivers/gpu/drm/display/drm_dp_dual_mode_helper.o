@@ -1,0 +1,9 @@
+drivers/gpu/drm/display/drm_dp_dual_mode_helper.o
+drm_dp_dual_mode_detect -> (__drm_dev_dbg, bcmp, kmalloc_trace, _dev_err, i2c_transfer, kfree)
+drm_dp_dual_mode_get_tmds_output -> (kmalloc_trace, kfree, __drm_dev_dbg, i2c_transfer)
+drm_dp_dual_mode_max_tmds_clock -> (kmalloc_trace, kfree, __drm_dev_dbg, i2c_transfer)
+drm_dp_dual_mode_read -> (i2c_transfer, kfree, __kmalloc)
+drm_dp_dual_mode_set_tmds_output -> (kmalloc_trace, kfree, __drm_dev_dbg, i2c_transfer)
+drm_dp_dual_mode_write -> (i2c_transfer, kfree, __kmalloc)
+drm_lspcon_get_mode -> (__drm_dev_dbg, usleep_range_state, kmalloc_trace, _dev_err, i2c_transfer, kfree)
+drm_lspcon_set_mode -> (__drm_dev_dbg, drm_lspcon_get_mode, kmalloc_trace, msleep, _dev_err, i2c_transfer, kfree)

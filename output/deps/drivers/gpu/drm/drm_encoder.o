@@ -1,0 +1,9 @@
+drivers/gpu/drm/drm_encoder.o
+__drm_encoder_init -> (kasprintf, drm_mode_object_unregister, kvasprintf, drm_mode_object_add)
+__drmm_encoder_alloc -> (__drmm_encoder_init, drmm_kmalloc)
+__drmm_encoder_init -> (__drmm_add_action_or_reset, drmm_encoder_alloc_release, __warn_printk, __drm_encoder_init, dev_driver_string)
+drm_encoder_cleanup -> (drm_mode_object_unregister, drm_bridge_detach, kfree)
+drm_encoder_init -> (__drm_encoder_init)
+drm_mode_getencoder -> (drm_lease_filter_crtcs, drm_modeset_unlock, drm_modeset_lock, drm_mode_object_find, drm_connector_list_iter_begin, drm_connector_list_iter_end, drm_lease_held, drm_connector_list_iter_next)
+drmm_encoder_alloc_release -> (drm_mode_object_unregister, drm_bridge_detach, kfree)
+drmm_encoder_init -> (__drmm_encoder_init)

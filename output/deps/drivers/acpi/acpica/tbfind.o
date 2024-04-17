@@ -1,0 +1,2 @@
+drivers/acpi/acpica/tbfind.o
+acpi_tb_find_table -> (acpi_ut_release_mutex, bcmp, strlen, acpi_ut_valid_nameseg, acpi_tb_validate_table, strncpy, acpi_ut_acquire_mutex)

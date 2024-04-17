@@ -1,0 +1,5 @@
+drivers/acpi/acpica/utids.o
+acpi_ut_execute_CID -> (acpi_ex_eisa_id_to_string, acpi_ut_remove_reference, strcpy, acpi_ut_evaluate_object, __kmalloc)
+acpi_ut_execute_CLS -> (acpi_ut_evaluate_object, kmalloc_trace, acpi_ut_remove_reference, acpi_ex_pci_cls_to_string)
+acpi_ut_execute_HID -> (acpi_ex_eisa_id_to_string, acpi_ut_remove_reference, strcpy, acpi_ut_evaluate_object, __kmalloc)
+acpi_ut_execute_UID -> (acpi_ut_remove_reference, strcpy, acpi_ut_evaluate_object, acpi_ex_integer_to_string, __kmalloc)

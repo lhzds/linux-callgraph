@@ -1,0 +1,3 @@
+fs/proc/meminfo.o
+meminfo_proc_show -> (arch_report_meminfo, si_meminfo, seq_printf, vmalloc_nr_pages, seq_write, seq_put_decimal_ull_width, si_mem_available, vm_memory_committed, vm_commit_limit, pcpu_nr_pages, si_swapinfo, hugetlb_report_meminfo)
+proc_meminfo_init -> (proc_create_single_data, meminfo_proc_show)

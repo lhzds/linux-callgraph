@@ -1,0 +1,6 @@
+kernel/power/process.o
+freeze_kernel_threads -> (thaw_kernel_threads, try_to_freeze_tasks)
+freeze_processes -> (try_to_freeze_tasks, __usermodehelper_set_disable_depth, pm_wakeup_clear, oom_killer_disable, static_key_slow_inc, __usermodehelper_disable, __msecs_to_jiffies, thaw_processes)
+thaw_kernel_threads -> (_printk, do_no_restart_syscall, _raw_read_unlock, schedule, _raw_read_lock, __thaw_task, thaw_workqueues)
+thaw_processes -> (static_key_slow_dec, _printk, __probestub_suspend_resume, oom_killer_enable, cpuset_wait_for_hotplug, do_no_restart_syscall, __usermodehelper_set_disable_depth, _raw_read_unlock, __traceiter_suspend_resume, schedule, __SCT__tp_func_suspend_resume, _raw_read_lock, __thaw_task, thaw_workqueues)
+try_to_freeze_tasks -> (freeze_task, _printk, do_no_restart_syscall, freeze_workqueues_begin, usleep_range_state, frozen, ktime_get_with_offset, _raw_read_unlock, freezing_slow_path, _raw_read_lock, pm_wakeup_pending, sched_show_task, freeze_workqueues_busy, show_freezable_workqueues, __msecs_to_jiffies)

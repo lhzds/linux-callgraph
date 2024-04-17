@@ -1,0 +1,2 @@
+arch/x86/kernel/rethook.o
+arch_rethook_trampoline_callback -> (rethook_trampoline_handler)

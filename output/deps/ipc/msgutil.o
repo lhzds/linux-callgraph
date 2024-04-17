@@ -1,0 +1,4 @@
+ipc/msgutil.o
+free_msg -> (security_msg_msg_free, kfree, __SCT__cond_resched)
+load_msg -> (_copy_from_user, security_msg_msg_free, security_msg_msg_alloc, __SCT__cond_resched, kfree, __kmalloc)
+store_msg -> (_copy_to_user)

@@ -1,0 +1,5 @@
+drivers/gpu/drm/i915/gem/i915_gem_internal.o
+__i915_gem_object_create_internal -> (i915_gem_object_set_cache_coherency, i915_gem_object_alloc, i915_gem_object_init, drm_gem_private_object_init)
+i915_gem_object_create_internal -> (i915_gem_object_put_pages_internal, i915_gem_object_set_cache_coherency, i915_gem_object_get_pages_internal, i915_gem_object_alloc, drm_gem_private_object_init, i915_gem_object_init)
+i915_gem_object_get_pages_internal -> (kmalloc_trace, sg_alloc_table, dma_max_mapping_size, kfree, i915_gem_gtt_prepare_pages, __i915_gem_object_set_pages, sg_free_table, __free_pages, alloc_pages)
+i915_gem_object_put_pages_internal -> (i915_gem_cpu_write_needs_clflush, kfree, i915_gem_gtt_finish_pages, sg_free_table, __free_pages)

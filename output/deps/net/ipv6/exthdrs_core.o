@@ -1,0 +1,3 @@
+net/ipv6/exthdrs_core.o
+ipv6_find_hdr -> (skb_copy_bits)
+ipv6_skip_exthdr -> (skb_copy_bits)

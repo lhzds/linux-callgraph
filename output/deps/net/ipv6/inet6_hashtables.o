@@ -1,0 +1,9 @@
+net/ipv6/inet6_hashtables.o
+__inet6_check_established -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, inet6_ehashfn, inet_twsk_deschedule_put)
+__inet6_lookup_established -> (refcount_warn_saturate, inet6_ehashfn, sock_gen_put)
+inet6_ehashfn -> (__do_once_done, __do_once_start, get_random_bytes)
+inet6_hash -> (__inet_hash)
+inet6_hash_connect -> (__inet_hash_connect, __inet6_check_established, secure_ipv6_port_ephemeral)
+inet6_lhash2_lookup -> (reuseport_select_sock, inet6_ehashfn)
+inet6_lookup -> (inet6_lookup_listener, refcount_warn_saturate, __inet6_lookup_established)
+inet6_lookup_listener -> (migrate_enable, reuseport_select_sock, migrate_disable, sched_clock, inet6_ehashfn, __rcu_read_lock, __rcu_read_unlock, ipv6_portaddr_hash, inet6_lhash2_lookup)

@@ -1,0 +1,3 @@
+fs/nls/nls_cp437.o
+exit_nls_cp437 -> (uni2char, unregister_nls, char2uni)
+init_nls_cp437 -> (uni2char, __register_nls, char2uni)

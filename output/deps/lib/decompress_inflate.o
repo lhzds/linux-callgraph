@@ -1,0 +1,3 @@
+lib/decompress_inflate.o
+__gunzip -> (zlib_inflate, kmalloc_trace, kmalloc_large, zlib_inflateInit2, zlib_inflate_workspacesize, zlib_inflateEnd, kfree, __kmalloc)
+gunzip -> (__gunzip)

@@ -1,0 +1,3 @@
+net/ipv4/tcp_plb.o
+tcp_plb_check_rehash -> (get_random_u32)
+tcp_plb_update_state_upon_rto -> (__get_random_u32_below)

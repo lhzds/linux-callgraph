@@ -1,0 +1,4 @@
+mm/page_vma_mapped.o
+huge_pte_lock -> (_raw_spin_lock)
+page_mapped_in_vma -> (page_vma_mapped_walk, PageHuge, hugetlb_basepage_index, _raw_spin_unlock)
+page_vma_mapped_walk -> (__pte_offset_map_lock, check_pte, _raw_spin_unlock, _raw_spin_lock, pte_offset_map_nolock, huge_pte_offset, huge_pte_lock)

@@ -1,0 +1,2 @@
+fs/nfs/getroot.o
+nfs_get_root -> (kstrdup, nfs_readdir, _raw_spin_lock, _raw_spin_unlock, nfs_opendir, nfs_llseek_dir, security_sb_set_mnt_opts, ihold, d_obtain_root, nfs_alloc_fattr_with_label, nfs_fhget, generic_read_dir, security_d_instantiate, nfs_fsync_dir, logfc, dput, security_sb_clone_mnt_opts, d_make_root, nfs_setsecurity, kfree, nfs_closedir)

@@ -1,0 +1,4 @@
+drivers/acpi/acpi_platform.o
+acpi_create_platform_device -> (acpi_get_first_physical_node, pci_device_shutdown, acpi_match_acpi_device, pci_device_remove, pci_device_probe, acpi_dma_supported, acpi_platform_resource_count, pci_find_resource, acpi_walk_resources, pci_bus_num_vf, pci_uevent, _dev_err, pci_dma_cleanup, acpi_dev_get_resources, acpi_get_node, platform_device_register_full, __kmalloc, pci_dma_configure, acpi_dev_free_resource_list, pci_bus_match, kfree)
+acpi_platform_device_remove_notify -> (put_device, bus_find_device, device_match_acpi_dev, platform_uevent, platform_probe, platform_match, platform_dma_cleanup, platform_remove, platform_device_unregister, platform_shutdown, platform_dma_configure)
+acpi_platform_init -> (acpi_reconfig_notifier_register, acpi_platform_device_remove_notify)

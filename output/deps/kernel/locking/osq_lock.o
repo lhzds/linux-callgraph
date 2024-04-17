@@ -1,0 +1,2 @@
+kernel/locking/osq_lock.o
+osq_unlock -> (osq_wait_next)

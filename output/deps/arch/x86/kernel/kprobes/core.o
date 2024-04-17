@@ -1,0 +1,13 @@
+arch/x86/kernel/kprobes/core.o
+__copy_instruction -> (_printk, insn_rip_relative, insn_decode, copy_from_kernel_nofault, __recover_optprobed_insn, get_kprobe)
+alloc_insn_page -> (set_memory_rox, module_alloc)
+arch_arm_kprobe -> (text_poke, text_poke_sync, perf_event_text_poke)
+arch_disarm_kprobe -> (text_poke, text_poke_sync, perf_event_text_poke)
+arch_populate_kprobe_blacklist -> (kprobe_add_area_blacklist)
+arch_prepare_kprobe -> (kprobe_emulate_call_indirect, kprobe_emulate_jcc, get_kprobe, __copy_instruction, __free_insn_slot, alternatives_text_reserved, kprobe_emulate_jmp, alloc_insn_page, insn_decode, text_poke, kprobe_emulate_loop, kprobe_emulate_jmp_indirect, perf_event_text_poke, __get_insn_slot, kallsyms_lookup_size_offset, kprobe_emulate_ifmodifiers, free_insn_page, copy_from_kernel_nofault, __recover_optprobed_insn, kprobe_emulate_call, kprobe_emulate_ret)
+arch_remove_kprobe -> (__free_insn_slot, free_insn_page, alloc_insn_page, perf_event_text_poke)
+can_boost -> (inat_get_opcode_attribute, search_exception_tables)
+kprobe_int3_handler -> (_printk, setup_detour_execution, kprobes_inc_nmissed_count, dump_kprobe, get_kprobe, setup_singlestep)
+recover_probed_instruction -> (copy_from_kernel_nofault, __recover_optprobed_insn, get_kprobe)
+reenter_kprobe -> (kprobes_inc_nmissed_count, _printk, dump_kprobe, setup_singlestep)
+setup_singlestep -> (setup_detour_execution)

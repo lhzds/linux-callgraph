@@ -1,0 +1,10 @@
+arch/x86/lib/insn.o
+insn_decode -> (insn_get_immediate)
+insn_get_displacement -> (insn_get_modrm)
+insn_get_immediate -> (__get_immv32, insn_get_displacement, __get_immv, __get_immptr)
+insn_get_length -> (insn_get_immediate)
+insn_get_modrm -> (inat_get_group_attribute, inat_get_last_prefix_id, insn_get_prefixes, insn_get_opcode)
+insn_get_opcode -> (inat_get_opcode_attribute, insn_get_prefixes, inat_get_avx_attribute, inat_get_last_prefix_id, inat_get_escape_attribute)
+insn_get_prefixes -> (inat_get_opcode_attribute)
+insn_get_sib -> (insn_get_modrm)
+insn_rip_relative -> (insn_get_modrm)

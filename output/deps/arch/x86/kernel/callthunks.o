@@ -1,0 +1,7 @@
+arch/x86/kernel/callthunks.o
+callthunks_patch_builtin_calls -> (_printk, mutex_lock, mutex_unlock, static_call_force_reinit, callthunks_setup)
+callthunks_patch_module_calls -> (mutex_unlock, _printk, patch_call, mutex_lock)
+callthunks_setup -> (_printk, patch_call)
+callthunks_translate_call_dest -> (_printk, error_entry, xen_error_entry, bcmp, __switch_to_asm, text_poke_copy_locked, __module_address, relocate_kernel, ret_from_fork, paranoid_entry)
+is_coretext -> (__module_address)
+patch_call -> (_printk, error_entry, xen_error_entry, bcmp, text_poke_early, __switch_to_asm, insn_decode, text_poke_copy_locked, is_coretext, relocate_kernel, ret_from_fork, paranoid_entry)

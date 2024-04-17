@@ -1,0 +1,4 @@
+block/partitions/efi.o
+alloc_read_gpt_entries -> (kfree, read_part_sector, __folio_put, __kmalloc)
+efi_partition -> (_printk, bcmp, __folio_put, snprintf, strlcat, kmalloc_trace, sprintf, kfree, is_gpt_valid, read_part_sector)
+is_gpt_valid -> (alloc_read_gpt_entries, __folio_put, crc32_le, kfree, read_part_sector, __kmalloc)

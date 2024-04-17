@@ -1,0 +1,6 @@
+drivers/tty/tty_mutex.o
+tty_lock -> (refcount_warn_saturate, mutex_lock)
+tty_lock_interruptible -> (tty_kref_put, refcount_warn_saturate, mutex_lock_interruptible)
+tty_lock_slave -> (refcount_warn_saturate, mutex_lock)
+tty_unlock -> (mutex_unlock, tty_kref_put)
+tty_unlock_slave -> (mutex_unlock, tty_kref_put)

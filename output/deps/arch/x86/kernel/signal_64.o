@@ -1,0 +1,3 @@
+arch/x86/kernel/signal_64.o
+__do_sys_rt_sigreturn -> (set_current_blocked, do_no_restart_syscall, _copy_from_user, fpu__restore_sig, signal_fault, restore_altstack)
+x64_setup_rt_frame -> (copy_siginfo_to_user, get_sigframe)

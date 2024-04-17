@@ -1,0 +1,7 @@
+drivers/acpi/evged.o
+acpi_ged_irq_handler -> (_dev_err, acpi_execute_simple_method)
+acpi_ged_request_interrupt -> (acpi_ged_irq_handler, acpi_dev_resource_interrupt, request_threaded_irq, _dev_err, is_acpi_device_node, sprintf, devm_kmalloc, acpi_get_handle)
+ged_driver_init -> (ged_remove, ged_shutdown, __platform_driver_register, ged_probe)
+ged_probe -> (acpi_ged_request_interrupt, acpi_walk_resources, _dev_err, is_acpi_device_node, devm_kmalloc)
+ged_remove -> (free_irq)
+ged_shutdown -> (free_irq)

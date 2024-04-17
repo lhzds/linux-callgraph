@@ -1,0 +1,10 @@
+fs/mpage.o
+__mpage_writepage -> (__folio_start_writeback, clean_bdev_aliases, folio_unlock, submit_bio, guard_bio_eod, write_boundary_block, __filemap_set_wb_err, bio_alloc_bioset, clean_buffers, block_write_full_page, bio_add_folio, mpage_write_end_io, errseq_set)
+clean_buffers -> (try_to_free_buffers)
+clean_page_buffers -> (clean_buffers)
+do_mpage_readpage -> (submit_bio, guard_bio_eod, mpage_read_end_io, block_read_full_folio, bio_alloc_bioset, folio_unlock, bio_add_folio, create_empty_buffers)
+mpage_read_end_io -> (folio_unlock, blk_status_to_errno, bio_put, bio_next_folio)
+mpage_read_folio -> (do_mpage_readpage, submit_bio, guard_bio_eod, mpage_read_end_io)
+mpage_readahead -> (__folio_put, submit_bio, guard_bio_eod, do_mpage_readpage, mpage_read_end_io, xa_load)
+mpage_write_end_io -> (bio_put, bio_next_folio, __filemap_set_wb_err, blk_status_to_errno, folio_end_writeback, errseq_set)
+mpage_writepages -> (write_cache_pages, submit_bio, guard_bio_eod, blk_finish_plug, __mpage_writepage, mpage_write_end_io, blk_start_plug)

@@ -1,0 +1,12 @@
+kernel/trace/trace_printk.o
+__ftrace_vbprintk -> (trace_vbprintk)
+__ftrace_vprintk -> (trace_vprintk)
+__trace_bprintk -> (trace_vbprintk)
+__trace_printk -> (trace_vprintk)
+ftrace_formats_open -> (t_next, t_start, security_locked_down, t_stop, t_show, seq_open)
+init_trace_printk -> (register_module_notifier, module_trace_bprintk_format_notify)
+init_trace_printk_function_export -> (seq_release, trace_create_file, ftrace_formats_open, seq_read, tracing_init_dentry, seq_lseek)
+module_trace_bprintk_format_notify -> (mutex_lock, strlen, trace_printk_init_buffers, strcmp, mutex_unlock, kmalloc_trace, strcpy, kfree, __kmalloc)
+t_show -> (seq_printf, seq_putc, seq_puts)
+t_start -> (mutex_lock)
+t_stop -> (mutex_unlock)

@@ -1,0 +1,4 @@
+net/ipv4/xfrm4_output.o
+__xfrm4_output -> (xfrm_output, ip_output, ip6_output)
+xfrm4_local_error -> (ip_local_error)
+xfrm4_output -> (nf_hook_slow, xfrm_output, __xfrm4_output, __rcu_read_lock, ip6_output, __rcu_read_unlock, ip_output)

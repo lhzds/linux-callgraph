@@ -1,0 +1,9 @@
+drivers/rtc/dev.o
+rtc_dev_compat_ioctl -> (rtc_irq_set_freq, mutex_unlock, capable, rtc_dev_ioctl, mutex_lock_interruptible)
+rtc_dev_fasync -> (fasync_helper)
+rtc_dev_init -> (_printk, alloc_chrdev_region)
+rtc_dev_ioctl -> (mutex_lock, rtc_read_offset, rtc_set_time, rtc_tm_to_time64, _copy_to_user, rtc_read_alarm, rtc_valid_tm, rtc_irq_set_state, rtc_set_offset, _copy_from_user, capable, mutex_lock_interruptible, rtc_update_irq_enable, rtc_alarm_irq_enable, mutex_unlock, rtc_irq_set_freq, rtc_read_time, rtc_time64_to_tm, rtc_set_alarm)
+rtc_dev_open -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+rtc_dev_prepare -> (rtc_dev_poll, rtc_dev_release, rtc_dev_fasync, rtc_dev_read, rtc_dev_ioctl, cdev_init, rtc_dev_open, rtc_dev_compat_ioctl)
+rtc_dev_read -> (_raw_spin_lock_irq, add_wait_queue, schedule, _raw_spin_unlock_irq, remove_wait_queue, default_wake_function)
+rtc_dev_release -> (mutex_unlock, rtc_update_irq_enable, rtc_irq_set_state, mutex_lock_interruptible)

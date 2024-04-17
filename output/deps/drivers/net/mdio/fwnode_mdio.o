@@ -1,0 +1,3 @@
+drivers/net/mdio/fwnode_mdio.o
+fwnode_mdiobus_phy_device_register -> (fwnode_handle_get, fwnode_property_read_u32_array, phy_device_register, fwnode_property_present, driver_deferred_probe_check_state, device_set_node, fwnode_irq_get, fwnode_handle_put)
+fwnode_mdiobus_register_phy -> (phy_device_create, is_acpi_data_node, phy_device_register, get_phy_device, fwnode_get_phy_id, phy_device_free, is_acpi_device_node, fwnode_handle_get, fwnode_property_match_string, fwnode_handle_put)

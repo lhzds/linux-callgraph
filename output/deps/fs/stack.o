@@ -1,0 +1,2 @@
+fs/stack.o
+fsstack_copy_attr_all -> (set_nlink)

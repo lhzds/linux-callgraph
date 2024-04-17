@@ -1,0 +1,8 @@
+net/mac80211/wep.o
+ieee80211_crypto_wep_decrypt -> (___pskb_trim, bcmp, __pskb_pull_tail, crc32_le, ieee80211_hdrlen, arc4_setkey, skb_pull, arc4_crypt, skb_trim)
+ieee80211_crypto_wep_encrypt -> (ieee80211_tx_set_protected, ieee80211_wep_encrypt, ieee80211_wep_add_iv)
+ieee80211_wep_add_iv -> (ieee80211_hdrlen, skb_push)
+ieee80211_wep_decrypt_data -> (crc32_le, arc4_setkey, bcmp, arc4_crypt)
+ieee80211_wep_encrypt -> (skb_put, crc32_le, arc4_setkey, arc4_crypt, ieee80211_wep_add_iv)
+ieee80211_wep_encrypt_data -> (crc32_le, arc4_setkey, arc4_crypt)
+ieee80211_wep_init -> (get_random_bytes)

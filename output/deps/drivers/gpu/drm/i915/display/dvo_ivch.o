@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/dvo_ivch.o
+ivch_destroy -> (kfree)
+ivch_dpms -> (___drm_dbg, ivch_reset, i2c_transfer, __const_udelay)
+ivch_dump_regs -> (___drm_dbg, i2c_transfer)
+ivch_get_hw_state -> (___drm_dbg, ivch_reset, i2c_transfer)
+ivch_init -> (___drm_dbg, kmalloc_trace, ivch_dump_regs, i2c_transfer, kfree)
+ivch_mode_set -> (___drm_dbg, ivch_reset, i2c_transfer)
+ivch_reset -> (___drm_dbg, i2c_transfer)

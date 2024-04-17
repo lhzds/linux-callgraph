@@ -1,0 +1,4 @@
+arch/x86/kernel/topology.o
+arch_register_cpu -> (register_cpu)
+arch_unregister_cpu -> (unregister_cpu)
+topology_init -> (register_cpu)

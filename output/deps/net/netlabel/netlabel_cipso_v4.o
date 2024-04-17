@@ -1,0 +1,8 @@
+net/netlabel/netlabel_cipso_v4.o
+netlbl_cipsov4_add -> (__nla_validate, nla_find, kmalloc_trace, cipso_v4_doi_free, cipso_v4_doi_add, security_current_getsecid_subj, kfree, __kmalloc)
+netlbl_cipsov4_genl_init -> (netlbl_cipsov4_add, netlbl_cipsov4_listall, netlbl_cipsov4_remove, netlbl_cipsov4_list, genl_register_family)
+netlbl_cipsov4_list -> (nla_put, netlbl_cipsov4_add, netlink_unicast, netlbl_cipsov4_listall, kfree_skb_reason, netlbl_cipsov4_remove, cipso_v4_doi_putdef, cipso_v4_doi_getdef, __alloc_skb, netlbl_cipsov4_list, __rcu_read_lock, __rcu_read_unlock, genlmsg_put)
+netlbl_cipsov4_listall -> (netlbl_cipsov4_listall_cb, cipso_v4_doi_walk)
+netlbl_cipsov4_listall_cb -> (nla_put, netlbl_cipsov4_add, netlbl_cipsov4_listall, netlbl_cipsov4_remove, netlbl_cipsov4_list, genlmsg_put, skb_trim)
+netlbl_cipsov4_remove -> (security_current_getsecid_subj, netlbl_cipsov4_remove_cb, cipso_v4_doi_remove, netlbl_domhsh_walk)
+netlbl_cipsov4_remove_cb -> (netlbl_domhsh_remove_entry)

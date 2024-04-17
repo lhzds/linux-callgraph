@@ -1,0 +1,11 @@
+arch/x86/kernel/cpu/mtrr/mtrr.o
+arch_phys_wc_add -> (mtrr_add_page, _printk, dump_stack, pat_enabled)
+arch_phys_wc_del -> (mtrr_del_page)
+mtrr_add -> (mtrr_add_page, _printk, dump_stack)
+mtrr_add_page -> (_printk, mutex_lock, pci_get_class, cpus_read_unlock, set_mtrr, mutex_unlock, mtrr_rendezvous_handler, generic_rebuild_map, pci_dev_put, mtrr_attrib_to_str, cpus_read_lock, stop_machine_cpuslocked)
+mtrr_bp_init -> (generic_get_free_region, _printk, mtrr_build_map, generic_have_wrcomb, generic_set_mtrr, do_trace_read_msr, mtrr_cleanup, generic_get_mtrr, get_mtrr_state, __traceiter_read_msr, generic_validate_add_page, __probestub_read_msr, __SCT__tp_func_read_msr)
+mtrr_del -> (mtrr_del_page, _printk, dump_stack)
+mtrr_del_page -> (_printk, mutex_lock, cpus_read_unlock, mutex_unlock, mtrr_rendezvous_handler, generic_rebuild_map, cpus_read_lock, stop_machine_cpuslocked)
+mtrr_init_finalize -> (mtrr_state_warn, mtrr_copy_map)
+mtrr_save_state -> (mtrr_save_fixed_ranges, smp_call_function_single)
+set_mtrr -> (mtrr_rendezvous_handler, generic_rebuild_map, stop_machine_cpuslocked)

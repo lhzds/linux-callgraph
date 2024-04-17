@@ -1,0 +1,3 @@
+kernel/time/vsyscall.o
+vdso_update_begin -> (_raw_spin_lock_irqsave)
+vdso_update_end -> (_raw_spin_unlock_irqrestore)

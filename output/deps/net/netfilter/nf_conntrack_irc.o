@@ -1,0 +1,4 @@
+net/netfilter/nf_conntrack_irc.o
+help -> (_raw_spin_lock_bh, _printk, nf_ct_expect_alloc, nf_ct_expect_related_report, bcmp, skb_copy_bits, strlen, simple_strtoul, nf_ct_helper_log, strncasecmp, net_ratelimit, nf_ct_expect_init, _raw_spin_unlock_bh, nf_ct_expect_put)
+nf_conntrack_irc_fini -> (nf_conntrack_helpers_unregister, kfree)
+nf_conntrack_irc_init -> (_printk, kmalloc_trace, nf_conntrack_helpers_register, help, nf_ct_helper_init, kfree)

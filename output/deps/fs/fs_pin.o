@@ -1,0 +1,6 @@
+fs/fs_pin.o
+group_pin_kill -> (__rcu_read_unlock, pin_kill, __rcu_read_lock)
+mnt_pin_kill -> (__rcu_read_unlock, pin_kill, __rcu_read_lock)
+pin_insert -> (_raw_spin_lock, _raw_spin_unlock)
+pin_kill -> (autoremove_wake_function, _raw_spin_lock_irq, schedule, _raw_spin_unlock_irq, __rcu_read_lock, __rcu_read_unlock)
+pin_remove -> (_raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irq, _raw_spin_unlock_irq, __wake_up_locked)

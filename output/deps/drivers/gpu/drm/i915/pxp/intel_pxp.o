@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/pxp/intel_pxp.o
+i915_gem_context_put -> (refcount_warn_saturate, i915_gem_context_release)
+intel_pxp_fini -> (intel_pxp_tee_component_fini, intel_engine_destroy_pinned_context, kfree)
+intel_pxp_invalidate -> (i915_gem_context_put, mutex_lock, refcount_warn_saturate, mutex_unlock, _raw_spin_lock_irq, i915_gem_engines_iter_next, _raw_spin_unlock_irq, intel_context_ban, intel_runtime_pm_put_unchecked, i915_gem_context_release)

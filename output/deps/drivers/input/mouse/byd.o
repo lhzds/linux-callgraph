@@ -1,0 +1,8 @@
+drivers/input/mouse/byd.o
+byd_clear_touch -> (byd_report_input, _raw_spin_lock_irq, _raw_spin_unlock_irq)
+byd_detect -> (ps2_command)
+byd_disconnect -> (timer_delete, kfree)
+byd_init -> (input_alloc_absinfo, byd_disconnect, init_timer_key, byd_process_byte, kmalloc_trace, ps2_command, input_set_abs_params, byd_clear_touch, byd_reconnect, psmouse_set_state, psmouse_reset)
+byd_process_byte -> (byd_report_input, mod_timer, _dev_warn)
+byd_reconnect -> (ps2_command, msleep, _dev_err, psmouse_set_state, psmouse_reset, byd_detect)
+byd_report_input -> (input_event)

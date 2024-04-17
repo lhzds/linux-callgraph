@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_color_mgmt.o
+drm_color_lut_check -> (___drm_dbg)
+drm_crtc_enable_color_mgmt -> (drm_object_attach_property)
+drm_mode_crtc_set_gamma_size -> (__kmalloc)
+drm_mode_gamma_get_ioctl -> (drm_mode_object_find, drm_modeset_unlock, _copy_to_user, drm_modeset_lock)
+drm_mode_gamma_set_ioctl -> (drm_modeset_lock_all_ctx, drm_property_create_blob, mutex_lock, refcount_warn_saturate, drm_modeset_acquire_fini, _copy_from_user, drm_modeset_backoff, mutex_unlock, drm_atomic_get_crtc_state, drm_atomic_state_alloc, drm_mode_object_find, drm_modeset_acquire_init, drm_modeset_drop_locks, drm_atomic_commit, drm_property_replace_blob, drm_mode_obj_find_prop_id, __drm_atomic_state_free, drm_property_blob_put)
+drm_plane_create_color_properties -> (drm_property_create_enum, drm_object_attach_property)

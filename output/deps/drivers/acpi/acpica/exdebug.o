@@ -1,0 +1,2 @@
+drivers/acpi/acpica/exdebug.o
+acpi_ex_do_debug_object -> (acpi_ut_get_reference_name, acpi_ut_dump_buffer, acpi_ut_get_object_type_name, acpi_os_get_timer, acpi_ut_get_type_name, acpi_os_printf, acpi_ut_valid_internal_object, acpi_ex_do_debug_object)

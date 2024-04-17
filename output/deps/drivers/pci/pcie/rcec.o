@@ -1,0 +1,5 @@
+drivers/pci/pcie/rcec.o
+pci_rcec_exit -> (kfree)
+pci_rcec_init -> (kmalloc_trace, pci_find_ext_capability, pci_read_config_dword)
+pcie_link_rcec -> (pci_walk_bus, link_rcec_helper, pci_find_bus)
+pcie_walk_rcec -> (pci_walk_bus, pci_find_bus, walk_rcec_helper)

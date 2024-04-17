@@ -1,0 +1,9 @@
+mm/workingset.o
+count_shadow_nodes -> (list_lru_count_one)
+scan_shadow_nodes -> (shadow_lru_isolate, list_lru_walk_one_irq)
+shadow_lru_isolate -> (_raw_spin_unlock, _raw_spin_lock_irq, list_lru_isolate, _raw_spin_trylock, __SCT__cond_resched, _raw_spin_unlock_irq, xa_delete_node, __mod_node_page_state, workingset_update_node, inode_add_lru)
+workingset_activation -> (__rcu_read_unlock, __rcu_read_lock)
+workingset_init -> (_printk, prealloc_shrinker, scan_shadow_nodes, __list_lru_init, register_shrinker_prepared, count_shadow_nodes, free_prealloced_shrinker)
+workingset_refault -> (node_page_state, mod_node_page_state, lru_note_cost_refault, __rcu_read_lock, __rcu_read_unlock)
+workingset_test_recent -> (node_page_state)
+workingset_update_node -> (list_lru_del, list_lru_add, __mod_node_page_state)

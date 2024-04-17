@@ -1,0 +1,5 @@
+net/sunrpc/auth_gss/gss_krb5_mech.o
+cleanup_kerberos_module -> (gss_krb5_delete_sec_context, gss_krb5_get_mic, gss_krb5_import_sec_context, gss_krb5_verify_mic, gss_mech_unregister, gss_krb5_unwrap, gss_krb5_wrap)
+gss_krb5_delete_sec_context -> (kfree, crypto_destroy_tfm)
+gss_krb5_import_sec_context -> (kmalloc_trace, kfree)
+init_kerberos_module -> (_printk, gss_krb5_delete_sec_context, gss_krb5_get_mic, gss_mech_register, gss_krb5_import_sec_context, gss_krb5_verify_mic, gss_krb5_unwrap, gss_krb5_wrap)

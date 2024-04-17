@@ -1,0 +1,5 @@
+kernel/task_work.o
+task_work_add -> (wake_up_state, kick_process)
+task_work_cancel -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+task_work_cancel_match -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+task_work_run -> (_raw_spin_lock_irq, _raw_spin_unlock_irq, __SCT__cond_resched)

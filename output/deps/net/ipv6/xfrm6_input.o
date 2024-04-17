@@ -1,0 +1,8 @@
+net/ipv6/xfrm6_input.o
+xfrm6_input_addr -> (xfrm_state_lookup_byaddr, refcount_warn_saturate, __xfrm_state_destroy, _raw_spin_unlock, _raw_spin_lock, xfrm_audit_state_notfound_simple, xfrm_state_check_expire, secpath_set)
+xfrm6_rcv -> (xfrm_input)
+xfrm6_rcv_spi -> (xfrm_input)
+xfrm6_rcv_tnl -> (xfrm_input)
+xfrm6_transport_finish -> (nf_hook_slow, ip6_rcv_finish, csum_partial, xfrm6_transport_finish2, __rcu_read_lock, xfrm_trans_queue, __rcu_read_unlock, kfree_skb_reason)
+xfrm6_transport_finish2 -> (ip6_rcv_finish, kfree_skb_reason, xfrm_trans_queue)
+xfrm6_udp_encap_rcv -> (__pskb_pull_tail, xfrm4_udp_encap_rcv, xfrm6_rcv_encap, pskb_expand_head, kfree_skb_reason)

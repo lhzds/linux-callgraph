@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/gt/uc/intel_uc_debugfs.o
+intel_uc_debugfs_register -> (intel_guc_debugfs_register, uc_usage_open, seq_read, intel_gt_debugfs_register_files, single_release, debugfs_create_dir, intel_huc_debugfs_register, seq_lseek)
+uc_usage_open -> (uc_usage_show, single_open)
+uc_usage_show -> (__drm_puts_seq_file, __drm_printfn_seq_file, drm_printf)

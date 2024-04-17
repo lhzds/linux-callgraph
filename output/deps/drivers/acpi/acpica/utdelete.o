@@ -1,0 +1,6 @@
+drivers/acpi/acpica/utdelete.o
+acpi_ut_add_reference -> (acpi_ut_valid_internal_object, acpi_ut_update_object_reference)
+acpi_ut_delete_internal_object_list -> (kfree, acpi_ut_valid_internal_object, acpi_ut_update_object_reference)
+acpi_ut_remove_reference -> (acpi_ut_valid_internal_object, acpi_ut_update_object_reference)
+acpi_ut_update_object_reference -> (acpi_ut_delete_generic_state, acpi_exception, acpi_ut_pop_generic_state, acpi_ut_create_update_state_and_push, acpi_ut_update_ref_count)
+acpi_ut_update_ref_count -> (acpi_ex_unlink_mutex, acpi_os_acquire_lock, acpi_ev_delete_gpe_block, acpi_ut_update_object_reference, acpi_ns_get_secondary_object, acpi_error, acpi_ut_remove_reference, acpi_os_delete_semaphore, acpi_ut_valid_internal_object, acpi_warning, acpi_ut_remove_address_range, kfree, acpi_os_release_lock, acpi_ut_delete_object_desc)

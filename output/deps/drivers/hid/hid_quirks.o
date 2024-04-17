@@ -1,0 +1,5 @@
+drivers/hid/hid_quirks.o
+hid_ignore -> (hid_match_id, strncmp, strlen, strcmp)
+hid_lookup_quirk -> (hid_match_id, mutex_lock, mutex_unlock, hid_match_one_id)
+hid_quirks_exit -> (mutex_lock, kfree, mutex_unlock)
+hid_quirks_init -> (_printk, mutex_lock, hid_match_one_id, mutex_unlock, kmalloc_trace, sscanf, kfree)

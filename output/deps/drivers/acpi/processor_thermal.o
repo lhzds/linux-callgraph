@@ -1,0 +1,9 @@
+drivers/acpi/processor_thermal.o
+acpi_processor_thermal_exit -> (sysfs_remove_link, thermal_cooling_device_unregister)
+acpi_processor_thermal_init -> (processor_get_max_state, processor_set_cur_state, thermal_cooling_device_unregister, _dev_err, processor_get_cur_state, sysfs_create_link, thermal_cooling_device_register, sysfs_remove_link)
+acpi_thermal_cpufreq_exit -> (thermal_cooling_device_update, freq_qos_remove_request)
+acpi_thermal_cpufreq_init -> (_printk, freq_qos_add_request, thermal_cooling_device_update)
+cpufreq_set_cur_state -> (cpufreq_cpu_get, _printk, cpufreq_cpu_put, freq_qos_update_request)
+processor_get_cur_state -> (cpufreq_cpu_get, cpufreq_cpu_put)
+processor_get_max_state -> (cpufreq_cpu_get, cpufreq_cpu_put)
+processor_set_cur_state -> (acpi_processor_set_throttling, cpufreq_cpu_put, cpufreq_cpu_get, cpufreq_set_cur_state)

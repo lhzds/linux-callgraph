@@ -1,0 +1,6 @@
+net/sunrpc/auth_gss/gss_rpc_upcall.o
+clear_gssp_clnt -> (mutex_unlock, mutex_lock, rpc_shutdown_client)
+gssp_accept_sec_context_upcall -> (mutex_lock, refcount_warn_saturate, mutex_unlock, kmalloc_trace, kfree, gssx_enc_accept_sec_context, gssx_dec_accept_sec_context, __rcu_read_lock, kmemdup_nul, rpc_release_client, strchr, __rcu_read_unlock, __free_pages, rpc_call_sync, alloc_pages)
+gssp_free_upcall_data -> (groups_free, gss_mech_put, kfree)
+init_gssp_clnt -> (__mutex_init)
+set_gssp_clnt -> (mutex_lock, mutex_unlock, rpc_create, gssx_enc_accept_sec_context, gssx_dec_accept_sec_context, __rcu_read_lock, rpc_shutdown_client, __rcu_read_unlock)

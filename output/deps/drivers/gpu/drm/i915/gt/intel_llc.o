@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gt/intel_llc.o
+intel_llc_enable -> (cpufreq_cpu_get, cpufreq_cpu_put, intel_rps_get_min_raw_freq, snb_pcode_write_timeout, intel_rps_get_max_raw_freq)

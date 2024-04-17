@@ -1,0 +1,4 @@
+arch/x86/kernel/cpu/hygon.o
+bsp_init_hygon -> (_printk, do_trace_read_msr, __traceiter_read_msr, __probestub_read_msr, use_mwaitx_delay, __SCT__tp_func_read_msr)
+early_init_hygon -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+init_hygon -> (check_null_seg_clears_base, clear_cpu_cap, kvm_setup_secondary_clock, cacheinfo_hygon_init_llc_id, hard_smp_processor_id, do_trace_read_msr, x86_init_noop, detect_extended_topology, cpu_detect_cache_sizes, early_init_hygon, init_hygon_cacheinfo, __traceiter_read_msr, numa_set_node, __probestub_read_msr, numa_cpu_node, setup_secondary_APIC_clock, msr_set_bit, __SCT__tp_func_read_msr)

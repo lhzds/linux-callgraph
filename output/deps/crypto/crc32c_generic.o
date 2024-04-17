@@ -1,0 +1,6 @@
+crypto/crc32c_generic.o
+chksum_digest -> (__crc32c_le)
+chksum_finup -> (__crc32c_le)
+chksum_update -> (__crc32c_le)
+crc32c_mod_fini -> (chksum_final, chksum_setkey, chksum_init, chksum_digest, chksum_update, crc32c_cra_init, chksum_finup, crypto_unregister_shash)
+crc32c_mod_init -> (chksum_final, chksum_setkey, chksum_init, chksum_digest, chksum_update, crc32c_cra_init, chksum_finup, crypto_register_shash)

@@ -1,0 +1,2 @@
+arch/x86/lib/kaslr.o
+kaslr_get_random_long -> (early_printk)

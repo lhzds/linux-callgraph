@@ -1,0 +1,9 @@
+kernel/trace/pid_list.o
+pid_list_refill_irq -> (_raw_spin_lock, kmalloc_trace, _raw_spin_unlock)
+trace_pid_list_alloc -> (pid_list_refill_irq, kmalloc_trace)
+trace_pid_list_clear -> (_find_first_bit, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+trace_pid_list_first -> (trace_pid_list_next)
+trace_pid_list_free -> (kfree, irq_work_sync)
+trace_pid_list_is_set -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+trace_pid_list_next -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, _find_next_bit)
+trace_pid_list_set -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, irq_work_queue)

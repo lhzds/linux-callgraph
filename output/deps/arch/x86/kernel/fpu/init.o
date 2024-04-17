@@ -1,0 +1,6 @@
+arch/x86/kernel/fpu/init.o
+fpu__init_cpu -> (native_write_cr0, cr4_update_irqsoff, fpu__init_cpu_xstate)
+fpu__init_system -> (fpu__init_system_early_generic, fpu__init_system_generic, fpu__init_cpu, fpstate_reset, fpu__init_system_xstate)
+fpu__init_system_early_generic -> (_printk, setup_clear_cpu_cap, fpu__probe_without_cpuid)
+fpu__init_system_generic -> (fpstate_init_user)
+fpu__probe_without_cpuid -> (_printk, native_write_cr0)

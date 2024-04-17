@@ -1,0 +1,2 @@
+kernel/locking/qspinlock.o
+queued_spin_lock_slowpath -> (__traceiter_contention_end, __traceiter_contention_begin, __SCT__tp_func_contention_end, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end)

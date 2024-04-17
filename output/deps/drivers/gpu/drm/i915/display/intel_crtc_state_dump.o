@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/display/intel_crtc_state_dump.o
+ilk_dump_csc -> (__drm_dev_dbg)
+intel_crtc_state_dump -> (hdmi_infoframe_log, __drm_dev_dbg, intel_crtc_is_bigjoiner_master, intel_vrr_vmax_vblank_start, intel_dpll_dump_hw_state, snprintf, drm_mode_vrefresh, ilk_dump_csc, vlv_dump_csc, drm_dp_vsc_sdp_log, print_hex_dump, intel_vrr_vmin_vblank_start, intel_crtc_is_bigjoiner_slave, intel_hdmi_infoframe_enable)
+vlv_dump_csc -> (__drm_dev_dbg)

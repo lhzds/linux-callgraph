@@ -1,0 +1,7 @@
+net/ipv6/sysctl_net_ipv6.o
+ipv6_sysctl_net_exit -> (kfree, unregister_net_sysctl_table)
+ipv6_sysctl_net_init -> (proc_rt6_multipath_hash_fields, proc_rt6_multipath_hash_policy, proc_dou8vec_minmax, proc_dointvec, kmemdup, ipv6_icmp_sysctl_init, proc_douintvec_minmax, register_net_sysctl, ipv6_route_sysctl_init, unregister_net_sysctl_table, kfree, proc_dointvec_jiffies, proc_dointvec_minmax, proc_doulongvec_minmax)
+ipv6_sysctl_register -> (register_pernet_subsys, proc_dointvec, ipv6_sysctl_net_exit, ipv6_sysctl_net_init, register_net_sysctl, proc_dointvec_minmax, unregister_net_sysctl_table)
+ipv6_sysctl_unregister -> (unregister_net_sysctl_table, unregister_pernet_subsys, ipv6_sysctl_net_exit, ipv6_sysctl_net_init)
+proc_rt6_multipath_hash_fields -> (call_netevent_notifiers, proc_douintvec_minmax)
+proc_rt6_multipath_hash_policy -> (proc_dou8vec_minmax, call_netevent_notifiers)

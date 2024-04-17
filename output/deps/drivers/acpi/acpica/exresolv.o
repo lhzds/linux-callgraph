@@ -1,0 +1,3 @@
+drivers/acpi/acpica/exresolv.o
+acpi_ex_resolve_multiple -> (acpi_ut_get_descriptor_name, acpi_ns_get_attached_object, acpi_error, acpi_ns_get_type, acpi_ut_remove_reference, acpi_ut_get_node_name, acpi_ds_method_data_get_value, acpi_ds_method_data_get_node)
+acpi_ex_resolve_to_value -> (acpi_ex_read_data_from_field, acpi_ds_get_package_arguments, acpi_ex_resolve_node_to_value, acpi_error, acpi_ut_remove_reference, acpi_ds_get_buffer_arguments, acpi_ds_method_data_get_value, acpi_ut_add_reference)

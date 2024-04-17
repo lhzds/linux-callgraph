@@ -1,0 +1,11 @@
+fs/efivarfs/super.o
+efivarfs_callback -> (iput, d_alloc, ucs2_as_utf8, sprintf, bcmp, strreplace, kmalloc_trace, efivar_variable_is_removable, efivarfs_valid_name, efivarfs_get_inode, strlen, __efivar_entry_get, ucs2_utf8size, __efivar_entry_add, d_add, __kmalloc, down_write, up_write, kfree)
+efivarfs_d_compare -> (strncasecmp, bcmp)
+efivarfs_d_hash -> (efivarfs_valid_name)
+efivarfs_destroy -> (kfree, efivar_entry_remove)
+efivarfs_evict_inode -> (clear_inode)
+efivarfs_fill_super -> (simple_lookup, efivarfs_evict_inode, efivarfs_callback, efivar_supports_writes, generic_delete_inode, efivarfs_destroy, efivarfs_d_hash, efivarfs_unlink, efivar_entry_iter, d_make_root, efivar_init, efivarfs_statfs, always_delete_dentry, efivar_is_available, efivarfs_create, efivarfs_d_compare, efivarfs_get_inode)
+efivarfs_get_tree -> (get_tree_single, efivarfs_fill_super)
+efivarfs_init_fs_context -> (efivarfs_get_tree)
+efivarfs_kill_sb -> (efivar_is_available, efivarfs_destroy, efivar_entry_iter, kill_litter_super)
+efivarfs_statfs -> (efivar_query_variable_info, efivar_reserved_space, efi_status_to_err)

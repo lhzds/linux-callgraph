@@ -1,0 +1,2 @@
+arch/x86/kernel/tsc_msr.o
+cpu_khz_from_msr -> (_printk, do_trace_read_msr, __traceiter_read_msr, __probestub_read_msr, x86_match_cpu, __SCT__tp_func_read_msr)

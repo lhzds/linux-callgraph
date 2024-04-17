@@ -1,0 +1,9 @@
+mm/mmu_gather.o
+__tlb_remove_page_size -> (__get_free_pages)
+tlb_finish_mmu -> (free_pages, tlb_flush_mmu)
+tlb_flush_mmu -> (tlb_remove_table_rcu, free_pages_and_swap_cache, tlb_flush_mmu_tlbonly, __SCT__cond_resched, call_rcu)
+tlb_flush_mmu_tlbonly -> (flush_tlb_mm_range, __mmu_notifier_invalidate_range)
+tlb_flush_rmaps -> (page_remove_rmap)
+tlb_remove_table -> (tlb_remove_table_rcu, tlb_remove_table_smp_sync, free_page_and_swap_cache, tlb_flush_mmu_tlbonly, __get_free_pages, call_rcu, smp_call_function)
+tlb_remove_table_rcu -> (free_pages, free_page_and_swap_cache)
+tlb_remove_table_sync_one -> (tlb_remove_table_smp_sync, smp_call_function)

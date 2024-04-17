@@ -1,0 +1,3 @@
+drivers/base/regmap/regcache_flat.o
+regcache_flat_exit -> (kfree)
+regcache_flat_init -> (__kmalloc)

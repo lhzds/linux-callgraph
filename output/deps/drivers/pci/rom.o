@@ -1,0 +1,5 @@
+drivers/pci/rom.o
+pci_disable_rom -> (pci_write_config_dword, pci_read_config_dword)
+pci_enable_rom -> (pcibios_resource_to_bus, pci_write_config_dword, pci_read_config_dword)
+pci_map_rom -> (pci_read_config_dword, pcibios_resource_to_bus, pci_assign_resource, iounmap, pci_write_config_dword, ioremap, _dev_info)
+pci_unmap_rom -> (iounmap, pci_write_config_dword, pci_read_config_dword)

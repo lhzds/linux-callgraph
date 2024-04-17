@@ -1,0 +1,3 @@
+drivers/firmware/efi/libstub/random.o
+efi_get_random_bytes -> (__efi64_thunk)
+efi_random_get_seed -> (get_efi_config_table, __efi64_thunk, memcpy, memset, efi_printk)

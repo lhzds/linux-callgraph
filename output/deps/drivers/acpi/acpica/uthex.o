@@ -1,0 +1,2 @@
+drivers/acpi/acpica/uthex.o
+acpi_ut_hex_to_ascii_char -> (acpi_ut_short_shift_right)

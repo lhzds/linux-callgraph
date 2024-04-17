@@ -1,0 +1,4 @@
+net/netlabel/netlabel_addrlist.o
+netlbl_af4list_audit_addr -> (audit_log_format)
+netlbl_af6list_add -> (memcmp)
+netlbl_af6list_audit_addr -> (audit_log_format)

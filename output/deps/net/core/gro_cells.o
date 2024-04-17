@@ -1,0 +1,6 @@
+net/core/gro_cells.o
+gro_cell_poll -> (napi_gro_receive, napi_complete_done)
+gro_cells_destroy -> (free_percpu, percpu_free_defer_callback, kmalloc_trace, call_rcu, __netif_napi_del, napi_disable, synchronize_rcu_expedited, kfree_skb_reason)
+gro_cells_init -> (netif_napi_add_weight, gro_cell_poll, __alloc_percpu, napi_enable)
+gro_cells_receive -> (__napi_schedule, netdev_core_stats_alloc, napi_schedule_prep, netif_rx, __rcu_read_lock, __rcu_read_unlock, kfree_skb_reason)
+percpu_free_defer_callback -> (free_percpu, kfree)

@@ -1,0 +1,8 @@
+kernel/trace/trace_sched_switch.o
+probe_sched_switch -> (tracing_record_taskinfo_sched_switch)
+probe_sched_wakeup -> (tracing_record_taskinfo_sched_switch)
+tracing_start_cmdline_record -> (tracing_start_sched_switch)
+tracing_start_sched_switch -> (_printk, tracepoint_probe_register, mutex_lock, __SCT__tp_func_sched_switch, mutex_unlock, tracepoint_probe_unregister, __traceiter_sched_switch, __traceiter_sched_wakeup_new, __SCT__tp_func_sched_wakeup_new, __probestub_sched_switch, __probestub_sched_wakeup_new, __traceiter_sched_wakeup, __SCT__tp_func_sched_wakeup, probe_sched_wakeup, probe_sched_switch, __probestub_sched_wakeup)
+tracing_start_tgid_record -> (tracing_start_sched_switch)
+tracing_stop_cmdline_record -> (__SCT__tp_func_sched_switch, mutex_lock, mutex_unlock, tracepoint_probe_unregister, __traceiter_sched_switch, __traceiter_sched_wakeup_new, __SCT__tp_func_sched_wakeup_new, __probestub_sched_switch, __probestub_sched_wakeup_new, __traceiter_sched_wakeup, __SCT__tp_func_sched_wakeup, probe_sched_wakeup, probe_sched_switch, __probestub_sched_wakeup)
+tracing_stop_tgid_record -> (__SCT__tp_func_sched_switch, mutex_lock, mutex_unlock, tracepoint_probe_unregister, __traceiter_sched_switch, __traceiter_sched_wakeup_new, __SCT__tp_func_sched_wakeup_new, __probestub_sched_switch, __probestub_sched_wakeup_new, __traceiter_sched_wakeup, __SCT__tp_func_sched_wakeup, probe_sched_wakeup, probe_sched_switch, __probestub_sched_wakeup)

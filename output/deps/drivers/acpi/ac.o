@@ -1,0 +1,9 @@
+drivers/acpi/ac.o
+acpi_ac_add -> (_printk, acpi_handle_printk, power_supply_register, acpi_format_exception, acpi_evaluate_integer, kmalloc_trace, get_ac_property, register_acpi_notifier, acpi_ac_battery_notify, kfree)
+acpi_ac_battery_notify -> (acpi_evaluate_integer, acpi_handle_printk, acpi_format_exception, strcmp)
+acpi_ac_exit -> (acpi_bus_unregister_driver, acpi_ac_remove, acpi_ac_resume, acpi_ac_add, acpi_ac_notify)
+acpi_ac_init -> (acpi_quirk_skip_acpi_ac_and_battery, ac_only_quirk, thinkpad_e530_quirk, dmi_check_system, acpi_ac_remove, acpi_ac_resume, acpi_ac_add, acpi_ac_notify, acpi_bus_register_driver)
+acpi_ac_notify -> (acpi_format_exception, acpi_evaluate_integer, acpi_bus_generate_netlink_event, acpi_notifier_call_chain, msleep, acpi_handle_printk, kobject_uevent)
+acpi_ac_remove -> (kfree, power_supply_unregister, unregister_acpi_notifier)
+acpi_ac_resume -> (acpi_evaluate_integer, acpi_handle_printk, kobject_uevent, acpi_format_exception)
+get_ac_property -> (acpi_evaluate_integer, acpi_handle_printk, acpi_format_exception, power_supply_get_drvdata)

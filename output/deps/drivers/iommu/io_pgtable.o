@@ -1,0 +1,3 @@
+drivers/iommu/io_pgtable.o
+alloc_io_pgtable_ops -> (v2_free_pgtable, v1_free_pgtable, v2_alloc_pgtable, v1_alloc_pgtable)
+free_io_pgtable_ops -> (v2_free_pgtable, v1_free_pgtable, v2_alloc_pgtable, v1_alloc_pgtable)

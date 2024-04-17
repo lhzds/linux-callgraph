@@ -1,0 +1,3 @@
+net/ethtool/linkstate.o
+linkstate_fill_reply -> (nla_put)
+linkstate_prepare_data -> (mutex_lock, mutex_unlock, ethnl_ops_complete, ethnl_ops_begin, __ethtool_get_link)

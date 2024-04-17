@@ -1,0 +1,7 @@
+kernel/module/sysfs.o
+add_notes_attrs -> (kobject_create_and_add, sysfs_remove_bin_file, kobject_put, module_notes_read, sysfs_create_bin_file, kfree, __kmalloc)
+add_sect_attrs -> (kstrdup, module_sect_read, sysfs_create_group, kfree, __kmalloc)
+init_param_lock -> (__mutex_init)
+mod_sysfs_setup -> (kobject_create_and_add, mutex_lock, kobject_put, add_notes_attrs, module_kobj_release, sysfs_remove_link, sysfs_remove_file_ns, sysfs_create_file_ns, kobject_init_and_add, add_sect_attrs, _printk, module_param_sysfs_setup, mutex_unlock, module_param_sysfs_remove, __kmalloc, wait_for_completion, sysfs_create_link, kset_find_obj, kfree)
+mod_sysfs_teardown -> (mutex_lock, sysfs_remove_group, sysfs_remove_bin_file, mutex_unlock, wait_for_completion, module_param_sysfs_remove, kobject_put, sysfs_remove_link, kfree, sysfs_remove_file_ns)
+module_sect_read -> (scnprintf, kallsyms_show_value)

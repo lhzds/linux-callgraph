@@ -1,0 +1,3 @@
+drivers/base/module.o
+module_add_driver -> (kobject_create_and_add, mutex_lock, mutex_unlock, kobject_put, kasprintf, sysfs_create_link, kset_find_obj, kfree)
+module_remove_driver -> (sysfs_remove_link, kfree, kasprintf)

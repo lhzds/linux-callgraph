@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gem/i915_gem_ttm_move.o
+__i915_ttm_move -> (__SCT__might_resched, refcount_warn_saturate, dma_fence_add_callback, i915_gem_get_pat_index, get_driver_name, i915_ttm_resource_get_st, intel_context_migrate_clear, dma_fence_wait_timeout, kmalloc_trace, __memcpy_cb, intel_context_migrate_copy, get_timeline_name, i915_request_wait, i915_ttm_resource_mappable, dma_fence_release, __intel_wakeref_get_first, i915_gem_object_needs_ccs_pages, drm_gem_object_free, i915_deps_sync, i915_ttm_memcpy_init, dma_fence_init, ttm_move_memcpy, kfree, __intel_wakeref_put_last)
+__memcpy_cb -> (irq_work_queue, queue_work_on, __memcpy_work, __memcpy_irq_work)
+__memcpy_irq_work -> (refcount_warn_saturate, dma_fence_signal, dma_fence_release, drm_gem_object_free)
+__memcpy_work -> (refcount_warn_saturate, dma_fence_signal, intel_gt_set_wedged, drm_gem_object_free, ttm_move_memcpy, dma_fence_release)
+dma_fence_put -> (refcount_warn_saturate, dma_fence_release)
+i915_gem_obj_copy_ttm -> (i915_deps_add_resv, i915_ttm_resource_get_st, dma_fence_put, i915_refct_sgt_put, i915_deps_init, i915_deps_fini, dma_resv_reserve_fences, __i915_ttm_move, dma_resv_add_fence)
+i915_refct_sgt_put -> (refcount_warn_saturate)
+i915_ttm_adjust_gem_after_move -> (i915_gem_object_set_cache_coherency, i915_gem_object_init_memory_region, i915_gem_object_release_memory_region, intel_region_to_ttm_type)
+i915_ttm_memcpy_init -> (i915_ttm_resource_get_st, refcount_warn_saturate, ttm_kmap_iter_tt_init, intel_memory_region_lookup, ttm_kmap_iter_iomap_init)
+i915_ttm_move -> (ttm_tt_populate, ttm_bo_move_accel_cleanup, i915_deps_init, i915_ttm_bo_destroy, i915_ttm_resource_get_st, dma_fence_wait_timeout, i915_ttm_adjust_gem_after_move, i915_gem_object_unbind, i915_deps_add_resv, ttm_bo_move_sync_cleanup, i915_ttm_purge, ttm_resource_free, i915_refct_sgt_put, __i915_ttm_move, __i915_gem_object_put_pages, i915_ttm_adjust_lru, dma_fence_put, i915_ttm_free_cached_io_rsgt, i915_deps_fini)
+i915_ttm_move_notify -> (__i915_gem_object_put_pages, i915_gem_object_unbind)

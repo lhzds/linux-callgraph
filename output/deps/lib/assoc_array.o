@@ -1,0 +1,11 @@
+lib/assoc_array.o
+assoc_array_apply_edit -> (assoc_array_rcu_cleanup, call_rcu)
+assoc_array_cancel_edit -> (kfree)
+assoc_array_clear -> (kmalloc_trace)
+assoc_array_delete -> (assoc_array_walk, assoc_array_subtree_iterate, kmalloc_trace, assoc_array_cancel_edit, kfree, assoc_array_delete_collapse_iterator)
+assoc_array_destroy -> (assoc_array_destroy_subtree)
+assoc_array_destroy_subtree -> (kfree)
+assoc_array_find -> (assoc_array_walk)
+assoc_array_gc -> (assoc_array_apply_edit, kmalloc_trace, kfree, assoc_array_destroy_subtree, __kmalloc)
+assoc_array_insert -> (kmalloc_trace, kfree, assoc_array_walk, __kmalloc)
+assoc_array_rcu_cleanup -> (kfree, assoc_array_destroy_subtree)

@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gt/uc/intel_guc_capture.o
+guc_capture_getlistsize -> (guc_cap_list_num_regs, _dev_warn)
+guc_capture_log_get_register -> (guc_capture_log_remove_dw)
+guc_capture_log_remove_dw -> (__drm_dev_dbg)
+intel_guc_capture_destroy -> (kfree)
+intel_guc_capture_get_matching_node -> (_dev_warn)
+intel_guc_capture_getlist -> (__drm_dev_dbg, _dev_warn, guc_capture_getlistsize, guc_cap_list_num_regs, kmalloc_trace, kfree, __kmalloc)
+intel_guc_capture_getlistsize -> (guc_capture_getlistsize)
+intel_guc_capture_getnullheader -> (kmalloc_trace, __drm_dev_dbg)
+intel_guc_capture_init -> (__drm_dev_dbg, _dev_warn, kmalloc_trace, guc_cap_list_num_regs, intel_gt_mcr_get_ss_steering, intel_guc_log_section_size_capture, kfree, __kmalloc)
+intel_guc_capture_print_engine_node -> (i915_error_printf, intel_guc_lookup_engine)
+intel_guc_capture_process -> (intel_guc_get_log_buffer_size, __drm_dev_dbg, _dev_warn, guc_capture_log_get_register, intel_guc_get_log_buffer_offset, intel_guc_ct_send, _dev_err, intel_guc_check_log_buf_overflow)

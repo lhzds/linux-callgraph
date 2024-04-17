@@ -1,0 +1,5 @@
+fs/mnt_idmapping.o
+alloc_mnt_idmap -> (kmalloc_trace)
+mnt_idmap_get -> (refcount_warn_saturate)
+mnt_idmap_put -> (refcount_warn_saturate, kfree)
+vfsgid_in_group_p -> (in_group_p)

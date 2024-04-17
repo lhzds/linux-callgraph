@@ -1,0 +1,10 @@
+drivers/acpi/acpica/nsutils.o
+acpi_ns_externalize_name -> (acpi_error, acpi_ut_repair_name, __kmalloc)
+acpi_ns_get_node -> (acpi_ns_lookup, acpi_ut_release_mutex, kfree, acpi_ns_internalize_name, acpi_ut_acquire_mutex)
+acpi_ns_get_node_unlocked -> (acpi_ns_lookup, kfree, acpi_ns_internalize_name)
+acpi_ns_get_type -> (acpi_warning)
+acpi_ns_internalize_name -> (kfree, acpi_ns_build_internal_name, __kmalloc)
+acpi_ns_local -> (acpi_warning, acpi_ut_valid_object_type)
+acpi_ns_opens_scope -> (acpi_warning)
+acpi_ns_print_node_pathname -> (acpi_ns_handle_to_pathname, acpi_os_printf, kfree)
+acpi_ns_terminate -> (acpi_ut_release_mutex, acpi_ns_delete_namespace_subtree, acpi_ut_acquire_mutex, acpi_ns_delete_node)

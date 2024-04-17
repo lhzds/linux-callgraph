@@ -1,0 +1,6 @@
+drivers/input/sparse_keymap.o
+sparse_keymap_getkeycode -> (input_scancode_to_scalar)
+sparse_keymap_report_entry -> (input_event)
+sparse_keymap_report_event -> (sparse_keymap_report_entry)
+sparse_keymap_setkeycode -> (input_scancode_to_scalar)
+sparse_keymap_setup -> (sparse_keymap_setkeycode, devm_kmemdup, sparse_keymap_getkeycode)

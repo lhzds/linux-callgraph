@@ -1,0 +1,7 @@
+crypto/proc.o
+c_next -> (seq_list_next)
+c_show -> (seq_printf, seq_putc)
+c_start -> (down_read, seq_list_start)
+c_stop -> (up_read)
+crypto_exit_proc -> (remove_proc_entry)
+crypto_init_proc -> (proc_create_seq_private, c_next, c_stop, c_show, c_start)

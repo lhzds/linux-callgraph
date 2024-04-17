@@ -1,0 +1,7 @@
+kernel/cgroup/misc.o
+misc_cg_alloc -> (kmalloc_trace)
+misc_cg_current_show -> (of_css)
+misc_cg_free -> (kfree)
+misc_cg_max_show -> (of_css)
+misc_cg_max_write -> (strsep, strim)
+misc_events_show -> (of_css)

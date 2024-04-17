@@ -1,0 +1,4 @@
+net/ipv4/datagram.o
+__ip4_datagram_connect -> (ip_route_output_key_hash, get_random_u16, get_random_u32, dst_release, security_sk_classify_flow, reuseport_has_conns_set, ip_route_output_flow)
+ip4_datagram_connect -> (release_sock, __ip4_datagram_connect, lock_sock_nested)
+ip4_datagram_release_cb -> (dst_release, __rcu_read_lock, __rcu_read_unlock, security_sk_classify_flow, ip_route_output_flow)

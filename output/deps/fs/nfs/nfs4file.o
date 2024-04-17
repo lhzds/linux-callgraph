@@ -1,0 +1,4 @@
+fs/nfs/nfs4file.o
+nfs4_file_flush -> (nfs4_delegation_flush_on_close, filemap_fdatawrite, errseq_sample, errseq_check, nfs_wb_all)
+nfs4_file_open -> (nfs_check_flags, dget_parent, put_nfs_open_context, alloc_nfs_open_context, dput, d_drop, filemap_write_and_wait_range, nfs_file_set_open_context)
+nfs4_setlease -> (nfs4_proc_setlease)

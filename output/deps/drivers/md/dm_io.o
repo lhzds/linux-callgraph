@@ -1,0 +1,11 @@
+drivers/md/dm_io.o
+bio_next_page -> (__warn_printk)
+dispatch_io -> (_printk, mempool_free, submit_bio, bio_alloc_bioset, bio_add_page, endio)
+dm_io -> (bio_next_page, bio_get_page, sync_io_complete, vm_get_page, vm_next_page, list_next_page, km_next_page, list_get_page, mempool_alloc, wait_for_completion_io, __init_swait_queue_head, km_get_page, dispatch_io)
+dm_io_client_create -> (mempool_exit, bioset_init, kmalloc_trace, dm_get_reserved_bio_based_ios, mempool_alloc_slab, mempool_free_slab, mempool_init, kfree)
+dm_io_client_destroy -> (bioset_exit, mempool_exit, kfree)
+dm_io_exit -> (kmem_cache_destroy)
+dm_io_init -> (kmem_cache_create)
+endio -> (bio_put, mempool_free, zero_fill_bio)
+sync_io_complete -> (complete)
+vm_get_page -> (vmalloc_to_page)

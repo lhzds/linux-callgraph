@@ -1,0 +1,6 @@
+drivers/acpi/fan_attr.o
+acpi_fan_create_attributes -> (snprintf, show_state, sysfs_create_file_ns, show_fan_speed, sysfs_remove_file_ns, show_fine_grain_control)
+acpi_fan_delete_attributes -> (sysfs_remove_file_ns)
+show_fan_speed -> (sprintf, acpi_fan_get_fst)
+show_fine_grain_control -> (sprintf)
+show_state -> (sysfs_emit_at, scnprintf)

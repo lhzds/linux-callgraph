@@ -1,0 +1,2 @@
+drivers/firmware/efi/libstub/file.o
+handle_cmdline_files -> (efi_apply_loadoptions_quirk, __efi64_thunk, memcmp, memcpy, efi_free, efi_allocate_pages, efi_printk)

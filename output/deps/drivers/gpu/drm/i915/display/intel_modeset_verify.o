@@ -1,0 +1,4 @@
+drivers/gpu/drm/i915/display/intel_modeset_verify.o
+intel_modeset_verify_crtc -> (intel_crtc_get_pipe_config, __drm_dev_dbg, intel_mpllb_state_verify, intel_crtc_state_reset, intel_dotclock_calculate, intel_pipe_config_compare, verify_connector_state, __warn_printk, intel_encoder_get_config, intel_c10pll_state_verify, intel_crtc_state_dump, __drm_atomic_helper_crtc_destroy_state, _dev_err, intel_shared_dpll_state_verify, intel_master_crtc, dev_driver_string, intel_crtc_free_hw_state, intel_wm_state_verify, intel_fdi_link_freq)
+intel_modeset_verify_disabled -> (__drm_dev_dbg, verify_connector_state, __warn_printk, _dev_err, intel_shared_dpll_verify_disabled, dev_driver_string)
+verify_connector_state -> (_dev_err, __warn_printk, __drm_dev_dbg, dev_driver_string)

@@ -1,0 +1,11 @@
+crypto/ctr.o
+crypto_ctr_create -> (skcipher_alloc_instance_simple, skcipher_register_instance, crypto_ctr_crypt)
+crypto_ctr_crypt -> (crypto_inc, skcipher_walk_done, skcipher_walk_virt, crypto_cipher_encrypt_one, __crypto_xor)
+crypto_ctr_module_exit -> (crypto_rfc3686_create, crypto_ctr_create, crypto_unregister_templates)
+crypto_ctr_module_init -> (crypto_rfc3686_create, crypto_ctr_create, crypto_register_templates)
+crypto_rfc3686_create -> (crypto_drop_spawn, snprintf, crypto_attr_alg_name, crypto_rfc3686_crypt, kmalloc_trace, crypto_rfc3686_free, skcipher_register_instance, crypto_grab_skcipher, crypto_rfc3686_init_tfm, crypto_check_attr_type, kfree, crypto_rfc3686_setkey, crypto_rfc3686_exit_tfm)
+crypto_rfc3686_crypt -> (crypto_skcipher_encrypt)
+crypto_rfc3686_exit_tfm -> (crypto_destroy_tfm)
+crypto_rfc3686_free -> (crypto_drop_spawn, kfree)
+crypto_rfc3686_init_tfm -> (crypto_spawn_tfm2)
+crypto_rfc3686_setkey -> (crypto_skcipher_setkey)

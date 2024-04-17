@@ -1,0 +1,9 @@
+arch/x86/kernel/tsc_sync.o
+check_tsc_sync_source -> (mark_tsc_unstable, _printk, check_tsc_warp)
+check_tsc_sync_target -> (_printk, check_tsc_warp, __SCT__tp_func_write_msr, check_tsc_sync_source, tsc_store_and_check_tsc_adjust, __traceiter_write_msr, do_trace_write_msr, unsynchronized_tsc, smp_call_function_single, __probestub_write_msr)
+check_tsc_warp -> (__warn_printk, queued_spin_lock_slowpath)
+mark_tsc_async_resets -> (_printk)
+start_sync_check_timer -> (add_timer, init_timer_key, tsc_sync_check_timer_fn)
+tsc_store_and_check_tsc_adjust -> (_printk, __SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)
+tsc_sync_check_timer_fn -> (add_timer_on, tsc_verify_tsc_adjust)
+tsc_verify_tsc_adjust -> (_printk, __SCT__tp_func_write_msr, do_trace_read_msr, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, check_tsc_unstable, __probestub_write_msr)

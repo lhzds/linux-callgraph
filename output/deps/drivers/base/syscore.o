@@ -1,0 +1,6 @@
+drivers/base/syscore.o
+register_syscore_ops -> (mutex_unlock, mutex_lock)
+syscore_resume -> (_printk, __probestub_suspend_resume, __traceiter_suspend_resume, __warn_printk, __SCT__tp_func_suspend_resume, pm_debug_messages_should_print)
+syscore_shutdown -> (mutex_unlock, _printk, mutex_lock)
+syscore_suspend -> (_printk, __probestub_suspend_resume, __traceiter_suspend_resume, __warn_printk, __SCT__tp_func_suspend_resume, pm_wakeup_pending, pm_debug_messages_should_print)
+unregister_syscore_ops -> (mutex_unlock, mutex_lock)

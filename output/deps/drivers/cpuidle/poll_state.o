@@ -1,0 +1,3 @@
+drivers/cpuidle/poll_state.o
+cpuidle_poll_state_init -> (poll_idle)
+poll_idle -> (local_clock_noinstr, cpuidle_poll_time)

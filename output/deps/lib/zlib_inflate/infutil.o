@@ -1,0 +1,2 @@
+lib/zlib_inflate/infutil.o
+zlib_inflate_blob -> (zlib_inflate, kmalloc_trace, zlib_inflateInit2, zlib_inflate_workspacesize, zlib_inflateEnd, kfree, __kmalloc)

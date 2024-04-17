@@ -1,0 +1,9 @@
+drivers/gpu/drm/i915/gem/i915_gem_create.o
+__i915_gem_object_create_user -> (__i915_gem_object_create_user_ext)
+__i915_gem_object_create_user_ext -> (__probestub_i915_gem_object_create, i915_gem_object_free, __traceiter_i915_gem_object_create, i915_gem_object_alloc, i915_gem_flush_free_objects, kfree, __kmalloc, __SCT__tp_func_i915_gem_object_create)
+ext_set_pat -> (__drm_dev_dbg, _copy_from_user)
+ext_set_placements -> (snprintf, __drm_dev_dbg, intel_memory_region_lookup, _copy_from_user)
+ext_set_protected -> (intel_pxp_is_enabled, _copy_from_user)
+i915_gem_create_ext_ioctl -> (i915_user_extensions, refcount_warn_saturate, __i915_gem_object_create_user_ext, drm_gem_object_free, intel_memory_region_by_type, ext_set_placements, drm_gem_handle_create, ext_set_pat, i915_gem_object_set_pat_index, ext_set_protected)
+i915_gem_create_ioctl -> (refcount_warn_saturate, __i915_gem_object_create_user_ext, drm_gem_object_free, drm_gem_handle_create, intel_memory_region_by_type)
+i915_gem_dumb_create -> (refcount_warn_saturate, __i915_gem_object_create_user_ext, drm_gem_object_free, intel_plane_fb_max_stride, drm_gem_handle_create, intel_memory_region_by_type)

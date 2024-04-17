@@ -1,0 +1,7 @@
+crypto/ghash_generic.o
+ghash_exit_tfm -> (kfree_sensitive)
+ghash_final -> (gf128mul_4k_lle)
+ghash_mod_exit -> (ghash_init, ghash_setkey, ghash_final, ghash_exit_tfm, ghash_update, crypto_unregister_shash)
+ghash_mod_init -> (ghash_init, ghash_setkey, ghash_exit_tfm, ghash_final, ghash_update, crypto_register_shash)
+ghash_setkey -> (kfree_sensitive, gf128mul_init_4k_lle)
+ghash_update -> (gf128mul_4k_lle)

@@ -1,0 +1,3 @@
+drivers/thermal/gov_user_space.o
+notify_user_space -> (kobject_uevent_env, kfree, kasprintf)
+user_space_bind -> (_printk)

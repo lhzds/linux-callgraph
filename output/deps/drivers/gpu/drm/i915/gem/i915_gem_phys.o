@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/gem/i915_gem_phys.o
+i915_gem_object_attach_phys -> (i915_gem_object_is_shmem, i915_gem_object_has_struct_page, i915_gem_object_shmem_to_phys, i915_gem_object_unbind)
+i915_gem_object_pread_phys -> (i915_gem_object_wait, drm_clflush_virt_range, _copy_to_user)
+i915_gem_object_put_pages_phys -> (drm_clflush_virt_range, __i915_gem_object_release_shmem, set_page_dirty, __folio_put, shmem_read_mapping_page_gfp, dma_free_attrs, mark_page_accessed, sg_free_table, kfree)
+i915_gem_object_pwrite_phys -> (drm_clflush_virt_range, __i915_gem_object_invalidate_frontbuffer, _copy_from_user, __i915_gem_object_flush_frontbuffer, i915_gem_object_wait, intel_gt_chipset_flush)
+i915_gem_object_shmem_to_phys -> (dma_alloc_attrs, drm_clflush_virt_range, i915_gem_object_put_pages_shmem, __folio_put, i915_gem_object_release_memory_region, shmem_read_mapping_page_gfp, kmalloc_trace, sg_alloc_table, kfree, dma_free_attrs, __i915_gem_object_set_pages, i915_gem_object_needs_bit17_swizzle, __i915_gem_object_unset_pages, intel_gt_chipset_flush)

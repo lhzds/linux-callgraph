@@ -1,0 +1,4 @@
+lib/lzo/lzo1x_compress.o
+lzo1x_1_compress -> (lzogeneric1x_1_compress)
+lzogeneric1x_1_compress -> (lzo1x_1_do_compress)
+lzorle1x_1_compress -> (lzogeneric1x_1_compress)

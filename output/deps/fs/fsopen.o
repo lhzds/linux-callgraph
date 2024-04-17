@@ -1,0 +1,12 @@
+fs/fsopen.o
+__ia32_sys_fsconfig -> (__se_sys_fsconfig)
+__ia32_sys_fsopen -> (__se_sys_fsopen)
+__ia32_sys_fspick -> (__se_sys_fspick)
+__se_sys_fsconfig -> (fget, fscontext_read, __fdget, finish_clean_context, legacy_parse_param, memdup_user_nul, legacy_get_tree, legacy_reconfigure, security_sb_kern_mount, fscontext_release, fput, getname_flags, mutex_lock_interruptible, vfs_get_tree, strlen, mutex_unlock, ns_capable, legacy_fs_context_free, reconfigure_super, putname, vfs_clean_context, down_write, up_write, legacy_fs_context_dup, strndup_user, kfree, legacy_parse_monolithic, vfs_parse_fs_param, mount_capable, fc_drop_locked)
+__se_sys_fsopen -> (fscontext_read, may_mount, kmalloc_trace, strndup_user, put_filesystem, anon_inode_getfd, fscontext_release, get_fs_type, put_fs_context, kfree, fs_context_for_mount)
+__se_sys_fspick -> (fscontext_read, path_put, may_mount, kmalloc_trace, fs_context_for_reconfigure, user_path_at_empty, anon_inode_getfd, fscontext_release, put_fs_context)
+__x64_sys_fsconfig -> (__se_sys_fsconfig)
+__x64_sys_fsopen -> (__se_sys_fsopen)
+__x64_sys_fspick -> (__se_sys_fspick)
+fscontext_read -> (strlen, mutex_unlock, kfree, _copy_to_user, mutex_lock_interruptible)
+fscontext_release -> (put_fs_context)

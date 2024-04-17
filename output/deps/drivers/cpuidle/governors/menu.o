@@ -1,0 +1,4 @@
+drivers/cpuidle/governors/menu.o
+init_menu -> (menu_reflect, cpuidle_register_governor, menu_select, menu_enable_device)
+menu_reflect -> (tick_nohz_idle_got_tick)
+menu_select -> (cpuidle_governor_latency_req, tick_nohz_get_sleep_length, nr_iowait_cpu, tick_nohz_tick_stopped)

@@ -1,0 +1,3 @@
+lib/interval_tree.o
+interval_tree_insert -> (interval_tree_augment_rotate, __rb_insert_augmented)
+interval_tree_remove -> (interval_tree_augment_rotate, __rb_erase_color, rb_next)

@@ -1,0 +1,13 @@
+kernel/locking/semaphore.o
+__down -> (__down_common)
+__down_common -> (__traceiter_contention_end, schedule_timeout, __SCT__tp_func_contention_end, __traceiter_contention_begin, _raw_spin_lock_irq, _raw_spin_unlock_irq, __probestub_contention_begin, __SCT__tp_func_contention_begin, __probestub_contention_end)
+__down_interruptible -> (__down_common)
+__down_killable -> (__down_common)
+__down_timeout -> (__down_common)
+__up -> (wake_up_process)
+down -> (__SCT__might_resched, _raw_spin_lock_irqsave, __down, _raw_spin_unlock_irqrestore)
+down_interruptible -> (__down_interruptible, __SCT__might_resched, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+down_killable -> (__down_killable, __SCT__might_resched, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+down_timeout -> (__down_timeout, __SCT__might_resched, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+down_trylock -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+up -> (_raw_spin_lock_irqsave, __up, _raw_spin_unlock_irqrestore)

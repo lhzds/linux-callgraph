@@ -1,0 +1,3 @@
+drivers/acpi/acpica/rsmisc.o
+acpi_rs_convert_aml_to_resource -> (acpi_rs_move_data, acpi_error, acpi_rs_get_address_common, acpi_warning, acpi_rs_decode_bitmask, acpi_rs_get_resource_source, acpi_ut_get_resource_length)
+acpi_rs_convert_resource_to_aml -> (acpi_rs_set_resource_length, acpi_rs_encode_bitmask, acpi_rs_move_data, acpi_error, acpi_rs_set_resource_header, acpi_rs_set_resource_source, acpi_rs_set_address_common)

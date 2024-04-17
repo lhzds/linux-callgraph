@@ -1,0 +1,4 @@
+drivers/acpi/acpica/evgpeblk.o
+acpi_ev_create_gpe_block -> (acpi_hw_validate_io_block, acpi_ev_match_gpe_method, acpi_ev_get_gpe_xrupt_block, acpi_os_acquire_lock, acpi_ut_release_mutex, acpi_ns_walk_namespace, kmalloc_trace, acpi_error, acpi_ut_acquire_mutex, acpi_hw_gpe_write, kfree, acpi_os_release_lock, __kmalloc)
+acpi_ev_delete_gpe_block -> (acpi_ev_delete_gpe_xrupt, acpi_os_acquire_lock, acpi_ut_release_mutex, kfree, acpi_hw_disable_gpe_block, acpi_os_release_lock, acpi_ut_acquire_mutex)
+acpi_ev_initialize_gpe_block -> (acpi_info, acpi_exception, acpi_ev_add_gpe_reference)

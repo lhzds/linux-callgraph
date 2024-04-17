@@ -1,0 +1,9 @@
+drivers/acpi/acpica/rsxface.o
+acpi_get_current_resources -> (acpi_rs_get_crs_method_data, acpi_ns_validate_handle, acpi_ut_validate_buffer)
+acpi_get_event_resources -> (acpi_rs_get_aei_method_data, acpi_ns_validate_handle, acpi_ut_validate_buffer)
+acpi_get_irq_routing_table -> (acpi_ns_validate_handle, acpi_ut_validate_buffer, acpi_rs_get_prt_method_data)
+acpi_get_possible_resources -> (acpi_ns_validate_handle, acpi_ut_validate_buffer, acpi_rs_get_prs_method_data)
+acpi_get_vendor_resource -> (acpi_rs_match_vendor_resource, acpi_walk_resources)
+acpi_rs_match_vendor_resource -> (acpi_ut_initialize_buffer, bcmp)
+acpi_set_current_resources -> (acpi_ns_validate_handle, acpi_rs_set_srs_method_data, acpi_ut_validate_buffer)
+acpi_walk_resources -> (kfree, acpi_rs_get_method_data)

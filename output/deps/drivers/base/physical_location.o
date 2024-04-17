@@ -1,0 +1,7 @@
+drivers/base/physical_location.o
+dev_add_physical_location -> (kmalloc_trace, kfree, is_acpi_device_node, acpi_get_physical_device_location)
+dock_show -> (sysfs_emit)
+horizontal_position_show -> (sysfs_emit)
+lid_show -> (sysfs_emit)
+panel_show -> (sysfs_emit)
+vertical_position_show -> (sysfs_emit)

@@ -1,0 +1,6 @@
+crypto/sig.o
+crypto_alloc_sig -> (crypto_sig_show, crypto_sig_init_tfm, crypto_alg_extsize, crypto_alloc_tfm_node)
+crypto_sig_init_tfm -> (crypto_init_akcipher_ops_sig, crypto_sig_init_tfm, crypto_alg_extsize, crypto_sig_show)
+crypto_sig_show -> (seq_puts)
+crypto_sig_sign -> (crypto_akcipher_sync_post, crypto_akcipher_sync_prep)
+crypto_sig_verify -> (crypto_akcipher_sync_post, crypto_akcipher_sync_prep)

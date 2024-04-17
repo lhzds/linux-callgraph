@@ -1,0 +1,5 @@
+drivers/acpi/acpi_pcc.o
+acpi_init_pcc -> (_printk, acpi_pcc_address_space_setup, acpi_install_address_space_handler, acpi_pcc_address_space_handler)
+acpi_pcc_address_space_handler -> (mbox_chan_txdone, _printk, wait_for_completion_timeout, memcpy_fromio, memcpy_toio, mbox_send_message, __usecs_to_jiffies)
+acpi_pcc_address_space_setup -> (_printk, pcc_rx_callback, kmalloc_trace, pcc_mbox_request_channel, __init_swait_queue_head, pcc_mbox_free_channel, ioremap_cache, kfree)
+pcc_rx_callback -> (complete)

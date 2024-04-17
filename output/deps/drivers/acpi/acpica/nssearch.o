@@ -1,0 +1,3 @@
+drivers/acpi/acpica/nssearch.o
+acpi_ns_search_and_enter -> (acpi_ns_create_node, acpi_ns_delete_children, acpi_ns_local, acpi_error, acpi_ns_get_type, acpi_ut_repair_name, acpi_ut_remove_reference, acpi_ns_install_node, acpi_ns_remove_node)
+acpi_ns_search_one_scope -> (acpi_ns_get_type)

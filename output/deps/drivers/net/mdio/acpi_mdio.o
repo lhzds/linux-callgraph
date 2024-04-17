@@ -1,0 +1,2 @@
+drivers/net/mdio/acpi_mdio.o
+__acpi_mdiobus_register -> (fwnode_mdiobus_register_phy, __mdiobus_register, _dev_err, acpi_get_local_address, is_acpi_device_node, set_primary_fwnode, fwnode_get_next_child_node)

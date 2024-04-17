@@ -1,0 +1,8 @@
+arch/x86/kernel/probe_roms.o
+find_oprom -> (copy_from_kernel_nofault)
+pci_biosrom_size -> (find_oprom)
+pci_map_biosrom -> (ioremap, find_oprom)
+pci_unmap_biosrom -> (iounmap)
+probe_roms -> (copy_from_kernel_nofault, romchecksum, romsignature, request_resource)
+romchecksum -> (copy_from_kernel_nofault)
+romsignature -> (copy_from_kernel_nofault)

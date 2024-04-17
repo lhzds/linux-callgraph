@@ -1,0 +1,8 @@
+arch/x86/kernel/cpuid.o
+cpuid_device_create -> (device_create)
+cpuid_device_destroy -> (device_destroy)
+cpuid_devnode -> (kasprintf)
+cpuid_exit -> (__cpuhp_remove_state, class_destroy, __unregister_chrdev)
+cpuid_init -> (_printk, class_create, class_destroy, cpuid_device_destroy, cpuid_devnode, no_seek_end_llseek, cpuid_open, cpuid_device_create, __unregister_chrdev, __cpuhp_setup_state, cpuid_read, __register_chrdev)
+cpuid_read -> (cpuid_smp_cpuid, smp_call_function_single_async, wait_for_completion, __init_swait_queue_head, _copy_to_user)
+cpuid_smp_cpuid -> (complete)

@@ -1,0 +1,7 @@
+drivers/gpu/drm/drm_blend.o
+drm_atomic_normalize_zpos -> (sort, __drm_dev_dbg, drm_atomic_state_zpos_cmp, drm_atomic_get_plane_state, kfree, __kmalloc)
+drm_plane_create_alpha_property -> (drm_property_create_range, drm_object_attach_property)
+drm_plane_create_blend_mode_property -> (drm_property_destroy, drm_property_create, drm_property_add_enum, drm_object_attach_property)
+drm_plane_create_rotation_property -> (drm_object_attach_property, drm_property_create_bitmask)
+drm_plane_create_zpos_immutable_property -> (drm_property_create_range, drm_object_attach_property)
+drm_plane_create_zpos_property -> (drm_property_create_range, drm_object_attach_property)

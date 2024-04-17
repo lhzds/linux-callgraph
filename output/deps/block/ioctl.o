@@ -1,0 +1,6 @@
+block/ioctl.o
+blkdev_bszset -> (capable, set_blocksize, blkdev_get_by_dev, blkdev_put)
+blkdev_common_ioctl -> (down_write, blk_trace_ioctl, disk_scan_partitions, up_write, _copy_from_user, blkdev_issue_discard, truncate_bdev_range, blkdev_issue_secure_erase, bdev_alignment_offset, invalidate_bdev, fsync_bdev, capable, blkdev_issue_zeroout)
+blkdev_ioctl -> (file_to_blk_mode, blk_trace_ioctl, I_BDEV, blkdev_common_ioctl, blkdev_bszset, _copy_to_user, blkpg_do_ioctl)
+blkpg_do_ioctl -> (_copy_from_user, bdev_resize_partition, bdev_add_partition, capable, bdev_del_partition)
+compat_blkdev_ioctl -> (file_to_blk_mode, blk_trace_ioctl, I_BDEV, blkdev_common_ioctl, blkdev_bszset, _copy_to_user, blkpg_do_ioctl)

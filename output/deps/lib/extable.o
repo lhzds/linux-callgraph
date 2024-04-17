@@ -1,0 +1,3 @@
+lib/extable.o
+search_extable -> (bsearch, cmp_ex_search)
+sort_extable -> (cmp_ex_sort, sort, swap_ex)

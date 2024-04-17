@@ -1,0 +1,12 @@
+net/wireless/sysfs.o
+address_mask_show -> (sprintf)
+addresses_show -> (sprintf)
+index_show -> (sprintf)
+macaddress_show -> (sprintf)
+name_show -> (sprintf)
+rdev_suspend -> (__probestub_rdev_suspend, __SCT__tp_func_rdev_return_int, __traceiter_rdev_suspend, __SCT__tp_func_rdev_suspend, __traceiter_rdev_return_int, __probestub_rdev_return_int)
+wiphy_dev_release -> (cfg80211_dev_free)
+wiphy_resume -> (__probestub_rdev_resume, mutex_lock, __SCT__tp_func_rdev_resume, rtnl_lock, mutex_unlock, __SCT__tp_func_rdev_return_int, cfg80211_bss_age, cfg80211_shutdown_all_interfaces, queue_work_on, __traceiter_rdev_resume, ktime_get_coarse_with_offset, __traceiter_rdev_return_int, rtnl_unlock, __probestub_rdev_return_int)
+wiphy_suspend -> (rdev_suspend, mutex_lock, cfg80211_leave, rtnl_lock, mutex_unlock, cfg80211_process_wiphy_works, ktime_get_coarse_with_offset, cfg80211_process_rdev_events, rtnl_unlock)
+wiphy_sysfs_exit -> (wiphy_dev_release, wiphy_suspend, net_initial_ns, net_drop_ns, net_current_may_mount, wiphy_resume, net_netlink_ns, index_show, addresses_show, address_mask_show, name_show, wiphy_namespace, class_unregister, macaddress_show, net_grab_current_ns)
+wiphy_sysfs_init -> (wiphy_dev_release, wiphy_suspend, net_initial_ns, class_register, net_drop_ns, net_current_may_mount, wiphy_resume, net_netlink_ns, index_show, addresses_show, address_mask_show, name_show, wiphy_namespace, macaddress_show, net_grab_current_ns)

@@ -1,0 +1,3 @@
+fs/proc/cpuinfo.o
+cpuinfo_open -> (c_next, c_stop, show_cpuinfo, c_start, seq_open)
+proc_cpuinfo_init -> (seq_release, seq_read_iter, proc_create, cpuinfo_open, seq_lseek)

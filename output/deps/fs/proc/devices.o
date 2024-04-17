@@ -1,0 +1,3 @@
+fs/proc/devices.o
+devinfo_show -> (blkdev_show, seq_puts, chrdev_show)
+proc_devices_init -> (devinfo_show, devinfo_stop, devinfo_start, devinfo_next, proc_create_seq_private)

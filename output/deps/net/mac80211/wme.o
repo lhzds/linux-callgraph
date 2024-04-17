@@ -1,0 +1,3 @@
+net/mac80211/wme.o
+ieee80211_select_queue -> (__skb_get_hash, cfg80211_classify8021d)
+ieee80211_select_queue_80211 -> (__skb_get_hash)

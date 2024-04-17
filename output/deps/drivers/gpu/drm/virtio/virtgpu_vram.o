@@ -1,0 +1,7 @@
+drivers/gpu/drm/virtio/virtgpu_vram.o
+virtio_gpu_is_vram -> (virtio_gpu_gem_object_close, virtio_gpu_vram_free, virtgpu_gem_prime_export, virtio_gpu_vram_mmap, virtio_gpu_gem_object_open)
+virtio_gpu_vram_create -> (virtio_gpu_gem_object_close, virtio_gpu_cmd_unref_resource, _raw_spin_lock, virtio_gpu_array_add_obj, virtio_gpu_vram_free, virtgpu_gem_prime_export, drm_mm_insert_node_in_range, virtio_gpu_vram_mmap, virtio_gpu_notify, _raw_spin_unlock, drm_mm_remove_node, kmalloc_trace, virtio_gpu_cmd_map, virtio_gpu_gem_object_open, drm_gem_create_mmap_offset, virtio_gpu_cmd_unmap, drm_gem_private_object_init, virtio_gpu_array_put_free, virtio_gpu_cmd_resource_create_blob, virtio_gpu_array_alloc, virtio_gpu_resource_id_get, kfree)
+virtio_gpu_vram_free -> (virtio_gpu_notify, virtio_gpu_cmd_unref_resource, _raw_spin_unlock, _raw_spin_lock, virtio_gpu_cmd_unmap)
+virtio_gpu_vram_map_dma_buf -> (kmalloc_trace, sg_alloc_table, is_virtio_device, sg_free_table, kfree, dma_map_resource)
+virtio_gpu_vram_mmap -> (down_write, init_wait_entry, __SCT__might_resched, up_write, drm_gem_vm_open, schedule, finish_wait, vm_get_page_prot, prepare_to_wait_event, pgprot_writecombine, drm_gem_vm_close, remap_pfn_range, cachemode2protval)
+virtio_gpu_vram_unmap_dma_buf -> (sg_free_table, kfree, dma_unmap_resource)

@@ -1,0 +1,4 @@
+net/wireless/ap.o
+___cfg80211_stop_ap -> (__SCT__tp_func_rdev_return_int, queue_work_on, __probestub_rdev_set_qos_map, cfg80211_sched_dfs_chan_update, __traceiter_rdev_stop_ap, __traceiter_rdev_return_int, __traceiter_rdev_set_qos_map, __probestub_rdev_stop_ap, disconnect_work, nl80211_send_ap_stopped, __SCT__tp_func_rdev_stop_ap, __SCT__tp_func_rdev_set_qos_map, __probestub_rdev_return_int)
+__cfg80211_stop_ap -> (___cfg80211_stop_ap)
+cfg80211_stop_ap -> (mutex_unlock, ___cfg80211_stop_ap, mutex_lock)

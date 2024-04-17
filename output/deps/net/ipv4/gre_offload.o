@@ -1,0 +1,6 @@
+net/ipv4/gre_offload.o
+__skb_gro_checksum_validate_complete -> (__skb_gro_checksum_complete)
+gre_gro_complete -> (gro_find_complete_by_type)
+gre_gro_receive -> (__skb_gro_checksum_validate_complete, __pskb_pull_tail, csum_partial, gro_find_receive_by_type, skb_gro_incr_csum_unnecessary, __skb_gro_checksum_validate_needed)
+gre_gso_segment -> (csum_partial, skb_mac_gso_segment, __pskb_pull_tail, skb_push)
+gre_offload_init -> (inet_del_offload, inet_add_offload, inet6_add_offload, gre_gro_complete, gre_gso_segment, gre_gro_receive)

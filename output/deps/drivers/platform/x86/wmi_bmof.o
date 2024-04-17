@@ -1,0 +1,5 @@
+drivers/platform/x86/wmi_bmof.o
+wmi_bmof_driver_exit -> (wmi_bmof_remove, wmi_bmof_probe, wmi_driver_unregister)
+wmi_bmof_driver_init -> (wmi_bmof_remove, __wmi_driver_register, wmi_bmof_probe)
+wmi_bmof_probe -> (_dev_err, read_bmof, sysfs_create_bin_file, wmidev_block_query, kfree, devm_kmalloc)
+wmi_bmof_remove -> (kfree, sysfs_remove_bin_file)

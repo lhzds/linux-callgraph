@@ -1,0 +1,6 @@
+lib/refcount.o
+refcount_dec_and_lock -> (_raw_spin_lock, __warn_printk, _raw_spin_unlock)
+refcount_dec_and_lock_irqsave -> (_raw_spin_lock_irqsave, __warn_printk, _raw_spin_unlock_irqrestore)
+refcount_dec_and_mutex_lock -> (mutex_lock, __warn_printk, mutex_unlock)
+refcount_dec_not_one -> (__warn_printk)
+refcount_warn_saturate -> (__warn_printk)

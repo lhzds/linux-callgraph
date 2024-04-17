@@ -1,0 +1,10 @@
+lib/percpu_counter.o
+__percpu_counter_compare -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+__percpu_counter_init -> (__alloc_percpu_gfp, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+__percpu_counter_sum -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+percpu_counter_add_batch -> (_raw_spin_lock, _raw_spin_unlock)
+percpu_counter_cpu_dead -> (_raw_spin_lock, _raw_spin_lock_irq, _raw_spin_unlock_irq, _raw_spin_unlock)
+percpu_counter_destroy -> (free_percpu, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+percpu_counter_set -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+percpu_counter_startup -> (percpu_counter_cpu_dead, compute_batch_value, __cpuhp_setup_state)
+percpu_counter_sync -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

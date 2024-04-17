@@ -1,0 +1,5 @@
+kernel/dma/remap.o
+dma_common_contiguous_remap -> (kvmalloc_node, kvfree, vmap)
+dma_common_find_pages -> (find_vm_area)
+dma_common_free_remap -> (vunmap, __warn_printk, find_vm_area)
+dma_common_pages_remap -> (find_vm_area, vmap)

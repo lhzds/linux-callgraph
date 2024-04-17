@@ -1,0 +1,9 @@
+arch/x86/kernel/ioport.o
+__ia32_sys_ioperm -> (ksys_ioperm)
+__ia32_sys_iopl -> (__se_sys_iopl)
+__se_sys_iopl -> (capable, security_locked_down, native_tss_update_io_bitmap)
+__x64_sys_ioperm -> (ksys_ioperm)
+__x64_sys_iopl -> (__se_sys_iopl)
+io_bitmap_exit -> (refcount_warn_saturate, kfree, native_tss_update_io_bitmap)
+io_bitmap_share -> (refcount_warn_saturate)
+ksys_ioperm -> (__bitmap_set, __bitmap_clear, kmalloc_large, kmemdup, security_locked_down, io_bitmap_exit, capable)

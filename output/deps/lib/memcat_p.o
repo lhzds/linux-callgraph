@@ -1,0 +1,2 @@
+lib/memcat_p.o
+__memcat_p -> (__kmalloc)

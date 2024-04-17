@@ -1,0 +1,2 @@
+drivers/iommu/intel/cap_audit.o
+intel_cap_audit -> (__rcu_read_unlock, _printk, __rcu_read_lock)

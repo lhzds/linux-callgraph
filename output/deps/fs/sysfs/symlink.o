@@ -1,0 +1,8 @@
+fs/sysfs/symlink.o
+sysfs_create_link -> (sysfs_do_create_link_sd)
+sysfs_create_link_nowarn -> (sysfs_do_create_link_sd)
+sysfs_create_link_sd -> (sysfs_do_create_link_sd)
+sysfs_delete_link -> (_raw_spin_lock, kernfs_remove_by_name_ns, _raw_spin_unlock)
+sysfs_do_create_link_sd -> (kernfs_create_link, kernfs_put, kernfs_get, _raw_spin_unlock, _raw_spin_lock, sysfs_warn_dup)
+sysfs_remove_link -> (kernfs_remove_by_name_ns)
+sysfs_rename_link_ns -> (kernfs_put, kernfs_find_and_get_ns, kernfs_rename_ns)

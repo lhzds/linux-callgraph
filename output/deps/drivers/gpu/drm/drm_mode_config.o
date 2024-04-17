@@ -1,0 +1,9 @@
+drivers/gpu/drm/drm_mode_config.o
+drm_mode_config_cleanup -> (__drm_err, idr_destroy, drm_framebuffer_free, flush_work, drm_mode_object_put, __drm_printfn_debug, drm_connector_list_iter_begin, drm_connector_list_iter_end, drm_printf, drm_property_destroy, ida_destroy, drm_connector_list_iter_next, drm_framebuffer_print_info, drm_property_blob_put)
+drm_mode_config_init_release -> (drm_mode_config_cleanup)
+drm_mode_config_reset -> (drm_connector_list_iter_next, drm_connector_list_iter_begin, drm_connector_list_iter_end)
+drm_mode_config_validate -> (__warn_printk)
+drm_mode_getresources -> (mutex_lock, mutex_unlock, drm_connector_list_iter_begin, drm_connector_list_iter_end, drm_lease_held, drm_connector_list_iter_next)
+drm_modeset_register_all -> (drm_crtc_unregister_all, drm_encoder_register_all, drm_connector_register_all, drm_plane_register_all, drm_encoder_unregister_all, drm_plane_unregister_all, drm_crtc_register_all, drm_debugfs_late_register)
+drm_modeset_unregister_all -> (drm_connector_unregister_all, drm_encoder_unregister_all, drm_plane_unregister_all, drm_crtc_unregister_all)
+drmm_mode_config_init -> (drm_property_create_bool, drm_modeset_lock_init, drm_mode_config_init_release, drm_property_create_range, __drmm_add_action_or_reset, __mutex_init, drm_property_create_signed_range, drm_connector_free_work_fn, drm_mode_config_cleanup, drm_connector_create_standard_properties, drm_property_create_enum, drm_property_create_object, drm_property_create)

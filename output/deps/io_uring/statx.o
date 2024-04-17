@@ -1,0 +1,4 @@
+io_uring/statx.o
+io_statx -> (do_statx)
+io_statx_cleanup -> (putname)
+io_statx_prep -> (getname_flags, getname_statx_lookup_flags)

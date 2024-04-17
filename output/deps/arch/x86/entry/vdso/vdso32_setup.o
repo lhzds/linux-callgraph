@@ -1,0 +1,3 @@
+arch/x86/entry/vdso/vdso32_setup.o
+ia32_binfmt_init -> (register_sysctl, proc_dointvec_minmax)
+vdso32_setup -> (_printk, simple_strtoul)

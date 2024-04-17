@@ -1,0 +1,7 @@
+fs/efivarfs/inode.o
+efivarfs_create -> (guid_parse, iput, efivar_entry_add, uuid_is_valid, new_inode, dcache_dir_open, d_instantiate, bcmp, kmalloc_trace, efivar_variable_is_removable, simple_open, efivarfs_fileattr_get, efivarfs_create, lockref_get, dcache_readdir, efivarfs_unlink, get_next_ino, current_time, inc_nlink, generic_read_dir, simple_lookup, dcache_dir_lseek, efivarfs_file_write, efivarfs_fileattr_set, kfree, efivarfs_file_read, noop_fsync, dcache_dir_close)
+efivarfs_fileattr_get -> (fileattr_fill_flags)
+efivarfs_fileattr_set -> (inode_set_flags)
+efivarfs_get_inode -> (generic_read_dir, simple_lookup, dcache_dir_lseek, efivarfs_file_write, dcache_readdir, efivarfs_unlink, simple_open, get_next_ino, efivarfs_fileattr_get, efivarfs_fileattr_set, new_inode, current_time, dcache_dir_open, efivarfs_create, noop_fsync, efivarfs_file_read, inc_nlink, dcache_dir_close)
+efivarfs_unlink -> (dput, efivar_entry_delete, drop_nlink)
+efivarfs_valid_name -> (uuid_is_valid)

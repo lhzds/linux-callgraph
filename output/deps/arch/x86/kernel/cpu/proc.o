@@ -1,0 +1,2 @@
+arch/x86/kernel/cpu/proc.o
+show_cpuinfo -> (arch_freq_get_on_cpu, seq_printf, seq_puts)

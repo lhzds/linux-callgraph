@@ -1,0 +1,2 @@
+fs/proc/interrupts.o
+proc_interrupts_init -> (proc_create_seq_private, int_seq_next, int_seq_start, int_seq_stop, show_interrupts)

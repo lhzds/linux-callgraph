@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/display/dvo_sil164.o
+sil164_destroy -> (kfree)
+sil164_detect -> (___drm_dbg, i2c_transfer)
+sil164_dpms -> (___drm_dbg, i2c_transfer)
+sil164_dump_regs -> (___drm_dbg, i2c_transfer)
+sil164_get_hw_state -> (___drm_dbg, i2c_transfer)
+sil164_init -> (kmalloc_trace, ___drm_dbg, kfree, i2c_transfer)
+sil164_mode_set -> (___drm_dbg, i2c_transfer)

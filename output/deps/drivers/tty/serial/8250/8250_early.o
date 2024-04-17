@@ -1,0 +1,7 @@
+drivers/tty/serial/8250/8250_early.o
+early_serial8250_setup -> (init_port, serial8250_early_out, early_serial8250_write, serial8250_early_in)
+early_serial8250_write -> (serial_putc, uart_console_write)
+init_port -> (serial8250_early_out, serial8250_early_in)
+serial8250_early_in -> (ioread32be)
+serial8250_early_out -> (iowrite32be)
+serial_putc -> (iowrite32be, ioread32be)

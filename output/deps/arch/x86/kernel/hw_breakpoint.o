@@ -1,0 +1,6 @@
+arch/x86/kernel/hw_breakpoint.o
+arch_install_hw_breakpoint -> (amd_set_dr_addr_mask, __warn_printk)
+arch_uninstall_hw_breakpoint -> (amd_set_dr_addr_mask, __warn_printk)
+flush_ptrace_hw_breakpoint -> (unregister_hw_breakpoint)
+hw_breakpoint_arch_parse -> (within_kprobe_blacklist)
+hw_breakpoint_exceptions_notify -> (perf_bp_event)

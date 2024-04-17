@@ -1,0 +1,2 @@
+drivers/acpi/acpica/pswalk.o
+acpi_ps_delete_parse_tree -> (acpi_ps_free_op, acpi_ps_get_arg)

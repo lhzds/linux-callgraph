@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gt/intel_breadcrumbs.o
+__intel_breadcrumbs_park -> (signal_irq_work, irq_work_sync, __SCT__cond_resched)
+i915_request_cancel_breadcrumb -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, llist_add_batch, irq_work_queue, dma_fence_release)
+i915_request_enable_breadcrumb -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, llist_add_batch, irq_work_queue)
+intel_breadcrumbs_create -> (irq_disable, kmalloc_trace, irq_enable, signal_irq_work)
+intel_breadcrumbs_free -> (kfree, irq_work_sync)
+intel_breadcrumbs_reset -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+intel_context_remove_breadcrumbs -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irqsave, llist_add_batch, irq_work_queue, _raw_spin_unlock_irqrestore, dma_fence_release)
+intel_engine_print_breadcrumbs -> (__rcu_read_unlock, drm_printf, jiffies_to_msecs, __rcu_read_lock)
+irq_disable -> (intel_engine_irq_disable)
+irq_enable -> (intel_engine_irq_enable)
+signal_irq_work -> (refcount_warn_saturate, _raw_spin_unlock, _raw_spin_lock, irq_work_queue, __rcu_read_lock, intel_engine_add_retire, __traceiter_dma_fence_signaled, __SCT__tp_func_dma_fence_signaled, __rcu_read_unlock, ktime_get, dma_fence_release, __probestub_dma_fence_signaled, __intel_wakeref_put_last)

@@ -1,0 +1,4 @@
+drivers/acpi/acpica/exfield.o
+acpi_ex_get_protocol_buffer_length -> (acpi_error)
+acpi_ex_read_data_from_field -> (acpi_ut_create_buffer_object, acpi_ex_read_serial_bus, acpi_ex_acquire_global_lock, acpi_ds_get_buffer_field_arguments, acpi_ut_create_integer_object, acpi_ex_read_gpio, acpi_ut_remove_reference, acpi_ex_release_global_lock, acpi_ex_extract_from_field)
+acpi_ex_write_data_to_field -> (acpi_ex_write_serial_bus, acpi_ex_acquire_global_lock, acpi_ex_write_gpio, acpi_ds_get_buffer_field_arguments, acpi_ex_access_region, acpi_ex_insert_into_field, acpi_ex_release_global_lock)

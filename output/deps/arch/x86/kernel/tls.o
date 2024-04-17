@@ -1,0 +1,9 @@
+arch/x86/kernel/tls.o
+__ia32_sys_get_thread_area -> (do_get_thread_area)
+__ia32_sys_set_thread_area -> (do_set_thread_area)
+__x64_sys_get_thread_area -> (do_get_thread_area)
+__x64_sys_set_thread_area -> (do_set_thread_area)
+do_get_thread_area -> (_copy_to_user)
+do_set_thread_area -> (load_gs_index, set_tls_desc, _copy_from_user)
+load_gs_index -> (asm_load_gs_index)
+regset_tls_set -> (set_tls_desc)

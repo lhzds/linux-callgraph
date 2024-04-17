@@ -1,0 +1,5 @@
+lib/zstd/common/fse_decompress.o
+FSE_buildDTable_wksp -> (FSE_buildDTable_internal)
+FSE_decompress_wksp -> (FSE_decompress_wksp_bmi2)
+FSE_decompress_wksp_bmi2 -> (FSE_readNCount_bmi2, FSE_decompress_wksp_body_bmi2, FSE_buildDTable_internal)
+FSE_decompress_wksp_body_bmi2 -> (FSE_readNCount_bmi2, FSE_buildDTable_internal)

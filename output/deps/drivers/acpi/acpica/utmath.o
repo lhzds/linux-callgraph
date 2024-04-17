@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utmath.o
+acpi_ut_divide -> (acpi_error)
+acpi_ut_short_divide -> (acpi_error)

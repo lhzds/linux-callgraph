@@ -1,0 +1,8 @@
+drivers/base/platform_msi.o
+__platform_msi_create_device_domain -> (irq_domain_remove, irq_domain_create_hierarchy, ida_free, platform_msi_alloc_priv_data, msi_domain_prepare_irqs, kfree)
+platform_msi_alloc_priv_data -> (kmalloc_trace, _dev_err, ida_alloc_range, msi_setup_device_data, kfree)
+platform_msi_create_irq_domain -> (irq_chip_mask_parent, irq_chip_unmask_parent, irq_domain_update_bus_token, msi_create_irq_domain, msi_domain_set_affinity, platform_msi_write_msg, irq_chip_eoi_parent)
+platform_msi_device_domain_alloc -> (msi_domain_populate_irqs)
+platform_msi_device_domain_free -> (msi_domain_depopulate_descs, irq_domain_free_irqs_common, msi_unlock_descs, msi_lock_descs, msi_domain_free_msi_descs_range)
+platform_msi_domain_alloc_irqs -> (platform_msi_alloc_priv_data, kfree, msi_domain_alloc_irqs_range, ida_free)
+platform_msi_domain_free_irqs -> (kfree, msi_domain_free_irqs_all, ida_free)

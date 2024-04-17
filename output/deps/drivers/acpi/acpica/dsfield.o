@@ -1,0 +1,7 @@
+drivers/acpi/acpica/dsfield.o
+acpi_ds_create_bank_field -> (acpi_ns_lookup, acpi_ds_get_field_names, acpi_ut_prefixed_namespace_error)
+acpi_ds_create_buffer_field -> (acpi_ns_lookup, acpi_ns_get_attached_object, acpi_ps_get_arg, acpi_error, acpi_ns_attach_object, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg, acpi_ut_prefixed_namespace_error)
+acpi_ds_create_field -> (acpi_ns_lookup, acpi_ds_get_field_names, __kmalloc, acpi_ut_prefixed_namespace_error)
+acpi_ds_create_index_field -> (acpi_ns_lookup, acpi_ds_get_field_names, acpi_ut_prefixed_namespace_error)
+acpi_ds_get_field_names -> (acpi_ns_lookup, acpi_ns_get_attached_object, acpi_error, acpi_ex_prep_field_value, acpi_ut_prefixed_namespace_error)
+acpi_ds_init_field_objects -> (acpi_ns_lookup, acpi_ps_get_arg, acpi_error, acpi_ut_prefixed_namespace_error)

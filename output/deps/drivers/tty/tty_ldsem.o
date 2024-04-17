@@ -1,0 +1,6 @@
+drivers/tty/tty_ldsem.o
+__ldsem_wake_readers -> (wake_up_process, refcount_warn_saturate, __put_task_struct)
+ldsem_down_read -> (__SCT__might_resched, refcount_warn_saturate, schedule_timeout, _raw_spin_lock_irq, _raw_spin_unlock_irq, __ldsem_wake_readers, __put_task_struct, wake_up_process)
+ldsem_down_write -> (__SCT__might_resched, schedule_timeout, _raw_spin_lock_irq, _raw_spin_unlock_irq, __ldsem_wake_readers)
+ldsem_up_read -> (__ldsem_wake_readers, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, wake_up_process)
+ldsem_up_write -> (__ldsem_wake_readers, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, wake_up_process)

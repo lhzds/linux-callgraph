@@ -1,0 +1,6 @@
+drivers/rtc/rtc_mc146818_lib.o
+mc146818_avoid_UIP -> (rtc_cmos_read, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, __const_udelay)
+mc146818_does_rtc_work -> (mc146818_avoid_UIP)
+mc146818_get_time -> (mc146818_avoid_UIP, _bcd2bin, mc146818_get_time_callback)
+mc146818_get_time_callback -> (rtc_cmos_read)
+mc146818_set_time -> (_raw_spin_lock_irqsave, rtc_cmos_write, rtc_cmos_read, _raw_spin_unlock_irqrestore, _bin2bcd)

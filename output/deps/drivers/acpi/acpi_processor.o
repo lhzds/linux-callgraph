@@ -1,0 +1,12 @@
+drivers/acpi/acpi_processor.o
+acpi_early_processor_osc -> (acpi_hwp_native_thermal_lvt_osc, acpi_get_devices, acpi_walk_namespace)
+acpi_hwp_native_thermal_lvt_osc -> (acpi_handle_printk, kfree, acpi_run_osc)
+acpi_pcc_cpufreq_init -> (acpi_has_method, cpufreq_add_device, acpi_get_handle)
+acpi_processor_add -> (cpus_write_lock, cpu_maps_update_done, acpi_evaluate_integer, pci_read_config_byte, acpi_device_hid, pci_dev_put, arch_register_cpu, device_attach, acpi_map_cpu, acpi_get_phys_id, sprintf, cpu_maps_update_begin, kmalloc_trace, acpi_has_method, acpi_bind_one, _printk, pci_get_subsys, acpi_unbind_one, acpi_evaluate_object, _dev_err, acpi_map_cpuid, _dev_info, get_cpu_device, platform_device_register_full, acpi_unmap_cpu, _dev_warn, strcmp, kfree, cpus_write_unlock)
+acpi_processor_check_duplicates -> (acpi_processor_ids_walk, acpi_get_devices, acpi_walk_namespace)
+acpi_processor_claim_cst_control -> (_printk, acpi_os_write_port)
+acpi_processor_evaluate_cst -> (snprintf, acpi_evaluate_object, kfree, acpi_handle_printk, acpi_processor_ffh_cstate_probe)
+acpi_processor_ids_walk -> (acpi_get_type, acpi_evaluate_integer, acpi_evaluate_object, processor_validated_ids_update, acpi_handle_printk)
+acpi_processor_init -> (acpi_scan_add_handler, acpi_processor_container_attach, acpi_scan_add_handler_with_hotplug, acpi_processor_check_duplicates, acpi_pcc_cpufreq_init, acpi_processor_add, acpi_processor_remove)
+acpi_processor_remove -> (cpus_write_lock, acpi_unmap_cpu, acpi_unbind_one, cpu_maps_update_done, device_release_driver, cpu_maps_update_begin, kfree, cpus_write_unlock, arch_unregister_cpu)
+cpufreq_add_device -> (_printk, platform_device_register_full)

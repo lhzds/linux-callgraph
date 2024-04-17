@@ -1,0 +1,8 @@
+net/netfilter/utils.o
+nf_checksum -> (nf_ip6_checksum, nf_ip_checksum)
+nf_checksum_partial -> (nf_ip_checksum, nf_ip6_checksum, skb_checksum, csum_ipv6_magic, __skb_checksum_complete_head)
+nf_ip6_check_hbh_len -> (__pskb_pull_tail)
+nf_ip6_checksum -> (skb_checksum, csum_ipv6_magic, __skb_checksum_complete)
+nf_ip_checksum -> (__skb_checksum_complete)
+nf_reroute -> (ip_route_me_harder)
+nf_route -> (__nf_ip6_route, nf_ip_route)

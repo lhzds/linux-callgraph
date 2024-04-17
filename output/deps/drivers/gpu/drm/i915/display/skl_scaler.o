@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/display/skl_scaler.o
+intel_atomic_setup_scalers -> (drm_rect_calc_hscale, intel_format_info_is_yuv_semiplanar, __drm_dev_dbg, drm_rect_debug_print, __warn_printk, drm_rect_calc_vscale, drm_atomic_get_plane_state, drm_plane_from_index, icl_is_hdr_plane, dev_driver_string)
+skl_detach_scaler -> (__probestub_i915_reg_rw, __traceiter_i915_reg_rw, __SCT__tp_func_i915_reg_rw)
+skl_detach_scalers -> (skl_detach_scaler)
+skl_pfit_enable -> (drm_rect_calc_hscale, __traceiter_i915_reg_rw, __warn_printk, drm_rect_calc_vscale, skl_scaler_setup_filter, __probestub_i915_reg_rw, __SCT__tp_func_i915_reg_rw, dev_driver_string)
+skl_program_plane_scaler -> (drm_rect_calc_hscale, intel_format_info_is_yuv_semiplanar, __traceiter_i915_reg_rw, drm_rect_calc_vscale, skl_scaler_setup_filter, __probestub_i915_reg_rw, icl_is_hdr_plane, __SCT__tp_func_i915_reg_rw)
+skl_scaler_disable -> (skl_detach_scaler)
+skl_scaler_setup_filter -> (__traceiter_i915_reg_rw, __probestub_i915_reg_rw, __warn_printk, __SCT__tp_func_i915_reg_rw)
+skl_update_scaler -> (intel_format_info_is_yuv_semiplanar, __drm_dev_dbg)
+skl_update_scaler_crtc -> (skl_update_scaler)
+skl_update_scaler_plane -> (intel_format_info_is_yuv_semiplanar, icl_is_hdr_plane, __drm_dev_dbg, skl_update_scaler)

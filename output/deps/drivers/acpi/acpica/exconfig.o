@@ -1,0 +1,7 @@
+drivers/acpi/acpica/exconfig.o
+acpi_ex_add_table -> (acpi_ut_create_internal_object_dbg)
+acpi_ex_load_op -> (acpi_tb_install_and_load_table, acpi_ex_add_table, acpi_ns_get_attached_object, acpi_ex_exit_interpreter, kmalloc_trace, acpi_error, acpi_ex_enter_interpreter, acpi_info, acpi_ex_region_read, acpi_ns_initialize_objects, acpi_ut_remove_reference, acpi_ds_get_region_arguments, acpi_ev_address_space_dispatch, acpi_os_allocate, kfree, __kmalloc)
+acpi_ex_load_table_op -> (acpi_tb_find_table, acpi_ns_get_node_unlocked, acpi_ex_unload_table, acpi_ex_exit_interpreter, acpi_ex_enter_interpreter, acpi_ns_initialize_objects, acpi_info, acpi_ex_store, acpi_ut_create_integer_object, acpi_ut_remove_reference, acpi_tb_load_table, acpi_ut_create_internal_object_dbg)
+acpi_ex_region_read -> (acpi_ev_address_space_dispatch)
+acpi_ex_unload_table -> (acpi_ex_exit_interpreter, acpi_exception, acpi_ex_enter_interpreter, acpi_warning, acpi_tb_unload_table)
+acpi_os_allocate -> (__kmalloc)

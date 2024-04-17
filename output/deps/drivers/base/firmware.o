@@ -1,0 +1,2 @@
+drivers/base/firmware.o
+firmware_init -> (kobject_create_and_add)

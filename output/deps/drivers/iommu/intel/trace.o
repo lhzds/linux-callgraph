@@ -1,0 +1,9 @@
+drivers/iommu/intel/trace.o
+__traceiter_prq_report -> (__probestub_prq_report, __SCT__tp_func_prq_report, __traceiter_prq_report)
+__traceiter_qi_submit -> (__SCT__tp_func_qi_submit, __probestub_qi_submit, __traceiter_qi_submit)
+perf_trace_prq_report -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+perf_trace_qi_submit -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_prq_report -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_event_raw_event_qi_submit -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_raw_output_prq_report -> (trace_handle_return, snprintf, trace_raw_output_prep, trace_event_printf)
+trace_raw_output_qi_submit -> (trace_print_symbols_seq, trace_handle_return, trace_raw_output_prep, trace_event_printf)

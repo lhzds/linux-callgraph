@@ -1,0 +1,12 @@
+kernel/cgroup/debug.o
+cgroup_css_links_read -> (of_css, seq_printf, _raw_spin_lock_irq, _raw_spin_unlock_irq, __task_pid_nr_ns, seq_puts)
+cgroup_masks_read -> (seq_printf, cgroup_kn_lock_live, cgroup_kn_unlock, seq_putc, seq_puts)
+cgroup_subsys_states_read -> (seq_printf, snprintf, cgroup_kn_lock_live, cgroup_kn_unlock)
+current_css_set_cg_links_read -> (seq_printf, _raw_spin_lock_irq, kmalloc_trace, _raw_spin_unlock_irq, __rcu_read_lock, kernfs_name, __rcu_read_unlock, kfree)
+current_css_set_read -> (seq_printf, _raw_spin_lock_irq, _raw_spin_unlock_irq, __rcu_read_lock, cgroup_kn_lock_live, cgroup_kn_unlock, __rcu_read_unlock, seq_puts)
+current_css_set_refcount_read -> (__rcu_read_unlock, __rcu_read_lock)
+debug_css_alloc -> (kmalloc_trace)
+debug_css_free -> (kfree)
+debug_taskcount_read -> (cgroup_task_count)
+enable_debug_cgroup -> (debug_css_free, debug_taskcount_read, current_css_set_cg_links_read, cgroup_css_links_read, cgroup_subsys_states_read, current_css_set_read, releasable_read, cgroup_masks_read, debug_css_alloc, current_css_set_refcount_read)
+releasable_read -> (css_has_online_children)

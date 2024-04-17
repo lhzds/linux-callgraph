@@ -1,0 +1,13 @@
+arch/x86/entry/vsyscall/vsyscall_64.o
+__traceiter_emulate_vsyscall -> (__SCT__tp_func_emulate_vsyscall, __probestub_emulate_vsyscall, __traceiter_emulate_vsyscall)
+emulate_vsyscall -> (__secure_computing, _printk, __x64_sys_getcpu, write_ok_or_segv, __x64_sys_time, __SCT__tp_func_emulate_vsyscall, __traceiter_emulate_vsyscall, force_exit_sig, force_sig, ___ratelimit, warn_bad_vsyscall, __probestub_emulate_vsyscall, __x64_sys_gettimeofday)
+get_gate_vma -> (gate_vma_name)
+in_gate_area -> (gate_vma_name)
+map_vsyscall -> (gate_vma_name, native_set_fixmap, set_vsyscall_pgtable_user_bits)
+perf_trace_emulate_vsyscall -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+set_vsyscall_pgtable_user_bits -> (__pti_set_user_pgtbl)
+trace_event_raw_event_emulate_vsyscall -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_raw_output_emulate_vsyscall -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)
+vsyscall_setup -> (strcmp)
+warn_bad_vsyscall -> (___ratelimit, _printk)
+write_ok_or_segv -> (force_sig_fault)

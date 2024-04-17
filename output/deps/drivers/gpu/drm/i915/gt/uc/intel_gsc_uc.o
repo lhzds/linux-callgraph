@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/gt/uc/intel_gsc_uc.o
+gsc_work -> (intel_gsc_uc_fw_upload, __drm_dev_dbg, intel_gsc_proxy_request_handler, _raw_spin_lock_irq, _raw_spin_unlock_irq, _dev_err, intel_gsc_uc_fw_proxy_init_done, intel_huc_auth, intel_huc_is_authenticated, intel_runtime_pm_put_unchecked, intel_gsc_uc_fw_init_done, intel_runtime_pm_get)
+intel_gsc_uc_fini -> (intel_gsc_proxy_fini, intel_uc_fw_fini, i915_vma_unpin_and_release, flush_work, destroy_workqueue, intel_engine_destroy_pinned_context)
+intel_gsc_uc_flush_work -> (flush_work)
+intel_gsc_uc_init -> (intel_guc_allocate_vma, intel_gsc_proxy_init, intel_engine_create_pinned_context, intel_uc_fw_fini, i915_vma_unpin_and_release, _dev_err, intel_uc_fw_init)
+intel_gsc_uc_init_early -> (_dev_err, gsc_work, alloc_workqueue, intel_uc_fw_init_early)
+intel_gsc_uc_load_start -> (queue_work_on, _raw_spin_lock_irq, intel_gsc_uc_fw_init_done, _raw_spin_unlock_irq)
+intel_gsc_uc_resume -> (queue_work_on, _raw_spin_lock_irq, intel_gsc_uc_fw_init_done, _raw_spin_unlock_irq)

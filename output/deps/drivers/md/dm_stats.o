@@ -1,0 +1,12 @@
+drivers/md/dm_stats.o
+__dm_stat_clear -> (__dm_stat_init_temporary_percpu_totals, __SCT__cond_resched)
+__dm_stat_init_temporary_percpu_totals -> (ktime_get)
+dm_kvzalloc -> (_printk, kvmalloc_node, _raw_spin_lock_irq, _raw_spin_lock_irqsave, _raw_spin_unlock_irq, _raw_spin_unlock_irqrestore)
+dm_stat_free -> (_printk, _raw_spin_lock_irqsave, kvfree, _raw_spin_unlock_irqrestore, kfree)
+dm_statistics_exit -> (_printk, rcu_barrier)
+dm_stats_account_io -> (_printk, jiffies_to_msecs, __rcu_read_lock, __rcu_read_unlock, ktime_get)
+dm_stats_cleanup -> (free_percpu, _printk, dm_stat_free, __SCT__cond_resched)
+dm_stats_create -> (dm_kvzalloc, kstrdup, mutex_lock, dm_stat_free, static_key_enable, mutex_unlock, static_key_count, _raw_spin_lock_irq, _raw_spin_unlock_irq, __SCT__cond_resched, dm_internal_resume_fast, kmemdup, dm_internal_suspend_fast)
+dm_stats_init -> (__alloc_percpu, __mutex_init)
+dm_stats_message -> (kstrdup, mutex_lock, is_vmalloc_addr, dm_stats_create, synchronize_rcu_expedited, dm_consume_args, dm_shift_arg, message_stats_print, sscanf, call_rcu, strchr, strncasecmp, _printk, snprintf, strlen, mutex_unlock, __SCT__cond_resched, __dm_stat_clear, __kmalloc, dm_stat_free, strcmp, scnprintf, strcasecmp, kfree)
+message_stats_print -> (mutex_lock, strcmp, mutex_unlock, jiffies_to_msecs, scnprintf, sscanf, __SCT__cond_resched, __dm_stat_clear, __dm_stat_init_temporary_percpu_totals)

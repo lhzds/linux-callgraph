@@ -1,0 +1,12 @@
+mm/sparse.o
+memblocks_present -> (__next_mem_pfn_range, memory_present)
+memory_present -> (memblock_alloc_try_nid, sparse_index_alloc, panic, mminit_validate_memmodel_limits)
+mminit_validate_memmodel_limits -> (_printk)
+sparse_buffer_alloc -> (sparse_buffer_free)
+sparse_buffer_fini -> (sparse_buffer_free)
+sparse_buffer_free -> (memblock_free)
+sparse_buffer_init -> (memmap_alloc)
+sparse_index_alloc -> (memblock_alloc_try_nid, panic, slab_is_available, kmalloc_node_trace)
+sparse_init -> (memblocks_present, sparse_init_nid, vmemmap_populate_print_last, set_pageblock_order)
+sparse_init_nid -> (_printk, sparse_buffer_fini, __populate_section_memmap, sparse_buffer_init, memblock_alloc_try_nid)
+subsection_map_init -> (__bitmap_set)

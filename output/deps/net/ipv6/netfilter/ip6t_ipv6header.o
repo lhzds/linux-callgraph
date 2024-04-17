@@ -1,0 +1,4 @@
+net/ipv6/netfilter/ip6t_ipv6header.o
+ipv6header_mt6 -> (skb_copy_bits)
+ipv6header_mt6_exit -> (ipv6header_mt6_check, ipv6header_mt6, xt_unregister_match)
+ipv6header_mt6_init -> (ipv6header_mt6_check, ipv6header_mt6, xt_register_match)

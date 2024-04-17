@@ -1,0 +1,4 @@
+fs/lockd/svcshare.o
+nlmsvc_share_file -> (bcmp, __kmalloc)
+nlmsvc_traverse_shares -> (kfree)
+nlmsvc_unshare_file -> (kfree, bcmp)

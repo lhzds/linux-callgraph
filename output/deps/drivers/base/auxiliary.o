@@ -1,0 +1,12 @@
+drivers/base/auxiliary.o
+__auxiliary_device_add -> (_dev_err, device_add, dev_set_name)
+__auxiliary_driver_register -> (auxiliary_bus_remove, auxiliary_uevent, driver_register, pm_generic_runtime_suspend, auxiliary_bus_probe, pm_generic_suspend, pm_generic_resume, pm_generic_runtime_resume, auxiliary_bus_shutdown, kasprintf, auxiliary_match, kfree)
+auxiliary_bus_init -> (auxiliary_bus_remove, auxiliary_uevent, pm_generic_runtime_suspend, pm_generic_suspend, auxiliary_bus_probe, pm_generic_resume, pm_generic_runtime_resume, auxiliary_bus_shutdown, bus_register, auxiliary_match)
+auxiliary_bus_probe -> (dev_pm_domain_detach, dev_pm_domain_attach, _dev_warn, auxiliary_match_id)
+auxiliary_bus_remove -> (dev_pm_domain_detach)
+auxiliary_device_init -> (_printk, auxiliary_bus_remove, auxiliary_uevent, pm_generic_runtime_suspend, auxiliary_bus_probe, pm_generic_suspend, device_initialize, pm_generic_resume, pm_generic_runtime_resume, auxiliary_bus_shutdown, auxiliary_match)
+auxiliary_driver_unregister -> (driver_unregister, kfree)
+auxiliary_find_device -> (auxiliary_bus_remove, auxiliary_uevent, bus_find_device, pm_generic_runtime_suspend, auxiliary_bus_probe, pm_generic_suspend, pm_generic_resume, pm_generic_runtime_resume, auxiliary_bus_shutdown, auxiliary_match)
+auxiliary_match -> (auxiliary_match_id)
+auxiliary_match_id -> (strrchr, strncmp, strlen)
+auxiliary_uevent -> (strrchr, add_uevent_var)

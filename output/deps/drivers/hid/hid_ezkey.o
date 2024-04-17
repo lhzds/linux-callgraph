@@ -1,0 +1,5 @@
+drivers/hid/hid_ezkey.o
+ez_driver_exit -> (ez_event, hid_unregister_driver, ez_input_mapping)
+ez_driver_init -> (__hid_register_driver, ez_event, ez_input_mapping)
+ez_event -> (input_event)
+ez_input_mapping -> (___ratelimit, _printk)

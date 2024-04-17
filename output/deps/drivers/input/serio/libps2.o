@@ -1,0 +1,13 @@
+drivers/input/serio/libps2.o
+__ps2_command -> (init_wait_entry, ps2_adjust_timeout, __SCT__might_resched, schedule_timeout, _raw_spin_lock_irq, ps2_do_sendbyte, finish_wait, _raw_spin_unlock_irq, prepare_to_wait_event, __msecs_to_jiffies)
+ps2_adjust_timeout -> (_raw_spin_lock_irq, memchr, _raw_spin_unlock_irq)
+ps2_begin_command -> (mutex_lock)
+ps2_command -> (mutex_unlock, __ps2_command, mutex_lock)
+ps2_do_sendbyte -> (init_wait_entry, __SCT__might_resched, schedule_timeout, _raw_spin_lock_irq, finish_wait, _raw_spin_unlock_irq, prepare_to_wait_event, __msecs_to_jiffies)
+ps2_drain -> (init_wait_entry, __SCT__might_resched, mutex_lock, schedule_timeout, mutex_unlock, _raw_spin_lock_irq, finish_wait, _raw_spin_unlock_irq, prepare_to_wait_event, __msecs_to_jiffies)
+ps2_end_command -> (mutex_unlock)
+ps2_init -> (__init_waitqueue_head, __mutex_init)
+ps2_interrupt -> (__wake_up)
+ps2_is_keyboard_id -> (memchr)
+ps2_sendbyte -> (ps2_do_sendbyte, _raw_spin_lock_irq, _raw_spin_unlock_irq)
+ps2_sliced_command -> (mutex_unlock, __ps2_command, mutex_lock)

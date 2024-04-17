@@ -1,0 +1,11 @@
+drivers/ata/libata_pmp.o
+sata_pmp_attach -> (ata_link_next, _printk, sata_link_init_spd, ata_link_init, _raw_spin_lock_irqsave, kmalloc_large, sata_pmp_configure, sata_pmp_read_gscr, _raw_spin_unlock_irqrestore, ata_tlink_delete, ata_tlink_add, kfree)
+sata_pmp_configure -> (ata_exec_internal, _printk)
+sata_pmp_detach -> (ata_link_next, _printk, ata_eh_detach_dev, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+sata_pmp_error_handler -> (ata_dev_next, sata_pmp_detach, ata_eh_about_to_do, ata_dev_disable, ata_eh_finish, ata_eh_done, _raw_spin_lock_irqsave, sata_pmp_handle_link_fail, ata_eh_autopsy, ata_eh_reset, ata_eh_recover, ata_exec_internal, ata_eh_report, _printk, ata_link_next, sata_scr_read, sata_scr_write, sata_pmp_read_gscr, sata_link_hardreset, _raw_spin_unlock_irqrestore, sata_down_spd_limit, ata_eh_detach_dev, sata_pmp_configure)
+sata_pmp_handle_link_fail -> (_printk, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, ata_dev_disable)
+sata_pmp_qc_defer_cmd_switch -> (ata_std_qc_defer)
+sata_pmp_read_gscr -> (ata_exec_internal, _printk)
+sata_pmp_scr_read -> (ata_exec_internal, _printk)
+sata_pmp_scr_write -> (ata_exec_internal, _printk)
+sata_pmp_set_lpm -> (sata_link_scr_lpm)

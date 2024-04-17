@@ -1,0 +1,8 @@
+kernel/time/timer_list.o
+SEQ_printf -> (seq_vprintf, vprintk)
+init_timer_list_procfs -> (timer_list_show, timer_list_next, proc_create_seq_private, timer_list_stop, timer_list_start)
+print_cpu -> (ktime_get_clocktai, _raw_spin_lock_irqsave, SEQ_printf, timerqueue_iterate_next, ktime_get_boottime, _raw_spin_unlock_irqrestore, ktime_get_real, ktime_get, tick_get_tick_sched)
+print_tickdevice -> (tick_get_wakeup_device, SEQ_printf)
+sysrq_timer_list_show -> (tick_get_broadcast_mask, tick_get_broadcast_device, SEQ_printf, print_tickdevice, print_cpu, tick_get_broadcast_oneshot_mask, ktime_get, tick_get_device)
+timer_list_show -> (tick_get_broadcast_mask, tick_get_broadcast_device, SEQ_printf, print_tickdevice, print_cpu, tick_get_broadcast_oneshot_mask, tick_get_device)
+timer_list_start -> (ktime_get)

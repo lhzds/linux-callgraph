@@ -1,0 +1,10 @@
+drivers/gpu/drm/i915/gem/i915_gem_ttm_pm.o
+i915_gem_object_lock -> (refcount_warn_saturate, ww_mutex_lock, ww_mutex_lock_interruptible)
+i915_gem_object_put -> (refcount_warn_saturate, drm_gem_object_free)
+i915_ttm_backup -> (i915_gem_object_put, i915_gem_obj_copy_ttm, i915_gem_ww_unlock_single, ttm_tt_populate, i915_gem_object_needs_ccs_pages, ttm_bo_wait_ctx, i915_gem_object_create_region, i915_gem_object_lock, _dev_err, ttm_bo_validate, i915_gem_object_evictable, i915_ttm_sys_placement)
+i915_ttm_backup_free -> (refcount_warn_saturate, drm_gem_object_free)
+i915_ttm_backup_region -> (i915_ttm_backup, i915_gem_process_region)
+i915_ttm_recover -> (refcount_warn_saturate, drm_gem_object_free)
+i915_ttm_recover_region -> (i915_ttm_recover, i915_gem_process_region)
+i915_ttm_restore -> (i915_gem_obj_copy_ttm, refcount_warn_saturate, i915_gem_ww_unlock_single, ttm_tt_populate, ttm_bo_wait_ctx, drm_gem_object_free, i915_gem_object_lock, ttm_bo_validate, i915_ttm_sys_placement)
+i915_ttm_restore_region -> (i915_ttm_restore, i915_gem_process_region)

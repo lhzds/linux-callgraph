@@ -1,0 +1,12 @@
+kernel/cgroup/rdma.o
+free_cg_rpool_locked -> (kfree)
+rdmacg_css_alloc -> (kmalloc_trace)
+rdmacg_css_free -> (kfree)
+rdmacg_css_offline -> (mutex_unlock, mutex_lock)
+rdmacg_register_device -> (mutex_unlock, mutex_lock)
+rdmacg_resource_read -> (of_css, mutex_lock, seq_printf, mutex_unlock, seq_putc, seq_puts)
+rdmacg_resource_set_max -> (of_css, mutex_lock, strlen, strcmp, mutex_unlock, strsep, match_int, kmalloc_trace, match_string, strncmp, free_cg_rpool_locked, strim, kfree)
+rdmacg_try_charge -> (mutex_lock, mutex_unlock, kmalloc_trace, rdmacg_uncharge_hierarchy, __rcu_read_lock, __rcu_read_unlock)
+rdmacg_uncharge -> (rdmacg_uncharge_hierarchy)
+rdmacg_uncharge_hierarchy -> (_printk, mutex_lock, mutex_unlock, __rcu_read_lock, __rcu_read_unlock, kfree)
+rdmacg_unregister_device -> (mutex_lock, kfree, mutex_unlock)

@@ -1,0 +1,5 @@
+net/ethtool/rings.o
+ethnl_set_rings -> (_printk, net_ratelimit, do_trace_netlink_extack, snprintf)
+ethnl_set_rings_validate -> (do_trace_netlink_extack)
+rings_fill_reply -> (nla_put)
+rings_prepare_data -> (ethnl_ops_complete, ethnl_ops_begin)

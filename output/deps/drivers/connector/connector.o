@@ -1,0 +1,9 @@
+drivers/connector/connector.o
+cn_add_callback -> (cn_queue_add_callback)
+cn_del_callback -> (cn_queue_del_callback)
+cn_fini -> (netlink_kernel_release, remove_proc_entry, cn_queue_free_dev)
+cn_init -> (__netlink_kernel_create, cn_rx_skb, proc_create_single_data, cn_queue_alloc_dev, netlink_kernel_release, cn_proc_show)
+cn_netlink_send -> (cn_netlink_send_mult)
+cn_netlink_send_mult -> (_raw_spin_lock_bh, netlink_unicast, netlink_broadcast, __alloc_skb, __nlmsg_put, netlink_has_listeners, cn_cb_equal, _raw_spin_unlock_bh, kfree_skb_reason)
+cn_proc_show -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, seq_printf)
+cn_rx_skb -> (_raw_spin_lock_bh, cn_queue_release_callback, refcount_warn_saturate, cn_cb_equal, _raw_spin_unlock_bh, kfree_skb_reason)

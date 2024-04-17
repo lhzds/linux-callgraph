@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/intel_device_info.o
+intel_device_info_driver_create -> (intel_display_device_probe)
+intel_device_info_print -> (drm_printf, intel_step_name)
+intel_device_info_runtime_init -> (i915_vtd_active, __drm_dev_dbg, intel_read_rawclk, intel_display_device_info_runtime_init, _dev_info)
+intel_device_info_runtime_init_early -> (__warn_printk, ip_ver_read, dev_driver_string)
+intel_driver_caps_print -> (drm_printf)
+ip_ver_read -> (pci_iounmap, __drm_dev_dbg, __warn_printk, pci_iomap_range, ioread32, dev_driver_string)

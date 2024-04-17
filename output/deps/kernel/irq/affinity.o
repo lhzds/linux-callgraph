@@ -1,0 +1,3 @@
+kernel/irq/affinity.o
+irq_calc_affinity_vectors -> (cpus_read_lock, cpus_read_unlock)
+irq_create_affinity_masks -> (kfree, default_calc_sets, __kmalloc, group_cpus_evenly)

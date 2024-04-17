@@ -1,0 +1,4 @@
+sound/core/pcm_timer.o
+snd_pcm_timer_done -> (snd_device_free)
+snd_pcm_timer_init -> (snd_pcm_timer_start, snd_device_free, snd_timer_new, snd_pcm_timer_resolution, snd_pcm_timer_stop, snd_device_register, sprintf, snd_pcm_timer_free)
+snd_pcm_timer_resolution_change -> (_dev_err, gcd)

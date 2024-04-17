@@ -1,0 +1,10 @@
+net/netfilter/xt_TCPMSS.o
+dst_mtu -> (ip6_mtu, ipv4_mtu)
+tcpmss_mangle_packet -> (_printk, skb_put, dst_mtu, net_ratelimit, tcpmss_reverse_mtu, inet_proto_csum_replace4, pskb_expand_head, skb_ensure_writable)
+tcpmss_reverse_mtu -> (ip6_mtu, nf_route, dst_release, ipv4_mtu)
+tcpmss_tg4 -> (tcpmss_mangle_packet)
+tcpmss_tg4_check -> (___ratelimit, _printk, strcmp)
+tcpmss_tg6 -> (ipv6_skip_exthdr, tcpmss_mangle_packet)
+tcpmss_tg6_check -> (___ratelimit, _printk, strcmp)
+tcpmss_tg_exit -> (xt_unregister_targets, tcpmss_tg6, tcpmss_tg6_check, tcpmss_tg4_check, tcpmss_tg4)
+tcpmss_tg_init -> (tcpmss_tg6, tcpmss_tg6_check, tcpmss_tg4_check, tcpmss_tg4, xt_register_targets)

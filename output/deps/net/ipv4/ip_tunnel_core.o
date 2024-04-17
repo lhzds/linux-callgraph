@@ -1,0 +1,11 @@
+net/ipv4/ip_tunnel_core.o
+__iptunnel_pull_header -> (pskb_expand_head, skb_scrub_packet, __pskb_pull_tail, skb_pull_rcsum)
+ip_tunnel_need_metadata -> (static_key_slow_inc)
+ip_tunnel_unneed_metadata -> (static_key_slow_dec)
+iptunnel_handle_offloads -> (pskb_expand_head)
+iptunnel_metadata_reply -> (metadata_dst_alloc)
+iptunnel_pmtud_build_icmp -> (skb_copy_bits, ip_send_check, ___pskb_trim, __pskb_pull_tail, skb_push, eth_header, skb_checksum, pskb_expand_head)
+iptunnel_pmtud_build_icmpv6 -> (skb_copy_bits, ___pskb_trim, __pskb_pull_tail, csum_partial, skb_push, eth_header, csum_ipv6_magic, pskb_expand_head)
+iptunnel_xmit -> (ip_local_out, skb_push, __ip_select_ident, skb_scrub_packet)
+pskb_may_pull -> (__pskb_pull_tail)
+skb_tunnel_check_pmtu -> (ip6_mtu, iptunnel_pmtud_build_icmp, ipv6_skip_exthdr, __ipv6_addr_type, skb_gso_validate_network_len, iptunnel_pmtud_build_icmpv6, ipv4_mtu, pskb_may_pull)

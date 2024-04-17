@@ -1,0 +1,4 @@
+security/integrity/integrity_audit.o
+integrity_audit_message -> (__get_task_comm, audit_log_end, audit_log_untrustedstring, audit_log_format, audit_log_task_context, audit_log_start)
+integrity_audit_msg -> (integrity_audit_message)
+integrity_audit_setup -> (kstrtoull)

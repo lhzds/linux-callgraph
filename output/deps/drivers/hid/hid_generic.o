@@ -1,0 +1,6 @@
+drivers/hid/hid_generic.o
+__check_hid_generic -> (hid_match_device, hid_generic_match, hid_generic_probe)
+hid_generic_exit -> (hid_unregister_driver, hid_generic_match, hid_generic_probe)
+hid_generic_init -> (__hid_register_driver, hid_generic_match, hid_generic_probe)
+hid_generic_match -> (__check_hid_generic, hid_device_probe, hid_device_remove, hid_bus_match, bus_for_each_drv, hid_uevent)
+hid_generic_probe -> (hid_hw_start, hid_open_report)

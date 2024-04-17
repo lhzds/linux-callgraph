@@ -1,0 +1,7 @@
+net/ipv4/netfilter/iptable_mangle.o
+iptable_mangle_fini -> (iptable_mangle_net_exit, unregister_pernet_subsys, kfree, iptable_mangle_net_pre_exit, xt_unregister_template)
+iptable_mangle_hook -> (ipt_do_table, ip_route_me_harder)
+iptable_mangle_init -> (register_pernet_subsys, iptable_mangle_net_exit, xt_hook_ops_alloc, iptable_mangle_table_init, iptable_mangle_hook, xt_unregister_template, iptable_mangle_net_pre_exit, kfree, xt_register_template)
+iptable_mangle_net_exit -> (ipt_unregister_table_exit)
+iptable_mangle_net_pre_exit -> (ipt_unregister_table_pre_exit)
+iptable_mangle_table_init -> (ipt_alloc_initial_table, kfree, ipt_register_table)

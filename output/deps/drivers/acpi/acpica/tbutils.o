@@ -1,0 +1,7 @@
+drivers/acpi/acpica/tbutils.o
+acpi_tb_check_dsdt_header -> (acpi_bios_error, acpi_error, acpi_tb_print_table_header)
+acpi_tb_copy_dsdt -> (acpi_error, acpi_info, acpi_tb_init_table_descriptor, __kmalloc, acpi_tb_uninstall_table)
+acpi_tb_get_table -> (acpi_warning, acpi_tb_validate_table)
+acpi_tb_initialize_facs -> (acpi_get_table_by_index)
+acpi_tb_parse_root_table -> (acpi_os_map_memory, acpi_os_unmap_memory, acpi_ut_verify_checksum, acpi_tb_print_table_header, acpi_tb_parse_fadt, acpi_tb_install_standard_table, acpi_bios_error)
+acpi_tb_put_table -> (acpi_warning, acpi_tb_invalidate_table)

@@ -1,0 +1,5 @@
+net/mac80211/aead_api.o
+aead_decrypt -> (sg_init_table, crypto_aead_decrypt, kfree_sensitive, __kmalloc)
+aead_encrypt -> (crypto_aead_encrypt, sg_init_table, kfree_sensitive, __kmalloc)
+aead_key_free -> (crypto_destroy_tfm)
+aead_key_setup_encrypt -> (crypto_alloc_aead, crypto_aead_setkey, crypto_destroy_tfm, crypto_aead_setauthsize)

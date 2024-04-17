@@ -1,0 +1,13 @@
+drivers/virtio/virtio_pci_legacy.o
+del_vq -> (ioread8, vp_legacy_set_queue_address, vp_legacy_queue_vector, vring_del_virtqueue)
+setup_vq -> (vp_legacy_get_queue_size, virtqueue_get_desc_addr, vp_notify, vp_legacy_set_queue_address, vp_legacy_queue_vector, vring_create_virtqueue, _dev_err, vp_legacy_get_queue_enable, vring_del_virtqueue)
+virtio_pci_legacy_probe -> (vp_set_status, vp_get_vq_affinity, vp_get, vp_del_vqs, vp_finalize_features, vp_set_vq_affinity, vp_synchronize_vectors, vp_get_features, vp_bus_name, vp_reset, del_vq, vp_config_vector, vp_get_status, vp_find_vqs, vp_legacy_probe, setup_vq, vp_set)
+virtio_pci_legacy_remove -> (vp_legacy_remove)
+vp_config_vector -> (vp_legacy_config_vector)
+vp_finalize_features -> (vring_transport_features, vp_legacy_set_features)
+vp_get -> (ioread8)
+vp_get_features -> (vp_legacy_get_features)
+vp_get_status -> (vp_legacy_get_status)
+vp_reset -> (vp_synchronize_vectors, vp_legacy_set_status, vp_legacy_get_status)
+vp_set -> (iowrite8)
+vp_set_status -> (vp_legacy_set_status)

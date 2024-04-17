@@ -1,0 +1,4 @@
+fs/autofs/init.o
+autofs_mount -> (autofs_fill_super, mount_nodev)
+exit_autofs_fs -> (unregister_filesystem, autofs_kill_sb, autofs_mount, autofs_dev_ioctl_exit)
+init_autofs_fs -> (autofs_dev_ioctl_exit, autofs_kill_sb, register_filesystem, autofs_mount, autofs_dev_ioctl_init)

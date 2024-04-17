@@ -1,5 +1,5 @@
 .cache/
-src/
 build/
-deps/
-tmp/
+
+output/*
+!output/deps

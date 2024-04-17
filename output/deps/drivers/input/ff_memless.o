@@ -1,0 +1,10 @@
+drivers/input/ff_memless.o
+apply_envelope -> (__msecs_to_jiffies, jiffies_to_msecs)
+input_ff_create_memless -> (input_ff_create, ml_ff_upload, ml_ff_playback, init_timer_key, kmalloc_trace, ml_ff_destroy, ml_effect_timer, kfree, ml_ff_set_gain)
+ml_effect_timer -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, ml_play_effects)
+ml_ff_destroy -> (timer_delete_sync, kfree)
+ml_ff_playback -> (__msecs_to_jiffies, ml_play_effects)
+ml_ff_set_gain -> (ml_play_effects)
+ml_ff_upload -> (_raw_spin_lock_irq, __msecs_to_jiffies, ml_schedule_timer, _raw_spin_unlock_irq)
+ml_play_effects -> (_printk, __msecs_to_jiffies, apply_envelope, ml_schedule_timer)
+ml_schedule_timer -> (mod_timer, __msecs_to_jiffies, timer_delete)

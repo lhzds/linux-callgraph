@@ -1,0 +1,5 @@
+kernel/power/console.o
+pm_prepare_console -> (mutex_unlock, vt_move_to_console, mutex_lock, vt_kmsg_redirect)
+pm_restore_console -> (mutex_unlock, vt_move_to_console, mutex_lock, vt_kmsg_redirect)
+pm_vt_switch_required -> (mutex_lock, kmalloc_trace, mutex_unlock)
+pm_vt_switch_unregister -> (mutex_lock, kfree, mutex_unlock)

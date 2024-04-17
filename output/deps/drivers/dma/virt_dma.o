@@ -1,0 +1,6 @@
+drivers/dma/virt_dma.o
+vchan_complete -> (_raw_spin_lock_irq, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, _raw_spin_unlock_irq)
+vchan_dma_desc_free_list -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+vchan_init -> (vchan_complete, tasklet_setup)
+vchan_tx_desc_free -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+vchan_tx_submit -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

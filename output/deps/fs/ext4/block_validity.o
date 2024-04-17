@@ -1,0 +1,10 @@
+fs/ext4/block_validity.o
+add_system_zone -> (kmem_cache_alloc, rb_insert_color, rb_next, rb_prev, rb_erase, kmem_cache_free)
+ext4_check_blockref -> (ext4_inode_block_valid, __ext4_error_inode)
+ext4_destroy_system_zone -> (kfree, kmem_cache_free, rb_next_postorder, rb_first_postorder)
+ext4_exit_system_zone -> (rcu_barrier, kmem_cache_destroy)
+ext4_init_system_zone -> (kmem_cache_create)
+ext4_inode_block_valid -> (__rcu_read_unlock, __rcu_read_lock)
+ext4_release_system_zone -> (call_rcu, ext4_destroy_system_zone)
+ext4_sb_block_valid -> (__rcu_read_unlock, __rcu_read_lock)
+ext4_setup_system_zone -> (iput, rb_next, ext4_get_group_desc, kmalloc_trace, __ext4_iget, rb_first, ext4_block_bitmap, __rcu_read_unlock, kmem_cache_free, _printk, __SCT__cond_resched, ext4_inode_table, ext4_inode_bitmap, rb_first_postorder, ext4_bg_num_gdb, rb_next_postorder, __rcu_read_lock, __ext4_error_inode, ext4_bg_has_super, add_system_zone, kfree, ext4_map_blocks)

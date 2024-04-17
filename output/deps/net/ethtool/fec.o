@@ -1,0 +1,5 @@
+net/ethtool/fec.o
+ethnl_set_fec -> (ethnl_update_bitset, _find_first_bit, do_trace_netlink_extack)
+fec_fill_reply -> (nla_put, ethnl_put_bitset, nla_put_64bit, skb_trim)
+fec_prepare_data -> (_find_first_bit, ethnl_ops_complete, ethnl_ops_begin, fec_stats_recalc)
+fec_reply_size -> (ethnl_bitset_size)

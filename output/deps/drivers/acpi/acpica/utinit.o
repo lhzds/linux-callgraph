@@ -1,0 +1,3 @@
+drivers/acpi/acpica/utinit.o
+acpi_ut_init_globals -> (acpi_ut_create_caches)
+acpi_ut_subsystem_shutdown -> (acpi_ev_terminate, acpi_ns_terminate, acpi_ut_delete_caches, acpi_error, acpi_ut_delete_address_lists, acpi_tb_terminate, acpi_ut_interface_terminate, kfree)

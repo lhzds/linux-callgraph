@@ -1,0 +1,2 @@
+arch/x86/lib/usercopy.o
+copy_from_user_nmi -> (nmi_uaccess_okay)

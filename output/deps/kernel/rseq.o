@@ -1,0 +1,12 @@
+kernel/rseq.o
+__ia32_sys_rseq -> (__se_sys_rseq)
+__rseq_handle_notify_resume -> (__probestub_rseq_update, _printk, __probestub_rseq_ip_fixup, _copy_from_user, __SCT__tp_func_rseq_update, force_sigsegv, __traceiter_rseq_ip_fixup, __traceiter_rseq_update, __SCT__tp_func_rseq_ip_fixup, ___ratelimit)
+__traceiter_rseq_ip_fixup -> (__SCT__tp_func_rseq_ip_fixup, __traceiter_rseq_ip_fixup, __probestub_rseq_ip_fixup)
+__traceiter_rseq_update -> (__traceiter_rseq_update, __probestub_rseq_update, __SCT__tp_func_rseq_update)
+__x64_sys_rseq -> (__se_sys_rseq)
+perf_trace_rseq_ip_fixup -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+perf_trace_rseq_update -> (perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_rseq_ip_fixup -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_event_raw_event_rseq_update -> (trace_event_buffer_reserve, __trace_trigger_soft_disabled, trace_event_buffer_commit)
+trace_raw_output_rseq_ip_fixup -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)
+trace_raw_output_rseq_update -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)

@@ -1,0 +1,6 @@
+arch/x86/mm/dump_pagetables.o
+note_page -> (_printk, __warn_printk, seq_printf)
+ptdump_walk_pgd_level -> (ptdump_walk_pgd, note_page, effective_prot)
+ptdump_walk_pgd_level_checkwx -> (_printk, ptdump_walk_pgd, note_page, effective_prot)
+ptdump_walk_pgd_level_debugfs -> (ptdump_walk_pgd, note_page, effective_prot)
+ptdump_walk_user_pgd_level_checkwx -> (_printk, ptdump_walk_pgd, note_page, effective_prot)

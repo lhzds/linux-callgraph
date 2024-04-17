@@ -1,0 +1,3 @@
+fs/proc/uptime.o
+proc_uptime_init -> (proc_create_single_data, uptime_proc_show)
+uptime_proc_show -> (seq_printf, ktime_get_with_offset, set_normalized_timespec64, get_idle_time, ns_to_timespec64)

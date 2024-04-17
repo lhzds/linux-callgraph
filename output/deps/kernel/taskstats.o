@@ -1,0 +1,10 @@
+kernel/taskstats.o
+add_del_listener -> (down_write, up_write, task_active_pid_ns, kfree, kmalloc_node_trace)
+cgroupstats_user_cmd -> (netlink_unicast, prepare_reply, __fdget, cgroupstats_build, fput, kfree_skb_reason, nla_reserve)
+fill_stats -> (delayacct_add_tsk, get_task_exe_file, xacct_add_tsk, bacct_add_tsk, fput)
+mk_reply -> (nla_put, nla_reserve_64bit, skb_trim)
+prepare_reply -> (kfree_skb_reason, cgroupstats_user_cmd, __alloc_skb, taskstats_user_cmd, genlmsg_put)
+taskstats_exit -> (kmem_cache_alloc, kfree_skb_reason, mk_reply, delayacct_add_tsk, _raw_spin_lock_irq, _raw_spin_lock_irqsave, __task_pid_nr_ns, taskstats_user_cmd, kmem_cache_free, netlink_unicast, cgroupstats_user_cmd, down_read, _raw_spin_unlock_irq, _raw_spin_unlock_irqrestore, genlmsg_put, down_write, skb_clone, up_write, up_read, __alloc_skb, fill_stats, kfree)
+taskstats_init -> (cgroupstats_user_cmd, _printk, taskstats_user_cmd, genl_register_family)
+taskstats_init_early -> (kmem_cache_create, __init_rwsem)
+taskstats_user_cmd -> (refcount_warn_saturate, kfree_skb_reason, mk_reply, ktime_get, add_del_listener, delayacct_add_tsk, find_get_task_by_vpid, __lock_task_sighand, bitmap_parselist, __rcu_read_unlock, taskstats_user_cmd, nla_strscpy, netlink_unicast, cgroupstats_user_cmd, _raw_spin_unlock_irqrestore, __put_task_struct, task_active_pid_ns, genlmsg_put, __kmalloc, find_task_by_vpid, __alloc_skb, __rcu_read_lock, fill_stats, kfree)

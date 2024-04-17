@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/pxp/intel_pxp_tee.o
+i915_pxp_tee_component_bind -> (device_link_add, mutex_lock, intel_runtime_pm_get_if_in_use, mutex_unlock, __warn_printk, intel_pxp_is_enabled, _dev_err, intel_pxp_init_hw, intel_runtime_pm_put_unchecked, intel_huc_fw_load_and_auth_via_gsc, intel_runtime_pm_get, dev_driver_string)
+i915_pxp_tee_component_unbind -> (device_link_del, mutex_lock, intel_runtime_pm_get_if_in_use, mutex_unlock, intel_pxp_is_enabled, intel_pxp_fini_hw, intel_runtime_pm_put_unchecked)
+intel_pxp_tee_cmd_create_arb_session -> (mutex_lock, __drm_dev_dbg, mutex_unlock, _dev_err, _dev_info)
+intel_pxp_tee_component_fini -> (refcount_warn_saturate, drm_gem_object_free, component_del, i915_pxp_tee_component_bind, i915_pxp_tee_component_unbind)
+intel_pxp_tee_component_init -> (refcount_warn_saturate, i915_gem_object_create_lmem, drm_gem_object_free, i915_pxp_tee_component_bind, component_add_typed, _dev_err, i915_pxp_tee_component_unbind, i915_gem_object_pin_map_unlocked, i915_coherent_map_type, i915_gem_object_pin_pages_unlocked)
+intel_pxp_tee_end_arb_fw_session -> (mutex_lock, __drm_dev_dbg, mutex_unlock, _dev_err, _dev_info)
+intel_pxp_tee_stream_message -> (_dev_err, __i915_gem_object_page_iter_get_sg, mutex_lock, mutex_unlock)

@@ -1,0 +1,9 @@
+block/blk_flush.o
+blk_alloc_flush_queue -> (kfree, kmalloc_node_trace, __kmalloc_node)
+blk_flush_complete_seq -> (blk_mq_end_request, _raw_spin_unlock, _raw_spin_lock, flush_end_io, blk_rq_init, blk_mq_kick_requeue_list)
+blk_free_flush_queue -> (kfree)
+blk_insert_flush -> (blk_mq_end_request, _raw_spin_lock_irq, _raw_spin_unlock_irq, blk_flush_complete_seq, mq_flush_data_end_io)
+blkdev_issue_flush -> (bio_init, submit_bio_wait)
+flush_end_io -> (blk_mq_put_tag, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, ktime_get, blk_flush_complete_seq)
+is_flush_rq -> (flush_end_io)
+mq_flush_data_end_io -> (__blk_mq_sched_restart, _raw_spin_lock_irqsave, blk_mq_put_tag, _raw_spin_unlock_irqrestore, blk_flush_complete_seq)

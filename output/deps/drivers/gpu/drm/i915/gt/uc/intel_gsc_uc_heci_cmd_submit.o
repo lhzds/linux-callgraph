@@ -1,0 +1,3 @@
+drivers/gpu/drm/i915/gt/uc/intel_gsc_uc_heci_cmd_submit.o
+intel_gsc_uc_heci_cmd_submit_nonpriv -> (_i915_vma_move_to_active, refcount_warn_saturate, i915_request_set_error_once, i915_gem_ww_ctx_backoff, ww_mutex_lock, i915_gem_ww_ctx_fini, i915_request_add, i915_request_create, _dev_err, i915_request_wait, i915_gem_ww_ctx_init, __intel_context_do_pin_ww, ww_mutex_lock_interruptible, __msecs_to_jiffies, dma_fence_release, __intel_context_do_unpin)
+intel_gsc_uc_heci_cmd_submit_packet -> (refcount_warn_saturate, i915_request_set_error_once, i915_request_create, i915_request_add, _dev_err, i915_request_wait, intel_ring_begin, dma_fence_release)

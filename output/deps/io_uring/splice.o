@@ -1,0 +1,3 @@
+io_uring/splice.o
+io_splice -> (io_file_get_normal, do_splice, io_file_get_fixed, fput)
+io_tee -> (io_file_get_normal, do_tee, io_file_get_fixed, fput)

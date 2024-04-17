@@ -1,0 +1,6 @@
+fs/nfs/mount_clnt.o
+mnt_xdr_dec_mountres -> (xdr_inline_decode)
+mnt_xdr_dec_mountres3 -> (xdr_inline_decode)
+mnt_xdr_enc_dirpath -> (xdr_reserve_space, strlen, xdr_encode_opaque)
+nfs_mount -> (strlen, mnt_xdr_enc_dirpath, mnt_xdr_dec_mountres3, nfs_init_timeout_values, rpc_create, rpc_shutdown_client, mnt_xdr_dec_mountres, rpc_call_sync)
+nfs_umount -> (strlen, mnt_xdr_enc_dirpath, mnt_xdr_dec_mountres3, rpc_create, rpc_shutdown_client, mnt_xdr_dec_mountres, rpc_call_sync)

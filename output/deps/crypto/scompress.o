@@ -1,0 +1,13 @@
+crypto/scompress.o
+crypto_acomp_scomp_alloc_ctx -> (kfree)
+crypto_exit_scomp_ops_async -> (mutex_unlock, vfree, mutex_lock, crypto_destroy_tfm)
+crypto_init_scomp_ops_async -> (sgl_free, crypto_mod_put, crypto_mod_get, crypto_alg_extsize, scomp_acomp_decompress, crypto_create_tfm_node, scomp_acomp_compress, crypto_scomp_show, crypto_exit_scomp_ops_async, crypto_scomp_init_tfm)
+crypto_register_scomp -> (crypto_alg_extsize, crypto_register_alg, crypto_scomp_show, comp_prepare_alg, crypto_scomp_init_tfm)
+crypto_register_scomps -> (crypto_unregister_alg, crypto_alg_extsize, crypto_register_alg, crypto_scomp_show, comp_prepare_alg, crypto_scomp_init_tfm)
+crypto_scomp_init_tfm -> (mutex_unlock, vmalloc_node, vfree, mutex_lock)
+crypto_scomp_show -> (seq_puts)
+crypto_unregister_scomp -> (crypto_unregister_alg)
+crypto_unregister_scomps -> (crypto_unregister_alg)
+scomp_acomp_comp_decomp -> (sgl_alloc, _raw_spin_lock, scatterwalk_map_and_copy, _raw_spin_unlock)
+scomp_acomp_compress -> (scomp_acomp_comp_decomp)
+scomp_acomp_decompress -> (scomp_acomp_comp_decomp)

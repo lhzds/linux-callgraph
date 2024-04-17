@@ -1,0 +1,7 @@
+sound/core/device.o
+__snd_device_free -> (_dev_err, kfree)
+snd_device_disconnect -> (_dev_err)
+snd_device_disconnect_all -> (_dev_err)
+snd_device_free -> (__snd_device_free)
+snd_device_free_all -> (__snd_device_free)
+snd_device_new -> (kmalloc_trace)

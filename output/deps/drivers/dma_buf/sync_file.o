@@ -1,0 +1,8 @@
+drivers/dma_buf/sync_file.o
+fence_check_cb_func -> (__wake_up)
+sync_file_create -> (compat_ptr_ioctl, refcount_warn_saturate, anon_inode_getfile, sync_file_poll, kmalloc_trace, sync_file_release, __init_waitqueue_head, kfree, sync_file_ioctl)
+sync_file_get_fence -> (compat_ptr_ioctl, refcount_warn_saturate, fget, sync_file_poll, sync_file_release, fput, sync_file_ioctl)
+sync_file_get_name -> (snprintf, strscpy)
+sync_file_ioctl -> (fget, _copy_to_user, _copy_from_user, kmalloc_trace, sync_file_release, fput, strscpy, __dma_fence_unwrap_merge, dma_fence_unwrap_first, snprintf, sync_file_poll, __init_waitqueue_head, fd_install, __kmalloc, sync_file_ioctl, compat_ptr_ioctl, put_unused_fd, dma_fence_unwrap_next, dma_fence_get_status, anon_inode_getfile, kfree, get_unused_fd_flags)
+sync_file_poll -> (__wake_up, dma_fence_signal, dma_fence_add_callback, fence_check_cb_func)
+sync_file_release -> (refcount_warn_saturate, dma_fence_remove_callback, dma_fence_release, kfree)

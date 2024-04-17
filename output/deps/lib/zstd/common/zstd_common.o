@@ -1,0 +1,3 @@
+lib/zstd/common/zstd_common.o
+ZSTD_getErrorName -> (ERR_getErrorString)
+ZSTD_getErrorString -> (ERR_getErrorString)

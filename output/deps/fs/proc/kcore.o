@@ -1,0 +1,7 @@
+fs/proc/kcore.o
+kclist_add_private -> (__virt_addr_valid, kmalloc_trace, kfree)
+kcore_update_ram -> (down_write, up_write, kclist_add_private, kfree, walk_system_ram_range)
+open_kcore -> (down_write, up_write, kcore_update_ram, kmalloc_trace, security_locked_down, capable)
+proc_kcore_init -> (release_kcore, _printk, kcore_update_ram, default_llseek, read_kcore_iter, add_modules_range, open_kcore, proc_create)
+read_kcore_iter -> (_printk, page_offline_thaw, down_read, strscpy, up_read, vread_iter, __SCT__cond_resched, copy_from_kernel_nofault, PageHuge, _copy_to_iter, fault_in_iov_iter_writeable, iov_iter_zero, page_offline_freeze, kfree, __kmalloc)
+release_kcore -> (kfree)

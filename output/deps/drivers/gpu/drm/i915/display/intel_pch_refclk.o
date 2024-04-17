@@ -1,0 +1,6 @@
+drivers/gpu/drm/i915/display/intel_pch_refclk.o
+intel_init_pch_refclk -> (__SCT__might_resched, mutex_lock, __drm_dev_dbg, ktime_get_raw, usleep_range_state, mutex_unlock, __warn_printk, intel_sbi_read, lpt_disable_clkout_dp, __const_udelay, _dev_err, intel_sbi_write, dev_driver_string, intel_panel_use_ssc)
+lpt_disable_clkout_dp -> (mutex_lock, mutex_unlock, intel_sbi_read, __const_udelay, intel_sbi_write)
+lpt_disable_iclkip -> (mutex_unlock, mutex_lock, intel_sbi_read, intel_sbi_write)
+lpt_get_iclkip -> (mutex_unlock, mutex_lock, intel_sbi_read)
+lpt_program_iclkip -> (mutex_lock, __drm_dev_dbg, mutex_unlock, __warn_printk, intel_sbi_read, __const_udelay, intel_sbi_write, dev_driver_string)

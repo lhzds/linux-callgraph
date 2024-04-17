@@ -1,0 +1,9 @@
+drivers/tty/serial/8250/8250_dma.o
+__dma_tx_complete -> (_raw_spin_lock_irqsave, serial8250_tx_dma, uart_write_wakeup, dma_sync_single_for_cpu, _raw_spin_unlock_irqrestore)
+dma_map_single_attrs -> (__warn_printk, dma_map_page_attrs, dev_driver_string, is_vmalloc_addr)
+dma_rx_complete -> (_raw_spin_lock_irqsave, tty_insert_flip_string_fixed_flag, _raw_spin_unlock_irqrestore, tty_flip_buffer_push)
+serial8250_release_dma -> (dma_unmap_page_attrs, __SCT__might_resched, dma_free_attrs, dma_release_channel)
+serial8250_request_dma -> (dma_alloc_attrs, dma_get_slave_caps, dma_request_chan, __dma_request_channel, dma_free_attrs, dma_map_single_attrs, dma_release_channel)
+serial8250_rx_dma -> (dma_rx_complete, sg_init_table)
+serial8250_rx_dma_flush -> (tty_insert_flip_string_fixed_flag, tty_flip_buffer_push)
+serial8250_tx_dma -> (sg_init_table, uart_xchar_out, dma_sync_single_for_device, __dma_tx_complete)

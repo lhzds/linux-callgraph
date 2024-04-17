@@ -1,0 +1,6 @@
+net/netfilter/nf_conntrack_seqadj.o
+nf_ct_seq_adjust -> (_raw_spin_lock_bh, inet_proto_csum_replace4, __nf_ct_ext_find, _raw_spin_unlock_bh, skb_ensure_writable)
+nf_ct_seq_offset -> (__nf_ct_ext_find)
+nf_ct_seqadj_init -> (__nf_ct_ext_find)
+nf_ct_seqadj_set -> (_raw_spin_lock_bh, _raw_spin_unlock_bh, __warn_printk, __nf_ct_ext_find)
+nf_ct_tcp_seqadj_set -> (nf_ct_seqadj_set)

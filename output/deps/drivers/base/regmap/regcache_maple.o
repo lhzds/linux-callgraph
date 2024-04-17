@@ -1,0 +1,9 @@
+drivers/base/regmap/regcache_maple.o
+regcache_maple_drop -> (mas_store_gfp, _raw_spin_unlock, _raw_spin_lock, kmemdup, mas_find, mas_erase, kfree)
+regcache_maple_exit -> (_raw_spin_unlock, _raw_spin_lock, __mt_destroy, mas_find, kfree)
+regcache_maple_init -> (regcache_maple_insert_block, kmalloc_trace, regcache_maple_exit)
+regcache_maple_insert_block -> (mas_store_gfp, _raw_spin_unlock, _raw_spin_lock, kfree, __kmalloc)
+regcache_maple_read -> (__rcu_read_unlock, mas_walk, __rcu_read_lock)
+regcache_maple_sync -> (regcache_maple_sync_block, __rcu_read_lock, mas_find, __rcu_read_unlock, regcache_reg_needs_sync)
+regcache_maple_sync_block -> (_regmap_write, regcache_set_val, _regmap_raw_write, mas_pause, __rcu_read_lock, __rcu_read_unlock, regmap_can_raw_write, kfree, __kmalloc)
+regcache_maple_write -> (mas_store_gfp, _raw_spin_unlock, _raw_spin_lock, __rcu_read_lock, mas_find, __rcu_read_unlock, mas_walk, kfree, __kmalloc)

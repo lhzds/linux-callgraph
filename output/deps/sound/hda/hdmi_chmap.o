@@ -1,0 +1,10 @@
+sound/hda/hdmi_chmap.o
+hdmi_chmap_ctl_put -> (hdmi_manual_channel_allocation)
+hdmi_chmap_ctl_tlv -> (__copy_overflow, _copy_to_user)
+hdmi_pin_get_slot_channel -> (snd_hdac_codec_read)
+hdmi_pin_set_slot_channel -> (snd_hdac_codec_write)
+hdmi_set_channel_count -> (snd_hdac_codec_read, snd_hdac_codec_write)
+snd_hdac_add_chmap_ctls -> (hdmi_chmap_ctl_info, snd_pcm_add_chmap_ctls, hdmi_chmap_ctl_put, hdmi_chmap_ctl_get, hdmi_chmap_ctl_tlv)
+snd_hdac_channel_allocation -> (scnprintf, hdmi_manual_channel_allocation)
+snd_hdac_print_channel_allocation -> (scnprintf)
+snd_hdac_register_chmap_ops -> (hdmi_set_channel_count, hdmi_pin_set_slot_channel, hdmi_chmap_cea_alloc_validate_get_type, hdmi_cea_alloc_to_tlv_chmap, hdmi_pin_get_slot_channel)

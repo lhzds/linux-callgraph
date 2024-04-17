@@ -1,0 +1,13 @@
+fs/signalfd.o
+__ia32_compat_sys_signalfd -> (do_signalfd4, get_compat_sigset)
+__ia32_compat_sys_signalfd4 -> (do_signalfd4, get_compat_sigset)
+__ia32_sys_signalfd -> (do_signalfd4, _copy_from_user)
+__ia32_sys_signalfd4 -> (do_signalfd4, _copy_from_user)
+__x64_sys_signalfd -> (do_signalfd4, _copy_from_user)
+__x64_sys_signalfd4 -> (do_signalfd4, _copy_from_user)
+do_signalfd4 -> (__wake_up, signalfd_show_fdinfo, __fdget, _raw_spin_lock_irq, kmalloc_trace, anon_inode_getfd, _raw_spin_unlock_irq, noop_llseek, fput, signalfd_poll, signalfd_read, kfree, signalfd_release)
+signalfd_cleanup -> (__wake_up_pollfree)
+signalfd_poll -> (_raw_spin_lock_irq, next_signal, _raw_spin_unlock_irq)
+signalfd_read -> (_raw_spin_lock_irq, add_wait_queue, schedule, siginfo_layout, _raw_spin_unlock_irq, dequeue_signal, remove_wait_queue, default_wake_function, _copy_to_user)
+signalfd_release -> (kfree)
+signalfd_show_fdinfo -> (render_sigset_t)

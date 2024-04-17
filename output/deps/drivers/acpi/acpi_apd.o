@@ -1,0 +1,3 @@
+drivers/acpi/acpi_apd.o
+acpi_apd_create_device -> (kmalloc_trace, kfree, acpi_create_platform_device)
+acpi_apd_init -> (acpi_scan_add_handler, acpi_apd_create_device)

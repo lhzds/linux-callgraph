@@ -1,0 +1,8 @@
+fs/notify/dnotify/dnotify.o
+dnotify_flush -> (mutex_lock, _raw_spin_unlock, fsnotify_free_mark, _raw_spin_lock, mutex_unlock, fsnotify_recalc_mask, fsnotify_put_mark, kmem_cache_free, fsnotify_find_mark, fsnotify_detach_mark)
+dnotify_free_mark -> (kmem_cache_free)
+dnotify_handle_event -> (_raw_spin_unlock, _raw_spin_lock, fsnotify_recalc_mask, kmem_cache_free, send_sigio)
+dnotify_init -> (kmem_cache_create, fsnotify_alloc_group, dnotify_free_mark, proc_dointvec, __register_sysctl_init, panic, dnotify_handle_event)
+dnotify_recalc_inode_mask -> (fsnotify_recalc_mask)
+fcntl_dirnotify -> (kmem_cache_alloc, mutex_lock, _raw_spin_lock, attach_dn, dnotify_recalc_inode_mask, _raw_spin_unlock, fsnotify_free_mark, dnotify_flush, fsnotify_put_mark, __rcu_read_unlock, kmem_cache_free, fsnotify_group_unlock, fsnotify_add_mark_locked, security_path_notify, __f_setown, __rcu_read_lock, fsnotify_init_mark, fsnotify_find_mark, fsnotify_detach_mark)
+fsnotify_group_unlock -> (mutex_unlock)

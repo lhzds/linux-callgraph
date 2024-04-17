@@ -1,0 +1,7 @@
+net/ipv6/netfilter/nf_defrag_ipv6_hooks.o
+defrag6_net_exit -> (ipv6_defrag, nf_unregister_net_hooks)
+ipv6_defrag -> (nf_ct_frag6_gather)
+nf_defrag_fini -> (nf_ct_frag6_cleanup, unregister_pernet_subsys, defrag6_net_exit)
+nf_defrag_init -> (register_pernet_subsys, _printk, nf_ct_frag6_init, nf_ct_frag6_cleanup, defrag6_net_exit)
+nf_defrag_ipv6_disable -> (mutex_lock, ipv6_defrag, nf_unregister_net_hooks, mutex_unlock)
+nf_defrag_ipv6_enable -> (mutex_lock, ipv6_defrag, mutex_unlock, nf_register_net_hooks)

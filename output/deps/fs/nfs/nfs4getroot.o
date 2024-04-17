@@ -1,0 +1,2 @@
+fs/nfs/nfs4getroot.o
+nfs4_get_rootfh -> (nfs4_proc_get_rootfh, _printk, kfree, nfs_alloc_fattr)

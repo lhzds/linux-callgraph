@@ -1,0 +1,6 @@
+drivers/acpi/acpica/nsobject.o
+acpi_ns_attach_data -> (acpi_ut_create_internal_object_dbg)
+acpi_ns_attach_object -> (acpi_ns_detach_object, acpi_ut_get_descriptor_name, acpi_ut_add_reference, acpi_error)
+acpi_ns_detach_data -> (acpi_ut_remove_reference)
+acpi_ns_detach_object -> (acpi_ut_remove_reference, acpi_ut_remove_address_range, kfree)
+acpi_ns_get_attached_object -> (acpi_warning)

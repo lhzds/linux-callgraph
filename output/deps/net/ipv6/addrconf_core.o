@@ -1,0 +1,11 @@
+net/ipv6/addrconf_core.o
+eafnosupport_fib6_nh_init -> (do_trace_netlink_extack)
+eafnosupport_ipv6_fragment -> (kfree_skb_reason)
+in6_dev_finish_destroy -> (_printk, call_rcu, in6_dev_finish_destroy_rcu)
+in6_dev_finish_destroy_rcu -> (free_percpu, kfree)
+inet6addr_notifier_call_chain -> (atomic_notifier_call_chain)
+inet6addr_validator_notifier_call_chain -> (blocking_notifier_call_chain)
+register_inet6addr_notifier -> (atomic_notifier_chain_register)
+register_inet6addr_validator_notifier -> (blocking_notifier_chain_register)
+unregister_inet6addr_notifier -> (atomic_notifier_chain_unregister)
+unregister_inet6addr_validator_notifier -> (blocking_notifier_chain_unregister)

@@ -1,0 +1,2 @@
+drivers/acpi/acpica/nseval.o
+acpi_ns_evaluate -> (acpi_ut_match_predefined_method, acpi_ns_get_attached_object, acpi_ps_execute_method, acpi_ex_resolve_node_to_value, acpi_ns_check_acpi_compliance, acpi_ns_get_normalized_pathname, acpi_ut_get_type_name, acpi_ex_exit_interpreter, acpi_ex_enter_interpreter, acpi_error, acpi_ns_get_node, acpi_ns_get_type, acpi_ut_predefined_warning, acpi_ut_remove_reference, acpi_ns_check_argument_types, acpi_ns_check_return_value, kfree, acpi_ns_check_argument_count)

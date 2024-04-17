@@ -1,0 +1,11 @@
+drivers/gpu/drm/drm_mm.o
+add_hole -> (__rb_insert_augmented, augment_callbacks_rotate, rb_insert_color)
+drm_mm_init -> (add_hole)
+drm_mm_insert_node_in_range -> (add_hole, drm_mm_interval_tree_add_node, rb_prev, rm_hole)
+drm_mm_interval_tree_add_node -> (__rb_insert_augmented, drm_mm_interval_tree_augment_rotate)
+drm_mm_print -> (drm_printf)
+drm_mm_remove_node -> (drm_mm_interval_tree_augment_rotate, rb_next, __rb_erase_color, rm_hole, add_hole)
+drm_mm_replace_node -> (rb_replace_node)
+drm_mm_reserve_node -> (add_hole, drm_mm_interval_tree_add_node, rm_hole)
+drm_mm_takedown -> (__warn_printk)
+rm_hole -> (augment_callbacks_rotate, __rb_erase_color, rb_erase, rb_next)

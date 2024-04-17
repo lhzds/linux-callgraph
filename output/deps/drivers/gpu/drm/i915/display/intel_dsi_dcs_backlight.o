@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/display/intel_dsi_dcs_backlight.o
+dcs_disable_backlight -> (mipi_dsi_dcs_write, mipi_dsi_dcs_read)
+dcs_enable_backlight -> (mipi_dsi_dcs_write, mipi_dsi_dcs_read)
+dcs_get_backlight -> (mipi_dsi_dcs_read)
+dcs_set_backlight -> (mipi_dsi_dcs_write)
+dcs_setup_backlight -> (__drm_dev_dbg)
+intel_dsi_dcs_init_backlight_funcs -> (dcs_set_backlight, __warn_printk, dcs_enable_backlight, dcs_setup_backlight, dcs_get_backlight, dcs_disable_backlight, dev_driver_string)

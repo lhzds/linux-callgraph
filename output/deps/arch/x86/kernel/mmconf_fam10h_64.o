@@ -1,0 +1,3 @@
+arch/x86/kernel/mmconf_fam10h_64.o
+check_enable_amd_mmconf_dmi -> (set_check_enable_amd_mmconf, dmi_check_system)
+fam10h_check_enable_mmcfg -> (_printk, sort, early_pci_allowed, __SCT__tp_func_write_msr, read_pci_config, do_trace_read_msr, cmp_range, __traceiter_write_msr, __traceiter_read_msr, do_trace_write_msr, __SCT__tp_func_read_msr, __probestub_read_msr, __probestub_write_msr)

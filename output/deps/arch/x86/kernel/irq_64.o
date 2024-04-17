@@ -1,0 +1,2 @@
+arch/x86/kernel/irq_64.o
+irq_init_percpu_irqstack -> (per_cpu_ptr_to_phys, vmap)

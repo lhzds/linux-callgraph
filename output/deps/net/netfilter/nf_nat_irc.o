@@ -1,0 +1,5 @@
+net/netfilter/nf_nat_irc.o
+help -> (snprintf, strlen, nf_nat_follow_master, nf_nat_exp_find_port, nf_ct_helper_log, nf_ct_unexpect_related, __nf_nat_mangle_tcp_packet)
+nf_nat_irc_fini -> (synchronize_rcu, help, nf_nat_helper_unregister)
+nf_nat_irc_init -> (help, nf_nat_helper_register)
+warn_set -> (_printk)

@@ -1,0 +1,5 @@
+drivers/acpi/acpica/dsobject.o
+acpi_ds_build_internal_buffer_obj -> (acpi_error, acpi_ut_remove_reference, acpi_ut_create_internal_object_dbg, __kmalloc, acpi_ut_delete_object_desc)
+acpi_ds_build_internal_object -> (acpi_ns_lookup, acpi_ds_init_object_from_op, acpi_ut_remove_reference, acpi_ps_get_opcode_info, acpi_ut_create_internal_object_dbg, acpi_ut_prefixed_namespace_error)
+acpi_ds_create_node -> (acpi_ns_attach_object, acpi_ns_get_attached_object, acpi_ut_remove_reference, acpi_ds_build_internal_object)
+acpi_ds_init_object_from_op -> (acpi_ps_get_opcode_info, strlen, acpi_ex_truncate_for32bit_table, acpi_error, acpi_warning, acpi_ds_method_data_get_node)

@@ -1,0 +1,2 @@
+arch/x86/kernel/pcspeaker.o
+add_pcspkr -> (platform_device_register_full)

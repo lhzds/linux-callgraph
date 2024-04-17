@@ -1,0 +1,2 @@
+arch/x86/entry/vdso/vdso_image_32.o
+init_vdso_image_32 -> (init_vdso_image)

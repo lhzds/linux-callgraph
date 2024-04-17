@@ -1,0 +1,11 @@
+drivers/gpu/drm/i915/display/intel_vblank.o
+__intel_get_crtc_scanline -> (__traceiter_i915_reg_rw, __const_udelay, intel_crtc_scanlines_since_frame_timestamp, __probestub_i915_reg_rw, __SCT__tp_func_i915_reg_rw)
+i915_get_crtc_scanoutpos -> (__traceiter_i915_reg_rw, __drm_dev_dbg, _raw_spin_lock_irqsave, __warn_printk, __intel_get_crtc_scanline, __probestub_i915_reg_rw, _raw_spin_unlock_irqrestore, intel_crtc_scanlines_since_frame_timestamp, ktime_get, __SCT__tp_func_i915_reg_rw, dev_driver_string)
+i915_get_vblank_counter -> (_raw_spin_lock_irqsave, intel_uncore_forcewake_for_reg, intel_uncore_forcewake_get__locked, _raw_spin_unlock_irqrestore, intel_uncore_forcewake_put__locked)
+intel_crtc_get_vblank_timestamp -> (drm_crtc_vblank_helper_get_vblank_timestamp_internal, i915_get_crtc_scanoutpos)
+intel_crtc_scanlines_since_frame_timestamp -> (__probestub_i915_reg_rw, __traceiter_i915_reg_rw, __SCT__tp_func_i915_reg_rw)
+intel_crtc_update_active_timings -> (drm_calc_timestamping_constants, intel_vrr_vmax_vblank_start, _raw_spin_unlock, _raw_spin_lock, _raw_spin_lock_irqsave, __warn_printk, drm_mode_init, _raw_spin_unlock_irqrestore, intel_vrr_vmin_vblank_start, dev_driver_string)
+intel_get_crtc_scanline -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, __intel_get_crtc_scanline)
+intel_wait_for_pipe_scanline_moving -> (wait_for_pipe_scanline_moving)
+intel_wait_for_pipe_scanline_stopped -> (wait_for_pipe_scanline_moving)
+wait_for_pipe_scanline_moving -> (__SCT__might_resched, usleep_range_state, ktime_get_raw, msleep, _dev_err)

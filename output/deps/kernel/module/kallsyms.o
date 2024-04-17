@@ -1,0 +1,9 @@
+kernel/module/kallsyms.o
+add_kallsyms -> (__rcu_read_unlock, strncmp, __rcu_read_lock, strscpy)
+find_kallsyms_symbol_value -> (strcmp)
+layout_symtab -> (module_get_offset_and_type, strlen)
+lookup_module_symbol_name -> (find_kallsyms_symbol, strscpy)
+module_address_lookup -> (__module_address, find_kallsyms_symbol, strncpy)
+module_get_kallsym -> (bsearch, cmp_name, strscpy)
+module_kallsyms_lookup_name -> (strnchr, find_module_all, strcmp)
+module_kallsyms_on_each_symbol -> (mutex_unlock, mutex_lock, strcmp)

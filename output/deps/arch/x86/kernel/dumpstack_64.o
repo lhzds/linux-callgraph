@@ -1,0 +1,3 @@
+arch/x86/kernel/dumpstack_64.o
+get_stack_info -> (get_stack_info_noinstr, _printk_deferred)
+get_stack_info_noinstr -> (in_task_stack, in_entry_stack)

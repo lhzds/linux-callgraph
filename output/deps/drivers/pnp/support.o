@@ -1,0 +1,5 @@
+drivers/pnp/support.o
+dbg_pnp_show_option -> (_find_first_bit, scnprintf, _dev_printk)
+dbg_pnp_show_resources -> (_dev_printk)
+pnp_is_active -> (pnp_get_resource)
+pnp_resource_type_name -> (pnp_resource_type)

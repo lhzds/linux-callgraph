@@ -1,0 +1,6 @@
+drivers/gpu/drm/drm_modeset_helper.o
+drm_crtc_init -> (drm_plane_helper_disable_primary, drm_crtc_init_with_planes, drm_plane_helper_destroy, drm_plane_helper_update_primary, __drm_universal_plane_alloc, drm_plane_cleanup, kfree)
+drm_helper_mode_fill_fb_struct -> (drm_get_format_info)
+drm_helper_move_panel_connectors_to_head -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+drm_mode_config_helper_resume -> (__drm_err, drm_kms_helper_poll_enable, drm_atomic_helper_resume)
+drm_mode_config_helper_suspend -> (drm_atomic_helper_suspend, drm_kms_helper_poll_disable, drm_kms_helper_poll_enable)

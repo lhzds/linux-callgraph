@@ -1,0 +1,12 @@
+kernel/trace/rpm_traces.o
+__traceiter_rpm_idle -> (__SCT__tp_func_rpm_idle, __traceiter_rpm_idle, __probestub_rpm_idle)
+__traceiter_rpm_resume -> (__probestub_rpm_resume, __traceiter_rpm_resume, __SCT__tp_func_rpm_resume)
+__traceiter_rpm_return_int -> (__traceiter_rpm_return_int, __SCT__tp_func_rpm_return_int, __probestub_rpm_return_int)
+__traceiter_rpm_suspend -> (__traceiter_rpm_suspend, __probestub_rpm_suspend, __SCT__tp_func_rpm_suspend)
+__traceiter_rpm_usage -> (__probestub_rpm_usage, __SCT__tp_func_rpm_usage, __traceiter_rpm_usage)
+perf_trace_rpm_internal -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+perf_trace_rpm_return_int -> (strcpy, strlen, perf_trace_buf_alloc, perf_trace_run_bpf_submit)
+trace_event_raw_event_rpm_internal -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_event_raw_event_rpm_return_int -> (strlen, trace_event_buffer_commit, trace_event_buffer_reserve, strcpy, __trace_trigger_soft_disabled)
+trace_raw_output_rpm_internal -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)
+trace_raw_output_rpm_return_int -> (trace_handle_return, trace_raw_output_prep, trace_event_printf)

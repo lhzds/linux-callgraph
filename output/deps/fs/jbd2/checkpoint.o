@@ -1,0 +1,11 @@
+fs/jbd2/checkpoint.o
+__jbd2_journal_clean_checkpoint_list -> (unlock_buffer, __jbd2_journal_remove_checkpoint)
+__jbd2_journal_drop_transaction -> (__traceiter_jbd2_drop_transaction, __SCT__tp_func_jbd2_drop_transaction, __probestub_jbd2_drop_transaction)
+__jbd2_journal_insert_checkpoint -> (jbd2_journal_grab_journal_head, percpu_counter_add_batch)
+__jbd2_journal_remove_checkpoint -> (__SCT__tp_func_jbd2_checkpoint_stats, __probestub_jbd2_checkpoint_stats, __jbd2_journal_drop_transaction, percpu_counter_add_batch, jbd2_journal_put_journal_head, jbd2_journal_free_transaction, __traceiter_jbd2_checkpoint_stats)
+__jbd2_log_wait_for_space -> (_printk, blkdev_issue_flush, jbd2_log_wait_commit, _raw_spin_unlock, jbd2_log_do_checkpoint, _raw_spin_lock, mutex_unlock, _raw_write_lock, jbd2_journal_abort, mutex_lock_io, _raw_write_unlock, jbd2_journal_get_log_tail, __jbd2_update_log_tail)
+jbd2_cleanup_journal_tail -> (jbd2_journal_get_log_tail, blkdev_issue_flush, __jbd2_update_log_tail)
+jbd2_journal_destroy_checkpoint -> (_raw_spin_lock, _raw_spin_unlock, __jbd2_journal_remove_checkpoint, __SCT__cond_resched)
+jbd2_journal_shrink_checkpoint_list -> (_raw_spin_unlock, _raw_spin_lock, __SCT__cond_resched, __traceiter_jbd2_shrink_checkpoint_list, __SCT__tp_func_jbd2_shrink_checkpoint_list, __jbd2_journal_remove_checkpoint, unlock_buffer, __probestub_jbd2_shrink_checkpoint_list)
+jbd2_journal_try_remove_checkpoint -> (unlock_buffer, __jbd2_journal_remove_checkpoint)
+jbd2_log_do_checkpoint -> (__SCT__might_resched, jbd2_log_start_commit, write_dirty_buffer, __SCT__tp_func_jbd2_checkpoint, _raw_spin_lock, blk_finish_plug, __probestub_jbd2_checkpoint, _raw_spin_unlock, mutex_lock_io, jbd2_journal_get_log_tail, __brelse, __jbd2_update_log_tail, _printk, jbd2_log_wait_commit, mutex_unlock, blk_start_plug, __traceiter_jbd2_checkpoint, blkdev_issue_flush, __wait_on_buffer, __jbd2_journal_remove_checkpoint, unlock_buffer)

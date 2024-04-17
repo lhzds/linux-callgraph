@@ -1,0 +1,8 @@
+fs/notify/fsnotify.o
+__fsnotify_inode_delete -> (fsnotify_destroy_marks)
+__fsnotify_parent -> (take_dentry_name_snapshot, dget_parent, fsnotify, dput, __fsnotify_update_child_dentry_flags, release_dentry_name_snapshot)
+__fsnotify_update_child_dentry_flags -> (_raw_spin_lock, _raw_spin_unlock)
+__fsnotify_vfsmount_delete -> (fsnotify_destroy_marks)
+fsnotify -> (__srcu_read_unlock, fsnotify_compare_groups, __srcu_read_lock, fsnotify_handle_inode_event)
+fsnotify_init -> (kmem_cache_create, panic, init_srcu_struct)
+fsnotify_sb_delete -> (init_wait_var_entry, __SCT__might_resched, iput, _raw_spin_unlock, fsnotify_destroy_marks, _raw_spin_lock, schedule, fsnotify, finish_wait, __SCT__cond_resched, prepare_to_wait_event, __iget, __var_waitqueue)

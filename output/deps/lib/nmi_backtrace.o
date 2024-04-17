@@ -1,0 +1,3 @@
+lib/nmi_backtrace.o
+nmi_cpu_backtrace -> (cpu_in_idle, _printk, __printk_cpu_sync_wait, __printk_cpu_sync_put, show_regs, __printk_cpu_sync_try_get, dump_stack)
+nmi_trigger_cpumask_backtrace -> (printk_trigger_flush, _printk, nmi_cpu_backtrace, __const_udelay)

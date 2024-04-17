@@ -1,0 +1,4 @@
+arch/x86/kernel/bootflag.o
+sbf_init -> (_printk, sbf_write, sbf_read)
+sbf_read -> (rtc_cmos_read, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+sbf_write -> (_printk, _raw_spin_lock_irqsave, rtc_cmos_write, _raw_spin_unlock_irqrestore)

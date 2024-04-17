@@ -1,0 +1,2 @@
+block/blk_mq_pci.o
+blk_mq_pci_map_queues -> (pci_irq_get_affinity)

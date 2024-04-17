@@ -1,0 +1,8 @@
+net/ipv4/udplite.o
+udp_lib_close -> (sk_common_release)
+udplite4_proc_exit_net -> (remove_proc_entry)
+udplite4_proc_init_net -> (proc_create_net_data, udp_seq_start, udp_seq_next, udp4_seq_show, udp_seq_stop)
+udplite4_register -> (sock_no_listen, udp_read_skb, udplite4_proc_exit_net, udp_destroy_sock, udplite4_proc_init_net, inet_splice_eof, sock_common_getsockopt, inet_register_protosw, sock_common_setsockopt, udp_lib_hash, udp_lib_unhash, udp_ioctl, inet_ioctl, sock_no_mmap, udp_disconnect, inet_dgram_connect, udplite_rcv, udp_poll, udp_sendmsg, _printk, proto_register, udplite_sk_init, inet_compat_ioctl, inet_shutdown, udp_v4_rehash, sock_gettstamp, udp_v4_get_port, proto_unregister, udp_getsockopt, inet_sendmsg, sock_no_accept, register_pernet_subsys, ip4_datagram_connect, udp_lib_close, udp_recvmsg, inet_recvmsg, udp_table_init, inet_add_protocol, inet_getname, inet_bind, inet_release, udplite_err, udp_setsockopt, sock_no_socketpair, sk_set_peek_off)
+udplite_err -> (__udp4_lib_err)
+udplite_rcv -> (__udp4_lib_rcv)
+udplite_sk_init -> (_printk, udp_init_sock)

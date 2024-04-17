@@ -1,0 +1,7 @@
+net/sunrpc/auth_gss/gss_krb5_keys.o
+krb5_DK -> (kfree_sensitive, krb5_nfold, krb5_encrypt, crypto_skcipher_setkey, crypto_alloc_sync_skcipher, __kmalloc, crypto_destroy_tfm)
+krb5_derive_key_v1 -> (kfree_sensitive, krb5_DK, __kmalloc)
+krb5_derive_key_v2 -> (kfree_sensitive, krb5_DK, __kmalloc)
+krb5_kdf_feedback_cmac -> (kfree_sensitive, crypto_shash_final, crypto_shash_setkey, crypto_shash_update, crypto_alloc_shash, __kmalloc, crypto_destroy_tfm)
+krb5_kdf_hmac_sha2 -> (kfree_sensitive, crypto_shash_final, crypto_shash_setkey, crypto_shash_update, crypto_alloc_shash, __kmalloc, crypto_destroy_tfm)
+krb5_nfold -> (lcm)

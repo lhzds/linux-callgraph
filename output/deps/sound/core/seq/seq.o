@@ -1,0 +1,3 @@
+sound/core/seq/seq.o
+alsa_seq_exit -> (snd_seq_queues_delete, snd_sequencer_device_done, snd_seq_info_done, snd_seq_system_client_done, snd_seq_autoload_exit)
+alsa_seq_init -> (snd_seq_info_init, client_init_data, snd_seq_autoload_init, snd_sequencer_device_init, snd_seq_system_client_init, snd_seq_info_done, snd_sequencer_device_done)

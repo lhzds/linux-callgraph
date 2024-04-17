@@ -1,0 +1,6 @@
+drivers/acpi/ioapic.o
+acpi_ioapic_add -> (acpi_walk_namespace, handle_ioapic_add)
+acpi_ioapic_remove -> (mutex_lock, mutex_unlock, acpi_unregister_ioapic, release_resource, kfree)
+handle_ioapic_add -> (mutex_lock, acpi_ioapic_registered, acpi_evaluate_integer, pci_request_region, pci_dev_put, kmalloc_trace, acpi_has_method, acpi_register_ioapic, acpi_get_pci_dev, pci_disable_device, setup_res, _printk, acpi_walk_resources, mutex_unlock, pci_enable_device, release_resource, acpi_handle_printk, _dev_info, pci_release_region, strcmp, acpi_get_object_info, insert_resource, pci_set_master, kfree)
+pci_ioapic_remove -> (mutex_lock, mutex_unlock, pci_dev_put, pci_disable_device, pci_release_region)
+setup_res -> (acpi_dev_resource_address_space, acpi_dev_filter_resource_type, acpi_dev_resource_ext_address_space, acpi_dev_resource_memory)

@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/gt/intel_gt_buffer_pool.o
+intel_gt_buffer_pool_mark_used -> (i915_gem_object_make_unshrinkable)
+intel_gt_flush_buffer_pool -> (pool_free_older_than, cancel_delayed_work_sync)
+intel_gt_get_buffer_pool -> (i915_gem_object_create_internal, refcount_warn_saturate, kvfree_call_rcu, __i915_active_init, i915_active_fini, _raw_spin_lock_irq, drm_gem_object_free, kmalloc_trace, _raw_spin_unlock_irq, i915_active_acquire, __rcu_read_lock, __rcu_read_unlock, kfree, pool_retire)
+intel_gt_init_buffer_pool -> (delayed_work_timer_fn, pool_free_work, init_timer_key)
+pool_free_older_than -> (refcount_warn_saturate, kvfree_call_rcu, i915_active_fini, drm_gem_object_free, _raw_spin_trylock, _raw_spin_unlock_irq)
+pool_free_work -> (pool_free_older_than, round_jiffies_up_relative, queue_delayed_work_on)
+pool_retire -> (i915_gem_object_make_purgeable, round_jiffies_up_relative, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, queue_delayed_work_on)

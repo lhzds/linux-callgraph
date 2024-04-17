@@ -1,0 +1,3 @@
+lib/bug.o
+module_bug_finalize -> (strcmp)
+report_bug -> (__warn, _printk, disable_trace_on_warning, is_valid_bugaddr)

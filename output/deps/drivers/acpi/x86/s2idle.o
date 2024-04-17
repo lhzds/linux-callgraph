@@ -1,0 +1,8 @@
+drivers/acpi/x86/s2idle.o
+acpi_register_lps0_dev -> (unlock_system_sleep, lock_system_sleep)
+acpi_s2idle_prepare_late -> (acpi_power_state_string, acpi_evaluate_dsm, acpi_fetch_acpi_dev, acpi_handle_printk, kfree, acpi_sleep_run_lps0_dsm)
+acpi_s2idle_restore_early -> (acpi_handle_printk, kfree, acpi_evaluate_dsm, acpi_sleep_run_lps0_dsm)
+acpi_s2idle_setup -> (acpi_scan_add_handler, acpi_s2idle_restore_early, acpi_s2idle_prepare, acpi_s2idle_prepare_late, acpi_s2idle_check, acpi_s2idle_wake, lps0_device_attach, acpi_s2idle_restore, s2idle_set_ops, acpi_s2idle_begin, acpi_s2idle_end)
+acpi_sleep_run_lps0_dsm -> (acpi_handle_printk, kfree, acpi_evaluate_dsm)
+acpi_unregister_lps0_dev -> (unlock_system_sleep, lock_system_sleep)
+lps0_device_attach -> (guid_parse, _printk, acpi_ec_mark_gpe_for_wake, acpi_evaluate_dsm, acpi_dev_hid_uid_match, kfree, __kmalloc, acpi_get_handle)

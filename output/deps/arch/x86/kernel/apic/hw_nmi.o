@@ -1,0 +1,4 @@
+arch/x86/kernel/apic/hw_nmi.o
+arch_trigger_cpumask_backtrace -> (nmi_raise_cpu_backtrace, nmi_trigger_cpumask_backtrace)
+nmi_cpu_backtrace_handler -> (nmi_cpu_backtrace)
+register_nmi_cpu_backtrace_handler -> (nmi_cpu_backtrace_handler, __register_nmi_handler)

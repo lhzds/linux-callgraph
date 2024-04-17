@@ -1,0 +1,5 @@
+crypto/asymmetric_keys/pkcs7_verify.o
+pkcs7_digest -> (_printk, bcmp, crypto_shash_finup, crypto_shash_update, crypto_alloc_shash, crypto_shash_digest, kfree, __kmalloc, crypto_destroy_tfm)
+pkcs7_get_digest -> (pkcs7_digest, match_string)
+pkcs7_supply_detached_data -> (_printk)
+pkcs7_verify -> (pkcs7_digest, _printk, __SCT__might_resched, asymmetric_key_id_same, public_key_verify_signature)

@@ -1,0 +1,11 @@
+arch/x86/kernel/amd_nb.o
+__amd_smn_rw -> (_printk, mutex_lock, pci_read_config_dword, mutex_unlock, pci_write_config_dword)
+__fix_erratum_688 -> (msr_set_bit)
+amd_flush_garts -> (_printk, pci_read_config_dword, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, pci_write_config_dword)
+amd_get_mmconfig_range -> (__traceiter_read_msr, do_trace_read_msr, __SCT__tp_func_read_msr, __probestub_read_msr)
+amd_get_subcaches -> (pci_read_config_dword)
+amd_set_subcaches -> (pci_write_config_dword, pci_read_config_dword)
+amd_smn_read -> (__amd_smn_rw)
+amd_smn_write -> (__amd_smn_rw)
+fix_erratum_688 -> (_printk, on_each_cpu_cond_mask, __fix_erratum_688, pci_read_config_dword)
+init_amd_nbs -> (_printk, fix_erratum_688, pci_read_config_dword, pci_get_device, pci_match_id, __kmalloc)

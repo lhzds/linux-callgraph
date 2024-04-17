@@ -1,0 +1,4 @@
+drivers/md/dm_zero.o
+dm_zero_exit -> (zero_ctr, dm_unregister_target, zero_io_hints, zero_map)
+dm_zero_init -> (zero_ctr, dm_register_target, zero_io_hints, zero_map)
+zero_map -> (bio_endio, zero_fill_bio)

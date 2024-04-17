@@ -1,0 +1,5 @@
+net/unix/garbage.o
+scan_children -> (_raw_spin_lock, scan_inflight, _raw_spin_unlock)
+scan_inflight -> (_raw_spin_lock, unix_get_socket, _raw_spin_unlock)
+unix_gc -> (scan_children, __wake_up, skb_queue_tail, _raw_spin_unlock, dec_inflight, _raw_spin_lock, io_uring_destruct_scm, kfree_skb_reason, inc_inflight, inc_inflight_move_tail)
+wait_for_unix_gc -> (init_wait_entry, unix_gc, __SCT__might_resched, schedule, finish_wait, prepare_to_wait_event)

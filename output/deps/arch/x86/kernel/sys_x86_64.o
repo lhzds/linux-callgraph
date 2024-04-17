@@ -1,0 +1,6 @@
+arch/x86/kernel/sys_x86_64.o
+__ia32_sys_mmap -> (ksys_mmap_pgoff)
+__x64_sys_mmap -> (ksys_mmap_pgoff)
+arch_get_unmapped_area -> (randomize_page, task_size_32bit, get_mmap_base, task_size_64bit, find_vma, vm_unmapped_area)
+arch_get_unmapped_area_topdown -> (mmap_address_hint_valid, arch_get_unmapped_area, get_mmap_base, find_vma, vm_unmapped_area)
+control_va_addr_alignment -> (_printk, strcmp)

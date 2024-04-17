@@ -1,0 +1,4 @@
+net/ethtool/linkinfo.o
+ethnl_set_linkinfo -> (do_trace_netlink_extack, __ethtool_get_link_ksettings)
+linkinfo_fill_reply -> (nla_put)
+linkinfo_prepare_data -> (do_trace_netlink_extack, ethnl_ops_complete, ethnl_ops_begin, __ethtool_get_link_ksettings)

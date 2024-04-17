@@ -1,0 +1,3 @@
+arch/x86/kernel/audit_64.o
+audit_classes_init -> (audit_register_class)
+audit_classify_syscall -> (ia32_classify_syscall)

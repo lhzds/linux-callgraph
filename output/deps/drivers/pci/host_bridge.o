@@ -1,0 +1,3 @@
+drivers/pci/host_bridge.o
+pci_get_host_bridge_device -> (kobject_get)
+pci_put_host_bridge_device -> (kobject_put)

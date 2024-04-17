@@ -1,0 +1,7 @@
+drivers/iommu/amd/io_pgtable.o
+free_pt_lvl -> (free_pt_lvl)
+iommu_v1_iova_to_phys -> (fetch_pte)
+iommu_v1_map_pages -> (_printk, put_pages_list, amd_iommu_update_and_flush_device_table, _raw_spin_lock_irqsave, free_pt_lvl, amd_iommu_domain_flush_tlb_pde, amd_iommu_domain_flush_complete, _raw_spin_unlock_irqrestore, __alloc_pages, free_pages, dump_stack)
+iommu_v1_unmap_pages -> (fetch_pte)
+v1_alloc_pgtable -> (iommu_v1_unmap_pages, v1_tlb_flush_all, iommu_v1_map_pages, v1_tlb_add_page, v1_tlb_flush_walk, iommu_v1_iova_to_phys)
+v1_free_pgtable -> (amd_iommu_domain_update, put_pages_list, free_pt_lvl)

@@ -1,0 +1,2 @@
+drivers/acpi/acpica/nswalk.o
+acpi_ns_walk_namespace -> (acpi_ut_release_mutex, acpi_ut_acquire_mutex)

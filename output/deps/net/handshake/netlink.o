@@ -1,0 +1,10 @@
+net/handshake/netlink.o
+handshake_exit -> (handshake_net_exit, unregister_pernet_subsys, genl_unregister_family, handshake_net_init, handshake_req_hash_destroy)
+handshake_genl_notify -> (nla_put, kfree_skb_reason, netlink_broadcast, __alloc_skb, netlink_has_listeners, genlmsg_put, skb_trim)
+handshake_genl_put -> (genlmsg_put)
+handshake_init -> (register_pernet_subsys, _printk, handshake_req_hash_init, handshake_net_exit, genl_unregister_family, handshake_net_init, genl_register_family, handshake_req_hash_destroy)
+handshake_net_exit -> (handshake_complete, _raw_spin_unlock, _raw_spin_lock, __rcu_read_lock, __rcu_read_unlock)
+handshake_net_init -> (__rcu_read_unlock, __rcu_read_lock, si_meminfo)
+handshake_nl_accept_doit -> (handshake_complete, __SCT__tp_func_handshake_cmd_accept_err, __probestub_handshake_cmd_accept, __probestub_handshake_cmd_accept_err, __SCT__tp_func_handshake_cmd_accept, __rcu_read_lock, handshake_req_next, fput, __rcu_read_unlock, __traceiter_handshake_cmd_accept_err, fd_install, __traceiter_handshake_cmd_accept, get_unused_fd_flags)
+handshake_nl_done_doit -> (handshake_complete, __SCT__tp_func_handshake_cmd_done, __probestub_handshake_cmd_done, __probestub_handshake_cmd_done_err, handshake_req_hash_lookup, __traceiter_handshake_cmd_done_err, fput, __SCT__tp_func_handshake_cmd_done_err, sockfd_lookup, __traceiter_handshake_cmd_done)
+handshake_pernet -> (__rcu_read_unlock, __rcu_read_lock)

@@ -1,0 +1,2 @@
+drivers/acpi/acpica/hwpci.o
+acpi_hw_derive_pci_id -> (acpi_ut_evaluate_numeric_object, acpi_get_type, kmalloc_trace, acpi_get_parent, kfree, acpi_os_read_pci_configuration)

@@ -1,0 +1,10 @@
+kernel/power/user.o
+is_hibernate_resume_dev -> (hibernation_available)
+snapshot_compat_ioctl -> (snapshot_ioctl)
+snapshot_device_init -> (snapshot_ioctl, snapshot_release, snapshot_open, snapshot_write, snapshot_read, snapshot_compat_ioctl, misc_register)
+snapshot_ioctl -> (alloc_swapdev_block, lock_device_hotplug, unlock_device_hotplug, snapshot_image_loaded, hibernation_snapshot, snapshot_get_image_size, free_basic_memory_bitmaps, mutex_trylock, freeze_processes, thaw_processes, count_swap_pages, ksys_sync_helper, wait_for_device_probe, capable, pm_restore_gfp_mask, hibernation_restore, mutex_unlock, snapshot_set_swap_area, suspend_devices_and_enter, snapshot_write_finalize, free_all_swap_pages, swsusp_free, hibernation_platform_enter, create_basic_memory_bitmaps, thaw_kernel_threads)
+snapshot_open -> (lock_system_sleep, hibernate_release, swap_type_of, create_basic_memory_bitmaps, hibernation_available, unlock_system_sleep, pm_notifier_call_chain_robust, nonseekable_open, hibernate_acquire)
+snapshot_read -> (snapshot_read_next, unlock_system_sleep, simple_read_from_buffer, lock_system_sleep)
+snapshot_release -> (pm_restore_gfp_mask, pm_notifier_call_chain, lock_system_sleep, hibernate_release, free_basic_memory_bitmaps, unlock_system_sleep, thaw_processes, free_all_swap_pages, swsusp_free)
+snapshot_set_swap_area -> (swap_type_of, swsusp_swap_in_use, _copy_from_user)
+snapshot_write -> (snapshot_write_next, wait_for_device_probe, lock_system_sleep, unlock_system_sleep, simple_write_to_buffer)

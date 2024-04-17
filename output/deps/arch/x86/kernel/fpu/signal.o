@@ -1,0 +1,6 @@
+arch/x86/kernel/fpu/signal.o
+copy_fpstate_to_sigframe -> (restore_fpregs_from_fpstate, __probestub_x86_fpu_regs_activated, xfd_validate_state, __traceiter_x86_fpu_regs_activated, convert_from_fxsr, __SCT__tp_func_x86_fpu_regs_activated, local_bh_enable)
+fpu__restore_sig -> (__SCT__tp_func_x86_fpu_xstate_check_failed, __SCT__tp_func_write_msr, copy_sigframe_from_user_to_xstate, xfd_validate_state, __traceiter_x86_fpu_xstate_check_failed, convert_to_fxsr, os_xrstor_safe, os_xsave, __traceiter_write_msr, do_trace_write_msr, fpregs_mark_activate, __probestub_x86_fpu_xstate_check_failed, local_bh_enable, fault_in_readable, __probestub_write_msr, fpu__clear_user_states)
+local_bh_enable -> (__local_bh_enable_ip)
+os_xrstor_safe -> (__SCT__tp_func_write_msr, do_trace_write_msr, __probestub_write_msr, __traceiter_write_msr)
+os_xsave -> (xfd_validate_state)

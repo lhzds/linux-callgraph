@@ -1,0 +1,10 @@
+net/ipv6/ah6.o
+ah6_destroy -> (kfree, crypto_destroy_tfm)
+ah6_err -> (xfrm_state_lookup, ip6_update_pmtu, refcount_warn_saturate, __xfrm_state_destroy, ip6_redirect)
+ah6_fini -> (_printk, xfrm6_protocol_deregister, ah6_init_state, xfrm6_rcv, ah6_output, xfrm_input, xfrm_unregister_type, ah6_err, ah6_destroy, ah6_rcv_cb, ah6_input)
+ah6_init -> (_printk, ah6_init_state, xfrm6_protocol_register, xfrm_register_type, xfrm6_rcv, ah6_output, xfrm_input, xfrm_unregister_type, ah6_err, ah6_destroy, ah6_rcv_cb, ah6_input)
+ah6_init_state -> (do_trace_netlink_extack, xfrm_aalg_get_byname, crypto_alloc_ahash, kmalloc_trace, crypto_ahash_setkey, kfree, crypto_destroy_tfm)
+ah6_input -> (sg_init_table, __pskb_pull_tail, skb_push, skb_to_sgvec_nomark, sg_set_buf, skb_cow_data, crypto_ahash_digest, ah6_input_done, __crypto_memneq, ipv6_clear_mutable_options, pskb_expand_head, kfree, __kmalloc)
+ah6_input_done -> (xfrm_input_resume, kfree, __crypto_memneq)
+ah6_output -> (skb_push, skb_to_sgvec_nomark, skb_cow_data, crypto_ahash_digest, ipv6_clear_mutable_options, sg_init_table, kfree, ah6_output_done, __kmalloc)
+ah6_output_done -> (kfree, xfrm_output_resume)

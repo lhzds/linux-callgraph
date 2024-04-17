@@ -1,0 +1,3 @@
+arch/x86/kernel/espfix_64.o
+init_espfix_ap -> (mutex_unlock, mutex_lock, __alloc_pages)
+init_espfix_bsp -> (init_espfix_ap, __pti_set_user_pgtbl, __p4d_alloc, get_random_u64)

@@ -1,0 +1,2 @@
+drivers/scsi/scsi_debugfs.o
+scsi_show_rq -> (jiffies_to_msecs, seq_printf, __scsi_format_command, seq_puts)

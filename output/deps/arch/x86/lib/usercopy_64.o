@@ -1,0 +1,2 @@
+arch/x86/lib/usercopy_64.o
+__copy_user_flushcache -> (__copy_user_nocache)

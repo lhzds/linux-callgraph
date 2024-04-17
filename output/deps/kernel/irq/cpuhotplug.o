@@ -1,0 +1,3 @@
+kernel/irq/cpuhotplug.o
+irq_affinity_online_cpu -> (irq_startup, housekeeping_enabled, irq_lock_sparse, _raw_spin_lock_irq, irq_get_next_irq, irq_unlock_sparse, _raw_spin_unlock_irq, irq_to_desc, irq_set_affinity_locked, housekeeping_cpumask)
+irq_migrate_all_off_this_cpu -> (_printk, irq_fixup_move_pending, _raw_spin_unlock, _raw_spin_lock, irq_get_next_irq, irq_shutdown_and_deactivate, irq_to_desc, irq_force_complete_move, ___ratelimit, irq_do_set_affinity)

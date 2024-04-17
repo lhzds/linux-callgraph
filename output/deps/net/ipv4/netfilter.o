@@ -1,0 +1,3 @@
+net/ipv4/netfilter.o
+ip_route_me_harder -> (__skb_flow_dissect, inet_addr_type_dev_table, __xfrm_decode_session, dst_release, xfrm_lookup, pskb_expand_head, ip_route_output_flow)
+nf_ip_route -> (ip_route_output_flow)

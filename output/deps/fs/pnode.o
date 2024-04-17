@@ -1,0 +1,8 @@
+fs/pnode.o
+change_mnt_propagation -> (mnt_release_group_id)
+get_dominating_id -> (is_path_reachable)
+propagate_mnt -> (_raw_spin_lock, propagate_one, _raw_spin_unlock)
+propagate_mount_busy -> (__lookup_mnt, mnt_get_count)
+propagate_mount_unlock -> (__lookup_mnt)
+propagate_one -> (_raw_spin_unlock, _raw_spin_lock, count_mounts, copy_tree, is_subdir, mnt_set_mountpoint)
+propagate_umount -> (__lookup_mnt, mnt_change_mountpoint)

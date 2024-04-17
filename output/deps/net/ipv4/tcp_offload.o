@@ -1,0 +1,7 @@
+net/ipv4/tcp_offload.o
+refcount_sub_and_test -> (refcount_warn_saturate)
+tcp4_gro_receive -> (__skb_gro_checksum_complete, tcp_gro_receive)
+tcp4_gso_segment -> (__tcp_v4_send_check, __pskb_pull_tail, tcp_gso_segment)
+tcp_gro_receive -> (skb_gro_receive, __pskb_pull_tail)
+tcp_gso_segment -> (refcount_sub_and_test, refcount_warn_saturate, tcp_wfree, __pskb_pull_tail, csum_partial, skb_segment)
+tcpv4_offload_init -> (inet_add_offload, tcp4_gro_receive, tcp4_gso_segment, tcp4_gro_complete)

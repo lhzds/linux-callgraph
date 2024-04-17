@@ -1,0 +1,4 @@
+net/netfilter/xt_LOG.o
+log_tg -> (nf_log_packet)
+log_tg_check -> (__request_module, nf_logger_find_get)
+log_tg_destroy -> (nf_logger_put)

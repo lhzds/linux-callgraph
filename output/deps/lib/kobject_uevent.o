@@ -1,0 +1,13 @@
+lib/kobject_uevent.o
+add_uevent_var -> (__warn_printk, vsnprintf)
+alloc_uevent_skb -> (skb_put, sprintf, strlen, __alloc_skb)
+kobject_synth_uevent -> (_printk, kmalloc_trace, strncmp, kobject_uevent_env, uuid_is_valid, strnchr, kobject_get_path, kfree, add_uevent_var)
+kobject_uevent -> (kobject_uevent_env)
+kobject_uevent_env -> (mutex_lock, mutex_unlock, kmalloc_trace, zap_modalias_env, kobject_uevent_net_broadcast, kobject_get_path, kfree, add_uevent_var)
+kobject_uevent_init -> (register_pernet_subsys, uevent_net_exit, uevent_net_init)
+kobject_uevent_net_broadcast -> (kobj_ns_ops, refcount_warn_saturate, consume_skb, netlink_has_listeners, alloc_uevent_skb, netlink_broadcast)
+uevent_net_exit -> (mutex_lock, netlink_kernel_release, kfree, mutex_unlock)
+uevent_net_init -> (_printk, mutex_lock, __netlink_kernel_create, mutex_unlock, kmalloc_trace, kfree, uevent_net_rcv)
+uevent_net_rcv -> (netlink_rcv_skb, uevent_net_rcv_skb)
+uevent_net_rcv_skb -> (skb_copy_expand, do_trace_netlink_extack, netlink_ns_capable, mutex_lock, skb_put, snprintf, mutex_unlock, skb_pull, netlink_broadcast)
+zap_modalias_env -> (strncmp, strlen)

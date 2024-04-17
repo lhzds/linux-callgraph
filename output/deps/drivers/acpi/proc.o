@@ -1,0 +1,5 @@
+drivers/acpi/proc.o
+acpi_sleep_proc_init -> (acpi_system_wakeup_device_open_fs, seq_read, single_release, acpi_system_write_wakeup_device, proc_create, seq_lseek)
+acpi_system_wakeup_device_open_fs -> (acpi_system_wakeup_device_seq_show, single_open)
+acpi_system_wakeup_device_seq_show -> (put_device, mutex_lock, seq_printf, mutex_unlock, get_device)
+acpi_system_write_wakeup_device -> (mutex_lock, _copy_from_user, mutex_unlock, strncmp, sscanf, device_set_wakeup_enable)

@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gem/i915_gem_dmabuf.o
+i915_gem_begin_cpu_access -> (i915_gem_object_set_to_cpu_domain, refcount_warn_saturate, __i915_gem_object_get_pages, i915_gem_ww_ctx_fini, i915_gem_ww_ctx_init, i915_gem_ww_ctx_backoff, ww_mutex_lock, ww_mutex_lock_interruptible)
+i915_gem_dmabuf_attach -> (refcount_warn_saturate, __i915_gem_object_get_pages, i915_gem_object_wait_migration, i915_gem_ww_ctx_fini, i915_gem_object_can_migrate, i915_gem_ww_ctx_init, i915_gem_object_migrate, i915_gem_ww_ctx_backoff, ww_mutex_lock, ww_mutex_lock_interruptible)
+i915_gem_dmabuf_mmap -> (drm_gem_prime_mmap, vma_set_file)
+i915_gem_dmabuf_vmap -> (i915_gem_object_pin_map)
+i915_gem_dmabuf_vunmap -> (__i915_gem_object_flush_map)
+i915_gem_end_cpu_access -> (refcount_warn_saturate, __i915_gem_object_get_pages, i915_gem_ww_ctx_fini, i915_gem_object_set_to_gtt_domain, i915_gem_ww_ctx_init, i915_gem_ww_ctx_backoff, ww_mutex_lock, ww_mutex_lock_interruptible)
+i915_gem_map_dma_buf -> (kmalloc_trace, sg_alloc_table, dma_map_sgtable, sg_next, sg_free_table, kfree)
+i915_gem_object_get_pages_dmabuf -> (wbinvd_on_all_cpus, dma_buf_map_attachment, i915_gem_object_can_bypass_llc, __i915_gem_object_set_pages)
+i915_gem_object_put_pages_dmabuf -> (dma_buf_unmap_attachment)
+i915_gem_prime_export -> (drm_gem_unmap_dma_buf, i915_gem_end_cpu_access, drm_gem_dmabuf_release, i915_gem_map_dma_buf, i915_gem_dmabuf_detach, i915_gem_dmabuf_mmap, i915_gem_dmabuf_attach, drm_gem_dmabuf_export, i915_gem_dmabuf_vmap, i915_gem_dmabuf_vunmap, i915_gem_begin_cpu_access)
+i915_gem_prime_import -> (refcount_warn_saturate, i915_gem_object_get_pages_dmabuf, i915_gem_object_put_pages_dmabuf, i915_gem_object_init, dma_buf_put, i915_gem_dmabuf_detach, dma_buf_attach, i915_gem_dmabuf_attach, i915_gem_dmabuf_vmap, i915_gem_object_alloc, drm_gem_unmap_dma_buf, i915_gem_end_cpu_access, drm_gem_dmabuf_release, drm_gem_private_object_init, i915_gem_dmabuf_vunmap, i915_gem_map_dma_buf, i915_gem_dmabuf_mmap, dma_buf_detach, i915_gem_begin_cpu_access)

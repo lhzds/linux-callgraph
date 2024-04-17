@@ -1,0 +1,11 @@
+drivers/input/serio/serport.o
+serport_exit -> (serport_ldisc_open, serport_ldisc_hangup, serport_ldisc_read, tty_unregister_ldisc, serport_ldisc_ioctl, serport_ldisc_compat_ioctl, serport_ldisc_close, serport_ldisc_receive, serport_ldisc_write_wakeup)
+serport_init -> (_printk, tty_register_ldisc, serport_ldisc_open, serport_ldisc_hangup, serport_ldisc_read, serport_ldisc_ioctl, serport_ldisc_compat_ioctl, serport_ldisc_close, serport_ldisc_receive, serport_ldisc_write_wakeup)
+serport_ldisc_close -> (kfree)
+serport_ldisc_hangup -> (__wake_up, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+serport_ldisc_open -> (capable, __init_waitqueue_head, kmalloc_trace)
+serport_ldisc_read -> (init_wait_entry, _printk, __SCT__might_resched, snprintf, strscpy, kmalloc_trace, schedule, finish_wait, serport_serio_write, serio_unregister_port, prepare_to_wait_event, serport_serio_close, tty_name, __serio_register_port, serport_serio_open)
+serport_ldisc_receive -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, serio_interrupt)
+serport_ldisc_write_wakeup -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+serport_serio_close -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+serport_serio_open -> (_raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)

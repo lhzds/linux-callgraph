@@ -1,0 +1,12 @@
+drivers/gpu/drm/i915/gt/intel_ggtt_fencing.o
+__i915_vma_pin_fence -> (intel_has_pending_fb_unpin, fence_update)
+fence_update -> (i915_vma_revoke_mmap, intel_runtime_pm_get_if_in_use, fence_write, i915_vma_flush_writes, __i915_active_wait, intel_runtime_pm_put_unchecked)
+i915_gem_object_do_bit_17_swizzle -> (__SCT__might_resched, set_page_dirty)
+i915_gem_object_save_bit_17_swizzle -> (_dev_err, bitmap_zalloc)
+i915_reserve_fence -> (intel_has_pending_fb_unpin, fence_update)
+i915_vma_pin_fence -> (mutex_unlock, __i915_vma_pin_fence, __warn_printk, mutex_lock_interruptible)
+i915_vma_revoke_fence -> (fence_write, intel_runtime_pm_get_if_active, intel_runtime_pm_put_unchecked)
+intel_ggtt_fini_fences -> (i915_active_fini, kfree)
+intel_ggtt_init_fences -> (__i915_active_init, fence_write, _dev_err, intel_vgpu_active, __kmalloc)
+intel_ggtt_restore_fences -> (fence_write)
+intel_gt_init_swizzling -> (__warn_printk)

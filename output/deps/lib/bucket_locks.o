@@ -1,0 +1,3 @@
+lib/bucket_locks.o
+__alloc_bucket_spinlocks -> (kvmalloc_node)
+free_bucket_spinlocks -> (kvfree)

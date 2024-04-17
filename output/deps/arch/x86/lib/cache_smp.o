@@ -1,0 +1,3 @@
+arch/x86/lib/cache_smp.o
+wbinvd_on_all_cpus -> (on_each_cpu_cond_mask, __wbinvd)
+wbinvd_on_cpu -> (__wbinvd, smp_call_function_single)

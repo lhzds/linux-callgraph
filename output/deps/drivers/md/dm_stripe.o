@@ -1,0 +1,11 @@
+drivers/md/dm_stripe.o
+dm_stripe_exit -> (stripe_iterate_devices, dm_unregister_target, stripe_status, stripe_ctr, destroy_workqueue, stripe_io_hints, stripe_end_io, stripe_map, stripe_dtr)
+dm_stripe_init -> (_printk, stripe_iterate_devices, dm_register_target, alloc_workqueue, stripe_status, stripe_ctr, destroy_workqueue, stripe_io_hints, stripe_end_io, stripe_map, stripe_dtr)
+stripe_ctr -> (dm_get_device, dm_set_target_max_io_len, trigger_event, dm_put_device, dm_table_get_mode, kstrtouint, sscanf, kfree, __kmalloc)
+stripe_dtr -> (dm_put_device, kfree, flush_work)
+stripe_end_io -> (sprintf, queue_work_on, strcmp)
+stripe_io_hints -> (blk_limits_io_min, blk_limits_io_opt)
+stripe_map -> (stripe_map_range, dm_bio_get_target_bio_nr, bio_associate_blkg)
+stripe_map_range -> (bio_associate_blkg, bio_endio)
+stripe_status -> (scnprintf)
+trigger_event -> (dm_table_event)

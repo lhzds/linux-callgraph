@@ -1,0 +1,10 @@
+kernel/irq/spurious.o
+__report_bad_irq -> (_printk, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, dump_stack)
+irq_wait_for_poll -> (_raw_spin_lock, __warn_printk, _raw_spin_unlock)
+irqfixup_setup -> (_printk)
+irqpoll_setup -> (_printk)
+misrouted_irq -> (try_one_irq, irq_to_desc)
+noirqdebug_setup -> (_printk)
+note_interrupt -> (_printk, poll_spurious_irqs, misrouted_irq, mod_timer, irq_disable, __report_bad_irq)
+poll_spurious_irqs -> (mod_timer, poll_spurious_irqs, try_one_irq, irq_to_desc)
+try_one_irq -> (_raw_spin_lock, handle_irq_event, _raw_spin_unlock)

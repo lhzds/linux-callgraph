@@ -1,0 +1,13 @@
+lib/idr.o
+ida_alloc_range -> (xas_find_marked, xas_store, _raw_spin_lock_irqsave, _find_next_zero_bit, kmalloc_trace, _raw_spin_unlock_irqrestore, xas_nomem, _find_first_zero_bit, kfree, xas_clear_mark)
+ida_destroy -> (xas_find, xas_store, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore, kfree)
+ida_free -> (xas_load, xas_store, _raw_spin_lock_irqsave, __warn_printk, xas_set_mark, _find_first_bit, _raw_spin_unlock_irqrestore, kfree)
+idr_alloc -> (idr_get_free, radix_tree_iter_tag_clear, radix_tree_iter_replace)
+idr_alloc_cyclic -> (idr_get_free, radix_tree_iter_tag_clear, radix_tree_iter_replace)
+idr_alloc_u32 -> (idr_get_free, radix_tree_iter_tag_clear, radix_tree_iter_replace)
+idr_find -> (radix_tree_lookup)
+idr_for_each -> (radix_tree_next_chunk)
+idr_get_next -> (radix_tree_next_chunk)
+idr_get_next_ul -> (radix_tree_next_chunk)
+idr_remove -> (radix_tree_delete_item)
+idr_replace -> (__radix_tree_lookup, __radix_tree_replace, radix_tree_tag_get)

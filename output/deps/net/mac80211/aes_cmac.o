@@ -1,0 +1,5 @@
+net/mac80211/aes_cmac.o
+ieee80211_aes_cmac -> (crypto_shash_finup, crypto_shash_update)
+ieee80211_aes_cmac_256 -> (crypto_shash_finup, crypto_shash_update)
+ieee80211_aes_cmac_key_free -> (crypto_destroy_tfm)
+ieee80211_aes_cmac_key_setup -> (crypto_shash_setkey, crypto_alloc_shash, crypto_destroy_tfm)

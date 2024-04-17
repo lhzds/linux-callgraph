@@ -1,0 +1,8 @@
+drivers/gpu/drm/i915/gt/intel_ring.o
+intel_engine_create_ring -> (refcount_warn_saturate, i915_gem_object_create_lmem, drm_gem_object_free, kmalloc_trace, i915_vma_instance, i915_gem_object_create_stolen, i915_gem_object_create_internal, kfree)
+intel_ring_begin -> (wait_for_space)
+intel_ring_cacheline_align -> (wait_for_space)
+intel_ring_free -> (refcount_warn_saturate, drm_gem_object_free, kfree)
+intel_ring_pin -> (i915_gem_object_is_stolen, i915_ggtt_pin, i915_gem_object_pin_map, i915_vma_pin_iomap, i915_vma_make_unshrinkable, i915_coherent_map_type)
+intel_ring_unpin -> (i915_vma_make_purgeable, i915_vma_unpin_iomap)
+wait_for_space -> (i915_request_wait, i915_request_retire_upto)

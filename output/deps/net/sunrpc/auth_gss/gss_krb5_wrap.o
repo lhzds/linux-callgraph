@@ -1,0 +1,4 @@
+net/sunrpc/auth_gss/gss_krb5_wrap.o
+gss_krb5_unwrap_v2 -> (bcmp, xdr_buf_trim, rotate_left, read_bytes_from_xdr_buf, ktime_get_real_seconds)
+gss_krb5_wrap_v2 -> (ktime_get_real_seconds, xdr_extend_head)
+rotate_left -> (xdr_buf_subsegment, write_bytes_to_xdr_buf, read_bytes_from_xdr_buf)

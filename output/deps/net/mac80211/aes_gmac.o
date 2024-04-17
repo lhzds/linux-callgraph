@@ -1,0 +1,4 @@
+net/mac80211/aes_gmac.o
+ieee80211_aes_gmac -> (crypto_aead_encrypt, sg_init_table, kfree_sensitive, __kmalloc)
+ieee80211_aes_gmac_key_free -> (crypto_destroy_tfm)
+ieee80211_aes_gmac_key_setup -> (crypto_alloc_aead, crypto_aead_setkey, crypto_destroy_tfm, crypto_aead_setauthsize)

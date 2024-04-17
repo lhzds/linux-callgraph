@@ -1,0 +1,7 @@
+drivers/gpu/drm/i915/gt/uc/intel_gsc_proxy.o
+i915_gsc_proxy_component_bind -> (mutex_unlock, intel_runtime_pm_put_unchecked, mutex_lock, intel_runtime_pm_get)
+i915_gsc_proxy_component_unbind -> (mutex_unlock, intel_runtime_pm_put_unchecked, mutex_lock, intel_runtime_pm_get)
+intel_gsc_proxy_fini -> (i915_gsc_proxy_component_unbind, i915_vma_unpin_and_release, component_del, i915_gsc_proxy_component_bind)
+intel_gsc_proxy_init -> (_dev_info, __mutex_init)
+intel_gsc_proxy_irq_handler -> (_dev_err, queue_work_on)
+intel_gsc_proxy_request_handler -> (__SCT__might_resched, mutex_lock, ktime_get_raw, usleep_range_state, mutex_unlock, __warn_printk, _dev_err, intel_gsc_uc_heci_cmd_emit_mtl_header, intel_gsc_uc_heci_cmd_submit_packet)

@@ -1,0 +1,9 @@
+arch/x86/kernel/cpu/mce/severity.o
+error_context -> (ex_get_fixup_type, is_copy_from_user)
+is_copy_from_user -> (copy_from_kernel_nofault, fault_in_kernel_space, insn_decode, insn_get_addr_ref)
+mce_severity -> (mce_severity_intel, mce_severity_amd)
+mce_severity_amd -> (error_context)
+mce_severity_intel -> (error_context)
+s_show -> (seq_printf)
+severities_coverage_open -> (s_stop, s_start, s_show, s_next, seq_open)
+severities_debugfs_init -> (severities_coverage_open, seq_release, seq_read, debugfs_create_file, severities_coverage_write, mce_get_debugfs_dir, seq_lseek)

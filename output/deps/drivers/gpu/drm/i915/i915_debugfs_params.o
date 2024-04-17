@@ -1,0 +1,10 @@
+drivers/gpu/drm/i915/i915_debugfs_params.o
+i915_debugfs_params -> (debugfs_create_bool, i915_param_uint_write, seq_read, default_llseek, debugfs_create_file, single_release, i915_param_int_write, i915_param_int_open, debugfs_create_dir, i915_param_charp_open, debugfs_create_file_unsafe, i915_param_uint_open)
+i915_param_charp_open -> (i915_param_charp_show, single_open)
+i915_param_charp_show -> (seq_printf)
+i915_param_int_open -> (i915_param_int_show, single_open)
+i915_param_int_show -> (seq_printf)
+i915_param_int_write -> (kstrtoint_from_user, kstrtobool_from_user)
+i915_param_uint_open -> (i915_param_uint_show, single_open)
+i915_param_uint_show -> (seq_printf)
+i915_param_uint_write -> (kstrtouint_from_user, intel_guc_global_policies_update, strcmp, kstrtobool_from_user)

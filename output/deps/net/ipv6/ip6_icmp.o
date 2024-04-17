@@ -1,0 +1,2 @@
+net/ipv6/ip6_icmp.o
+icmpv6_ndo_send -> (skb_ensure_writable, consume_skb, icmp6_send, skb_clone)

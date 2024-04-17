@@ -1,0 +1,2 @@
+drivers/gpu/drm/i915/gt/gen7_renderclear.o
+gen7_setup_clear_gpr_bb -> (__i915_gem_object_release_map, i915_gem_object_pin_map, __i915_gem_object_flush_map)

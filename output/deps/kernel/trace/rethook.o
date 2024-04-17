@@ -1,0 +1,11 @@
+kernel/trace/rethook.o
+free_rethook_node_rcu -> (refcount_warn_saturate, kfree)
+rethook_add_node -> (refcount_warn_saturate)
+rethook_alloc -> (kmalloc_trace, kfree)
+rethook_flush_task -> (call_rcu, free_rethook_node_rcu)
+rethook_free -> (rethook_free_rcu, call_rcu)
+rethook_free_rcu -> (refcount_warn_saturate, kfree)
+rethook_hook -> (arch_rethook_prepare)
+rethook_recycle -> (call_rcu, free_rethook_node_rcu)
+rethook_trampoline_handler -> (_printk, free_rethook_node_rcu, arch_rethook_fixup_return, call_rcu)
+rethook_try_get -> (rcu_is_watching)

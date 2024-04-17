@@ -1,0 +1,11 @@
+net/ethtool/bitset.o
+ethnl_bitset32_size -> (strnlen)
+ethnl_bitset_is_compact -> (do_trace_netlink_extack, __nla_parse)
+ethnl_bitset_size -> (strnlen)
+ethnl_compact_sanity_checks -> (memchr_inv, do_trace_netlink_extack)
+ethnl_parse_bit -> (do_trace_netlink_extack, strncmp, strlen, __nla_parse)
+ethnl_parse_bitset -> (do_trace_netlink_extack, __bitmap_clear, ethnl_parse_bit, __nla_parse, ethnl_compact_sanity_checks, bitmap_from_arr32)
+ethnl_put_bitset -> (ethnl_put_bitset32)
+ethnl_put_bitset32 -> (nla_put, skb_trim, strnlen, nla_reserve)
+ethnl_update_bitset -> (ethnl_update_bitset32)
+ethnl_update_bitset32 -> (do_trace_netlink_extack, ethnl_compact_sanity_checks, ethnl_parse_bit, __nla_parse)

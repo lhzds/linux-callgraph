@@ -1,0 +1,2 @@
+drivers/platform/x86/p2sb.o
+p2sb_bar -> (pci_stop_and_remove_bus_device, pci_bus_write_config_dword, pci_unlock_rescan_remove, pci_lock_rescan_remove, pci_scan_single_device, pci_find_bus, x86_match_cpu, pci_bus_read_config_dword)

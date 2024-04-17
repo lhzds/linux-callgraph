@@ -1,0 +1,7 @@
+net/netfilter/nf_conntrack_proto_icmp.o
+icmp_nlattr_tuple_size -> (nla_policy_len)
+icmp_pkt_to_tuple -> (skb_copy_bits)
+icmp_tuple_to_nlattr -> (nla_put)
+nf_conntrack_icmp_packet -> (__nf_ct_refresh_acct)
+nf_conntrack_icmpv4_error -> (nf_l4proto_log_invalid, skb_copy_bits, nf_conntrack_inet_error, nf_ip_checksum)
+nf_conntrack_inet_error -> (nf_l4proto_log_invalid, refcount_warn_saturate, nf_conntrack_find_get, nf_ct_destroy, nf_ct_get_tuplepr, nf_ct_invert_tuple)

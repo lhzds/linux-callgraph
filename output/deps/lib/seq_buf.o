@@ -1,0 +1,10 @@
+lib/seq_buf.o
+seq_buf_bprintf -> (bstr_printf)
+seq_buf_do_printk -> (_printk, strchr)
+seq_buf_hex_dump -> (seq_buf_printf, hex_dump_to_buffer)
+seq_buf_path -> (d_path, mangle_path)
+seq_buf_print_seq -> (seq_write)
+seq_buf_printf -> (vsnprintf)
+seq_buf_puts -> (strlen)
+seq_buf_to_user -> (_copy_to_user)
+seq_buf_vprintf -> (vsnprintf)

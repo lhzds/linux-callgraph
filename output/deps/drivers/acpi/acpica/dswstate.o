@@ -1,0 +1,9 @@
+drivers/acpi/acpica/dswstate.o
+acpi_ds_create_walk_state -> (acpi_ds_method_data_init, kmalloc_trace)
+acpi_ds_delete_walk_state -> (acpi_ut_delete_generic_state, kfree, acpi_ps_cleanup_scope, acpi_error)
+acpi_ds_init_aml_walk -> (acpi_ps_init_scope, acpi_ns_get_attached_object, acpi_ds_scope_stack_push, acpi_ds_init_callbacks, acpi_ds_method_data_init_args)
+acpi_ds_obj_stack_pop -> (acpi_error)
+acpi_ds_obj_stack_pop_and_delete -> (acpi_ut_remove_reference)
+acpi_ds_obj_stack_push -> (acpi_error)
+acpi_ds_result_pop -> (acpi_ut_delete_generic_state, acpi_ut_pop_generic_state, acpi_error)
+acpi_ds_result_push -> (acpi_ut_push_generic_state, acpi_ut_create_generic_state, acpi_error)

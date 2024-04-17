@@ -1,0 +1,3 @@
+drivers/acpi/acpi_lpat.o
+acpi_lpat_free_conversion_table -> (kfree)
+acpi_lpat_get_conversion_table -> (acpi_evaluate_object, kmalloc_trace, kfree, __kmalloc)

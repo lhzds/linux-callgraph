@@ -1,0 +1,3 @@
+lib/hexdump.o
+hex_dump_to_buffer -> (snprintf)
+print_hex_dump -> (_printk, hex_dump_to_buffer)

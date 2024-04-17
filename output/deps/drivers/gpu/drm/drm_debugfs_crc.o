@@ -1,0 +1,10 @@
+drivers/gpu/drm/drm_debugfs_crc.o
+crc_control_open -> (crc_control_show, single_open)
+crc_control_show -> (seq_printf, strcmp)
+crc_control_write -> (___drm_dbg, memdup_user_nul, _raw_spin_lock_irq, _raw_spin_unlock_irq, kfree)
+crtc_crc_open -> (drm_modeset_lock_single_interruptible, _raw_spin_lock_irq, drm_modeset_unlock, kmalloc_trace, _raw_spin_unlock_irq, kfree)
+crtc_crc_poll -> (_raw_spin_lock_irq, _raw_spin_unlock_irq)
+crtc_crc_read -> (init_wait_entry, _raw_spin_lock_irq, schedule, finish_wait, _raw_spin_unlock_irq, __copy_overflow, prepare_to_wait_event, sprintf, _copy_to_user)
+crtc_crc_release -> (_raw_spin_lock_irq, kfree, _raw_spin_unlock_irq)
+drm_crtc_add_crc_entry -> (__drm_err, __wake_up, _raw_spin_lock_irqsave, _raw_spin_unlock_irqrestore)
+drm_debugfs_crtc_crc_add -> (crtc_crc_poll, crc_control_write, crtc_crc_open, crc_control_open, debugfs_create_file, crtc_crc_release, seq_read, single_release, crtc_crc_read, debugfs_create_dir, seq_lseek)
