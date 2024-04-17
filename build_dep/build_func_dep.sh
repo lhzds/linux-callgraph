@@ -17,6 +17,6 @@ make -j$(nproc)
 popd
 
 find $KERNEL_TARGET_BUILD_PATH -name "*.bc" > $TARGET_BCLIST
-$CURDIR/build/callgraph -f $TARGET_BCLIST
+$CURDIR/pass/build/callgraph -f $TARGET_BCLIST
 
 popd
