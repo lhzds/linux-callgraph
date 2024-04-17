@@ -36,7 +36,7 @@ def normalize_object_name(fname, curext='.o', newext='.o', curpath=''):
     return obj + newext
 
 class ObjDeps(object):
-    def __init__(self, linux_src, linux_build, btobj_deps):
+    def __init__(self, linux_build):
         # 函数依赖
         self.fdep_map = collections.defaultdict(dict)
         self.frevdep_map = collections.defaultdict(set)
@@ -130,4 +130,19 @@ class ObjDeps(object):
 
 
 if __name__ == "__main__":
-    sys.exit(0)
+    linux_build = sys.argv[1]
+    obj_dep = ObjDeps(linux_build)
+    for mod in obj_dep.fdep_map:
+        mod_path = mod[len(os.path.abspath(linux_build)) + 1:]
+        path = os.path.join("deps", mod_path)
+        dirname = os.path.dirname(path)
+        if not os.path.exists(dirname):
+            os.makedirs(dirname)
+            
+        with open(path, "w") as f:
+            f.write(mod_path)
+            f.write("\n")
+            for sym in obj_dep.fdep_map[mod]:
+                f.write(sym + " -> (")
+                f.write(", ".join(list(obj_dep.fdep_map[mod][sym])))
+                f.write(")\n")

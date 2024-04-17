@@ -7,8 +7,6 @@ KERNEL_VER="6.5"
 KERNEL_SRC_PATH="$SRCDIR/linux-$KERNEL_VER/"
 KERNEL_TARGET_BUILD_PATH="$BUILDDIR/linux-$KERNEL_VER-target/"
 
-$TARGET_BCLIST="$CURDIR/tmp/target-allbc.list"
-
 mkdir -p $SRCDIR
 mkdir -p $KERNEL_TARGET_BUILD_PATH
 
@@ -37,12 +35,3 @@ popd
 # 3. 重新编译生成 .bc 文件
 ${CURDIR}/buildir.py $KERNEL_TARGET_BUILD_PATH
 
-# 4. 执行 callgraph
-pushd ./pass
-mkdir build
-cmake ..
-make -j$(nproc)
-
-find $KERNEL_TARGET_BUILD_PATH -name "*.bc" > $TARGET_BCLIST
-./build/callgraph -f $TARGET_BCLIST
-popd

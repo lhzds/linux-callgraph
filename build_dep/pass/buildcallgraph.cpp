@@ -218,10 +218,10 @@ int main(int argc, char **argv) {
   for (std::string line; std::getline(bclist, line);) {
     std::cout << line << "\n";
     std::map<std::string, std::set<std::string>> import_table;
-
     std::map<std::string, std::set<std::string>> struct_def_cbs;
     std::map<std::string, std::set<std::string>> func_ext_constant_linkage;
     std::map<std::string, std::set<std::string>> func_ptr_refer;
+
     std::unique_ptr<llvm::Module> module = llvm::parseIRFile(line, ctxerr, context);
     if (!module) {
       std::ofstream nonbc(line.substr(0, line.rfind('.')) + ".nonbc");
@@ -237,6 +237,7 @@ int main(int argc, char **argv) {
     for (auto &gv : module->globals()) {
       bool fp_seen = false; // 该 gv 里是否有函数
       bool def_seen = false; // 是否已经发现定义
+
       // 找出全局变量中的所有的函数指针（如果有结构体嵌套的函数指针，也找出其中嵌套的）
       std::string gv_name = gv.getName().str();
       std::set<std::string> nested_cbs;
@@ -260,7 +261,7 @@ int main(int argc, char **argv) {
           wq.pop_front();
 
           if (llvm::Instruction *i = llvm::dyn_cast<llvm::Instruction>(u)) {
-            //printf("DEBUG inst\n");
+            // printf("DEBUG inst\n");
             // 获得当前指令所在的函数 fu
             std::string fu = i->getFunction()->getName().str();
 
@@ -275,8 +276,7 @@ int main(int argc, char **argv) {
             if (seen.find(cst)!=seen.end())
               continue;
             seen.insert(cst);
-            //printf("DEBUG constant\n");
-            
+            // printf("DEBUG constant\n");
             // 广度优先搜索，往上查找 Inst
             for (auto cu : cst->users()) {
               wq.push_back(cu);
@@ -324,6 +324,7 @@ int main(int argc, char **argv) {
 
     // 函数：其直接依赖的函数
     std::ofstream impout(line.substr(0, line.rfind('.')) + ".imptab");
+    std::cout << line.substr(0, line.rfind('.')) + ".imptab: " << import_table.size() << "\n";
     for (auto it : import_table) {
       for (auto imp : it.second) {
         impout << it.first << " : " << imp << "\n";
@@ -332,6 +333,7 @@ int main(int argc, char **argv) {
 
     // 全局变量：所包含的所有函数指针
     std::ofstream cbsout(line.substr(0, line.rfind('.')) + ".symcbs");
+    std::cout << line.substr(0, line.rfind('.')) + ".symcbs: " << struct_def_cbs.size() << "\n";
     for (auto it : struct_def_cbs) {
       for (auto cb : it.second) {
         cbsout << it.first << " : " << cb << "\n";
@@ -340,6 +342,7 @@ int main(int argc, char **argv) {
 
     // 函数：外部链接的常量符号的列表
     std::ofstream lnkout(line.substr(0, line.rfind('.')) + ".symlnk");
+    std::cout << line.substr(0, line.rfind('.')) + ".symlnk: " << func_ext_constant_linkage.size() << "\n";
     for (auto it : func_ext_constant_linkage) {
       for (auto s : it.second) {
         lnkout << it.first << " : " << s << "\n";
@@ -348,6 +351,7 @@ int main(int argc, char **argv) {
 
     // 函数：函数体中间接调用的其他函数
     std::ofstream fptrout(line.substr(0, line.rfind('.')) + ".fptref");
+    std::cout << line.substr(0, line.rfind('.')) + ".fptref: " << func_ptr_refer.size() << "\n";
     for (auto it : func_ptr_refer) {
       for (auto s : it.second) {
         fptrout << it.first << " : " << s << "\n";

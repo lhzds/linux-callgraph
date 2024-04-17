@@ -43,6 +43,3 @@ RUN update-alternatives \
 
 RUN mkdir -p /test
 WORKDIR /test
-
-COPY ../build_kernel.sh /
-RUN chmod +x /*.sh
